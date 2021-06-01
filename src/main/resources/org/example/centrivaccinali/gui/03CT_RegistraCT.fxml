@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.centrivaccinali.gui.ClientCVController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#onClickQuit" text="Close" />
+               </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Back">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#to_02CT_MainWindow" text="back" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#guida" text="Guide" />
+              <MenuItem mnemonicParsing="false" onAction="#info" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <BorderPane prefHeight="700.0" prefWidth="1280.0">
+         <center>
+            <Label text="Cittadino Main" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="72.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+   </children>
+</VBox>

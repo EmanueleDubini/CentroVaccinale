@@ -1,0 +1,8093 @@
+﻿Prov,Com,CAP
+AG,Agrigento,92100
+AG,Alessandria della Rocca,92010
+AG,Aragona,92021
+AG,Bivona,92010
+AG,Burgio,92010
+AG,Calamonaci,92010
+AG,Caltabellotta,92010
+AG,Camastra,92020
+AG,Cammarata,92022
+AG,Campobello di Licata,92023
+AG,Canicattì,92024
+AG,Casteltermini,92025
+AG,Castrofilippo,92020
+AG,Cattolica Eraclea,92011
+AG,Cianciana,92012
+AG,Comitini,92020
+AG,Favara,92026
+AG,Grotte,92020
+AG,Joppolo Giancaxio,92010
+AG,Lampedusa e Linosa,92010
+AG,Licata,92027
+AG,Lucca Sicula,92010
+AG,Menfi,92013
+AG,Montallegro,92010
+AG,Montevago,92010
+AG,Naro,92028
+AG,Palma di Montechiaro,92020
+AG,Porto Empedocle,92014
+AG,Racalmuto,92020
+AG,Raffadali,92015
+AG,Ravanusa,92029
+AG,Realmonte,92010
+AG,Ribera,92016
+AG,Sambuca di Sicilia,92017
+AG,San Biagio Platani,92020
+AG,San Giovanni Gemini,92020
+AG,Santa Elisabetta,92020
+AG,Santa Margherita di Belice,92018
+AG,Sant'Angelo Muxaro,92020
+AG,Santo Stefano Quisquina,92020
+AG,Sciacca,92019
+AG,Siculiana,92010
+AG,Villafranca Sicula,92020
+AL,Acqui Terme,15011
+AL,Albera Ligure,15060
+AL,Alessandria,1512x
+AL,Alfiano Natta,15021
+AL,Alice Bel Colle,15010
+AL,Alluvioni Cambiò,15040
+AL,Altavilla Monferrato,15041
+AL,Alzano Scrivia,15050
+AL,Arquata Scrivia,15061
+AL,Avolasca,15050
+AL,Balzola,15031
+AL,Basaluzzo,15060
+AL,Bassignana,15042
+AL,Belforte Monferrato,15070
+AL,Bergamasco,15022
+AL,Berzano di Tortona,15050
+AL,Bistagno,15012
+AL,Borghetto di Borbera,15060
+AL,Borgo San Martino,15032
+AL,Borgoratto Alessandrino,15013
+AL,Bosco Marengo,15062
+AL,Bosio,15060
+AL,Bozzole,15040
+AL,Brignano-Frascata,15050
+AL,Cabella Ligure,15060
+AL,Camagna Monferrato,15030
+AL,Camino,15020
+AL,Cantalupo Ligure,15060
+AL,Capriata d'Orba,15060
+AL,Carbonara Scrivia,15050
+AL,Carentino,15026
+AL,Carezzano,15051
+AL,Carpeneto,15071
+AL,Carrega Ligure,15060
+AL,Carrosio,15060
+AL,Cartosio,15015
+AL,Casal Cermelli,15072
+AL,Casale Monferrato,15033
+AL,Casaleggio Boiro,15070
+AL,Casalnoceto,15052
+AL,Casasco,15050
+AL,Cassano Spinola,15063
+AL,Cassine,15016
+AL,Cassinelle,15070
+AL,Castellania,15051
+AL,Castellar Guidobono,15050
+AL,Castellazzo Bormida,15073
+AL,Castelletto d'Erro,15010
+AL,Castelletto d'Orba,15060
+AL,Castelletto Merli,15020
+AL,Castelletto Monferrato,15040
+AL,Castelnuovo Bormida,15017
+AL,Castelnuovo Scrivia,15053
+AL,Castelspina,15070
+AL,Cavatore,15010
+AL,Cella Monte,15034
+AL,Cereseto,15020
+AL,Cerreto Grue,15050
+AL,Cerrina Monferrato,15020
+AL,Coniolo,15030
+AL,Conzano,15030
+AL,Costa Vescovato,15050
+AL,Cremolino,15010
+AL,Cuccaro Monferrato,15040
+AL,Denice,15010
+AL,Dernice,15056
+AL,Fabbrica Curone,15054
+AL,Felizzano,15023
+AL,Fraconalto,15060
+AL,Francavilla Bisio,15060
+AL,Frascaro,15010
+AL,Frassinello Monferrato,15035
+AL,Frassineto Po,15040
+AL,Fresonara,15064
+AL,Frugarolo,15065
+AL,Fubine,15043
+AL,Gabiano,15020
+AL,Gamalero,15010
+AL,Garbagna,15050
+AL,Gavazzana,15063
+AL,Gavi,15066
+AL,Giarole,15036
+AL,Gremiasco,15056
+AL,Grognardo,15010
+AL,Grondona,15060
+AL,Guazzora,15050
+AL,Isola Sant'Antonio,15050
+AL,Lerma,15070
+AL,Lu,15040
+AL,Malvicino,15015
+AL,Masio,15024
+AL,Melazzo,15010
+AL,Merana,15010
+AL,Mirabello Monferrato,15040
+AL,Molare,15074
+AL,Molino dei Torti,15050
+AL,Mombello Monferrato,15020
+AL,Momperone,15050
+AL,Moncestino,15020
+AL,Mongiardino Ligure,15060
+AL,Monleale,15059
+AL,Montacuto,15050
+AL,Montaldeo,15060
+AL,Montaldo Bormida,15010
+AL,Montecastello,15040
+AL,Montechiaro d'Acqui,15010
+AL,Montegioco,15050
+AL,Montemarzino,15050
+AL,Morano sul Po,15025
+AL,Morbello,15010
+AL,Mornese,15075
+AL,Morsasco,15010
+AL,Murisengo,15020
+AL,Novi Ligure,15067
+AL,Occimiano,15040
+AL,Odalengo Grande,15020
+AL,Odalengo Piccolo,15020
+AL,Olivola,15030
+AL,Orsara Bormida,15010
+AL,Ottiglio,15038
+AL,Ovada,15076
+AL,Oviglio,15026
+AL,Ozzano Monferrato,15039
+AL,Paderna,15050
+AL,Pareto,15010
+AL,Parodi Ligure,15060
+AL,Pasturana,15060
+AL,Pecetto di Valenza,15040
+AL,Pietra Marazzi,15040
+AL,Piovera,15040
+AL,Pomaro Monferrato,15040
+AL,Pontecurone,15055
+AL,Pontestura,15027
+AL,Ponti,15010
+AL,Ponzano Monferrato,15020
+AL,Ponzone,15010
+AL,Pozzol Groppo,15050
+AL,Pozzolo Formigaro,15068
+AL,Prasco,15010
+AL,Predosa,15077
+AL,Quargnento,15044
+AL,Quattordio,15028
+AL,Ricaldone,15010
+AL,Rivalta Bormida,15010
+AL,Rivarone,15040
+AL,Rocca Grimalda,15078
+AL,Roccaforte Ligure,15060
+AL,Rocchetta Ligure,15060
+AL,Rosignano Monferrato,15030
+AL,Sala Monferrato,15030
+AL,Sale,15045
+AL,San Cristoforo,15060
+AL,San Giorgio Monferrato,15020
+AL,San Salvatore Monferrato,15046
+AL,San Sebastiano Curone,15056
+AL,Sant'Agata Fossili,15050
+AL,Sardigliano,15060
+AL,Sarezzano,15050
+AL,Serralunga di Crea,15020
+AL,Serravalle Scrivia,15069
+AL,Sezzadio,15079
+AL,Silvano d'Orba,15060
+AL,Solero,15029
+AL,Solonghello,15020
+AL,Spigno Monferrato,15018
+AL,Spineto Scrivia,15050
+AL,Stazzano,15060
+AL,Strevi,15019
+AL,Tagliolo Monferrato,15070
+AL,Tassarolo,15060
+AL,Terruggia,15030
+AL,Terzo,15010
+AL,Ticineto,15040
+AL,Tortona,15057
+AL,Treville,15030
+AL,Trisobbio,15070
+AL,Valenza,15048
+AL,Valmacca,15040
+AL,Vignale Monferrato,15049
+AL,Vignole Borbera,15060
+AL,Viguzzolo,15058
+AL,Villadeati,15020
+AL,Villalvernia,15050
+AL,Villamiroglio,15020
+AL,Villanova Monferrato,15030
+AL,Villaromagnano,15050
+AL,Visone,15010
+AL,Volpedo,15059
+AL,Volpeglino,15050
+AL,Voltaggio,15060
+AN,Agugliano,60020
+AN,Ancona,601xx
+AN,Arcevia,60011
+AN,Barbara,60010
+AN,Belvedere Ostrense,60030
+AN,Camerano,60021
+AN,Camerata Picena,60020
+AN,Castel Colonna,60010
+AN,Castelbellino,60030
+AN,Castelfidardo,60022
+AN,Castelleone di Suasa,60010
+AN,Castelplanio,60031
+AN,Cerreto d'Esi,60043
+AN,Chiaravalle,60033
+AN,Corinaldo,60013
+AN,Cupramontana,60034
+AN,Fabriano,60044
+AN,Falconara Marittima,60015
+AN,Filottrano,60024
+AN,Genga,60040
+AN,Jesi,60035
+AN,Loreto,60025
+AN,Maiolati Spontini,60030
+AN,Mergo,60030
+AN,Monsano,60030
+AN,Monte Roberto,60030
+AN,Monte San Vito,60037
+AN,Montecarotto,60036
+AN,Montemarciano,60018
+AN,Monterado,60010
+AN,Morro d'Alba,60030
+AN,Numana,60026
+AN,Offagna,60020
+AN,Osimo,60027
+AN,Ostra,60010
+AN,Ostra Vetere,60010
+AN,Poggio San Marcello,60030
+AN,Polverigi,60020
+AN,Ripe,60010
+AN,Rosora,60030
+AN,San Marcello,60030
+AN,San Paolo di Jesi,60038
+AN,Santa Maria Nuova,60030
+AN,Sassoferrato,60041
+AN,Senigallia,60019
+AN,Serra de' Conti,60030
+AN,Serra San Quirico,60048
+AN,Sirolo,60020
+AN,Staffolo,60039
+AO,Allein,11010
+AO,Antey-Saint-Andrè,11020
+AO,Aosta,11100
+AO,Arnad,11020
+AO,Arvier,11011
+AO,Avise,11010
+AO,Ayas,11020
+AO,Aymavilles,11010
+AO,Bard,11020
+AO,Bionaz,11010
+AO,Brissogne,11020
+AO,Brusson,11022
+AO,Challand-Saint-Anselme,11020
+AO,Challand-Saint-Victor,11020
+AO,Chambave,11023
+AO,Chamois,11020
+AO,Champdepraz,11020
+AO,Champorcher,11020
+AO,Charvensod,11020
+AO,Chatillon,11024
+AO,Cogne,11012
+AO,Courmayeur,11013
+AO,Donnas,11020
+AO,Doues,11010
+AO,Emarèse,11020
+AO,Etroubles,11014
+AO,Fénis,11020
+AO,Fontainemore,11020
+AO,Gaby,11020
+AO,Gignod,11010
+AO,Gressan,11020
+AO,Gressoney-la-Trinitè,11020
+AO,Gressoney-Saint-Jean,11025
+AO,Hone,11020
+AO,Introd,11010
+AO,Issime,11020
+AO,Issogne,11020
+AO,Jovencan,11020
+AO,La Magdeleine,11020
+AO,La Salle,11015
+AO,La Thuile,11016
+AO,Lillianes,11020
+AO,Montjovet,11020
+AO,Morgex,11017
+AO,Nus,11020
+AO,Ollomont,11010
+AO,Oyace,11010
+AO,Perloz,11020
+AO,Pollein,11020
+AO,Pontboset,11020
+AO,Pontey,11024
+AO,Pont-Saint-Martin,11026
+AO,Prè-Saint-Didier,11010
+AO,Quart,11020
+AO,Rhemes-Notre-Dame,11010
+AO,Rhemes-Saint-Georges,11010
+AO,Roisan,11010
+AO,Saint-Christophe,11020
+AO,Saint-Denis,11023
+AO,Saint-Marcel,11020
+AO,Saint-Nicolas,11010
+AO,Saint-Oyen,11014
+AO,Saint-Pierre,11010
+AO,Saint-Rhémy-en-Bosses,11010
+AO,Saint-Vincent,11027
+AO,Sarre,11010
+AO,Torgnon,11020
+AO,Valgrisenche,11010
+AO,Valpelline,11010
+AO,Valsavarenche,11010
+AO,Valtournenche,11028
+AO,Verrayes,11020
+AO,Verrès,11029
+AO,Villeneuve,11018
+AP,Acquasanta Terme,63095
+AP,Acquaviva Picena,63075
+AP,Appignano del Tronto,63083
+AP,Arquata del Tronto,63096
+AP,Ascoli Piceno,63100
+AP,Carassai,63063
+AP,Castel di Lama,63082
+AP,Castignano,63072
+AP,Castorano,63081
+AP,Colli del Tronto,63079
+AP,Comunanza,63087
+AP,Cossignano,63067
+AP,Cupra Marittima,63064
+AP,Folignano,63084
+AP,Force,63086
+AP,Grottammare,63066
+AP,Maltignano,63085
+AP,Massignano,63061
+AP,Monsampolo del Tronto,63077
+AP,Montalto delle Marche,63068
+AP,Montedinove,63069
+AP,Montefiore dell'Aso,63062
+AP,Montegallo,63094
+AP,Montemonaco,63088
+AP,Monteprandone,63076
+AP,Offida,63073
+AP,Palmiano,63092
+AP,Ripatransone,63065
+AP,Roccafluvione,63093
+AP,Rotella,63071
+AP,San Benedetto del Tronto,63074
+AP,Spinetoli,63078
+AP,Venarotta,63091
+AQ,Acciano,67020
+AQ,Aielli,67041
+AQ,Alfedena,67030
+AQ,Anversa degli Abruzzi,67030
+AQ,Ateleta,67030
+AQ,Avezzano,67051
+AQ,Balsorano,67052
+AQ,Barete,67010
+AQ,Barisciano,67021
+AQ,Barrea,67030
+AQ,Bisegna,67050
+AQ,Bugnara,67030
+AQ,Cagnano Amiterno,67012
+AQ,Calascio,67020
+AQ,Campo di Giove,67030
+AQ,Campotosto,67013
+AQ,Canistro,67050
+AQ,Cansano,67030
+AQ,Capestrano,67022
+AQ,Capistrello,67053
+AQ,Capitignano,67014
+AQ,Caporciano,67020
+AQ,Cappadocia,67060
+AQ,Carapelle Calvisio,67020
+AQ,Carsoli,67061
+AQ,Castel del Monte,67023
+AQ,Castel di Ieri,67020
+AQ,Castel di Sangro,67031
+AQ,Castellafiume,67050
+AQ,Castelvecchio Calvisio,67020
+AQ,Castelvecchio Subequo,67024
+AQ,Celano,67043
+AQ,Cerchio,67044
+AQ,Civita d'Antino,67050
+AQ,Civitella Alfedena,67030
+AQ,Civitella Roveto,67054
+AQ,Cocullo,67030
+AQ,Collarmele,67040
+AQ,Collelongo,67050
+AQ,Collepietro,67020
+AQ,Corfinio,67030
+AQ,Fagnano Alto,67020
+AQ,Fontecchio,67020
+AQ,Fossa,67020
+AQ,Gagliano Aterno,67020
+AQ,Gioia dei Marsi,67055
+AQ,Goriano Sicoli,67030
+AQ,Introdacqua,67030
+AQ,L'Aquila,67100
+AQ,Lecce nei Marsi,67050
+AQ,Luco dei Marsi,67056
+AQ,Lucoli,67045
+AQ,Magliano de' Marsi,67062
+AQ,Massa d'Albe,67050
+AQ,Molina Aterno,67020
+AQ,Montereale,67015
+AQ,Morino,67050
+AQ,Navelli,67020
+AQ,Ocre,67040
+AQ,Ofena,67025
+AQ,Opi,67030
+AQ,Oricola,67063
+AQ,Ortona dei Marsi,67050
+AQ,Ortucchio,67050
+AQ,Ovindoli,67046
+AQ,Pacentro,67030
+AQ,Pereto,67064
+AQ,Pescasseroli,67032
+AQ,Pescina,67057
+AQ,Pescocostanzo,67033
+AQ,Pettorano sul Gizio,67034
+AQ,Pizzoli,67017
+AQ,Poggio Picenze,67026
+AQ,Prata d'Ansidonia,67020
+AQ,Pratola Peligna,67035
+AQ,Prezza,67030
+AQ,Raiano,67027
+AQ,Rivisondoli,67036
+AQ,Rocca di Botte,67066
+AQ,Rocca di Cambio,67047
+AQ,Rocca di Mezzo,67048
+AQ,Rocca Pia,67030
+AQ,Roccacasale,67030
+AQ,Roccaraso,67037
+AQ,San Benedetto dei Marsi,67058
+AQ,San Benedetto in Perillis,67020
+AQ,San Demetrio ne' Vestini,67028
+AQ,San Pio delle Camere,67020
+AQ,San Vincenzo Valle Roveto,67050
+AQ,Sante Marie,67067
+AQ,Sant'Eusanio Forconese,67020
+AQ,Santo Stefano di Sessanio,67020
+AQ,Scanno,67038
+AQ,Scontrone,67030
+AQ,Scoppito,67019
+AQ,Scurcola Marsicana,67068
+AQ,Secinaro,67029
+AQ,Sulmona,67039
+AQ,Tagliacozzo,67069
+AQ,Tione degli Abruzzi,67020
+AQ,Tornimparte,67049
+AQ,Trasacco,67059
+AQ,Villa Santa Lucia degli Abruzzi,67020
+AQ,Villa Sant'Angelo,67020
+AQ,Villalago,67030
+AQ,Villavallelonga,67050
+AQ,Villetta Barrea,67030
+AQ,Vittorito,67030
+AR,Anghiari,52031
+AR,Arezzo,52100
+AR,Badia Tedalda,52032
+AR,Bibbiena,52011
+AR,Bucine,52021
+AR,Capolona,52010
+AR,Caprese Michelangelo,52033
+AR,Castel Focognano,52016
+AR,Castel San Niccolò,52018
+AR,Castelfranco di Sopra,52020
+AR,Castiglion Fibocchi,52029
+AR,Castiglion Fiorentino,52043
+AR,Cavriglia,52022
+AR,Chitignano,52010
+AR,Chiusi della Verna,52010
+AR,Civitella in Val di Chiana,52041
+AR,Cortona,52044
+AR,Foiano della Chiana,52045
+AR,Laterina,52020
+AR,Loro Ciuffenna,52024
+AR,Lucignano,52046
+AR,Marciano della Chiana,52047
+AR,Monte San Savino,52048
+AR,Montemignaio,52010
+AR,Monterchi,52035
+AR,Montevarchi,52025
+AR,Ortignano Raggiolo,52010
+AR,Pergine Valdarno,52020
+AR,Pian di Sco,52026
+AR,Pieve Santo Stefano,52036
+AR,Poppi,52014
+AR,Pratovecchio,52015
+AR,San Giovanni Valdarno,52027
+AR,Sansepolcro,52037
+AR,Sestino,52038
+AR,Stia,52017
+AR,Subbiano,52010
+AR,Talla,52010
+AR,Terranuova Bracciolini,52028
+AT,Agliano Terme,14041
+AT,Albugnano,14022
+AT,Antignano,14010
+AT,Aramengo,14020
+AT,Asti,14100
+AT,Azzano d'Asti,14030
+AT,Baldichieri d'Asti,14011
+AT,Belveglio,14040
+AT,Berzano di San Pietro,14020
+AT,Bruno,14046
+AT,Bubbio,14051
+AT,Buttigliera d'Asti,14021
+AT,Calamandrana,14042
+AT,Calliano,14031
+AT,Calosso,14052
+AT,Camerano Casasco,14020
+AT,Canelli,14053
+AT,Cantarana,14010
+AT,Capriglio,14014
+AT,Casorzo,14032
+AT,Cassinasco,14050
+AT,Castagnole delle Lanze,14054
+AT,Castagnole Monferrato,14030
+AT,Castel Boglione,14040
+AT,Castel Rocchero,14044
+AT,Castell'Alfero,14033
+AT,Castellero,14013
+AT,Castelletto Molina,14040
+AT,Castello di Annone,14034
+AT,Castelnuovo Belbo,14043
+AT,Castelnuovo Calcea,14040
+AT,Castelnuovo Don Bosco,14022
+AT,Cellarengo,14010
+AT,Celle Enomondo,14010
+AT,Cerreto d'Asti,14020
+AT,Cerro Tanaro,14030
+AT,Cessole,14050
+AT,Chiusano d'Asti,14025
+AT,Cinaglio,14020
+AT,Cisterna d'Asti,14010
+AT,Coazzolo,14054
+AT,Cocconato,14023
+AT,Corsione,14020
+AT,Cortandone,14013
+AT,Cortanze,14020
+AT,Cortazzone,14010
+AT,Cortiglione,14040
+AT,Cossombrato,14020
+AT,Costigliole d'Asti,14055
+AT,Cunico,14026
+AT,Dusino San Michele,14010
+AT,Ferrere,14012
+AT,Fontanile,14044
+AT,Frinco,14030
+AT,Grana,14031
+AT,Grazzano Badoglio,14035
+AT,Incisa Scapaccino,14045
+AT,Isola d'Asti,14057
+AT,Loazzolo,14051
+AT,Maranzana,14040
+AT,Maretto,14018
+AT,Moasca,14050
+AT,Mombaldone,14050
+AT,Mombaruzzo,14046
+AT,Mombercelli,14047
+AT,Monale,14013
+AT,Monastero Bormida,14058
+AT,Moncalvo,14036
+AT,Moncucco Torinese,14024
+AT,Mongardino,14040
+AT,Montabone,14040
+AT,Montafia,14014
+AT,Montaldo Scarampi,14048
+AT,Montechiaro d'Asti,14025
+AT,Montegrosso d'Asti,14048
+AT,Montemagno,14030
+AT,Montiglio Monferrato,14026
+AT,Moransengo,14023
+AT,Nizza Monferrato,14049
+AT,Olmo Gentile,14050
+AT,Passerano Marmorito,14020
+AT,Penango,14030
+AT,Piea,14020
+AT,Pino d'Asti,14020
+AT,Piovà Massaia,14026
+AT,Portacomaro,14037
+AT,Quaranti,14040
+AT,Refrancore,14030
+AT,Revigliasco d'Asti,14010
+AT,Roatto,14018
+AT,Robella,14020
+AT,Rocca d'Arazzo,14030
+AT,Roccaverano,14050
+AT,Rocchetta Palafea,14042
+AT,Rocchetta Tanaro,14030
+AT,San Damiano d'Asti,14015
+AT,San Giorgio Scarampi,14059
+AT,San Martino Alfieri,14010
+AT,San Marzano Oliveto,14050
+AT,San Paolo Solbrito,14010
+AT,Scurzolengo,14030
+AT,Serole,14050
+AT,Sessame,14058
+AT,Settime,14020
+AT,Soglio,14020
+AT,Tigliole,14016
+AT,Tonco,14039
+AT,Tonengo,14023
+AT,Vaglio Serra,14049
+AT,Valfenera,14017
+AT,Vesime,14059
+AT,Viale,14010
+AT,Viarigi,14030
+AT,Vigliano d'Asti,14040
+AT,Villa San Secondo,14020
+AT,Villafranca d'Asti,14018
+AT,Villanova d'Asti,14019
+AT,Vinchio,14040
+AV,Aiello del Sabato,83020
+AV,Altavilla Irpina,83011
+AV,Andretta,83040
+AV,Aquilonia,83041
+AV,Ariano Irpino,83031
+AV,Atripalda,83042
+AV,Avella,83021
+AV,Avellino,83100
+AV,Bagnoli Irpino,83043
+AV,Baiano,83022
+AV,Bisaccia,83044
+AV,Bonito,83032
+AV,Cairano,83040
+AV,Calabritto,83040
+AV,Calitri,83045
+AV,Candida,83040
+AV,Caposele,83040
+AV,Capriglia Irpina,83010
+AV,Carife,83040
+AV,Casalbore,83034
+AV,Cassano Irpino,83040
+AV,Castel Baronia,83040
+AV,Castelfranci,83040
+AV,Castelvetere sul Calore,83040
+AV,Cervinara,83012
+AV,Cesinali,83020
+AV,Chianche,83010
+AV,Chiusano di San Domenico,83040
+AV,Contrada,83020
+AV,Conza della Campania,83040
+AV,Domicella,83020
+AV,Flumeri,83040
+AV,Fontanarosa,83040
+AV,Forino,83020
+AV,Frigento,83040
+AV,Gesualdo,83040
+AV,Greci,83030
+AV,Grottaminarda,83035
+AV,Grottolella,83010
+AV,Guardia Lombardi,83040
+AV,Lacedonia,83046
+AV,Lapio,83030
+AV,Lauro,83023
+AV,Lioni,83047
+AV,Luogosano,83040
+AV,Manocalzati,83030
+AV,Marzano di Nola,83020
+AV,Melito Irpino,83030
+AV,Mercogliano,83013
+AV,Mirabella Eclano,83036
+AV,Montaguto,83030
+AV,Montecalvo Irpino,83037
+AV,Montefalcione,83030
+AV,Monteforte Irpino,83024
+AV,Montefredane,83030
+AV,Montefusco,83030
+AV,Montella,83048
+AV,Montemarano,83040
+AV,Montemiletto,83038
+AV,Monteverde,83049
+AV,Montoro Inferiore,83025
+AV,Montoro Superiore,83026
+AV,Morra De Sanctis,83040
+AV,Moschiano,83020
+AV,Mugnano del Cardinale,83027
+AV,Nusco,83051
+AV,Ospedaletto d'Alpinolo,83014
+AV,Pago del Vallo di Lauro,83020
+AV,Parolise,83050
+AV,Paternopoli,83052
+AV,Petruro Irpino,83010
+AV,Pietradefusi,83030
+AV,Pietrastornina,83015
+AV,Prata di Principato Ultra,83030
+AV,Pratola Serra,83039
+AV,Quadrelle,83020
+AV,Quindici,83020
+AV,Rocca San Felice,83050
+AV,Roccabascerana,83016
+AV,Rotondi,83017
+AV,Salza Irpina,83050
+AV,San Mango sul Calore,83050
+AV,San Martino Valle Caudina,83018
+AV,San Michele di Serino,83020
+AV,San Nicola Baronia,83050
+AV,San Potito Ultra,83050
+AV,San Sossio Baronia,83050
+AV,Santa Lucia di Serino,83020
+AV,Santa Paolina,83030
+AV,Sant'Andrea di Conza,83053
+AV,Sant'Angelo a Scala,83010
+AV,Sant'Angelo all'Esca,83050
+AV,Sant'Angelo dei Lombardi,83054
+AV,Santo Stefano del Sole,83050
+AV,Savignano Irpino,83030
+AV,Scampitella,83050
+AV,Senerchia,83050
+AV,Serino,83028
+AV,Sirignano,83020
+AV,Solofra,83029
+AV,Sorbo Serpico,83050
+AV,Sperone,83020
+AV,Sturno,83055
+AV,Summonte,83010
+AV,Taurano,83020
+AV,Taurasi,83030
+AV,Teora,83056
+AV,Torella dei Lombardi,83057
+AV,Torre Le Nocelle,83030
+AV,Torrioni,83010
+AV,Trevico,83058
+AV,Tufo,83010
+AV,Vallata,83059
+AV,Vallesaccarda,83050
+AV,Venticano,83030
+AV,Villamaina,83050
+AV,Villanova del Battista,83030
+AV,Volturara Irpina,83050
+AV,Zungoli,83030
+BA,Acquaviva delle Fonti,70021
+BA,Adelfia,70010
+BA,Alberobello,70011
+BA,Altamura,70022
+BA,Bari,701xx
+BA,Binetto,70020
+BA,Bitetto,70020
+BA,Bitonto,70032
+BA,Bitritto,70020
+BA,Capurso,70010
+BA,Casamassima,70010
+BA,Cassano delle Murge,70020
+BA,Castellana Grotte,70013
+BA,Cellamare,70010
+BA,Conversano,70014
+BA,Corato,70033
+BA,Gioia del Colle,70023
+BA,Giovinazzo,70054
+BA,Gravina in Puglia,70024
+BA,Grumo Appula,70025
+BA,Locorotondo,70010
+BA,Modugno,70026
+BA,Mola di Bari,70042
+BA,Molfetta,70056
+BA,Monopoli,70043
+BA,Noci,70015
+BA,Noicàttaro,70016
+BA,Palo del Colle,70027
+BA,Poggiorsini,70020
+BA,Polignano a Mare,70044
+BA,Putignano,70017
+BA,Rutigliano,70018
+BA,Ruvo di Puglia,70037
+BA,Sammichele di Bari,70010
+BA,Sannicandro di Bari,70028
+BA,Santeramo in Colle,70029
+BA,Terlizzi,70038
+BA,Toritto,70020
+BA,Triggiano,70019
+BA,Turi,70010
+BA,Valenzano,70010
+BG,Adrara San Martino,24060
+BG,Adrara San Rocco,24060
+BG,Albano Sant'Alessandro,24061
+BG,Albino,24021
+BG,Algua,24010
+BG,Almè,24011
+BG,Almenno San Bartolomeo,24030
+BG,Almenno San Salvatore,24031
+BG,Alzano Lombardo,24022
+BG,Ambivere,24030
+BG,Antegnate,24051
+BG,Arcene,24040
+BG,Ardesio,24020
+BG,Arzago d'Adda,24040
+BG,Averara,24010
+BG,Aviatico,24020
+BG,Azzano San Paolo,24052
+BG,Azzone,24020
+BG,Bagnatica,24060
+BG,Barbata,24040
+BG,Bariano,24050
+BG,Barzana,24030
+BG,Bedulita,24030
+BG,Berbenno,24030
+BG,Bergamo,241xx
+BG,Berzo San Fermo,24060
+BG,Bianzano,24060
+BG,Blello,24010
+BG,Bolgare,24060
+BG,Boltiere,24040
+BG,Bonate Sopra,24040
+BG,Bonate Sotto,24040
+BG,Borgo di Terzo,24060
+BG,Bossico,24060
+BG,Bottanuco,24040
+BG,Bracca,24010
+BG,Branzi,24010
+BG,Brembate,24041
+BG,Brembate di Sopra,24030
+BG,Brembilla,24012
+BG,Brignano Gera d'Adda,24053
+BG,Brumano,24037
+BG,Brusaporto,24060
+BG,Calcinate,24050
+BG,Calcio,24054
+BG,Calusco d'Adda,24033
+BG,Calvenzano,24040
+BG,Camerata Cornello,24010
+BG,Canonica d'Adda,24040
+BG,Capizzone,24030
+BG,Capriate San Gervasio,24042
+BG,Caprino Bergamasco,24030
+BG,Caravaggio,24043
+BG,Carobbio degli Angeli,24060
+BG,Carona,24010
+BG,Carvico,24030
+BG,Casazza,24060
+BG,Casirate d'Adda,24040
+BG,Casnigo,24020
+BG,Cassiglio,24010
+BG,Castel Rozzone,24040
+BG,Castelli Calepio,24060
+BG,Castione della Presolana,24020
+BG,Castro,24063
+BG,Cavernago,24050
+BG,Cazzano Sant'Andrea,24026
+BG,Cenate Sopra,24060
+BG,Cenate Sotto,24069
+BG,Cene,24020
+BG,Cerete,24020
+BG,Chignolo d'Isola,24040
+BG,Chiuduno,24060
+BG,Cisano Bergamasco,24034
+BG,Ciserano,24040
+BG,Cividate al Piano,24050
+BG,Clusone,24023
+BG,Colere,24020
+BG,Cologno al Serio,24055
+BG,Colzate,24020
+BG,Comun Nuovo,24040
+BG,Corna Imagna,24030
+BG,Cornalba,24017
+BG,Cortenuova,24050
+BG,Costa di Mezzate,24060
+BG,Costa Serina,24010
+BG,Costa Valle Imagna,24030
+BG,Costa Volpino,24062
+BG,Covo,24050
+BG,Credaro,24060
+BG,Curno,24035
+BG,Cusio,24010
+BG,Dalmine,24044
+BG,Dossena,24010
+BG,Endine Gaiano,24060
+BG,Entratico,24060
+BG,Fara Gera d'Adda,24045
+BG,Fara Olivana con Sola,24058
+BG,Filago,24040
+BG,Fino del Monte,24020
+BG,Fiorano al Serio,24020
+BG,Fontanella,24056
+BG,Fonteno,24060
+BG,Foppolo,24010
+BG,Foresto Sparso,24060
+BG,Fornovo San Giovanni,24040
+BG,Fuipiano Valle Imagna,24030
+BG,Gandellino,24020
+BG,Gandino,24024
+BG,Gandosso,24060
+BG,Gaverina Terme,24060
+BG,Gazzaniga,24025
+BG,Gerosa,24010
+BG,Ghisalba,24050
+BG,Gorlago,24060
+BG,Gorle,24020
+BG,Gorno,24020
+BG,Grassobbio,24050
+BG,Gromo,24020
+BG,Grone,24060
+BG,Grumello del Monte,24064
+BG,Isola di Fondra,24010
+BG,Isso,24040
+BG,Lallio,24040
+BG,Leffe,24026
+BG,Lenna,24010
+BG,Levate,24040
+BG,Locatello,24030
+BG,Lovere,24065
+BG,Lurano,24050
+BG,Luzzana,24069
+BG,Madone,24040
+BG,Mapello,24030
+BG,Martinengo,24057
+BG,Medolago,24030
+BG,Mezzoldo,24010
+BG,Misano di Gera d'Adda,24040
+BG,Moio de' Calvi,24010
+BG,Monasterolo del Castello,24060
+BG,Montello,24060
+BG,Morengo,24050
+BG,Mornico al Serio,24050
+BG,Mozzanica,24050
+BG,Mozzo,24030
+BG,Nembro,24027
+BG,Olmo al Brembo,24010
+BG,Oltre il Colle,24013
+BG,Oltressenda Alta,24020
+BG,Oneta,24020
+BG,Onore,24020
+BG,Orio al Serio,24050
+BG,Ornica,24010
+BG,Osio Sopra,24040
+BG,Osio Sotto,24046
+BG,Pagazzano,24040
+BG,Paladina,24030
+BG,Palazzago,24030
+BG,Palosco,24050
+BG,Parre,24020
+BG,Parzanica,24060
+BG,Pedrengo,24066
+BG,Peia,24020
+BG,Pianico,24060
+BG,Piario,24020
+BG,Piazza Brembana,24014
+BG,Piazzatorre,24010
+BG,Piazzolo,24010
+BG,Pognano,24040
+BG,Ponte Nossa,24028
+BG,Ponte San Pietro,24036
+BG,Ponteranica,24010
+BG,Pontida,24030
+BG,Pontirolo Nuovo,24040
+BG,Pradalunga,24020
+BG,Predore,24060
+BG,Premolo,24020
+BG,Presezzo,24030
+BG,Pumenengo,24050
+BG,Ranica,24020
+BG,Ranzanico,24060
+BG,Riva di Solto,24060
+BG,Rogno,24060
+BG,Romano di Lombardia,24058
+BG,Roncobello,24010
+BG,Roncola,24030
+BG,Rota d'Imagna,24037
+BG,Rovetta,24020
+BG,San Giovanni Bianco,24015
+BG,San Paolo d'Argon,24060
+BG,San Pellegrino Terme,24016
+BG,Santa Brigida,24010
+BG,Sant'Omobono Terme,24038
+BG,Sarnico,24067
+BG,Scanzorosciate,24020
+BG,Schilpario,24020
+BG,Sedrina,24010
+BG,Selvino,24020
+BG,Seriate,24068
+BG,Serina,24017
+BG,Solto Collina,24060
+BG,Solza,24030
+BG,Songavazzo,24020
+BG,Sorisole,24010
+BG,Sotto il Monte Giovanni XXIII,24039
+BG,Sovere,24060
+BG,Spinone al Lago,24060
+BG,Spirano,24050
+BG,Stezzano,24040
+BG,Strozza,24030
+BG,Suisio,24040
+BG,Taleggio,24010
+BG,Tavernola Bergamasca,24060
+BG,Telgate,24060
+BG,Terno d'Isola,24030
+BG,Torre Boldone,24020
+BG,Torre de' Roveri,24060
+BG,Torre Pallavicina,24050
+BG,Trescore Balneario,24069
+BG,Treviglio,24047
+BG,Treviolo,24048
+BG,Ubiale Clanezzo,24010
+BG,Urgnano,24059
+BG,Valbondione,24020
+BG,Valbrembo,24030
+BG,Valgoglio,24020
+BG,Valleve,24010
+BG,Valnegra,24010
+BG,Valsecca,24030
+BG,Valtorta,24010
+BG,Vedeseta,24010
+BG,Verdellino,24040
+BG,Verdello,24049
+BG,Vertova,24029
+BG,Viadanica,24060
+BG,Vigano San Martino,24060
+BG,Vigolo,24060
+BG,Villa d'Adda,24030
+BG,Villa d'Almè,24018
+BG,Villa di Serio,24020
+BG,Villa d'Ogna,24020
+BG,Villongo,24060
+BG,Vilminore di Scalve,24020
+BG,Zandobbio,24060
+BG,Zanica,24050
+BG,Zogno,24019
+BI,Ailoche,13861
+BI,Andorno Micca,13811
+BI,Benna,13871
+BI,Biella,13900
+BI,Bioglio,13841
+BI,Borriana,13872
+BI,Brusnengo,13862
+BI,Callabiana,13821
+BI,Camandona,13821
+BI,Camburzano,13891
+BI,Campiglia Cervo,13812
+BI,Candelo,13878
+BI,Caprile,13864
+BI,Casapinta,13866
+BI,Castelletto Cervo,13851
+BI,Cavaglià,13881
+BI,Cerreto Castello,13852
+BI,Cerrione,13882
+BI,Coggiola,13863
+BI,Cossato,13836
+BI,Crevacuore,13864
+BI,Crosa,13853
+BI,Curino,13865
+BI,Donato,13893
+BI,Dorzano,13881
+BI,Gaglianico,13894
+BI,Gifflenga,13874
+BI,Graglia,13895
+BI,Lessona,13853
+BI,Magnano,13887
+BI,Massazza,13873
+BI,Masserano,13866
+BI,Mezzana Mortigliengo,13831
+BI,Miagliano,13816
+BI,Mongrando,13888
+BI,Mosso,13822
+BI,Mottalciata,13874
+BI,Muzzano,13895
+BI,Netro,13896
+BI,Occhieppo Inferiore,13897
+BI,Occhieppo Superiore,13898
+BI,Pettinengo,13843
+BI,Piatto,13844
+BI,Piedicavallo,13812
+BI,Pollone,13814
+BI,Ponderano,13875
+BI,Portula,13833
+BI,Pralungo,13899
+BI,Pray,13867
+BI,Quaregna,13854
+BI,Quittengo,13812
+BI,Ronco Biellese,13845
+BI,Roppolo,13883
+BI,Rosazza,13815
+BI,Sagliano Micca,13816
+BI,Sala Biellese,13884
+BI,Salussola,13885
+BI,San Paolo Cervo,13812
+BI,Sandigliano,13876
+BI,Selve Marcone,13841
+BI,Soprana,13834
+BI,Sordevolo,13817
+BI,Sostegno,13868
+BI,Strona,13823
+BI,Tavigliano,13811
+BI,Ternengo,13844
+BI,Tollegno,13818
+BI,Torrazzo,13884
+BI,Trivero,13835
+BI,Valdengo,13855
+BI,Vallanzengo,13847
+BI,Valle Mosso,13825
+BI,Valle San Nicolao,13847
+BI,Veglio,13824
+BI,Verrone,13871
+BI,Vigliano Biellese,13856
+BI,Villa del Bosco,13868
+BI,Villanova Biellese,13877
+BI,Viverone,13886
+BI,Zimone,13887
+BI,Zubiena,13888
+BI,Zumaglia,13848
+BL,Agordo,32021
+BL,Alano di Piave,32031
+BL,Alleghe,32022
+BL,Arsiè,32030
+BL,Auronzo di Cadore,32041
+BL,Belluno,32100
+BL,Borca di Cadore,32040
+BL,Calalzo di Cadore,32042
+BL,Canale d'Agordo,32020
+BL,Castellavazzo,32010
+BL,Cencenighe Agordino,32020
+BL,Cesiomaggiore,32030
+BL,Chies d'Alpago,32010
+BL,Cibiana di Cadore,32040
+BL,Colle Santa Lucia,32020
+BL,Comelico Superiore,32040
+BL,Cortina d'Ampezzo,32043
+BL,Danta di Cadore,32040
+BL,Domegge di Cadore,32040
+BL,Falcade,32020
+BL,Farra d'Alpago,32016
+BL,Feltre,32032
+BL,Fonzaso,32030
+BL,Forno di Zoldo,32012
+BL,Gosaldo,32020
+BL,La Valle Agordina,32020
+BL,Lamon,32033
+BL,Lentiai,32020
+BL,Limana,32020
+BL,Livinallongo del Col di Lana,32020
+BL,Longarone,32013
+BL,Lorenzago di Cadore,32040
+BL,Lozzo di Cadore,32040
+BL,Mel,32026
+BL,Ospitale di Cadore,32010
+BL,Pedavena,32034
+BL,Perarolo di Cadore,32010
+BL,Pieve d'Alpago,32010
+BL,Pieve di Cadore,32044
+BL,Ponte nelle Alpi,32014
+BL,Puos d'Alpago,32015
+BL,Quero,32030
+BL,Rivamonte Agordino,32020
+BL,Rocca Pietore,32020
+BL,San Gregorio nelle Alpi,32030
+BL,San Nicolò di Comelico,32040
+BL,San Pietro di Cadore,32040
+BL,San Tomaso Agordino,32020
+BL,San Vito di Cadore,32046
+BL,Santa Giustina,32035
+BL,Santo Stefano di Cadore,32045
+BL,Sappada,32047
+BL,Sedico,32036
+BL,Selva di Cadore,32020
+BL,Seren del Grappa,32030
+BL,Sospirolo,32037
+BL,Soverzene,32010
+BL,Sovramonte,32030
+BL,Taibon Agordino,32027
+BL,Tambre,32010
+BL,Trichiana,32028
+BL,Vallada Agordina,32020
+BL,Valle di Cadore,32040
+BL,Vas,32030
+BL,Vigo di Cadore,32040
+BL,Vodo Cadore,32040
+BL,Voltago Agordino,32020
+BL,Zoldo Alto,32010
+BL,Zoppè di Cadore,32010
+BN,Airola,82011
+BN,Amorosi,82031
+BN,Apice,82021
+BN,Apollosa,82030
+BN,Arpaia,82011
+BN,Arpaise,82010
+BN,Baselice,82020
+BN,Benevento,82100
+BN,Bonea,82013
+BN,Bucciano,82010
+BN,Buonalbergo,82020
+BN,Calvi,82018
+BN,Campolattaro,82020
+BN,Campoli del Monte Taburno,82030
+BN,Casalduni,82027
+BN,Castelfranco in Miscano,82022
+BN,Castelpagano,82024
+BN,Castelpoto,82030
+BN,Castelvenere,82037
+BN,Castelvetere in Val Fortore,82023
+BN,Cautano,82030
+BN,Ceppaloni,82010
+BN,Cerreto Sannita,82032
+BN,Circello,82020
+BN,Colle Sannita,82024
+BN,Cusano Mutri,82033
+BN,Dugenta,82030
+BN,Durazzano,82015
+BN,Faicchio,82030
+BN,Foglianise,82030
+BN,Foiano di Val Fortore,82020
+BN,Forchia,82011
+BN,Fragneto L'Abate,82020
+BN,Fragneto Monforte,82020
+BN,Frasso Telesino,82030
+BN,Ginestra degli Schiavoni,82020
+BN,Guardia Sanframondi,82034
+BN,Limatola,82030
+BN,Melizzano,82030
+BN,Moiano,82010
+BN,Molinara,82020
+BN,Montefalcone di Val Fortore,82025
+BN,Montesarchio,82016
+BN,Morcone,82026
+BN,Paduli,82020
+BN,Pago Veiano,82020
+BN,Pannarano,82017
+BN,Paolisi,82011
+BN,Paupisi,82030
+BN,Pesco Sannita,82020
+BN,Pietraroja,82030
+BN,Pietrelcina,82020
+BN,Ponte,82030
+BN,Pontelandolfo,82027
+BN,Puglianello,82030
+BN,Reino,82020
+BN,San Bartolomeo in Galdo,82028
+BN,San Giorgio del Sannio,82018
+BN,San Giorgio La Molara,82020
+BN,San Leucio del Sannio,82010
+BN,San Lorenzello,82030
+BN,San Lorenzo Maggiore,82034
+BN,San Lupo,82034
+BN,San Marco dei Cavoti,82029
+BN,San Martino Sannita,82010
+BN,San Nazzaro,82018
+BN,San Nicola Manfredi,82010
+BN,San Salvatore Telesino,82030
+BN,Santa Croce del Sannio,82020
+BN,Sant'Agata De' Goti,82019
+BN,Sant'Angelo a Cupolo,82010
+BN,Sant'Arcangelo Trimonte,82021
+BN,Sassinoro,82026
+BN,Solopaca,82036
+BN,Telese Terme,82037
+BN,Tocco Caudio,82030
+BN,Torrecuso,82030
+BN,Vitulano,82038
+BO,Anzola dell'Emilia,40011
+BO,Argelato,40050
+BO,Baricella,40052
+BO,Bazzano,40053
+BO,Bentivoglio,40010
+BO,Bologna,401xx
+BO,Borgo Tossignano,40021
+BO,Budrio,40054
+BO,Calderara di Reno,40012
+BO,Camugnano,40032
+BO,Casalecchio di Reno,40033
+BO,Casalfiumanese,40020
+BO,Castel d'Aiano,40034
+BO,Castel del Rio,40022
+BO,Castel di Casio,40030
+BO,Castel Guelfo di Bologna,40023
+BO,Castel Maggiore,40013
+BO,Castel San Pietro Terme,40024
+BO,Castello d'Argile,40050
+BO,Castello di Serravalle,40050
+BO,Castenaso,40055
+BO,Castiglione dei Pepoli,40035
+BO,Crespellano,40056
+BO,Crevalcore,40014
+BO,Dozza,40060
+BO,Fontanelice,40025
+BO,Gaggio Montano,40041
+BO,Galliera,40015
+BO,Granaglione,40045
+BO,Granarolo dell'Emilia,40057
+BO,Grizzana Morandi,40030
+BO,Imola,40026
+BO,Lizzano in Belvedere,40042
+BO,Loiano,40050
+BO,Malalbergo,40051
+BO,Marzabotto,40043
+BO,Medicina,40059
+BO,Minerbio,40061
+BO,Molinella,40062
+BO,Monghidoro,40063
+BO,Monte San Pietro,40050
+BO,Monterenzio,40050
+BO,Monteveglio,40050
+BO,Monzuno,40036
+BO,Mordano,40027
+BO,Ozzano dell'Emilia,40064
+BO,Pianoro,40065
+BO,Pieve di Cento,40066
+BO,Porretta Terme,40046
+BO,Sala Bolognese,40010
+BO,San Benedetto Val di Sambro,40048
+BO,San Giorgio di Piano,40016
+BO,San Giovanni in Persiceto,40017
+BO,San Lazzaro di Savena,40068
+BO,San Pietro in Casale,40018
+BO,Sant'Agata Bolognese,40019
+BO,Sasso Marconi,40037
+BO,Savigno,40060
+BO,Vergato,40038
+BO,Zola Predosa,40069
+BR,Brindisi,72100
+BR,Carovigno,72012
+BR,Ceglie Messapica,72013
+BR,Cellino San Marco,72020
+BR,Cisternino,72014
+BR,Erchie,72020
+BR,Fasano,72015
+BR,Francavilla Fontana,72021
+BR,Latiano,72022
+BR,Mesagne,72023
+BR,Oria,72024
+BR,Ostuni,72017
+BR,San Donaci,72025
+BR,San Michele Salentino,72018
+BR,San Pancrazio Salentino,72026
+BR,San Pietro Vernotico,72027
+BR,San Vito dei Normanni,72019
+BR,Torchiarolo,72020
+BR,Torre Santa Susanna,72028
+BR,Villa Castelli,72029
+BS,Acquafredda,25010
+BS,Adro,25030
+BS,Agnosine,25071
+BS,Alfianello,25020
+BS,Anfo,25070
+BS,Angolo Terme,25040
+BS,Artogne,25040
+BS,Azzano Mella,25020
+BS,Bagnolo Mella,25021
+BS,Bagolino,25072
+BS,Barbariga,25030
+BS,Barghe,25070
+BS,Bassano Bresciano,25020
+BS,Bedizzole,25081
+BS,Berlingo,25030
+BS,Berzo Demo,25040
+BS,Berzo Inferiore,25040
+BS,Bienno,25040
+BS,Bione,25070
+BS,Borgo San Giacomo,25022
+BS,Borgosatollo,25010
+BS,Borno,25042
+BS,Botticino,25082
+BS,Bovegno,25061
+BS,Bovezzo,25073
+BS,Brandico,25030
+BS,Braone,25040
+BS,Breno,25043
+BS,Brescia,251xx
+BS,Brione,25060
+BS,Caino,25070
+BS,Calcinato,25011
+BS,Calvagese della Riviera,25080
+BS,Calvisano,25012
+BS,Capo di Ponte,25044
+BS,Capovalle,25070
+BS,Capriano del Colle,25020
+BS,Capriolo,25031
+BS,Carpenedolo,25013
+BS,Castegnato,25045
+BS,Castel Mella,25030
+BS,Castelcovati,25030
+BS,Castenedolo,25014
+BS,Casto,25070
+BS,Castrezzato,25030
+BS,Cazzago San Martino,25046
+BS,Cedegolo,25051
+BS,Cellatica,25060
+BS,Cerveno,25040
+BS,Ceto,25040
+BS,Cevo,25040
+BS,Chiari,25032
+BS,Cigole,25020
+BS,Cimbergo,25050
+BS,Cividate Camuno,25040
+BS,Coccaglio,25030
+BS,Collebeato,25060
+BS,Collio,25060
+BS,Cologne,25033
+BS,Comezzano-Cizzago,25030
+BS,Concesio,25062
+BS,Corte Franca,25040
+BS,Corteno Golgi,25040
+BS,Corzano,25030
+BS,Darfo Boario Terme,25047
+BS,Dello,25020
+BS,Desenzano del Garda,25015
+BS,Edolo,25048
+BS,Erbusco,25030
+BS,Esine,25040
+BS,Fiesse,25020
+BS,Flero,25020
+BS,Gambara,25020
+BS,Gardone Riviera,25083
+BS,Gardone Val Trompia,25063
+BS,Gargnano,25084
+BS,Gavardo,25085
+BS,Ghedi,25016
+BS,Gianico,25040
+BS,Gottolengo,25023
+BS,Gussago,25064
+BS,Idro,25074
+BS,Incudine,25040
+BS,Irma,25061
+BS,Iseo,25049
+BS,Isorella,25010
+BS,Lavenone,25074
+BS,Leno,25024
+BS,Limone sul Garda,25010
+BS,Lodrino,25060
+BS,Lograto,25030
+BS,Lonato del Garda,25017
+BS,Longhena,25030
+BS,Losine,25050
+BS,Lozio,25040
+BS,Lumezzane,25065
+BS,Maclodio,25030
+BS,Magasa,25080
+BS,Mairano,25030
+BS,Malegno,25053
+BS,Malonno,25040
+BS,Manerba del Garda,25080
+BS,Manerbio,25025
+BS,Marcheno,25060
+BS,Marmentino,25060
+BS,Marone,25054
+BS,Mazzano,25080
+BS,Milzano,25020
+BS,Moniga del Garda,25080
+BS,Monno,25040
+BS,Monte Isola,25050
+BS,Monticelli Brusati,25040
+BS,Montichiari,25018
+BS,Montirone,25010
+BS,Mura,25070
+BS,Muscoline,25080
+BS,Nave,25075
+BS,Niardo,25050
+BS,Nuvolento,25080
+BS,Nuvolera,25080
+BS,Odolo,25076
+BS,Offlaga,25020
+BS,Ome,25050
+BS,Ono San Pietro,25040
+BS,Orzinuovi,25034
+BS,Orzivecchi,25030
+BS,Ospitaletto,25035
+BS,Ossimo,25050
+BS,Padenghe sul Garda,25080
+BS,Paderno Franciacorta,25050
+BS,Paisco Loveno,25050
+BS,Paitone,25080
+BS,Palazzolo sull'Oglio,25036
+BS,Paratico,25030
+BS,Paspardo,25050
+BS,Passirano,25050
+BS,Pavone del Mella,25020
+BS,Pertica Alta,25070
+BS,Pertica Bassa,25078
+BS,Pezzaze,25060
+BS,Pian Camuno,25050
+BS,Piancogno,25052
+BS,Pisogne,25055
+BS,Polaveno,25060
+BS,Polpenazze del Garda,25080
+BS,Pompiano,25030
+BS,Poncarale,25020
+BS,Ponte di Legno,25056
+BS,Pontevico,25026
+BS,Pontoglio,25037
+BS,Pozzolengo,25010
+BS,Pralboino,25020
+BS,Preseglie,25070
+BS,Prestine,25040
+BS,Prevalle,25080
+BS,Provaglio d'Iseo,25050
+BS,Provaglio Val Sabbia,25070
+BS,Puegnago sul Garda,25080
+BS,Quinzano d'Oglio,25027
+BS,Remedello,25010
+BS,Rezzato,25086
+BS,Roccafranca,25030
+BS,Rodengo Saiano,25050
+BS,Roè Volciano,25077
+BS,Roncadelle,25030
+BS,Rovato,25038
+BS,Rudiano,25030
+BS,Sabbio Chiese,25070
+BS,Sale Marasino,25057
+BS,Salò,25087
+BS,San Felice del Benaco,25010
+BS,San Gervasio Bresciano,25020
+BS,San Paolo,25020
+BS,San Zeno Naviglio,25010
+BS,Sarezzo,25068
+BS,Saviore dell'Adamello,25040
+BS,Sellero,25050
+BS,Seniga,25020
+BS,Serle,25080
+BS,Sirmione,25019
+BS,Soiano del Lago,25080
+BS,Sonico,25048
+BS,Sulzano,25058
+BS,Tavernole sul Mella,25060
+BS,Temù,25050
+BS,Tignale,25080
+BS,Torbole Casaglia,25030
+BS,Toscolano-Maderno,25088
+BS,Travagliato,25039
+BS,Tremosine,25010
+BS,Trenzano,25030
+BS,Treviso Bresciano,25070
+BS,Urago d'Oglio,25030
+BS,Vallio Terme,25080
+BS,Valvestino,25080
+BS,Verolanuova,25028
+BS,Verolavecchia,25029
+BS,Vestone,25078
+BS,Vezza d'Oglio,25059
+BS,Villa Carcina,25069
+BS,Villachiara,25030
+BS,Villanuova sul Clisi,25089
+BS,Vione,25050
+BS,Visano,25010
+BS,Vobarno,25079
+BS,Zone,25050
+BT,Andria,76123
+BT,Barletta,76121
+BT,Bisceglie,76011
+BT,Canosa di Puglia,76012
+BT,Margherita di Savoia,76016
+BT,Minervino Murge,76013
+BT,San Ferdinando di Puglia,76017
+BT,Spinazzola,76014
+BT,Trani,76125
+BT,Trinitapoli,76015
+BZ,Aldino,39040
+BZ,Andriano,39010
+BZ,Anterivo,39040
+BZ,Appiano sulla Strada del Vino,39057
+BZ,Avelengo,39010
+BZ,Badia,39036
+BZ,Barbiano,39040
+BZ,Bolzano,39100
+BZ,Braies,39030
+BZ,Brennero,39041
+BZ,Bressanone,39042
+BZ,Bronzolo,39051
+BZ,Brunico,39031
+BZ,Caines,39010
+BZ,Caldaro sulla Strada del Vino,39052
+BZ,Campo di Trens,39040
+BZ,Campo Tures,39032
+BZ,Castelbello-Ciardes,39020
+BZ,Castelrotto,39040
+BZ,Cermes,39010
+BZ,Chienes,39030
+BZ,Chiusa,39043
+BZ,Cornedo all'Isarco,39053
+BZ,Cortaccia sulla Strada del Vino,39040
+BZ,Cortina sulla Strada del Vino,39040
+BZ,Corvara in Badia,39033
+BZ,Curon Venosta,39027
+BZ,Dobbiaco,39034
+BZ,Egna,39044
+BZ,Falzes,39030
+BZ,Fiè allo Sciliar,39050
+BZ,Fortezza,39045
+BZ,Funes,39040
+BZ,Gais,39030
+BZ,Gargazzone,39010
+BZ,Glorenza,39020
+BZ,La Valle,39030
+BZ,Laces,39021
+BZ,Lagundo,39022
+BZ,Laion,39040
+BZ,Laives,39055
+BZ,Lana,39011
+BZ,Lasa,39023
+BZ,Lauregno,39040
+BZ,Luson,39040
+BZ,Magrè sulla Strada del Vino,39040
+BZ,Malles Venosta,39024
+BZ,Marebbe,39030
+BZ,Marlengo,39020
+BZ,Martello,39020
+BZ,Meltina,39010
+BZ,Merano,39012
+BZ,Monguelfo-Tesido,39035
+BZ,Montagna,39040
+BZ,Moso in Passiria,39013
+BZ,Nalles,39010
+BZ,Naturno,39025
+BZ,Naz-Sciaves,39040
+BZ,Nova Levante,39056
+BZ,Nova Ponente,39050
+BZ,Ora,39040
+BZ,Ortisei,39046
+BZ,Parcines,39020
+BZ,Perca,39030
+BZ,Plaus,39025
+BZ,Ponte Gardena,39040
+BZ,Postal,39014
+BZ,Prato allo Stelvio,39026
+BZ,Predoi,39030
+BZ,Proves,39040
+BZ,Racines,39040
+BZ,Rasun Anterselva,39030
+BZ,Renon,39054
+BZ,Rifiano,39010
+BZ,Rio di Pusteria,39037
+BZ,Rodengo,39037
+BZ,Salorno,39040
+BZ,San Candido,39038
+BZ,San Genesio Atesino,39050
+BZ,San Leonardo in Passiria,39015
+BZ,San Lorenzo di Sebato,39030
+BZ,San Martino in Badia,39030
+BZ,San Martino in Passiria,39010
+BZ,San Pancrazio,39010
+BZ,Santa Cristina Valgardena,39047
+BZ,Sarentino,39058
+BZ,Scena,39017
+BZ,Selva dei Molini,39030
+BZ,Selva di Val Gardena,39048
+BZ,Senales,39020
+BZ,Senale-San Felice,39010
+BZ,Sesto,39030
+BZ,Silandro,39028
+BZ,Sluderno,39020
+BZ,Stelvio,39029
+BZ,Terento,39030
+BZ,Terlano,39018
+BZ,Termeno sulla Strada del Vino,39040
+BZ,Tesimo,39010
+BZ,Tires,39050
+BZ,Tirolo,39019
+BZ,Trodena nel parco naturale,39040
+BZ,Tubre,39020
+BZ,Ultimo,39016
+BZ,Vadena,39051
+BZ,Val di Vizze,39049
+BZ,Valdaora,39030
+BZ,Valle Aurina,39030
+BZ,Valle di Casies,39030
+BZ,Vandoies,39030
+BZ,Varna,39040
+BZ,Velturno,39040
+BZ,Verano,39010
+BZ,Villabassa,39039
+BZ,Villandro,39040
+BZ,Vipiteno,39049
+CA,Armungia,9040
+CA,Assemini,9032
+CA,Ballao,9040
+CA,Barrali,9040
+CA,Burcei,9040
+CA,Cagliari,091xx
+CA,Capoterra,9012
+CA,Castiadas,9040
+CA,Decimomannu,9033
+CA,Decimoputzu,9010
+CA,Dolianova,9041
+CA,Domus De Maria,9010
+CA,Donori,9040
+CA,Elmas,9030
+CA,Escalaplano,8043
+CA,Escolca,8030
+CA,Esterzili,8030
+CA,Gergei,8030
+CA,Gesico,9040
+CA,Goni,9040
+CA,Guamaggiore,9040
+CA,Guasila,9040
+CA,Isili,8033
+CA,Mandas,9040
+CA,Maracalagonis,9040
+CA,Monastir,9023
+CA,Monserrato,9042
+CA,Muravera,9043
+CA,Nuragus,8030
+CA,Nurallao,8030
+CA,Nuraminis,9024
+CA,Nurri,8035
+CA,Orroli,8030
+CA,Ortacesus,9040
+CA,Pimentel,9020
+CA,Pula,9010
+CA,Quartu Sant'Elena,9045
+CA,Quartucciu,9044
+CA,Sadali,8030
+CA,Samatzai,9020
+CA,San Basilio,9040
+CA,San Nicolò Gerrei,9040
+CA,San Sperate,9026
+CA,San Vito,9040
+CA,Sant'Andrea Frius,9040
+CA,Sarroch,9018
+CA,Selargius,9047
+CA,Selegas,9040
+CA,Senorbì,9040
+CA,Serdiana,9040
+CA,Serri,8030
+CA,Sestu,9028
+CA,Settimo San Pietro,9040
+CA,Seulo,8030
+CA,Siliqua,9010
+CA,Silius,9040
+CA,Sinnai,9048
+CA,Siurgus Donigala,9040
+CA,Soleminis,9040
+CA,Suelli,9040
+CA,Teulada,9019
+CA,Ussana,9020
+CA,Uta,9010
+CA,Vallermosa,9010
+CA,Villa San Pietro,9010
+CA,Villanova Tulo,8030
+CA,Villaputzu,9040
+CA,Villasalto,9040
+CA,Villasimius,9049
+CA,Villasor,9034
+CA,Villaspeciosa,9010
+CB,Acquaviva Collecroce,86030
+CB,Baranello,86011
+CB,Bojano,86021
+CB,Bonefro,86041
+CB,Busso,86010
+CB,Campobasso,86100
+CB,Campochiaro,86020
+CB,Campodipietra,86010
+CB,Campolieto,86040
+CB,Campomarino,86042
+CB,Casacalenda,86043
+CB,Casalciprano,86010
+CB,Castelbottaccio,86030
+CB,Castellino del Biferno,86020
+CB,Castelmauro,86031
+CB,Castropignano,86010
+CB,Cercemaggiore,86012
+CB,Cercepiccola,86010
+CB,Civitacampomarano,86030
+CB,Colle d'Anchise,86020
+CB,Colletorto,86044
+CB,Duronia,86020
+CB,Ferrazzano,86010
+CB,Fossalto,86020
+CB,Gambatesa,86013
+CB,Gildone,86010
+CB,Guardialfiera,86030
+CB,Guardiaregia,86014
+CB,Guglionesi,86034
+CB,Jelsi,86015
+CB,Larino,86035
+CB,Limosano,86022
+CB,Lucito,86030
+CB,Lupara,86030
+CB,Macchia Valfortore,86040
+CB,Mafalda,86030
+CB,Matrice,86030
+CB,Mirabello Sannitico,86010
+CB,Molise,86020
+CB,Monacilioni,86040
+CB,Montagano,86023
+CB,Montecilfone,86032
+CB,Montefalcone nel Sannio,86033
+CB,Montelongo,86040
+CB,Montemitro,86030
+CB,Montenero di Bisaccia,86036
+CB,Montorio nei Frentani,86040
+CB,Morrone del Sannio,86040
+CB,Oratino,86010
+CB,Palata,86037
+CB,Petacciato,86038
+CB,Petrella Tifernina,86024
+CB,Pietracatella,86040
+CB,Pietracupa,86020
+CB,Portocannone,86045
+CB,Provvidenti,86040
+CB,Riccia,86016
+CB,Ripabottoni,86040
+CB,Ripalimosani,86025
+CB,Roccavivara,86020
+CB,Rotello,86040
+CB,Salcito,86026
+CB,San Biase,86020
+CB,San Felice del Molise,86030
+CB,San Giacomo degli Schiavoni,86030
+CB,San Giovanni in Galdo,86010
+CB,San Giuliano del Sannio,86010
+CB,San Giuliano di Puglia,86040
+CB,San Martino in Pensilis,86046
+CB,San Massimo,86027
+CB,San Polo Matese,86020
+CB,Santa Croce di Magliano,86047
+CB,Sant'Angelo Limosano,86020
+CB,Sant'Elia a Pianisi,86048
+CB,Sepino,86017
+CB,Spinete,86020
+CB,Tavenna,86030
+CB,Termoli,86039
+CB,Torella del Sannio,86028
+CB,Toro,86018
+CB,Trivento,86029
+CB,Tufara,86010
+CB,Ururi,86049
+CB,Vinchiaturo,86019
+CE,Ailano,81010
+CE,Alife,81011
+CE,Alvignano,81012
+CE,Arienzo,81021
+CE,Aversa,81031
+CE,Baia e Latina,81010
+CE,Bellona,81041
+CE,Caianello,81059
+CE,Caiazzo,81013
+CE,Calvi Risorta,81042
+CE,Camigliano,81050
+CE,Cancello ed Arnone,81030
+CE,Capodrise,81020
+CE,Capriati a Volturno,81014
+CE,Capua,81043
+CE,Carinaro,81032
+CE,Carinola,81030
+CE,Casagiove,81022
+CE,Casal di Principe,81033
+CE,Casaluce,81030
+CE,Casapesenna,81030
+CE,Casapulla,81020
+CE,Caserta,81100
+CE,Castel Campagnano,81010
+CE,Castel di Sasso,81040
+CE,Castel Morrone,81020
+CE,Castel Volturno,81030
+CE,Castello del Matese,81016
+CE,Cellole,81030
+CE,Cervino,81023
+CE,Cesa,81030
+CE,Ciorlano,81010
+CE,Conca della Campania,81044
+CE,Curti,81040
+CE,Dragoni,81010
+CE,Falciano del Massico,81030
+CE,Fontegreca,81014
+CE,Formicola,81040
+CE,Francolise,81050
+CE,Frignano,81030
+CE,Gallo Matese,81010
+CE,Galluccio,81044
+CE,Giano Vetusto,81042
+CE,Gioia Sannitica,81010
+CE,Grazzanise,81046
+CE,Gricignano di Aversa,81030
+CE,Letino,81010
+CE,Liberi,81040
+CE,Lusciano,81030
+CE,Macerata Campania,81047
+CE,Maddaloni,81024
+CE,Marcianise,81025
+CE,Marzano Appio,81035
+CE,Mignano Monte Lungo,81049
+CE,Mondragone,81034
+CE,Orta di Atella,81030
+CE,Parete,81030
+CE,Pastorano,81050
+CE,Piana di Monte Verna,81013
+CE,Piedimonte Matese,81016
+CE,Pietramelara,81051
+CE,Pietravairano,81040
+CE,Pignataro Maggiore,81052
+CE,Pontelatone,81040
+CE,Portico di Caserta,81050
+CE,Prata Sannita,81010
+CE,Pratella,81010
+CE,Presenzano,81050
+CE,Raviscanina,81017
+CE,Recale,81020
+CE,Riardo,81053
+CE,Rocca D'Evandro,81040
+CE,Roccamonfina,81035
+CE,Roccaromana,81051
+CE,Rocchetta e Croce,81042
+CE,Ruviano,81010
+CE,San Cipriano d'Aversa,81036
+CE,San Felice a Cancello,81027
+CE,San Gregorio Matese,81010
+CE,San Marcellino,81030
+CE,San Marco Evangelista,81020
+CE,San Nicola la Strada,81020
+CE,San Pietro Infine,81049
+CE,San Potito Sannitico,81016
+CE,San Prisco,81054
+CE,San Tammaro,81050
+CE,Santa Maria a Vico,81028
+CE,Santa Maria Capua Vetere,81055
+CE,Santa Maria La Fossa,81050
+CE,Sant'Angelo d'Alife,81017
+CE,Sant'Arpino,81030
+CE,Sessa Aurunca,81037
+CE,Sparanise,81056
+CE,Succivo,81030
+CE,Teano,81057
+CE,Teverola,81030
+CE,Tora e Piccilli,81044
+CE,Trentola-Ducenta,81038
+CE,Vairano Patenora,81058
+CE,Valle Agricola,81010
+CE,Valle di Maddaloni,81020
+CE,Villa di Briano,81030
+CE,Villa Literno,81039
+CE,Vitulazio,81041
+CH,Altino,66040
+CH,Archi,66044
+CH,Ari,66010
+CH,Arielli,66030
+CH,Atessa,66041
+CH,Bomba,66042
+CH,Borrello,66040
+CH,Bucchianico,66011
+CH,Canosa Sannita,66010
+CH,Carpineto Sinello,66030
+CH,Carunchio,66050
+CH,Casacanditella,66010
+CH,Casalanguida,66031
+CH,Casalbordino,66021
+CH,Casalincontrada,66012
+CH,Casoli,66043
+CH,Castel Frentano,66032
+CH,Castelguidone,66040
+CH,Castiglione Messer Marino,66033
+CH,Celenza sul Trigno,66050
+CH,Chieti,66100
+CH,Civitaluparella,66040
+CH,Civitella Messer Raimondo,66010
+CH,Colledimacine,66010
+CH,Colledimezzo,66040
+CH,Crecchio,66014
+CH,Cupello,66051
+CH,Dogliola,66050
+CH,Fallo,66040
+CH,Fara Filiorum Petri,66010
+CH,Fara San Martino,66015
+CH,Filetto,66030
+CH,Fossacesia,66022
+CH,Fraine,66050
+CH,Francavilla al Mare,66023
+CH,Fresagrandinaria,66050
+CH,Frisa,66030
+CH,Furci,66050
+CH,Gamberale,66040
+CH,Gessopalena,66010
+CH,Gissi,66052
+CH,Giuliano Teatino,66010
+CH,Guardiagrele,66016
+CH,Guilmi,66050
+CH,Lama dei Peligni,66010
+CH,Lanciano,66034
+CH,Lentella,66050
+CH,Lettopalena,66010
+CH,Liscia,66050
+CH,Miglianico,66010
+CH,Montazzoli,66030
+CH,Montebello sul Sangro,66040
+CH,Monteferrante,66040
+CH,Montelapiano,66040
+CH,Montenerodomo,66010
+CH,Monteodorisio,66050
+CH,Mozzagrogna,66030
+CH,Orsogna,66036
+CH,Ortona,66026
+CH,Paglieta,66020
+CH,Palena,66017
+CH,Palmoli,66050
+CH,Palombaro,66010
+CH,Pennadomo,66040
+CH,Pennapiedimonte,66010
+CH,Perano,66040
+CH,Pietraferrazzana,66040
+CH,Pizzoferrato,66040
+CH,Poggiofiorito,66030
+CH,Pollutri,66020
+CH,Pretoro,66010
+CH,Quadri,66040
+CH,Rapino,66010
+CH,Ripa Teatina,66010
+CH,Rocca San Giovanni,66020
+CH,Roccamontepiano,66010
+CH,Roccascalegna,66040
+CH,Roccaspinalveti,66050
+CH,Roio del Sangro,66040
+CH,Rosello,66040
+CH,San Buono,66050
+CH,San Giovanni Lipioni,66050
+CH,San Giovanni Teatino,66020
+CH,San Martino sulla Marrucina,66010
+CH,San Salvo,66050
+CH,San Vito Chietino,66038
+CH,Santa Maria Imbaro,66030
+CH,Sant'Eusanio del Sangro,66037
+CH,Scerni,66020
+CH,Schiavi di Abruzzo,66045
+CH,Taranta Peligna,66018
+CH,Tollo,66010
+CH,Torino di Sangro,66020
+CH,Tornareccio,66046
+CH,Torrebruna,66050
+CH,Torrevecchia Teatina,66010
+CH,Torricella Peligna,66019
+CH,Treglio,66030
+CH,Tufillo,66050
+CH,Vacri,66010
+CH,Vasto,66054
+CH,Villa Santa Maria,66047
+CH,Villalfonsina,66020
+CH,Villamagna,66010
+CI,Buggerru,9010
+CI,Calasetta,9011
+CI,Carbonia,9013
+CI,Carloforte,9014
+CI,Domusnovas,9015
+CI,Fluminimaggiore,9010
+CI,Giba,9010
+CI,Gonnesa,9010
+CI,Iglesias,9016
+CI,Masainas,9010
+CI,Musei,9010
+CI,Narcao,9010
+CI,Nuxis,9010
+CI,Perdaxius,9010
+CI,Piscinas,9010
+CI,Portoscuso,9010
+CI,San Giovanni Suergiu,9010
+CI,Santadi,9010
+CI,Sant'Anna Arresi,9010
+CI,Sant'Antioco,9017
+CI,Tratalias,9010
+CI,Villamassargia,9010
+CI,Villaperuccio,9010
+CL,Acquaviva Platani,93010
+CL,Bompensiere,93010
+CL,Butera,93011
+CL,Caltanissetta,93100
+CL,Campofranco,93010
+CL,Delia,93010
+CL,Gela,93012
+CL,Marianopoli,93010
+CL,Mazzarino,93013
+CL,Milena,93010
+CL,Montedoro,93010
+CL,Mussomeli,93014
+CL,Niscemi,93015
+CL,Resuttano,93010
+CL,Riesi,93016
+CL,San Cataldo,93017
+CL,Santa Caterina Villarmosa,93018
+CL,Serradifalco,93010
+CL,Sommatino,93019
+CL,Sutera,93010
+CL,Vallelunga Pratameno,93010
+CL,Villalba,93010
+CN,Acceglio,12021
+CN,Aisone,12010
+CN,Alba,12051
+CN,Albaretto della Torre,12050
+CN,Alto,12070
+CN,Argentera,12010
+CN,Arguello,12050
+CN,Bagnasco,12071
+CN,Bagnolo Piemonte,12031
+CN,Baldissero d'Alba,12040
+CN,Barbaresco,12050
+CN,Barge,12032
+CN,Barolo,12060
+CN,Bastia Mondovì,12060
+CN,Battifollo,12070
+CN,Beinette,12081
+CN,Bellino,12020
+CN,Belvedere Langhe,12060
+CN,Bene Vagienna,12041
+CN,Benevello,12050
+CN,Bergolo,12074
+CN,Bernezzo,12010
+CN,Bonvicino,12060
+CN,Borgo San Dalmazzo,12011
+CN,Borgomale,12050
+CN,Bosia,12050
+CN,Bossolasco,12060
+CN,Boves,12012
+CN,Bra,12042
+CN,Briaglia,12080
+CN,Briga Alta,18025
+CN,Brondello,12030
+CN,Brossasco,12020
+CN,Busca,12022
+CN,Camerana,12072
+CN,Camo,12050
+CN,Canale,12043
+CN,Canosio,12020
+CN,Caprauna,12070
+CN,Caraglio,12023
+CN,Caramagna Piemonte,12030
+CN,Cardè,12030
+CN,Carrù,12061
+CN,Cartignano,12020
+CN,Casalgrasso,12030
+CN,Castagnito,12050
+CN,Casteldelfino,12020
+CN,Castellar,12030
+CN,Castelletto Stura,12040
+CN,Castelletto Uzzone,12070
+CN,Castellinaldo,12050
+CN,Castellino Tanaro,12060
+CN,Castelmagno,12020
+CN,Castelnuovo di Ceva,12070
+CN,Castiglione Falletto,12060
+CN,Castiglione Tinella,12053
+CN,Castino,12050
+CN,Cavallerleone,12030
+CN,Cavallermaggiore,12030
+CN,Celle di Macra,12020
+CN,Centallo,12044
+CN,Ceresole Alba,12040
+CN,Cerretto Langhe,12050
+CN,Cervasca,12010
+CN,Cervere,12040
+CN,Ceva,12073
+CN,Cherasco,12062
+CN,Chiusa di Pesio,12013
+CN,Cigliè,12060
+CN,Cissone,12050
+CN,Clavesana,12060
+CN,Corneliano d'Alba,12040
+CN,Cortemilia,12074
+CN,Cossano Belbo,12054
+CN,Costigliole Saluzzo,12024
+CN,Cravanzana,12050
+CN,Crissolo,12030
+CN,Cuneo,12100
+CN,Demonte,12014
+CN,Diano d'Alba,12055
+CN,Dogliani,12063
+CN,Dronero,12025
+CN,Elva,12020
+CN,Entracque,12010
+CN,Envie,12030
+CN,Farigliano,12060
+CN,Faule,12030
+CN,Feisoglio,12050
+CN,Fossano,12045
+CN,Frabosa Soprana,12082
+CN,Frabosa Sottana,12083
+CN,Frassino,12020
+CN,Gaiola,12010
+CN,Gambasca,12030
+CN,Garessio,12075
+CN,Genola,12040
+CN,Gorzegno,12070
+CN,Gottasecca,12070
+CN,Govone,12040
+CN,Grinzane Cavour,12060
+CN,Guarene,12050
+CN,Igliano,12060
+CN,Isasca,12020
+CN,La Morra,12064
+CN,Lagnasco,12030
+CN,Lequio Berria,12050
+CN,Lequio Tanaro,12060
+CN,Lesegno,12076
+CN,Levice,12070
+CN,Limone Piemonte,12015
+CN,Lisio,12070
+CN,Macra,12020
+CN,Magliano Alfieri,12050
+CN,Magliano Alpi,12060
+CN,Mango,12056
+CN,Manta,12030
+CN,Marene,12030
+CN,Margarita,12040
+CN,Marmora,12020
+CN,Marsaglia,12060
+CN,Martiniana Po,12030
+CN,Melle,12020
+CN,Moiola,12010
+CN,Mombarcaro,12070
+CN,Mombasiglio,12070
+CN,Monastero di Vasco,12080
+CN,Monasterolo Casotto,12080
+CN,Monasterolo di Savigliano,12030
+CN,Monchiero,12060
+CN,Mondovì,12084
+CN,Monesiglio,12077
+CN,Monforte d'Alba,12065
+CN,Montà,12046
+CN,Montaldo di Mondovì,12080
+CN,Montaldo Roero,12040
+CN,Montanera,12040
+CN,Montelupo Albese,12050
+CN,Montemale di Cuneo,12025
+CN,Monterosso Grana,12020
+CN,Monteu Roero,12040
+CN,Montezemolo,12070
+CN,Monticello d'Alba,12066
+CN,Moretta,12033
+CN,Morozzo,12040
+CN,Murazzano,12060
+CN,Murello,12030
+CN,Narzole,12068
+CN,Neive,12052
+CN,Neviglie,12050
+CN,Niella Belbo,12050
+CN,Niella Tanaro,12060
+CN,Novello,12060
+CN,Nucetto,12070
+CN,Oncino,12030
+CN,Ormea,12078
+CN,Ostana,12030
+CN,Paesana,12034
+CN,Pagno,12030
+CN,Pamparato,12087
+CN,Paroldo,12070
+CN,Perletto,12070
+CN,Perlo,12070
+CN,Peveragno,12016
+CN,Pezzolo Valle Uzzone,12070
+CN,Pianfei,12080
+CN,Piasco,12026
+CN,Pietraporzio,12010
+CN,Piobesi d'Alba,12040
+CN,Piozzo,12060
+CN,Pocapaglia,12060
+CN,Polonghera,12030
+CN,Pontechianale,12020
+CN,Pradleves,12027
+CN,Prazzo,12028
+CN,Priero,12070
+CN,Priocca,12040
+CN,Priola,12070
+CN,Prunetto,12077
+CN,Racconigi,12035
+CN,Revello,12036
+CN,Rifreddo,12030
+CN,Rittana,12010
+CN,Roaschia,12010
+CN,Roascio,12073
+CN,Robilante,12017
+CN,Roburent,12080
+CN,Rocca Cigliè,12060
+CN,Rocca de' Baldi,12047
+CN,Roccabruna,12020
+CN,Roccaforte Mondovì,12088
+CN,Roccasparvera,12010
+CN,Roccavione,12018
+CN,Rocchetta Belbo,12050
+CN,Roddi,12060
+CN,Roddino,12050
+CN,Rodello,12050
+CN,Rossana,12020
+CN,Ruffia,12030
+CN,Sale delle Langhe,12070
+CN,Sale San Giovanni,12070
+CN,Saliceto,12079
+CN,Salmour,12040
+CN,Saluzzo,12037
+CN,Sambuco,12010
+CN,Sampeyre,12020
+CN,San Benedetto Belbo,12050
+CN,San Damiano Macra,12029
+CN,San Michele Mondovì,12080
+CN,Sanfrè,12040
+CN,Sanfront,12030
+CN,Santa Vittoria d'Alba,12069
+CN,Sant'Albano Stura,12040
+CN,Santo Stefano Belbo,12058
+CN,Santo Stefano Roero,12040
+CN,Savigliano,12038
+CN,Scagnello,12070
+CN,Scarnafigi,12030
+CN,Serralunga d'Alba,12050
+CN,Serravalle Langhe,12050
+CN,Sinio,12050
+CN,Somano,12060
+CN,Sommariva del Bosco,12048
+CN,Sommariva Perno,12040
+CN,Stroppo,12020
+CN,Tarantasca,12020
+CN,Torre Bormida,12050
+CN,Torre Mondovì,12080
+CN,Torre San Giorgio,12030
+CN,Torresina,12070
+CN,Treiso,12050
+CN,Trezzo Tinella,12050
+CN,Trinità,12049
+CN,Valdieri,12010
+CN,Valgrana,12020
+CN,Valloriate,12010
+CN,Valmala,12020
+CN,Venasca,12020
+CN,Verduno,12060
+CN,Vernante,12019
+CN,Verzuolo,12039
+CN,Vezza d'Alba,12040
+CN,Vicoforte,12080
+CN,Vignolo,12010
+CN,Villafalletto,12020
+CN,Villanova Mondovì,12089
+CN,Villanova Solaro,12030
+CN,Villar San Costanzo,12020
+CN,Vinadio,12010
+CN,Viola,12070
+CN,Vottignasco,12020
+CO,Albavilla,22031
+CO,Albese con Cassano,22032
+CO,Albiolo,22070
+CO,Alserio,22040
+CO,Alzate Brianza,22040
+CO,Anzano del Parco,22040
+CO,Appiano Gentile,22070
+CO,Argegno,22010
+CO,Arosio,22060
+CO,Asso,22033
+CO,Barni,22030
+CO,Bellagio,22021
+CO,Bene Lario,22010
+CO,Beregazzo con Figliaro,22070
+CO,Binago,22070
+CO,Bizzarone,22020
+CO,Blessagno,22028
+CO,Blevio,22020
+CO,Bregnano,22070
+CO,Brenna,22040
+CO,Brienno,22010
+CO,Brunate,22034
+CO,Bulgarograsso,22070
+CO,Cabiate,22060
+CO,Cadorago,22071
+CO,Caglio,22030
+CO,Cagno,22070
+CO,Campione d'Italia,22060
+CO,Cantù,22063
+CO,Canzo,22035
+CO,Capiago Intimiano,22070
+CO,Carate Urio,22010
+CO,Carbonate,22070
+CO,Carimate,22060
+CO,Carlazzo,22010
+CO,Carugo,22060
+CO,Casasco d'Intelvi,22022
+CO,Caslino d'Erba,22030
+CO,Casnate con Bernate,22070
+CO,Cassina Rizzardi,22070
+CO,Castelmarte,22030
+CO,Castelnuovo Bozzente,22070
+CO,Castiglione d'Intelvi,22023
+CO,Cavallasca,22020
+CO,Cavargna,22010
+CO,Cerano d'Intelvi,22020
+CO,Cermenate,22072
+CO,Cernobbio,22012
+CO,Cirimido,22070
+CO,Civenna,22030
+CO,Claino con Osteno,22010
+CO,Colonno,22010
+CO,Como,22100
+CO,Corrido,22010
+CO,Cremia,22010
+CO,Cucciago,22060
+CO,Cusino,22010
+CO,Dizzasco,22020
+CO,Domaso,22013
+CO,Dongo,22014
+CO,Dosso del Liro,22010
+CO,Drezzo,22020
+CO,Erba,22036
+CO,Eupilio,22030
+CO,Faggeto Lario,22020
+CO,Faloppio,22020
+CO,Fenegrò,22070
+CO,Figino Serenza,22060
+CO,Fino Mornasco,22073
+CO,Garzeno,22010
+CO,Gera Lario,22010
+CO,Gironico,22020
+CO,Grandate,22070
+CO,Grandola ed Uniti,22010
+CO,Gravedona ed Uniti,22015
+CO,Griante,22011
+CO,Guanzate,22070
+CO,Inverigo,22044
+CO,Laglio,22010
+CO,Laino,22020
+CO,Lambrugo,22045
+CO,Lanzo d'Intelvi,22024
+CO,Lasnigo,22030
+CO,Lenno,22016
+CO,Lezzeno,22025
+CO,Limido Comasco,22070
+CO,Lipomo,22030
+CO,Livo,22010
+CO,Locate Varesino,22070
+CO,Lomazzo,22074
+CO,Longone al Segrino,22030
+CO,Luisago,22070
+CO,Lurago d'Erba,22040
+CO,Lurago Marinone,22070
+CO,Lurate Caccivio,22075
+CO,Magreglio,22030
+CO,Mariano Comense,22066
+CO,Maslianico,22026
+CO,Menaggio,22017
+CO,Merone,22046
+CO,Mezzegra,22010
+CO,Moltrasio,22010
+CO,Monguzzo,22040
+CO,Montano Lucino,22070
+CO,Montemezzo,22010
+CO,Montorfano,22030
+CO,Mozzate,22076
+CO,Musso,22010
+CO,Nesso,22020
+CO,Novedrate,22060
+CO,Olgiate Comasco,22077
+CO,Oltrona di San Mamette,22070
+CO,Orsenigo,22030
+CO,Ossuccio,22010
+CO,Parè,22020
+CO,Peglio,22010
+CO,Pellio Intelvi,22020
+CO,Pianello del Lario,22010
+CO,Pigra,22020
+CO,Plesio,22010
+CO,Pognana Lario,22020
+CO,Ponna,22020
+CO,Ponte Lambro,22037
+CO,Porlezza,22018
+CO,Proserpio,22030
+CO,Pusiano,22030
+CO,Ramponio Verna,22020
+CO,Rezzago,22030
+CO,Rodero,22070
+CO,Ronago,22027
+CO,Rovellasca,22069
+CO,Rovello Porro,22070
+CO,Sala Comacina,22010
+CO,San Bartolomeo Val Cavargna,22010
+CO,San Fedele Intelvi,22028
+CO,San Fermo della Battaglia,22020
+CO,San Nazzaro Val Cavargna,22010
+CO,San Siro,22010
+CO,Schignano,22020
+CO,Senna Comasco,22070
+CO,Solbiate,22070
+CO,Sorico,22010
+CO,Sormano,22030
+CO,Stazzona,22010
+CO,Tavernerio,22038
+CO,Torno,22020
+CO,Tremezzo,22019
+CO,Trezzone,22010
+CO,Turate,22078
+CO,Uggiate-Trevano,22029
+CO,Val Rezzo,22010
+CO,Valbrona,22039
+CO,Valmorea,22070
+CO,Valsolda,22010
+CO,Veleso,22020
+CO,Veniano,22070
+CO,Vercana,22013
+CO,Vertemate con Minoprio,22070
+CO,Villa Guardia,22079
+CO,Zelbio,22020
+CR,Acquanegra Cremonese,26020
+CR,Agnadello,26020
+CR,Annicco,26021
+CR,Azzanello,26010
+CR,Bagnolo Cremasco,26010
+CR,Bonemerse,26040
+CR,Bordolano,26020
+CR,Ca' d'Andrea,26030
+CR,Calvatone,26030
+CR,Camisano,26010
+CR,Campagnola Cremasca,26010
+CR,Capergnanica,26010
+CR,Cappella Cantone,26020
+CR,Cappella de' Picenardi,26030
+CR,Capralba,26010
+CR,Casalbuttano ed Uniti,26011
+CR,Casale Cremasco-Vidolasco,26010
+CR,Casaletto Ceredano,26010
+CR,Casaletto di Sopra,26014
+CR,Casaletto Vaprio,26010
+CR,Casalmaggiore,26041
+CR,Casalmorano,26020
+CR,Castel Gabbiano,26010
+CR,Casteldidone,26030
+CR,Castelleone,26012
+CR,Castelverde,26022
+CR,Castelvisconti,26010
+CR,Cella Dati,26040
+CR,Chieve,26010
+CR,Cicognolo,26030
+CR,Cingia de' Botti,26042
+CR,Corte de' Cortesi con Cignone,26020
+CR,Corte de' Frati,26010
+CR,Credera Rubbiano,26010
+CR,Crema,26013
+CR,Cremona,26100
+CR,Cremosano,26010
+CR,Crotta d'Adda,26020
+CR,Cumignano sul Naviglio,26020
+CR,Derovere,26040
+CR,Dovera,26010
+CR,Drizzona,26034
+CR,Fiesco,26010
+CR,Formigara,26020
+CR,Gabbioneta-Binanuova,26030
+CR,Gadesco-Pieve Delmona,26030
+CR,Genivolta,26020
+CR,Gerre de' Caprioli,26040
+CR,Gombito,26020
+CR,Grontardo,26044
+CR,Grumello Cremonese ed Uniti,26023
+CR,Gussola,26040
+CR,Isola Dovarese,26031
+CR,Izano,26010
+CR,Madignano,26020
+CR,Malagnino,26030
+CR,Martignana di Po,26040
+CR,Monte Cremasco,26010
+CR,Montodine,26010
+CR,Moscazzano,26010
+CR,Motta Baluffi,26045
+CR,Offanengo,26010
+CR,Olmeneta,26010
+CR,Ostiano,26032
+CR,Paderno Ponchielli,26024
+CR,Palazzo Pignano,26020
+CR,Pandino,26025
+CR,Persico Dosimo,26043
+CR,Pescarolo ed Uniti,26033
+CR,Pessina Cremonese,26030
+CR,Piadena,26034
+CR,Pianengo,26010
+CR,Pieranica,26017
+CR,Pieve d'Olmi,26040
+CR,Pieve San Giacomo,26035
+CR,Pizzighettone,26026
+CR,Pozzaglio ed Uniti,26010
+CR,Quintano,26017
+CR,Ricengo,26010
+CR,Ripalta Arpina,26010
+CR,Ripalta Cremasca,26010
+CR,Ripalta Guerina,26010
+CR,Rivarolo del Re ed Uniti,26036
+CR,Rivolta d'Adda,26027
+CR,Robecco d'Oglio,26010
+CR,Romanengo,26014
+CR,Salvirola,26010
+CR,San Bassano,26020
+CR,San Daniele Po,26046
+CR,San Giovanni in Croce,26037
+CR,San Martino del Lago,26040
+CR,Scandolara Ravara,26040
+CR,Scandolara Ripa d'Oglio,26047
+CR,Sergnano,26010
+CR,Sesto ed Uniti,26028
+CR,Solarolo Rainerio,26030
+CR,Soncino,26029
+CR,Soresina,26015
+CR,Sospiro,26048
+CR,Spinadesco,26020
+CR,Spineda,26030
+CR,Spino d'Adda,26016
+CR,Stagno Lombardo,26049
+CR,Ticengo,26020
+CR,Torlino Vimercati,26017
+CR,Tornata,26030
+CR,Torre de' Picenardi,26038
+CR,Torricella del Pizzo,26040
+CR,Trescore Cremasco,26017
+CR,Trigolo,26018
+CR,Vaiano Cremasco,26010
+CR,Vailate,26019
+CR,Vescovato,26039
+CR,Volongo,26030
+CR,Voltido,26030
+CS,Acquaformosa,87010
+CS,Acquappesa,87020
+CS,Acri,87041
+CS,Aiello Calabro,87031
+CS,Aieta,87020
+CS,Albidona,87070
+CS,Alessandria del Carretto,87070
+CS,Altilia,87040
+CS,Altomonte,87042
+CS,Amantea,87032
+CS,Amendolara,87071
+CS,Aprigliano,87051
+CS,Belmonte Calabro,87033
+CS,Belsito,87030
+CS,Belvedere Marittimo,87021
+CS,Bianchi,87050
+CS,Bisignano,87043
+CS,Bocchigliero,87060
+CS,Bonifati,87020
+CS,Buonvicino,87020
+CS,Calopezzati,87060
+CS,Caloveto,87060
+CS,Campana,87061
+CS,Canna,87070
+CS,Cariati,87062
+CS,Carolei,87030
+CS,Carpanzano,87050
+CS,Casole Bruzio,87050
+CS,Cassano all'Ionio,87011
+CS,Castiglione Cosentino,87040
+CS,Castrolibero,87040
+CS,Castroregio,87070
+CS,Castrovillari,87012
+CS,Celico,87053
+CS,Cellara,87050
+CS,Cerchiara di Calabria,87070
+CS,Cerisano,87044
+CS,Cervicati,87010
+CS,Cerzeto,87040
+CS,Cetraro,87022
+CS,Civita,87010
+CS,Cleto,87030
+CS,Colosimi,87050
+CS,Corigliano Calabro,87064
+CS,Cosenza,87100
+CS,Cropalati,87060
+CS,Crosia,87060
+CS,Diamante,87023
+CS,Dipignano,87045
+CS,Domanico,87030
+CS,Fagnano Castello,87013
+CS,Falconara Albanese,87030
+CS,Figline Vegliaturo,87050
+CS,Firmo,87010
+CS,Fiumefreddo Bruzio,87030
+CS,Francavilla Marittima,87072
+CS,Frascineto,87010
+CS,Fuscaldo,87024
+CS,Grimaldi,87034
+CS,Grisolia,87020
+CS,Guardia Piemontese,87020
+CS,Lago,87035
+CS,Laino Borgo,87014
+CS,Laino Castello,87015
+CS,Lappano,87050
+CS,Lattarico,87010
+CS,Longobardi,87030
+CS,Longobucco,87066
+CS,Lungro,87010
+CS,Luzzi,87040
+CS,Maierà,87020
+CS,Malito,87030
+CS,Malvito,87010
+CS,Mandatoriccio,87060
+CS,Mangone,87050
+CS,Marano Marchesato,87040
+CS,Marano Principato,87040
+CS,Marzi,87050
+CS,Mendicino,87040
+CS,Mongrassano,87040
+CS,Montalto Uffugo,87046
+CS,Montegiordano,87070
+CS,Morano Calabro,87016
+CS,Mormanno,87026
+CS,Mottafollone,87010
+CS,Nocara,87070
+CS,Oriolo,87073
+CS,Orsomarso,87020
+CS,Paludi,87060
+CS,Panettieri,87050
+CS,Paola,87027
+CS,Papasidero,87020
+CS,Parenti,87040
+CS,Paterno Calabro,87040
+CS,Pedace,87050
+CS,Pedivigliano,87050
+CS,Piane Crati,87050
+CS,Pietrafitta,87050
+CS,Pietrapaola,87060
+CS,Plataci,87070
+CS,Praia a Mare,87028
+CS,Rende,87036
+CS,Rocca Imperiale,87074
+CS,Roggiano Gravina,87017
+CS,Rogliano,87054
+CS,Rose,87040
+CS,Roseto Capo Spulico,87070
+CS,Rossano,87067
+CS,Rota Greca,87010
+CS,Rovito,87050
+CS,San Basile,87010
+CS,San Benedetto Ullano,87040
+CS,San Cosmo Albanese,87060
+CS,San Demetrio Corone,87069
+CS,San Donato di Ninea,87010
+CS,San Fili,87037
+CS,San Giorgio Albanese,87060
+CS,San Giovanni in Fiore,87055
+CS,San Lorenzo Bellizzi,87070
+CS,San Lorenzo del Vallo,87040
+CS,San Lucido,87038
+CS,San Marco Argentano,87018
+CS,San Martino di Finita,87010
+CS,San Nicola Arcella,87020
+CS,San Pietro in Amantea,87030
+CS,San Pietro in Guarano,87047
+CS,San Sosti,87010
+CS,San Vincenzo la Costa,87030
+CS,Sangineto,87020
+CS,Santa Caterina Albanese,87010
+CS,Santa Domenica Talao,87020
+CS,Santa Maria del Cedro,87020
+CS,Santa Sofia D'Epiro,87048
+CS,Sant'Agata di Esaro,87010
+CS,Santo Stefano di Rogliano,87056
+CS,Saracena,87010
+CS,Scala Coeli,87060
+CS,Scalea,87029
+CS,Scigliano,87057
+CS,Serra d'Aiello,87030
+CS,Serra Pedace,87050
+CS,Spezzano Albanese,87019
+CS,Spezzano della Sila,87058
+CS,Spezzano Piccolo,87050
+CS,Tarsia,87040
+CS,Terranova da Sibari,87010
+CS,Terravecchia,87060
+CS,Torano Castello,87010
+CS,Tortora,87020
+CS,Trebisacce,87075
+CS,Trenta,87050
+CS,Vaccarizzo Albanese,87060
+CS,Verbicaro,87020
+CS,Villapiana,87076
+CS,Zumpano,87040
+CT,Aci Bonaccorsi,95020
+CT,Aci Castello,95021
+CT,Aci Catena,95022
+CT,Aci Sant'Antonio,95025
+CT,Acireale,95024
+CT,Adrano,95031
+CT,Belpasso,95032
+CT,Biancavilla,95033
+CT,Bronte,95034
+CT,Calatabiano,95011
+CT,Caltagirone,95041
+CT,Camporotondo Etneo,95040
+CT,Castel di Iudica,95040
+CT,Castiglione di Sicilia,95012
+CT,Catania,951xx
+CT,Fiumefreddo di Sicilia,95013
+CT,Giarre,95014
+CT,Grammichele,95042
+CT,Gravina di Catania,95030
+CT,Licodia Eubea,95040
+CT,Linguaglossa,95015
+CT,Maletto,95035
+CT,Maniace,95030
+CT,Mascali,95016
+CT,Mascalucia,95030
+CT,Mazzarrone,95040
+CT,Militello in Val di Catania,95043
+CT,Milo,95010
+CT,Mineo,95044
+CT,Mirabella Imbaccari,95040
+CT,Misterbianco,95045
+CT,Motta Sant'Anastasia,95040
+CT,Nicolosi,95030
+CT,Palagonia,95046
+CT,Paternò,95047
+CT,Pedara,95030
+CT,Piedimonte Etneo,95017
+CT,Raddusa,95040
+CT,Ragalna,95030
+CT,Ramacca,95040
+CT,Randazzo,95036
+CT,Riposto,95018
+CT,San Cono,95040
+CT,San Giovanni la Punta,95037
+CT,San Gregorio di Catania,95027
+CT,San Michele di Ganzaria,95040
+CT,San Pietro Clarenza,95030
+CT,Santa Maria di Licodia,95038
+CT,Santa Venerina,95010
+CT,Sant'Agata Li Battiati,95030
+CT,Sant'Alfio,95010
+CT,Scordia,95048
+CT,Trecastagni,95039
+CT,Tremestieri Etneo,95030
+CT,Valverde,95028
+CT,Viagrande,95029
+CT,Vizzini,95049
+CT,Zafferana Etnea,95019
+CZ,Albi,88055
+CZ,Amaroni,88050
+CZ,Amato,88040
+CZ,Andali,88050
+CZ,Argusto,88060
+CZ,Badolato,88060
+CZ,Belcastro,88050
+CZ,Borgia,88021
+CZ,Botricello,88070
+CZ,Caraffa di Catanzaro,88050
+CZ,Cardinale,88062
+CZ,Carlopoli,88040
+CZ,Catanzaro,88100
+CZ,Cenadi,88067
+CZ,Centrache,88067
+CZ,Cerva,88050
+CZ,Chiaravalle Centrale,88064
+CZ,Cicala,88040
+CZ,Conflenti,88040
+CZ,Cortale,88020
+CZ,Cropani,88051
+CZ,Curinga,88022
+CZ,Davoli,88060
+CZ,Decollatura,88041
+CZ,Falerna,88042
+CZ,Feroleto Antico,88040
+CZ,Fossato Serralta,88050
+CZ,Gagliato,88060
+CZ,Gasperina,88060
+CZ,Gimigliano,88045
+CZ,Girifalco,88024
+CZ,Gizzeria,88040
+CZ,Guardavalle,88065
+CZ,Isca sullo Ionio,88060
+CZ,Jacurso,88020
+CZ,Lamezia Terme,88046
+CZ,Magisano,88050
+CZ,Maida,88025
+CZ,Marcedusa,88050
+CZ,Marcellinara,88044
+CZ,Martirano,88040
+CZ,Martirano Lombardo,88040
+CZ,Miglierina,88040
+CZ,Montauro,88060
+CZ,Montepaone,88060
+CZ,Motta Santa Lucia,88040
+CZ,Nocera Terinese,88047
+CZ,Olivadi,88067
+CZ,Palermiti,88050
+CZ,Pentone,88050
+CZ,Petrizzi,88060
+CZ,Petronà,88050
+CZ,Pianopoli,88040
+CZ,Platania,88040
+CZ,San Floro,88021
+CZ,San Mango d'Aquino,88040
+CZ,San Pietro a Maida,88025
+CZ,San Pietro Apostolo,88040
+CZ,San Sostene,88060
+CZ,San Vito sullo Ionio,88067
+CZ,Santa Caterina dello Ionio,88060
+CZ,Sant'Andrea Apostolo dello Ionio,88060
+CZ,Satriano,88060
+CZ,Sellia,88050
+CZ,Sellia Marina,88050
+CZ,Serrastretta,88040
+CZ,Sersale,88054
+CZ,Settingiano,88040
+CZ,Simeri Crichi,88050
+CZ,Sorbo San Basile,88050
+CZ,Soverato,88068
+CZ,Soveria Mannelli,88049
+CZ,Soveria Simeri,88050
+CZ,Squillace,88069
+CZ,Stalettì,88069
+CZ,Taverna,88055
+CZ,Tiriolo,88056
+CZ,Torre di Ruggiero,88060
+CZ,Vallefiorita,88050
+CZ,Zagarise,88050
+EN,Agira,94011
+EN,Aidone,94010
+EN,Assoro,94010
+EN,Barrafranca,94012
+EN,Calascibetta,94010
+EN,Catenanuova,94010
+EN,Centuripe,94010
+EN,Cerami,94010
+EN,Enna,94100
+EN,Gagliano Castelferrato,94010
+EN,Leonforte,94013
+EN,Nicosia,94014
+EN,Nissoria,94010
+EN,Piazza Armerina,94015
+EN,Pietraperzia,94016
+EN,Regalbuto,94017
+EN,Sperlinga,94010
+EN,Troina,94018
+EN,Valguarnera Caropepe,94019
+EN,Villarosa,94010
+FC,Bagno di Romagna,47021
+FC,Bertinoro,47032
+FC,Borghi,47030
+FC,Castrocaro Terme e Terra del Sole,47011
+FC,Cesena,4752x
+FC,Cesenatico,47042
+FC,Civitella di Romagna,47012
+FC,Dovadola,47013
+FC,Forlì,4712x
+FC,Forlimpopoli,47034
+FC,Galeata,47010
+FC,Gambettola,47035
+FC,Gatteo,47043
+FC,Longiano,47020
+FC,Meldola,47014
+FC,Mercato Saraceno,47025
+FC,Modigliana,47015
+FC,Montiano,47020
+FC,Portico e San Benedetto,47010
+FC,Predappio,47016
+FC,Premilcuore,47010
+FC,Rocca San Casciano,47017
+FC,Roncofreddo,47020
+FC,San Mauro Pascoli,47030
+FC,Santa Sofia,47018
+FC,Sarsina,47027
+FC,Savignano sul Rubicone,47039
+FC,Sogliano al Rubicone,47030
+FC,Tredozio,47019
+FC,Verghereto,47028
+FE,Argenta,44011
+FE,Berra,44033
+FE,Bondeno,44012
+FE,Cento,44042
+FE,Codigoro,44021
+FE,Comacchio,44022
+FE,Copparo,44034
+FE,Ferrara,4412x
+FE,Formignana,44035
+FE,Goro,44020
+FE,Jolanda di Savoia,44037
+FE,Lagosanto,44023
+FE,Masi Torello,44020
+FE,Massa Fiscaglia,44025
+FE,Mesola,44026
+FE,Migliarino,44027
+FE,Migliaro,44020
+FE,Mirabello,44043
+FE,Ostellato,44020
+FE,Poggio Renatico,44028
+FE,Portomaggiore,44015
+FE,Ro,44030
+FE,Sant'Agostino,44047
+FE,Tresigallo,44039
+FE,Vigarano Mainarda,44049
+FE,Voghiera,44019
+FG,Accadia,71021
+FG,Alberona,71031
+FG,Anzano di Puglia,71020
+FG,Apricena,71011
+FG,Ascoli Satriano,71022
+FG,Biccari,71032
+FG,Bovino,71023
+FG,Cagnano Varano,71010
+FG,Candela,71024
+FG,Carapelle,71041
+FG,Carlantino,71030
+FG,Carpino,71010
+FG,Casalnuovo Monterotaro,71033
+FG,Casalvecchio di Puglia,71030
+FG,Castelluccio dei Sauri,71025
+FG,Castelluccio Valmaggiore,71020
+FG,Castelnuovo della Daunia,71034
+FG,Celenza Valfortore,71035
+FG,Celle di San Vito,71020
+FG,Cerignola,71042
+FG,Chieuti,71010
+FG,Deliceto,71026
+FG,Faeto,71020
+FG,Foggia,7112x
+FG,Ischitella,71010
+FG,Isole Tremiti,71040
+FG,Lesina,71010
+FG,Lucera,71036
+FG,Manfredonia,71043
+FG,Mattinata,71030
+FG,Monte Sant'Angelo,71037
+FG,Monteleone di Puglia,71020
+FG,Motta Montecorvino,71030
+FG,Ordona,71040
+FG,Orsara di Puglia,71027
+FG,Orta Nova,71045
+FG,Panni,71020
+FG,Peschici,71010
+FG,Pietramontecorvino,71038
+FG,Poggio Imperiale,71010
+FG,Rignano Garganico,71010
+FG,Rocchetta Sant'Antonio,71020
+FG,Rodi Garganico,71012
+FG,Roseto Valfortore,71039
+FG,San Giovanni Rotondo,71013
+FG,San Marco in Lamis,71014
+FG,San Marco la Catola,71030
+FG,San Nicandro Garganico,71015
+FG,San Paolo di Civitate,71010
+FG,San Severo,71016
+FG,Sant'Agata di Puglia,71028
+FG,Serracapriola,71010
+FG,Stornara,71047
+FG,Stornarella,71048
+FG,Torremaggiore,71017
+FG,Troia,71029
+FG,Vico del Gargano,71018
+FG,Vieste,71019
+FG,Volturara Appula,71030
+FG,Volturino,71030
+FG,Zapponeta,71030
+FI,Bagno a Ripoli,50012
+FI,Barberino di Mugello,50031
+FI,Barberino Val d'Elsa,50021
+FI,Borgo San Lorenzo,50032
+FI,Calenzano,50041
+FI,Campi Bisenzio,50013
+FI,Capraia e Limite,50050
+FI,Castelfiorentino,50051
+FI,Cerreto Guidi,50050
+FI,Certaldo,50052
+FI,Dicomano,50062
+FI,Empoli,50053
+FI,Fiesole,50014
+FI,Figline Valdarno,50063
+FI,Firenze,501xx
+FI,Firenzuola,50033
+FI,Fucecchio,50054
+FI,Gambassi Terme,50050
+FI,Greve in Chianti,50022
+FI,Impruneta,50023
+FI,Incisa in Val d'Arno,50064
+FI,Lastra a Signa,50055
+FI,Londa,50060
+FI,Marradi,50034
+FI,Montaione,50050
+FI,Montelupo Fiorentino,50056
+FI,Montespertoli,50025
+FI,Palazzuolo sul Senio,50035
+FI,Pelago,50060
+FI,Pontassieve,50065
+FI,Reggello,50066
+FI,Rignano sull'Arno,50067
+FI,Rufina,50068
+FI,San Casciano in Val di Pesa,50026
+FI,San Godenzo,50060
+FI,San Piero a Sieve,50037
+FI,Scandicci,50018
+FI,Scarperia,50038
+FI,Sesto Fiorentino,50019
+FI,Signa,50058
+FI,Tavarnelle Val di Pesa,50028
+FI,Vaglia,50036
+FI,Vicchio,50039
+FI,Vinci,50059
+FM,Altidona,63824
+FM,Amandola,63857
+FM,Belmonte Piceno,63838
+FM,Campofilone,63828
+FM,Falerone,63837
+FM,Fermo,63900
+FM,Francavilla d'Ete,63816
+FM,Grottazzolina,63844
+FM,Lapedona,63823
+FM,Magliano di Tenna,63832
+FM,Massa Fermana,63834
+FM,Monsampietro Morico,63842
+FM,Montappone,63835
+FM,Monte Giberto,63846
+FM,Monte Rinaldo,63852
+FM,Monte San Pietrangeli,63815
+FM,Monte Urano,63813
+FM,Monte Vidon Combatte,63847
+FM,Monte Vidon Corrado,63836
+FM,Montefalcone Appennino,63855
+FM,Montefortino,63858
+FM,Montegiorgio,63833
+FM,Montegranaro,63812
+FM,Monteleone di Fermo,63841
+FM,Montelparo,63853
+FM,Monterubbiano,63825
+FM,Montottone,63843
+FM,Moresco,63826
+FM,Ortezzano,63851
+FM,Pedaso,63827
+FM,Petritoli,63848
+FM,Ponzano di Fermo,63845
+FM,Porto San Giorgio,63822
+FM,Porto Sant'Elpidio,63821
+FM,Rapagnano,63831
+FM,Santa Vittoria in Matenano,63854
+FM,Sant'Elpidio a Mare,63811
+FM,Servigliano,63839
+FM,Smerillo,63856
+FM,Torre San Patrizio,63814
+FR,Acquafondata,3040
+FR,Acuto,3010
+FR,Alatri,3011
+FR,Alvito,3041
+FR,Amaseno,3021
+FR,Anagni,3012
+FR,Aquino,3031
+FR,Arce,3032
+FR,Arnara,3020
+FR,Arpino,3033
+FR,Atina,3042
+FR,Ausonia,3040
+FR,Belmonte Castello,3040
+FR,Boville Ernica,3022
+FR,Broccostella,3030
+FR,Campoli Appennino,3030
+FR,Casalattico,3030
+FR,Casalvieri,3034
+FR,Cassino,3043
+FR,Castelliri,3030
+FR,Castelnuovo Parano,3040
+FR,Castro dei Volsci,3020
+FR,Castrocielo,3030
+FR,Ceccano,3023
+FR,Ceprano,3024
+FR,Cervaro,3044
+FR,Colfelice,3030
+FR,Colle San Magno,3030
+FR,Collepardo,3010
+FR,Coreno Ausonio,3040
+FR,Esperia,3045
+FR,Falvaterra,3020
+FR,Ferentino,3013
+FR,Filettino,3010
+FR,Fiuggi,3014
+FR,Fontana Liri,3035
+FR,Fontechiari,3030
+FR,Frosinone,3100
+FR,Fumone,3010
+FR,Gallinaro,3040
+FR,Giuliano di Roma,3020
+FR,Guarcino,3016
+FR,Isola del Liri,3036
+FR,Monte San Giovanni Campano,3025
+FR,Morolo,3017
+FR,Paliano,3018
+FR,Pastena,3020
+FR,Patrica,3010
+FR,Pescosolido,3030
+FR,Picinisco,3040
+FR,Pico,3020
+FR,Piedimonte San Germano,3030
+FR,Piglio,3010
+FR,Pignataro Interamna,3040
+FR,Pofi,3026
+FR,Pontecorvo,3037
+FR,Posta Fibreno,3030
+FR,Ripi,3027
+FR,Rocca d'Arce,3030
+FR,Roccasecca,3038
+FR,San Biagio Saracinisco,3040
+FR,San Donato Val di Comino,3046
+FR,San Giorgio a Liri,3047
+FR,San Giovanni Incarico,3028
+FR,San Vittore del Lazio,3040
+FR,Sant'Ambrogio sul Garigliano,3040
+FR,Sant'Andrea del Garigliano,3040
+FR,Sant'Apollinare,3048
+FR,Sant'Elia Fiumerapido,3049
+FR,Santopadre,3030
+FR,Serrone,3010
+FR,Settefrati,3040
+FR,Sgurgola,3010
+FR,Sora,3039
+FR,Strangolagalli,3020
+FR,Supino,3019
+FR,Terelle,3040
+FR,Torre Cajetani,3010
+FR,Torrice,3020
+FR,Trevi nel Lazio,3010
+FR,Trivigliano,3010
+FR,Vallecorsa,3020
+FR,Vallemaio,3040
+FR,Vallerotonda,3040
+FR,Veroli,3029
+FR,Vicalvi,3030
+FR,Vico nel Lazio,3010
+FR,Villa Latina,3040
+FR,Villa Santa Lucia,3030
+FR,Villa Santo Stefano,3020
+FR,Viticuso,3040
+GE,Arenzano,16011
+GE,Avegno,16030
+GE,Bargagli,16021
+GE,Bogliasco,16031
+GE,Borzonasca,16041
+GE,Busalla,16012
+GE,Camogli,16032
+GE,Campo Ligure,16013
+GE,Campomorone,16014
+GE,Carasco,16042
+GE,Casarza Ligure,16030
+GE,Casella,16015
+GE,Castiglione Chiavarese,16030
+GE,Ceranesi,16014
+GE,Chiavari,16043
+GE,Cicagna,16044
+GE,Cogoleto,16016
+GE,Cogorno,16030
+GE,Coreglia Ligure,16040
+GE,Crocefieschi,16010
+GE,Davagna,16022
+GE,Fascia,16020
+GE,Favale di Malvaro,16040
+GE,Fontanigorda,16023
+GE,Genova,161xx
+GE,Gorreto,16020
+GE,Isola del Cantone,16017
+GE,Lavagna,16033
+GE,Leivi,16040
+GE,Lorsica,16045
+GE,Lumarzo,16024
+GE,Masone,16010
+GE,Mele,16010
+GE,Mezzanego,16046
+GE,Mignanego,16018
+GE,Moconesi,16047
+GE,Moneglia,16030
+GE,Montebruno,16025
+GE,Montoggio,16026
+GE,Ne,16040
+GE,Neirone,16040
+GE,Orero,16040
+GE,Pieve Ligure,16030
+GE,Portofino,16034
+GE,Propata,16027
+GE,Rapallo,16035
+GE,Recco,16036
+GE,Rezzoaglio,16048
+GE,Ronco Scrivia,16019
+GE,Rondanina,16025
+GE,Rossiglione,16010
+GE,Rovegno,16028
+GE,San Colombano Certenoli,16040
+GE,Santa Margherita Ligure,16038
+GE,Santo Stefano d'Aveto,16049
+GE,Sant'Olcese,16010
+GE,Savignone,16010
+GE,Serra Riccò,16010
+GE,Sestri Levante,16039
+GE,Sori,16030
+GE,Tiglieto,16010
+GE,Torriglia,16029
+GE,Tribogna,16030
+GE,Uscio,16030
+GE,Valbrevenna,16010
+GE,Vobbia,16010
+GE,Zoagli,16030
+GO,Capriva del Friuli,34070
+GO,Cormons,34071
+GO,Doberdò del Lago,34070
+GO,Dolegna del Collio,34070
+GO,Farra d'Isonzo,34072
+GO,Fogliano Redipuglia,34070
+GO,Gorizia,34170
+GO,Gradisca d'Isonzo,34072
+GO,Grado,34073
+GO,Mariano del Friuli,34070
+GO,Medea,34076
+GO,Monfalcone,34074
+GO,Moraro,34070
+GO,Mossa,34070
+GO,Romans d'Isonzo,34076
+GO,Ronchi dei Legionari,34077
+GO,Sagrado,34078
+GO,San Canzian d'Isonzo,34075
+GO,San Floriano del Collio,34070
+GO,San Lorenzo Isontino,34070
+GO,San Pier d'Isonzo,34070
+GO,Savogna d'Isonzo,34070
+GO,Staranzano,34079
+GO,Turriaco,34070
+GO,Villesse,34070
+GR,Arcidosso,58031
+GR,Campagnatico,58042
+GR,Capalbio,58011
+GR,Castel del Piano,58033
+GR,Castell'Azzara,58034
+GR,Castiglione della Pescaia,58043
+GR,Cinigiano,58044
+GR,Civitella Paganico,58045
+GR,Follonica,58022
+GR,Gavorrano,58023
+GR,Grosseto,58100
+GR,Isola del Giglio,58012
+GR,Magliano in Toscana,58051
+GR,Manciano,58014
+GR,Massa Marittima,58024
+GR,Monte Argentario,58019
+GR,Monterotondo Marittimo,58025
+GR,Montieri,58026
+GR,Orbetello,58015
+GR,Pitigliano,58017
+GR,Roccalbegna,58053
+GR,Roccastrada,58036
+GR,Santa Fiora,58037
+GR,Scansano,58054
+GR,Scarlino,58020
+GR,Seggiano,58038
+GR,Semproniano,58055
+GR,Sorano,58010
+IM,Airole,18030
+IM,Apricale,18035
+IM,Aquila d'Arroscia,18020
+IM,Armo,18026
+IM,Aurigo,18020
+IM,Badalucco,18010
+IM,Bajardo,18031
+IM,Bordighera,18012
+IM,Borghetto d'Arroscia,18020
+IM,Borgomaro,18021
+IM,Camporosso,18033
+IM,Caravonica,18020
+IM,Carpasio,18010
+IM,Castel Vittorio,18030
+IM,Castellaro,18011
+IM,Ceriana,18034
+IM,Cervo,18010
+IM,Cesio,18022
+IM,Chiusanico,18027
+IM,Chiusavecchia,18027
+IM,Cipressa,18017
+IM,Civezza,18017
+IM,Cosio d'Arroscia,18023
+IM,Costarainera,18017
+IM,Diano Arentino,18013
+IM,Diano Castello,18013
+IM,Diano Marina,18013
+IM,Diano San Pietro,18013
+IM,Dolceacqua,18035
+IM,Dolcedo,18020
+IM,Imperia,18100
+IM,Isolabona,18035
+IM,Lucinasco,18020
+IM,Mendatica,18025
+IM,Molini di Triora,18010
+IM,Montalto Ligure,18010
+IM,Montegrosso Pian Latte,18025
+IM,Olivetta San Michele,18030
+IM,Ospedaletti,18014
+IM,Perinaldo,18032
+IM,Pietrabruna,18010
+IM,Pieve di Teco,18026
+IM,Pigna,18037
+IM,Pompeiana,18015
+IM,Pontedassio,18027
+IM,Pornassio,18024
+IM,Prelà,18020
+IM,Ranzo,18020
+IM,Rezzo,18026
+IM,Riva Ligure,18015
+IM,Rocchetta Nervina,18030
+IM,San Bartolomeo al Mare,18016
+IM,San Biagio della Cima,18036
+IM,San Lorenzo al Mare,18017
+IM,Sanremo,18038
+IM,Santo Stefano al Mare,18010
+IM,Seborga,18012
+IM,Soldano,18036
+IM,Taggia,18018
+IM,Terzorio,18010
+IM,Triora,18010
+IM,Vallebona,18012
+IM,Vallecrosia,18019
+IM,Vasia,18020
+IM,Ventimiglia,18039
+IM,Vessalico,18026
+IM,Villa Faraldi,18010
+IS,Acquaviva d'Isernia,86080
+IS,Agnone,86081
+IS,Bagnoli del Trigno,86091
+IS,Belmonte del Sannio,86080
+IS,Cantalupo nel Sannio,86092
+IS,Capracotta,86082
+IS,Carovilli,86083
+IS,Carpinone,86093
+IS,Castel del Giudice,86080
+IS,Castel San Vincenzo,86071
+IS,Castelpetroso,86090
+IS,Castelpizzuto,86090
+IS,Castelverrino,86080
+IS,Cerro al Volturno,86072
+IS,Chiauci,86097
+IS,Civitanova del Sannio,86094
+IS,Colli a Volturno,86073
+IS,Conca Casale,86070
+IS,Filignano,86074
+IS,Forlì del Sannio,86084
+IS,Fornelli,86070
+IS,Frosolone,86095
+IS,Isernia,86170
+IS,Longano,86090
+IS,Macchia d'Isernia,86070
+IS,Macchiagodena,86096
+IS,Miranda,86080
+IS,Montaquila,86070
+IS,Montenero Val Cocchiara,86080
+IS,Monteroduni,86075
+IS,Pesche,86090
+IS,Pescolanciano,86097
+IS,Pescopennataro,86080
+IS,Pettoranello del Molise,86090
+IS,Pietrabbondante,86085
+IS,Pizzone,86071
+IS,Poggio Sannita,86086
+IS,Pozzilli,86077
+IS,Rionero Sannitico,86087
+IS,Roccamandolfi,86092
+IS,Roccasicura,86080
+IS,Rocchetta a Volturno,86070
+IS,San Pietro Avellana,86088
+IS,Santa Maria del Molise,86096
+IS,Sant'Agapito,86070
+IS,Sant'Angelo del Pesco,86080
+IS,Sant'Elena Sannita,86095
+IS,Scapoli,86070
+IS,Sessano del Molise,86097
+IS,Sesto Campano,86078
+IS,Vastogirardi,86089
+IS,Venafro,86079
+KR,Belvedere di Spinello,88824
+KR,Caccuri,88833
+KR,Carfizzi,88817
+KR,Casabona,88822
+KR,Castelsilano,88834
+KR,Cerenzia,88833
+KR,Cirò,88813
+KR,Cirò Marina,88811
+KR,Cotronei,88836
+KR,Crotone,88900
+KR,Crucoli,88812
+KR,Cutro,88842
+KR,Isola di Capo Rizzuto,88841
+KR,Melissa,88814
+KR,Mesoraca,88838
+KR,Pallagorio,88818
+KR,Petilia Policastro,88837
+KR,Rocca di Neto,88821
+KR,Roccabernarda,88835
+KR,San Mauro Marchesato,88831
+KR,San Nicola dell'Alto,88817
+KR,Santa Severina,88832
+KR,Savelli,88825
+KR,Scandale,88831
+KR,Strongoli,88816
+KR,Umbriatico,88823
+KR,Verzino,88819
+LC,Abbadia Lariana,23821
+LC,Airuno,23881
+LC,Annone di Brianza,23841
+LC,Ballabio,23811
+LC,Barzago,23890
+LC,Barzanò,23891
+LC,Barzio,23816
+LC,Bellano,23822
+LC,Bosisio Parini,23842
+LC,Brivio,23883
+LC,Bulciago,23892
+LC,Calco,23885
+LC,Calolziocorte,23801
+LC,Carenno,23802
+LC,Casargo,23831
+LC,Casatenovo,23880
+LC,Cassago Brianza,23893
+LC,Cassina Valsassina,23817
+LC,Castello di Brianza,23884
+LC,Cernusco Lombardone,23870
+LC,Cesana Brianza,23861
+LC,Civate,23862
+LC,Colico,23823
+LC,Colle Brianza,23886
+LC,Cortenova,23813
+LC,Costa Masnaga,23845
+LC,Crandola Valsassina,23832
+LC,Cremella,23894
+LC,Cremeno,23814
+LC,Dervio,23824
+LC,Dolzago,23843
+LC,Dorio,23824
+LC,Ello,23848
+LC,Erve,23805
+LC,Esino Lario,23825
+LC,Galbiate,23851
+LC,Garbagnate Monastero,23846
+LC,Garlate,23852
+LC,Imbersago,23898
+LC,Introbio,23815
+LC,Introzzo,23835
+LC,Lecco,23900
+LC,Lierna,23827
+LC,Lomagna,23871
+LC,Malgrate,23864
+LC,Mandello del Lario,23826
+LC,Margno,23832
+LC,Merate,23807
+LC,Missaglia,23873
+LC,Moggio,23817
+LC,Molteno,23847
+LC,Monte Marenzo,23804
+LC,Montevecchia,23874
+LC,Monticello Brianza,23876
+LC,Morterone,23811
+LC,Nibionno,23895
+LC,Oggiono,23848
+LC,Olgiate Molgora,23887
+LC,Olginate,23854
+LC,Oliveto Lario,23865
+LC,Osnago,23875
+LC,Paderno d'Adda,23877
+LC,Pagnona,23833
+LC,Parlasco,23837
+LC,Pasturo,23818
+LC,Perego,23888
+LC,Perledo,23828
+LC,Pescate,23855
+LC,Premana,23834
+LC,Primaluna,23819
+LC,Robbiate,23899
+LC,Rogeno,23849
+LC,Rovagnate,23888
+LC,Santa Maria Hoè,23889
+LC,Sirone,23844
+LC,Sirtori,23896
+LC,Sueglio,23835
+LC,Suello,23867
+LC,Taceno,23837
+LC,Torre de' Busi,23806
+LC,Tremenico,23836
+LC,Valgreghentino,23857
+LC,Valmadrera,23868
+LC,Varenna,23829
+LC,Vendrogno,23838
+LC,Vercurago,23808
+LC,Verderio Inferiore,23879
+LC,Verderio Superiore,23878
+LC,Vestreno,23822
+LC,Viganò,23897
+LE,Acquarica del Capo,73040
+LE,Alessano,73031
+LE,Alezio,73011
+LE,Alliste,73040
+LE,Andrano,73032
+LE,Aradeo,73040
+LE,Arnesano,73010
+LE,Bagnolo del Salento,73020
+LE,Botrugno,73020
+LE,Calimera,73021
+LE,Campi Salentina,73012
+LE,Cannole,73020
+LE,Caprarica di Lecce,73010
+LE,Carmiano,73041
+LE,Carpignano Salentino,73020
+LE,Casarano,73042
+LE,Castri di Lecce,73020
+LE,Castrignano de' Greci,73020
+LE,Castrignano del Capo,73040
+LE,Castro,73030
+LE,Cavallino,73020
+LE,Collepasso,73040
+LE,Copertino,73043
+LE,Corigliano d'Otranto,73022
+LE,Corsano,73033
+LE,Cursi,73020
+LE,Cutrofiano,73020
+LE,Diso,73030
+LE,Gagliano del Capo,73034
+LE,Galatina,73013
+LE,Galatone,73044
+LE,Gallipoli,73014
+LE,Giuggianello,73030
+LE,Giurdignano,73020
+LE,Guagnano,73010
+LE,Lecce,73100
+LE,Lequile,73010
+LE,Leverano,73045
+LE,Lizzanello,73023
+LE,Maglie,73024
+LE,Martano,73025
+LE,Martignano,73020
+LE,Matino,73046
+LE,Melendugno,73026
+LE,Melissano,73040
+LE,Melpignano,73020
+LE,Miggiano,73035
+LE,Minervino di Lecce,73027
+LE,Monteroni di Lecce,73047
+LE,Montesano Salentino,73030
+LE,Morciano di Leuca,73040
+LE,Muro Leccese,73036
+LE,Nardò,73048
+LE,Neviano,73040
+LE,Nociglia,73020
+LE,Novoli,73051
+LE,Ortelle,73030
+LE,Otranto,73028
+LE,Palmariggi,73020
+LE,Parabita,73052
+LE,Patù,73053
+LE,Poggiardo,73037
+LE,Porto Cesareo,73010
+LE,Presicce,73054
+LE,Racale,73055
+LE,Ruffano,73049
+LE,Salice Salentino,73015
+LE,Salve,73050
+LE,San Cassiano,73020
+LE,San Cesario di Lecce,73016
+LE,San Donato di Lecce,73010
+LE,San Pietro in Lama,73010
+LE,Sanarica,73030
+LE,Sannicola,73017
+LE,Santa Cesarea Terme,73020
+LE,Scorrano,73020
+LE,Seclì,73050
+LE,Sogliano Cavour,73010
+LE,Soleto,73010
+LE,Specchia,73040
+LE,Spongano,73038
+LE,Squinzano,73018
+LE,Sternatia,73010
+LE,Supersano,73040
+LE,Surano,73030
+LE,Surbo,73010
+LE,Taurisano,73056
+LE,Taviano,73057
+LE,Tiggiano,73030
+LE,Trepuzzi,73019
+LE,Tricase,73039
+LE,Tuglie,73058
+LE,Ugento,73059
+LE,Uggiano La Chiesa,73020
+LE,Veglie,73010
+LE,Vernole,73029
+LE,Zollino,73010
+LI,Bibbona,57020
+LI,Campiglia Marittima,57021
+LI,Campo nell'Elba,57034
+LI,Capoliveri,57031
+LI,Capraia Isola,57032
+LI,Castagneto Carducci,57022
+LI,Cecina,57023
+LI,Collesalvetti,57014
+LI,Livorno,571xx
+LI,Marciana,57030
+LI,Marciana Marina,57033
+LI,Piombino,57025
+LI,Porto Azzurro,57036
+LI,Portoferraio,57037
+LI,Rio Marina,57038
+LI,Rio nell'Elba,57039
+LI,Rosignano Marittimo,57016
+LI,San Vincenzo,57027
+LI,Sassetta,57020
+LI,Suvereto,57028
+LO,Abbadia Cerreto,26834
+LO,Bertonico,26821
+LO,Boffalora d'Adda,26811
+LO,Borghetto Lodigiano,26812
+LO,Borgo San Giovanni,26851
+LO,Brembio,26822
+LO,Camairago,26823
+LO,Casaletto Lodigiano,26852
+LO,Casalmaiocco,26831
+LO,Casalpusterlengo,26841
+LO,Caselle Landi,26842
+LO,Caselle Lurani,26853
+LO,Castelnuovo Bocca d'Adda,26843
+LO,Castiglione d'Adda,26823
+LO,Castiraga Vidardo,26866
+LO,Cavacurta,26844
+LO,Cavenago d'Adda,26824
+LO,Cervignano d'Adda,26832
+LO,Codogno,26845
+LO,Comazzo,26833
+LO,Cornegliano Laudense,26854
+LO,Corno Giovine,26846
+LO,Cornovecchio,26842
+LO,Corte Palasio,26834
+LO,Crespiatica,26835
+LO,Fombio,26861
+LO,Galgagnano,26832
+LO,Graffignana,26813
+LO,Guardamiglio,26862
+LO,Livraga,26814
+LO,Lodi,26900
+LO,Lodi Vecchio,26855
+LO,Maccastorna,26843
+LO,Mairago,26825
+LO,Maleo,26847
+LO,Marudo,26866
+LO,Massalengo,26815
+LO,Meleti,26843
+LO,Merlino,26833
+LO,Montanaso Lombardo,26836
+LO,Mulazzano,26837
+LO,Orio Litta,26863
+LO,Ospedaletto Lodigiano,26864
+LO,Ossago Lodigiano,26816
+LO,Pieve Fissiraga,26854
+LO,Salerano sul Lambro,26857
+LO,San Fiorano,26848
+LO,San Martino in Strada,26817
+LO,San Rocco al Porto,26865
+LO,Sant'Angelo Lodigiano,26866
+LO,Santo Stefano Lodigiano,26849
+LO,Secugnago,26826
+LO,Senna Lodigiana,26856
+LO,Somaglia,26867
+LO,Sordio,26858
+LO,Tavazzano con Villavesco,26838
+LO,Terranova dei Passerini,26827
+LO,Turano Lodigiano,26828
+LO,Valera Fratta,26859
+LO,Villanova del Sillaro,26818
+LO,Zelo Buon Persico,26839
+LT,Aprilia,4011
+LT,Bassiano,4010
+LT,Campodimele,4020
+LT,Castelforte,4021
+LT,Cisterna di Latina,4012
+LT,Cori,4010
+LT,Fondi,4022
+LT,Formia,4023
+LT,Gaeta,4024
+LT,Itri,4020
+LT,Latina,4100
+LT,Lenola,4025
+LT,Maenza,4010
+LT,Minturno,4026
+LT,Monte San Biagio,4020
+LT,Norma,4010
+LT,Pontinia,4014
+LT,Ponza,4027
+LT,Priverno,4015
+LT,Prossedi,4010
+LT,Rocca Massima,4010
+LT,Roccagorga,4010
+LT,Roccasecca dei Volsci,4010
+LT,Sabaudia,4016
+LT,San Felice Circeo,4017
+LT,Santi Cosma e Damiano,4020
+LT,Sermoneta,4013
+LT,Sezze,4018
+LT,Sonnino,4010
+LT,Sperlonga,4029
+LT,Spigno Saturnia,4020
+LT,Terracina,4019
+LT,Ventotene,4020
+LU,Altopascio,55011
+LU,Bagni di Lucca,55022
+LU,Barga,55051
+LU,Borgo a Mozzano,55023
+LU,Camaiore,55041
+LU,Camporgiano,55031
+LU,Capannori,55012
+LU,Careggine,55030
+LU,Castelnuovo di Garfagnana,55032
+LU,Castiglione di Garfagnana,55033
+LU,Coreglia Antelminelli,55025
+LU,Fabbriche di Vallico,55020
+LU,Forte dei Marmi,55042
+LU,Fosciandora,55020
+LU,Gallicano,55027
+LU,Giuncugnano,55030
+LU,Lucca,55100
+LU,Massarosa,55054
+LU,Minucciano,55034
+LU,Molazzana,55020
+LU,Montecarlo,55015
+LU,Pescaglia,55064
+LU,Piazza al Serchio,55035
+LU,Pietrasanta,55045
+LU,Pieve Fosciana,55036
+LU,Porcari,55016
+LU,San Romano in Garfagnana,55038
+LU,Seravezza,55047
+LU,Sillano,55030
+LU,Stazzema,55040
+LU,Vagli Sotto,55030
+LU,Vergemoli,55020
+LU,Viareggio,55049
+LU,Villa Basilica,55019
+LU,Villa Collemandina,55030
+MB,Agrate Brianza,20864
+MB,Aicurzio,20886
+MB,Albiate,20847
+MB,Arcore,20862
+MB,Barlassina,20825
+MB,Bellusco,20882
+MB,Bernareggio,20881
+MB,Besana in Brianza,20842
+MB,Biassono,20853
+MB,Bovisio-Masciago,20813
+MB,Briosco,20836
+MB,Brugherio,20861
+MB,Burago di Molgora,20875
+MB,Busnago,20874
+MB,Camparada,20857
+MB,Caponago,20867
+MB,Carate Brianza,20841
+MB,Carnate,20866
+MB,Cavenago di Brianza,20873
+MB,Ceriano Laghetto,20816
+MB,Cesano Maderno,20811
+MB,Cogliate,20815
+MB,Concorezzo,20863
+MB,Cornate d'Adda,20872
+MB,Correzzana,20856
+MB,Desio,20832
+MB,Giussano,20833
+MB,Lazzate,20824
+MB,Lentate sul Seveso,20823
+MB,Lesmo,20855
+MB,Limbiate,20812
+MB,Lissone,20851
+MB,Macherio,20846
+MB,Meda,20821
+MB,Mezzago,20883
+MB,Misinto,20826
+MB,Monza,20900
+MB,Muggiò,20835
+MB,Nova Milanese,20834
+MB,Ornago,20876
+MB,Renate,20838
+MB,Roncello,20877
+MB,Ronco Briantino,20885
+MB,Seregno,20831
+MB,Seveso,20822
+MB,Sovico,20845
+MB,Sulbiate,20884
+MB,Triuggio,20844
+MB,Usmate Velate,20865
+MB,Varedo,20814
+MB,Vedano al Lambro,20854
+MB,Veduggio con Colzano,20837
+MB,Verano Brianza,20843
+MB,Villasanta,20852
+MB,Vimercate,20871
+MC,Acquacanina,62035
+MC,Apiro,62021
+MC,Appignano,62010
+MC,Belforte del Chienti,62020
+MC,Bolognola,62035
+MC,Caldarola,62020
+MC,Camerino,62032
+MC,Camporotondo di Fiastrone,62020
+MC,Castelraimondo,62022
+MC,Castelsantangelo sul Nera,62039
+MC,Cessapalombo,62020
+MC,Cingoli,62011
+MC,Civitanova Marche,62012
+MC,Colmurano,62020
+MC,Corridonia,62014
+MC,Esanatoglia,62024
+MC,Fiastra,62035
+MC,Fiordimonte,62035
+MC,Fiuminata,62025
+MC,Gagliole,62022
+MC,Gualdo,62020
+MC,Loro Piceno,62020
+MC,Macerata,62100
+MC,Matelica,62024
+MC,Mogliano,62010
+MC,Monte Cavallo,62036
+MC,Monte San Giusto,62015
+MC,Monte San Martino,62020
+MC,Montecassiano,62010
+MC,Montecosaro,62010
+MC,Montefano,62010
+MC,Montelupone,62010
+MC,Morrovalle,62010
+MC,Muccia,62034
+MC,Penna San Giovanni,62020
+MC,Petriolo,62014
+MC,Pieve Torina,62036
+MC,Pievebovigliana,62035
+MC,Pioraco,62025
+MC,Poggio San Vicino,62021
+MC,Pollenza,62010
+MC,Porto Recanati,62017
+MC,Potenza Picena,62018
+MC,Recanati,62019
+MC,Ripe San Ginesio,62020
+MC,San Ginesio,62026
+MC,San Severino Marche,62027
+MC,Sant'Angelo in Pontano,62020
+MC,Sarnano,62028
+MC,Sefro,62025
+MC,Serrapetrona,62020
+MC,Serravalle di Chienti,62038
+MC,Tolentino,62029
+MC,Treia,62010
+MC,Urbisaglia,62010
+MC,Ussita,62039
+MC,Visso,62039
+ME,Acquedolci,98070
+ME,Alcara Li Fusi,98070
+ME,Alì,98020
+ME,Alì Terme,98021
+ME,Antillo,98030
+ME,Barcellona Pozzo di Gotto,98051
+ME,Basicò,98060
+ME,Brolo,98061
+ME,Capizzi,98031
+ME,Capo d'Orlando,98071
+ME,Capri Leone,98070
+ME,Caronia,98072
+ME,Casalvecchio Siculo,98032
+ME,Castel di Lucio,98070
+ME,Castell'Umberto,98070
+ME,Castelmola,98030
+ME,Castroreale,98053
+ME,Cesarò,98033
+ME,Condrò,98040
+ME,Falcone,98060
+ME,Ficarra,98062
+ME,Fiumedinisi,98022
+ME,Floresta,98030
+ME,Fondachelli-Fantina,98050
+ME,Forza d'Agrò,98030
+ME,Francavilla di Sicilia,98034
+ME,Frazzanò,98070
+ME,Furci Siculo,98023
+ME,Furnari,98054
+ME,Gaggi,98030
+ME,Galati Mamertino,98070
+ME,Gallodoro,98030
+ME,Giardini-Naxos,98035
+ME,Gioiosa Marea,98063
+ME,Graniti,98036
+ME,Gualtieri Sicaminò,98040
+ME,Itala,98025
+ME,Leni,98050
+ME,Letojanni,98037
+ME,Librizzi,98064
+ME,Limina,98030
+ME,Lipari,98055
+ME,Longi,98070
+ME,Malfa,98050
+ME,Malvagna,98030
+ME,Mandanici,98020
+ME,Mazzarrà Sant'Andrea,98056
+ME,Merì,98040
+ME,Messina,981xx
+ME,Milazzo,98057
+ME,Militello Rosmarino,98070
+ME,Mirto,98070
+ME,Mistretta,98073
+ME,Moio Alcantara,98030
+ME,Monforte San Giorgio,98041
+ME,Mongiuffi Melia,98030
+ME,Montagnareale,98060
+ME,Montalbano Elicona,98065
+ME,Motta Camastra,98030
+ME,Motta d'Affermo,98070
+ME,Naso,98074
+ME,Nizza di Sicilia,98026
+ME,Novara di Sicilia,98058
+ME,Oliveri,98060
+ME,Pace del Mela,98042
+ME,Pagliara,98020
+ME,Patti,98066
+ME,Pettineo,98070
+ME,Piraino,98060
+ME,Raccuja,98067
+ME,Reitano,98070
+ME,Roccafiorita,98030
+ME,Roccalumera,98027
+ME,Roccavaldina,98040
+ME,Roccella Valdemone,98030
+ME,Rodì Milici,98059
+ME,Rometta,98043
+ME,San Filippo del Mela,98044
+ME,San Fratello,98075
+ME,San Marco D'Alunzio,98070
+ME,San Pier Niceto,98045
+ME,San Piero Patti,98068
+ME,San Salvatore di Fitalia,98070
+ME,San Teodoro,98030
+ME,Santa Domenica Vittoria,98030
+ME,Santa Lucia del Mela,98046
+ME,Santa Marina Salina,98050
+ME,Santa Teresa di Riva,98028
+ME,Sant'Agata di Militello,98076
+ME,Sant'Alessio Siculo,98030
+ME,Sant'Angelo di Brolo,98060
+ME,Santo Stefano di Camastra,98077
+ME,Saponara,98047
+ME,Savoca,98038
+ME,Scaletta Zanclea,98029
+ME,Sinagra,98069
+ME,Spadafora,98048
+ME,Taormina,98039
+ME,Terme Vigliatore,98050
+ME,Torregrotta,98040
+ME,Torrenova,98070
+ME,Tortorici,98078
+ME,Tripi,98060
+ME,Tusa,98079
+ME,Ucria,98060
+ME,Valdina,98040
+ME,Venetico,98040
+ME,Villafranca Tirrena,98049
+MI,Abbiategrasso,20081
+MI,Albairate,20080
+MI,Arconate,20020
+MI,Arese,20020
+MI,Arluno,20010
+MI,Assago,20090
+MI,Baranzate,20021
+MI,Bareggio,20010
+MI,Basiano,20060
+MI,Basiglio,20080
+MI,Bellinzago Lombardo,20060
+MI,Bernate Ticino,20010
+MI,Besate,20080
+MI,Binasco,20082
+MI,Boffalora Sopra Ticino,20010
+MI,Bollate,20021
+MI,Bresso,20091
+MI,Bubbiano,20080
+MI,Buccinasco,20090
+MI,Buscate,20010
+MI,Bussero,20060
+MI,Busto Garolfo,20020
+MI,Calvignasco,20080
+MI,Cambiago,20040
+MI,Canegrate,20010
+MI,Carpiano,20080
+MI,Carugate,20061
+MI,Casarile,20080
+MI,Casorezzo,20010
+MI,Cassano d'Adda,20062
+MI,Cassina de' Pecchi,20060
+MI,Cassinetta di Lugagnano,20081
+MI,Castano Primo,20022
+MI,Cernusco sul Naviglio,20063
+MI,Cerro al Lambro,20070
+MI,Cerro Maggiore,20023
+MI,Cesano Boscone,20090
+MI,Cesate,20020
+MI,Cinisello Balsamo,20092
+MI,Cisliano,20080
+MI,Cologno Monzese,20093
+MI,Colturano,20060
+MI,Corbetta,20011
+MI,Cormano,20032
+MI,Cornaredo,20010
+MI,Corsico,20094
+MI,Cuggiono,20012
+MI,Cusago,20090
+MI,Cusano Milanino,20095
+MI,Dairago,20020
+MI,Dresano,20070
+MI,Gaggiano,20083
+MI,Garbagnate Milanese,20024
+MI,Gessate,20060
+MI,Gorgonzola,20064
+MI,Grezzago,20056
+MI,Gudo Visconti,20088
+MI,Inveruno,20010
+MI,Inzago,20065
+MI,Lacchiarella,20084
+MI,Lainate,20020
+MI,Legnano,20025
+MI,Liscate,20060
+MI,Locate di Triulzi,20085
+MI,Magenta,20013
+MI,Magnago,20020
+MI,Marcallo con Casone,20010
+MI,Masate,20060
+MI,Mediglia,20060
+MI,Melegnano,20077
+MI,Melzo,20066
+MI,Mesero,20010
+MI,Milano,201xx
+MI,Morimondo,20081
+MI,Motta Visconti,20086
+MI,Nerviano,20014
+MI,Nosate,20020
+MI,Novate Milanese,20026
+MI,Noviglio,20082
+MI,Opera,20090
+MI,Ossona,20010
+MI,Ozzero,20080
+MI,Paderno Dugnano,20037
+MI,Pantigliate,20090
+MI,Parabiago,20015
+MI,Paullo,20067
+MI,Pero,20016
+MI,Peschiera Borromeo,20068
+MI,Pessano con Bornago,20060
+MI,Pieve Emanuele,20090
+MI,Pioltello,20096
+MI,Pogliano Milanese,20010
+MI,Pozzo d'Adda,20060
+MI,Pozzuolo Martesana,20060
+MI,Pregnana Milanese,20010
+MI,Rescaldina,20027
+MI,Rho,20017
+MI,Robecchetto con Induno,20020
+MI,Robecco sul Naviglio,20087
+MI,Rodano,20090
+MI,Rosate,20088
+MI,Rozzano,20089
+MI,San Colombano al Lambro,20078
+MI,San Donato Milanese,20097
+MI,San Giorgio su Legnano,20010
+MI,San Giuliano Milanese,20098
+MI,San Vittore Olona,20028
+MI,San Zenone al Lambro,20070
+MI,Santo Stefano Ticino,20010
+MI,Sedriano,20018
+MI,Segrate,20090
+MI,Senago,20030
+MI,Sesto San Giovanni,20099
+MI,Settala,20090
+MI,Settimo Milanese,20019
+MI,Solaro,20020
+MI,Trezzano Rosa,20060
+MI,Trezzano sul Naviglio,20090
+MI,Trezzo sull'Adda,20056
+MI,Tribiano,20067
+MI,Truccazzano,20060
+MI,Turbigo,20029
+MI,Vanzaghello,20020
+MI,Vanzago,20010
+MI,Vaprio d'Adda,20069
+MI,Vermezzo,20080
+MI,Vernate,20080
+MI,Vignate,20060
+MI,Villa Cortese,20020
+MI,Vimodrone,20090
+MI,Vittuone,20010
+MI,Vizzolo Predabissi,20070
+MI,Zelo Surrigone,20080
+MI,Zibido San Giacomo,20080
+MN,Acquanegra sul Chiese,46011
+MN,Asola,46041
+MN,Bagnolo San Vito,46031
+MN,Bigarello,46030
+MN,Borgoforte,46030
+MN,Borgofranco sul Po,46020
+MN,Bozzolo,46012
+MN,Canneto sull'Oglio,46013
+MN,Carbonara di Po,46020
+MN,Casalmoro,46040
+MN,Casaloldo,46040
+MN,Casalromano,46040
+MN,Castel d'Ario,46033
+MN,Castel Goffredo,46042
+MN,Castelbelforte,46032
+MN,Castellucchio,46014
+MN,Castiglione delle Stiviere,46043
+MN,Cavriana,46040
+MN,Ceresara,46040
+MN,Commessaggio,46010
+MN,Curtatone,46010
+MN,Dosolo,46030
+MN,Felonica,46022
+MN,Gazoldo degli Ippoliti,46040
+MN,Gazzuolo,46010
+MN,Goito,46044
+MN,Gonzaga,46023
+MN,Guidizzolo,46040
+MN,Magnacavallo,46020
+MN,Mantova,46100
+MN,Marcaria,46010
+MN,Mariana Mantovana,46010
+MN,Marmirolo,46045
+MN,Medole,46046
+MN,Moglia,46024
+MN,Monzambano,46040
+MN,Motteggiana,46020
+MN,Ostiglia,46035
+MN,Pegognaga,46020
+MN,Pieve di Coriano,46020
+MN,Piubega,46040
+MN,Poggio Rusco,46025
+MN,Pomponesco,46030
+MN,Ponti sul Mincio,46040
+MN,Porto Mantovano,46047
+MN,Quingentole,46020
+MN,Quistello,46026
+MN,Redondesco,46010
+MN,Revere,46036
+MN,Rivarolo Mantovano,46017
+MN,Rodigo,46040
+MN,Roncoferraro,46037
+MN,Roverbella,46048
+MN,Sabbioneta,46018
+MN,San Benedetto Po,46027
+MN,San Giacomo delle Segnate,46020
+MN,San Giorgio di Mantova,46030
+MN,San Giovanni del Dosso,46020
+MN,San Martino dall'Argine,46010
+MN,Schivenoglia,46020
+MN,Sermide,46028
+MN,Serravalle a Po,46030
+MN,Solferino,46040
+MN,Sustinente,46030
+MN,Suzzara,46029
+MN,Viadana,46019
+MN,Villa Poma,46020
+MN,Villimpenta,46039
+MN,Virgilio,46030
+MN,Volta Mantovana,46049
+MO,Bastiglia,41030
+MO,Bomporto,41030
+MO,Campogalliano,41011
+MO,Camposanto,41031
+MO,Carpi,41012
+MO,Castelfranco Emilia,41013
+MO,Castelnuovo Rangone,41051
+MO,Castelvetro di Modena,41014
+MO,Cavezzo,41032
+MO,Concordia sulla Secchia,41033
+MO,Fanano,41021
+MO,Finale Emilia,41034
+MO,Fiorano Modenese,41042
+MO,Fiumalbo,41022
+MO,Formigine,41043
+MO,Frassinoro,41044
+MO,Guiglia,41052
+MO,Lama Mocogno,41023
+MO,Maranello,41053
+MO,Marano sul Panaro,41054
+MO,Medolla,41036
+MO,Mirandola,41037
+MO,Modena,4112x
+MO,Montecreto,41025
+MO,Montefiorino,41045
+MO,Montese,41055
+MO,Nonantola,41015
+MO,Novi di Modena,41016
+MO,Palagano,41046
+MO,Pavullo nel Frignano,41026
+MO,Pievepelago,41027
+MO,Polinago,41040
+MO,Prignano sulla Secchia,41048
+MO,Ravarino,41017
+MO,Riolunato,41020
+MO,San Cesario sul Panaro,41018
+MO,San Felice sul Panaro,41038
+MO,San Possidonio,41039
+MO,San Prospero,41030
+MO,Sassuolo,41049
+MO,Savignano sul Panaro,41056
+MO,Serramazzoni,41028
+MO,Sestola,41029
+MO,Soliera,41019
+MO,Spilamberto,41057
+MO,Vignola,41058
+MO,Zocca,41059
+MS,Aulla,54011
+MS,Bagnone,54021
+MS,Carrara,54033
+MS,Casola in Lunigiana,54014
+MS,Comano,54015
+MS,Filattiera,54023
+MS,Fivizzano,54013
+MS,Fosdinovo,54035
+MS,Licciana Nardi,54016
+MS,Massa,54100
+MS,Montignoso,54038
+MS,Mulazzo,54026
+MS,Podenzana,54010
+MS,Pontremoli,54027
+MS,Tresana,54012
+MS,Villafranca in Lunigiana,54028
+MS,Zeri,54029
+MT,Accettura,75011
+MT,Aliano,75010
+MT,Bernalda,75012
+MT,Calciano,75010
+MT,Cirigliano,75010
+MT,Colobraro,75021
+MT,Craco,75010
+MT,Ferrandina,75013
+MT,Garaguso,75010
+MT,Gorgoglione,75010
+MT,Grassano,75014
+MT,Grottole,75010
+MT,Irsina,75022
+MT,Matera,75100
+MT,Miglionico,75010
+MT,Montalbano Jonico,75023
+MT,Montescaglioso,75024
+MT,Nova Siri,75020
+MT,Oliveto Lucano,75010
+MT,Pisticci,75015
+MT,Policoro,75025
+MT,Pomarico,75016
+MT,Rotondella,75026
+MT,Salandra,75017
+MT,San Giorgio Lucano,75027
+MT,San Mauro Forte,75010
+MT,Scanzano Jonico,75020
+MT,Stigliano,75018
+MT,Tricarico,75019
+MT,Tursi,75028
+MT,Valsinni,75029
+NA,Acerra,80011
+NA,Afragola,80021
+NA,Agerola,80051
+NA,Anacapri,80071
+NA,Arzano,80022
+NA,Bacoli,80070
+NA,Barano d'Ischia,80070
+NA,Boscoreale,80041
+NA,Boscotrecase,80042
+NA,Brusciano,80031
+NA,Caivano,80023
+NA,Calvizzano,80012
+NA,Camposano,80030
+NA,Capri,80073
+NA,Carbonara di Nola,80030
+NA,Cardito,80024
+NA,Casalnuovo di Napoli,80013
+NA,Casamarciano,80032
+NA,Casamicciola Terme,80074
+NA,Casandrino,80025
+NA,Casavatore,80020
+NA,Casola di Napoli,80050
+NA,Casoria,80026
+NA,Castellammare di Stabia,80053
+NA,Castello di Cisterna,80030
+NA,Cercola,80040
+NA,Cicciano,80033
+NA,Cimitile,80030
+NA,Comiziano,80030
+NA,Crispano,80020
+NA,Ercolano,80056
+NA,Forio,80075
+NA,Frattamaggiore,80027
+NA,Frattaminore,80020
+NA,Giugliano in Campania,80014
+NA,Gragnano,80054
+NA,Grumo Nevano,80028
+NA,Ischia,80077
+NA,Lacco Ameno,80076
+NA,Lettere,80050
+NA,Liveri,80030
+NA,Marano di Napoli,80016
+NA,Mariglianella,80030
+NA,Marigliano,80034
+NA,Massa di Somma,80040
+NA,Massa Lubrense,80061
+NA,Melito di Napoli,80017
+NA,Meta,80062
+NA,Monte di Procida,80070
+NA,Mugnano di Napoli,80018
+NA,Napoli,801xx
+NA,Nola,80035
+NA,Ottaviano,80044
+NA,Palma Campania,80036
+NA,Piano di Sorrento,80063
+NA,Pimonte,80050
+NA,Poggiomarino,80040
+NA,Pollena Trocchia,80040
+NA,Pomigliano d'Arco,80038
+NA,Pompei,80045
+NA,Portici,80055
+NA,Pozzuoli,80078
+NA,Procida,80079
+NA,Qualiano,80019
+NA,Quarto,80010
+NA,Roccarainola,80030
+NA,San Gennaro Vesuviano,80040
+NA,San Giorgio a Cremano,80046
+NA,San Giuseppe Vesuviano,80047
+NA,San Paolo Bel Sito,80030
+NA,San Sebastiano al Vesuvio,80040
+NA,San Vitaliano,80030
+NA,Santa Maria la Carità,80050
+NA,Sant'Agnello,80065
+NA,Sant'Anastasia,80048
+NA,Sant'Antimo,80029
+NA,Sant'Antonio Abate,80057
+NA,Saviano,80039
+NA,Scisciano,80030
+NA,Serrara Fontana,80070
+NA,Somma Vesuviana,80049
+NA,Sorrento,80067
+NA,Striano,80040
+NA,Terzigno,80040
+NA,Torre Annunziata,80058
+NA,Torre del Greco,80059
+NA,Trecase,80040
+NA,Tufino,80030
+NA,Vico Equense,80069
+NA,Villaricca,80010
+NA,Visciano,80030
+NA,Volla,80040
+NO,Agrate Conturbia,28010
+NO,Ameno,28010
+NO,Armeno,28011
+NO,Arona,28041
+NO,Barengo,28010
+NO,Bellinzago Novarese,28043
+NO,Biandrate,28061
+NO,Boca,28010
+NO,Bogogno,28010
+NO,Bolzano Novarese,28010
+NO,Borgo Ticino,28040
+NO,Borgolavezzaro,28071
+NO,Borgomanero,28021
+NO,Briga Novarese,28010
+NO,Briona,28072
+NO,Caltignaga,28010
+NO,Cameri,28062
+NO,Carpignano Sesia,28064
+NO,Casalbeltrame,28060
+NO,Casaleggio Novara,28060
+NO,Casalino,28060
+NO,Casalvolone,28060
+NO,Castellazzo Novarese,28060
+NO,Castelletto Sopra Ticino,28053
+NO,Cavaglietto,28010
+NO,Cavaglio d'Agogna,28010
+NO,Cavallirio,28010
+NO,Cerano,28065
+NO,Colazza,28010
+NO,Comignago,28060
+NO,Cressa,28012
+NO,Cureggio,28060
+NO,Divignano,28010
+NO,Dormelletto,28040
+NO,Fara Novarese,28073
+NO,Fontaneto d'Agogna,28010
+NO,Galliate,28066
+NO,Garbagna Novarese,28070
+NO,Gargallo,28010
+NO,Gattico,28013
+NO,Ghemme,28074
+NO,Gozzano,28024
+NO,Granozzo con Monticello,28060
+NO,Grignasco,28075
+NO,Invorio,28045
+NO,Landiona,28064
+NO,Lesa,28040
+NO,Maggiora,28014
+NO,Mandello Vitta,28060
+NO,Marano Ticino,28040
+NO,Massino Visconti,28040
+NO,Meina,28046
+NO,Mezzomerico,28040
+NO,Miasino,28010
+NO,Momo,28015
+NO,Nebbiuno,28010
+NO,Nibbiola,28070
+NO,Novara,28100
+NO,Oleggio,28047
+NO,Oleggio Castello,28040
+NO,Orta San Giulio,28016
+NO,Paruzzaro,28040
+NO,Pella,28010
+NO,Pettenasco,28028
+NO,Pisano,28010
+NO,Pogno,28076
+NO,Pombia,28050
+NO,Prato Sesia,28077
+NO,Recetto,28060
+NO,Romagnano Sesia,28078
+NO,Romentino,28068
+NO,San Maurizio d'Opaglio,28017
+NO,San Nazzaro Sesia,28060
+NO,San Pietro Mosezzo,28060
+NO,Sillavengo,28064
+NO,Sizzano,28070
+NO,Soriso,28010
+NO,Sozzago,28060
+NO,Suno,28019
+NO,Terdobbiate,28070
+NO,Tornaco,28070
+NO,Trecate,28069
+NO,Vaprio d'Agogna,28010
+NO,Varallo Pombia,28040
+NO,Veruno,28010
+NO,Vespolate,28079
+NO,Vicolungo,28060
+NO,Vinzaglio,28060
+NU,Aritzo,8031
+NU,Atzara,8030
+NU,Austis,8030
+NU,Belvì,8030
+NU,Birori,8010
+NU,Bitti,8021
+NU,Bolotana,8011
+NU,Borore,8016
+NU,Bortigali,8012
+NU,Desulo,8032
+NU,Dorgali,8022
+NU,Dualchi,8010
+NU,Fonni,8023
+NU,Gadoni,8030
+NU,Galtellì,8020
+NU,Gavoi,8020
+NU,Irgoli,8020
+NU,Lei,8010
+NU,Loculi,8020
+NU,Lodè,8020
+NU,Lodine,8020
+NU,Lula,8020
+NU,Macomer,8015
+NU,Mamoiada,8024
+NU,Meana Sardo,8030
+NU,Noragugume,8010
+NU,Nuoro,8100
+NU,Oliena,8025
+NU,Ollolai,8020
+NU,Olzai,8020
+NU,Onanì,8020
+NU,Onifai,8020
+NU,Oniferi,8020
+NU,Orani,8026
+NU,Orgosolo,8027
+NU,Orosei,8028
+NU,Orotelli,8020
+NU,Ortueri,8036
+NU,Orune,8020
+NU,Osidda,8020
+NU,Ottana,8020
+NU,Ovodda,8020
+NU,Posada,8020
+NU,Sarule,8020
+NU,Silanus,8017
+NU,Sindia,8018
+NU,Siniscola,8029
+NU,Sorgono,8038
+NU,Teti,8030
+NU,Tiana,8020
+NU,Tonara,8039
+NU,Torpè,8020
+OG,Arzana,8040
+OG,Bari Sardo,8042
+OG,Baunei,8040
+OG,Cardedu,8040
+OG,Elini,8040
+OG,Gairo,8040
+OG,Girasole,8040
+OG,Ilbono,8040
+OG,Jerzu,8044
+OG,Lanusei,8045
+OG,Loceri,8040
+OG,Lotzorai,8040
+OG,Osini,8040
+OG,Perdasdefogu,8046
+OG,Seui,8037
+OG,Talana,8040
+OG,Tertenia,8047
+OG,Tortolì,8048
+OG,Triei,8040
+OG,Ulassai,8040
+OG,Urzulei,8040
+OG,Ussassai,8040
+OG,Villagrande Strisaili,8049
+OR,Abbasanta,9071
+OR,Aidomaggiore,9070
+OR,Albagiara,9090
+OR,Ales,9091
+OR,Allai,9080
+OR,Arborea,9092
+OR,Ardauli,9081
+OR,Assolo,9080
+OR,Asuni,9080
+OR,Baradili,9090
+OR,Baratili San Pietro,9070
+OR,Baressa,9090
+OR,Bauladu,9070
+OR,Bidonì,9080
+OR,Bonarcado,9070
+OR,Boroneddu,9080
+OR,Bosa,8013
+OR,Busachi,9082
+OR,Cabras,9072
+OR,Cuglieri,9073
+OR,Curcuris,9090
+OR,Flussio,8010
+OR,Fordongianus,9083
+OR,Genoni,8030
+OR,Ghilarza,9074
+OR,Gonnoscodina,9090
+OR,Gonnosnò,9090
+OR,Gonnostramatza,9093
+OR,Laconi,8034
+OR,Magomadas,8010
+OR,Marrubiu,9094
+OR,Masullas,9090
+OR,Milis,9070
+OR,Modolo,8019
+OR,Mogorella,9080
+OR,Mogoro,9095
+OR,Montresta,8010
+OR,Morgongiori,9090
+OR,Narbolia,9070
+OR,Neoneli,9080
+OR,Norbello,9070
+OR,Nughedu Santa Vittoria,9080
+OR,Nurachi,9070
+OR,Nureci,9080
+OR,Ollastra,9088
+OR,Oristano,9170
+OR,Palmas Arborea,9090
+OR,Pau,9090
+OR,Paulilatino,9070
+OR,Pompu,9093
+OR,Riola Sardo,9070
+OR,Ruinas,9085
+OR,Sagama,8010
+OR,Samugheo,9086
+OR,San Nicolò d'Arcidano,9097
+OR,San Vero Milis,9070
+OR,Santa Giusta,9096
+OR,Santu Lussurgiu,9075
+OR,Scano di Montiferro,9078
+OR,Sedilo,9076
+OR,Seneghe,9070
+OR,Senis,9080
+OR,Sennariolo,9078
+OR,Siamaggiore,9070
+OR,Siamanna,9080
+OR,Siapiccia,9080
+OR,Simala,9090
+OR,Simaxis,9088
+OR,Sini,9090
+OR,Siris,9090
+OR,Soddì,9080
+OR,Solarussa,9077
+OR,Sorradile,9080
+OR,Suni,8010
+OR,Tadasuni,9080
+OR,Terralba,9098
+OR,Tinnura,8010
+OR,Tramatza,9070
+OR,Tresnuraghes,9079
+OR,Ulà Tirso,9080
+OR,Uras,9099
+OR,Usellus,9090
+OR,Villa Sant'Antonio,9080
+OR,Villa Verde,9090
+OR,Villanova Truschedu,9084
+OR,Villaurbana,9080
+OR,Zeddiani,9070
+OR,Zerfaliu,9070
+OT,Aggius,7020
+OT,Aglientu,7020
+OT,Alà dei Sardi,7020
+OT,Arzachena,7021
+OT,Badesi,7030
+OT,Berchidda,7022
+OT,Bortigiadas,7030
+OT,Buddusò,7020
+OT,Budoni,8020
+OT,Calangianus,7023
+OT,Golfo Aranci,7020
+OT,La Maddalena,7024
+OT,Loiri Porto San Paolo,7020
+OT,Luogosanto,7020
+OT,Luras,7025
+OT,Monti,7020
+OT,Olbia,7026
+OT,Oschiri,7027
+OT,Padru,7020
+OT,Palau,7020
+OT,San Teodoro,8020
+OT,Santa Teresa Gallura,7028
+OT,Sant'Antonio di Gallura,7030
+OT,Telti,7020
+OT,Tempio Pausania,7029
+OT,Trinità d'Agultu e Vignola,7038
+PA,Alia,90021
+PA,Alimena,90020
+PA,Aliminusa,90020
+PA,Altavilla Milicia,90010
+PA,Altofonte,90030
+PA,Bagheria,90011
+PA,Balestrate,90041
+PA,Baucina,90020
+PA,Belmonte Mezzagno,90031
+PA,Bisacquino,90032
+PA,Blufi,90020
+PA,Bolognetta,90030
+PA,Bompietro,90020
+PA,Borgetto,90042
+PA,Caccamo,90012
+PA,Caltavuturo,90022
+PA,Campofelice di Fitalia,90030
+PA,Campofelice di Roccella,90010
+PA,Campofiorito,90030
+PA,Camporeale,90043
+PA,Capaci,90040
+PA,Carini,90044
+PA,Castelbuono,90013
+PA,Casteldaccia,90014
+PA,Castellana Sicula,90020
+PA,Castronovo di Sicilia,90030
+PA,Cefalà Diana,90030
+PA,Cefalù,90015
+PA,Cerda,90010
+PA,Chiusa Sclafani,90033
+PA,Ciminna,90023
+PA,Cinisi,90045
+PA,Collesano,90016
+PA,Contessa Entellina,90030
+PA,Corleone,90034
+PA,Ficarazzi,90010
+PA,Gangi,90024
+PA,Geraci Siculo,90010
+PA,Giardinello,90040
+PA,Giuliana,90030
+PA,Godrano,90030
+PA,Gratteri,90010
+PA,Isnello,90010
+PA,Isola delle Femmine,90040
+PA,Lascari,90010
+PA,Lercara Friddi,90025
+PA,Marineo,90035
+PA,Mezzojuso,90030
+PA,Misilmeri,90036
+PA,Monreale,90046
+PA,Montelepre,90040
+PA,Montemaggiore Belsito,90020
+PA,Palazzo Adriano,90030
+PA,Palermo,901xx
+PA,Partinico,90047
+PA,Petralia Soprana,90026
+PA,Petralia Sottana,90027
+PA,Piana degli Albanesi,90037
+PA,Polizzi Generosa,90028
+PA,Pollina,90010
+PA,Prizzi,90038
+PA,Roccamena,90040
+PA,Roccapalumba,90020
+PA,San Cipirello,90040
+PA,San Giuseppe Jato,90048
+PA,San Mauro Castelverde,90010
+PA,Santa Cristina Gela,90030
+PA,Santa Flavia,90017
+PA,Sciara,90020
+PA,Scillato,90020
+PA,Sclafani Bagni,90020
+PA,Termini Imerese,90018
+PA,Terrasini,90049
+PA,Torretta,90040
+PA,Trabia,90019
+PA,Trappeto,90040
+PA,Ustica,90010
+PA,Valledolmo,90029
+PA,Ventimiglia di Sicilia,90020
+PA,Vicari,90020
+PA,Villabate,90039
+PA,Villafrati,90030
+PC,Agazzano,29010
+PC,Alseno,29010
+PC,Besenzone,29010
+PC,Bettola,29021
+PC,Bobbio,29022
+PC,Borgonovo Val Tidone,29011
+PC,Cadeo,29010
+PC,Calendasco,29010
+PC,Caminata,29010
+PC,Caorso,29012
+PC,Carpaneto Piacentino,29013
+PC,Castel San Giovanni,29015
+PC,Castell'Arquato,29014
+PC,Castelvetro Piacentino,29010
+PC,Cerignale,29020
+PC,Coli,29020
+PC,Corte Brugnatella,29020
+PC,Cortemaggiore,29016
+PC,Farini,29023
+PC,Ferriere,29024
+PC,Fiorenzuola d'Arda,29017
+PC,Gazzola,29010
+PC,Gossolengo,29020
+PC,Gragnano Trebbiense,29010
+PC,Gropparello,29025
+PC,Lugagnano Val D'Arda,29018
+PC,Monticelli d'Ongina,29010
+PC,Morfasso,29020
+PC,Nibbiano,29010
+PC,Ottone,29026
+PC,Pecorara,29010
+PC,Piacenza,2912x
+PC,Pianello Val Tidone,29010
+PC,Piozzano,29010
+PC,Podenzano,29027
+PC,Ponte dell'Olio,29028
+PC,Pontenure,29010
+PC,Rivergaro,29029
+PC,Rottofreno,29010
+PC,San Giorgio Piacentino,29019
+PC,San Pietro in Cerro,29010
+PC,Sarmato,29010
+PC,Travo,29020
+PC,Vernasca,29010
+PC,Vigolzone,29020
+PC,Villanova sull'Arda,29010
+PC,Zerba,29020
+PC,Ziano Piacentino,29010
+PD,Abano Terme,35031
+PD,Agna,35021
+PD,Albignasego,35020
+PD,Anguillara Veneta,35022
+PD,Arquà Petrarca,35032
+PD,Arre,35020
+PD,Arzergrande,35020
+PD,Bagnoli di Sopra,35023
+PD,Baone,35030
+PD,Barbona,35040
+PD,Battaglia Terme,35041
+PD,Boara Pisani,35040
+PD,Borgoricco,35010
+PD,Bovolenta,35024
+PD,Brugine,35020
+PD,Cadoneghe,35010
+PD,Campo San Martino,35010
+PD,Campodarsego,35011
+PD,Campodoro,35010
+PD,Camposampiero,35012
+PD,Candiana,35020
+PD,Carceri,35040
+PD,Carmignano di Brenta,35010
+PD,Cartura,35025
+PD,Casale di Scodosia,35040
+PD,Casalserugo,35020
+PD,Castelbaldo,35040
+PD,Cervarese Santa Croce,35030
+PD,Cinto Euganeo,35030
+PD,Cittadella,35013
+PD,Codevigo,35020
+PD,Conselve,35026
+PD,Correzzola,35020
+PD,Curtarolo,35010
+PD,Due Carrare,35020
+PD,Este,35042
+PD,Fontaniva,35014
+PD,Galliera Veneta,35015
+PD,Galzignano Terme,35030
+PD,Gazzo,35010
+PD,Grantorto,35010
+PD,Granze,35040
+PD,Legnaro,35020
+PD,Limena,35010
+PD,Loreggia,35010
+PD,Lozzo Atestino,35034
+PD,Maserà di Padova,35020
+PD,Masi,35040
+PD,Massanzago,35010
+PD,Megliadino San Fidenzio,35040
+PD,Megliadino San Vitale,35040
+PD,Merlara,35040
+PD,Mestrino,35035
+PD,Monselice,35043
+PD,Montagnana,35044
+PD,Montegrotto Terme,35036
+PD,Noventa Padovana,35027
+PD,Ospedaletto Euganeo,35045
+PD,Padova,351xx
+PD,Pernumia,35020
+PD,Piacenza d'Adige,35040
+PD,Piazzola sul Brenta,35016
+PD,Piombino Dese,35017
+PD,Piove di Sacco,35028
+PD,Polverara,35020
+PD,Ponso,35040
+PD,Ponte San Nicolò,35020
+PD,Pontelongo,35029
+PD,Pozzonovo,35020
+PD,Rovolon,35030
+PD,Rubano,35030
+PD,Saccolongo,35030
+PD,Saletto,35046
+PD,San Giorgio delle Pertiche,35010
+PD,San Giorgio in Bosco,35010
+PD,San Martino di Lupari,35018
+PD,San Pietro in Gu,35010
+PD,San Pietro Viminario,35020
+PD,Santa Giustina in Colle,35010
+PD,Santa Margherita d'Adige,35040
+PD,Sant'Angelo di Piove di Sacco,35020
+PD,Sant'Elena,35040
+PD,Sant'Urbano,35040
+PD,Saonara,35020
+PD,Selvazzano Dentro,35030
+PD,Solesino,35047
+PD,Stanghella,35048
+PD,Teolo,35037
+PD,Terrassa Padovana,35020
+PD,Tombolo,35019
+PD,Torreglia,35038
+PD,Trebaseleghe,35010
+PD,Tribano,35020
+PD,Urbana,35040
+PD,Veggiano,35030
+PD,Vescovana,35040
+PD,Vighizzolo d'Este,35040
+PD,Vigodarzere,35010
+PD,Vigonza,35010
+PD,Villa del Conte,35010
+PD,Villa Estense,35040
+PD,Villafranca Padovana,35010
+PD,Villanova di Camposampiero,35010
+PD,Vo',35030
+PE,Abbateggio,65020
+PE,Alanno,65020
+PE,Bolognano,65020
+PE,Brittoli,65010
+PE,Bussi sul Tirino,65022
+PE,Cappelle sul Tavo,65010
+PE,Caramanico Terme,65023
+PE,Carpineto della Nora,65010
+PE,Castiglione a Casauria,65020
+PE,Catignano,65011
+PE,Cepagatti,65012
+PE,Città Sant'Angelo,65013
+PE,Civitaquana,65010
+PE,Civitella Casanova,65010
+PE,Collecorvino,65010
+PE,Corvara,65020
+PE,Cugnoli,65020
+PE,Elice,65010
+PE,Farindola,65010
+PE,Lettomanoppello,65020
+PE,Loreto Aprutino,65014
+PE,Manoppello,65024
+PE,Montebello di Bertona,65010
+PE,Montesilvano,65015
+PE,Moscufo,65010
+PE,Nocciano,65010
+PE,Penne,65017
+PE,Pescara,6512x
+PE,Pescosansonesco,65020
+PE,Pianella,65019
+PE,Picciano,65010
+PE,Pietranico,65020
+PE,Popoli,65026
+PE,Roccamorice,65020
+PE,Rosciano,65020
+PE,Salle,65020
+PE,San Valentino in Abruzzo Citeriore,65020
+PE,Sant'Eufemia a Maiella,65020
+PE,Scafa,65027
+PE,Serramonacesca,65025
+PE,Spoltore,65010
+PE,Tocco da Casauria,65028
+PE,Torre De' Passeri,65029
+PE,Turrivalignani,65020
+PE,Vicoli,65010
+PE,Villa Celiera,65010
+PG,Assisi,6081
+PG,Bastia Umbra,6083
+PG,Bettona,6084
+PG,Bevagna,6031
+PG,Campello sul Clitunno,6042
+PG,Cannara,6033
+PG,Cascia,6043
+PG,Castel Ritaldi,6044
+PG,Castiglione del Lago,6061
+PG,Cerreto di Spoleto,6041
+PG,Citerna,6010
+PG,Città della Pieve,6062
+PG,Città di Castello,6012
+PG,Collazzone,6050
+PG,Corciano,6073
+PG,Costacciaro,6021
+PG,Deruta,6053
+PG,Foligno,6034
+PG,Fossato di Vico,6022
+PG,Fratta Todina,6054
+PG,Giano dell'Umbria,6030
+PG,Gualdo Cattaneo,6035
+PG,Gualdo Tadino,6023
+PG,Gubbio,6024
+PG,Lisciano Niccone,6060
+PG,Magione,6063
+PG,Marsciano,6055
+PG,Massa Martana,6056
+PG,Monte Castello di Vibio,6057
+PG,Monte Santa Maria Tiberina,6010
+PG,Montefalco,6036
+PG,Monteleone di Spoleto,6045
+PG,Montone,6014
+PG,Nocera Umbra,6025
+PG,Norcia,6046
+PG,Paciano,6060
+PG,Panicale,6064
+PG,Passignano sul Trasimeno,6065
+PG,Perugia,061xx
+PG,Piegaro,6066
+PG,Pietralunga,6026
+PG,Poggiodomo,6040
+PG,Preci,6047
+PG,San Giustino,6016
+PG,Sant'Anatolia di Narco,6040
+PG,Scheggia e Pascelupo,6027
+PG,Scheggino,6040
+PG,Sellano,6030
+PG,Sigillo,6028
+PG,Spello,6038
+PG,Spoleto,6049
+PG,Todi,6059
+PG,Torgiano,6089
+PG,Trevi,6039
+PG,Tuoro sul Trasimeno,6069
+PG,Umbertide,6019
+PG,Valfabbrica,6029
+PG,Vallo di Nera,6040
+PG,Valtopina,6030
+PI,Bientina,56031
+PI,Buti,56032
+PI,Calci,56011
+PI,Calcinaia,56012
+PI,Capannoli,56033
+PI,Casale Marittimo,56040
+PI,Casciana Terme,56034
+PI,Cascina,56021
+PI,Castelfranco di Sotto,56022
+PI,Castellina Marittima,56040
+PI,Castelnuovo di Val di Cecina,56041
+PI,Chianni,56034
+PI,Crespina,56040
+PI,Fauglia,56043
+PI,Guardistallo,56040
+PI,Lajatico,56030
+PI,Lari,56035
+PI,Lorenzana,56043
+PI,Montecatini Val di Cecina,56040
+PI,Montescudaio,56040
+PI,Monteverdi Marittimo,56040
+PI,Montopoli in Val d'Arno,56020
+PI,Orciano Pisano,56040
+PI,Palaia,56036
+PI,Peccioli,56037
+PI,Pisa,5612x
+PI,Pomarance,56045
+PI,Ponsacco,56038
+PI,Pontedera,56025
+PI,Riparbella,56046
+PI,San Giuliano Terme,56017
+PI,San Miniato,56028
+PI,Santa Croce sull'Arno,56029
+PI,Santa Luce,56040
+PI,Santa Maria a Monte,56020
+PI,Terricciola,56030
+PI,Vecchiano,56019
+PI,Vicopisano,56010
+PI,Volterra,56048
+PN,Andreis,33080
+PN,Arba,33090
+PN,Arzene,33098
+PN,Aviano,33081
+PN,Azzano Decimo,33082
+PN,Barcis,33080
+PN,Brugnera,33070
+PN,Budoia,33070
+PN,Caneva,33070
+PN,Casarsa della Delizia,33072
+PN,Castelnovo del Friuli,33090
+PN,Cavasso Nuovo,33092
+PN,Chions,33083
+PN,Cimolais,33080
+PN,Claut,33080
+PN,Clauzetto,33090
+PN,Cordenons,33084
+PN,Cordovado,33075
+PN,Erto e Casso,33080
+PN,Fanna,33092
+PN,Fiume Veneto,33080
+PN,Fontanafredda,33074
+PN,Frisanco,33080
+PN,Maniago,33085
+PN,Meduno,33092
+PN,Montereale Valcellina,33086
+PN,Morsano al Tagliamento,33075
+PN,Pasiano di Pordenone,33087
+PN,Pinzano al Tagliamento,33094
+PN,Polcenigo,33070
+PN,Porcia,33080
+PN,Pordenone,33170
+PN,Prata di Pordenone,33080
+PN,Pravisdomini,33076
+PN,Roveredo in Piano,33080
+PN,Sacile,33077
+PN,San Giorgio della Richinvelda,33095
+PN,San Martino al Tagliamento,33098
+PN,San Quirino,33080
+PN,San Vito al Tagliamento,33078
+PN,Sequals,33090
+PN,Sesto al Reghena,33079
+PN,Spilimbergo,33097
+PN,Tramonti di Sopra,33090
+PN,Tramonti di Sotto,33090
+PN,Travesio,33090
+PN,Vajont,33080
+PN,Valvasone,33098
+PN,Vito d'Asio,33090
+PN,Vivaro,33099
+PN,Zoppola,33080
+PO,Cantagallo,59025
+PO,Carmignano,59015
+PO,Montemurlo,59013
+PO,Poggio a Caiano,59016
+PO,Prato,59100
+PO,Vaiano,59021
+PO,Vernio,59024
+PR,Albareto,43051
+PR,Bardi,43032
+PR,Bedonia,43041
+PR,Berceto,43042
+PR,Bore,43030
+PR,Borgo Val di Taro,43043
+PR,Busseto,43011
+PR,Calestano,43030
+PR,Collecchio,43044
+PR,Colorno,43052
+PR,Compiano,43053
+PR,Corniglio,43021
+PR,Felino,43035
+PR,Fidenza,43036
+PR,Fontanellato,43012
+PR,Fontevivo,43010
+PR,Fornovo di Taro,43045
+PR,Langhirano,43013
+PR,Lesignano de' Bagni,43037
+PR,Medesano,43014
+PR,Mezzani,43055
+PR,Monchio delle Corti,43010
+PR,Montechiarugolo,43022
+PR,Neviano degli Arduini,43024
+PR,Noceto,43015
+PR,Palanzano,43025
+PR,Parma,4312x
+PR,Pellegrino Parmense,43047
+PR,Polesine Parmense,43010
+PR,Roccabianca,43010
+PR,Sala Baganza,43038
+PR,Salsomaggiore Terme,43039
+PR,San Secondo Parmense,43017
+PR,Sissa,43018
+PR,Solignano,43040
+PR,Soragna,43019
+PR,Sorbolo,43058
+PR,Terenzo,43040
+PR,Tizzano Val Parma,43028
+PR,Tornolo,43059
+PR,Torrile,43056
+PR,Traversetolo,43029
+PR,Trecasali,43010
+PR,Valmozzola,43050
+PR,Varano de' Melegari,43040
+PR,Varsi,43049
+PR,Zibello,43010
+PT,Abetone,51021
+PT,Agliana,51031
+PT,Buggiano,51011
+PT,Chiesina Uzzanese,51013
+PT,Cutigliano,51024
+PT,Lamporecchio,51035
+PT,Larciano,51036
+PT,Marliana,51010
+PT,Massa e Cozzile,51010
+PT,Monsummano Terme,51015
+PT,Montale,51037
+PT,Montecatini-Terme,51016
+PT,Pescia,51017
+PT,Pieve a Nievole,51018
+PT,Pistoia,51100
+PT,Piteglio,51020
+PT,Ponte Buggianese,51019
+PT,Quarrata,51039
+PT,Sambuca Pistoiese,51020
+PT,San Marcello Pistoiese,51028
+PT,Serravalle Pistoiese,51030
+PT,Uzzano,51010
+PU,Acqualagna,61041
+PU,Apecchio,61042
+PU,Auditore,61020
+PU,Barchi,61040
+PU,Belforte all'Isauro,61026
+PU,Borgo Pace,61040
+PU,Cagli,61043
+PU,Cantiano,61044
+PU,Carpegna,61021
+PU,Cartoceto,61030
+PU,Colbordolo,61022
+PU,Fano,61032
+PU,Fermignano,61033
+PU,Fossombrone,61034
+PU,Fratte Rosa,61040
+PU,Frontino,61021
+PU,Frontone,61040
+PU,Gabicce Mare,61011
+PU,Gradara,61012
+PU,Isola del Piano,61030
+PU,Lunano,61026
+PU,Macerata Feltria,61023
+PU,Mercatello sul Metauro,61040
+PU,Mercatino Conca,61013
+PU,Mombaroccio,61024
+PU,Mondavio,61040
+PU,Mondolfo,61037
+PU,Monte Cerignone,61010
+PU,Monte Grimano Terme,61010
+PU,Monte Porzio,61040
+PU,Montecalvo in Foglia,61020
+PU,Monteciccardo,61024
+PU,Montecopiolo,61014
+PU,Montefelcino,61030
+PU,Montelabbate,61025
+PU,Montemaggiore al Metauro,61030
+PU,Orciano di Pesaro,61038
+PU,Peglio,61049
+PU,Pergola,61045
+PU,Pesaro,6112x
+PU,Petriano,61020
+PU,Piagge,61030
+PU,Piandimeleto,61026
+PU,Pietrarubbia,61023
+PU,Piobbico,61046
+PU,Saltara,61030
+PU,San Costanzo,61039
+PU,San Giorgio di Pesaro,61030
+PU,San Lorenzo in Campo,61047
+PU,Sant'Angelo in Lizzola,61020
+PU,Sant'Angelo in Vado,61048
+PU,Sant'Ippolito,61040
+PU,Sassocorvaro,61028
+PU,Sassofeltrio,61013
+PU,Serra Sant'Abbondio,61040
+PU,Serrungarina,61030
+PU,Tavoleto,61020
+PU,Tavullia,61010
+PU,Urbania,61049
+PU,Urbino,61029
+PV,Alagna,27020
+PV,Albaredo Arnaboldi,27040
+PV,Albonese,27020
+PV,Albuzzano,27010
+PV,Arena Po,27040
+PV,Badia Pavese,27010
+PV,Bagnaria,27050
+PV,Barbianello,27041
+PV,Bascapè,27010
+PV,Bastida de' Dossi,27050
+PV,Bastida Pancarana,27050
+PV,Battuda,27020
+PV,Belgioioso,27011
+PV,Bereguardo,27021
+PV,Borgarello,27010
+PV,Borgo Priolo,27040
+PV,Borgo San Siro,27020
+PV,Borgoratto Mormorolo,27040
+PV,Bornasco,27010
+PV,Bosnasco,27040
+PV,Brallo di Pregola,27050
+PV,Breme,27020
+PV,Bressana Bottarone,27042
+PV,Broni,27043
+PV,Calvignano,27040
+PV,Campospinoso,27040
+PV,Candia Lomellina,27031
+PV,Canevino,27040
+PV,Canneto Pavese,27044
+PV,Carbonara al Ticino,27020
+PV,Casanova Lonati,27041
+PV,Casatisma,27040
+PV,Casei Gerola,27050
+PV,Casorate Primo,27022
+PV,Cassolnovo,27023
+PV,Castana,27040
+PV,Casteggio,27045
+PV,Castelletto di Branduzzo,27040
+PV,Castello d'Agogna,27030
+PV,Castelnovetto,27030
+PV,Cava Manara,27051
+PV,Cecima,27050
+PV,Ceranova,27010
+PV,Ceretto Lomellina,27030
+PV,Cergnago,27020
+PV,Certosa di Pavia,27012
+PV,Cervesina,27050
+PV,Chignolo Po,27013
+PV,Cigognola,27040
+PV,Cilavegna,27024
+PV,Codevilla,27050
+PV,Confienza,27030
+PV,Copiano,27010
+PV,Corana,27050
+PV,Cornale,27050
+PV,Corteolona,27014
+PV,Corvino San Quirico,27050
+PV,Costa de' Nobili,27010
+PV,Cozzo,27030
+PV,Cura Carpignano,27010
+PV,Dorno,27020
+PV,Ferrera Erbognone,27032
+PV,Filighera,27010
+PV,Fortunago,27040
+PV,Frascarolo,27030
+PV,Galliavola,27034
+PV,Gambarana,27030
+PV,Gambolò,27025
+PV,Garlasco,27026
+PV,Genzone,27014
+PV,Gerenzago,27010
+PV,Giussago,27010
+PV,Godiasco,27052
+PV,Golferenzo,27047
+PV,Gravellona Lomellina,27020
+PV,Gropello Cairoli,27027
+PV,Inverno e Monteleone,27010
+PV,Landriano,27015
+PV,Langosco,27030
+PV,Lardirago,27016
+PV,Linarolo,27010
+PV,Lirio,27040
+PV,Lomello,27034
+PV,Lungavilla,27053
+PV,Magherno,27010
+PV,Marcignago,27020
+PV,Marzano,27010
+PV,Mede,27035
+PV,Menconico,27050
+PV,Mezzana Bigli,27030
+PV,Mezzana Rabattone,27030
+PV,Mezzanino,27040
+PV,Miradolo Terme,27010
+PV,Montalto Pavese,27040
+PV,Montebello della Battaglia,27054
+PV,Montecalvo Versiggia,27047
+PV,Montescano,27040
+PV,Montesegale,27052
+PV,Monticelli Pavese,27010
+PV,Montù Beccaria,27040
+PV,Mornico Losana,27040
+PV,Mortara,27036
+PV,Nicorvo,27020
+PV,Olevano di Lomellina,27020
+PV,Oliva Gessi,27050
+PV,Ottobiano,27030
+PV,Palestro,27030
+PV,Pancarana,27050
+PV,Parona,27020
+PV,Pavia,27100
+PV,Pietra de' Giorgi,27040
+PV,Pieve Albignola,27030
+PV,Pieve del Cairo,27037
+PV,Pieve Porto Morone,27017
+PV,Pinarolo Po,27040
+PV,Pizzale,27050
+PV,Ponte Nizza,27050
+PV,Portalbera,27040
+PV,Rea,27040
+PV,Redavalle,27050
+PV,Retorbido,27050
+PV,Rivanazzano Terme,27055
+PV,Robbio,27038
+PV,Robecco Pavese,27042
+PV,Rocca de' Giorgi,27040
+PV,Rocca Susella,27052
+PV,Rognano,27010
+PV,Romagnese,27050
+PV,Roncaro,27010
+PV,Rosasco,27030
+PV,Rovescala,27040
+PV,Ruino,27040
+PV,San Cipriano Po,27043
+PV,San Damiano al Colle,27040
+PV,San Genesio ed Uniti,27010
+PV,San Giorgio di Lomellina,27020
+PV,San Martino Siccomario,27028
+PV,San Zenone al Po,27010
+PV,Sannazzaro de' Burgondi,27039
+PV,Santa Cristina e Bissone,27010
+PV,Santa Giuletta,27046
+PV,Santa Margherita di Staffora,27050
+PV,Santa Maria della Versa,27047
+PV,Sant'Alessio con Vialone,27016
+PV,Sant'Angelo Lomellina,27030
+PV,Sartirana Lomellina,27020
+PV,Scaldasole,27020
+PV,Semiana,27020
+PV,Silvano Pietra,27050
+PV,Siziano,27010
+PV,Sommo,27048
+PV,Spessa,27010
+PV,Stradella,27049
+PV,Suardi,27030
+PV,Torrazza Coste,27050
+PV,Torre Beretti e Castellaro,27030
+PV,Torre d'Arese,27010
+PV,Torre de' Negri,27011
+PV,Torre d'Isola,27020
+PV,Torrevecchia Pia,27010
+PV,Torricella Verzate,27050
+PV,Travacò Siccomario,27020
+PV,Trivolzio,27020
+PV,Tromello,27020
+PV,Trovo,27020
+PV,Val di Nizza,27050
+PV,Valeggio,27020
+PV,Valle Lomellina,27020
+PV,Valle Salimbene,27010
+PV,Valverde,27050
+PV,Varzi,27057
+PV,Velezzo Lomellina,27020
+PV,Vellezzo Bellini,27010
+PV,Verretto,27053
+PV,Verrua Po,27040
+PV,Vidigulfo,27018
+PV,Vigevano,27029
+PV,Villa Biscossi,27035
+PV,Villanova d'Ardenghi,27030
+PV,Villanterio,27019
+PV,Vistarino,27010
+PV,Voghera,27058
+PV,Volpara,27047
+PV,Zavattarello,27059
+PV,Zeccone,27010
+PV,Zeme,27030
+PV,Zenevredo,27049
+PV,Zerbo,27017
+PV,Zerbolò,27020
+PV,Zinasco,27030
+PZ,Abriola,85010
+PZ,Acerenza,85011
+PZ,Albano di Lucania,85010
+PZ,Anzi,85010
+PZ,Armento,85010
+PZ,Atella,85020
+PZ,Avigliano,85021
+PZ,Balvano,85050
+PZ,Banzi,85010
+PZ,Baragiano,85050
+PZ,Barile,85022
+PZ,Bella,85051
+PZ,Brienza,85050
+PZ,Brindisi Montagna,85010
+PZ,Calvello,85010
+PZ,Calvera,85030
+PZ,Campomaggiore,85010
+PZ,Cancellara,85010
+PZ,Carbone,85030
+PZ,Castelgrande,85050
+PZ,Castelluccio Inferiore,85040
+PZ,Castelluccio Superiore,85040
+PZ,Castelmezzano,85010
+PZ,Castelsaraceno,85031
+PZ,Castronuovo di Sant'Andrea,85030
+PZ,Cersosimo,85030
+PZ,Chiaromonte,85032
+PZ,Corleto Perticara,85012
+PZ,Episcopia,85033
+PZ,Fardella,85034
+PZ,Filiano,85020
+PZ,Forenza,85023
+PZ,Francavilla in Sinni,85034
+PZ,Gallicchio,85010
+PZ,Genzano di Lucania,85013
+PZ,Ginestra,85020
+PZ,Grumento Nova,85050
+PZ,Guardia Perticara,85010
+PZ,Lagonegro,85042
+PZ,Latronico,85043
+PZ,Laurenzana,85014
+PZ,Lauria,85044
+PZ,Lavello,85024
+PZ,Maratea,85046
+PZ,Marsico Nuovo,85052
+PZ,Marsicovetere,85050
+PZ,Maschito,85020
+PZ,Melfi,85025
+PZ,Missanello,85010
+PZ,Moliterno,85047
+PZ,Montemilone,85020
+PZ,Montemurro,85053
+PZ,Muro Lucano,85054
+PZ,Nemoli,85040
+PZ,Noepoli,85035
+PZ,Oppido Lucano,85015
+PZ,Palazzo San Gervasio,85026
+PZ,Paterno,85050
+PZ,Pescopagano,85020
+PZ,Picerno,85055
+PZ,Pietragalla,85016
+PZ,Pietrapertosa,85010
+PZ,Pignola,85010
+PZ,Potenza,85100
+PZ,Rapolla,85027
+PZ,Rapone,85020
+PZ,Rionero in Vulture,85028
+PZ,Ripacandida,85020
+PZ,Rivello,85040
+PZ,Roccanova,85036
+PZ,Rotonda,85048
+PZ,Ruoti,85056
+PZ,Ruvo del Monte,85020
+PZ,San Chirico Nuovo,85010
+PZ,San Chirico Raparo,85030
+PZ,San Costantino Albanese,85030
+PZ,San Fele,85020
+PZ,San Martino d'Agri,85030
+PZ,San Paolo Albanese,85030
+PZ,San Severino Lucano,85030
+PZ,Sant'Angelo Le Fratte,85050
+PZ,Sant'Arcangelo,85037
+PZ,Sarconi,85050
+PZ,Sasso di Castalda,85050
+PZ,Satriano di Lucania,85050
+PZ,Savoia di Lucania,85050
+PZ,Senise,85038
+PZ,Spinoso,85039
+PZ,Teana,85032
+PZ,Terranova di Pollino,85030
+PZ,Tito,85050
+PZ,Tolve,85017
+PZ,Tramutola,85057
+PZ,Trecchina,85049
+PZ,Trivigno,85018
+PZ,Vaglio Basilicata,85010
+PZ,Venosa,85029
+PZ,Vietri di Potenza,85058
+PZ,Viggianello,85040
+PZ,Viggiano,85059
+RA,Alfonsine,48011
+RA,Bagnacavallo,48012
+RA,Bagnara di Romagna,48010
+RA,Brisighella,48013
+RA,Casola Valsenio,48010
+RA,Castel Bolognese,48014
+RA,Cervia,48015
+RA,Conselice,48017
+RA,Cotignola,48010
+RA,Faenza,48018
+RA,Fusignano,48010
+RA,Lugo,48022
+RA,Massa Lombarda,48024
+RA,Ravenna,4812x
+RA,Riolo Terme,48025
+RA,Russi,48026
+RA,Sant'Agata sul Santerno,48020
+RA,Solarolo,48027
+RC,Africo,89030
+RC,Agnana Calabra,89040
+RC,Anoia,89020
+RC,Antonimina,89040
+RC,Ardore,89031
+RC,Bagaladi,89060
+RC,Bagnara Calabra,89011
+RC,Benestare,89030
+RC,Bianco,89032
+RC,Bivongi,89040
+RC,Bova,89033
+RC,Bova Marina,89035
+RC,Bovalino,89034
+RC,Brancaleone,89036
+RC,Bruzzano Zeffirio,89030
+RC,Calanna,89050
+RC,Camini,89040
+RC,Campo Calabro,89052
+RC,Candidoni,89020
+RC,Canolo,89040
+RC,Caraffa del Bianco,89030
+RC,Cardeto,89060
+RC,Careri,89030
+RC,Casignana,89030
+RC,Caulonia,89041
+RC,Ciminà,89040
+RC,Cinquefrondi,89021
+RC,Cittanova,89022
+RC,Condofuri,89030
+RC,Cosoleto,89050
+RC,Delianuova,89012
+RC,Feroleto della Chiesa,89050
+RC,Ferruzzano,89030
+RC,Fiumara,89050
+RC,Galatro,89054
+RC,Gerace,89040
+RC,Giffone,89020
+RC,Gioia Tauro,89013
+RC,Gioiosa Ionica,89042
+RC,Grotteria,89043
+RC,Laganadi,89050
+RC,Laureana di Borrello,89023
+RC,Locri,89044
+RC,Mammola,89045
+RC,Marina di Gioiosa Ionica,89046
+RC,Maropati,89020
+RC,Martone,89040
+RC,Melicuccà,89020
+RC,Melicucco,89020
+RC,Melito di Porto Salvo,89063
+RC,Molochio,89010
+RC,Monasterace,89040
+RC,Montebello Ionico,89064
+RC,Motta San Giovanni,89065
+RC,Oppido Mamertina,89014
+RC,Palizzi,89038
+RC,Palmi,89015
+RC,Pazzano,89040
+RC,Placanica,89040
+RC,Platì,89039
+RC,Polistena,89024
+RC,Portigliola,89040
+RC,Reggio Calabria,891xx
+RC,Riace,89040
+RC,Rizziconi,89016
+RC,Roccaforte del Greco,89060
+RC,Roccella Ionica,89047
+RC,Roghudi,89060
+RC,Rosarno,89025
+RC,Samo,89030
+RC,San Ferdinando,89026
+RC,San Giorgio Morgeto,89017
+RC,San Giovanni di Gerace,89040
+RC,San Lorenzo,89069
+RC,San Luca,89030
+RC,San Pietro di Caridà,89020
+RC,San Procopio,89020
+RC,San Roberto,89050
+RC,Santa Cristina d'Aspromonte,89056
+RC,Sant'Agata del Bianco,89030
+RC,Sant'Alessio in Aspromonte,89050
+RC,Sant'Eufemia d'Aspromonte,89027
+RC,Sant'Ilario dello Ionio,89040
+RC,Santo Stefano in Aspromonte,89057
+RC,Scido,89010
+RC,Scilla,89058
+RC,Seminara,89028
+RC,Serrata,89020
+RC,Siderno,89048
+RC,Sinopoli,89020
+RC,Staiti,89030
+RC,Stignano,89040
+RC,Stilo,89049
+RC,Taurianova,89029
+RC,Terranova Sappo Minulio,89010
+RC,Varapodio,89010
+RC,Villa San Giovanni,89018
+RE,Albinea,42020
+RE,Bagnolo in Piano,42011
+RE,Baiso,42031
+RE,Bibbiano,42021
+RE,Boretto,42022
+RE,Brescello,42041
+RE,Busana,42032
+RE,Cadelbosco di Sopra,42023
+RE,Campagnola Emilia,42012
+RE,Campegine,42040
+RE,Canossa,42026
+RE,Carpineti,42033
+RE,Casalgrande,42013
+RE,Casina,42034
+RE,Castellarano,42014
+RE,Castelnovo di Sotto,42024
+RE,Castelnovo ne' Monti,42035
+RE,Cavriago,42025
+RE,Collagna,42037
+RE,Correggio,42015
+RE,Fabbrico,42042
+RE,Gattatico,42043
+RE,Gualtieri,42044
+RE,Guastalla,42016
+RE,Ligonchio,42039
+RE,Luzzara,42045
+RE,Montecchio Emilia,42027
+RE,Novellara,42017
+RE,Poviglio,42028
+RE,Quattro Castella,42020
+RE,Ramiseto,42030
+RE,Reggio Emilia,4212x
+RE,Reggiolo,42046
+RE,Rio Saliceto,42010
+RE,Rolo,42047
+RE,Rubiera,42048
+RE,San Martino in Rio,42018
+RE,San Polo d'Enza,42020
+RE,Sant'Ilario d'Enza,42049
+RE,Scandiano,42019
+RE,Toano,42010
+RE,Vetto,42020
+RE,Vezzano sul Crostolo,42030
+RE,Viano,42030
+RE,Villa Minozzo,42030
+RG,Acate,97011
+RG,Chiaramonte Gulfi,97012
+RG,Comiso,97013
+RG,Giarratana,97010
+RG,Ispica,97014
+RG,Modica,97015
+RG,Monterosso Almo,97010
+RG,Pozzallo,97016
+RG,Ragusa,97100
+RG,Santa Croce Camerina,97017
+RG,Scicli,97018
+RG,Vittoria,97019
+RI,Accumoli,2011
+RI,Amatrice,2012
+RI,Antrodoco,2013
+RI,Ascrea,2020
+RI,Belmonte in Sabina,2020
+RI,Borbona,2010
+RI,Borgo Velino,2010
+RI,Borgorose,2021
+RI,Cantalice,2014
+RI,Cantalupo in Sabina,2040
+RI,Casaprota,2030
+RI,Casperia,2041
+RI,Castel di Tora,2020
+RI,Castel Sant'Angelo,2010
+RI,Castelnuovo di Farfa,2031
+RI,Cittaducale,2015
+RI,Cittareale,2010
+RI,Collalto Sabino,2022
+RI,Colle di Tora,2020
+RI,Collegiove,2020
+RI,Collevecchio,2042
+RI,Colli sul Velino,2010
+RI,Concerviano,2020
+RI,Configni,2040
+RI,Contigliano,2043
+RI,Cottanello,2040
+RI,Fara in Sabina,2032
+RI,Fiamignano,2023
+RI,Forano,2044
+RI,Frasso Sabino,2030
+RI,Greccio,2045
+RI,Labro,2010
+RI,Leonessa,2016
+RI,Longone Sabino,2020
+RI,Magliano Sabina,2046
+RI,Marcetelli,2020
+RI,Micigliano,2010
+RI,Mompeo,2040
+RI,Montasola,2040
+RI,Monte San Giovanni in Sabina,2040
+RI,Montebuono,2040
+RI,Monteleone Sabino,2033
+RI,Montenero Sabino,2040
+RI,Montopoli di Sabina,2034
+RI,Morro Reatino,2010
+RI,Nespolo,2020
+RI,Orvinio,2035
+RI,Paganico Sabino,2020
+RI,Pescorocchiano,2024
+RI,Petrella Salto,2025
+RI,Poggio Bustone,2018
+RI,Poggio Catino,2040
+RI,Poggio Mirteto,2047
+RI,Poggio Moiano,2037
+RI,Poggio Nativo,2030
+RI,Poggio San Lorenzo,2030
+RI,Posta,2019
+RI,Pozzaglia Sabina,2030
+RI,Rieti,2100
+RI,Rivodutri,2010
+RI,Rocca Sinibalda,2026
+RI,Roccantica,2040
+RI,Salisano,2040
+RI,Scandriglia,2038
+RI,Selci,2040
+RI,Stimigliano,2048
+RI,Tarano,2040
+RI,Toffia,2039
+RI,Torri in Sabina,2049
+RI,Torricella in Sabina,2030
+RI,Turania,2020
+RI,Vacone,2040
+RI,Varco Sabino,2020
+RM,Affile,21
+RM,Agosta,20
+RM,Albano Laziale,41
+RM,Allumiere,51
+RM,Anguillara Sabazia,61
+RM,Anticoli Corrado,22
+RM,Anzio,42
+RM,Arcinazzo Romano,20
+RM,Ardea,40
+RM,Ariccia,40
+RM,Arsoli,23
+RM,Artena,31
+RM,Bellegra,30
+RM,Bracciano,62
+RM,Camerata Nuova,20
+RM,Campagnano di Roma,63
+RM,Canale Monterano,60
+RM,Canterano,20
+RM,Capena,60
+RM,Capranica Prenestina,30
+RM,Carpineto Romano,32
+RM,Casape,10
+RM,Castel Gandolfo,40
+RM,Castel Madama,24
+RM,Castel San Pietro Romano,30
+RM,Castelnuovo di Porto,60
+RM,Cave,33
+RM,Cerreto Laziale,20
+RM,Cervara di Roma,20
+RM,Cerveteri,52
+RM,Ciampino,43
+RM,Ciciliano,20
+RM,Cineto Romano,20
+RM,Civitavecchia,53
+RM,Civitella San Paolo,60
+RM,Colleferro,34
+RM,Colonna,30
+RM,Fiano Romano,65
+RM,Filacciano,60
+RM,Fiumicino,54
+RM,Fonte Nuova,13
+RM,Formello,60
+RM,Frascati,44
+RM,Gallicano nel Lazio,10
+RM,Gavignano,30
+RM,Genazzano,30
+RM,Genzano di Roma,45
+RM,Gerano,25
+RM,Gorga,30
+RM,Grottaferrata,46
+RM,Guidonia Montecelio,12
+RM,Jenne,20
+RM,Labico,30
+RM,Ladispoli,55
+RM,Lanuvio,40
+RM,Lariano,40
+RM,Licenza,26
+RM,Magliano Romano,60
+RM,Mandela,20
+RM,Manziana,66
+RM,Marano Equo,20
+RM,Marcellina,10
+RM,Marino,47
+RM,Mazzano Romano,60
+RM,Mentana,13
+RM,Monte Compatri,40
+RM,Monte Porzio Catone,40
+RM,Monteflavio,10
+RM,Montelanico,30
+RM,Montelibretti,10
+RM,Monterotondo,15
+RM,Montorio Romano,10
+RM,Moricone,10
+RM,Morlupo,67
+RM,Nazzano,60
+RM,Nemi,40
+RM,Nerola,17
+RM,Nettuno,48
+RM,Olevano Romano,35
+RM,Palestrina,36
+RM,Palombara Sabina,18
+RM,Percile,20
+RM,Pisoniano,20
+RM,Poli,10
+RM,Pomezia,40
+RM,Ponzano Romano,60
+RM,Riano,60
+RM,Rignano Flaminio,68
+RM,Riofreddo,20
+RM,Rocca Canterano,20
+RM,Rocca di Cave,30
+RM,Rocca di Papa,40
+RM,Rocca Priora,40
+RM,Rocca Santo Stefano,30
+RM,Roccagiovine,20
+RM,Roiate,30
+RM,Roma,001xx
+RM,Roviano,27
+RM,Sacrofano,60
+RM,Sambuci,20
+RM,San Cesareo,30
+RM,San Gregorio da Sassola,10
+RM,San Polo dei Cavalieri,10
+RM,San Vito Romano,30
+RM,Santa Marinella,58
+RM,Sant'Angelo Romano,10
+RM,Sant'Oreste,60
+RM,Saracinesco,20
+RM,Segni,37
+RM,Subiaco,28
+RM,Tivoli,19
+RM,Tolfa,59
+RM,Torrita Tiberina,60
+RM,Trevignano Romano,69
+RM,Vallepietra,20
+RM,Vallinfreda,20
+RM,Valmontone,38
+RM,Velletri,49
+RM,Vicovaro,29
+RM,Vivaro Romano,20
+RM,Zagarolo,39
+RN,Bellaria-Igea Marina,47814
+RN,Casteldelci,47861
+RN,Cattolica,47841
+RN,Coriano,47853
+RN,Gemmano,47855
+RN,Maiolo,47862
+RN,Misano Adriatico,47843
+RN,Mondaino,47836
+RN,Monte Colombo,47854
+RN,Montefiore Conca,47834
+RN,Montegridolfo,47837
+RN,Montescudo,47854
+RN,Morciano di Romagna,47833
+RN,Novafeltria,47863
+RN,Pennabilli,47864
+RN,Poggio Berni,47824
+RN,Riccione,47838
+RN,Rimini,4792x
+RN,Saludecio,47835
+RN,San Clemente,47832
+RN,San Giovanni in Marignano,47842
+RN,San Leo,47865
+RN,Sant'Agata Feltria,47866
+RN,Santarcangelo di Romagna,47822
+RN,Talamello,47867
+RN,Torriana,47825
+RN,Verucchio,47826
+RO,Adria,45011
+RO,Ariano nel Polesine,45012
+RO,Arquà Polesine,45031
+RO,Badia Polesine,45021
+RO,Bagnolo di Po,45022
+RO,Bergantino,45032
+RO,Bosaro,45033
+RO,Calto,45030
+RO,Canaro,45034
+RO,Canda,45020
+RO,Castelguglielmo,45020
+RO,Castelmassa,45035
+RO,Castelnovo Bariano,45030
+RO,Ceneselli,45030
+RO,Ceregnano,45010
+RO,Corbola,45015
+RO,Costa di Rovigo,45023
+RO,Crespino,45030
+RO,Ficarolo,45036
+RO,Fiesso Umbertiano,45024
+RO,Frassinelle Polesine,45030
+RO,Fratta Polesine,45025
+RO,Gaiba,45030
+RO,Gavello,45010
+RO,Giacciano con Baruchella,45020
+RO,Guarda Veneta,45030
+RO,Lendinara,45026
+RO,Loreo,45017
+RO,Lusia,45020
+RO,Melara,45037
+RO,Occhiobello,45030
+RO,Papozze,45010
+RO,Pettorazza Grimani,45010
+RO,Pincara,45020
+RO,Polesella,45038
+RO,Pontecchio Polesine,45030
+RO,Porto Tolle,45018
+RO,Porto Viro,45014
+RO,Rosolina,45010
+RO,Rovigo,45100
+RO,Salara,45030
+RO,San Bellino,45020
+RO,San Martino di Venezze,45030
+RO,Stienta,45039
+RO,Taglio di Po,45019
+RO,Trecenta,45027
+RO,Villadose,45010
+RO,Villamarzana,45030
+RO,Villanova del Ghebbo,45020
+RO,Villanova Marchesana,45030
+SA,Acerno,84042
+SA,Agropoli,84043
+SA,Albanella,84044
+SA,Alfano,84040
+SA,Altavilla Silentina,84045
+SA,Amalfi,84011
+SA,Angri,84012
+SA,Aquara,84020
+SA,Ascea,84046
+SA,Atena Lucana,84030
+SA,Atrani,84010
+SA,Auletta,84031
+SA,Baronissi,84081
+SA,Battipaglia,84091
+SA,Bellizzi,84092
+SA,Bellosguardo,84020
+SA,Bracigliano,84082
+SA,Buccino,84021
+SA,Buonabitacolo,84032
+SA,Caggiano,84030
+SA,Calvanico,84080
+SA,Camerota,84040
+SA,Campagna,84022
+SA,Campora,84040
+SA,Cannalonga,84040
+SA,Capaccio,84047
+SA,Casal Velino,84040
+SA,Casalbuono,84030
+SA,Casaletto Spartano,84030
+SA,Caselle in Pittari,84030
+SA,Castel San Giorgio,84083
+SA,Castel San Lorenzo,84049
+SA,Castelcivita,84020
+SA,Castellabate,84048
+SA,Castelnuovo Cilento,84040
+SA,Castelnuovo di Conza,84020
+SA,Castiglione del Genovesi,84090
+SA,Cava de' Tirreni,84013
+SA,Celle di Bulgheria,84040
+SA,Centola,84051
+SA,Ceraso,84052
+SA,Cetara,84010
+SA,Cicerale,84053
+SA,Colliano,84020
+SA,Conca dei Marini,84010
+SA,Controne,84020
+SA,Contursi Terme,84024
+SA,Corbara,84010
+SA,Corleto Monforte,84020
+SA,Cuccaro Vetere,84050
+SA,Eboli,84025
+SA,Felitto,84055
+SA,Fisciano,84084
+SA,Furore,84010
+SA,Futani,84050
+SA,Giffoni Sei Casali,84090
+SA,Giffoni Valle Piana,84095
+SA,Gioi,84056
+SA,Giungano,84050
+SA,Ispani,84050
+SA,Laureana Cilento,84050
+SA,Laurino,84057
+SA,Laurito,84050
+SA,Laviano,84020
+SA,Lustra,84050
+SA,Magliano Vetere,84050
+SA,Maiori,84010
+SA,Mercato San Severino,84085
+SA,Minori,84010
+SA,Moio della Civitella,84060
+SA,Montano Antilia,84060
+SA,Monte San Giacomo,84030
+SA,Montecorice,84060
+SA,Montecorvino Pugliano,84090
+SA,Montecorvino Rovella,84096
+SA,Monteforte Cilento,84060
+SA,Montesano sulla Marcellana,84033
+SA,Morigerati,84030
+SA,Nocera Inferiore,84014
+SA,Nocera Superiore,84015
+SA,Novi Velia,84060
+SA,Ogliastro Cilento,84061
+SA,Olevano sul Tusciano,84062
+SA,Oliveto Citra,84020
+SA,Omignano,84060
+SA,Orria,84060
+SA,Ottati,84020
+SA,Padula,84034
+SA,Pagani,84016
+SA,Palomonte,84020
+SA,Pellezzano,84080
+SA,Perdifumo,84060
+SA,Perito,84060
+SA,Pertosa,84030
+SA,Petina,84020
+SA,Piaggine,84065
+SA,Pisciotta,84066
+SA,Polla,84035
+SA,Pollica,84068
+SA,Pontecagnano Faiano,84098
+SA,Positano,84017
+SA,Postiglione,84026
+SA,Praiano,84010
+SA,Prignano Cilento,84060
+SA,Ravello,84010
+SA,Ricigliano,84020
+SA,Roccadaspide,84069
+SA,Roccagloriosa,84060
+SA,Roccapiemonte,84086
+SA,Rofrano,84070
+SA,Romagnano al Monte,84020
+SA,Roscigno,84020
+SA,Rutino,84070
+SA,Sacco,84070
+SA,Sala Consilina,84036
+SA,Salento,84070
+SA,Salerno,841xx
+SA,Salvitelle,84020
+SA,San Cipriano Picentino,84099
+SA,San Giovanni a Piro,84070
+SA,San Gregorio Magno,84020
+SA,San Mango Piemonte,84090
+SA,San Marzano sul Sarno,84010
+SA,San Mauro Cilento,84070
+SA,San Mauro La Bruca,84070
+SA,San Pietro al Tanagro,84030
+SA,San Rufo,84030
+SA,San Valentino Torio,84010
+SA,Santa Marina,84070
+SA,Sant'Angelo a Fasanella,84027
+SA,Sant'Arsenio,84037
+SA,Sant'Egidio del Monte Albino,84010
+SA,Santomenna,84020
+SA,Sanza,84030
+SA,Sapri,84073
+SA,Sarno,84087
+SA,Sassano,84038
+SA,Scafati,84018
+SA,Scala,84010
+SA,Serramezzana,84070
+SA,Serre,84028
+SA,Sessa Cilento,84074
+SA,Siano,84088
+SA,Sicignano degli Alburni,84029
+SA,Stella Cilento,84070
+SA,Stio,84075
+SA,Teggiano,84039
+SA,Torchiara,84076
+SA,Torraca,84030
+SA,Torre Orsaia,84077
+SA,Tortorella,84030
+SA,Tramonti,84010
+SA,Trentinara,84070
+SA,Valle dell'Angelo,84070
+SA,Vallo della Lucania,84078
+SA,Valva,84020
+SA,Vibonati,84079
+SA,Vietri sul Mare,84019
+SI,Abbadia San Salvatore,53021
+SI,Asciano,53041
+SI,Buonconvento,53022
+SI,Casole d'Elsa,53031
+SI,Castellina in Chianti,53011
+SI,Castelnuovo Berardenga,53019
+SI,Castiglione d'Orcia,53023
+SI,Cetona,53040
+SI,Chianciano Terme,53042
+SI,Chiusdino,53012
+SI,Chiusi,53043
+SI,Colle di Val d'Elsa,53034
+SI,Gaiole in Chianti,53013
+SI,Montalcino,53024
+SI,Montepulciano,53045
+SI,Monteriggioni,53035
+SI,Monteroni d'Arbia,53014
+SI,Monticiano,53015
+SI,Murlo,53016
+SI,Piancastagnaio,53025
+SI,Pienza,53026
+SI,Poggibonsi,53036
+SI,Radda in Chianti,53017
+SI,Radicofani,53040
+SI,Radicondoli,53030
+SI,Rapolano Terme,53040
+SI,San Casciano dei Bagni,53040
+SI,San Gimignano,53037
+SI,San Giovanni d'Asso,53020
+SI,San Quirico d'Orcia,53027
+SI,Sarteano,53047
+SI,Siena,53100
+SI,Sinalunga,53048
+SI,Sovicille,53018
+SI,Torrita di Siena,53049
+SI,Trequanda,53020
+SO,Albaredo per San Marco,23010
+SO,Albosaggia,23010
+SO,Andalo Valtellino,23014
+SO,Aprica,23031
+SO,Ardenno,23011
+SO,Bema,23010
+SO,Berbenno di Valtellina,23010
+SO,Bianzone,23030
+SO,Bormio,23032
+SO,Buglio in Monte,23010
+SO,Caiolo,23010
+SO,Campodolcino,23021
+SO,Caspoggio,23020
+SO,Castello dell'Acqua,23030
+SO,Castione Andevenno,23012
+SO,Cedrasco,23010
+SO,Cercino,23016
+SO,Chiavenna,23022
+SO,Chiesa in Valmalenco,23023
+SO,Chiuro,23030
+SO,Cino,23010
+SO,Civo,23010
+SO,Colorina,23010
+SO,Cosio Valtellino,23013
+SO,Dazio,23010
+SO,Delebio,23014
+SO,Dubino,23015
+SO,Faedo Valtellino,23020
+SO,Forcola,23010
+SO,Fusine,23010
+SO,Gerola Alta,23010
+SO,Gordona,23020
+SO,Grosio,23033
+SO,Grosotto,23034
+SO,Lanzada,23020
+SO,Livigno,23030
+SO,Lovero,23030
+SO,Madesimo,23024
+SO,Mantello,23016
+SO,Mazzo di Valtellina,23030
+SO,Mello,23010
+SO,Menarola,23020
+SO,Mese,23020
+SO,Montagna in Valtellina,23020
+SO,Morbegno,23017
+SO,Novate Mezzola,23025
+SO,Pedesina,23010
+SO,Piantedo,23010
+SO,Piateda,23020
+SO,Piuro,23020
+SO,Poggiridenti,23020
+SO,Ponte in Valtellina,23026
+SO,Postalesio,23010
+SO,Prata Camportaccio,23020
+SO,Rasura,23010
+SO,Rogolo,23010
+SO,Samolaco,23027
+SO,San Giacomo Filippo,23020
+SO,Sernio,23030
+SO,Sondalo,23035
+SO,Sondrio,23100
+SO,Spriana,23020
+SO,Talamona,23018
+SO,Tartano,23010
+SO,Teglio,23036
+SO,Tirano,23037
+SO,Torre di Santa Maria,23020
+SO,Tovo di Sant'Agata,23030
+SO,Traona,23019
+SO,Tresivio,23020
+SO,Val Masino,23010
+SO,Valdidentro,23038
+SO,Valdisotto,23030
+SO,Valfurva,23030
+SO,Verceia,23020
+SO,Vervio,23030
+SO,Villa di Chiavenna,23029
+SO,Villa di Tirano,23030
+SP,Ameglia,19031
+SP,Arcola,19021
+SP,Beverino,19020
+SP,Bolano,19020
+SP,Bonassola,19011
+SP,Borghetto di Vara,19020
+SP,Brugnato,19020
+SP,Calice al Cornoviglio,19020
+SP,Carro,19012
+SP,Carrodano,19020
+SP,Castelnuovo Magra,19033
+SP,Deiva Marina,19013
+SP,Follo,19020
+SP,Framura,19014
+SP,La Spezia,191xx
+SP,Lerici,19032
+SP,Levanto,19015
+SP,Maissana,19010
+SP,Monterosso al Mare,19016
+SP,Ortonovo,19034
+SP,Pignone,19020
+SP,Portovenere,19025
+SP,Riccò del Golfo di Spezia,19020
+SP,Riomaggiore,19017
+SP,Rocchetta di Vara,19020
+SP,Santo Stefano di Magra,19037
+SP,Sarzana,19038
+SP,Sesta Godano,19020
+SP,Varese Ligure,19028
+SP,Vernazza,19018
+SP,Vezzano Ligure,19020
+SP,Zignago,19020
+SR,Augusta,96011
+SR,Avola,96012
+SR,Buccheri,96010
+SR,Buscemi,96010
+SR,Canicattini Bagni,96010
+SR,Carlentini,96013
+SR,Cassaro,96010
+SR,Ferla,96010
+SR,Floridia,96014
+SR,Francofonte,96015
+SR,Lentini,96016
+SR,Melilli,96010
+SR,Noto,96017
+SR,Pachino,96018
+SR,Palazzolo Acreide,96010
+SR,Portopalo di Capo Passero,96010
+SR,Priolo Gargallo,96010
+SR,Rosolini,96019
+SR,Siracusa,96100
+SR,Solarino,96010
+SR,Sortino,96010
+SS,Alghero,7041
+SS,Anela,7010
+SS,Ardara,7010
+SS,Banari,7040
+SS,Benetutti,7010
+SS,Bessude,7040
+SS,Bonnanaro,7043
+SS,Bono,7011
+SS,Bonorva,7012
+SS,Borutta,7040
+SS,Bottidda,7010
+SS,Bultei,7010
+SS,Bulzi,7030
+SS,Burgos,7010
+SS,Cargeghe,7030
+SS,Castelsardo,7031
+SS,Cheremule,7040
+SS,Chiaramonti,7030
+SS,Codrongianos,7040
+SS,Cossoine,7010
+SS,Erula,7030
+SS,Esporlatu,7010
+SS,Florinas,7030
+SS,Giave,7010
+SS,Illorai,7010
+SS,Ittireddu,7010
+SS,Ittiri,7044
+SS,Laerru,7030
+SS,Mara,7010
+SS,Martis,7030
+SS,Monteleone Rocca Doria,7010
+SS,Mores,7013
+SS,Muros,7030
+SS,Nughedu San Nicolò,7010
+SS,Nule,7010
+SS,Nulvi,7032
+SS,Olmedo,7040
+SS,Osilo,7033
+SS,Ossi,7045
+SS,Ozieri,7014
+SS,Padria,7015
+SS,Pattada,7016
+SS,Perfugas,7034
+SS,Ploaghe,7017
+SS,Porto Torres,7046
+SS,Pozzomaggiore,7018
+SS,Putifigari,7040
+SS,Romana,7010
+SS,Santa Maria Coghinas,7030
+SS,Sassari,7100
+SS,Sedini,7035
+SS,Semestene,7010
+SS,Sennori,7036
+SS,Siligo,7040
+SS,Sorso,7037
+SS,Stintino,7040
+SS,Tergu,7030
+SS,Thiesi,7047
+SS,Tissi,7040
+SS,Torralba,7048
+SS,Tula,7010
+SS,Uri,7040
+SS,Usini,7049
+SS,Valledoria,7039
+SS,Viddalba,7030
+SS,Villanova Monteleone,7019
+SV,Alassio,17021
+SV,Albenga,17031
+SV,Albisola Superiore,17011
+SV,Albissola Marina,17012
+SV,Altare,17041
+SV,Andora,17051
+SV,Arnasco,17032
+SV,Balestrino,17020
+SV,Bardineto,17057
+SV,Bergeggi,17028
+SV,Boissano,17054
+SV,Borghetto Santo Spirito,17052
+SV,Borgio Verezzi,17022
+SV,Bormida,17045
+SV,Cairo Montenotte,17014
+SV,Calice Ligure,17020
+SV,Calizzano,17057
+SV,Carcare,17043
+SV,Casanova Lerrone,17033
+SV,Castelbianco,17030
+SV,Castelvecchio di Rocca Barbena,17034
+SV,Celle Ligure,17015
+SV,Cengio,17056
+SV,Ceriale,17023
+SV,Cisano sul Neva,17035
+SV,Cosseria,17017
+SV,Dego,17058
+SV,Erli,17030
+SV,Finale Ligure,17024
+SV,Garlenda,17033
+SV,Giustenice,17027
+SV,Giusvalla,17010
+SV,Laigueglia,17053
+SV,Loano,17025
+SV,Magliolo,17020
+SV,Mallare,17045
+SV,Massimino,12071
+SV,Millesimo,17017
+SV,Mioglia,17040
+SV,Murialdo,17013
+SV,Nasino,17030
+SV,Noli,17026
+SV,Onzo,17037
+SV,Orco Feglino,17024
+SV,Ortovero,17037
+SV,Osiglia,17010
+SV,Pallare,17043
+SV,Piana Crixia,17058
+SV,Pietra Ligure,17027
+SV,Plodio,17043
+SV,Pontinvrea,17042
+SV,Quiliano,17047
+SV,Rialto,17020
+SV,Roccavignale,17017
+SV,Sassello,17046
+SV,Savona,17100
+SV,Spotorno,17028
+SV,Stella,17044
+SV,Stellanello,17020
+SV,Testico,17020
+SV,Toirano,17055
+SV,Tovo San Giacomo,17020
+SV,Urbe,17048
+SV,Vado Ligure,17047
+SV,Varazze,17019
+SV,Vendone,17032
+SV,Vezzi Portio,17028
+SV,Villanova d'Albenga,17038
+SV,Zuccarello,17039
+TA,Avetrana,74020
+TA,Carosino,74021
+TA,Castellaneta,74011
+TA,Crispiano,74012
+TA,Faggiano,74020
+TA,Fragagnano,74022
+TA,Ginosa,74013
+TA,Grottaglie,74023
+TA,Laterza,74014
+TA,Leporano,74020
+TA,Lizzano,74020
+TA,Manduria,74024
+TA,Martina Franca,74015
+TA,Maruggio,74020
+TA,Massafra,74016
+TA,Monteiasi,74020
+TA,Montemesola,74020
+TA,Monteparano,74020
+TA,Mottola,74017
+TA,Palagianello,74018
+TA,Palagiano,74019
+TA,Pulsano,74026
+TA,Roccaforzata,74020
+TA,San Giorgio Ionico,74027
+TA,San Marzano di San Giuseppe,74020
+TA,Sava,74028
+TA,Statte,74010
+TA,Taranto,7412x
+TA,Torricella,74020
+TE,Alba Adriatica,64011
+TE,Ancarano,64010
+TE,Arsita,64031
+TE,Atri,64032
+TE,Basciano,64030
+TE,Bellante,64020
+TE,Bisenti,64033
+TE,Campli,64012
+TE,Canzano,64020
+TE,Castel Castagna,64030
+TE,Castellalto,64020
+TE,Castelli,64041
+TE,Castiglione Messer Raimondo,64034
+TE,Castilenti,64035
+TE,Cellino Attanasio,64036
+TE,Cermignano,64037
+TE,Civitella del Tronto,64010
+TE,Colledara,64042
+TE,Colonnella,64010
+TE,Controguerra,64010
+TE,Corropoli,64013
+TE,Cortino,64040
+TE,Crognaleto,64043
+TE,Fano Adriano,64044
+TE,Giulianova,64021
+TE,Isola del Gran Sasso d'Italia,64045
+TE,Martinsicuro,64014
+TE,Montefino,64030
+TE,Montorio al Vomano,64046
+TE,Morro d'Oro,64020
+TE,Mosciano Sant'Angelo,64023
+TE,Nereto,64015
+TE,Notaresco,64024
+TE,Penna Sant'Andrea,64039
+TE,Pietracamela,64047
+TE,Pineto,64025
+TE,Rocca Santa Maria,64010
+TE,Roseto degli Abruzzi,64026
+TE,Sant'Egidio alla Vibrata,64016
+TE,Sant'Omero,64027
+TE,Silvi,64028
+TE,Teramo,64100
+TE,Torano Nuovo,64010
+TE,Torricella Sicura,64010
+TE,Tortoreto,64018
+TE,Tossicia,64049
+TE,Valle Castellana,64010
+TN,Ala,38061
+TN,Albiano,38041
+TN,Aldeno,38060
+TN,Amblar,38011
+TN,Andalo,38010
+TN,Arco,38062
+TN,Avio,38063
+TN,Baselga di Pinè,38042
+TN,Bedollo,38043
+TN,Bersone,38085
+TN,Besenello,38060
+TN,Bieno,38050
+TN,Bleggio Superiore,38071
+TN,Bocenago,38080
+TN,Bolbeno,38079
+TN,Bondo,38081
+TN,Bondone,38080
+TN,Borgo Valsugana,38051
+TN,Bosentino,38049
+TN,Breguzzo,38081
+TN,Brentonico,38060
+TN,Bresimo,38020
+TN,Brez,38021
+TN,Brione,38083
+TN,Caderzone Terme,38080
+TN,Cagnò,38028
+TN,Calavino,38072
+TN,Calceranica al Lago,38050
+TN,Caldes,38022
+TN,Caldonazzo,38052
+TN,Calliano,38060
+TN,Campitello di Fassa,38031
+TN,Campodenno,38010
+TN,Canal San Bovo,38050
+TN,Canazei,38032
+TN,Capriana,38030
+TN,Carano,38033
+TN,Carisolo,38080
+TN,Carzano,38050
+TN,Castel Condino,38082
+TN,Castelfondo,38020
+TN,Castello Tesino,38053
+TN,Castello-Molina di Fiemme,38030
+TN,Castelnuovo,38050
+TN,Cavalese,38033
+TN,Cavareno,38011
+TN,Cavedago,38010
+TN,Cavedine,38073
+TN,Cavizzana,38022
+TN,Cembra,38034
+TN,Centa San Nicolò,38040
+TN,Cimego,38082
+TN,Cimone,38060
+TN,Cinte Tesino,38050
+TN,Cis,38020
+TN,Civezzano,38045
+TN,Cles,38023
+TN,Cloz,38020
+TN,Comano Terme,38077
+TN,Commezzadura,38020
+TN,Condino,38083
+TN,Coredo,38010
+TN,Croviana,38027
+TN,Cunevo,38010
+TN,Daiano,38030
+TN,Dambel,38010
+TN,Daone,38080
+TN,Darè,38080
+TN,Denno,38010
+TN,Dimaro,38025
+TN,Don,38011
+TN,Dorsino,38070
+TN,Drena,38074
+TN,Dro,38074
+TN,Faedo,38010
+TN,Fai della Paganella,38010
+TN,Faver,38030
+TN,Fiavè,38075
+TN,Fiera di Primiero,38054
+TN,Fierozzo,38050
+TN,Flavon,38010
+TN,Folgaria,38064
+TN,Fondo,38013
+TN,Fornace,38040
+TN,Frassilongo,38050
+TN,Garniga Terme,38060
+TN,Giovo,38030
+TN,Giustino,38086
+TN,Grauno,38030
+TN,Grigno,38055
+TN,Grumes,38030
+TN,Imer,38050
+TN,Isera,38060
+TN,Ivano-Fracena,38059
+TN,Lardaro,38087
+TN,Lasino,38076
+TN,Lavarone,38046
+TN,Lavis,38015
+TN,Ledro,38067
+TN,Levico Terme,38056
+TN,Lisignago,38030
+TN,Livo,38020
+TN,Lona-Lases,38040
+TN,Luserna,38040
+TN,Malè,38027
+TN,Malosco,38013
+TN,Massimeno,38086
+TN,Mazzin,38030
+TN,Mezzana,38020
+TN,Mezzano,38050
+TN,Mezzocorona,38016
+TN,Mezzolombardo,38017
+TN,Moena,38035
+TN,Molveno,38018
+TN,Monclassico,38020
+TN,Montagne,38070
+TN,Mori,38065
+TN,Nago-Torbole,38069
+TN,Nanno,38010
+TN,Nave San Rocco,38010
+TN,Nogaredo,38060
+TN,Nomi,38060
+TN,Novaledo,38050
+TN,Ospedaletto,38050
+TN,Ossana,38026
+TN,Padergnone,38070
+TN,Palù del Fersina,38050
+TN,Panchià,38030
+TN,Peio,38024
+TN,Pellizzano,38020
+TN,Pelugo,38079
+TN,Pergine Valsugana,38057
+TN,Pieve di Bono,38085
+TN,Pieve Tesino,38050
+TN,Pinzolo,38086
+TN,Pomarolo,38060
+TN,Pozza di Fassa,38036
+TN,Praso,38080
+TN,Predazzo,38037
+TN,Preore,38070
+TN,Prezzo,38085
+TN,Rabbi,38020
+TN,Ragoli,38070
+TN,Revò,38028
+TN,Riva del Garda,38066
+TN,Romallo,38028
+TN,Romeno,38010
+TN,Roncegno Terme,38050
+TN,Ronchi Valsugana,38050
+TN,Roncone,38087
+TN,Ronzo-Chienis,38060
+TN,Ronzone,38010
+TN,Roverè della Luna,38030
+TN,Rovereto,38068
+TN,Ruffrè-Mendola,38010
+TN,Rumo,38020
+TN,Sagron Mis,38050
+TN,Samone,38059
+TN,San Lorenzo in Banale,38078
+TN,San Michele all'Adige,38010
+TN,Sant'Orsola Terme,38050
+TN,Sanzeno,38010
+TN,Sarnonico,38011
+TN,Scurelle,38050
+TN,Segonzano,38047
+TN,Sfruz,38010
+TN,Siror,38054
+TN,Smarano,38010
+TN,Soraga,38030
+TN,Sover,38048
+TN,Spera,38059
+TN,Spiazzo,38088
+TN,Spormaggiore,38010
+TN,Sporminore,38010
+TN,Stenico,38070
+TN,Storo,38089
+TN,Strembo,38080
+TN,Strigno,38059
+TN,Taio,38012
+TN,Tassullo,38010
+TN,Telve,38050
+TN,Telve di Sopra,38050
+TN,Tenna,38050
+TN,Tenno,38060
+TN,Terlago,38070
+TN,Terragnolo,38060
+TN,Terres,38010
+TN,Terzolas,38027
+TN,Tesero,38038
+TN,Tione di Trento,38079
+TN,Ton,38010
+TN,Tonadico,38054
+TN,Torcegno,38050
+TN,Trambileno,38068
+TN,Transacqua,38054
+TN,Trento,3812x
+TN,Tres,38010
+TN,Tuenno,38019
+TN,Valda,38030
+TN,Valfloriana,38040
+TN,Vallarsa,38060
+TN,Varena,38030
+TN,Vattaro,38049
+TN,Vermiglio,38029
+TN,Vervò,38010
+TN,Vezzano,38070
+TN,Vignola-Falesina,38057
+TN,Vigo di Fassa,38039
+TN,Vigo Rendena,38080
+TN,Vigolo Vattaro,38049
+TN,Villa Agnedo,38059
+TN,Villa Lagarina,38060
+TN,Villa Rendena,38080
+TN,Volano,38060
+TN,Zambana,38010
+TN,Ziano di Fiemme,38030
+TN,Zuclo,38079
+TO,Agliè,10011
+TO,Airasca,10060
+TO,Ala di Stura,10070
+TO,Albiano d'Ivrea,10010
+TO,Alice Superiore,10010
+TO,Almese,10040
+TO,Alpette,10080
+TO,Alpignano,10091
+TO,Andezeno,10020
+TO,Andrate,10010
+TO,Angrogna,10060
+TO,Arignano,10020
+TO,Avigliana,10051
+TO,Azeglio,10010
+TO,Bairo,10010
+TO,Balangero,10070
+TO,Baldissero Canavese,10080
+TO,Baldissero Torinese,10020
+TO,Balme,10070
+TO,Banchette,10010
+TO,Barbania,10070
+TO,Bardonecchia,10052
+TO,Barone Canavese,10010
+TO,Beinasco,10092
+TO,Bibiana,10060
+TO,Bobbio Pellice,10060
+TO,Bollengo,10012
+TO,Borgaro Torinese,10071
+TO,Borgiallo,10080
+TO,Borgofranco d'Ivrea,10013
+TO,Borgomasino,10031
+TO,Borgone Susa,10050
+TO,Bosconero,10080
+TO,Brandizzo,10032
+TO,Bricherasio,10060
+TO,Brosso,10080
+TO,Brozolo,10020
+TO,Bruino,10090
+TO,Brusasco,10020
+TO,Bruzolo,10050
+TO,Buriasco,10060
+TO,Burolo,10010
+TO,Busano,10080
+TO,Bussoleno,10053
+TO,Buttigliera Alta,10090
+TO,Cafasse,10070
+TO,Caluso,10014
+TO,Cambiano,10020
+TO,Campiglione-Fenile,10060
+TO,Candia Canavese,10010
+TO,Candiolo,10060
+TO,Canischio,10080
+TO,Cantalupa,10060
+TO,Cantoira,10070
+TO,Caprie,10040
+TO,Caravino,10010
+TO,Carema,10010
+TO,Carignano,10041
+TO,Carmagnola,10022
+TO,Casalborgone,10020
+TO,Cascinette d'Ivrea,10010
+TO,Caselette,10040
+TO,Caselle Torinese,10072
+TO,Castagneto Po,10090
+TO,Castagnole Piemonte,10060
+TO,Castellamonte,10081
+TO,Castelnuovo Nigra,10080
+TO,Castiglione Torinese,10090
+TO,Cavagnolo,10020
+TO,Cavour,10061
+TO,Cercenasco,10060
+TO,Ceres,10070
+TO,Ceresole Reale,10080
+TO,Cesana Torinese,10054
+TO,Chialamberto,10070
+TO,Chianocco,10050
+TO,Chiaverano,10010
+TO,Chieri,10023
+TO,Chiesanuova,10080
+TO,Chiomonte,10050
+TO,Chiusa di San Michele,10050
+TO,Chivasso,10034
+TO,Ciconio,10080
+TO,Cintano,10080
+TO,Cinzano,10090
+TO,Ciriè,10073
+TO,Claviere,10050
+TO,Coassolo Torinese,10070
+TO,Coazze,10050
+TO,Collegno,10093
+TO,Colleretto Castelnuovo,10080
+TO,Colleretto Giacosa,10010
+TO,Condove,10055
+TO,Corio,10070
+TO,Cossano Canavese,10010
+TO,Cuceglio,10090
+TO,Cumiana,10040
+TO,Cuorgnè,10082
+TO,Druento,10040
+TO,Exilles,10050
+TO,Favria,10083
+TO,Feletto,10080
+TO,Fenestrelle,10060
+TO,Fiano,10070
+TO,Fiorano Canavese,10010
+TO,Foglizzo,10090
+TO,Forno Canavese,10084
+TO,Frassinetto,10080
+TO,Front,10070
+TO,Frossasco,10060
+TO,Garzigliana,10060
+TO,Gassino Torinese,10090
+TO,Germagnano,10070
+TO,Giaglione,10050
+TO,Giaveno,10094
+TO,Givoletto,10040
+TO,Gravere,10050
+TO,Groscavallo,10070
+TO,Grosso,10070
+TO,Grugliasco,10095
+TO,Ingria,10080
+TO,Inverso Pinasca,10060
+TO,Isolabella,10046
+TO,Issiglio,10080
+TO,Ivrea,10015
+TO,La Cassa,10040
+TO,La Loggia,10040
+TO,Lanzo Torinese,10074
+TO,Lauriano,10020
+TO,Leini,10040
+TO,Lemie,10070
+TO,Lessolo,10010
+TO,Levone,10070
+TO,Locana,10080
+TO,Lombardore,10040
+TO,Lombriasco,10040
+TO,Loranzè,10010
+TO,Lugnacco,10080
+TO,Luserna San Giovanni,10062
+TO,Lusernetta,10060
+TO,Lusigliè,10080
+TO,Macello,10060
+TO,Maglione,10030
+TO,Marentino,10020
+TO,Massello,10060
+TO,Mathi,10075
+TO,Mattie,10050
+TO,Mazzè,10035
+TO,Meana di Susa,10050
+TO,Mercenasco,10010
+TO,Meugliano,10080
+TO,Mezzenile,10070
+TO,Mombello di Torino,10020
+TO,Mompantero,10059
+TO,Monastero di Lanzo,10070
+TO,Moncalieri,10024
+TO,Moncenisio,10050
+TO,Montaldo Torinese,10020
+TO,Montalenghe,10090
+TO,Montalto Dora,10016
+TO,Montanaro,10017
+TO,Monteu da Po,10020
+TO,Moriondo Torinese,10020
+TO,Nichelino,10042
+TO,Noasca,10080
+TO,Nole,10076
+TO,Nomaglio,10010
+TO,None,10060
+TO,Novalesa,10050
+TO,Oglianico,10080
+TO,Orbassano,10043
+TO,Orio Canavese,10010
+TO,Osasco,10060
+TO,Osasio,10040
+TO,Oulx,10056
+TO,Ozegna,10080
+TO,Palazzo Canavese,10010
+TO,Pancalieri,10060
+TO,Parella,10010
+TO,Pavarolo,10020
+TO,Pavone Canavese,10018
+TO,Pecco,10080
+TO,Pecetto Torinese,10020
+TO,Perosa Argentina,10063
+TO,Perosa Canavese,10010
+TO,Perrero,10060
+TO,Pertusio,10080
+TO,Pessinetto,10070
+TO,Pianezza,10044
+TO,Pinasca,10060
+TO,Pinerolo,10064
+TO,Pino Torinese,10025
+TO,Piobesi Torinese,10040
+TO,Piossasco,10045
+TO,Piscina,10060
+TO,Piverone,10010
+TO,Poirino,10046
+TO,Pomaretto,10063
+TO,Pont-Canavese,10085
+TO,Porte,10060
+TO,Pragelato,10060
+TO,Prali,10060
+TO,Pralormo,10040
+TO,Pramollo,10065
+TO,Prarostino,10060
+TO,Prascorsano,10080
+TO,Pratiglione,10080
+TO,Quagliuzzo,10010
+TO,Quassolo,10010
+TO,Quincinetto,10010
+TO,Reano,10090
+TO,Ribordone,10080
+TO,Riva Presso Chieri,10020
+TO,Rivalba,10090
+TO,Rivalta di Torino,10040
+TO,Rivara,10080
+TO,Rivarolo Canavese,10086
+TO,Rivarossa,10040
+TO,Rivoli,10098
+TO,Robassomero,10070
+TO,Rocca Canavese,10070
+TO,Roletto,10060
+TO,Romano Canavese,10090
+TO,Ronco Canavese,10080
+TO,Rondissone,10030
+TO,Rorà,10060
+TO,Rosta,10090
+TO,Roure,10060
+TO,Rubiana,10040
+TO,Rueglio,10010
+TO,Salassa,10080
+TO,Salbertrand,10050
+TO,Salerano Canavese,10010
+TO,Salza di Pinerolo,10060
+TO,Samone,10010
+TO,San Benigno Canavese,10080
+TO,San Carlo Canavese,10070
+TO,San Colombano Belmonte,10080
+TO,San Didero,10050
+TO,San Francesco al Campo,10070
+TO,San Germano Chisone,10065
+TO,San Gillio,10040
+TO,San Giorgio Canavese,10090
+TO,San Giorio di Susa,10050
+TO,San Giusto Canavese,10090
+TO,San Martino Canavese,10010
+TO,San Maurizio Canavese,10077
+TO,San Mauro Torinese,10099
+TO,San Pietro Val Lemina,10060
+TO,San Ponso,10080
+TO,San Raffaele Cimena,10090
+TO,San Sebastiano da Po,10020
+TO,San Secondo di Pinerolo,10060
+TO,Sangano,10090
+TO,Sant'Ambrogio di Torino,10057
+TO,Sant'Antonino di Susa,10050
+TO,Santena,10026
+TO,Sauze di Cesana,10054
+TO,Sauze d'Oulx,10050
+TO,Scalenghe,10060
+TO,Scarmagno,10010
+TO,Sciolze,10090
+TO,Sestriere,10058
+TO,Settimo Rottaro,10010
+TO,Settimo Torinese,10036
+TO,Settimo Vittone,10010
+TO,Sparone,10080
+TO,Strambinello,10010
+TO,Strambino,10019
+TO,Susa,10059
+TO,Tavagnasco,10010
+TO,Torino,101xx
+TO,Torrazza Piemonte,10037
+TO,Torre Canavese,10010
+TO,Torre Pellice,10066
+TO,Trana,10090
+TO,Trausella,10080
+TO,Traversella,10080
+TO,Traves,10070
+TO,Trofarello,10028
+TO,Usseaux,10060
+TO,Usseglio,10070
+TO,Vaie,10050
+TO,Val della Torre,10040
+TO,Valgioie,10094
+TO,Vallo Torinese,10070
+TO,Valperga,10087
+TO,Valprato Soana,10080
+TO,Varisella,10070
+TO,Vauda Canavese,10070
+TO,Venaria Reale,10078
+TO,Venaus,10050
+TO,Verolengo,10038
+TO,Verrua Savoia,10020
+TO,Vestignè,10030
+TO,Vialfrè,10090
+TO,Vico Canavese,10080
+TO,Vidracco,10080
+TO,Vigone,10067
+TO,Villafranca Piemonte,10068
+TO,Villanova Canavese,10070
+TO,Villar Dora,10040
+TO,Villar Focchiardo,10050
+TO,Villar Pellice,10060
+TO,Villar Perosa,10069
+TO,Villarbasse,10090
+TO,Villareggia,10030
+TO,Villastellone,10029
+TO,Vinovo,10048
+TO,Virle Piemonte,10060
+TO,Vische,10030
+TO,Vistrorio,10080
+TO,Viù,10070
+TO,Volpiano,10088
+TO,Volvera,10040
+TP,Alcamo,91011
+TP,Buseto Palizzolo,91012
+TP,Calatafimi Segesta,91013
+TP,Campobello di Mazara,91021
+TP,Castellammare del Golfo,91014
+TP,Castelvetrano,91022
+TP,Custonaci,91015
+TP,Erice,91016
+TP,Favignana,91023
+TP,Gibellina,91024
+TP,Marsala,91025
+TP,Mazara del Vallo,91026
+TP,Paceco,91027
+TP,Pantelleria,91017
+TP,Partanna,91028
+TP,Petrosino,91020
+TP,Poggioreale,91020
+TP,Salaparuta,91020
+TP,Salemi,91018
+TP,San Vito Lo Capo,91010
+TP,Santa Ninfa,91029
+TP,Trapani,91100
+TP,Valderice,91019
+TP,Vita,91010
+TR,Acquasparta,5021
+TR,Allerona,5011
+TR,Alviano,5020
+TR,Amelia,5022
+TR,Arrone,5031
+TR,Attigliano,5012
+TR,Avigliano Umbro,5020
+TR,Baschi,5023
+TR,Calvi dell'Umbria,5032
+TR,Castel Giorgio,5013
+TR,Castel Viscardo,5014
+TR,Fabro,5015
+TR,Ferentillo,5034
+TR,Ficulle,5016
+TR,Giove,5024
+TR,Guardea,5025
+TR,Lugnano in Teverina,5020
+TR,Montecastrilli,5026
+TR,Montecchio,5020
+TR,Montefranco,5030
+TR,Montegabbione,5010
+TR,Monteleone d'Orvieto,5017
+TR,Narni,5035
+TR,Orvieto,5018
+TR,Otricoli,5030
+TR,Parrano,5010
+TR,Penna in Teverina,5028
+TR,Polino,5030
+TR,Porano,5010
+TR,San Gemini,5029
+TR,San Venanzo,5010
+TR,Stroncone,5039
+TR,Terni,5100
+TS,Duino-Aurisina,34011
+TS,Monrupino,34016
+TS,Muggia,34015
+TS,San Dorligo della Valle - Dolina,34018
+TS,Sgonico,34010
+TS,Trieste,341xx
+TV,Altivole,31030
+TV,Arcade,31030
+TV,Asolo,31011
+TV,Borso del Grappa,31030
+TV,Breda di Piave,31030
+TV,Caerano di San Marco,31031
+TV,Cappella Maggiore,31012
+TV,Carbonera,31030
+TV,Casale sul Sile,31032
+TV,Casier,31030
+TV,Castelcucco,31030
+TV,Castelfranco Veneto,31033
+TV,Castello di Godego,31030
+TV,Cavaso del Tomba,31034
+TV,Cessalto,31040
+TV,Chiarano,31040
+TV,Cimadolmo,31010
+TV,Cison di Valmarino,31030
+TV,Codognè,31013
+TV,Colle Umberto,31014
+TV,Conegliano,31015
+TV,Cordignano,31016
+TV,Cornuda,31041
+TV,Crespano del Grappa,31017
+TV,Crocetta del Montello,31035
+TV,Farra di Soligo,31010
+TV,Follina,31051
+TV,Fontanelle,31043
+TV,Fonte,31010
+TV,Fregona,31010
+TV,Gaiarine,31018
+TV,Giavera del Montello,31040
+TV,Godega di Sant'Urbano,31010
+TV,Gorgo al Monticano,31040
+TV,Istrana,31036
+TV,Loria,31037
+TV,Mansuè,31040
+TV,Mareno di Piave,31010
+TV,Maser,31010
+TV,Maserada sul Piave,31052
+TV,Meduna di Livenza,31040
+TV,Miane,31050
+TV,Mogliano Veneto,31021
+TV,Monastier di Treviso,31050
+TV,Monfumo,31010
+TV,Montebelluna,31044
+TV,Morgano,31050
+TV,Moriago della Battaglia,31010
+TV,Motta di Livenza,31045
+TV,Nervesa della Battaglia,31040
+TV,Oderzo,31046
+TV,Ormelle,31024
+TV,Orsago,31010
+TV,Paderno del Grappa,31017
+TV,Paese,31038
+TV,Pederobba,31040
+TV,Pieve di Soligo,31053
+TV,Ponte di Piave,31047
+TV,Ponzano Veneto,31050
+TV,Portobuffolè,31040
+TV,Possagno,31054
+TV,Povegliano,31050
+TV,Preganziol,31022
+TV,Quinto di Treviso,31055
+TV,Refrontolo,31020
+TV,Resana,31023
+TV,Revine Lago,31020
+TV,Riese Pio X,31039
+TV,Roncade,31056
+TV,Salgareda,31040
+TV,San Biagio di Callalta,31048
+TV,San Fior,31020
+TV,San Pietro di Feletto,31020
+TV,San Polo di Piave,31020
+TV,San Vendemiano,31020
+TV,San Zenone degli Ezzelini,31020
+TV,Santa Lucia di Piave,31025
+TV,Sarmede,31026
+TV,Segusino,31040
+TV,Sernaglia della Battaglia,31020
+TV,Silea,31057
+TV,Spresiano,31027
+TV,Susegana,31058
+TV,Tarzo,31020
+TV,Trevignano,31040
+TV,Treviso,31100
+TV,Valdobbiadene,31049
+TV,Vazzola,31028
+TV,Vedelago,31050
+TV,Vidor,31020
+TV,Villorba,31020
+TV,Vittorio Veneto,31029
+TV,Volpago del Montello,31040
+TV,Zenson di Piave,31050
+TV,Zero Branco,31059
+UD,Aiello del Friuli,33041
+UD,Amaro,33020
+UD,Ampezzo,33021
+UD,Aquileia,33051
+UD,Arta Terme,33022
+UD,Artegna,33011
+UD,Attimis,33040
+UD,Bagnaria Arsa,33050
+UD,Basiliano,33031
+UD,Bertiolo,33032
+UD,Bicinicco,33050
+UD,Bordano,33010
+UD,Buja,33030
+UD,Buttrio,33042
+UD,Camino al Tagliamento,33030
+UD,Campoformido,33030
+UD,Campolongo Tapogliano,33040
+UD,Carlino,33050
+UD,Cassacco,33010
+UD,Castions di Strada,33050
+UD,Cavazzo Carnico,33020
+UD,Cercivento,33020
+UD,Cervignano del Friuli,33052
+UD,Chiopris-Viscone,33048
+UD,Chiusaforte,33010
+UD,Cividale del Friuli,33043
+UD,Codroipo,33033
+UD,Colloredo di Monte Albano,33010
+UD,Comeglians,33023
+UD,Corno di Rosazzo,33040
+UD,Coseano,33030
+UD,Dignano,33030
+UD,Dogna,33010
+UD,Drenchia,33040
+UD,Enemonzo,33020
+UD,Faedis,33040
+UD,Fagagna,33034
+UD,Fiumicello,33050
+UD,Flaibano,33030
+UD,Forgaria nel Friuli,33030
+UD,Forni Avoltri,33020
+UD,Forni di Sopra,33024
+UD,Forni di Sotto,33020
+UD,Gemona del Friuli,33013
+UD,Gonars,33050
+UD,Grimacco,33040
+UD,Latisana,33053
+UD,Lauco,33029
+UD,Lestizza,33050
+UD,Lignano Sabbiadoro,33054
+UD,Ligosullo,33020
+UD,Lusevera,33010
+UD,Magnano in Riviera,33010
+UD,Majano,33030
+UD,Malborghetto Valbruna,33010
+UD,Manzano,33044
+UD,Marano Lagunare,33050
+UD,Martignacco,33035
+UD,Mereto di Tomba,33036
+UD,Moggio Udinese,33015
+UD,Moimacco,33040
+UD,Montenars,33010
+UD,Mortegliano,33050
+UD,Moruzzo,33030
+UD,Muzzana del Turgnano,33055
+UD,Nimis,33045
+UD,Osoppo,33010
+UD,Ovaro,33025
+UD,Pagnacco,33010
+UD,Palazzolo dello Stella,33056
+UD,Palmanova,33057
+UD,Paluzza,33026
+UD,Pasian di Prato,33037
+UD,Paularo,33027
+UD,Pavia di Udine,33050
+UD,Pocenia,33050
+UD,Pontebba,33016
+UD,Porpetto,33050
+UD,Povoletto,33040
+UD,Pozzuolo del Friuli,33050
+UD,Pradamano,33040
+UD,Prato Carnico,33020
+UD,Precenicco,33050
+UD,Premariacco,33040
+UD,Preone,33020
+UD,Prepotto,33040
+UD,Pulfero,33046
+UD,Ragogna,33030
+UD,Ravascletto,33020
+UD,Raveo,33029
+UD,Reana del Rojale,33010
+UD,Remanzacco,33047
+UD,Resia,33010
+UD,Resiutta,33010
+UD,Rigolato,33020
+UD,Rive D'Arcano,33030
+UD,Rivignano,33050
+UD,Ronchis,33050
+UD,Ruda,33050
+UD,San Daniele del Friuli,33038
+UD,San Giorgio di Nogaro,33058
+UD,San Giovanni al Natisone,33048
+UD,San Leonardo,33040
+UD,San Pietro al Natisone,33049
+UD,San Vito al Torre,33050
+UD,San Vito di Fagagna,33030
+UD,Santa Maria La Longa,33050
+UD,Sauris,33020
+UD,Savogna,33040
+UD,Sedegliano,33039
+UD,Socchieve,33020
+UD,Stregna,33040
+UD,Sutrio,33020
+UD,Taipana,33040
+UD,Talmassons,33030
+UD,Tarcento,33017
+UD,Tarvisio,33018
+UD,Tavagnacco,33010
+UD,Teor,33050
+UD,Terzo d'Aquileia,33050
+UD,Tolmezzo,33028
+UD,Torreano,33040
+UD,Torviscosa,33050
+UD,Trasaghis,33010
+UD,Treppo Carnico,33020
+UD,Treppo Grande,33010
+UD,Tricesimo,33019
+UD,Trivignano Udinese,33050
+UD,Udine,33100
+UD,Varmo,33030
+UD,Venzone,33010
+UD,Verzegnis,33020
+UD,Villa Santina,33029
+UD,Villa Vicentina,33059
+UD,Visco,33040
+UD,Zuglio,33020
+VA,Agra,21010
+VA,Albizzate,21041
+VA,Angera,21021
+VA,Arcisate,21051
+VA,Arsago Seprio,21010
+VA,Azzate,21022
+VA,Azzio,21030
+VA,Barasso,21020
+VA,Bardello,21020
+VA,Bedero Valcuvia,21039
+VA,Besano,21050
+VA,Besnate,21010
+VA,Besozzo,21023
+VA,Biandronno,21024
+VA,Bisuschio,21050
+VA,Bodio Lomnago,21020
+VA,Brebbia,21020
+VA,Bregano,21020
+VA,Brenta,21030
+VA,Brezzo di Bedero,21010
+VA,Brinzio,21030
+VA,Brissago-Valtravaglia,21030
+VA,Brunello,21020
+VA,Brusimpiano,21050
+VA,Buguggiate,21020
+VA,Busto Arsizio,21052
+VA,Cadegliano-Viconago,21031
+VA,Cadrezzate,21020
+VA,Cairate,21050
+VA,Cantello,21050
+VA,Caravate,21032
+VA,Cardano al Campo,21010
+VA,Carnago,21040
+VA,Caronno Pertusella,21042
+VA,Caronno Varesino,21040
+VA,Casale Litta,21020
+VA,Casalzuigno,21030
+VA,Casciago,21020
+VA,Casorate Sempione,21011
+VA,Cassano Magnago,21012
+VA,Cassano Valcuvia,21030
+VA,Castellanza,21053
+VA,Castello Cabiaglio,21030
+VA,Castelseprio,21050
+VA,Castelveccana,21010
+VA,Castiglione Olona,21043
+VA,Castronno,21040
+VA,Cavaria con Premezzo,21044
+VA,Cazzago Brabbia,21020
+VA,Cislago,21040
+VA,Cittiglio,21033
+VA,Clivio,21050
+VA,Cocquio-Trevisago,21034
+VA,Comabbio,21020
+VA,Comerio,21025
+VA,Cremenaga,21030
+VA,Crosio della Valle,21020
+VA,Cuasso al Monte,21050
+VA,Cugliate-Fabiasco,21030
+VA,Cunardo,21035
+VA,Curiglia con Monteviasco,21010
+VA,Cuveglio,21030
+VA,Cuvio,21030
+VA,Daverio,21020
+VA,Dumenza,21010
+VA,Duno,21030
+VA,Fagnano Olona,21054
+VA,Ferno,21010
+VA,Ferrera di Varese,21030
+VA,Gallarate,21013
+VA,Galliate Lombardo,21020
+VA,Gavirate,21026
+VA,Gazzada Schianno,21045
+VA,Gemonio,21036
+VA,Gerenzano,21040
+VA,Germignaga,21010
+VA,Golasecca,21010
+VA,Gorla Maggiore,21050
+VA,Gorla Minore,21055
+VA,Gornate-Olona,21040
+VA,Grantola,21030
+VA,Inarzo,21020
+VA,Induno Olona,21056
+VA,Ispra,21027
+VA,Jerago con Orago,21040
+VA,Lavena Ponte Tresa,21037
+VA,Laveno-Mombello,21014
+VA,Leggiuno,21038
+VA,Lonate Ceppino,21050
+VA,Lonate Pozzolo,21015
+VA,Lozza,21040
+VA,Luino,21016
+VA,Luvinate,21020
+VA,Maccagno,21010
+VA,Malgesso,21020
+VA,Malnate,21046
+VA,Marchirolo,21030
+VA,Marnate,21050
+VA,Marzio,21030
+VA,Masciago Primo,21030
+VA,Mercallo,21020
+VA,Mesenzana,21030
+VA,Montegrino Valtravaglia,21010
+VA,Monvalle,21020
+VA,Morazzone,21040
+VA,Mornago,21020
+VA,Oggiona con Santo Stefano,21040
+VA,Olgiate Olona,21057
+VA,Origgio,21040
+VA,Orino,21030
+VA,Osmate,21018
+VA,Pino sulla Sponda del Lago Maggiore,21010
+VA,Porto Ceresio,21050
+VA,Porto Valtravaglia,21010
+VA,Rancio Valcuvia,21030
+VA,Ranco,21020
+VA,Saltrio,21050
+VA,Samarate,21017
+VA,Sangiano,21038
+VA,Saronno,21047
+VA,Sesto Calende,21018
+VA,Solbiate Arno,21048
+VA,Solbiate Olona,21058
+VA,Somma Lombardo,21019
+VA,Sumirago,21040
+VA,Taino,21020
+VA,Ternate,21020
+VA,Tradate,21049
+VA,Travedona-Monate,21028
+VA,Tronzano Lago Maggiore,21010
+VA,Uboldo,21040
+VA,Valganna,21039
+VA,Varano Borghi,21020
+VA,Varese,21100
+VA,Vedano Olona,21040
+VA,Veddasca,21010
+VA,Venegono Inferiore,21040
+VA,Venegono Superiore,21040
+VA,Vergiate,21029
+VA,Viggiù,21059
+VA,Vizzola Ticino,21010
+VB,Antrona Schieranco,28841
+VB,Anzola d'Ossola,28877
+VB,Arizzano,28811
+VB,Arola,28899
+VB,Aurano,28812
+VB,Baceno,28861
+VB,Bannio Anzino,28871
+VB,Baveno,28831
+VB,Bee,28813
+VB,Belgirate,28832
+VB,Beura-Cardezza,28851
+VB,Bognanco,28842
+VB,Brovello-Carpugnino,28833
+VB,Calasca-Castiglione,28873
+VB,Cambiasca,28814
+VB,Cannero Riviera,28821
+VB,Cannobio,28822
+VB,Caprezzo,28815
+VB,Casale Corte Cerro,28881
+VB,Cavaglio-Spoccia,28825
+VB,Ceppo Morelli,28875
+VB,Cesara,28891
+VB,Cossogno,28801
+VB,Craveggia,28852
+VB,Crevoladossola,28865
+VB,Crodo,28862
+VB,Cursolo-Orasso,28827
+VB,Domodossola,28845
+VB,Druogno,28853
+VB,Falmenta,28827
+VB,Formazza,28863
+VB,Germagno,28887
+VB,Ghiffa,28823
+VB,Gignese,28836
+VB,Gravellona Toce,28883
+VB,Gurro,28828
+VB,Intragna,28816
+VB,Loreglia,28893
+VB,Macugnaga,28876
+VB,Madonna del Sasso,28894
+VB,Malesco,28854
+VB,Masera,28855
+VB,Massiola,28895
+VB,Mergozzo,28802
+VB,Miazzina,28817
+VB,Montecrestese,28864
+VB,Montescheno,28843
+VB,Nonio,28891
+VB,Oggebbio,28824
+VB,Omegna,28887
+VB,Ornavasso,28877
+VB,Pallanzeno,28884
+VB,Piedimulera,28885
+VB,Pieve Vergonte,28886
+VB,Premeno,28818
+VB,Premia,28866
+VB,Premosello-Chiovenda,28803
+VB,Quarna Sopra,28898
+VB,Quarna Sotto,28896
+VB,Re,28856
+VB,San Bernardino Verbano,28804
+VB,Santa Maria Maggiore,28857
+VB,Seppiana,28843
+VB,Stresa,28838
+VB,Toceno,28858
+VB,Trarego Viggiona,28826
+VB,Trasquera,28868
+VB,Trontano,28859
+VB,Valstrona,28897
+VB,Vanzone con San Carlo,28879
+VB,Varzo,28868
+VB,Verbania,2892x
+VB,Viganella,28841
+VB,Vignone,28819
+VB,Villadossola,28844
+VB,Villette,28856
+VB,Vogogna,28805
+VC,Alagna Valsesia,13021
+VC,Albano Vercellese,13030
+VC,Alice Castello,13040
+VC,Arborio,13031
+VC,Asigliano Vercellese,13032
+VC,Balmuccia,13020
+VC,Balocco,13040
+VC,Bianzè,13041
+VC,Boccioleto,13022
+VC,Borgo d'Ale,13040
+VC,Borgo Vercelli,13012
+VC,Borgosesia,13011
+VC,Breia,13020
+VC,Buronzo,13040
+VC,Campertogno,13023
+VC,Carcoforo,13026
+VC,Caresana,13010
+VC,Caresanablot,13030
+VC,Carisio,13040
+VC,Casanova Elvo,13030
+VC,Cellio,13024
+VC,Cervatto,13025
+VC,Cigliano,13043
+VC,Civiasco,13010
+VC,Collobiano,13030
+VC,Costanzana,13033
+VC,Cravagliana,13020
+VC,Crescentino,13044
+VC,Crova,13040
+VC,Desana,13034
+VC,Fobello,13025
+VC,Fontanetto Po,13040
+VC,Formigliana,13030
+VC,Gattinara,13045
+VC,Ghislarengo,13030
+VC,Greggio,13030
+VC,Guardabosone,13010
+VC,Lamporo,13046
+VC,Lenta,13035
+VC,Lignana,13034
+VC,Livorno Ferraris,13046
+VC,Lozzolo,13045
+VC,Mollia,13020
+VC,Moncrivello,13040
+VC,Motta de' Conti,13010
+VC,Olcenengo,13047
+VC,Oldenico,13030
+VC,Palazzolo Vercellese,13040
+VC,Pertengo,13030
+VC,Pezzana,13010
+VC,Pila,13020
+VC,Piode,13020
+VC,Postua,13010
+VC,Prarolo,13012
+VC,Quarona,13017
+VC,Quinto Vercellese,13030
+VC,Rassa,13020
+VC,Rima San Giuseppe,13026
+VC,Rimasco,13026
+VC,Rimella,13020
+VC,Riva Valdobbia,13020
+VC,Rive,13030
+VC,Roasio,13060
+VC,Ronsecco,13036
+VC,Rossa,13020
+VC,Rovasenda,13040
+VC,Sabbia,13020
+VC,Salasco,13040
+VC,Sali Vercellese,13040
+VC,Saluggia,13040
+VC,San Germano Vercellese,13047
+VC,San Giacomo Vercellese,13030
+VC,Santhià,13048
+VC,Scopa,13027
+VC,Scopello,13028
+VC,Serravalle Sesia,13037
+VC,Stroppiana,13010
+VC,Tricerro,13038
+VC,Trino,13039
+VC,Tronzano Vercellese,13049
+VC,Valduggia,13018
+VC,Varallo,13019
+VC,Vercelli,13100
+VC,Villarboit,13030
+VC,Villata,13010
+VC,Vocca,13020
+VE,Annone Veneto,30020
+VE,Campagna Lupia,30010
+VE,Campolongo Maggiore,30010
+VE,Camponogara,30010
+VE,Caorle,30021
+VE,Cavallino-Treporti,30013
+VE,Cavarzere,30014
+VE,Ceggia,30022
+VE,Chioggia,30015
+VE,Cinto Caomaggiore,30020
+VE,Cona,30010
+VE,Concordia Sagittaria,30023
+VE,Dolo,30031
+VE,Eraclea,30020
+VE,Fiesso d'Artico,30032
+VE,Fossalta di Piave,30020
+VE,Fossalta di Portogruaro,30025
+VE,Fossò,30030
+VE,Gruaro,30020
+VE,Jesolo,30016
+VE,Marcon,30020
+VE,Martellago,30030
+VE,Meolo,30020
+VE,Mira,30034
+VE,Mirano,30035
+VE,Musile di Piave,30024
+VE,Noale,30033
+VE,Noventa di Piave,30020
+VE,Pianiga,30030
+VE,Portogruaro,30026
+VE,Pramaggiore,30020
+VE,Quarto d'Altino,30020
+VE,Salzano,30030
+VE,San Donà di Piave,30027
+VE,San Michele al Tagliamento,30028
+VE,Santa Maria di Sala,30036
+VE,Santo Stino di Livenza,30029
+VE,Scorzè,30037
+VE,Spinea,30038
+VE,Stra,30039
+VE,Teglio Veneto,30025
+VE,Torre di Mosto,30020
+VE,Venezia,301xx
+VE,Vigonovo,30030
+VI,Agugliaro,36020
+VI,Albettone,36020
+VI,Alonte,36045
+VI,Altavilla Vicentina,36077
+VI,Altissimo,36070
+VI,Arcugnano,36057
+VI,Arsiero,36011
+VI,Arzignano,36071
+VI,Asiago,36012
+VI,Asigliano Veneto,36020
+VI,Barbarano Vicentino,36021
+VI,Bassano del Grappa,36061
+VI,Bolzano Vicentino,36050
+VI,Breganze,36042
+VI,Brendola,36040
+VI,Bressanvido,36050
+VI,Brogliano,36070
+VI,Caldogno,36030
+VI,Caltrano,36030
+VI,Calvene,36030
+VI,Camisano Vicentino,36043
+VI,Campiglia dei Berici,36020
+VI,Campolongo sul Brenta,36020
+VI,Carrè,36010
+VI,Cartigliano,36050
+VI,Cassola,36022
+VI,Castegnero,36020
+VI,Castelgomberto,36070
+VI,Chiampo,36072
+VI,Chiuppano,36010
+VI,Cismon del Grappa,36020
+VI,Cogollo del Cengio,36010
+VI,Conco,36062
+VI,Cornedo Vicentino,36073
+VI,Costabissara,36030
+VI,Creazzo,36051
+VI,Crespadoro,36070
+VI,Dueville,36031
+VI,Enego,36052
+VI,Fara Vicentino,36030
+VI,Foza,36010
+VI,Gallio,36032
+VI,Gambellara,36053
+VI,Gambugliano,36050
+VI,Grancona,36040
+VI,Grisignano di Zocco,36040
+VI,Grumolo delle Abbadesse,36040
+VI,Isola Vicentina,36033
+VI,Laghi,36010
+VI,Lastebasse,36040
+VI,Longare,36023
+VI,Lonigo,36045
+VI,Lugo di Vicenza,36030
+VI,Lusiana,36046
+VI,Malo,36034
+VI,Marano Vicentino,36035
+VI,Marostica,36063
+VI,Mason Vicentino,36064
+VI,Molvena,36060
+VI,Monte di Malo,36030
+VI,Montebello Vicentino,36054
+VI,Montecchio Maggiore,36075
+VI,Montecchio Precalcino,36030
+VI,Montegalda,36047
+VI,Montegaldella,36047
+VI,Monteviale,36050
+VI,Monticello Conte Otto,36010
+VI,Montorso Vicentino,36050
+VI,Mossano,36024
+VI,Mussolente,36065
+VI,Nanto,36024
+VI,Nogarole Vicentino,36070
+VI,Nove,36055
+VI,Noventa Vicentina,36025
+VI,Orgiano,36040
+VI,Pedemonte,36040
+VI,Pianezze,36060
+VI,Piovene Rocchette,36013
+VI,Pojana Maggiore,36026
+VI,Posina,36010
+VI,Pove del Grappa,36020
+VI,Pozzoleone,36050
+VI,Quinto Vicentino,36050
+VI,Recoaro Terme,36076
+VI,Roana,36010
+VI,Romano d'Ezzelino,36060
+VI,Rosà,36027
+VI,Rossano Veneto,36028
+VI,Rotzo,36010
+VI,Salcedo,36040
+VI,San Germano dei Berici,36040
+VI,San Nazario,36020
+VI,San Pietro Mussolino,36070
+VI,San Vito di Leguzzano,36030
+VI,Sandrigo,36066
+VI,Santorso,36014
+VI,Sarcedo,36030
+VI,Sarego,36040
+VI,Schiavon,36060
+VI,Schio,36015
+VI,Solagna,36020
+VI,Sossano,36040
+VI,Sovizzo,36050
+VI,Tezze sul Brenta,36056
+VI,Thiene,36016
+VI,Tonezza del Cimone,36040
+VI,Torrebelvicino,36036
+VI,Torri di Quartesolo,36040
+VI,Trissino,36070
+VI,Valdagno,36078
+VI,Valdastico,36040
+VI,Valli del Pasubio,36030
+VI,Valstagna,36020
+VI,Velo d'Astico,36010
+VI,Vicenza,36100
+VI,Villaga,36021
+VI,Villaverla,36030
+VI,Zanè,36010
+VI,Zermeghedo,36050
+VI,Zovencedo,36020
+VI,Zugliano,36030
+VR,Affi,37010
+VR,Albaredo d'Adige,37041
+VR,Angiari,37050
+VR,Arcole,37040
+VR,Badia Calavena,37030
+VR,Bardolino,37011
+VR,Belfiore,37050
+VR,Bevilacqua,37040
+VR,Bonavigo,37040
+VR,Boschi Sant'Anna,37040
+VR,Bosco Chiesanuova,37021
+VR,Bovolone,37051
+VR,Brentino Belluno,37020
+VR,Brenzone,37010
+VR,Bussolengo,37012
+VR,Buttapietra,37060
+VR,Caldiero,37042
+VR,Caprino Veronese,37013
+VR,Casaleone,37052
+VR,Castagnaro,37043
+VR,Castel d'Azzano,37060
+VR,Castelnuovo del Garda,37014
+VR,Cavaion Veronese,37010
+VR,Cazzano di Tramigna,37030
+VR,Cerea,37053
+VR,Cerro Veronese,37020
+VR,Cologna Veneta,37044
+VR,Colognola ai Colli,37030
+VR,Concamarise,37050
+VR,Costermano,37010
+VR,Dolcè,37020
+VR,Erbè,37060
+VR,Erbezzo,37020
+VR,Ferrara di Monte Baldo,37020
+VR,Fumane,37022
+VR,Garda,37016
+VR,Gazzo Veronese,37060
+VR,Grezzana,37023
+VR,Illasi,37031
+VR,Isola della Scala,37063
+VR,Isola Rizza,37050
+VR,Lavagno,37030
+VR,Lazise,37017
+VR,Legnago,37045
+VR,Malcesine,37018
+VR,Marano di Valpolicella,37020
+VR,Mezzane di Sotto,37030
+VR,Minerbe,37046
+VR,Montecchia di Crosara,37030
+VR,Monteforte d'Alpone,37032
+VR,Mozzecane,37060
+VR,Negrar,37024
+VR,Nogara,37054
+VR,Nogarole Rocca,37060
+VR,Oppeano,37050
+VR,Palù,37050
+VR,Pastrengo,37010
+VR,Pescantina,37026
+VR,Peschiera del Garda,37019
+VR,Povegliano Veronese,37064
+VR,Pressana,37040
+VR,Rivoli Veronese,37010
+VR,Roncà,37030
+VR,Ronco all'Adige,37055
+VR,Roverchiara,37050
+VR,Roverè Veronese,37028
+VR,Roveredo di Guà,37040
+VR,Salizzole,37056
+VR,San Bonifacio,37047
+VR,San Giovanni Ilarione,37035
+VR,San Giovanni Lupatoto,37057
+VR,San Martino Buon Albergo,37036
+VR,San Mauro di Saline,37030
+VR,San Pietro di Morubio,37050
+VR,San Pietro in Cariano,37029
+VR,San Zeno di Montagna,37010
+VR,Sanguinetto,37058
+VR,Sant'Ambrogio di Valpolicella,37015
+VR,Sant'Anna d'Alfaedo,37020
+VR,Selva di Progno,37030
+VR,Soave,37038
+VR,Sommacampagna,37066
+VR,Sona,37060
+VR,Sorgà,37060
+VR,Terrazzo,37040
+VR,Torri del Benaco,37010
+VR,Tregnago,37039
+VR,Trevenzuolo,37060
+VR,Valeggio sul Mincio,37067
+VR,Velo Veronese,37030
+VR,Verona,371xx
+VR,Veronella,37040
+VR,Vestenanova,37030
+VR,Vigasio,37068
+VR,Villa Bartolomea,37049
+VR,Villafranca di Verona,37069
+VR,Zevio,37059
+VR,Zimella,37040
+VS,Arbus,9031
+VS,Barumini,9021
+VS,Collinas,9020
+VS,Furtei,9040
+VS,Genuri,9020
+VS,Gesturi,9020
+VS,Gonnosfanadiga,9035
+VS,Guspini,9036
+VS,Las Plassas,9020
+VS,Lunamatrona,9022
+VS,Pabillonis,9030
+VS,Pauli Arbarei,9020
+VS,Samassi,9030
+VS,San Gavino Monreale,9037
+VS,Sanluri,9025
+VS,Sardara,9030
+VS,Segariu,9040
+VS,Serramanna,9038
+VS,Serrenti,9027
+VS,Setzu,9029
+VS,Siddi,9020
+VS,Tuili,9029
+VS,Turri,9020
+VS,Ussaramanna,9020
+VS,Villacidro,9039
+VS,Villamar,9020
+VS,Villanovaforru,9020
+VS,Villanovafranca,9020
+VT,Acquapendente,1021
+VT,Arlena di Castro,1010
+VT,Bagnoregio,1022
+VT,Barbarano Romano,1010
+VT,Bassano in Teverina,1030
+VT,Bassano Romano,1030
+VT,Blera,1010
+VT,Bolsena,1023
+VT,Bomarzo,1020
+VT,Calcata,1030
+VT,Canepina,1030
+VT,Canino,1011
+VT,Capodimonte,1010
+VT,Capranica,1012
+VT,Caprarola,1032
+VT,Carbognano,1030
+VT,Castel Sant'Elia,1030
+VT,Castiglione in Teverina,1024
+VT,Celleno,1020
+VT,Cellere,1010
+VT,Civita Castellana,1033
+VT,Civitella d'Agliano,1020
+VT,Corchiano,1030
+VT,Fabrica di Roma,1034
+VT,Faleria,1030
+VT,Farnese,1010
+VT,Gallese,1035
+VT,Gradoli,1010
+VT,Graffignano,1020
+VT,Grotte di Castro,1025
+VT,Ischia di Castro,1010
+VT,Latera,1010
+VT,Lubriano,1020
+VT,Marta,1010
+VT,Montalto di Castro,1014
+VT,Monte Romano,1010
+VT,Montefiascone,1027
+VT,Monterosi,1030
+VT,Nepi,1036
+VT,Onano,1010
+VT,Oriolo Romano,1010
+VT,Orte,1028
+VT,Piansano,1010
+VT,Proceno,1020
+VT,Ronciglione,1037
+VT,San Lorenzo Nuovo,1020
+VT,Soriano nel Cimino,1038
+VT,Sutri,1015
+VT,Tarquinia,1016
+VT,Tessennano,1010
+VT,Tuscania,1017
+VT,Valentano,1018
+VT,Vallerano,1030
+VT,Vasanello,1030
+VT,Vejano,1010
+VT,Vetralla,1019
+VT,Vignanello,1039
+VT,Villa San Giovanni in Tuscia,1010
+VT,Viterbo,1100
+VT,Vitorchiano,1030
+VV,Acquaro,89832
+VV,Arena,89832
+VV,Briatico,89817
+VV,Brognaturo,89822
+VV,Capistrano,89818
+VV,Cessaniti,89816
+VV,Dasà,89832
+VV,Dinami,89833
+VV,Drapia,89862
+VV,Fabrizia,89823
+VV,Filadelfia,89814
+VV,Filandari,89841
+VV,Filogaso,89843
+VV,Francavilla Angitola,89815
+VV,Francica,89851
+VV,Gerocarne,89831
+VV,Ionadi,89851
+VV,Joppolo,89863
+VV,Limbadi,89844
+VV,Maierato,89843
+VV,Mileto,89852
+VV,Mongiana,89823
+VV,Monterosso Calabro,89819
+VV,Nardodipace,89824
+VV,Nicotera,89844
+VV,Parghelia,89861
+VV,Pizzo,89812
+VV,Pizzoni,89834
+VV,Polia,89813
+VV,Ricadi,89866
+VV,Rombiolo,89841
+VV,San Calogero,89842
+VV,San Costantino Calabro,89851
+VV,San Gregorio d'Ippona,89853
+VV,San Nicola da Crissa,89821
+VV,Sant'Onofrio,89843
+VV,Serra San Bruno,89822
+VV,Simbario,89822
+VV,Sorianello,89831
+VV,Soriano Calabro,89831
+VV,Spadola,89822
+VV,Spilinga,89864
+VV,Stefanaconi,89843
+VV,Tropea,89861
+VV,Vallelonga,89821
+VV,Vazzano,89834
+VV,Vibo Valentia,89900
+VV,Zaccanopoli,89867
+VV,Zambrone,89868
+VV,Zungri,89867

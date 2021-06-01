@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.serverCV.gui.ServerCVController">
+   <right>
+      <AnchorPane prefHeight="488.0" prefWidth="707.0" style="-fx-border-color: gray;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="connectButton" layoutX="190.0" layoutY="249.0" mnemonicParsing="false" onAction="#serverLogin" prefHeight="26.0" prefWidth="167.0" text="CONNECT" />
+            <Label fx:id="usernameLabel" layoutX="81.0" layoutY="130.0" prefHeight="20.0" prefWidth="99.0" text="Username">
+               <font>
+                  <Font name="SansSerif Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="passwordLabel" layoutX="81.0" layoutY="173.0" text="Password">
+               <font>
+                  <Font name="SansSerif Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="hostLabel" layoutX="116.0" layoutY="212.0" text="Host">
+               <font>
+                  <Font name="SansSerif Regular" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="dbUsername" layoutX="190.0" layoutY="127.0" prefHeight="26.0" prefWidth="260.0" promptText="Username" />
+            <PasswordField fx:id="dbPassword" layoutX="190.0" layoutY="170.0" prefWidth="260.0" promptText="Password" />
+            <TextField fx:id="dbHost" layoutX="190.0" layoutY="209.0" prefWidth="260.0" promptText="Host" />
+            <Label layoutX="130.0" layoutY="72.0" prefHeight="22.0" prefWidth="302.0" text="CENTRO VACCINALE - ServerCV">
+               <font>
+                  <Font name="SansSerif Bold" size="19.0" />
+               </font>
+            </Label>
+            <MenuBar fx:id="menuBar" layoutX="1.0" prefHeight="28.0" prefWidth="538.0" visible="false">
+              <menus>
+                <Menu mnemonicParsing="false" text="DEBUG: Db">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#createDb" text="createDB" />
+                        <MenuItem mnemonicParsing="false" onAction="#dropDb" text="dropDB" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="DEBUG: Tabelle">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#createCentriVaccinaliTable" text="createCentriVaccinaliTable" />
+                        <MenuItem mnemonicParsing="false" onAction="#dropCentriVaccinaliTable" text="dropCentriVaccinaliTable" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" onAction="#createCittadiniRegistratiTable" text="createCittadiniRegistratiTable" />
+                        <MenuItem mnemonicParsing="false" onAction="#dropCittadiniRegistratiTable" text="dropCittadiniRegistratiTable" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" onAction="#createEventiAvversiTable" text="createEventiAvversiTable" />
+                        <MenuItem mnemonicParsing="false" onAction="#dropEventiAvversiTable" text="dropEventiAvversiTable" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="DEBUG: Dati">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#inserimentoCentriVaccinali" text="inserimentoCentriVaccinali" />
+                        <MenuItem mnemonicParsing="false" onAction="#inserimentoCittadini" text="inserimentoCittadini" />
+                    </items>
+                  </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                        <MenuItem mnemonicParsing="false" onAction="#guida" text="Guide" />
+                    <MenuItem mnemonicParsing="false" onAction="#info" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <Button fx:id="resetButton" layoutX="380.0" layoutY="249.0" mnemonicParsing="false" onAction="#reset" prefHeight="26.0" prefWidth="70.0" text="RESET" />
+            <TextArea fx:id="logArea" editable="false" layoutX="16.0" layoutY="290.0" prefHeight="301.0" prefWidth="512.0" />
+         </children>
+      </AnchorPane>
+   </right>
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="261.0" style="-fx-background-color: white; -fx-border-color: gray;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="95.0" layoutY="210.0" prefHeight="29.0" prefWidth="160.0" text="L'Italia rinasce " textAlignment="RIGHT" textFill="#d34227">
+               <font>
+                  <Font name="SansSerif Regular" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="104.0" layoutY="235.0" prefHeight="35.0" prefWidth="147.0" text="con un Fiore" textAlignment="RIGHT" textFill="#d34227">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="338.0" prefHeight="29.0" prefWidth="161.0" text="anti-Covid 19" textFill="#83b765">
+               <font>
+                  <Font name="SansSerif Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="310.0" prefHeight="29.0" prefWidth="162.0" text="Vaccinazione " textFill="#408a5e">
+               <font>
+                  <Font name="SansSerif Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="185.0" fitWidth="185.0" layoutX="37.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../java/org/example/common/images/primula.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="49.0" layoutX="14.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../java/org/example/common/images/primula.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="49.0" layoutX="201.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../java/org/example/common/images/primula.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="49.0" layoutX="36.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../java/org/example/common/images/primula.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="98.0" fitWidth="239.0" layoutX="11.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../java/org/example/common/images/CV_Logo.png" />
+               </image>
+            </ImageView>
+         </children>
+         <opaqueInsets>
+            <Insets right="6.0" />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </AnchorPane>
+   </left>
+</BorderPane>
