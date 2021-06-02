@@ -25,10 +25,8 @@ import org.example.database.GenerateDataLib.*;
 import org.example.serverCV.ServerCVI;
 import org.example.serverCV.ServerCVI;
 import javafx.scene.control.*;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+
+import java.io.*;
 import java.net.URL;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
@@ -38,6 +36,7 @@ import java.sql.SQLException;
 import java.time.format.DateTimeFormatter;
 import java.util.Random;
 import java.util.ResourceBundle;
+import java.util.Scanner;
 import java.util.UUID;
 import java.util.regex.Pattern;
 
@@ -50,6 +49,15 @@ public class ClientCVController implements Initializable {
     private final long serialVersionUID = 1L;
 
     private final int PORT = 1099;
+
+    /**
+     * campo statico che contiene il percorso del file 'listacomuni.csv' utilizzato per verificare la validità dei comuni inseriti
+     * dall'utente nella finestra '03CV_RegistraCV.fxml'
+     */
+    private final File file = new File(getClass().getResource("listacomuni.csv").getPath()); //todo eseguendolo dal jar non funziona, da ide si
+    //private final InputStream file = getClass().getResourceAsStream("listacomuni.csv");
+
+
     @FXML
     public ComboBox<String> tipologiaCheckBox = new ComboBox();
     @FXML
@@ -106,6 +114,9 @@ public class ClientCVController implements Initializable {
     //istanziazione registry
     Registry registry;
     public static ServerCVI stub;
+
+    public ClientCVController() throws IOException {
+    }
 
     /**
      * Questo metodo inizializza tutti i combobox presenti nelle varie finestre
@@ -450,22 +461,26 @@ public class ClientCVController implements Initializable {
      * @return true nel caso in cui il comune sia corretto, false altrimenti
      */
 
+
     private Boolean validitàComune(String comune) {
         String letturaFile;
 
-        File file = new File("src/main/java/org/example/common/CFGenerator/listacomuni.csv");
+        //File file = new File("src/main/java/org/example/common/CFGenerator/listacomuni.csv");
         try (
-                BufferedReader bufferedReader = new BufferedReader(new FileReader(file))) {
-            while ((letturaFile = bufferedReader.readLine()) != null) { //leggo una riga alla volta scorrendo il file
-                String[] chiaveValore = letturaFile.split(","); // spezzo la stringa letta in due
+             //BufferedReader bufferedReader = new BufferedReader(new FileReader(file))) {
+                 Scanner scanner = new Scanner(file)) {
 
-                //chiaveValore[0] = Provincia, chiaveValore[1] = comune, chiavevalore[2] = CAP
+                while (scanner.hasNext()) { //leggo una riga alla volta scorrendo il file
+                    String[] chiaveValore = scanner.nextLine().split(","); // spezzo la stringa letta in due
 
-                if (chiaveValore[1].equalsIgnoreCase(comune)) { //metodo che ignora il fatto che una stringa abbia maiuscole o minuscole diverse da un altra, guarda i caratteri unicode e la lunghezza della stringa per dire se sia uguale ad un altra
-                    return true; //comune trovato
+                    //chiaveValore[0] = Provincia, chiaveValore[1] = comune, chiavevalore[2] = CAP
+
+                    if (chiaveValore[1].equalsIgnoreCase(comune)) { //metodo che ignora il fatto che una stringa abbia maiuscole o minuscole diverse da un altra, guarda i caratteri unicode e la lunghezza della stringa per dire se sia uguale ad un altra
+                        return true; //comune trovato
+                    }
                 }
             }
-        } catch (Exception e) {
+        catch (Exception e) {
             System.err.println("File: listacomuni.csv letto in modo errato da verificaComune(String Comune)");
             e.printStackTrace();
         }
@@ -482,11 +497,12 @@ public class ClientCVController implements Initializable {
     private Boolean validitàProvincia(String provincia) {
         String letturaFile;
 
-        File file = new File("src/main/java/org/example/common/CFGenerator/listacomuni.csv");
+        //File file = new File("src/main/java/org/example/common/CFGenerator/listacomuni.csv");
         try (
-                BufferedReader bufferedReader = new BufferedReader(new FileReader(file))) {
-            while ((letturaFile = bufferedReader.readLine()) != null) { //leggo una riga alla volta scorrendo il file
-                String[] chiaveValore = letturaFile.split(","); // spezzo la stringa letta in due
+                //BufferedReader bufferedReader = new BufferedReader(new FileReader(file))) {
+                Scanner scanner = new Scanner(file)) {
+            while (scanner.hasNext()) { //leggo una riga alla volta scorrendo il file
+                String[] chiaveValore = scanner.nextLine().split(","); // spezzo la stringa letta in due
 
                 //chiaveValore[0] = Provincia, chiaveValore[1] = comune, chiavevalore[2] = CAP
 
@@ -511,11 +527,12 @@ public class ClientCVController implements Initializable {
     private Boolean validitàCap(String cap) {
         String letturaFile;
 
-        File file = new File("src/main/java/org/example/common/CFGenerator/listacomuni.csv");
+        //File file = new File("src/main/java/org/example/common/CFGenerator/listacomuni.csv");
         try(
-                BufferedReader bufferedReader = new BufferedReader(new FileReader(file))){
-            while((letturaFile = bufferedReader.readLine()) != null){ //leggo una riga alla volta scorrendo il file
-                String[] chiaveValore = letturaFile.split(","); // spezzo la stringa letta in due
+                //BufferedReader bufferedReader = new BufferedReader(new FileReader(file))) {
+                Scanner scanner = new Scanner(file)) {
+            while (scanner.hasNext()) { //leggo una riga alla volta scorrendo il file
+                String[] chiaveValore = scanner.nextLine().split(","); // spezzo la stringa letta in due
 
                 //chiaveValore[0] = Provincia, chiaveValore[1] = comune, chiavevalore[2] = CAP
 
