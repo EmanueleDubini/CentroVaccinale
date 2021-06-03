@@ -20,9 +20,6 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
-import org.example.common.CFGenerator.CalcolaCodiceFiscale;
-import org.example.database.GenerateDataLib.*;
-import org.example.serverCV.ServerCVI;
 import org.example.serverCV.ServerCVI;
 import javafx.scene.control.*;
 
@@ -97,7 +94,7 @@ public class ClientCVController implements Initializable {
     public DatePicker DatePickerSomministrazioneCT;
 
 
-    String nomeCvCT, nomeCT, cognomeCT, codiceFiscaleCT, vaccinoSomministratoCT, idVaccinazioneCT, dataVaccinaioneCV;
+    String nomeCvCT, nomeCT, cognomeCT, codiceFiscaleCT, vaccinoSomministratoCT, idVaccinazioneCT, dataVaccinazioneCV;
 
 
     private final ClientCVMain m = new ClientCVMain();
@@ -346,7 +343,7 @@ public class ClientCVController implements Initializable {
             String id = UUID.randomUUID().toString();
             Boolean verify = stub.registraCentroVaccinale(id, nomeCV, qualificatoreVia + " " + nomeVia + " " + numeroCivico, comune, provincia, cap, tipologiaCV);
             if (verify) {
-                resetInserimento();
+                resetInserimentoCV();
             }
         }
         //todo, prima di inserire nel database il centro vaccinale, fare una lettura da db con query per evitare che il cv sia già stato registrato
@@ -358,7 +355,7 @@ public class ClientCVController implements Initializable {
      * //todo
      */
 
-    private void resetInserimento() {
+    private void resetInserimentoCV() {
         textFieldNomeCentrovaccinale.setText("");
         tipologiaCheckBox.setValue("");
         qualificatoreIndirizzoCheckBox.setValue("");
@@ -384,7 +381,7 @@ public class ClientCVController implements Initializable {
      * non siano corretti
      */
 
-    public void GeneraCittadinoVaccinato() {
+    public void generaCittadinoVaccinato() throws SQLException, RemoteException {
         ////////////// CAMPI REGISTRAZIONE CT //////////////
 
         nomeCvCT = TextFieldNomeCentrovaccinaleCT.getText();    //todo implementare controllo per verificare se esiste il centro vaccinale (nel DB) inserito dall'utente
@@ -430,10 +427,25 @@ public class ClientCVController implements Initializable {
             alert.showAndWait();
         }
 
-        else if (DatePickerSomministrazioneCT.getValue() != null) {   //todo sistemare il controllo data
-            dataVaccinaioneCV = selectDateCV();
-            resetInserimentoCT();
-            System.out.println(nomeCvCT + " " + nomeCT + " " + cognomeCT + " " + codiceFiscaleCT + " " + vaccinoSomministratoCT + " " + idVaccinazioneCT + " " + dataVaccinaioneCV);
+        else if (DatePickerSomministrazioneCT.getValue() == null) {   //todo sistemare il controllo data  DIO CANE
+
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Si è verificato un Errore");
+            alert.setContentText("'Data' non valida.\nRiprovare");
+
+            alert.showAndWait();
+
+        } else {
+
+            dataVaccinazioneCV = selectDateCV();
+            //System.out.println(nomeCvCT + " " + nomeCT + " " + cognomeCT + " " + codiceFiscaleCT + " " + vaccinoSomministratoCT + " " + idVaccinazioneCT + " " + dataVaccinazioneCV);
+
+            String id = UUID.randomUUID().toString();
+            Boolean verify = stub.registraVaccinato(id, nomeCvCT, cognomeCT, nomeCT, codiceFiscaleCT, dataVaccinazioneCV, vaccinoSomministratoCT, idVaccinazioneCT);
+            if (verify) {
+                resetInserimentoCT();
+            }
         }
 
         //todo nel caso verificare se aggiungere controllo per la data
@@ -602,7 +614,7 @@ public class ClientCVController implements Initializable {
         if (address.equals("")) {
             connectionStatus.setText("indirizzo IP server non inserito");
         }
-        else if (!(Pattern.matches("\\b(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\\.\n" +
+        else if ((Pattern.matches("\\b(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\\.\n" +
                 "  (25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\\.\n" +
                 "  (25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\\.\n" +
                 "  (25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\\b\n" +

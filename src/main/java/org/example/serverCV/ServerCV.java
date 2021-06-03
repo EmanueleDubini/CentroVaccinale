@@ -49,16 +49,31 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
                 "(idCentroVaccinale, nome, indirizzo, comune, provincia, cap, tipologia)" +
                 "VALUES(" + "'" + id + "'," + "'" + nomeCV + "'," + "'" + indirizzo + "'," + "'" + comune + "'," + "'" + provincia + "'," + "'" + cap + "'," + "'" + tipologia + "'" + ")");
 
-
-        // "VALUES("'" + id + "'," + "'" + nomeCV + "'," + "'" + indirizzo "'," + "'" + comune"'," + "'" + provincia + "'," + "'" + cap + "'," + "'" + tipologia + "')");
-        //System.out.println("registracentroVaccinale ok, poi inseriamo la query");
-
-        System.out.println("SERVER: registracentroVaccinale eseguito correttamente");
+        System.out.println("SERVER: registracentroVaccinale() eseguito correttamente");
         return true;
     }
 
-    public synchronized void registraVaccinato() {
-        //todo
+    public synchronized Boolean registraVaccinato(String id, String nomeCV, String cognome, String nome, String cf, String dataSomministrazione, String vaccinoSomministrato, String idVaccinazione) throws SQLException {
+
+        String vaccinati_table = "vaccinati_" + nomeCV;
+
+        DbHelper.getConnection();
+        Statement statement = DbHelper.getStatement();
+        statement.executeUpdate("CREATE TABLE IF NOT EXISTS " + vaccinati_table + "(" +
+                "idCentroVaccinale VARCHAR(36)," +
+                "cognomeCittadino VARCHAR(50) NOT NULL," +
+                "nomeCittadino VARCHAR(50) NOT NULL," +
+                "cf VARCHAR(50) PRIMARY KEY," +
+                "dataSomministrazione VARCHAR(50) NOT NULL," +
+                "vaccinoSomministrato VARCHAR(50) NOT NULL," +
+                "idVaccinazione VARCHAR(36) NOT NULL" +
+                ")");
+        statement.executeUpdate("INSERT INTO " + vaccinati_table +
+                "(idCentroVaccinale, cognomeCittadino, nomeCittadino, cf, dataSomministrazione, vaccinoSomministrato, idVaccinazione)" +
+                "VALUES(" + "'" + id + "'," + "'" + cognome + "'," + "'" + nome + "'," + "'" + cf + "'," + "'" + dataSomministrazione + "'," + "'" + vaccinoSomministrato + "'," + "'"+ idVaccinazione + "'" + ")");
+
+        System.out.println("SERVER: registracentroVaccinale() eseguito correttamente");
+        return true;
     }
 
     public synchronized void registraCittadino() {
