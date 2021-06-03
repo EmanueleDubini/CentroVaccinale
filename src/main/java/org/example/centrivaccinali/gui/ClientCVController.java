@@ -602,14 +602,18 @@ public class ClientCVController implements Initializable {
         if (address.equals("")) {
             connectionStatus.setText("indirizzo IP server non inserito");
         }
-        else if (!(Pattern.matches("\\b(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\\.\n" +
+        /*else if (!(Pattern.matches("\\b(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\\.\n" +
                 "  (25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\\.\n" +
                 "  (25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\\.\n" +
                 "  (25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\\b\n" +
                 "\n", address))){
 
             connectionStatus.setText("indirizzo IP server errato");
+        }*/
+        else if (!(Pattern.matches("^(([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])(\\.(?!$)|$)){4}$", address))){
+            connectionStatus.setText("indirizzo IP server errato");
         }
+
         else {
             try {
                 registry = LocateRegistry.getRegistry(address, PORT);
@@ -618,7 +622,6 @@ public class ClientCVController implements Initializable {
                 stub = (ServerCVI) registry.lookup("ServerCV");
                 to_01_LandingPage();
             } catch (Exception e) {
-                e.printStackTrace();
                 connectionStatus.setText("indirizzo IP server errato");
                 //todo se il server non è in esecuzione il metodo "stub = (ServerCVI) registry.lookup("ServerCV");"
                 //da eccezione e viene stampato che è inserito un indirizzo Ip errato al posto di segnalare
