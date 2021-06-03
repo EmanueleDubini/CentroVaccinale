@@ -20,6 +20,9 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
+import org.example.common.CFGenerator.CalcolaCodiceFiscale;
+import org.example.database.GenerateDataLib.*;
+import org.example.serverCV.ServerCVI;
 import org.example.serverCV.ServerCVI;
 import javafx.scene.control.*;
 
@@ -47,12 +50,6 @@ public class ClientCVController implements Initializable {
 
     private final int PORT = 1200;
 
-    /**
-     * campo statico che contiene il percorso del file 'listacomuni.csv' utilizzato per verificare la validità dei comuni inseriti
-     * dall'utente nella finestra '03CV_RegistraCV.fxml'
-     */
-    private final File file = new File(getClass().getResource("listacomuni.csv").getPath()); //todo eseguendolo dal jar non funziona, da ide si
-    //private final InputStream file = getClass().getResourceAsStream("listacomuni.csv");
 
 
     @FXML
@@ -466,6 +463,8 @@ public class ClientCVController implements Initializable {
         TextFieldIdVaccinazioneCT.setText("");
     }
 
+
+
     /**
      * Questo metodo controlla che il comune inserito dall'utente esiste e che sia corretto
      *
@@ -479,11 +478,11 @@ public class ClientCVController implements Initializable {
 
         //File file = new File("src/main/java/org/example/common/CFGenerator/listacomuni.csv");
         try (
-             //BufferedReader bufferedReader = new BufferedReader(new FileReader(file))) {
-                 Scanner scanner = new Scanner(file)) {
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(trovaFileListaComuni()))) {
+                 //Scanner scanner = new Scanner(file)) {
 
-                while (scanner.hasNext()) { //leggo una riga alla volta scorrendo il file
-                    String[] chiaveValore = scanner.nextLine().split(","); // spezzo la stringa letta in due
+                while ((letturaFile = bufferedReader.readLine()) != null) { //leggo una riga alla volta scorrendo il file
+                    String[] chiaveValore = letturaFile.split(","); // spezzo la stringa letta in due
 
                     //chiaveValore[0] = Provincia, chiaveValore[1] = comune, chiavevalore[2] = CAP
 
@@ -511,10 +510,10 @@ public class ClientCVController implements Initializable {
 
         //File file = new File("src/main/java/org/example/common/CFGenerator/listacomuni.csv");
         try (
-                //BufferedReader bufferedReader = new BufferedReader(new FileReader(file))) {
-                Scanner scanner = new Scanner(file)) {
-            while (scanner.hasNext()) { //leggo una riga alla volta scorrendo il file
-                String[] chiaveValore = scanner.nextLine().split(","); // spezzo la stringa letta in due
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(trovaFileListaComuni()))) {
+            //Scanner scanner = new Scanner(file)) {
+            while ((letturaFile = bufferedReader.readLine()) != null) { //leggo una riga alla volta scorrendo il file
+                String[] chiaveValore = letturaFile.split(","); // spezzo la stringa letta in due
 
                 //chiaveValore[0] = Provincia, chiaveValore[1] = comune, chiavevalore[2] = CAP
 
@@ -529,6 +528,7 @@ public class ClientCVController implements Initializable {
         return false; //provincia non trovata
     }
 
+
     /**
      * Questo metodo controlla che il cap inserito dall'utente esiste e che sia corretto     *
      *
@@ -541,10 +541,10 @@ public class ClientCVController implements Initializable {
 
         //File file = new File("src/main/java/org/example/common/CFGenerator/listacomuni.csv");
         try(
-                //BufferedReader bufferedReader = new BufferedReader(new FileReader(file))) {
-                Scanner scanner = new Scanner(file)) {
-            while (scanner.hasNext()) { //leggo una riga alla volta scorrendo il file
-                String[] chiaveValore = scanner.nextLine().split(","); // spezzo la stringa letta in due
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(trovaFileListaComuni()))) {
+                //Scanner scanner = new Scanner(file)) {
+            while ((letturaFile = bufferedReader.readLine()) != null) { //leggo una riga alla volta scorrendo il file
+                String[] chiaveValore = letturaFile.split(","); // spezzo la stringa letta in due
 
                 //chiaveValore[0] = Provincia, chiaveValore[1] = comune, chiavevalore[2] = CAP
 
@@ -557,6 +557,17 @@ public class ClientCVController implements Initializable {
             e.printStackTrace();
         }
         return false; //cap non trovato
+    }
+
+    /**
+     * Metodo che restituisce un InputStream associato al file 'listacomuni.csv' utilizzato per verificare la validità del comune, provincia , cap inseriti
+     * dall'utente nella finestra '03CV_RegistraCV.fxml'
+     *
+     * @return InputStream associato al file 'listacomuni.csv'
+     */
+
+    private InputStream trovaFileListaComuni() {
+        return getClass().getResourceAsStream("listacomuni.csv");
     }
 
     //Questo metodo seleziona e ritorna una stringa contenete la data della somministrazione del vaccino al cittadino nella finestra 03CV_RegistraCT
@@ -614,12 +625,7 @@ public class ClientCVController implements Initializable {
         if (address.equals("")) {
             connectionStatus.setText("indirizzo IP server non inserito");
         }
-        else if ((Pattern.matches("\\b(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\\.\n" +
-                "  (25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\\.\n" +
-                "  (25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\\.\n" +
-                "  (25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\\b\n" +
-                "\n", address))){
-
+        else if (!(Pattern.matches("^(([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])(\\.(?!$)|$)){4}$", address))){ //verifica correttezza sintassi indirizzo ip
             connectionStatus.setText("indirizzo IP server errato");
         }
         else {
