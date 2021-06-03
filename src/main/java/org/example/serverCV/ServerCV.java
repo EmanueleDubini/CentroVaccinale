@@ -30,7 +30,7 @@ import static org.example.database.QueryRicerca.cercaCentroVaccinalePerNome;
  */
 public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     private static final long serialVersionUID = 1L; //sono oggetti serializzati
-    public static final int PORT = 1099; //todo sistemare e mettera la porta come campo statico nell'interfaccia del server
+    public static final int PORT = 1200; //todo sistemare e mettera la porta come campo statico nell'interfaccia del server
     public static Registry registry;
 
 
