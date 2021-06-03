@@ -48,7 +48,7 @@ import java.util.regex.Pattern;
 public class ClientCVController implements Initializable {
     private final long serialVersionUID = 1L;
 
-    private final int PORT = 1099;
+    private final int PORT = 1200;
 
     /**
      * campo statico che contiene il percorso del file 'listacomuni.csv' utilizzato per verificare la validità dei comuni inseriti
