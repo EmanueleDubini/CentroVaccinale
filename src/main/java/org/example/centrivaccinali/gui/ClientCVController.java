@@ -580,13 +580,14 @@ public class ClientCVController implements Initializable {
     /////////////////////grafica relativa alla pagina: 00_IpServerCheck.fxml //////////////////////////////////
 
     public void serverConnection() {
-        address = hostAddress.getText();
+        address = hostAddress.getText().strip();
 
         if (address.equals("") || address.equals("\\b(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\\.\n" +
                 "  (25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\\.\n" +
                 "  (25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\\.\n" +
                 "  (25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\\b\n" +
                 "\n")) {
+            //todo regex
             connectionStatus.setText("indirizzo IP server non inserito");
         } else {
             try {
