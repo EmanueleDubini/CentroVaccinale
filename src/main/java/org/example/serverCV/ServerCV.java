@@ -39,6 +39,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         super();
     }
 
+    /// CENTRI VACCINALI
     /// IMPLEMENTAZIONE Metodi dell'interfaccia ServerCVI ///
 
     @Override
@@ -53,6 +54,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         return true;
     }
 
+    @Override
     public synchronized Boolean registraVaccinato(String id, String nomeCV, String cognome, String nome, String cf, String dataSomministrazione, String vaccinoSomministrato, String idVaccinazione) throws SQLException {
 
         String vaccinati_table = "vaccinati_" + nomeCV;
@@ -72,12 +74,24 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
                 "(idCentroVaccinale, cognomeCittadino, nomeCittadino, cf, dataSomministrazione, vaccinoSomministrato, idVaccinazione)" +
                 "VALUES(" + "'" + id + "'," + "'" + cognome + "'," + "'" + nome + "'," + "'" + cf + "'," + "'" + dataSomministrazione + "'," + "'" + vaccinoSomministrato + "'," + "'"+ idVaccinazione + "'" + ")");
 
-        System.out.println("SERVER: registracentroVaccinale() eseguito correttamente");
+        System.out.println("SERVER: registraVaccinato() eseguito correttamente");
         return true;
     }
 
-    public synchronized void registraCittadino() {
-        //todo
+
+    /// CITTADINI
+    /// IMPLEMENTAZIONE Metodi dell'interfaccia ServerCVI ///
+
+    @Override
+    public synchronized Boolean registraCittadino(String cf, String cognome, String nome, String email, String userId, String password, String idVaccinazione) throws SQLException{
+        DbHelper.getConnection();
+        Statement statement = DbHelper.getStatement();
+        statement.executeUpdate("INSERT INTO cittadini_registrati " +
+                "(codicefiscale, cognomecittadino, nomecittadino, email, userid, password, idvaccinazione)" +
+                "VALUES(" + "'" + cf + "'," + "'" + cognome + "'," + "'" + nome + "'," + "'" + email + "'," + "'" + userId + "'," + "'" + password + "'," + "'" + idVaccinazione + "'" + ")");
+
+        System.out.println("SERVER: registraCittadino() eseguito correttamente");
+        return true;
     }
 
     @Override
@@ -139,8 +153,29 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         //todo
     }
 
-    public synchronized void inserisciEventiAvversi() {
-        //todo
+
+    /// EVENTI AVVERSI
+    /// IMPLEMENTAZIONE Metodi dell'interfaccia ServerCVI ///
+
+    @Override
+    public synchronized Boolean inserisciEventiAvversi(String id, String codiceFiscale,
+                                                       String mal_di_testa, String mal_di_testa_note,
+                                                       String febbre, String febbre_note,
+                                                       String dolori_muscolari_e_articolari, String dolori_muscolari_e_articolari_note,
+                                                       String linfoaenopatia, String linfoaenopatia_note,
+                                                       String tachicardia, String tachicardia_note,
+                                                       String crisi_ipertensiva, String crisi_ipertensiva_note) throws SQLException {
+        DbHelper.getConnection();
+        Statement statement = DbHelper.getStatement();
+        statement.executeUpdate("INSERT INTO eventi_avversi " +
+                "(idcentrovaccinale, codicefiscale, mal_di_testa, mal_di_testa_note, febbre, febbre_note, dolori_muscolari_e_articolari, dolori_muscolari_e_articolari_note, linfoaenopatia," +
+                "linfoaenopatia_note, tachicardia, tachicardia_note, crisi_ipertensiva, crisi_ipertensiva_note)" +
+                "VALUES(" + "'" + id + "'," + "'" + codiceFiscale + "'," + "'" + febbre + "'," + "'" + febbre_note + "'," + "'" + dolori_muscolari_e_articolari + "',"
+                + "'" + dolori_muscolari_e_articolari_note + "'," + "'" + linfoaenopatia + "'," + "'" + linfoaenopatia_note + "'," + "'" + tachicardia + "'," + "'" + tachicardia_note +
+                "'," + "'" + crisi_ipertensiva +"'," + "'" + crisi_ipertensiva_note +"'" + ")");
+
+        System.out.println("SERVER: inserisciEventiAvversi() eseguito correttamente");
+        return true;
     }
 
     public static void main(String[] args) throws RemoteException {
@@ -160,7 +195,6 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         registry = LocateRegistry.createRegistry(PORT);
         //bind
         registry.rebind("ServerCV", serverCV); //se è gia bound fa un bind con il nuovo valore
-
 
 
         // Partenza dell'interfaccia grafica

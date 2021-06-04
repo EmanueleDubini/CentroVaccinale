@@ -39,8 +39,10 @@ public class QueryDebug {
 
     public static String dropCentriVaccinaliTable = "DROP TABLE IF EXISTS centrivaccinali";
 
+
+
     public static String createCittadiniRegistratiTable = "CREATE TABLE IF NOT EXISTS cittadini_registrati (" +
-                                                        "codiceFiscale VARCHAR(16)," +      //todo Rimettere PRIMARY KEY
+                                                        "codiceFiscale VARCHAR(16) PRIMARY KEY," +
                                                         "cognomeCittadino VARCHAR(50) NOT NULL," +
                                                         "nomeCittadino VARCHAR(50) NOT NULL," +
                                                         "email VARCHAR(50) NOT NULL," +
@@ -51,17 +53,27 @@ public class QueryDebug {
 
     public static String dropCittadiniRegistratiTable = "DROP TABLE IF EXISTS cittadini_registrati";
 
+
+
     public static String createEventiAvversiTable = "CREATE TABLE IF NOT EXISTS eventi_avversi (" +
-                                                    "idCentroVaccinale NUMERIC(10) REFERENCES centrivaccinali(idCentroVaccinale) NOT NULL," +
-                                                    "codiceFiscale VARCHAR(16) REFERENCES cittadini_registrati(codiceFiscale) NOT NULL," +
-                                                    "malDiTesta VARCHAR(50) NOT NULL," +
-                                                    "malDiTesta_note VARCHAR(50) NOT NULL," +
+                                                    "idCentroVaccinale VARCHAR(36) REFERENCES centrivaccinali(idcentrovaccinale) NOT NULL," +
+                                                    "codicefiscale VARCHAR(16) REFERENCES cittadini_registrati(codicefiscale) NOT NULL," +
+                                                    "mal_di_testa VARCHAR(5) NOT NULL," +
+                                                    "mal_di_testa_note VARCHAR(50) NOT NULL," +
+                                                    "febbre VARCHAR(5) NOT NULL," +
+                                                    "febbre_note VARCHAR(50) NOT NULL," +
+                                                    "dolori_muscolari_e_articolari VARCHAR(5) NOT NULL," +
+                                                    "dolori_muscolari_e_articolari_note VARCHAR(50) NOT NULL," +
+                                                    "linfoaenopatia VARCHAR(5) NOT NULL," +
+                                                    "linfoaenopatia_note VARCHAR(50) NOT NULL," +
+                                                    "tachicardia VARCHAR(5) NOT NULL," +
+                                                    "tachicardia_note VARCHAR(50) NOT NULL," +
+                                                    "crisi_ipertensiva VARCHAR(5) NOT NULL," +
+                                                    "crisi_ipertensiva_note VARCHAR(50) NOT NULL," +
                                                     "PRIMARY KEY(idCentroVaccinale, codiceFiscale)" +
                                                     ")";
 
     public static String dropEventiAvversiTable = "DROP TABLE IF EXISTS eventi_avversi";
-
-    public static String createVaccinatiNomeCentroVaccinale = "";
 
 
 }//END_Query

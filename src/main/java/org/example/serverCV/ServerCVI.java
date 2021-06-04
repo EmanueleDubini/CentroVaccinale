@@ -21,7 +21,7 @@ public interface ServerCVI extends Remote {
     Boolean registraVaccinato(String id, String nomeCV, String cognome, String nome, String cf, String dataSomministrazione, String vaccinoSomministrato, String idVaccinazione) throws RemoteException, SQLException;
 
     // cittadini
-    void registraCittadino() throws RemoteException;
+    Boolean registraCittadino(String cf, String cognome, String nome, String email, String userId, String password, String idVaccinazione) throws RemoteException, SQLException;
     void login() throws RemoteException;
     void cercaCentroVaccinale() throws RemoteException;
     void cercaCentroVaccinaleNome() throws RemoteException, SQLException;
@@ -31,5 +31,11 @@ public interface ServerCVI extends Remote {
 
 
     // eventi_avversi
-    void inserisciEventiAvversi() throws RemoteException;
+    Boolean inserisciEventiAvversi(String id, String codiceFiscale,
+                                   String mal_di_testa, String mal_di_testa_note,
+                                   String febbre, String febbre_note,
+                                   String dolori_muscolari_e_articolari, String dolori_muscolari_e_articolari_note,
+                                   String linfoaenopatia, String linfoaenopatia_note,
+                                   String tachicardia, String tachicardia_note,
+                                   String crisi_ipertensiva, String crisi_ipertensiva_note) throws RemoteException, SQLException;
 }
