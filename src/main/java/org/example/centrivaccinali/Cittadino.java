@@ -62,7 +62,7 @@ public class Cittadino {
      *
      * @param codiceFiscale codice fiscale del Cittadino da modificare
      */
-    public void setMatricola(String codiceFiscale) {
+    public void setCodiceFiscale(String codiceFiscale) {
         this.codiceFiscale = codiceFiscale;
     }
 
@@ -134,8 +134,8 @@ public class Cittadino {
      *
      * @param email
      */
-    public void setEmail(int email) {
-        this.eta = email;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
 
@@ -153,7 +153,7 @@ public class Cittadino {
      *
      * @param userId
      */
-    public void setEmail(String userId) {
+    public void setUserId(String userId) {
         this.userId = userId;
     }
 
