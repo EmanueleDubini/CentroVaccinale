@@ -96,14 +96,16 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     }
 
     @Override
-    public synchronized Boolean login(String username, String password) throws RemoteException, SQLException {
-        PreparedStatement statement = DbHelper.getConnection().prepareStatement("SELECT * " +
+    public synchronized Boolean login(String username, String password) throws RemoteException, SQLException {  //todo riguardare metodo
+        DbHelper.getConnection();
+        Statement statement = DbHelper.getStatement();
+        statement.executeQuery("SELECT * " +
                 "FROM cittadini_registrati" +
-                "WHERE userid = '" + username + "'" +        //todo Implementare metodo per prendere l'id scritto dall'utente in fase di Login
-                "AND password = '" + password +"'"       //todo Implementare metodo per prendere la password scritta dall'utente in fase di Login
+                "WHERE userid = '" + username + "'" +
+                "AND password = '" + password +"'"
         );
 
-        return true;
+        return true;            //todo implementare metodo per verifica
     }
 
 
