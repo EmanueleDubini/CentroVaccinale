@@ -15,7 +15,7 @@
 
 <!--aggiungere alla riga 9 il codice:"  fx:controller="sample.Controller" "-->
 
-<VBox xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.centrivaccinali.gui.ClientCVController">
+<VBox xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.centrivaccinali.gui.ClientCTController">
    <children>
       <MenuBar>
         <menus>

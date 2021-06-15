@@ -168,17 +168,6 @@ public class ClientCVController implements Initializable {
         ClientCVMain.setRoot("03CV_RegistraCT");
     }
 
-    public void to_03CT_RegistraCT() throws IOException {
-        ClientCVMain.setRoot("03CT_RegistraCT");
-    }
-
-    public void to_03CT_EventiAvversiCT() throws IOException {
-        ClientCVMain.setRoot("03CT_EventiAvversiCT");
-    }
-
-    public void to_03CT_InfoCV() throws IOException {
-        ClientCVMain.setRoot("03CT_InfoCV");
-    }
 
 
     /////////////////////// metodi di controllo menu bar ///////////////////////
