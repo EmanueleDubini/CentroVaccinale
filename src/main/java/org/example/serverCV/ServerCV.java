@@ -100,7 +100,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
         statement.executeQuery("SELECT * " +
-                "FROM cittadini_registrati" +
+                "FROM cittadini_registrati " +
                 "WHERE userid = '" + username + "'" +
                 "AND password = '" + password +"'"
         );
