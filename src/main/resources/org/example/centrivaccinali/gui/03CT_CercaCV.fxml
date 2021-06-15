@@ -19,7 +19,7 @@
 
 <!--aggiungere alla riga 9 il codice:"  fx:controller="sample.Controller" "-->
 
-<VBox stylesheets="@../../css/GradientBackGround.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.centrivaccinali.gui.ClientCVController">
+<VBox stylesheets="@../../css/GradientBackGround.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.centrivaccinali.gui.ClientCTController">
    <children>
       <MenuBar>
         <menus>
@@ -30,7 +30,7 @@
           </Menu>
           <Menu mnemonicParsing="false" text="Back">
             <items>
-              <MenuItem mnemonicParsing="false" onAction="#to_02CV_MainWindow" text="Back" />
+              <MenuItem mnemonicParsing="false" onAction="#to_02CT_MainWindow" text="Back" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Help">
