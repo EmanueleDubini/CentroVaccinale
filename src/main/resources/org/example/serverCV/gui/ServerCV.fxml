@@ -109,7 +109,7 @@
             </Label>
             <ImageView fitHeight="185.0" fitWidth="185.0" layoutX="37.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../java/org/example/common/images/primula.png" />
+                  <Image url="@../../images/primula.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="45.0" fitWidth="49.0" layoutX="14.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
