@@ -15,7 +15,7 @@
 
 <!--aggiungere alla riga 9 il codice:"  fx:controller="sample.Controller" "-->
 
-<VBox xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.centrivaccinali.gui.ClientCVController">
+<VBox xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.centrivaccinali.gui.ClientCVController">
    <children>
       <MenuBar>
         <menus>
@@ -76,7 +76,7 @@
          <top>
             <ImageView fitHeight="202.0" fitWidth="497.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
                <image>
-                  <Image url="@../../../../common/images/SezioneCT.png" />
+                  <Image url="@../../images/SezioneCT.png" />
                </image>
                <BorderPane.margin>
                   <Insets top="40.0" />

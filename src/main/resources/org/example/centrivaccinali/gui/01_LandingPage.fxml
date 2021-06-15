@@ -30,7 +30,7 @@
                <children>
                   <ImageView>
                      <image>
-                        <Image url="@../../../../../../MATERIALE/LOGO/user_100px.png" />
+                        <Image url="@../../images/user_100px.png" />
                      </image>
                      <FlowPane.margin>
                         <Insets left="390.0" />
@@ -38,7 +38,7 @@
                   </ImageView>
                   <ImageView>
                      <image>
-                        <Image url="@../../../../../../MATERIALE/LOGO/hospital_3_100px.png" />
+                        <Image url="@../../images/hospital_3_100px.png" />
                      </image>
                      <FlowPane.margin>
                         <Insets left="275.0" />
@@ -52,7 +52,7 @@
    <top>
       <ImageView fx:id="imageViewLogo" fitHeight="211.0" fitWidth="1235.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
          <image>
-            <Image url="@../../../../../../MATERIALE/LOGO/CV_Logo.png" />
+            <Image url="@../../images/CV_Logo.png" />
          </image>
          <BorderPane.margin>
             <Insets top="50.0" />

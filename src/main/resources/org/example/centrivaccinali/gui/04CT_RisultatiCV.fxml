@@ -19,7 +19,7 @@
 
 <!--aggiungere alla riga 9 il codice:"  fx:controller="sample.Controller" "-->
 
-<VBox stylesheets="@../../css/GradientBackGround.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.centrivaccinali.gui.ClientCVController">
+<VBox stylesheets="@../../css/GradientBackGround.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.centrivaccinali.gui.ClientCVController">
    <children>
       <MenuBar>
         <menus>
@@ -83,7 +83,7 @@
                         </Label>
                   <ImageView fitHeight="168.0" fitWidth="489.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../MATERIALE/LOGO/CV_Logo.png" />
+                        <Image url="@../../images/CV_Logo.png" />
                      </image>
                      <HBox.margin>
                         <Insets left="250.0" top="20.0" />
