@@ -1,6 +1,7 @@
 package org.example.centrivaccinali.gui;
 
 import javafx.application.Platform;
+import javafx.event.ActionEvent;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 
@@ -29,7 +30,7 @@ public class ClientCTController {
      * @throws IOException
      */
     public void to_03CT_RegistraCT() throws IOException {
-        ClientCVMain.setRoot("03CT_RegistraCT");
+        ClientCVMain.setRoot("03CT_RegistrazioneAdCV");
     }
 
     /**
@@ -45,7 +46,7 @@ public class ClientCTController {
      * @throws IOException
      */
     public void to_03CT_InfoCV() throws IOException {
-        ClientCVMain.setRoot("03CT_InfoCV");
+        ClientCVMain.setRoot("03CT_CercaCV");
     }
 
 
@@ -90,5 +91,12 @@ public class ClientCTController {
                         Copyleft - all rights reversed""", ButtonType.OK);
 
         info.showAndWait();
+    }
+
+    public void GeneraCittadinoVaccinato(ActionEvent actionEvent) {
+        System.out.print("Cittadino Registrato");
+    }
+
+    public void cercaCentroVaccinale(ActionEvent actionEvent) {
     }
 }
