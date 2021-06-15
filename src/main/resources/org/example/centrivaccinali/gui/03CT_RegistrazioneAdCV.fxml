@@ -11,31 +11,20 @@
 
 <!--aggiungere alla riga 9 il codice:"  fx:controller="sample.Controller" "-->
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.centrivaccinali.gui.ClientCTController">
    <children>
       <MenuBar prefWidth="1280.0">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
+              <MenuItem mnemonicParsing="false" onAction="#onClickQuit" text="Close" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Back">
             <items>
-              <MenuItem mnemonicParsing="false" text="Delete" />
+              <MenuItem mnemonicParsing="false" onAction="#to_02CT_MainWindow" text="Back" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Help">
-            <items>
-              <MenuItem mnemonicParsing="false" text="About" />
-            </items>
-          </Menu>
-            <Menu mnemonicParsing="false" text="Debug">
-              <items>
-                <MenuItem mnemonicParsing="false" text="Action 1" />
-              </items>
-            </Menu>
         </menus>
       </MenuBar>
       <Label layoutX="70.0" layoutY="90.0" text="REGISTRARSI AD UN CV:">

@@ -17,6 +17,7 @@ import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -95,20 +96,16 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     }
 
     @Override
-    public synchronized void login() throws RemoteException {
-        //todo
+    public synchronized Boolean login(String username, String password) throws RemoteException, SQLException {
+        PreparedStatement statement = DbHelper.getConnection().prepareStatement("SELECT * " +
+                "FROM cittadini_registrati" +
+                "WHERE userid = '" + username + "'" +        //todo Implementare metodo per prendere l'id scritto dall'utente in fase di Login
+                "AND password = '" + password +"'"       //todo Implementare metodo per prendere la password scritta dall'utente in fase di Login
+        );
+
+        return true;
     }
 
-    /*
-    public void login() throws SQLException{
-        PreparedStatement statement = DbHelper.getConnection().prepareStatement("SELECT * " +
-                                                                                "FROM cittadini_registrati" +
-                                                                                "WHERE userid = '" + getUser + "'" +        //todo Implementare metodo per prendere l'id scritto dall'utente in fase di Login
-                                                                                "AND password = '" + getPassword +"'"       //todo Implementare metodo per prendere la password scritta dall'utente in fase di Login
-        );
-        //todo
-    }
-     */
 
     public synchronized void cercaCentroVaccinale() {
         //todo

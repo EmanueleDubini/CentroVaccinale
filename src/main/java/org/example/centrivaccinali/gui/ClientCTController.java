@@ -2,12 +2,25 @@ package org.example.centrivaccinali.gui;
 
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+import org.example.serverCV.ServerCV;
 
 import java.io.IOException;
+import java.rmi.RemoteException;
+import java.sql.SQLException;
 
 public class ClientCTController {
+
+    @FXML
+    private TextField TextFieldUsername;
+
+    @FXML
+    private PasswordField TextFieldPassword;
+
 
     /**
      * Questo metodo crea la schermata iniziale 01_LandingPage
@@ -38,7 +51,7 @@ public class ClientCTController {
      * @throws IOException
      */
     public void to_03CT_EventiAvversiCT() throws IOException {
-        ClientCVMain.setRoot("03CT_EventiAvversiCT");
+        ClientCVMain.setRoot("03CT_LoginWindow");
     }
 
     /**
@@ -47,6 +60,18 @@ public class ClientCTController {
      */
     public void to_03CT_InfoCV() throws IOException {
         ClientCVMain.setRoot("03CT_CercaCV");
+    }
+
+    /**
+     * uesto metodo crea la schermata 03CT_LoginWindow, per fare il login
+     * @throws IOException
+     */
+    public void to_03CT_LoginWindow(ActionEvent actionEvent) throws IOException {
+        ClientCVMain.setRoot("03CT_LoginWindow");
+    }
+
+    public void to_04CT_EventiAvversiCT() throws IOException {
+        ClientCVMain.setRoot("04CT_EventiAvversiCT");
     }
 
 
@@ -98,5 +123,44 @@ public class ClientCTController {
     }
 
     public void cercaCentroVaccinale(ActionEvent actionEvent) {
+    }
+
+    public void login(ActionEvent actionEvent) throws SQLException, IOException {
+        String username = TextFieldUsername.getText();
+        String password = TextFieldPassword.getText();
+
+        Boolean verify = ClientCVController.stub.login(username, password);
+
+        if(verify) {
+            resetInserimentoLogin();
+            to_04CT_EventiAvversiCT();
+        } else {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Si è verificato un Errore");
+            alert.setContentText("Utente non registrato!");
+        }
+    }
+
+    private void resetInserimentoLogin() {
+        TextFieldUsername.setText("");
+        TextFieldPassword.setText("");
+    }
+
+
+    public void inserisciEventiAvversi(ActionEvent actionEvent) {
+        //todo prelevare da interfaccia grafica
+        /*
+        Boolean verify = ClientCVController.stub.inserisciEventiAvversi(String id, String codiceFiscale, String mal_di_testa, String mal_di_testa_note,
+                                                                        String febbre, String febbre_note,
+                                                                        String dolori_muscolari_e_articolari, String dolori_muscolari_e_articolari_note,
+                                                                        String linfoaenopatia, String linfoaenopatia_note,
+                                                                        String tachicardia, String tachicardia_note,
+                                                                        String crisi_ipertensiva, String crisi_ipertensiva_note);
+        if (verify) {
+
+        }
+
+         */
     }
 }

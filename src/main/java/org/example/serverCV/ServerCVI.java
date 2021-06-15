@@ -22,7 +22,7 @@ public interface ServerCVI extends Remote {
 
     // cittadini
     Boolean registraCittadino(String cf, String cognome, String nome, String email, String userId, String password, String idVaccinazione) throws RemoteException, SQLException;
-    void login() throws RemoteException;
+    Boolean login(String username, String password) throws RemoteException, SQLException;
     void cercaCentroVaccinale() throws RemoteException;
     void cercaCentroVaccinaleNome() throws RemoteException, SQLException;
     void cercaCentroVaccinaleComuneTipologia() throws RemoteException, SQLException;
