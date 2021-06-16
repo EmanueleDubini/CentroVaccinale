@@ -7,5 +7,7 @@
 
 Agile Board: https://trello.com/b/TdL756CN/centrovaccinaleboard
 
-GIT Repository: https://github.com/LordAcid666/CentroVaccinale/
+GIT Repository: https://github.com/astargisco/CentroVaccinale
+________________
+GIT Repository VEKKIO: https://github.com/LordAcid666/CentroVaccinale/
 
