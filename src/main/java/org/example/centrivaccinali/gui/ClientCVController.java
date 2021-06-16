@@ -20,9 +20,6 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
-import org.example.common.CFGenerator.CalcolaCodiceFiscale;
-import org.example.database.GenerateDataLib.*;
-import org.example.serverCV.ServerCVI;
 import org.example.serverCV.ServerCVI;
 import javafx.scene.control.*;
 
@@ -36,7 +33,6 @@ import java.sql.SQLException;
 import java.time.format.DateTimeFormatter;
 import java.util.Random;
 import java.util.ResourceBundle;
-import java.util.Scanner;
 import java.util.UUID;
 import java.util.regex.Pattern;
 
@@ -293,7 +289,7 @@ public class ClientCVController implements Initializable {
         }
 
         //controllo validità comune
-        else if (!validitàComune(comune)) { //se il metodo restituisce true vuol dire che ah trovato il comune e quindi è stato inserito regolarmente
+        else if (!validitaComune(comune)) { //se il metodo restituisce true vuol dire che ah trovato il comune e quindi è stato inserito regolarmente
 
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
@@ -304,7 +300,7 @@ public class ClientCVController implements Initializable {
         }
 
         //controllo validità provincia
-        else if (!validitàProvincia(provincia)) {//todo nella verifica controlare che la provincia corrisponda al comune scritto dall'utente
+        else if (!validitaProvincia(provincia)) {//todo nella verifica controlare che la provincia corrisponda al comune scritto dall'utente
 
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
@@ -315,7 +311,7 @@ public class ClientCVController implements Initializable {
         }
 
         //controllo validità cap
-        else if (!validitàCap(cap)) { //todo nella verifica controlare che il cap corrisponda al comune e provincia scritto dall'utente
+        else if (!validitaCap(cap)) { //todo nella verifica controlare che il cap corrisponda al comune e provincia scritto dall'utente
 
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
@@ -462,7 +458,7 @@ public class ClientCVController implements Initializable {
      */
 
 
-    private Boolean validitàComune(String comune) {
+    private Boolean validitaComune(String comune) {
         String letturaFile;
 
         //File file = new File("src/main/java/org/example/common/CFGenerator/listacomuni.csv");
@@ -494,7 +490,7 @@ public class ClientCVController implements Initializable {
      * @return true nel caso in cui il comune sia corretto, false altrimenti
      */
 
-    private Boolean validitàProvincia(String provincia) {
+    private Boolean validitaProvincia(String provincia) {
         String letturaFile;
 
         //File file = new File("src/main/java/org/example/common/CFGenerator/listacomuni.csv");
@@ -525,7 +521,7 @@ public class ClientCVController implements Initializable {
      * @return true nel caso in cui il comune sia corretto, false altrimenti
      */
 
-    private Boolean validitàCap(String cap) {
+    private Boolean validitaCap(String cap) {
         String letturaFile;
 
         //File file = new File("src/main/java/org/example/common/CFGenerator/listacomuni.csv");
