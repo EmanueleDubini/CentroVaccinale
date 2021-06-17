@@ -8,13 +8,18 @@ import javafx.scene.control.ButtonType;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import org.example.serverCV.ServerCV;
+import org.example.serverCV.ServerCVI;
 
 import java.io.IOException;
 import java.rmi.RemoteException;
+import java.rmi.registry.Registry;
 import java.sql.SQLException;
 import java.util.regex.Pattern;
 
 public class ClientCTController {
+
+    private final long serialVersionUID = 1L;
+    private final int PORT = 1200;
 
     //TextField relativi alla pagina: 03CT_LoginWindow
     @FXML
@@ -46,6 +51,9 @@ public class ClientCTController {
     private TextField TextFieldIdVaccinazioneVaccinato;
 
     String nomeRegistrato, cognomeRegistrato, cfRegistrato, emailRegistrato ,usernameRegistrato, passwordRegistrato,  idVaccinazioneRegistrato;
+
+    //public static ClientCTController stub;
+
     /**
      * Questo metodo crea la schermata iniziale 01_LandingPage
      * @throws IOException
@@ -155,7 +163,7 @@ public class ClientCTController {
      * Resituisce un messaggio di errore nel caso in cui i campi inseriti dall'utente
      * non siano corretti
      */
-    public void GeneraCittadinoRegistrato(ActionEvent actionEvent) {
+    public void GeneraCittadinoRegistrato(ActionEvent actionEvent) throws SQLException, RemoteException {
         ////////////// campi registrazione Cittadino //////////////
         nomeRegistrato = TextFieldNomeVaccinato.getText().strip();
         cognomeRegistrato = TextFieldCognomeVaccinato.getText().strip();
@@ -212,15 +220,13 @@ public class ClientCTController {
             alert.setContentText("'Email' non valido.\nRiprovare");
 
             alert.showAndWait();
-        }
+        } else {
 
-        else {
-            System.out.print("Nome: " + nomeRegistrato + " Cognome: " + cognomeRegistrato + " CF: " + cfRegistrato + " Email:" + emailRegistrato + " Username: " + usernameRegistrato + " Password: " + passwordRegistrato + " IDVaccinazione: " + idVaccinazioneRegistrato);
+            //System.out.print("Nome: " + nomeRegistrato + " Cognome: " + cognomeRegistrato + " CF: " + cfRegistrato + " Email:" + emailRegistrato + " Username: " + usernameRegistrato + " Password: " + passwordRegistrato + " IDVaccinazione: " + idVaccinazioneRegistrato);
 
-            //todo aggiungere collegamento con il DB
 
-            Boolean verify = true;
 
+            Boolean verify = ClientCVController.stub.registraCittadino(cfRegistrato, cognomeRegistrato, nomeRegistrato, emailRegistrato, usernameRegistrato, passwordRegistrato, idVaccinazioneRegistrato);
             if(verify) {
                 resetInserimentoRegistrazione();
             }

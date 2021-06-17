@@ -19,7 +19,7 @@
               <MenuItem mnemonicParsing="false" onAction="#onClickQuit" text="Close" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Edit">
+          <Menu mnemonicParsing="false" text="Back">
             <items>
               <MenuItem mnemonicParsing="false" onAction="#to_03CT_LoginWindow" text="back" />
             </items>
