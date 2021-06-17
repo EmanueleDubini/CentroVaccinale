@@ -30,7 +30,9 @@ public class QueryDebug {
     public static String createCentriVaccinaliTable = "CREATE TABLE IF NOT EXISTS centrivaccinali (" + //todo
                                                     "idCentroVaccinale VARCHAR(36) PRIMARY KEY," +
                                                     "nome VARCHAR(50) NOT NULL," +
+                                                    "qualificatore VARCHAR(10) NOT NULL," +
                                                     "indirizzo VARCHAR(255) NOT NULL," +
+                                                    "numeroCivico VARCHAR(5) NOT NULL," +
                                                     "comune VARCHAR(50) NOT NULL," +
                                                     "provincia VARCHAR(4) NOT NULL," +
                                                     "cap NUMERIC(5) NOT NULL," +
@@ -46,7 +48,7 @@ public class QueryDebug {
                                                         "cognomeCittadino VARCHAR(50) NOT NULL," +
                                                         "nomeCittadino VARCHAR(50) NOT NULL," +
                                                         "email VARCHAR(50) NOT NULL," +
-                                                        "userid VARCHAR(50) NOT NULL," +
+                                                        "username VARCHAR(50) NOT NULL," +
                                                         "password VARCHAR(50) NOT NULL," +
                                                         "idVaccinazione VARCHAR(16) NOT NULL" +
                                                         ")";

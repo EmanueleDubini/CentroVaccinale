@@ -323,7 +323,7 @@ public class ClientCVController implements Initializable {
 
 
             String id = UUID.randomUUID().toString();
-            Boolean verify = stub.registraCentroVaccinale(id, nomeCV, qualificatoreVia + " " + nomeVia + " " + numeroCivico, comune, provincia, cap, tipologiaCV);
+            Boolean verify = stub.registraCentroVaccinale(id, nomeCV, qualificatoreVia , nomeVia, numeroCivico, comune, provincia, cap, tipologiaCV);
             if (verify) {
                 resetInserimentoCV();
             }
