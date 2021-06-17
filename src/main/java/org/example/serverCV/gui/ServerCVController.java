@@ -237,20 +237,20 @@ public class ServerCVController {
     // METODI DEGLI INSERIMENTI TABELLE (debug)
    public void inserimentoCentriVaccinali() throws SQLException {
         PreparedStatement statement = DbHelper.getConnection().prepareStatement(
-                "INSERT INTO centrivaccinali(idCentroVaccinale, nome, indirizzo, comune, provincia, cap, tipologia) VALUES (?,?,?,?,?,?,?)");
+                "INSERT INTO centrivaccinali(idCentroVaccinale, nome, qualificatore, indirizzo, numerocivico, comune, provincia, cap, tipologia) VALUES (?,?,?,?,?,?,?,?,?)");
 
         // numero CV generati auto
         for(int i = 0; i < NUMCV; i++){
             CentroVaccinale cv = DataModel.generateCentroVaccinale();
             statement.setString(1, cv.getIdCentroVacciale());
             statement.setString(2, cv.getNome());
-            statement.setString(3, (cv.getIndirizzo().getQualificatore().name() + " " +
-                                                   cv.getIndirizzo().getNome() + " " +
-                                                   cv.getIndirizzo().getNumeroCivico()));
-            statement.setString(4, cv.getIndirizzo().getComune());
-            statement.setString(5, cv.getIndirizzo().getProv());
-            statement.setInt(6, cv.getIndirizzo().getCap());
-            statement.setString(7, cv.getTipologia().name());
+            statement.setString(3, (cv.getIndirizzo().getQualificatore().name()));
+            statement.setString(4, (cv.getIndirizzo().getNome()));
+            statement.setString(5, (cv.getIndirizzo().getNumeroCivico()));
+            statement.setString(6, cv.getIndirizzo().getComune());
+            statement.setString(7, cv.getIndirizzo().getProv());
+            statement.setInt(8, cv.getIndirizzo().getCap());
+            statement.setString(9, cv.getTipologia().name());
             statement.executeUpdate();
         }
         logArea.appendText("Dati in tabella 'centrivaccinali' inseriti\n");
@@ -260,7 +260,7 @@ public class ServerCVController {
 
     public void inserimentoCittadini() throws SQLException {
         PreparedStatement statement = DbHelper.getConnection().prepareStatement(
-                "INSERT INTO cittadini_registrati(codiceFiscale, cognomeCittadino, nomeCittadino, email, userid, password, idVaccinazione) VALUES (?,?,?,?,?,?,?)");
+                "INSERT INTO cittadini_registrati(codiceFiscale, cognomeCittadino, nomeCittadino, email, username, password, idVaccinazione) VALUES (?,?,?,?,?,?,?)");
 
         //String cf;
         for(int i = 0; i < NUMCT; i++){
