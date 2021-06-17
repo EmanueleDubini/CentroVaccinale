@@ -10,7 +10,7 @@
 
 package org.example.database;
 
-import org.example.centrivaccinali.CentroVaccinale;
+import org.example.common.CentroVaccinale;
 import org.example.centrivaccinali.TipologiaCV;
 import org.example.centrivaccinali.Cittadino;
 import org.example.common.CFGenerator.CalcolaCodiceFiscale;

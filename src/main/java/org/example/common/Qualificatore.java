@@ -10,8 +10,6 @@
 
 package org.example.common;
 
-import org.example.centrivaccinali.CentroVaccinale;
-
 /**
  * Classe enumerativa per la gestione del <strong>Qualificatore</strong> di {@link Indirizzo}.
  */

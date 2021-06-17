@@ -24,7 +24,7 @@ public interface ServerCVI extends Remote {
     Boolean registraCittadino(String cf, String cognome, String nome, String email, String userId, String password, String idVaccinazione) throws RemoteException, SQLException;
     Boolean login(String username, String password) throws RemoteException, SQLException;
     void cercaCentroVaccinale() throws RemoteException;
-    void cercaCentroVaccinaleNome() throws RemoteException, SQLException;
+    void cercaCentroVaccinaleNome(String nomeCV) throws RemoteException, SQLException;
     void cercaCentroVaccinaleComuneTipologia() throws RemoteException, SQLException;
     void visualizzaInfoCentroVaccinale() throws RemoteException;
 

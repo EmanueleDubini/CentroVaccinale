@@ -13,7 +13,7 @@ package org.example.serverCV.gui;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import org.example.centrivaccinali.CentroVaccinale;
+import org.example.common.CentroVaccinale;
 import org.example.centrivaccinali.Cittadino;
 import org.example.database.DataModel;
 import org.example.database.DbHelper;
