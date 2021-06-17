@@ -1,6 +1,6 @@
 package org.example.centrivaccinali;
 
-import org.example.database.GenerateDataLib.BaseElement.Generator;
+import org.example.common.CentroVaccinale;
 
 /**
  * Classe enumerativa per la gestione della <strong>Tipologia</strong> di {@link CentroVaccinale}.

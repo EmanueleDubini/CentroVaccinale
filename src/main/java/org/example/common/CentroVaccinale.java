@@ -8,9 +8,9 @@
 
  */
 
-package org.example.centrivaccinali;
+package org.example.common;
 
-import org.example.common.Indirizzo;
+import org.example.centrivaccinali.TipologiaCV;
 
 /**
  * Le sue istanze rappresentano <strong>Centri Vaccinali</strong>
