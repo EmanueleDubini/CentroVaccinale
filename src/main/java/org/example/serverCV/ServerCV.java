@@ -10,6 +10,7 @@
 
 package org.example.serverCV;
 
+import org.example.centrivaccinali.gui.ClientCTController;
 import org.example.common.CentroVaccinale;
 import org.example.common.Indirizzo;
 import org.example.database.DbHelper;
@@ -101,15 +102,30 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     @Override
     public synchronized Boolean login(String username, String password) throws RemoteException, SQLException {  //todo riguardare metodo
         DbHelper.getConnection();
-        Statement statement = DbHelper.getStatement();
-
+        //Statement statement = DbHelper.getStatement();
+        /*
         statement.executeQuery("SELECT * " +
                 "FROM cittadini_registrati " +
                 "WHERE username = '" + username + "'" +
                 "AND password = '" + password +"'"
-        );
+        );*/
 
-        return true;            //todo implementare metodo per verifica
+        PreparedStatement ps;
+        ps = DbHelper.getConnection().prepareStatement("SELECT * " +
+                "FROM cittadini_registrati " +
+                "WHERE username = '" + username + "'" +
+                "AND password = '" + password +"'");
+
+        ResultSet result = ps.executeQuery();
+
+        if(result.next()){
+            return true;
+        }
+        else{
+            System.err.println("Login Failed");
+            return false;
+        }
+
     }
 
 

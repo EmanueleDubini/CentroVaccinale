@@ -139,6 +139,7 @@ public class ClientCTController {
             alert.setTitle("Error");
             alert.setHeaderText("Si è verificato un Errore");
             alert.setContentText("Utente non registrato!");
+            alert.showAndWait();
         }
     }
 
