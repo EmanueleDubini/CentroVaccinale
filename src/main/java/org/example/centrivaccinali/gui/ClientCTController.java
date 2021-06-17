@@ -12,6 +12,7 @@ import org.example.serverCV.ServerCV;
 import java.io.IOException;
 import java.rmi.RemoteException;
 import java.sql.SQLException;
+import java.util.regex.Pattern;
 
 public class ClientCTController {
 
@@ -21,7 +22,28 @@ public class ClientCTController {
     @FXML
     private PasswordField TextFieldPassword;
 
+    @FXML
+    private TextField TextFieldNomeVaccinato;
 
+    @FXML
+    private TextField TextFieldCognomeVaccinato;
+
+    @FXML
+    private TextField TextFieldCFVaccinato;
+
+    @FXML
+    private TextField TextFieldEmailVaccinato;
+
+    @FXML
+    private TextField TextFieldUsernameVaccinato;
+
+    @FXML
+    private TextField TextFieldPasswordVaccinato;
+
+    @FXML
+    private TextField TextFieldIdVaccinazioneVaccinato;
+
+    String nomeRegistrato, cognomeRegistrato, cfRegistrato, emailRegistrato ,usernameRegistrato, passwordRegistrato,  idVaccinazioneRegistrato;
     /**
      * Questo metodo crea la schermata iniziale 01_LandingPage
      * @throws IOException
@@ -118,11 +140,106 @@ public class ClientCTController {
         info.showAndWait();
     }
 
-    public void GeneraCittadinoVaccinato(ActionEvent actionEvent) {
-        System.out.print("Cittadino Registrato");
+    /**
+     * Questo metodo è collegato al bottone ' Registra Cittadino' dell'applicaizione cittadino
+     * nel file "03CT_RegistrazioneAdCV.fxml".
+     *
+     * contiene dei controlli relativi a:
+     * - Campi vuoti
+     * - Codice Fiscale
+     * - ID vaccinazione
+     * - Email
+     *
+     * Resituisce un messaggio di errore nel caso in cui i campi inseriti dall'utente
+     * non siano corretti
+     */
+    public void GeneraCittadinoRegistrato(ActionEvent actionEvent) {
+        ////////////// campi registrazione Cittadino //////////////
+        nomeRegistrato = TextFieldNomeVaccinato.getText().strip();
+        cognomeRegistrato = TextFieldCognomeVaccinato.getText().strip();
+        cfRegistrato = TextFieldCFVaccinato.getText().toUpperCase().strip();
+        emailRegistrato = TextFieldEmailVaccinato.getText().strip();
+        usernameRegistrato = TextFieldUsernameVaccinato.getText().strip();
+        passwordRegistrato = TextFieldPasswordVaccinato.getText().strip();
+        idVaccinazioneRegistrato = TextFieldIdVaccinazioneVaccinato.getText().strip();
+
+        //controllo se tutti i campi sono vuoti
+        if ((nomeRegistrato.equals("") ||
+                cognomeRegistrato.equals("")) ||
+                cfRegistrato.equals("") ||
+                emailRegistrato.equals("") ||
+                usernameRegistrato.equals("") ||
+                passwordRegistrato.equals("") ||
+                idVaccinazioneRegistrato.equals("")) {
+
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Si è verificato un Errore");
+            alert.setContentText("Campi utili per la registrazione mancanti.\nRiprovare");
+
+            alert.showAndWait();
+        } //END_if
+
+        //Controllo validità del CF
+        else if(!(Pattern.matches("[a-zA-Z]{6}\\d\\d[a-zA-Z]\\d\\d[a-zA-Z]\\d\\d\\d[a-zA-Z]", cfRegistrato))){
+
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Si è verificato un Errore");
+            alert.setContentText("'Codice Fiscale' non valido.\nRiprovare");
+
+            alert.showAndWait();
+        }
+
+        //Controllo validità id vaccinazione
+        else if(idVaccinazioneRegistrato.length() != 16){
+
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Si è verificato un Errore");
+            alert.setContentText("'ID Vaccinazione' non valido.\nRiprovare");
+
+            alert.showAndWait();
+        }
+
+        //Controllo validità email
+        else if(!(Pattern.matches("^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@" + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$", emailRegistrato))) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Si è verificato un Errore");
+            alert.setContentText("'Email' non valido.\nRiprovare");
+
+            alert.showAndWait();
+        }
+
+        else {
+            System.out.print("Nome: " + nomeRegistrato + " Cognome: " + cognomeRegistrato + " CF: " + cfRegistrato + " Email:" + emailRegistrato + " Username: " + usernameRegistrato + " Password: " + passwordRegistrato + " IDVaccinazione: " + idVaccinazioneRegistrato);
+
+            //todo aggiungere collegamento con il DB
+
+            Boolean verify = true;
+
+            if(verify) {
+                resetInserimentoRegistrazione();
+            }
+        }
+    }
+
+    /**
+     * Questo metodo resetta tutti i campi inseriti dall'utente dopo che si registra
+     */
+    private void resetInserimentoRegistrazione() {
+        TextFieldNomeVaccinato.setText("");
+        TextFieldCognomeVaccinato.setText("");
+        TextFieldCFVaccinato.setText("");
+        TextFieldEmailVaccinato.setText("");
+        TextFieldUsernameVaccinato.setText("");
+        TextFieldPasswordVaccinato.setText("");
+        TextFieldIdVaccinazioneVaccinato.setText("");
     }
 
     public void cercaCentroVaccinale(ActionEvent actionEvent) {
+
     }
 
     public void login(ActionEvent actionEvent) throws SQLException, IOException {
@@ -163,4 +280,6 @@ public class ClientCTController {
 
          */
     }
+
+
 }

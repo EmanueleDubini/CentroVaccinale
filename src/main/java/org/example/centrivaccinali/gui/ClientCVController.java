@@ -409,7 +409,7 @@ public class ClientCVController implements Initializable {
             alert.showAndWait();
         }
 
-        else if (DatePickerSomministrazioneCT.getValue() == null) {   //todo sistemare il controllo data  DIO CANE
+        else if (DatePickerSomministrazioneCT.getValue() == null) {   //todo sistemare il controllo data
 
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");

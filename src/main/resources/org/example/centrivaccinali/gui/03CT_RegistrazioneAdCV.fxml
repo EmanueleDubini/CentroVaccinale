@@ -52,10 +52,10 @@
             <Font size="21.0" />
          </font>
       </Label>
-      <TextField fx:id="TextFieldNomeVaccinatoCTTextFieldNomeVaccinatoCT" layoutX="330.0" layoutY="310.0" prefHeight="26.0" prefWidth="250.0" promptText="Nome Vaccinato" />
-      <TextField fx:id="TextFieldCognomeVaccinatoCTTextFieldCognomeVaccinatoCT" layoutX="330.0" layoutY="380.0" prefWidth="250.0" promptText="Cognome Vaccinato" />
-      <TextField fx:id="TextFieldCodicefiscaleCTTextFieldCodicefiscaleCT" layoutX="330.0" layoutY="450.0" prefWidth="250.0" promptText="Codice Fiscale" />
-      <Label layoutX="750.0" layoutY="380.0" text="UserId:">
+      <TextField fx:id="TextFieldNomeVaccinato" layoutX="330.0" layoutY="310.0" prefHeight="26.0" prefWidth="250.0" promptText="Nome Vaccinato" />
+      <TextField fx:id="TextFieldCognomeVaccinato" layoutX="330.0" layoutY="380.0" prefWidth="250.0" promptText="Cognome Vaccinato" />
+      <TextField fx:id="TextFieldCFVaccinato" layoutX="330.0" layoutY="450.0" prefWidth="250.0" promptText="Codice Fiscale" />
+      <Label layoutX="750.0" layoutY="380.0" text="Username:">
          <font>
             <Font size="24.0" />
          </font>
@@ -75,11 +75,11 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <TextField fx:id="TextFieldEmailCT" layoutX="880.0" layoutY="310.0" prefHeight="26.0" prefWidth="250.0" promptText="Email" />
-      <TextField fx:id="TextFieldUserIdCT" layoutX="880.0" layoutY="380.0" prefHeight="26.0" prefWidth="250.0" promptText="UserId" />
-      <TextField fx:id="TextFieldPasswordCT" layoutX="880.0" layoutY="450.0" prefHeight="26.0" prefWidth="250.0" promptText="Password" />
-      <TextField fx:id="TextFieldIdVaccinazioneCTTextFieldIdVaccinazioneCT" layoutX="660.0" layoutY="520.0" prefHeight="26.0" prefWidth="298.0" promptText="Id Unico Vaccinazione" />
-      <Button fx:id="bottoneRegistraCittadinoVaccinato" layoutX="978.0" layoutY="636.0" mnemonicParsing="false" onAction="#GeneraCittadinoVaccinato" text="Registra Cittadino">
+      <TextField fx:id="TextFieldEmailVaccinato" layoutX="880.0" layoutY="310.0" prefHeight="26.0" prefWidth="250.0" promptText="Email" />
+      <TextField fx:id="TextFieldUsernameVaccinato" layoutX="880.0" layoutY="380.0" prefHeight="26.0" prefWidth="250.0" promptText="UserId" />
+      <TextField fx:id="TextFieldPasswordVaccinato" layoutX="880.0" layoutY="450.0" prefHeight="26.0" prefWidth="250.0" promptText="Password" />
+      <TextField fx:id="TextFieldIdVaccinazioneVaccinato" layoutX="660.0" layoutY="520.0" prefHeight="26.0" prefWidth="298.0" promptText="Id Unico Vaccinazione" />
+      <Button fx:id="bottoneRegistraCittadinoVaccinato" layoutX="978.0" layoutY="636.0" mnemonicParsing="false" onAction="#GeneraCittadinoRegistrato" text="Registra Cittadino">
          <font>
             <Font size="21.0" />
          </font>
