@@ -16,12 +16,14 @@ import java.util.regex.Pattern;
 
 public class ClientCTController {
 
+    //TextField relativi alla pagina: 03CT_LoginWindow
     @FXML
     private TextField TextFieldUsername;
 
     @FXML
     private PasswordField TextFieldPassword;
 
+    //TextField relativi alla pagina: 03CT_RegistrazioneAdCV
     @FXML
     private TextField TextFieldNomeVaccinato;
 
@@ -282,4 +284,4 @@ public class ClientCTController {
     }
 
 
-}
+}//End_Class
