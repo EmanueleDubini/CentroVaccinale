@@ -28,14 +28,12 @@ public interface ServerCVI extends Remote {
     void cercaCentroVaccinaleComuneTipologia() throws RemoteException, SQLException;
     void visualizzaInfoCentroVaccinale() throws RemoteException;
 
-
-
     // eventi_avversi
     Boolean inserisciEventiAvversi(String id, String codiceFiscale,
                                    String mal_di_testa, String mal_di_testa_note,
                                    String febbre, String febbre_note,
                                    String dolori_muscolari_e_articolari, String dolori_muscolari_e_articolari_note,
-                                   String linfoaenopatia, String linfoaenopatia_note,
+                                   String linfoadenopatia, String linfoadenopatia_note,
                                    String tachicardia, String tachicardia_note,
                                    String crisi_ipertensiva, String crisi_ipertensiva_note) throws RemoteException, SQLException;
 }

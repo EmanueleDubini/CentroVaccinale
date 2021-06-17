@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
@@ -41,23 +42,23 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <TextField layoutX="172.0" layoutY="299.0" prefHeight="25.0" prefWidth="245.0" promptText="Evento" />
       <Label layoutX="465.0" layoutY="292.0" text="Severità: ">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <TextField layoutX="574.0" layoutY="297.0" prefHeight="25.0" prefWidth="149.0" promptText="Severità" />
+      <TextField fx:id="TextFieldSeverita" layoutX="574.0" layoutY="297.0" prefHeight="25.0" prefWidth="149.0" promptText="Severità" />
       <Label layoutX="80.0" layoutY="393.0" text="Note:">
          <font>
             <Font name="Georgia" size="24.0" />
          </font>
       </Label>
-      <TextArea layoutX="172.0" layoutY="393.0" prefHeight="200.0" prefWidth="551.0" promptText="Note" />
+      <TextArea fx:id="TextAreaNote" layoutX="172.0" layoutY="393.0" prefHeight="200.0" prefWidth="551.0" promptText="Note" />
       <Button layoutX="1086.0" layoutY="628.0" mnemonicParsing="false" onAction="#inserisciEventiAvversi" prefHeight="38.0" prefWidth="149.0" text="Inserisci Evento">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
+      <ComboBox fx:id="eventoBox" layoutX="171.0" layoutY="299.0" prefHeight="25.0" prefWidth="248.0" />
    </children>
 </Pane>

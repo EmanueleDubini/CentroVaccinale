@@ -171,15 +171,6 @@ public class ClientCVController implements Initializable {
         Platform.exit();
     }
 
-    /*public void onClickGotoMenu(ActionEvent event) throws IOException {
-        MenuItem menuitem = (MenuItem) event.getSource();
-
-        if(menuitem.getText().equals("Landing page")) { // ripetuto nel codice, vedremo più avanti
-            m.changeScene("src/main/java/centrivaccinali/gui/fxml/01_LandingPage.fxml", "Piattaforma Centri Vaccinali");
-        }
-    }*/
-
-
 
     /**
      * Questo metodo crea un messaggio di Alert che restituisce informazioni riguardanti il progetto
@@ -330,7 +321,6 @@ public class ClientCVController implements Initializable {
         }
         //todo, prima di inserire nel database il centro vaccinale, fare una lettura da db con query per evitare che il cv sia già stato registrato
 
-        //System.out.println(nomeCV + " " + tipologiaCV + " " + qualificatoreVia + " " + nomeVia + " " + numeroCivico + " " + comune + " " + provincia + " " + cap);
     }
 
     /**
@@ -421,7 +411,6 @@ public class ClientCVController implements Initializable {
         } else {
 
             dataVaccinazioneCV = selectDateCV();
-            //System.out.println(nomeCvCT + " " + nomeCT + " " + cognomeCT + " " + codiceFiscaleCT + " " + vaccinoSomministratoCT + " " + idVaccinazioneCT + " " + dataVaccinazioneCV);
 
             String id = UUID.randomUUID().toString();
             Boolean verify = stub.registraVaccinato(id, nomeCvCT, cognomeCT, nomeCT, codiceFiscaleCT, dataVaccinazioneCV, vaccinoSomministratoCT, idVaccinazioneCT);

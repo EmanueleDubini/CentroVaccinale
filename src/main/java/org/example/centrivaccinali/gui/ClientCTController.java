@@ -3,23 +3,16 @@ package org.example.centrivaccinali.gui;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.ButtonType;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
-import org.example.serverCV.ServerCV;
-import org.example.serverCV.ServerCVI;
-
+import javafx.fxml.Initializable;
+import javafx.scene.control.*;
 import java.io.IOException;
+import java.net.URL;
 import java.rmi.RemoteException;
-import java.rmi.registry.Registry;
 import java.sql.SQLException;
+import java.util.ResourceBundle;
 import java.util.regex.Pattern;
 
-public class ClientCTController {
-
-    private final long serialVersionUID = 1L;
-    private final int PORT = 1200;
+public class ClientCTController implements Initializable {
 
     //TextField relativi alla pagina: 03CT_LoginWindow
     @FXML
@@ -50,9 +43,32 @@ public class ClientCTController {
     @FXML
     private TextField TextFieldIdVaccinazioneVaccinato;
 
+    //TextField & Combobox relativi alla pagina: 04CT_EventiAvversiCT
+    @FXML
+    private ComboBox<String> eventoBox = new ComboBox<>();
+
+    @FXML
+    private TextField TextFieldSeverita;
+
+    @FXML
+    private TextArea TextAreaNote;
+
     String nomeRegistrato, cognomeRegistrato, cfRegistrato, emailRegistrato ,usernameRegistrato, passwordRegistrato,  idVaccinazioneRegistrato;
 
-    //public static ClientCTController stub;
+    String evento, severita, note;
+
+    public void initialize(URL arg0, ResourceBundle resourceBundle) {
+        ////////////// COMBO BOX EVENTO //////////////
+        eventoBox.setValue("");
+
+        eventoBox.getItems().add("Mal di testa");
+        eventoBox.getItems().add("Febbre");
+        eventoBox.getItems().add("Dolori muscolari e articolari");
+        eventoBox.getItems().add("Linfoadenopatia");
+        eventoBox.getItems().add("Tachicardia");
+        eventoBox.getItems().add("Crisi ipertensiva");
+    }
+
 
     /**
      * Questo metodo crea la schermata iniziale 01_LandingPage
@@ -105,6 +121,7 @@ public class ClientCTController {
     public void to_04CT_EventiAvversiCT() throws IOException {
         ClientCVMain.setRoot("04CT_EventiAvversiCT");
     }
+
 
 
     /**
@@ -222,10 +239,6 @@ public class ClientCTController {
             alert.showAndWait();
         } else {
 
-            //System.out.print("Nome: " + nomeRegistrato + " Cognome: " + cognomeRegistrato + " CF: " + cfRegistrato + " Email:" + emailRegistrato + " Username: " + usernameRegistrato + " Password: " + passwordRegistrato + " IDVaccinazione: " + idVaccinazioneRegistrato);
-
-
-
             Boolean verify = ClientCVController.stub.registraCittadino(cfRegistrato, cognomeRegistrato, nomeRegistrato, emailRegistrato, usernameRegistrato, passwordRegistrato, idVaccinazioneRegistrato);
             if(verify) {
                 resetInserimentoRegistrazione();
@@ -256,6 +269,8 @@ public class ClientCTController {
 
         Boolean verify = ClientCVController.stub.login(username, password);
 
+
+
         if(verify) {
             resetInserimentoLogin();
             to_04CT_EventiAvversiCT();
@@ -266,6 +281,8 @@ public class ClientCTController {
             alert.setContentText("Utente non registrato!");
             alert.showAndWait();
         }
+
+
     }
 
     private void resetInserimentoLogin() {
@@ -274,21 +291,42 @@ public class ClientCTController {
     }
 
 
-    public void inserisciEventiAvversi(ActionEvent actionEvent) {
-        //todo prelevare da interfaccia grafica
-        /*
-        Boolean verify = ClientCVController.stub.inserisciEventiAvversi(String id, String codiceFiscale, String mal_di_testa, String mal_di_testa_note,
-                                                                        String febbre, String febbre_note,
-                                                                        String dolori_muscolari_e_articolari, String dolori_muscolari_e_articolari_note,
-                                                                        String linfoaenopatia, String linfoaenopatia_note,
-                                                                        String tachicardia, String tachicardia_note,
-                                                                        String crisi_ipertensiva, String crisi_ipertensiva_note);
-        if (verify) {
+    public void inserisciEventiAvversi(ActionEvent actionEvent) throws SQLException, RemoteException {
+        evento = eventoBox.getValue();
+        severita = TextFieldSeverita.getText();
+        note = TextAreaNote.getText();
 
+        if ((evento.equals("") ||
+                severita.equals("")) ||
+                note.equals("")) {
+
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Si è verificato un Errore");
+            alert.setContentText("Campi utili per la registrazione mancanti.\nRiprovare");
+
+            alert.showAndWait();
+        } //END_if
+        else {
+            //todo sistemare per prendere dinamicamente id e codice fiscale
+            if(evento.equals("Mal di testa")) {
+                Boolean verify = ClientCVController.stub.inserisciEventiAvversi("5f93b2ad-f2ee-442d-9c5b-d509c059562d", "PPPRRR98B10C933V", severita, note, null, null, null, null,null,null,null, null, null, null);
+            }
+            if(evento.equals("Febbre")) {
+                Boolean verify = ClientCVController.stub.inserisciEventiAvversi("5f93b2ad-f2ee-442d-9c5b-d509c059562d", "PPPRRR98B10C933V", null, null, severita, note, null, null,null,null,null, null, null, null);
+            }
+            if(evento.equals("Dolori muscolari e articolari")) {
+                Boolean verify = ClientCVController.stub.inserisciEventiAvversi("5f93b2ad-f2ee-442d-9c5b-d509c059562d", "PPPRRR98B10C933V", null, null, null, null, severita, note,null,null,null, null, null, null);
+            }
+            if(evento.equals("Linfoadenopatia")) {
+                Boolean verify = ClientCVController.stub.inserisciEventiAvversi("5f93b2ad-f2ee-442d-9c5b-d509c059562d", "PPPRRR98B10C933V", null, null, null, null, null, null,severita,note,null, null, null, null);
+            }
+            if(evento.equals("Tachicardia")) {
+                Boolean verify = ClientCVController.stub.inserisciEventiAvversi("5f93b2ad-f2ee-442d-9c5b-d509c059562d", "PPPRRR98B10C933V", null, null, null, null, null, null,null,null,severita, note, null, null);
+            }
+            if(evento.equals("Crisi ipertensiva")) {
+                Boolean verify = ClientCVController.stub.inserisciEventiAvversi("5f93b2ad-f2ee-442d-9c5b-d509c059562d", "PPPRRR98B10C933V", null, null, null, null, null, null,null,null,null, null, severita, note);
+            }
         }
-
-         */
     }
-
-
 }//End_Class

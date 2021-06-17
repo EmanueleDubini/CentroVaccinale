@@ -35,7 +35,7 @@ import static org.example.database.QueryRicerca.cercaCentroVaccinalePerNome;
  */
 public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     private static final long serialVersionUID = 1L; //sono oggetti serializzati
-    public static final int PORT = 1200; //todo sistemare e mettera la porta come campo statico nell'interfaccia del server
+    public static final int PORT = 1200;
     public static Registry registry;
 
 
@@ -100,16 +100,8 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     }
 
     @Override
-    public synchronized Boolean login(String username, String password) throws RemoteException, SQLException {  //todo riguardare metodo
+    public synchronized Boolean login(String username, String password) throws RemoteException, SQLException {
         DbHelper.getConnection();
-        //Statement statement = DbHelper.getStatement();
-        /*
-        statement.executeQuery("SELECT * " +
-                "FROM cittadini_registrati " +
-                "WHERE username = '" + username + "'" +
-                "AND password = '" + password +"'"
-        );*/
-
         PreparedStatement ps;
         ps = DbHelper.getConnection().prepareStatement("SELECT * " +
                 "FROM cittadini_registrati " +
@@ -213,16 +205,18 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
                                                        String mal_di_testa, String mal_di_testa_note,
                                                        String febbre, String febbre_note,
                                                        String dolori_muscolari_e_articolari, String dolori_muscolari_e_articolari_note,
-                                                       String linfoaenopatia, String linfoaenopatia_note,
+                                                       String linfoadenopatia, String linfoadenopatia_note,
                                                        String tachicardia, String tachicardia_note,
                                                        String crisi_ipertensiva, String crisi_ipertensiva_note) throws SQLException {
+
+
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
         statement.executeUpdate("INSERT INTO eventi_avversi " +
-                "(idcentrovaccinale, codicefiscale, mal_di_testa, mal_di_testa_note, febbre, febbre_note, dolori_muscolari_e_articolari, dolori_muscolari_e_articolari_note, linfoaenopatia," +
-                "linfoaenopatia_note, tachicardia, tachicardia_note, crisi_ipertensiva, crisi_ipertensiva_note)" +
-                "VALUES(" + "'" + id + "'," + "'" + codiceFiscale + "'," + "'" + febbre + "'," + "'" + febbre_note + "'," + "'" + dolori_muscolari_e_articolari + "',"
-                + "'" + dolori_muscolari_e_articolari_note + "'," + "'" + linfoaenopatia + "'," + "'" + linfoaenopatia_note + "'," + "'" + tachicardia + "'," + "'" + tachicardia_note +
+                "(idcentrovaccinale, codicefiscale, mal_di_testa, mal_di_testa_note, febbre, febbre_note, dolori_muscolari_e_articolari, dolori_muscolari_e_articolari_note, linfoadenopatia," +
+                "linfoadenopatia_note, tachicardia, tachicardia_note, crisi_ipertensiva, crisi_ipertensiva_note)" +
+                "VALUES(" + "'" + id + "'," + "'" + codiceFiscale + "'," + "'" + mal_di_testa +  "','" + mal_di_testa_note +  "'," +  "'" + febbre + "'," + "'" + febbre_note + "'," + "'" + dolori_muscolari_e_articolari + "',"
+                + "'" + dolori_muscolari_e_articolari_note + "'," + "'" + linfoadenopatia + "'," + "'" + linfoadenopatia_note + "'," + "'" + tachicardia + "'," + "'" + tachicardia_note +
                 "'," + "'" + crisi_ipertensiva +"'," + "'" + crisi_ipertensiva_note +"'" + ")");
 
         System.out.println("SERVER: inserisciEventiAvversi() eseguito correttamente");
