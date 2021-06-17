@@ -102,9 +102,10 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     public synchronized Boolean login(String username, String password) throws RemoteException, SQLException {  //todo riguardare metodo
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
+
         statement.executeQuery("SELECT * " +
                 "FROM cittadini_registrati " +
-                "WHERE userid = '" + username + "'" +
+                "WHERE username = '" + username + "'" +
                 "AND password = '" + password +"'"
         );
 
