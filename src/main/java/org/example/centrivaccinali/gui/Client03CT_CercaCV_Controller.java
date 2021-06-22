@@ -98,8 +98,9 @@ public class Client03CT_CercaCV_Controller implements Initializable {
         //image = new Image("src/main/resources/org/example/images/primula.png");
         //CVImg.setImage(image);
 
-        chosenCV.setStyle("-fx-background-color: #" + "95897f" + ";\n" +  //setta il colore di sfondo del CV scelto
-                "    -fx-background-radius: 30;");
+        //chosenCV.setStyle("-fx-background-color: #" + "95897f" + ";\n" +  //setta il colore di sfondo del CV scelto
+               // "    -fx-background-radius: 30;");
+        chosenCV.setStyle("-fx-background-radius: 30;");
     }
 
     @Override

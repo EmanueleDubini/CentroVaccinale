@@ -1,6 +1,6 @@
 #anchor{
 
-  -fx-background-color : linear-gradient(to right bottom,#ffffff, #57aa6f, #52934d, #88c28f);
+  -fx-background-color : linear-gradient(to right bottom,#88c28f, #57aa6f, #52934d, #88c28f);
 
 }
 
@@ -13,6 +13,7 @@
 
 .transparent{
   -fx-background-color: rgba(0,0,0,0);
+
 }
 
 .search-button{
@@ -29,28 +30,18 @@
 }
 
 .chosen-fruit-card{
-  -fx-background-color: #F16C31;
+  -fx-background-color: #e2e2e2;
   -fx-background-radius: 30;
 }
 
 .comboBox{
-  -fx-background-color: rgba(255,255,255,0.3);
+  -fx-background-color: rgba(255, 255, 255, 0.49);
   -fx-background-radius: 30;
 }
 
 .add-btn{
   -fx-background-color: #FFFFFF;
   -fx-background-radius: 100;
-}
-
-.free-delivery-card{
-  -fx-background-color: #D3D3D3;
-  -fx-background-radius: 30;
-}
-
-.shopping-online-card{
-  -fx-background-color: #BAEAC3;
-  -fx-background-radius: 30;
 }
 
 .fruit-item{
