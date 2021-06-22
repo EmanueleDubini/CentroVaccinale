@@ -30,8 +30,9 @@ import static org.example.database.QueryRicerca.cercaCentroVaccinalePerComuneTip
 import static org.example.database.QueryRicerca.cercaCentroVaccinalePerNome;
 
 /**
- * Classe <code>ServerCV</code> che costituisce l'entry point della sola parte server (e per debug)
- *
+ * Classe <code>ServerCV</code> che costituisce l'entry point della sola parte server dell'applicazione (e per debug)
+ * e contiene le implementazione die metodi remoti per RMI.
+ * Porta di default = 1200
  */
 public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     private static final long serialVersionUID = 1L; //sono oggetti serializzati
@@ -47,6 +48,9 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     /// CENTRI VACCINALI
     /// IMPLEMENTAZIONE Metodi dell'interfaccia ServerCVI ///
 
+    /**
+    * Metodo <code>registraCentroVaccinale</code> registra nel DB un nuovo Centro Vaccinale
+    */
     @Override
     public synchronized Boolean registraCentroVaccinale(String id, String nomeCV, String qualificatore, String indirizzo, String numeroCivico, String comune, String provincia, String cap, String tipologia) throws SQLException {
         DbHelper.getConnection();
@@ -59,6 +63,9 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         return true;
     }
 
+    /**
+     * Metodo <code>registraVaccinato</code> registra nel DB un nuovo cittadino che è appena stato vaccinato
+     */
     @Override
     public synchronized Boolean registraVaccinato(String id, String nomeCV, String cognome, String nome, String cf, String dataSomministrazione, String vaccinoSomministrato, String idVaccinazione) throws SQLException {
 
@@ -87,6 +94,9 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     /// CITTADINI
     /// IMPLEMENTAZIONE Metodi dell'interfaccia ServerCVI ///
 
+    /**
+     * Metodo <code>registraCittadino</code> registra nel DB un nuovo cittadino che e stato precendentemente vaccinato
+     */
     @Override
     public synchronized Boolean registraCittadino(String cf, String cognome, String nome, String email, String username, String password, String idVaccinazione) throws SQLException{
         DbHelper.getConnection();
@@ -99,6 +109,10 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         return true;
     }
 
+    /**
+     * Metodo <code>login</code> controlla nel DB la corrispondenza username/password per permettere l'accesso ai cittadini
+     * registrati che volgiono inserire un evento avverso
+     */
     @Override
     public synchronized Boolean login(String username, String password) throws RemoteException, SQLException {
         DbHelper.getConnection();

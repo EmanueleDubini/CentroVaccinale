@@ -17,7 +17,8 @@ import java.net.SocketException;
 import java.util.Enumeration;
 
 /**
- * Classe per trovare l'indirizzo ip locale del server
+ * Classe per trovare l'indirizzo ip locale del server quando viene avviato da inserire nel client per permettere di
+ * collegarsi sia da locale che da remoto
  */
 public class IpAddressServer {
     public static String getServerAddress()  {
@@ -39,7 +40,7 @@ public class IpAddressServer {
                     if (addr instanceof Inet6Address) continue;
 
                     ip = addr.getHostAddress();
-                    System.out.println(iface.getDisplayName() + " " + ip);
+                    //System.out.println(iface.getDisplayName() + " " + ip); // stampa a prompt l'indirizzo ip
                 }
             }
         } catch (SocketException e) {

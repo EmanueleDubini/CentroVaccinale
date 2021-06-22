@@ -14,13 +14,19 @@ import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.sql.SQLException;
 
+
+/**
+ * Classe <code>ServerCVI</code> che contiene i metodi remoti senza implementazione per l'utilizzo con RMI
+ *
+ */
 public interface ServerCVI extends Remote {
 
-    // centri_vaccinali
+    // Metodi remoti per CENTRI_VACCINALI
     Boolean registraCentroVaccinale(String id, String nomeCV, String qualificatore, String indirizzo, String numeroCivico, String comune, String provincia, String cap, String tipologia) throws RemoteException, SQLException;
     Boolean registraVaccinato(String id, String nomeCV, String cognome, String nome, String cf, String dataSomministrazione, String vaccinoSomministrato, String idVaccinazione) throws RemoteException, SQLException;
 
-    // cittadini
+
+    // Metodi remoti per CITTADINI
     Boolean registraCittadino(String cf, String cognome, String nome, String email, String username, String password, String idVaccinazione) throws RemoteException, SQLException;
     Boolean login(String username, String password) throws RemoteException, SQLException;
     void cercaCentroVaccinale() throws RemoteException;
@@ -28,7 +34,8 @@ public interface ServerCVI extends Remote {
     void cercaCentroVaccinaleComuneTipologia() throws RemoteException, SQLException;
     void visualizzaInfoCentroVaccinale() throws RemoteException;
 
-    // eventi_avversi
+
+    // Metodi remoti per EVENTI_AVVERSI
     Boolean inserisciEventiAvversi(String id, String codiceFiscale,
                                    String mal_di_testa, String mal_di_testa_note,
                                    String febbre, String febbre_note,
