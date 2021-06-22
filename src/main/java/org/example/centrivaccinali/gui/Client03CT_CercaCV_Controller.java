@@ -56,14 +56,14 @@ public class Client03CT_CercaCV_Controller implements Initializable {
 
 
     public List<CentroVaccinale> ricerca() throws SQLException, RemoteException {
-        //String nome = nomeDaRicercare.getText().strip();
+        String nome = nomeDaRicercare.getText().strip();
 
-        //System.err.println(nome);
+        System.err.println(nome);
 
-        //ArrayList prova = ClientCVController.stub.cercaCentroVaccinaleNome(nome);
+        ArrayList prova = ClientCVController.stub.cercaCentroVaccinaleNome(nome);
         //System.err.println(prova);
-        ArrayList<CentroVaccinale> ct = new ArrayList<>();
-        ct.add(new CentroVaccinale("006066a7-8726-47bc-8764-7fc58858d633", "prova 1", new Indirizzo(Qualificatore.Corso, "Basadonne", "129A", "Assago", 22072, "MI"), TipologiaCV.Ospedaliero));
+        //ArrayList<CentroVaccinale> ct = new ArrayList<>();
+        /*ct.add(new CentroVaccinale("006066a7-8726-47bc-8764-7fc58858d633", "prova 1", new Indirizzo(Qualificatore.Corso, "Basadonne", "129A", "Assago", 22072, "MI"), TipologiaCV.Ospedaliero));
         ct.add(new CentroVaccinale("006066a7-8726-47bc-8764-7fc58858d633", "prova 2", new Indirizzo(Qualificatore.Corso, "Basadonne", "129A", "Assago", 22072, "MI"), TipologiaCV.Hub));
 
         ct.add(new CentroVaccinale("006066a7-8726-47bc-8764-7fc58858d633", "prova 3", new Indirizzo(Qualificatore.Corso, "Basadonne", "129A", "Assago", 22072, "MI"), TipologiaCV.Hub));
@@ -83,8 +83,8 @@ public class Client03CT_CercaCV_Controller implements Initializable {
         ct.add(new CentroVaccinale("006066a7-8726-47bc-8764-7fc58858d633", "prova 3", new Indirizzo(Qualificatore.Corso, "Basadonne", "129A", "Assago", 22072, "MI"), TipologiaCV.Hub));
         ct.add(new CentroVaccinale("006066a7-8726-47bc-8764-7fc58858d633", "prova 3", new Indirizzo(Qualificatore.Corso, "Basadonne", "129A", "Assago", 22072, "MI"), TipologiaCV.Hub));
         ct.add(new CentroVaccinale("006066a7-8726-47bc-8764-7fc58858d633", "prova 3", new Indirizzo(Qualificatore.Corso, "Basadonne", "129A", "Assago", 22072, "MI"), TipologiaCV.Hub));
-        ct.add(new CentroVaccinale("006066a7-8726-47bc-8764-7fc58858d633", "prova 3", new Indirizzo(Qualificatore.Corso, "Basadonne", "129A", "Assago", 22072, "MI"), TipologiaCV.Hub));
-        return ct;
+        ct.add(new CentroVaccinale("006066a7-8726-47bc-8764-7fc58858d633", "prova 3", new Indirizzo(Qualificatore.Corso, "Basadonne", "129A", "Assago", 22072, "MI"), TipologiaCV.Hub));*/
+        return prova;
     }
 
     private void impostaCVscelto(CentroVaccinale centroVaccinale) {
