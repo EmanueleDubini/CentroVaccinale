@@ -10,32 +10,29 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane onMousePressed="#click" stylesheets="@../values/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ItemController">
+<AnchorPane onMousePressed="#click" stylesheets="@../../css/GradientBackGround.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.centrivaccinali.gui.ItemController">
    <children>
       <VBox alignment="TOP_CENTER" layoutX="63.0" layoutY="8.0" prefHeight="215.0" prefWidth="225.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <HBox prefHeight="51.0" prefWidth="185.0">
+            <HBox alignment="CENTER" prefWidth="0.0">
                <children>
-                  <Label fx:id="nameLabel" prefHeight="49.0" prefWidth="137.0" text="Cherry">
+                  <Label fx:id="nameLabel" prefHeight="49.0" text="CVNome">
                      <font>
-                        <Font name="Cambria" size="24.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="priceLable" prefHeight="49.0" prefWidth="101.0" text="\$0.99">
-                     <font>
-                        <Font name="Cambria Bold" size="18.0" />
+                        <Font name="Cambria" size="22.0" />
                      </font>
                   </Label>
                </children>
                <VBox.margin>
-                  <Insets left="20.0" top="20.0" />
+                  <Insets top="20.0" />
                </VBox.margin>
             </HBox>
             <ImageView fx:id="img" fitHeight="115.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../img/cherry.png" />
+                  <Image url="@../../images/primula.png" />
                </image>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
             </ImageView>
          </children>
       </VBox>

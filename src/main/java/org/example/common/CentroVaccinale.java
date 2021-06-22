@@ -12,11 +12,17 @@ package org.example.common;
 
 import org.example.centrivaccinali.TipologiaCV;
 
+import java.io.Serial;
+import java.io.Serializable;
+
 /**
  * Le sue istanze rappresentano <strong>Centri Vaccinali</strong>
  */
-public class CentroVaccinale {
+public class CentroVaccinale implements Serializable {
     //todo javadoc dei campi, lo facciamo alla fine per motivi di leggibilità
+    @Serial
+    private static final long serialVersionUID = 1;
+
     private String idCentroVacciale;  // PRIMARY KEY
     private String nome;
     private Indirizzo indirizzo; //E: valutiamo anche se fare una classe Indirizzo che contiene tutte le info dell'indirizzo, morasca be like

@@ -10,9 +10,12 @@
 
 package org.example.serverCV;
 
+import org.example.common.CentroVaccinale;
+
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 
 /**
@@ -30,7 +33,7 @@ public interface ServerCVI extends Remote {
     Boolean registraCittadino(String cf, String cognome, String nome, String email, String username, String password, String idVaccinazione) throws RemoteException, SQLException;
     Boolean login(String username, String password) throws RemoteException, SQLException;
     void cercaCentroVaccinale() throws RemoteException;
-    void cercaCentroVaccinaleNome(String nomeCV) throws RemoteException, SQLException;
+    ArrayList<CentroVaccinale> cercaCentroVaccinaleNome(String nomeCV) throws RemoteException, SQLException;
     void cercaCentroVaccinaleComuneTipologia() throws RemoteException, SQLException;
     void visualizzaInfoCentroVaccinale() throws RemoteException;
 
