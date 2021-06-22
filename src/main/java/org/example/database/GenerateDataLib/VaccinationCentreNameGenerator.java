@@ -22,11 +22,11 @@ public class VaccinationCentreNameGenerator extends GeneratorWrapperBase<String>
     /**
      * I più comuni centri vaccinali negli Stati Uniti.
      */
-    private static final String[] names = new String[] { "B L K Memorial Hospital", "Delhi Heart and lung hospital", //todo aggiungere altri centri, sarebbe più giusto metterli tutti in italiano
-            "Divine Multispecialty Hosp. & Cancer Cent.", "Jeevan Mala Hospital ", "Jeewan Nursing Home",
-            "Kapil Multispecialty Hospital", "Medlife Hospital", "NKS Hospital",
-            "Sanjeevan Hospital", "Sant Parmanand Hospital", "SGR Kolmet Hospital",
-            "Teerath Ram Shah Hospital", "Apex City Hospital", "Bedok Community Centre",
+    private static final String[] names = new String[] { "Memory Centre", //todo aggiungere altri centri, sarebbe più giusto metterli tutti in italiano e corti
+            "Jeewan Nursing",
+             "Medlife Hospital", "NKS Hospital",
+            "Sanjeevan Hospital", "Sant Hospital", "Kolmet Hospital",
+            "Apex Hospital", "Bedok Centre",
              };
 
     /**

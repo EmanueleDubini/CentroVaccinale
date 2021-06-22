@@ -18,7 +18,7 @@
                <children>
                   <Label fx:id="nameLabel" prefHeight="49.0" text="CVNome">
                      <font>
-                        <Font name="Cambria" size="24.0" />
+                        <Font name="Cambria" size="22.0" />
                      </font>
                   </Label>
                </children>

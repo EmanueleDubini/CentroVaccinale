@@ -23,10 +23,10 @@ public class NomeViaGenerator extends GeneratorWrapperBase<String> implements Ge
     /**
      * Alcuni nomi degli indirizzi civici Italiani.
      */
-    private static final String[] names = new String[] { "Abbadia" , "Accuse", "Agocchie", "Agresti", "Albari", "Albiroli", "Allemagna", "Altabella", "Altaseta", "S. Alò", "Androna di San Tommaso della Braina",
-            "Angeli", "Apostoli", "delle Asse", "Avesa", "Avesella di Galliera", "Azzogardino", "Bagarotti", "Banzole", "Barbaria", "Basadonne", "Battibecco", "Battisasso",
+    private static final String[] names = new String[] { "Abbadia" , "Accuse", "Agocchie", "Agresti", "Albari", "Albiroli", "Allemagna", "Altabella", "Altaseta", "S. Alò",
+            "Angeli", "Apostoli", "delle Asse", "Avesa", "Azzogardino", "Bagarotti", "Banzole", "Barbaria", "Basadonne", "Battibecco", "Battisasso",
             "Begato", "Belfiore di Saragozza", "Belmeloro", "Berlina", "Bocca di Lupo", "Borchetta","Castel Tialto", "Castellata", "Castellazzo", "Cattani" , "Cavaliera" ,
-            "Cavaticcio","Facchini", "Falegnami", "Fantuzzi", "Felicini", "Fiaccalcollo", "Fico", "Fondazza", "Fontanina", "Foscarari", "Imperiale", "Imperiale di San Prospero",
+            "Cavaticcio","Facchini", "Falegnami", "Fantuzzi", "Felicini", "Fiaccalcollo", "Fico", "Fondazza", "Fontanina", "Foscarari", "Imperiale",
             "dell'Inferno", "Inghilterra", "della Libertà", "dei Libri", "del Limbo", "Luretta", "del Luzzo", "della Maddalena", "Maggi", "del Maglio", "Malacquisto",
             "Malcontenti", "Malgrado", "Malpertugio", "Mandria", "Marchesana", "Marescalchi", "Mascarella", "dei Mattugliani", "Miola", "Miramonte", "Mirasol Grande",
             "Mirasole di Mezzo", "Mirasole di Sopra", "delle Moline", "Monari", "Napoli", "della Neve", "Nosadella", "Olanda", "Oleari", "Orbaga", "degli Orefici",

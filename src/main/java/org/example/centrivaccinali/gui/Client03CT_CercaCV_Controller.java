@@ -60,7 +60,6 @@ public class Client03CT_CercaCV_Controller implements Initializable {
 
         System.err.println(nome);
 
-        ArrayList prova = ClientCVController.stub.cercaCentroVaccinaleNome(nome);
         //System.err.println(prova);
         //ArrayList<CentroVaccinale> ct = new ArrayList<>();
         /*ct.add(new CentroVaccinale("006066a7-8726-47bc-8764-7fc58858d633", "prova 1", new Indirizzo(Qualificatore.Corso, "Basadonne", "129A", "Assago", 22072, "MI"), TipologiaCV.Ospedaliero));
@@ -84,7 +83,7 @@ public class Client03CT_CercaCV_Controller implements Initializable {
         ct.add(new CentroVaccinale("006066a7-8726-47bc-8764-7fc58858d633", "prova 3", new Indirizzo(Qualificatore.Corso, "Basadonne", "129A", "Assago", 22072, "MI"), TipologiaCV.Hub));
         ct.add(new CentroVaccinale("006066a7-8726-47bc-8764-7fc58858d633", "prova 3", new Indirizzo(Qualificatore.Corso, "Basadonne", "129A", "Assago", 22072, "MI"), TipologiaCV.Hub));
         ct.add(new CentroVaccinale("006066a7-8726-47bc-8764-7fc58858d633", "prova 3", new Indirizzo(Qualificatore.Corso, "Basadonne", "129A", "Assago", 22072, "MI"), TipologiaCV.Hub));*/
-        return prova;
+        return ClientCVController.stub.cercaCentroVaccinaleNome(nome);
     }
 
     private void impostaCVscelto(CentroVaccinale centroVaccinale) {
@@ -178,8 +177,10 @@ public class Client03CT_CercaCV_Controller implements Initializable {
         int row = 1;
         try {
             for (int i = 0; i < centriVaccinali.size(); i++) {
-                FXMLLoader fxmlLoader = new FXMLLoader();
-                fxmlLoader.setLocation(getClass().getResource("src/main/resources/org/example/centrivaccinali/gui/item.fxml"));
+                /*FXMLLoader fxmlLoader = new FXMLLoader();
+                fxmlLoader.setLocation(getClass().getResource("src/main/resources/org/example/centrivaccinali/gui/item.fxml"));*/
+
+                FXMLLoader fxmlLoader = new FXMLLoader(ClientCVMain.class.getResource("item.fxml"));
                 AnchorPane anchorPane = fxmlLoader.load();
 
                 ItemController itemController = fxmlLoader.getController();

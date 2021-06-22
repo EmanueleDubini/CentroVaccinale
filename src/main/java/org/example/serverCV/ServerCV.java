@@ -138,6 +138,8 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
                 "WHERE nome = " + "'" + nomeCV + "'");      //todo Metodo da implementare che deve restituire il nome del centro vaccinale che l'utente ha cercato
 
 
+        System.err.println(rs1.toString());
+
         while (rs1.next()){
             String id = rs1.getString("idCentroVaccinale");
             String nome = rs1.getString("nome");
@@ -148,6 +150,8 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
             String provincia = rs1.getString("provincia");
             String cap = rs1.getString("cap");
             String tipologia = rs1.getString("tipologia");
+
+            System.err.println(nome);
 
             //assegnare il valore al qualificatore della via
             Qualificatore q;
