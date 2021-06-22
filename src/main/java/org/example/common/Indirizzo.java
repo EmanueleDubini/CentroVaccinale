@@ -10,11 +10,14 @@
 
 package org.example.common;
 
+import java.io.Serializable;
+
 /**
  * Le sue istanze rappresentano un <strong>Indirizzo</strong>
  */
-public class Indirizzo {
+public class Indirizzo implements Serializable {
 
+    private static final long serialVersionUID = 1;
     private Qualificatore qualificatore;
     private String nome;
     private String numeroCivico;

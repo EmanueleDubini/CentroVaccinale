@@ -11,8 +11,10 @@
 package org.example.serverCV;
 
 import org.example.centrivaccinali.gui.ClientCTController;
+import org.example.centrivaccinali.TipologiaCV;
 import org.example.common.CentroVaccinale;
 import org.example.common.Indirizzo;
+import org.example.common.Qualificatore;
 import org.example.database.DbHelper;
 import org.example.serverCV.gui.ServerCVMain;
 
@@ -35,7 +37,7 @@ import static org.example.database.QueryRicerca.cercaCentroVaccinalePerNome;
  */
 public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     private static final long serialVersionUID = 1L; //sono oggetti serializzati
-    public static final int PORT = 1200;
+    public static final int PORT = 1200; //todo sistemare e mettera la porta come campo statico nell'interfaccia del server
     public static Registry registry;
 
 
@@ -126,15 +128,15 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     }
 
     @Override
-    public synchronized void cercaCentroVaccinaleNome(String nomeCV) throws RemoteException, SQLException {
+    public synchronized ArrayList<CentroVaccinale> cercaCentroVaccinaleNome(String nomeCV) throws RemoteException, SQLException {
         ArrayList<CentroVaccinale> centriVaccinali = new ArrayList();
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
         //ResultSet rs1 = statement.executeQuery(cercaCentroVaccinalePerNome);
         ResultSet rs1 = statement.executeQuery("SELECT * " +
                 "FROM centrivaccinali " +
-                "WHERE nome = " + nomeCV + " " +      //todo Metodo da implementare che deve restituire il nome del centro vaccinale che l'utente ha cercato
-                "ORDER BY idCentroVaccinale");
+                "WHERE nome = " + "'" + nomeCV + "'");      //todo Metodo da implementare che deve restituire il nome del centro vaccinale che l'utente ha cercato
+
 
         while (rs1.next()){
             String id = rs1.getString("idCentroVaccinale");
@@ -148,11 +150,40 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
             String tipologia = rs1.getString("tipologia");
 
             //assegnare il valore al qualificatore della via
-            //if(qualificatore.equalsIgnoreCase(Qualificatore))
+            Qualificatore q;
+            if(qualificatore.equalsIgnoreCase(Qualificatore.Via.name())){
+                q = Qualificatore.Via;
+            }else if(qualificatore.equalsIgnoreCase(Qualificatore.Viale.name())){
+                q = Qualificatore.Viale;
+            }else if(qualificatore.equalsIgnoreCase(Qualificatore.Piazza.name())){
+                q = Qualificatore.Piazza;
+            }else if(qualificatore.equalsIgnoreCase(Qualificatore.Largo.name())) {
+                q = Qualificatore.Largo;
+            }else if(qualificatore.equalsIgnoreCase(Qualificatore.Vicolo.name())) {
+                q = Qualificatore.Vicolo;
+            }else if(qualificatore.equalsIgnoreCase(Qualificatore.Piazzale.name())) {
+                q = Qualificatore.Piazzale;
+            }else{
+                q = Qualificatore.Corso;
+            }
+
+            //assegnare il valore alla tipologia del centro vaccinale
+            TipologiaCV t;
+            if(tipologia.equalsIgnoreCase(TipologiaCV.Ospedaliero.name())){
+                t = TipologiaCV.Ospedaliero;
+            }else if(tipologia.equalsIgnoreCase(TipologiaCV.Aziendale.name())){
+                t = TipologiaCV.Aziendale;}
+            else{
+                t = TipologiaCV.Hub;
+            }
+
             //creazione dell'oggetto indirizzo per poter istanziare un oggetto CentroVaccinale
-            //centriVaccinali.add(new CentroVaccinale(id, nome, new Indirizzo(qualificatore, indirizzo, numeroCivico,comune, cap , provincia), tipologia)); //(opzionale) todo modificare la classe indirizzo in modo che contenga solo via, nome via e numero senza il comune e provincia che vanno inseriti nel costruttore di centroVaccinale
-            //System.out.println("Id = " + id + " |Nome = " + nome + " |Indirizzo = " + indirizzo + " |Comune = " + comune + " |Provincia = " + provincia + " |Tipologia = " + tipologia);
+            CentroVaccinale CV = new CentroVaccinale(id, nome, new Indirizzo(q, indirizzo, numeroCivico,comune, Integer.parseInt(cap) , provincia), t);
+            centriVaccinali.add(CV);
+            System.out.println(centriVaccinali);
         }
+        System.out.println(centriVaccinali);
+        return centriVaccinali;
     }
 
     public synchronized void cercaCentroVaccinaleNome() throws RemoteException, SQLException {
