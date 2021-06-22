@@ -133,7 +133,7 @@
                            <children>
                               <Label fx:id="idCentroVacinaleLabel" alignment="CENTER" text="Label">
                                  <font>
-                                    <Font name="Cambria" size="22.0" />
+                                    <Font name="Cambria" size="20.0" />
                                  </font>
                                  <HBox.margin>
                                     <Insets />
