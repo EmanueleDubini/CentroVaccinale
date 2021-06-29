@@ -204,7 +204,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         //ResultSet rs1 = statement.executeQuery(cercaCentroVaccinalePerNome);
         ResultSet rs1 = statement.executeQuery("SELECT * " +
                 "FROM centrivaccinali " +
-                "WHERE nome LIKE " + "'%" + nomeCV + "%'");      //todo Metodo da implementare che deve restituire il nome del centro vaccinale che l'utente ha cercato
+                "WHERE LOWER(nome) LIKE " + "LOWER('%" + nomeCV + "%')");
 
 
         System.err.println(rs1.toString());

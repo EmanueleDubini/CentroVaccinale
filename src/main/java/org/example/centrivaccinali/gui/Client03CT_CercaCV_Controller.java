@@ -4,27 +4,24 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.ScrollPane;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.Region;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.*;
 import org.example.common.CentroVaccinale;
 import org.example.common.Indirizzo;
 
 import java.io.IOException;
+import java.net.URL;
 import java.rmi.RemoteException;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ResourceBundle;
 
-public class Client03CT_CercaCV_Controller {
+public class Client03CT_CercaCV_Controller implements Initializable {
 
     @FXML
     public Button bottoneRicerca;
@@ -46,16 +43,75 @@ public class Client03CT_CercaCV_Controller {
     public GridPane grid = new GridPane();
     @FXML
     public Label ViaLabel;
+    @FXML
+    public HBox ricercaNome;
+    @FXML
+    public Button bottoneRicercaNome;
+    @FXML
+    public HBox ricercaComuneTipolgia;
+    @FXML
+    public TextField comuneDaRicercare;
+    @FXML
+    public ComboBox<String> tipologiaDaRicercare = new ComboBox();
+    @FXML
+    public Button bottoneRicercaComuneTipologia;
+
+    ToggleGroup selectionToggleGroup = new ToggleGroup();
+
+    @FXML
+    public RadioButton radioButtonNome;
+    @FXML
+    public RadioButton radioButtonComuneTipologia;
+
 
     private List<CentroVaccinale> centriVaccinali = new ArrayList<>();
     private Image image;
     private CercaCVListener cercaCVListener;
 
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
 
-    public List<CentroVaccinale> ricerca() throws SQLException, RemoteException {
+        ricercaNome.setVisible(true);
+        ricercaComuneTipolgia.setVisible(false);
+
+        ////////////// COMBO BOX TIPOLOGIA //////////////
+        tipologiaDaRicercare.setValue("");
+
+        tipologiaDaRicercare.getItems().add("Ospedaliero");
+        tipologiaDaRicercare.getItems().add("Aziendale");
+        tipologiaDaRicercare.getItems().add("Hub");
+        /////////////////////////////////////////////////
+
+        radioButtonNome.setToggleGroup(selectionToggleGroup);
+        radioButtonComuneTipologia.setToggleGroup(selectionToggleGroup);
+
+        radioButtonNome.setSelected(true);
+
+        selectionToggleGroup.selectedToggleProperty()
+                .addListener((observable, oldVal, newVal) -> this.cambiaRicerca(newVal));
+    }
+
+    private void cambiaRicerca(Toggle newVal) {
+        if(newVal.equals(radioButtonNome)){
+            ricercaNome.setVisible(true);
+            ricercaComuneTipolgia.setVisible(false);
+        }else {
+            ricercaNome.setVisible(false);
+            ricercaComuneTipolgia.setVisible(true);
+        }
+    }
+
+    public List<CentroVaccinale> ricercaNome() throws SQLException, RemoteException {
         String nome = nomeDaRicercare.getText().strip();
+        //todo effettuare il controllo che non sia presente la stringa vuota
         System.err.println(nome);
         return ClientCVController.stub.cercaCentroVaccinaleNome(nome);
+    }
+
+    public List<CentroVaccinale> ricercaComuneTipologia() throws SQLException, RemoteException {
+        //todo come ricercaNome ma con comune e tipologia
+        //todo effettuare il controllo che non sia presente la stringa vuota
+        return ClientCVController.stub.cercaCentroVaccinaleNome("poi modificare con ricerca comune e tipologia");
     }
 
     private void impostaCVscelto(CentroVaccinale centroVaccinale) {
@@ -74,10 +130,11 @@ public class Client03CT_CercaCV_Controller {
         System.err.println("CANCELLAZIONE GRIGLIA!!!");
     }
 
-    public void initialize(ActionEvent actionEvent) {
+    //metodo collegato al bottone di ricerca per nome
+    public void invioRicercaNome(ActionEvent actionEvent) {
 
         try {
-            centriVaccinali.addAll(ricerca());
+            centriVaccinali.addAll(ricercaNome());
         } catch (Exception e) {
             System.err.println("ERRORE NELLA CLASSE: Client03CT_CercaCV_Controller");
             e.printStackTrace();
@@ -128,6 +185,10 @@ public class Client03CT_CercaCV_Controller {
         resetItem();
     }
 
+    public void invioRicercaComuneTipologia(ActionEvent actionEvent) {
+        //todo come invioricercanome ma con comune e tipologia
+    }
+
     public void onClickQuit(ActionEvent actionEvent) {
         Platform.exit();
     }
@@ -135,6 +196,7 @@ public class Client03CT_CercaCV_Controller {
     public void to_02CT_MainWindow(ActionEvent actionEvent) throws IOException {
         ClientCVMain.setRoot("02CT_MainWindow");
     }
+
 }
 
 
