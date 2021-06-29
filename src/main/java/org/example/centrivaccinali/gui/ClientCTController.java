@@ -108,7 +108,7 @@ public class ClientCTController implements Initializable {
      */
     public void to_03CT_InfoCV() throws IOException {
         //ClientCVMain.setRoot("03CT_CercaCV");
-        ClientCVMain.setRoot("market");
+        ClientCVMain.setRoot("03CT_CercaCV");
     }
 
     /**

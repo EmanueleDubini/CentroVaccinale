@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -14,10 +15,8 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
-import org.example.centrivaccinali.TipologiaCV;
 import org.example.common.CentroVaccinale;
 import org.example.common.Indirizzo;
-import org.example.common.Qualificatore;
 
 import java.io.IOException;
 import java.net.URL;
@@ -27,7 +26,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class Client03CT_CercaCV_Controller implements Initializable {
+//public class Client03CT_CercaCV_Controller implements Initializable {
+public class Client03CT_CercaCV_Controller {
 
     @FXML
     public Button bottoneRicerca;
@@ -46,7 +46,7 @@ public class Client03CT_CercaCV_Controller implements Initializable {
     @FXML
     public Label idCentroVacinaleLabel;
     @FXML
-    public GridPane grid;
+    public GridPane grid = new GridPane();
     @FXML
     public Label ViaLabel;
 
@@ -98,11 +98,11 @@ public class Client03CT_CercaCV_Controller implements Initializable {
         //CVImg.setImage(image);
 
         //chosenCV.setStyle("-fx-background-color: #" + "95897f" + ";\n" +  //setta il colore di sfondo del CV scelto
-               // "    -fx-background-radius: 30;");
+        // "    -fx-background-radius: 30;");
         chosenCV.setStyle("-fx-background-radius: 30;");
     }
 
-    @Override
+    /*@Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         try {
             centriVaccinali.addAll(ricerca());
@@ -120,6 +120,8 @@ public class Client03CT_CercaCV_Controller implements Initializable {
                 }
             };
         }
+
+
 
         int column = 0;
         int row = 1;
@@ -153,9 +155,22 @@ public class Client03CT_CercaCV_Controller implements Initializable {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }*/
+
+    private void resetItem() { //todo sistemare il metodo per cancellare ogni elemento prima di una ricerca
+                /*while(grid.getRowConstraints().size() > 0) {
+            grid.getRowConstraints().remove(0);
+        }
+
+        while(grid.getColumnConstraints().size() > 0) {
+            grid.getColumnConstraints().remove(0);
+        }
+        grid.getChildren().removeAll();
+        System.err.println("CANCELLAZIONE GRIGLIA!!!");*/
     }
 
     public void initialize(ActionEvent actionEvent) {
+        resetItem();
         try {
             centriVaccinali.addAll(ricerca());
         } catch (Exception e) {
@@ -173,40 +188,44 @@ public class Client03CT_CercaCV_Controller implements Initializable {
             };
         }
 
-        int column = 0;
-        int row = 1;
-        try {
-            for (int i = 0; i < centriVaccinali.size(); i++) {
+
+            int column = 0;
+            int row = 1;
+            try {
+                for (int i = 0; i < centriVaccinali.size(); i++) {
                 /*FXMLLoader fxmlLoader = new FXMLLoader();
                 fxmlLoader.setLocation(getClass().getResource("src/main/resources/org/example/centrivaccinali/gui/item.fxml"));*/
 
-                FXMLLoader fxmlLoader = new FXMLLoader(ClientCVMain.class.getResource("item.fxml"));
-                AnchorPane anchorPane = fxmlLoader.load();
+                    FXMLLoader fxmlLoader = new FXMLLoader(ClientCVMain.class.getResource("item.fxml"));
+                    AnchorPane anchorPane = fxmlLoader.load();
 
-                ItemController itemController = fxmlLoader.getController();
-                itemController.setData(centriVaccinali.get(i),cercaCVListener);
+                    ItemController itemController = fxmlLoader.getController();
+                    itemController.setData(centriVaccinali.get(i), cercaCVListener);
 
-                if (column == 3) {
-                    column = 0;
-                    row++;
+                    if (column == 3) {
+                        column = 0;
+                        row++;
+                    }
+
+                    grid.add(anchorPane, column++, row); //(child,column,row)
+                    //set grid width
+                    grid.setMinWidth(Region.USE_COMPUTED_SIZE);
+                    grid.setPrefWidth(Region.USE_COMPUTED_SIZE);
+                    grid.setMaxWidth(Region.USE_PREF_SIZE);
+
+                    //set grid height
+                    grid.setMinHeight(Region.USE_COMPUTED_SIZE);
+                    grid.setPrefHeight(Region.USE_COMPUTED_SIZE);
+                    grid.setMaxHeight(Region.USE_PREF_SIZE);
+
+                    GridPane.setMargin(anchorPane, new Insets(10));
                 }
-
-                grid.add(anchorPane, column++, row); //(child,column,row)
-                //set grid width
-                grid.setMinWidth(Region.USE_COMPUTED_SIZE);
-                grid.setPrefWidth(Region.USE_COMPUTED_SIZE);
-                grid.setMaxWidth(Region.USE_PREF_SIZE);
-
-                //set grid height
-                grid.setMinHeight(Region.USE_COMPUTED_SIZE);
-                grid.setPrefHeight(Region.USE_COMPUTED_SIZE);
-                grid.setMaxHeight(Region.USE_PREF_SIZE);
-
-                GridPane.setMargin(anchorPane, new Insets(10));
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-        } catch (IOException e) {
-            e.printStackTrace();
         }
-    }
+
+
 }
+
 
