@@ -1,5 +1,5 @@
 /*
-  LABORATORIO INTERDISCIPLINARE A - Como AA20-21
+  LABORATORIO INTERDISCIPLINARE B - Como AA20-21
 
   BANCORA Davide       | 743662 | Como
   CASALNOVO Giacomo    | 740003 | Como
@@ -36,7 +36,9 @@ public class DbHelper {
 
     private static Statement statement = null;
 
-    // costruttore vuoto
+    /**
+     * costruttore vuoto
+     */
     public DbHelper(){ }
 
     // uso il DRIVER MANAGER per creare la connessione, NON c'è indicazione del driver da utilizzare.

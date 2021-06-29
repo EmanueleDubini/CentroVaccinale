@@ -1,5 +1,5 @@
 /*
-  LABORATORIO INTERDISCIPLINARE A - Como AA20-21
+  LABORATORIO INTERDISCIPLINARE B - Como AA20-21
 
   BANCORA Davide       | 743662 | Como
   CASALNOVO Giacomo    | 740003 | Como
@@ -33,7 +33,7 @@ public class QueryRicerca {
     //public static List<Indirizzo> ricercaIndirizzo
 
 
-    /*
+    /* //todo eliminare commento
     public static List<String> ricercaCV(String tipoRicerca) throws SQLException{
         DbHelper.getConnection();
         Statement statement = DbHelper.getConnection().createStatement();
@@ -56,5 +56,4 @@ public class QueryRicerca {
 
 
      */
-
 }
