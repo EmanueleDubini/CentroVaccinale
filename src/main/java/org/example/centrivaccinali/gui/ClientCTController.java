@@ -271,7 +271,6 @@ public class ClientCTController implements Initializable {
         Boolean verify = ClientCVController.stub.login(username, password);
 
 
-
         if(verify) {
             resetInserimentoLogin();
             to_04CT_EventiAvversiCT();
@@ -282,8 +281,6 @@ public class ClientCTController implements Initializable {
             alert.setContentText("Utente non registrato!");
             alert.showAndWait();
         }
-
-
     }
 
     private void resetInserimentoLogin() {

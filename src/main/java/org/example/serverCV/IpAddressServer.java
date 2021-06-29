@@ -1,5 +1,5 @@
 /*
-  LABORATORIO INTERDISCIPLINARE A - Como AA20-21
+  LABORATORIO INTERDISCIPLINARE B - Como AA20-21
 
   BANCORA Davide       | 743662 | Como
   CASALNOVO Giacomo    | 740003 | Como
@@ -21,6 +21,12 @@ import java.util.Enumeration;
  * collegarsi sia da locale che da remoto
  */
 public class IpAddressServer {
+
+    /**
+     * metodo che restituisce l'indirizzo ip corrente della macchina su cui viene eseguita il programma
+     *
+     * @return stringa che contiene l'indirizzo ip
+     */
     public static String getServerAddress()  {
 
         String ip = null;
