@@ -123,15 +123,12 @@ public class ClientCTController implements Initializable {
         ClientCVMain.setRoot("04CT_EventiAvversiCT");
     }
 
-
-
     /**
      * Questo metodo è associato al bottone "exit" dell'applicazione per chiuderla
      */
     public void onClickQuit() {
         Platform.exit();
     }
-
 
     /**
      * Questo metodo crea un messaggio di Alert che restituisce informazioni riguardanti il progetto
@@ -239,7 +236,6 @@ public class ClientCTController implements Initializable {
 
             alert.showAndWait();
         } else {
-
             Boolean verify = ClientCVController.stub.registraCittadino(cfRegistrato, cognomeRegistrato, nomeRegistrato, emailRegistrato, usernameRegistrato, passwordRegistrato, idVaccinazioneRegistrato);
             if(verify) {
                 resetInserimentoRegistrazione();
@@ -260,17 +256,22 @@ public class ClientCTController implements Initializable {
         TextFieldIdVaccinazioneVaccinato.setText("");
     }
 
-    public void cercaCentroVaccinale(ActionEvent actionEvent) {
 
+    public void cercaCentroVaccinale(ActionEvent actionEvent) {
     }
 
+    /**
+     * Controlla e verifica il login: se l'utente si é registrato correttamente inserendo
+     * username e password. In caso contrario, lo fará notare all'utente con una stringa di errore
+     * @param actionEvent
+     * @throws SQLException
+     * @throws IOException
+     */
     public void login(ActionEvent actionEvent) throws SQLException, IOException {
         String username = TextFieldUsername.getText();
         String password = TextFieldPassword.getText();
 
         Boolean verify = ClientCVController.stub.login(username, password);
-
-
 
         if(verify) {
             resetInserimentoLogin();
@@ -286,12 +287,20 @@ public class ClientCTController implements Initializable {
 
     }
 
+    /**
+     * Resetta l'username e la password nella finestra di login.
+     */
     private void resetInserimentoLogin() {
         TextFieldUsername.setText("");
         TextFieldPassword.setText("");
     }
 
-
+    /**
+     * Inserisce eventuali eventi avversi dopo la somministrazine del vaccino.
+     * @param actionEvent
+     * @throws SQLException
+     * @throws RemoteException
+     */
     public void inserisciEventiAvversi(ActionEvent actionEvent) throws SQLException, RemoteException {
         evento = eventoBox.getValue();
         severita = TextFieldSeverita.getText();

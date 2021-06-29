@@ -142,7 +142,10 @@ public class ClientCVController implements Initializable {
 
     }
 
-    /////////////////////// metodi per spostarsi tra le finestre ///////////////////////
+    /**
+     * Questi metodi permettono di spostarsi tra le varie finestre.
+     * @throws IOException
+     */
     public void to_01_LandingPage() throws IOException {
         ClientCVMain.setRoot("01_LandingPage");
     }
@@ -324,7 +327,7 @@ public class ClientCVController implements Initializable {
     }
 
     /**
-     * //todo
+     * //Questo metodo resetta gli inserimenti.
      */
 
     private void resetInserimentoCV() {
@@ -445,7 +448,6 @@ public class ClientCVController implements Initializable {
      * @param comune da verificarne la validità
      * @return true nel caso in cui il comune sia corretto, false altrimenti
      */
-
 
     private Boolean validitaComune(String comune) {
         String letturaFile;
