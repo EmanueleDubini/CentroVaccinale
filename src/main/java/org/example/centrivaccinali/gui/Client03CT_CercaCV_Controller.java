@@ -93,7 +93,6 @@ public class Client03CT_CercaCV_Controller {
             };
         }
 
-
             int column = 0;
             int row = 1;
             try {
@@ -122,9 +121,7 @@ public class Client03CT_CercaCV_Controller {
                     grid.setMaxHeight(Region.USE_PREF_SIZE);
 
                     GridPane.setMargin(anchorPane, new Insets(10));
-
                 }
-
             } catch (IOException e) {
                 e.printStackTrace();
             }
