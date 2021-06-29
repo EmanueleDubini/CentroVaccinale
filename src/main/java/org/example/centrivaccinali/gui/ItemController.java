@@ -23,7 +23,7 @@ public class ItemController {
         this.centroVaccinale = centroVaccinale;
         this.cercaCVListener = cercaCVListener;
         nameLabel.setText(centroVaccinale.getNome());
-        //Image image = new Image("org/example/images/primula.png"); todo
+        //Image image = new Image("org/example/images/primula.png");
         //img.setImage(image);
     }
 }
