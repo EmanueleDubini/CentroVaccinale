@@ -108,7 +108,7 @@ public class ClientCTController implements Initializable {
      */
     public void to_03CT_InfoCV() throws IOException {
         //ClientCVMain.setRoot("03CT_CercaCV");
-        ClientCVMain.setRoot("market");
+        ClientCVMain.setRoot("03CT_CercaCV");
     }
 
     /**
@@ -123,12 +123,15 @@ public class ClientCTController implements Initializable {
         ClientCVMain.setRoot("04CT_EventiAvversiCT");
     }
 
+
+
     /**
      * Questo metodo è associato al bottone "exit" dell'applicazione per chiuderla
      */
     public void onClickQuit() {
         Platform.exit();
     }
+
 
     /**
      * Questo metodo crea un messaggio di Alert che restituisce informazioni riguardanti il progetto
@@ -256,8 +259,8 @@ public class ClientCTController implements Initializable {
         TextFieldIdVaccinazioneVaccinato.setText("");
     }
 
-
     public void cercaCentroVaccinale(ActionEvent actionEvent) {
+
     }
 
     /**
@@ -273,6 +276,7 @@ public class ClientCTController implements Initializable {
 
         Boolean verify = ClientCVController.stub.login(username, password);
 
+
         if(verify) {
             resetInserimentoLogin();
             to_04CT_EventiAvversiCT();
@@ -283,8 +287,6 @@ public class ClientCTController implements Initializable {
             alert.setContentText("Utente non registrato!");
             alert.showAndWait();
         }
-
-
     }
 
     /**

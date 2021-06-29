@@ -1,5 +1,5 @@
 /*
-  LABORATORIO INTERDISCIPLINARE A - Como AA20-21
+  LABORATORIO INTERDISCIPLINARE B - Como AA20-21
 
   BANCORA Davide       | 743662 | Como
   CASALNOVO Giacomo    | 740003 | Como
@@ -19,8 +19,12 @@ import java.sql.SQLException;
  */
 public class QueryDebug {
 
-    public QueryDebug() throws SQLException {
-    }
+    /**
+     * costruttore vuoto
+     *
+     * @throws SQLException SQLException
+     */
+    public QueryDebug() throws SQLException { }
 
     // DATABASE
     public static String createDB = "CREATE DATABASE IF NOT EXISTS centrivaccinalidb";
@@ -76,6 +80,4 @@ public class QueryDebug {
                                                     ")";
 
     public static String dropEventiAvversiTable = "DROP TABLE IF EXISTS eventi_avversi";
-
-
 }//END_Query
