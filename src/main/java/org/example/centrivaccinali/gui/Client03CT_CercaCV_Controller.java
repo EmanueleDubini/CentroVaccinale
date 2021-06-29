@@ -27,8 +27,6 @@ import java.util.List;
 public class Client03CT_CercaCV_Controller {
 
     @FXML
-    public ScrollPane scroll;
-    @FXML
     public Button bottoneRicerca;
     @FXML
     public TextField nomeDaRicercare;
