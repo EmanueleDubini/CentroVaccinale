@@ -256,6 +256,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
             System.out.println(centriVaccinali);
         }
         System.out.println(centriVaccinali);
+        System.out.println("HO FINITO");
         return centriVaccinali;
     }
 

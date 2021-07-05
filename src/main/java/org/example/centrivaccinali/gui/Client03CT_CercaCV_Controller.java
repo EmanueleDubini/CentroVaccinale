@@ -1,3 +1,13 @@
+/*
+  LABORATORIO INTERDISCIPLINARE A - Como AA20-21
+
+  BANCORA Davide       | 743662 | Como
+  CASALNOVO Giacomo    | 740003 | Como
+  DONATO Benedetta     | 742957 | Como
+  DUBINI Emanuele      | 740954 | Como
+
+ */
+
 package org.example.centrivaccinali.gui;
 
 import javafx.application.Platform;

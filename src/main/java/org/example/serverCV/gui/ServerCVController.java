@@ -136,8 +136,8 @@ public class ServerCVController {
                 """
                         'Centro Vaccinale' - Server CV
 
-                        Se siete arrivati fino a qui sapete bene di cosa si tratta.
-                        Se volete, leggete pure questa guida, ma l'unica risposta che troverete sarà 42.""", ButtonType.OK);
+                        Questo è il server che sta girando.
+                        Può servire in DEBUG a poplare il DB.""", ButtonType.OK);
 
         info.showAndWait();
     }
