@@ -46,43 +46,43 @@
             <Font size="28.0" />
          </font>
       </Label>
-      <TextField fx:id="TextFieldSeverita" layoutX="480.0" layoutY="480.0" prefHeight="25.0" prefWidth="149.0" promptText="0" />
-      <Button layoutX="1040.0" layoutY="656.0" mnemonicParsing="false" onAction="#inserisciEventiAvversi" prefHeight="38.0" prefWidth="149.0" text="Inserisci Evento">
+      <TextField fx:id="severitaTachicardia" layoutX="480.0" layoutY="480.0" prefHeight="25.0" prefWidth="149.0" promptText="0" />
+      <Button fx:id="buttonInserisciEvento" layoutX="1040.0" layoutY="656.0" mnemonicParsing="false" onAction="#inserisciEventiAvversi" prefHeight="38.0" prefWidth="149.0" text="Inserisci Evento">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
       <ComboBox fx:id="eventoBox" layoutX="834.0" layoutY="68.0" prefHeight="25.0" prefWidth="248.0" />
-      <TextField fx:id="TextFieldSeverita1" layoutX="480.0" layoutY="420.0" prefHeight="25.0" prefWidth="149.0" promptText="0" />
-      <TextField fx:id="TextFieldSeverita11" layoutX="480.0" layoutY="540.0" prefHeight="25.0" prefWidth="149.0" promptText="0" />
-      <TextField fx:id="TextFieldSeverita12" layoutX="480.0" layoutY="360.0" prefHeight="25.0" prefWidth="149.0" promptText="0" />
-      <TextField fx:id="TextFieldSeverita13" layoutX="480.0" layoutY="300.0" prefHeight="25.0" prefWidth="149.0" promptText="0" />
-      <Label layoutX="100.0" layoutY="360.0" text="Febbre:">
+      <TextField fx:id="severitaDolori" layoutX="480.0" layoutY="420.0" prefHeight="25.0" prefWidth="149.0" promptText="0" />
+      <TextField fx:id="severitaLinfoadenopatia" layoutX="480.0" layoutY="540.0" prefHeight="25.0" prefWidth="149.0" promptText="0" />
+      <TextField fx:id="severitaFebbre" layoutX="480.0" layoutY="360.0" prefHeight="25.0" prefWidth="149.0" promptText="0" />
+      <TextField fx:id="severitaMalDiTesta" layoutX="480.0" layoutY="300.0" prefHeight="25.0" prefWidth="149.0" promptText="0" />
+      <Label fx:id="labelFebbre" layoutX="100.0" layoutY="360.0" text="Febbre:">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Label layoutX="100.0" layoutY="540.0" text="Linfoadenopatia:">
+      <Label fx:id="labelLinfoadenopatia" layoutX="100.0" layoutY="540.0" text="Linfoadenopatia:">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Label layoutX="100.0" layoutY="300.0" text="Mal di Testa:">
+      <Label fx:id="labelMalDiTesta" layoutX="100.0" layoutY="300.0" text="Mal di Testa:">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Label layoutX="100.0" layoutY="420.0" text="Dolori muscolari e/o articolari:">
+      <Label fx:id="labelDolori" layoutX="100.0" layoutY="420.0" text="Dolori muscolari e/o articolari:">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Label layoutX="100.0" layoutY="480.0" text="Tachicardia:">
+      <Label fx:id="labelTachicardia" layoutX="100.0" layoutY="480.0" text="Tachicardia:">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Label layoutX="100.0" layoutY="600.0" text="Crisi ipertensiva:">
+      <Label fx:id="labelCrisiIpertensiva" layoutX="100.0" layoutY="600.0" text="Crisi ipertensiva:">
          <font>
             <Font size="24.0" />
          </font>
@@ -92,12 +92,12 @@
             <Font size="28.0" />
          </font>
       </Label>
-      <TextField layoutX="480.0" layoutY="600.0" promptText="0" />
-      <TextField layoutX="740.0" layoutY="300.0" prefHeight="40.0" prefWidth="450.0" />
-      <TextField layoutX="740.0" layoutY="360.0" prefHeight="40.0" prefWidth="450.0" />
-      <TextField layoutX="740.0" layoutY="420.0" prefHeight="40.0" prefWidth="450.0" />
-      <TextField layoutX="740.0" layoutY="480.0" prefHeight="40.0" prefWidth="450.0" />
-      <TextField layoutX="740.0" layoutY="540.0" prefHeight="40.0" prefWidth="450.0" />
-      <TextField layoutX="740.0" layoutY="600.0" prefHeight="40.0" prefWidth="450.0" />
+      <TextField fx:id="severitaCrisiIpertensiva" layoutX="480.0" layoutY="600.0" promptText="0" />
+      <TextField fx:id="noteMalDiTesta" layoutX="740.0" layoutY="300.0" prefHeight="40.0" prefWidth="450.0" />
+      <TextField fx:id="noteFebbre" layoutX="740.0" layoutY="360.0" prefHeight="40.0" prefWidth="450.0" />
+      <TextField fx:id="noteDolori" layoutX="740.0" layoutY="420.0" prefHeight="40.0" prefWidth="450.0" />
+      <TextField fx:id="noteTachicardia" layoutX="740.0" layoutY="480.0" prefHeight="40.0" prefWidth="450.0" />
+      <TextField fx:id="noteLinfoadenopatia" layoutX="740.0" layoutY="540.0" prefHeight="40.0" prefWidth="450.0" />
+      <TextField fx:id="noteCrisiIpertensiva" layoutX="740.0" layoutY="600.0" prefHeight="40.0" prefWidth="450.0" />
    </children>
 </Pane>

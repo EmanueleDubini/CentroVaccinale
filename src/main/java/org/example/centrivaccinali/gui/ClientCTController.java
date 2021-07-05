@@ -61,7 +61,53 @@ public class ClientCTController implements Initializable {
     private TextField TextFieldSeverita;
 
     @FXML
-    private TextArea TextAreaNote;
+    private Label labelMalDiTesta;
+    @FXML
+    private TextField severitaMalDiTesta;
+    @FXML
+    private TextField noteMalDiTesta;
+
+    @FXML
+    private Label labelFebbre;
+    @FXML
+    private TextField severitaFebbre;
+    @FXML
+    private TextField noteFebbre;
+
+    @FXML
+    private Label labelDolori;
+    @FXML
+    private TextField severitaDolori;
+    @FXML
+    private TextField noteDolori;
+
+    @FXML
+    private Label labelTachicardia;
+    @FXML
+    private TextField severitaTachicardia;
+    @FXML
+    private TextField noteTachicardia;
+
+    @FXML
+    private Label labelLinfoadenopatia;
+    @FXML
+    private TextField severitaLinfoadenopatia;
+    @FXML
+    private TextField noteLinfoadenopatia;
+
+    @FXML
+    private Label labelCrisiIpertensiva;
+    @FXML
+    private TextField severitaCrisiIpertensiva;
+    @FXML
+    private TextField noteCrisiIpertensiva;
+
+    String evento1, severita1, note1;
+    String evento2, severita2, note2;
+    String evento3, severita3, note3;
+    String evento4, severita4, note4;
+    String evento5, severita5, note5;
+    String evento6, severita6, note6;
 
     String nomeRegistrato, cognomeRegistrato, cfRegistrato, emailRegistrato ,usernameRegistrato, passwordRegistrato,  idVaccinazioneRegistrato;
 
@@ -314,9 +360,29 @@ public class ClientCTController implements Initializable {
      * @throws RemoteException
      */
     public void inserisciEventiAvversi(ActionEvent actionEvent) throws SQLException, RemoteException {
-        evento = eventoBox.getValue();
-        severita = TextFieldSeverita.getText();
-        note = TextAreaNote.getText();
+        //evento1 = labelMalDiTesta.getText();
+        severita1 = severitaMalDiTesta.getText();
+        note1 = noteMalDiTesta.getText();
+
+       //evento2 = labelFebbre.getText();
+        severita2 = severitaFebbre.getText();
+        note2 = noteFebbre.getText();
+
+        //evento3 = labelDolori.getText();
+        severita3 = severitaDolori.getText();
+        note3 = noteDolori.getText();
+
+        //evento4 = labelTachicardia.getText();
+        severita4 = severitaTachicardia.getText();
+        note4 = noteTachicardia.getText();
+
+        //evento5 = labelLinfoadenopatia.getText();
+        severita5 = severitaLinfoadenopatia.getText();
+        note5 = noteLinfoadenopatia.getText();
+
+        //evento6 = labelCrisiIpertensiva.getText();
+        severita6 = severitaCrisiIpertensiva.getText();
+        note6 = noteCrisiIpertensiva.getText();
 
         if ((evento.equals("") ||
                 severita.equals("")) ||
