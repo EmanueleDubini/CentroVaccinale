@@ -22,7 +22,8 @@ import java.sql.SQLException;
 import java.util.ResourceBundle;
 import java.util.regex.Pattern;
 
-public class ClientCTController implements Initializable {
+
+public class ClientCTController  {
 
     //TextField relativi alla pagina: 03CT_LoginWindow
     @FXML
@@ -53,12 +54,7 @@ public class ClientCTController implements Initializable {
     @FXML
     private TextField TextFieldIdVaccinazioneVaccinato;
 
-    //TextField & Combobox relativi alla pagina: 04CT_EventiAvversiCT
-    @FXML
-    private ComboBox<String> eventoBox = new ComboBox<>();
-
-    @FXML
-    private TextField TextFieldSeverita;
+    //TextField & Combobox relativi alla pagina: 04CT_EventiAvver
 
     @FXML
     private Label labelMalDiTesta;
@@ -111,19 +107,7 @@ public class ClientCTController implements Initializable {
 
     String nomeRegistrato, cognomeRegistrato, cfRegistrato, emailRegistrato ,usernameRegistrato, passwordRegistrato,  idVaccinazioneRegistrato;
 
-    String evento, severita, note;
 
-    public void initialize(URL arg0, ResourceBundle resourceBundle) {
-        ////////////// COMBO BOX EVENTO //////////////
-        eventoBox.setValue("");
-
-        eventoBox.getItems().add("Mal di testa");
-        eventoBox.getItems().add("Febbre");
-        eventoBox.getItems().add("Dolori muscolari e articolari");
-        eventoBox.getItems().add("Linfoadenopatia");
-        eventoBox.getItems().add("Tachicardia");
-        eventoBox.getItems().add("Crisi ipertensiva");
-    }
 
 
     /**
@@ -384,9 +368,12 @@ public class ClientCTController implements Initializable {
         severita6 = severitaCrisiIpertensiva.getText();
         note6 = noteCrisiIpertensiva.getText();
 
-        if ((evento.equals("") ||
-                severita.equals("")) ||
-                note.equals("")) {
+        if (    (severita1.equals("")) || note1.equals("") ||
+                (severita2.equals("")) || note2.equals("") ||
+                (severita3.equals("")) || note3.equals("") ||
+                (severita4.equals("")) || note4.equals("") ||
+                (severita5.equals("")) || note5.equals("") ||
+                (severita6.equals("")) || note6.equals("")) {
 
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
@@ -397,24 +384,30 @@ public class ClientCTController implements Initializable {
         } //END_if
         else {
             //todo sistemare per prendere dinamicamente id e codice fiscale
-            if(evento.equals("Mal di testa")) {
-                Boolean verify = ClientCVController.stub.inserisciEventiAvversi("5f93b2ad-f2ee-442d-9c5b-d509c059562d", "PPPRRR98B10C933V", severita, note, null, null, null, null,null,null,null, null, null, null);
+
+            Boolean verify = ClientCVController.stub.inserisciEventiAvversi("5f93b2ad-f2ee-442d-9c5b-d509c059562d", "PPPRRR98B10C933V", severita1, note1, severita2, note2, severita3, note3,severita4,note4,severita5, note5, severita6, note6);
+
+            /*
+            if(evento1.equals("Mal di testa")) {
+                Boolean verify = ClientCVController.stub.inserisciEventiAvversi("5f93b2ad-f2ee-442d-9c5b-d509c059562d", "PPPRRR98B10C933V", severita1, note1, null, null, null, null,null,null,null, null, null, null);
             }
-            if(evento.equals("Febbre")) {
-                Boolean verify = ClientCVController.stub.inserisciEventiAvversi("5f93b2ad-f2ee-442d-9c5b-d509c059562d", "PPPRRR98B10C933V", null, null, severita, note, null, null,null,null,null, null, null, null);
+            if(evento1.equals("Febbre")) {
+                Boolean verify = ClientCVController.stub.inserisciEventiAvversi("5f93b2ad-f2ee-442d-9c5b-d509c059562d", "PPPRRR98B10C933V", null, null, severita1, note1, null, null,null,null,null, null, null, null);
             }
-            if(evento.equals("Dolori muscolari e articolari")) {
-                Boolean verify = ClientCVController.stub.inserisciEventiAvversi("5f93b2ad-f2ee-442d-9c5b-d509c059562d", "PPPRRR98B10C933V", null, null, null, null, severita, note,null,null,null, null, null, null);
+            if(evento1.equals("Dolori muscolari e articolari")) {
+                Boolean verify = ClientCVController.stub.inserisciEventiAvversi("5f93b2ad-f2ee-442d-9c5b-d509c059562d", "PPPRRR98B10C933V", null, null, null, null, severita1, note1,null,null,null, null, null, null);
             }
-            if(evento.equals("Linfoadenopatia")) {
-                Boolean verify = ClientCVController.stub.inserisciEventiAvversi("5f93b2ad-f2ee-442d-9c5b-d509c059562d", "PPPRRR98B10C933V", null, null, null, null, null, null,severita,note,null, null, null, null);
+            if(evento1.equals("Linfoadenopatia")) {
+                Boolean verify = ClientCVController.stub.inserisciEventiAvversi("5f93b2ad-f2ee-442d-9c5b-d509c059562d", "PPPRRR98B10C933V", null, null, null, null, null, null, severita1, note1,null, null, null, null);
             }
-            if(evento.equals("Tachicardia")) {
-                Boolean verify = ClientCVController.stub.inserisciEventiAvversi("5f93b2ad-f2ee-442d-9c5b-d509c059562d", "PPPRRR98B10C933V", null, null, null, null, null, null,null,null,severita, note, null, null);
+            if(evento1.equals("Tachicardia")) {
+                Boolean verify = ClientCVController.stub.inserisciEventiAvversi("5f93b2ad-f2ee-442d-9c5b-d509c059562d", "PPPRRR98B10C933V", null, null, null, null, null, null,null,null, severita1, note1, null, null);
             }
-            if(evento.equals("Crisi ipertensiva")) {
-                Boolean verify = ClientCVController.stub.inserisciEventiAvversi("5f93b2ad-f2ee-442d-9c5b-d509c059562d", "PPPRRR98B10C933V", null, null, null, null, null, null,null,null,null, null, severita, note);
+            if(evento1.equals("Crisi ipertensiva")) {
+                Boolean verify = ClientCVController.stub.inserisciEventiAvversi("5f93b2ad-f2ee-442d-9c5b-d509c059562d", "PPPRRR98B10C933V", null, null, null, null, null, null,null,null,null, null, severita1, note1);
             }
+
+             */
         }
     }
 }//End_Class
