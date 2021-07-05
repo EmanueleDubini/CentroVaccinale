@@ -67,12 +67,19 @@ public class ServerCVController {
     private final int NUMCT = 1000; // numero CT generati auto
     private int NUMCV = 1000; // numero CV generati auto
 
+    /**
+     * Bottone che fa eseguire il login al DB
+     * @throws RemoteException
+     */
     @FXML
     public void serverLogin() throws RemoteException {
         checkLogin();
     }
 
-
+    /**
+     * Metodo che controlla user/pwd del DB per accedere al server
+     * @throws RemoteException
+     */
     private void checkLogin() throws RemoteException {
         String usernameText = "postgres";
         String passwordText = "postgres";
@@ -124,24 +131,32 @@ public class ServerCVController {
         } else logArea.appendText("Inserimento dati non corretto\n");
     }
 
+    /**
+     * Cancella i campi di testo per il login al DB in caso di errore di battitura
+     */
     public void reset(){
         dbUsername.setText("");
         dbPassword.setText("");
         dbHost.setText("");
     }
 
-
+    /**
+     * Menu con una guida minimale del programma ServerCV
+     */
     public void guida(){
         Alert info = new Alert(Alert.AlertType.NONE,
                 """
                         'Centro Vaccinale' - Server CV
 
                         Questo è il server che sta girando.
-                        Può servire in DEBUG a poplare il DB.""", ButtonType.OK);
+                        Può servire in DEBUG a popolare il DB.""", ButtonType.OK);
 
         info.showAndWait();
     }
 
+    /**
+     * Informazioni sugli autori del software CentroVaccinale
+     */
    public void info() {
         Alert info = new Alert(Alert.AlertType.NONE,
                 """
@@ -159,7 +174,11 @@ public class ServerCVController {
 
     }
 
-    // DB
+    // DATABASE (DEBUG)
+    /**
+     * DEBUG: crea DB centrivaccinalidb
+     * @throws SQLException
+     */
     public void createDb() throws SQLException {
         DbHelper.getConnection();
         Statement statement = DbHelper.getConnection().createStatement();
@@ -169,6 +188,10 @@ public class ServerCVController {
         logArea.appendText("Database 'centrivaccinalidb' creato\n");
     }
 
+    /**
+     * DEBUG: cancella DB centrivaccinalidb
+     * @throws SQLException
+     */
     public void dropDb() throws SQLException {
         //DbHelper.closeConnection();
         DbHelper.getConnection();
@@ -179,7 +202,11 @@ public class ServerCVController {
         logArea.appendText("Database 'centrivaccinalidb' eliminato\n");
     }
 
-    // METODI DELLE TABELLE
+    // METODI DELLE TABELLE (DEBUG)
+    /**
+     * DEBUG: crea tabella centrivaccinali
+     * @throws SQLException
+     */
     public void createCentriVaccinaliTable() throws SQLException {
         DbHelper.getConnection();
         Statement statement = DbHelper.getConnection().createStatement();
@@ -189,6 +216,10 @@ public class ServerCVController {
         logArea.appendText("Tabella 'centrivaccinali' creata\n");
     }
 
+    /**
+     * DEBUG: cancella tabella centrivaccinali
+     * @throws SQLException
+     */
     public void dropCentriVaccinaliTable() throws SQLException {
         DbHelper.getConnection();
         Statement statement = DbHelper.getConnection().createStatement();
@@ -198,6 +229,10 @@ public class ServerCVController {
         logArea.appendText("Tabella 'centrivaccinali' eliminata\n");
     }
 
+    /**
+     * DEBUG: crea tabella cittadini_registrati
+     * @throws SQLException
+     */
     public void createCittadiniRegistratiTable() throws SQLException {
         DbHelper.getConnection();
         Statement statement = DbHelper.getConnection().createStatement();
@@ -207,6 +242,10 @@ public class ServerCVController {
         logArea.appendText("Tabella 'cittadini_registrati' creata\n");
     }
 
+    /**
+     * DEBUG: cancella tabella cittadini_registrati
+     * @throws SQLException
+     */
     public void dropCittadiniRegistratiTable() throws SQLException {
         DbHelper.getConnection();
         Statement statement = DbHelper.getConnection().createStatement();
@@ -216,6 +255,10 @@ public class ServerCVController {
         logArea.appendText("Tabella 'cittadini_registrati' eliminata\n");
     }
 
+    /**
+     * DEBUG: crea tabella eventi_avversi
+     * @throws SQLException
+     */
     public void createEventiAvversiTable() throws SQLException {
         DbHelper.getConnection();
         Statement statement = DbHelper.getConnection().createStatement();
@@ -225,6 +268,10 @@ public class ServerCVController {
         logArea.appendText("Tabella 'eventi_avversi' creata\n");
     }
 
+    /**
+     * DEBUG: cancella tabella eventi_avversi
+     * @throws SQLException
+     */
     public void dropEventiAvversiTable() throws SQLException {
         DbHelper.getConnection();
         Statement statement = DbHelper.getConnection().createStatement();
@@ -234,7 +281,11 @@ public class ServerCVController {
         logArea.appendText("Tabella 'eventi_avversi' eliminata\n");
     }
 
-    // METODI DEGLI INSERIMENTI TABELLE (debug)
+    // METODI DEGLI INSERIMENTI TABELLE (DEBUG)
+    /**
+     * DEBUG: inserisci centri vaccinali (random) in tabella centrivaccinali
+     * @throws SQLException
+     */
    public void inserimentoCentriVaccinali() throws SQLException {
         PreparedStatement statement = DbHelper.getConnection().prepareStatement(
                 "INSERT INTO centrivaccinali(idCentroVaccinale, nome, qualificatore, indirizzo, numerocivico, comune, provincia, cap, tipologia) VALUES (?,?,?,?,?,?,?,?,?)");
@@ -258,6 +309,10 @@ public class ServerCVController {
 
     }
 
+    /**
+     * DEBUG: inserisci cittadini (random) in tabella cittadini_registrati
+     * @throws SQLException
+     */
     public void inserimentoCittadini() throws SQLException {
         PreparedStatement statement = DbHelper.getConnection().prepareStatement(
                 "INSERT INTO cittadini_registrati(codiceFiscale, cognomeCittadino, nomeCittadino, email, username, password, idVaccinazione) VALUES (?,?,?,?,?,?,?)");
