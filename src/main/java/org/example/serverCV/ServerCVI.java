@@ -111,7 +111,7 @@ public interface ServerCVI extends Remote {
      * @throws RemoteException
      * @throws SQLException
      */
-    void cercaCentroVaccinaleComuneTipologia() throws RemoteException, SQLException;
+    ArrayList<CentroVaccinale> cercaCentroVaccinaleComuneTipologia(String nomeComune, String tipologiaCV) throws RemoteException, SQLException;
     void visualizzaInfoCentroVaccinale() throws RemoteException;
 
 

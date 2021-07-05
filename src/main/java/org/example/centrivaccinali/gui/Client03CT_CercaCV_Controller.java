@@ -16,6 +16,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
+import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -113,21 +114,26 @@ public class Client03CT_CercaCV_Controller implements Initializable {
     }
 
     public List<CentroVaccinale> ricercaNome() throws SQLException, RemoteException {
-        String nome = nomeDaRicercare.getText().strip();
+        String nomeCV = nomeDaRicercare.getText().strip();
         //effettuano il controllo che non sia presente la stringa vuota
-        if(nome.equals("")){
+        if(nomeCV.equals("")){
             return null;
         }else{
 
-        System.err.println(nome);
-        return ClientCVController.stub.cercaCentroVaccinaleNome(nome);
+        return ClientCVController.stub.cercaCentroVaccinaleNome(nomeCV);
         }
     }
 
     public List<CentroVaccinale> ricercaComuneTipologia() throws SQLException, RemoteException {
-        //todo come ricercaNome ma con comune e tipologia
-        //todo effettuare il controllo che non sia presente la stringa vuota
-        return ClientCVController.stub.cercaCentroVaccinaleNome("poi modificare con ricerca comune e tipologia");
+        String nomeComune = comuneDaRicercare.getText().strip();
+        String tipologiaCV = tipologiaDaRicercare.getValue();
+        //effettuano il controllo che non sia presente la stringa vuota
+        if(nomeComune.equals("") || tipologiaCV.equals("")){
+            return null;
+        }else{
+
+            return ClientCVController.stub.cercaCentroVaccinaleComuneTipologia(nomeComune, tipologiaCV);
+        }
     }
 
     private void impostaCVscelto(CentroVaccinale centroVaccinale) {
@@ -142,16 +148,31 @@ public class Client03CT_CercaCV_Controller implements Initializable {
     }
 
     private void resetItem() {
-        centriVaccinali.clear();    //Cancella l' ArrayList che contiene tutti i risultati ricevuti dal server
-        System.err.println("CANCELLAZIONE GRIGLIA!!!");
+        centriVaccinali.clear(); //Cancella l' ArrayList che contiene tutti i risultati ricevuti dal server
+        nomeDaRicercare.setText("");
+        comuneDaRicercare.setText("");
+        tipologiaDaRicercare.setValue("");
     }
 
     //metodo collegato al bottone di ricerca per nome
-    public void invioRicercaNome(ActionEvent actionEvent) {
+    public void invioRicerca(ActionEvent actionEvent) {
+
+        List<CentroVaccinale> risulati;
+
+        Node source = (Node) actionEvent.getSource();
 
         try {
-            List<CentroVaccinale> risulati = ricercaNome();
-            //se il risultato contiene le ricerche:
+            //if per capire se viene effettuata una ricerca per nome o una ricerca per comune e tipologia
+            if(source.getId().equals("bottoneRicercaNome")){
+                risulati = ricercaNome();
+            }
+            //altrimenti eseguo una ricerca per comune e tipologia
+            else{
+                risulati = ricercaComuneTipologia();
+            }
+
+
+            //una volta effettuata la ricerca, se il risultato contiene le ricerche:
             if(risulati != null){
                 //aggiunge tutti i risultati alla lista dei CV da visualizzare
                 centriVaccinali.addAll(risulati);
