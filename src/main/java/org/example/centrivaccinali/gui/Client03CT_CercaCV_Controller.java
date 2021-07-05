@@ -29,6 +29,7 @@ import java.rmi.RemoteException;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.ResourceBundle;
 
 public class Client03CT_CercaCV_Controller implements Initializable {
@@ -113,9 +114,14 @@ public class Client03CT_CercaCV_Controller implements Initializable {
 
     public List<CentroVaccinale> ricercaNome() throws SQLException, RemoteException {
         String nome = nomeDaRicercare.getText().strip();
-        //todo effettuare il controllo che non sia presente la stringa vuota
+        //effettuano il controllo che non sia presente la stringa vuota
+        if(nome.equals("")){
+            return null;
+        }else{
+
         System.err.println(nome);
         return ClientCVController.stub.cercaCentroVaccinaleNome(nome);
+        }
     }
 
     public List<CentroVaccinale> ricercaComuneTipologia() throws SQLException, RemoteException {
@@ -144,21 +150,47 @@ public class Client03CT_CercaCV_Controller implements Initializable {
     public void invioRicercaNome(ActionEvent actionEvent) {
 
         try {
-            centriVaccinali.addAll(ricercaNome());
+            List<CentroVaccinale> risulati = ricercaNome();
+            //se il risultato contiene le ricerche:
+            if(risulati != null){
+                //aggiunge tutti i risultati alla lista dei CV da visualizzare
+                centriVaccinali.addAll(risulati);
+
+                //imposta il centro vaccinale da visualizzare nel riquadro di lato a sinistra, il primo della lista
+                if (centriVaccinali.size() > 0) {
+                    //prendo il primo
+                    impostaCVscelto(centriVaccinali.get(0));
+                    cercaCVListener = new CercaCVListener() {
+                        @Override
+                        public void onClickListener(CentroVaccinale centroVaccinale) {
+                            impostaCVscelto(centroVaccinale);
+                        }
+                    };
+                }
+                //se non viene restituito nulla dalla ricerca ma era stato scritto qualcosa nella casella di testo:
+                else{
+                    Alert alert = new Alert(Alert.AlertType.WARNING);
+                    alert.setTitle("Nessun Risultato");
+                    alert.setHeaderText("Nessun elemento corrisponde alla ricerca");
+                    alert.setContentText("La ricerca non ha portato risultati.\nProva un altro criterio di ricerca");
+
+                    alert.showAndWait();
+                }
+
+            }else{
+                //se quello che viene restituito dalla ricerca e null vuol dire che non e stato scritt nulla nel textfiel della rierca
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Error");
+                alert.setHeaderText("Si è verificato un Errore");
+                alert.setContentText("Campo Ricerca Vuoto.\nInserisci un criterio di ricerca");
+
+                alert.showAndWait();
+            }
         } catch (Exception e) {
             System.err.println("ERRORE NELLA CLASSE: Client03CT_CercaCV_Controller");
             e.printStackTrace();
         }
 
-        if (centriVaccinali.size() > 0) {
-            impostaCVscelto(centriVaccinali.get(0));
-            cercaCVListener = new CercaCVListener() {
-                @Override
-                public void onClickListener(CentroVaccinale centroVaccinale) {
-                    impostaCVscelto(centroVaccinale);
-                }
-            };
-        }
 
             int column = 0;
             int row = 1;
