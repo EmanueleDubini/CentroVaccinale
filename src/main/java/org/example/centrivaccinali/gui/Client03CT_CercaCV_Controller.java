@@ -248,10 +248,6 @@ public class Client03CT_CercaCV_Controller implements Initializable {
         resetItem();
     }
 
-    public void invioRicercaComuneTipologia(ActionEvent actionEvent) {
-        //todo come invioricercanome ma con comune e tipologia
-    }
-
     public void onClickQuit(ActionEvent actionEvent) {
         Platform.exit();
     }

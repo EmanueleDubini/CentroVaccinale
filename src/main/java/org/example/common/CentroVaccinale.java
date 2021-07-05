@@ -19,13 +19,30 @@ import java.io.Serializable;
  * Le sue istanze rappresentano <strong>Centri Vaccinali</strong>
  */
 public class CentroVaccinale implements Serializable {
-    //todo javadoc dei campi, lo facciamo alla fine per motivi di leggibilità
+    /**
+     * numero di versione seriale
+     */
     @Serial
     private static final long serialVersionUID = 1;
 
+    /**
+     * id identificativo del <code>CentroVaccinale</code>
+     */
     private String idCentroVacciale;  // PRIMARY KEY
+
+    /**
+     * nome del <code>CentroVaccinale</code>
+     */
     private String nome;
-    private Indirizzo indirizzo; //E: valutiamo anche se fare una classe Indirizzo che contiene tutte le info dell'indirizzo, morasca be like
+
+    /**
+     * Indirzzo del <code>CentroVaccinale</code>
+     */
+    private Indirizzo indirizzo;
+
+    /**
+     * tipologia del <code>CentroVaccinale</code>
+     */
     private TipologiaCV tipologia;
 
     /**

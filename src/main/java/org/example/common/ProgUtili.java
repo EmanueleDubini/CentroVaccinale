@@ -76,4 +76,7 @@ public class ProgUtili {
     }
 
 
+    public static String capitalize(String stringa) {
+        return  stringa.substring(0, 1).toUpperCase() + stringa.substring(1);
+    }
 }//END_ProgUtili_Class

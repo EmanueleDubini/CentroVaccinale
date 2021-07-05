@@ -11,6 +11,7 @@
 package org.example.centrivaccinali.gui;
 
 import org.example.common.CFGenerator.CalcolaCodiceFiscale;
+import org.example.common.ProgUtili;
 import org.example.database.GenerateDataLib.*;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -110,8 +111,8 @@ public class ClientCVController implements Initializable {
 
     /**
      * Questo metodo inizializza tutti i combobox presenti nelle varie finestre
-     * @param arg0 //todo
-     * @param resourceBundle //todo
+     * @param arg0 ereditato da superclasse
+     * @param resourceBundle ereditato da superclasse
      */
     @Override
     public void initialize(URL arg0, ResourceBundle resourceBundle) {
@@ -150,7 +151,6 @@ public class ClientCVController implements Initializable {
         ClientCVMain.setRoot("01_LandingPage");
     }
 
-    //todo
     public void to_02CT_MainWindow() throws IOException {
         ClientCVMain.setRoot("02CT_MainWindow");
     }
@@ -237,7 +237,7 @@ public class ClientCVController implements Initializable {
         qualificatoreVia = qualificatoreIndirizzoCheckBox.getValue(); //non richiede controlli
         nomeVia = textFieldNomeVia.getText();
         numeroCivico = textFieldNumeroCivico.getText();
-        comune = textFieldComune.getText().toLowerCase();  //corregge il fatto che magari venga inserito 'cErMeNate' e diventa 'cermenate' //todo scegliere come fare il controllo sulle maiuscole prima di inserire nel db
+        comune = textFieldComune.getText().toLowerCase();  //corregge il fatto che magari venga inserito 'cErMeNate' e diventa 'cermenate'
         provincia = textFieldProvincia.getText().toUpperCase(); //se viene scritto il cap minusciolo viene letto come maiuscolo
         cap = textFieldCap.getText();
 
@@ -317,7 +317,7 @@ public class ClientCVController implements Initializable {
 
 
             String id = UUID.randomUUID().toString();
-            Boolean verify = stub.registraCentroVaccinale(id, nomeCV, qualificatoreVia , nomeVia, numeroCivico, comune, provincia, cap, tipologiaCV);
+            Boolean verify = stub.registraCentroVaccinale(id, nomeCV, qualificatoreVia , nomeVia, numeroCivico, ProgUtili.capitalize(comune), provincia, cap, tipologiaCV);
             if (verify) {
                 resetInserimentoCV();
             }
