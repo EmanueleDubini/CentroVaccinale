@@ -19,12 +19,7 @@ import java.sql.SQLException;
  */
 public class QueryDebug {
 
-    /**
-     * costruttore vuoto
-     *
-     * @throws SQLException SQLException
-     */
-    public QueryDebug() throws SQLException { }
+    public QueryDebug() { }
 
     // DATABASE
     public static String createDB = "CREATE DATABASE IF NOT EXISTS centrivaccinalidb";
