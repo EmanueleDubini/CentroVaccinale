@@ -224,7 +224,7 @@
                                                 <Font name="Cambria" size="18.0" />
                                              </font>
                                           </TextField>
-                                          <Button fx:id="bottoneRicercaNome" mnemonicParsing="false" onAction="#invioRicercaNome" prefHeight="40.0" prefWidth="100.0" styleClass="search-button" stylesheets="@../../css/GradientBackGround.css" text="Search" textFill="WHITE">
+                                          <Button fx:id="bottoneRicercaNome" mnemonicParsing="false" onAction="#invioRicerca" prefHeight="40.0" prefWidth="100.0" styleClass="search-button" stylesheets="@../../css/GradientBackGround.css" text="Search" textFill="WHITE">
                                              <HBox.margin>
                                                 <Insets left="290.0" top="25.0" />
                                              </HBox.margin>
@@ -250,7 +250,7 @@
                                                 <Insets left="70.0" top="25.0" />
                                              </HBox.margin>
                                           </ComboBox>
-                                          <Button fx:id="bottoneRicercaComuneTipologia" mnemonicParsing="false" onAction="#invioRicercaComuneTipologia" prefHeight="40.0" prefWidth="100.0" styleClass="search-button" stylesheets="@../../css/GradientBackGround.css" text="Search" textFill="WHITE">
+                                          <Button fx:id="bottoneRicercaComuneTipologia" mnemonicParsing="false" onAction="#invioRicerca" prefHeight="40.0" prefWidth="100.0" styleClass="search-button" stylesheets="@../../css/GradientBackGround.css" text="Search" textFill="WHITE">
                                              <HBox.margin>
                                                 <Insets left="70.0" top="25.0" />
                                              </HBox.margin>

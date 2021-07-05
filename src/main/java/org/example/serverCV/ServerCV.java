@@ -186,6 +186,23 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         //todo
     }
 
+    //public synchronized void cercaCentroVaccinaleNome() throws RemoteException, SQLException {
+        /*DbHelper.getConnection();
+        Statement statement = DbHelper.getStatement();
+        ResultSet rs1 = statement.executeQuery(cercaCentroVaccinalePerNome);
+
+        while (rs1.next()){
+            String id = rs1.getString("idCentroVaccinale");
+            String nome = rs1.getString("nome");
+            String indirizzo = rs1.getString("indirizzo");
+            String comune = rs1.getString("comune");
+            String provincia = rs1.getString("provincia");
+            String tipologia = rs1.getString("tipologia");
+
+            System.out.println("Id = " + id + " |Nome = " + nome + " |Indirizzo = " + indirizzo + " |Comune = " + comune + " |Provincia = " + provincia + " |Tipologia = " + tipologia);
+        }*/
+    //}
+
     /**
      * Metodo <code>cercaCentroVaccinaleNome</code> che effettua la ricerca di un centro vaccinale tramite il nome
      *
@@ -207,7 +224,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
                 "WHERE LOWER(nome) LIKE " + "LOWER('%" + nomeCV + "%')");
 
 
-        System.err.println(rs1.toString());
+        //System.err.println(rs1.toString());
 
         while (rs1.next()){
             String id = rs1.getString("idCentroVaccinale");
@@ -220,7 +237,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
             String cap = rs1.getString("cap");
             String tipologia = rs1.getString("tipologia");
 
-            System.err.println(nome);
+            //System.err.println(nome);
 
             //assegnare il valore al qualificatore della via
             Qualificatore q;
@@ -253,35 +270,17 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
             //creazione dell'oggetto indirizzo per poter istanziare un oggetto CentroVaccinale
             CentroVaccinale CV = new CentroVaccinale(id, nome, new Indirizzo(q, indirizzo, numeroCivico,comune, Integer.parseInt(cap) , provincia), t);
             centriVaccinali.add(CV);
-            System.out.println(centriVaccinali);
+            //System.out.println(centriVaccinali);
         }
-        System.out.println(centriVaccinali);
+        //System.out.println(centriVaccinali);
         System.out.println("HO FINITO");
         return centriVaccinali;
-    }
-
-
-    public synchronized void cercaCentroVaccinaleNome() throws RemoteException, SQLException {
-        /*DbHelper.getConnection();
-        Statement statement = DbHelper.getStatement();
-        ResultSet rs1 = statement.executeQuery(cercaCentroVaccinalePerNome);
-
-        while (rs1.next()){
-            String id = rs1.getString("idCentroVaccinale");
-            String nome = rs1.getString("nome");
-            String indirizzo = rs1.getString("indirizzo");
-            String comune = rs1.getString("comune");
-            String provincia = rs1.getString("provincia");
-            String tipologia = rs1.getString("tipologia");
-
-            System.out.println("Id = " + id + " |Nome = " + nome + " |Indirizzo = " + indirizzo + " |Comune = " + comune + " |Provincia = " + provincia + " |Tipologia = " + tipologia);
-        }*/
     }
 
     /**
      * Metodo <code>cercaCentroVaccinaleComuneTipologia</code> che effettua la ricerca di un centro vaccinale tramite il nome
      *
-     * @param  comuneCV comune del centro vaccinale secondo cui effettuare la ricerca
+     * @param  nomeComune comune del centro vaccinale secondo cui effettuare la ricerca
      * @param  tipologiaCV tipologia del centro vaccinale secondo cui effettuare la ricerca
      *
      * @return <code>ArrayList</code> che contiene tutti i centri vaccinali che rispettano i criteri di ricerca
@@ -289,11 +288,15 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      * @throws RemoteException RemoteException
      * @throws SQLException SQLException
      */
-    public synchronized void cercaCentroVaccinaleComuneTipologia() throws RemoteException, SQLException { //todo questo metodo per ora non restituisce nulla e non riceve come parametro i criteri di ricerca
+    public synchronized ArrayList<CentroVaccinale> cercaCentroVaccinaleComuneTipologia(String nomeComune, String tipologiaCV) throws RemoteException, SQLException { //todo questo metodo per ora non restituisce nulla e non riceve come parametro i criteri di ricerca
+        ArrayList<CentroVaccinale> centriVaccinali = new ArrayList();
 
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
-        ResultSet rs2 = statement.executeQuery(cercaCentroVaccinalePerComuneTipologia);
+        ResultSet rs2 = statement.executeQuery("SELECT * " +
+                "FROM centrivaccinali " +
+                "WHERE LOWER(comune) LIKE " + "LOWER('%" + nomeComune + "%') AND " +
+                    "tipologia = " + " '" + tipologiaCV + "'");
 
         while (rs2.next()) {
             String id = rs2.getString("idCentroVaccinale");
@@ -303,10 +306,44 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
             String numeroCivico = rs2.getString("numeroCivico");
             String comune = rs2.getString("comune");
             String provincia = rs2.getString("provincia");
+            String cap = rs2.getString("cap");
             String tipologia = rs2.getString("tipologia");
 
-            //System.out.println("Id = " + id + " |Nome = " + nome + " |Indirizzo = " + indirizzo + " |Comune = " + comune + " |Provincia = " + provincia + " |Tipologia = " + tipologia);
+            //assegnare il valore al qualificatore della via
+            Qualificatore q;
+            if(qualificatore.equalsIgnoreCase(Qualificatore.Via.name())){
+                q = Qualificatore.Via;
+            }else if(qualificatore.equalsIgnoreCase(Qualificatore.Viale.name())){
+                q = Qualificatore.Viale;
+            }else if(qualificatore.equalsIgnoreCase(Qualificatore.Piazza.name())){
+                q = Qualificatore.Piazza;
+            }else if(qualificatore.equalsIgnoreCase(Qualificatore.Largo.name())) {
+                q = Qualificatore.Largo;
+            }else if(qualificatore.equalsIgnoreCase(Qualificatore.Vicolo.name())) {
+                q = Qualificatore.Vicolo;
+            }else if(qualificatore.equalsIgnoreCase(Qualificatore.Piazzale.name())) {
+                q = Qualificatore.Piazzale;
+            }else{
+                q = Qualificatore.Corso;
+            }
+
+            //assegnare il valore alla tipologia del centro vaccinale
+            TipologiaCV t;
+            if(tipologia.equalsIgnoreCase(TipologiaCV.Ospedaliero.name())){
+                t = TipologiaCV.Ospedaliero;
+            }else if(tipologia.equalsIgnoreCase(TipologiaCV.Aziendale.name())){
+                t = TipologiaCV.Aziendale;}
+            else{
+                t = TipologiaCV.Hub;
+            }
+
+            //creazione dell'oggetto indirizzo per poter istanziare un oggetto CentroVaccinale
+            CentroVaccinale CV = new CentroVaccinale(id, nome, new Indirizzo(q, indirizzo, numeroCivico,comune, Integer.parseInt(cap) , provincia), t);
+            centriVaccinali.add(CV);
+            //System.out.println(centriVaccinali);
         }
+        //System.out.println(centriVaccinali);
+        return centriVaccinali;
     }
 
     /**
