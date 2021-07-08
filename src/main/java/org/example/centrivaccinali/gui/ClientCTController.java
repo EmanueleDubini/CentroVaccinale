@@ -111,6 +111,12 @@ public class ClientCTController  implements Initializable{
 
     String nomeRegistrato, cognomeRegistrato, cfRegistrato, emailRegistrato ,usernameRegistrato, passwordRegistrato,  idVaccinazioneRegistrato, nomeCentroVaccinale;
 
+    /**
+     * Questo metodo inizializza il combobox della finestra 03CT_RegistrazioneAdCV per inserire il nome del centro vaccinale
+     *
+     * @param arg0
+     * @param resourceBundle
+     */
     @Override
     public void initialize(URL arg0, ResourceBundle resourceBundle) {
 
@@ -316,6 +322,7 @@ public class ClientCTController  implements Initializable{
         TextFieldUsernameVaccinato.setText("");
         TextFieldPasswordVaccinato.setText("");
         TextFieldIdVaccinazioneVaccinato.setText("");
+        nomeCentroComboBox.setValue("");
     }
 
     public void cercaCentroVaccinale(ActionEvent actionEvent) {
