@@ -43,13 +43,14 @@ public class QueryDebug {
 
 
     public static String createCittadiniRegistratiTable = "CREATE TABLE IF NOT EXISTS cittadini_registrati (" +
-                                                        "codiceFiscale VARCHAR(16) PRIMARY KEY," +
-                                                        "cognomeCittadino VARCHAR(50) NOT NULL," +
-                                                        "nomeCittadino VARCHAR(50) NOT NULL," +
+                                                        "codicefiscale VARCHAR(16) PRIMARY KEY," +
+                                                        "cognomecittadino VARCHAR(50) NOT NULL," +
+                                                        "nomecittadino VARCHAR(50) NOT NULL," +
                                                         "email VARCHAR(50) NOT NULL," +
                                                         "username VARCHAR(50) NOT NULL," +
                                                         "password VARCHAR(50) NOT NULL," +
-                                                        "idVaccinazione VARCHAR(16) NOT NULL" +
+                                                        "idvaccinazione VARCHAR(16) NOT NULL," +
+                                                        "idcentrovaccinale VARCHAR(36) NOT NULL" +
                                                         ")";
 
     public static String dropCittadiniRegistratiTable = "DROP TABLE IF EXISTS cittadini_registrati";
@@ -57,7 +58,7 @@ public class QueryDebug {
 
 
     public static String createEventiAvversiTable = "CREATE TABLE IF NOT EXISTS eventi_avversi (" +
-                                                    "idCentroVaccinale VARCHAR(36) REFERENCES centrivaccinali(idcentrovaccinale) NOT NULL," +
+                                                    "idcentrovaccinale VARCHAR(36) REFERENCES centrivaccinali(idcentrovaccinale) NOT NULL," +
                                                     "codicefiscale VARCHAR(16) REFERENCES cittadini_registrati(codicefiscale) NOT NULL," +
                                                     "mal_di_testa VARCHAR(5) NOT NULL," +
                                                     "mal_di_testa_note VARCHAR(50) NOT NULL," +

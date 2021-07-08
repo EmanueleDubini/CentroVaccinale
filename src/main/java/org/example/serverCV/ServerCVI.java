@@ -78,7 +78,7 @@ public interface ServerCVI extends Remote {
      * @return @return true se la registrazione va a buon fine
      * @throws SQLException SQLException
      */
-    Boolean registraCittadino(String cf, String cognome, String nome, String email, String username, String password, String idVaccinazione) throws RemoteException, SQLException;
+    Boolean registraCittadino(String cf, String cognome, String nome, String email, String username, String password, String idVaccinazione, String nomeCentroVaccinale) throws RemoteException, SQLException;
 
     /**
      * Metodo <code>login</code> controlla nel DB la corrispondenza username/password per permettere l'accesso ai cittadini

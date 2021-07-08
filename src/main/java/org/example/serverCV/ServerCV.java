@@ -104,13 +104,13 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
                 "idCentroVaccinale VARCHAR(36)," +
                 "cognomeCittadino VARCHAR(50) NOT NULL," +
                 "nomeCittadino VARCHAR(50) NOT NULL," +
-                "cf VARCHAR(50) PRIMARY KEY," +
+                "codicefiscale VARCHAR(16) PRIMARY KEY," +
                 "dataSomministrazione VARCHAR(50) NOT NULL," +
                 "vaccinoSomministrato VARCHAR(50) NOT NULL," +
                 "idVaccinazione VARCHAR(36) NOT NULL" +
                 ")");
         statement.executeUpdate("INSERT INTO " + vaccinati_table +
-                "(idCentroVaccinale, cognomeCittadino, nomeCittadino, cf, dataSomministrazione, vaccinoSomministrato, idVaccinazione)" +
+                "(idCentroVaccinale, cognomeCittadino, nomeCittadino, codicefiscale, dataSomministrazione, vaccinoSomministrato, idVaccinazione)" +
                 "VALUES(" + "'" + id + "'," + "'" + cognome + "'," + "'" + nome + "'," + "'" + cf + "'," + "'" + dataSomministrazione + "'," + "'" + vaccinoSomministrato + "'," + "'"+ idVaccinazione + "'" + ")");
 
         System.out.println("SERVER: registraVaccinato() eseguito correttamente");
@@ -124,7 +124,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     /**
      * Metodo <code>registraCittadino</code> registra nel DB un nuovo cittadino che e stato precendentemente vaccinato
      *
-     * @param cf codice fiscale del cittadino
+     * @param codicefiscale codice fiscale del cittadino
      * @param cognome cognome del cittadino
      * @param nome nome del cittadino
      * @param email email del cittadino
@@ -136,12 +136,18 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      * @throws SQLException SQLException
      */
     @Override
-    public synchronized Boolean registraCittadino(String cf, String cognome, String nome, String email, String username, String password, String idVaccinazione) throws SQLException{
+    public synchronized Boolean registraCittadino(String codicefiscale, String cognome, String nome, String email, String username, String password, String idVaccinazione, String nomeCentroVaccinale) throws SQLException{
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
+        ResultSet rs4 = statement.executeQuery("SELECT idcentrovaccinale FROM centrivaccinali WHERE nome = '" + nomeCentroVaccinale + "'");
+        String idCentroVaccinale = "";
+        while(rs4.next()){
+            idCentroVaccinale = rs4.getString("idcentrovaccinale");
+        }
+
         statement.executeUpdate("INSERT INTO cittadini_registrati " +
-                "(codicefiscale, cognomecittadino, nomecittadino, email, username, password, idvaccinazione)" +
-                "VALUES(" + "'" + cf + "'," + "'" + cognome + "'," + "'" + nome + "'," + "'" + email + "'," + "'" + username + "'," + "'" + password + "'," + "'" + idVaccinazione + "'" + ")");
+                "(codicefiscale, cognomecittadino, nomecittadino, email, username, password, idvaccinazione, idCentroVaccinale)" +
+                "VALUES(" + "'" + codicefiscale + "'," + "'" + cognome + "'," + "'" + nome + "'," + "'" + email + "'," + "'" + username + "'," + "'" + password + "'," + "'" + idVaccinazione + "'," + "'" + idCentroVaccinale + "'" + ")");
 
         System.out.println("SERVER: registraCittadino() eseguito correttamente");
         return true;
