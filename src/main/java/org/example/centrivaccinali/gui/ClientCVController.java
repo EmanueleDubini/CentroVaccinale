@@ -145,7 +145,7 @@ public class ClientCVController implements Initializable {
 
     /**
      * Questi metodi permettono di spostarsi tra le varie finestre.
-     * @throws IOException
+     * @throws IOException IOException
      */
     public void to_01_LandingPage() throws IOException {
         ClientCVMain.setRoot("01_LandingPage");
@@ -168,12 +168,14 @@ public class ClientCVController implements Initializable {
     }
 
 
-
     /////////////////////// metodi di controllo menu bar ///////////////////////
+
+    /**
+     * Questo metodo, situatosi nella menu bar, permette l'uscita dalla finestra.
+     */
     public void onClickQuit() {
         Platform.exit();
     }
-
 
     /**
      * Questo metodo crea un messaggio di Alert che restituisce informazioni riguardanti il progetto
@@ -225,9 +227,9 @@ public class ClientCVController implements Initializable {
      * Resituisce un messaggio di errore nel caso in cui i campi inseriti dall'operatore
      * non siano corretti
      *
-     * @throws RemoteException
-     * @throws NotBoundException
-     * @throws SQLException
+     * @throws RemoteException RemoteException
+     * @throws NotBoundException NotBoundException
+     * @throws SQLException SQLException
      */
 
     public void generaCentroVaccinale() throws RemoteException, SQLException {
@@ -506,7 +508,7 @@ public class ClientCVController implements Initializable {
 
 
     /**
-     * Questo metodo controlla che il cap inserito dall'utente esiste e che sia corretto     *
+     * Questo metodo controlla che il cap inserito dall'utente esiste e che sia corretto
      *
      * @param cap da verificarne la validità
      * @return true nel caso in cui il comune sia corretto, false altrimenti
@@ -562,6 +564,10 @@ public class ClientCVController implements Initializable {
     }
 
     //Metodi di debug relativi al file "03CV_RegistraCT.fxml"
+
+    /**
+     * Questo metodo permette di inserire il codice fiscale in fase di debug
+     */
 
     public void inserisciCodiceFiscaleCT_Debug(ActionEvent actionEvent) {
         Random randomGenerator = new Random();
