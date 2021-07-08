@@ -215,7 +215,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      */
     @Override
     public synchronized ArrayList<CentroVaccinale> cercaCentroVaccinaleNome(String nomeCV) throws RemoteException, SQLException {
-        ArrayList<CentroVaccinale> centriVaccinali = new ArrayList();
+        ArrayList<CentroVaccinale> centriVaccinali = new ArrayList<>();
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
         //ResultSet rs1 = statement.executeQuery(cercaCentroVaccinalePerNome);
@@ -276,6 +276,27 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         System.out.println("HO FINITO");
         return centriVaccinali;
     }
+
+    /**
+     * Metodo <code>nomiCentriVaccinali</code> che popola una lista con tutti i nomi dei centri vaccinali
+     *
+     * @return <code>ArrayList</code> che contiene una lista dei nomi dei Centri Vaccinali
+     * @throws SQLException
+     */
+    public synchronized ArrayList<String> nomiCentriVaccinali() throws SQLException {
+        ArrayList<String> nomiCentri = new ArrayList<>();
+        DbHelper.getConnection();
+        Statement statement = DbHelper.getStatement();
+        ResultSet rs3 = statement.executeQuery("SELECT nome " +
+                "FROM centrivaccinali ORDER BY nome ASC");
+
+        while (rs3.next()){
+            String nome = rs3.getString("nome");
+            nomiCentri.add(nome);
+        }
+        return nomiCentri;
+    }
+
 
     /**
      * Metodo <code>cercaCentroVaccinaleComuneTipologia</code> che effettua la ricerca di un centro vaccinale tramite il nome

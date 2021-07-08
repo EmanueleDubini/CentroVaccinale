@@ -19,11 +19,12 @@ import java.io.IOException;
 import java.net.URL;
 import java.rmi.RemoteException;
 import java.sql.SQLException;
+import java.util.List;
 import java.util.ResourceBundle;
 import java.util.regex.Pattern;
 
 
-public class ClientCTController  {
+public class ClientCTController  implements Initializable{
 
     //TextField relativi alla pagina: 03CT_LoginWindow
     @FXML
@@ -33,6 +34,9 @@ public class ClientCTController  {
     private PasswordField TextFieldPassword;
 
     //TextField relativi alla pagina: 03CT_RegistrazioneAdCV
+    @FXML
+    public ComboBox<String> nomeCentroComboBox = new ComboBox();
+
     @FXML
     private TextField TextFieldNomeVaccinato;
 
@@ -105,10 +109,22 @@ public class ClientCTController  {
     String evento5, severita5, note5;
     String evento6, severita6, note6;
 
-    String nomeRegistrato, cognomeRegistrato, cfRegistrato, emailRegistrato ,usernameRegistrato, passwordRegistrato,  idVaccinazioneRegistrato;
+    String nomeRegistrato, cognomeRegistrato, cfRegistrato, emailRegistrato ,usernameRegistrato, passwordRegistrato,  idVaccinazioneRegistrato, nomeCentroVaccinale;
 
+    @Override
+    public void initialize(URL arg0, ResourceBundle resourceBundle) {
 
-
+        ////////////// COMBO BOX NOME CENTRO VACCINALE //////////////
+        nomeCentroComboBox.setValue("");
+        try {
+            List<String> nomiCentriVaccinali = ClientCVController.stub.nomiCentriVaccinali();
+            for(String nome : nomiCentriVaccinali) {
+                nomeCentroComboBox.getItems().add(nome);
+            }
+        } catch (RemoteException | SQLException e) {
+            e.printStackTrace();
+        }
+    }
 
     /**
      * Questo metodo crea la schermata iniziale 01_LandingPage
@@ -230,6 +246,8 @@ public class ClientCTController  {
         usernameRegistrato = TextFieldUsernameVaccinato.getText().strip();
         passwordRegistrato = TextFieldPasswordVaccinato.getText().strip();
         idVaccinazioneRegistrato = TextFieldIdVaccinazioneVaccinato.getText().strip();
+        nomeCentroVaccinale = nomeCentroComboBox.getValue();
+
 
         //controllo se tutti i campi sono vuoti
         if ((nomeRegistrato.equals("") ||
@@ -238,7 +256,8 @@ public class ClientCTController  {
                 emailRegistrato.equals("") ||
                 usernameRegistrato.equals("") ||
                 passwordRegistrato.equals("") ||
-                idVaccinazioneRegistrato.equals("")) {
+                idVaccinazioneRegistrato.equals("") ||
+                nomeCentroVaccinale.equals("")) {
 
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");

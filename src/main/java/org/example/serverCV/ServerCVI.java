@@ -112,6 +112,16 @@ public interface ServerCVI extends Remote {
      * @throws SQLException
      */
     ArrayList<CentroVaccinale> cercaCentroVaccinaleComuneTipologia(String nomeComune, String tipologiaCV) throws RemoteException, SQLException;
+
+    /**
+     * Metodo <code>nomiCentriVaccinali</code> che popola una lista con tutti i nomi dei centri vaccinali
+     *
+     * @return <code>ArrayList</code> che contiene una lista dei nomi dei Centri Vaccinali
+     * @throws RemoteException
+     * @throws SQLException
+     */
+    ArrayList<String> nomiCentriVaccinali() throws RemoteException, SQLException;
+
     void visualizzaInfoCentroVaccinale() throws RemoteException;
 
 
