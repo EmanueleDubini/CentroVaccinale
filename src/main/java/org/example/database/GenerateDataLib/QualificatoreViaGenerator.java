@@ -20,7 +20,7 @@ import org.example.database.GenerateDataLib.BaseElement.RandomSequenceArrayBased
  * La lista dei qualificatori è stata creata selezionando alcuni indirizzi civici In Italia..
  *
  */
-public class QualificatoreViaGenerator extends GeneratorWrapperBase<String> implements Generator<String> {
+public class QualificatoreViaGenerator extends GeneratorWrapperBase<String> implements Generator {
     /**
      * Alcuni dei qualificatori di indirizzi civici Italiani.
      */
@@ -31,7 +31,7 @@ public class QualificatoreViaGenerator extends GeneratorWrapperBase<String> impl
      * Costruttore.
      */
     public QualificatoreViaGenerator() {
-        super(new RandomSequenceArrayBasedGenerator<String>(names));
+        super(new RandomSequenceArrayBasedGenerator<>(names));
     }
 
     /*

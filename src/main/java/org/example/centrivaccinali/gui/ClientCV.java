@@ -29,7 +29,6 @@ public class ClientCV {
      * Metodo <code>Main</code> dell'applicazione ClientCV
      */
     public static void main(String[] args) throws IOException {
-
         ClientCVMain.main(args); // fa partire l'intrerfaccia grafica
 
     }

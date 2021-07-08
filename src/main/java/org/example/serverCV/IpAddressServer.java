@@ -52,6 +52,7 @@ public class IpAddressServer {
         } catch (SocketException e) {
             throw new RuntimeException(e);
         }
+        assert ip != null;
         return ip.strip();
 
     }//END_Method

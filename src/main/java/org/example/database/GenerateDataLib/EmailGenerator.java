@@ -11,9 +11,9 @@
 package org.example.database.GenerateDataLib;
 
 public class EmailGenerator {
-    private String name;
-    private String surname;
-    private UIDGenerator generator = new UIDGenerator();
+    String name;
+    String surname;
+    UIDGenerator generator = new UIDGenerator();
 
     public EmailGenerator(String name, String surname) {
         this.name = name;

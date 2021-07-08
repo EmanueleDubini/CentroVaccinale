@@ -13,13 +13,11 @@ package org.example.centrivaccinali.gui;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+
 import java.io.IOException;
-import java.net.URL;
 import java.rmi.RemoteException;
 import java.sql.SQLException;
-import java.util.ResourceBundle;
 import java.util.regex.Pattern;
 
 
@@ -108,11 +106,9 @@ public class ClientCTController  {
     String nomeRegistrato, cognomeRegistrato, cfRegistrato, emailRegistrato ,usernameRegistrato, passwordRegistrato,  idVaccinazioneRegistrato;
 
 
-
-
     /**
      * Questo metodo crea la schermata iniziale 01_LandingPage
-     * @throws IOException
+     * @throws IOException IOException
      */
     public void to_01_LandingPage() throws IOException {
         ClientCVMain.setRoot("01_LandingPage");
@@ -120,7 +116,7 @@ public class ClientCTController  {
 
     /**
      * Questo metodo crea la schermata principale dell'applicazione cittadini 02CT_MainWindow
-     * @throws IOException
+     * @throws IOException IOException
      */
     public void to_02CT_MainWindow() throws IOException {
         ClientCVMain.setRoot("02CT_MainWindow");
@@ -128,7 +124,7 @@ public class ClientCTController  {
 
     /**
      * Questo metodo crea la schermata 03CT_RegistraCT, per la registrazione da parte del cittadino
-     * @throws IOException
+     * @throws IOException IOException
      */
     public void to_03CT_RegistraCT() throws IOException {
         ClientCVMain.setRoot("03CT_RegistrazioneAdCV");
@@ -136,7 +132,7 @@ public class ClientCTController  {
 
     /**
      * Questo metodo crea la schermata 03CT_EventiAvversiCT, per registrare eventi avversi da parte del cittadino
-     * @throws IOException
+     * @throws IOException IOException
      */
     public void to_03CT_EventiAvversiCT() throws IOException {
         ClientCVMain.setRoot("03CT_LoginWindow");
@@ -144,7 +140,7 @@ public class ClientCTController  {
 
     /**
      * Questo metodo crea la schermata 03CT_InfoCV, per visualizzare le informazioni dei centri vaccinali
-     * @throws IOException
+     * @throws IOException IOException
      */
     public void to_03CT_InfoCV() throws IOException {
         //ClientCVMain.setRoot("03CT_CercaCV");
@@ -152,18 +148,21 @@ public class ClientCTController  {
     }
 
     /**
-     * uesto metodo crea la schermata 03CT_LoginWindow, per fare il login
-     * @throws IOException
+     * Questo metodo crea la schermata 03CT_LoginWindow, per fare il login
+     * @throws IOException IOException
      */
     public void to_03CT_LoginWindow(ActionEvent actionEvent) throws IOException {
         ClientCVMain.setRoot("03CT_LoginWindow");
     }
 
+    /**
+     * Questo metodo crea la schermata 04CT_EventiAvversiCT, per visualizzare e inserire gli eventi avversi dopo la
+     * somministrazine del vaccino.
+     * @throws IOException IOException
+     */
     public void to_04CT_EventiAvversiCT() throws IOException {
         ClientCVMain.setRoot("04CT_EventiAvversiCT");
     }
-
-
 
     /**
      * Questo metodo è associato al bottone "exit" dell'applicazione per chiuderla
@@ -191,7 +190,6 @@ public class ClientCTController  {
      * Questo metodo crea un messaggio di Alert che restituisce informazioni riguardanti i componenti
      * del gruppo che hanno partecipato alla realizzazione del Progetto
      */
-
     public void info() {
         Alert info = new Alert(Alert.AlertType.NONE,
                 """
@@ -299,23 +297,25 @@ public class ClientCTController  {
         TextFieldIdVaccinazioneVaccinato.setText("");
     }
 
+    /**
+     * Questo metodo permette la ricerca di un Centro Vaccinale
+     * @param actionEvent
+     */
     public void cercaCentroVaccinale(ActionEvent actionEvent) {
-
     }
 
     /**
      * Controlla e verifica il login: se l'utente si é registrato correttamente inserendo
      * username e password. In caso contrario, lo fará notare all'utente con una stringa di errore
      * @param actionEvent
-     * @throws SQLException
-     * @throws IOException
+     * @throws SQLException SQLException
+     * @throws IOException IOException
      */
     public void login(ActionEvent actionEvent) throws SQLException, IOException {
         String username = TextFieldUsername.getText();
         String password = TextFieldPassword.getText();
 
         Boolean verify = ClientCVController.stub.login(username, password);
-
 
         if(verify) {
             resetInserimentoLogin();
@@ -339,9 +339,8 @@ public class ClientCTController  {
 
     /**
      * Inserisce eventuali eventi avversi dopo la somministrazine del vaccino.
-     * @param actionEvent
-     * @throws SQLException
-     * @throws RemoteException
+     * @throws SQLException SQLException
+     * @throws RemoteException RemoteException
      */
     public void inserisciEventiAvversi(ActionEvent actionEvent) throws SQLException, RemoteException {
         //evento1 = labelMalDiTesta.getText();
@@ -368,12 +367,12 @@ public class ClientCTController  {
         severita6 = severitaCrisiIpertensiva.getText();
         note6 = noteCrisiIpertensiva.getText();
 
-        if (    (severita1.equals("")) || note1.equals("") ||
-                (severita2.equals("")) || note2.equals("") ||
-                (severita3.equals("")) || note3.equals("") ||
-                (severita4.equals("")) || note4.equals("") ||
-                (severita5.equals("")) || note5.equals("") ||
-                (severita6.equals("")) || note6.equals("")) {
+        if ((severita1.equals("")) || note1.equals("") ||
+            (severita2.equals("")) || note2.equals("") ||
+            (severita3.equals("")) || note3.equals("") ||
+            (severita4.equals("")) || note4.equals("") ||
+            (severita5.equals("")) || note5.equals("") ||
+            (severita6.equals("")) || note6.equals("")) {
 
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");

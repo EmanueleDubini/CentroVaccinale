@@ -41,7 +41,7 @@ public class DbHelper {
 
     /**
      * Crea la connessione con il DB
-     * @throws SQLException
+     * @throws SQLException SQLException
      */
     // uso il DRIVER MANAGER per creare la connessione, NON c'è indicazione del driver da utilizzare.
     public static Connection getConnection() throws SQLException {
@@ -54,7 +54,7 @@ public class DbHelper {
 
     /**
      * Chiude la connessione con il DB
-     * @throws SQLException
+     * @throws SQLException SQLException
      */
     public static void closeConnection() throws SQLException {
         connection.close();
@@ -63,7 +63,7 @@ public class DbHelper {
 
     /**
      * Restituisce lo statement della connessione
-     * @throws SQLException
+     * @throws SQLException SQLException
      */
     public static Statement getStatement() throws SQLException {
 
@@ -78,7 +78,6 @@ public class DbHelper {
 
     /**
      * Restituisce url della connessione
-     * @throws SQLException
      */
     public static String getUrl() {
         return url;
@@ -86,7 +85,6 @@ public class DbHelper {
 
     /**
      * Restituisce username della connessione
-     * @throws SQLException
      */
     public static String getUsername() {
         return username;
@@ -94,7 +92,6 @@ public class DbHelper {
 
     /**
      * Restituisce la password della connessione
-     * @throws SQLException
      */
     public static String getPassword() {
         return password;
@@ -102,7 +99,6 @@ public class DbHelper {
 
     /**
      * Restituisce l'indirizzo del DB
-     * @throws SQLException
      */
     public static String getDbAddress() {
         return dbAddress;

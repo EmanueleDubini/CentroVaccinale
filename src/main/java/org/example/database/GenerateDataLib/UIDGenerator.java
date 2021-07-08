@@ -15,13 +15,13 @@ import java.util.Random;
 
 public class UIDGenerator {
 
-    final private String Numeric = "0123456789";
-    final private String Alphabet = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    final private Random rng = new SecureRandom();
+    String Alphabet = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    Random rng = new SecureRandom();
 
     char randomChar(boolean numeric){
         if(numeric){
-            return Numeric.charAt(rng.nextInt(Numeric.length()));
+            String numeric1 = "0123456789";
+            return numeric1.charAt(rng.nextInt(numeric1.length()));
         }else{
             return Alphabet.charAt(rng.nextInt(Alphabet.length()));
         }

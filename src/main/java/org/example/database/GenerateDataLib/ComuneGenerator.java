@@ -19,7 +19,7 @@ import org.example.database.GenerateDataLib.BaseElement.RandomSequenceArrayBased
  * La lista dei nomi &egrave; stata presa da vari comuni italiani.
  *
  */
-public class ComuneGenerator extends GeneratorWrapperBase<String> implements Generator<String> {
+public class ComuneGenerator extends GeneratorWrapperBase<String> implements Generator {
     /**
      * Alcuni nomi di comuni in Italia.
      */
@@ -33,7 +33,7 @@ public class ComuneGenerator extends GeneratorWrapperBase<String> implements Gen
      * Costruttore.
      */
     public ComuneGenerator() {
-        super(new RandomSequenceArrayBasedGenerator<String>(names));
+        super(new RandomSequenceArrayBasedGenerator<>(names));
     }
 
     /*

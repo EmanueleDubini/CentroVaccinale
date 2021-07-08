@@ -13,13 +13,13 @@ package org.example.serverCV.gui;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import org.example.common.CentroVaccinale;
 import org.example.centrivaccinali.Cittadino;
+import org.example.common.CentroVaccinale;
 import org.example.database.DataModel;
 import org.example.database.DbHelper;
 import org.example.database.QueryDebug;
-import org.example.serverCV.ServerCV;
 import org.example.serverCV.IpAddressServer;
+import org.example.serverCV.ServerCV;
 
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
@@ -64,12 +64,12 @@ public class ServerCVController {
     String password = DbHelper.getPassword();
     String host = DbHelper.getDbAddress();
 
-    private final int NUMCT = 1000; // numero CT generati auto
-    private int NUMCV = 1000; // numero CV generati auto
+    int NUMCT = 1000; // numero CT generati auto
+    int NUMCV = 1000; // numero CV generati auto
 
     /**
      * Bottone che fa eseguire il login al DB
-     * @throws RemoteException
+     * @throws RemoteException RemoteException
      */
     @FXML
     public void serverLogin() throws RemoteException {
@@ -78,17 +78,17 @@ public class ServerCVController {
 
     /**
      * Metodo che controlla user/pwd del DB per accedere al server
-     * @throws RemoteException
+     * @throws RemoteException RemoteException
      */
     private void checkLogin() throws RemoteException {
         String usernameText = "postgres";
         String passwordText = "postgres";
         String hostText = "localhost";
 
-        // DA TENERE
+        /* DA TENERE
         //String usernameText = dbUsername.getText();
         //String passwordText = dbPassword.getText();
-        //String hostText = dbHost.getText();
+        //String hostText = dbHost.getText();*/
 
 
 
@@ -177,7 +177,7 @@ public class ServerCVController {
     // DATABASE (DEBUG)
     /**
      * DEBUG: crea DB centrivaccinalidb
-     * @throws SQLException
+     * @throws SQLException SQLException
      */
     public void createDb() throws SQLException {
         DbHelper.getConnection();
@@ -190,7 +190,7 @@ public class ServerCVController {
 
     /**
      * DEBUG: cancella DB centrivaccinalidb
-     * @throws SQLException
+     * @throws SQLException SQLException
      */
     public void dropDb() throws SQLException {
         //DbHelper.closeConnection();
@@ -205,7 +205,7 @@ public class ServerCVController {
     // METODI DELLE TABELLE (DEBUG)
     /**
      * DEBUG: crea tabella centrivaccinali
-     * @throws SQLException
+     * @throws SQLException SQLException
      */
     public void createCentriVaccinaliTable() throws SQLException {
         DbHelper.getConnection();
@@ -218,7 +218,7 @@ public class ServerCVController {
 
     /**
      * DEBUG: cancella tabella centrivaccinali
-     * @throws SQLException
+     * @throws SQLException SQLException
      */
     public void dropCentriVaccinaliTable() throws SQLException {
         DbHelper.getConnection();
@@ -231,7 +231,7 @@ public class ServerCVController {
 
     /**
      * DEBUG: crea tabella cittadini_registrati
-     * @throws SQLException
+     * @throws SQLException SQLException
      */
     public void createCittadiniRegistratiTable() throws SQLException {
         DbHelper.getConnection();
@@ -244,7 +244,7 @@ public class ServerCVController {
 
     /**
      * DEBUG: cancella tabella cittadini_registrati
-     * @throws SQLException
+     * @throws SQLException SQLException
      */
     public void dropCittadiniRegistratiTable() throws SQLException {
         DbHelper.getConnection();
@@ -257,7 +257,7 @@ public class ServerCVController {
 
     /**
      * DEBUG: crea tabella eventi_avversi
-     * @throws SQLException
+     * @throws SQLException SQLException
      */
     public void createEventiAvversiTable() throws SQLException {
         DbHelper.getConnection();
@@ -270,7 +270,7 @@ public class ServerCVController {
 
     /**
      * DEBUG: cancella tabella eventi_avversi
-     * @throws SQLException
+     * @throws SQLException SQLException
      */
     public void dropEventiAvversiTable() throws SQLException {
         DbHelper.getConnection();
@@ -284,15 +284,28 @@ public class ServerCVController {
     // METODI DEGLI INSERIMENTI TABELLE (DEBUG)
     /**
      * DEBUG: inserisci centri vaccinali (random) in tabella centrivaccinali
-     * @throws SQLException
+     * @throws SQLException SQLException
      */
    public void inserimentoCentriVaccinali() throws SQLException {
+       /*arraylist che contiene tutti i centri vaccinali inseriti fino ad ora, serve perche quando andiamo ad inserire in automatico i centri vaccinali non ce ne devono essere duplicati
+       ArrayList<String> CVNomiInseriti = new ArrayList<>();*/
+
+       //inizio inserimento nel server dei CV che vengono generati
         PreparedStatement statement = DbHelper.getConnection().prepareStatement(
                 "INSERT INTO centrivaccinali(idCentroVaccinale, nome, qualificatore, indirizzo, numerocivico, comune, provincia, cap, tipologia) VALUES (?,?,?,?,?,?,?,?,?)");
 
         // numero CV generati auto
         for(int i = 0; i < NUMCV; i++){
+            //controlla nel while se non e gia stato generato un CV con quel nome
+
             CentroVaccinale cv = DataModel.generateCentroVaccinale();
+            /*se il nome del cv generato è gia stato inserito nel db allora ne genera altri fino a che non genera un nome non presente
+            while (CVNomiInseriti.contains(cv.getNome())){
+                cv = DataModel.generateCentroVaccinale();
+            }
+            CVNomiInseriti.add(cv.getNome());*/
+
+            //inserimento dei vari campi del centro vaccinale nel database
             statement.setString(1, cv.getIdCentroVacciale());
             statement.setString(2, cv.getNome());
             statement.setString(3, (cv.getIndirizzo().getQualificatore().name()));
@@ -311,7 +324,7 @@ public class ServerCVController {
 
     /**
      * DEBUG: inserisci cittadini (random) in tabella cittadini_registrati
-     * @throws SQLException
+     * @throws SQLException SQLException
      */
     public void inserimentoCittadini() throws SQLException {
         PreparedStatement statement = DbHelper.getConnection().prepareStatement(

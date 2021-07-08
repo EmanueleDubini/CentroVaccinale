@@ -18,18 +18,19 @@ import java.util.Random;
  *
  * @param <Object>> Tipo di dato dell'elemento generato.
  */
-public class RandomSequenceArrayBasedGenerator<Object> extends ArrayBasedGeneratorBase<Object> implements Generator<Object> {
+public class RandomSequenceArrayBasedGenerator<Object> extends ArrayBasedGeneratorBase<Object> implements Generator {
     /**
      * Un istanza della classe {@link Random} che genera l'indirizzo degli oggetti
      * contenuti all'interno dell'array.
      */
-    private Random random;
+    private final Random random;
 
     /**
      * Costruttore.
      *
      * @param values Un array di valori dai quali si estrarranno i tipi di dato.
      */
+    @SafeVarargs
     public RandomSequenceArrayBasedGenerator(Object... values) {
         super(values);
         random = new Random();
