@@ -43,16 +43,12 @@ import java.util.regex.Pattern;
  *
  */
 public class ClientCVController implements Initializable {
-    private final long serialVersionUID = 1L;
-
-    private final int PORT = 1200;
-
 
 
     @FXML
-    public ComboBox<String> tipologiaCheckBox = new ComboBox();
+    public ComboBox<String> tipologiaCheckBox = new ComboBox<>();
     @FXML
-    public ComboBox<String> qualificatoreIndirizzoCheckBox = new ComboBox();
+    public ComboBox<String> qualificatoreIndirizzoCheckBox = new ComboBox<>();
     @FXML
     public TextField textFieldNomeCentrovaccinale;
     @FXML
@@ -65,10 +61,10 @@ public class ClientCVController implements Initializable {
     public TextField textFieldProvincia;
     @FXML
     public TextField textFieldCap;
-    public ComboBox<String> QualificatoreIndirizzoCheckBox = new ComboBox();
+    public ComboBox<String> QualificatoreIndirizzoCheckBox = new ComboBox<>();
 
     @FXML
-    public ComboBox<String> TipologiaVaccinoCheckBox = new ComboBox();
+    public ComboBox<String> TipologiaVaccinoCheckBox = new ComboBox<>();
 
 
     //Bottoni relativi alla pagina: 03CV_RegistraCT
@@ -106,7 +102,7 @@ public class ClientCVController implements Initializable {
     Registry registry;
     public static ServerCVI stub;
 
-    public ClientCVController() throws IOException {
+    public ClientCVController(){
     }
 
     /**
@@ -228,7 +224,6 @@ public class ClientCVController implements Initializable {
      * non siano corretti
      *
      * @throws RemoteException RemoteException
-     * @throws NotBoundException NotBoundException
      * @throws SQLException SQLException
      */
 
@@ -612,6 +607,7 @@ public class ClientCVController implements Initializable {
         }
         else {
             try {
+                int PORT = 1200;
                 registry = LocateRegistry.getRegistry(address, PORT);
 
                 //richiesta dell'oggeto server remoto inserito precedenemente dal serverCV nel registry

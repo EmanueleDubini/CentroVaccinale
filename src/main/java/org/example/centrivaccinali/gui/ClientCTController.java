@@ -35,7 +35,7 @@ public class ClientCTController  implements Initializable{
 
     //TextField relativi alla pagina: 03CT_RegistrazioneAdCV
     @FXML
-    public ComboBox<String> nomeCentroComboBox = new ComboBox();
+    public ComboBox<String> nomeCentroComboBox = new ComboBox<>();
 
     @FXML
     private TextField TextFieldNomeVaccinato;
@@ -102,8 +102,8 @@ public class ClientCTController  implements Initializable{
     /**
      * Questo metodo inizializza il combobox della finestra 03CT_RegistrazioneAdCV per inserire il nome del centro vaccinale
      *
-     * @param arg0
-     * @param resourceBundle
+     * @param arg0 arg0
+     * @param resourceBundle resourceBundle
      */
     @Override
     public void initialize(URL arg0, ResourceBundle resourceBundle) {
@@ -164,7 +164,7 @@ public class ClientCTController  implements Initializable{
      * Questo metodo crea la schermata 03CT_LoginWindow, per fare il login
      * @throws IOException IOException
      */
-    public void to_03CT_LoginWindow(ActionEvent actionEvent) throws IOException {
+    public void to_03CT_LoginWindow() throws IOException {
         ClientCVMain.setRoot("03CT_LoginWindow");
     }
 
@@ -285,7 +285,7 @@ public class ClientCTController  implements Initializable{
         }
 
         //Controllo validità email
-        else if(!(Pattern.matches("^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@" + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$", emailRegistrato))) {
+        else if(!(Pattern.matches("^[_A-Za-z0-9-+]+(\\.[_A-Za-z0-9-]+)*@" + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$", emailRegistrato))) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
             alert.setHeaderText("Si è verificato un Errore");
@@ -316,7 +316,7 @@ public class ClientCTController  implements Initializable{
 
     /**
      * Questo metodo permette la ricerca di un Centro Vaccinale
-     * @param actionEvent
+     * @param actionEvent actionEvent
      */
     public void cercaCentroVaccinale(ActionEvent actionEvent) {
     }
@@ -324,7 +324,7 @@ public class ClientCTController  implements Initializable{
     /**
      * Controlla e verifica il login: se l'utente si é registrato correttamente inserendo
      * username e password. In caso contrario, lo fará notare all'utente con una stringa di errore
-     * @param actionEvent
+     * @param actionEvent actionEvent
      * @throws SQLException SQLException
      * @throws IOException IOException
      */

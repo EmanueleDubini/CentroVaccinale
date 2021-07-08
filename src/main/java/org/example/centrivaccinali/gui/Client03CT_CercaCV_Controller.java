@@ -18,7 +18,6 @@ import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
 import javafx.scene.Node;
 import javafx.scene.control.*;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
 import org.example.common.CentroVaccinale;
@@ -30,13 +29,10 @@ import java.rmi.RemoteException;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 import java.util.ResourceBundle;
 
 public class Client03CT_CercaCV_Controller implements Initializable {
 
-    @FXML
-    public Button bottoneRicerca;
     @FXML
     public TextField nomeDaRicercare;
     @FXML
@@ -64,7 +60,7 @@ public class Client03CT_CercaCV_Controller implements Initializable {
     @FXML
     public TextField comuneDaRicercare;
     @FXML
-    public ComboBox<String> tipologiaDaRicercare = new ComboBox();
+    public ComboBox<String> tipologiaDaRicercare = new ComboBox<>();
     @FXML
     public Button bottoneRicercaComuneTipologia;
 
@@ -76,8 +72,7 @@ public class Client03CT_CercaCV_Controller implements Initializable {
     public RadioButton radioButtonComuneTipologia;
 
 
-    private List<CentroVaccinale> centriVaccinali = new ArrayList<>();
-    private Image image;
+    private final List<CentroVaccinale> centriVaccinali = new ArrayList<>();
     private CercaCVListener cercaCVListener;
 
     @Override
@@ -217,13 +212,13 @@ public class Client03CT_CercaCV_Controller implements Initializable {
             int row = 1;
             try {
                 grid.getChildren().clear();     //Puliamo la GridPane prima di stampare i nuovi risultati di ricerca
-                for (int i = 0; i < centriVaccinali.size(); i++) {
+                for (CentroVaccinale centroVaccinale : centriVaccinali) {
 
                     FXMLLoader fxmlLoader = new FXMLLoader(ClientCVMain.class.getResource("item.fxml"));
                     AnchorPane anchorPane = fxmlLoader.load();
 
                     ItemController itemController = fxmlLoader.getController();
-                    itemController.setData(centriVaccinali.get(i), cercaCVListener);
+                    itemController.setData(centroVaccinale, cercaCVListener);
 
                     if (column == 3) {
                         column = 0;
