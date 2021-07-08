@@ -10,11 +10,6 @@
 
 package org.example.common;
 
-import org.example.serverCV.ServerCV;
-
-import java.rmi.RemoteException;
-import java.rmi.registry.LocateRegistry;
-import java.rmi.registry.Registry;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -69,10 +64,7 @@ public class ProgUtili {
      */
     public static boolean checkCodiceFiscale(String cf){
         String regex = "^[A-Z]{6}[0-9]{2}[A-Z][0-9]{2}[A-Z][0-9]{3}[A-Z]$";
-        if (Pattern.matches(regex, cf))
-            return true;
-        else
-            return false;
+        return Pattern.matches(regex, cf);
     }
 
 

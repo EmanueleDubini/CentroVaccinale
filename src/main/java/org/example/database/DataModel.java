@@ -27,17 +27,17 @@ import java.util.UUID;
  */
 public class DataModel {
     //todo la javadoc viene fatta dopo per motivi di leggibilità
-    private ArrayList<Cittadino> cittadini;
-    private ArrayList<CentroVaccinale> centriVaccinali;
-    private static Random randomGenerator = new Random();
+    private final ArrayList<Cittadino> cittadini;
+    private final ArrayList<CentroVaccinale> centriVaccinali;
+    private static final Random randomGenerator = new Random();
 
     /**
      * Costruisce una nuova istanza della classe <code>DataModel</code> .
      *
      */
     public DataModel(){
-        cittadini = new ArrayList<Cittadino>();
-        centriVaccinali = new ArrayList<CentroVaccinale>();
+        cittadini = new ArrayList<>();
+        centriVaccinali = new ArrayList<>();
 
     }
 
@@ -118,7 +118,7 @@ public class DataModel {
         String idCentroVaccinale = UUID.randomUUID().toString(); //id centro vaccinale univoco
 
         //nome centro vaccinale
-        VaccinationCentreNameGenerator nomeCentroVaccinaleGenerator = new VaccinationCentreNameGenerator();
+        VaccinationCentreNameGenerator nomeCentroVaccinaleGenerator = new VaccinationCentreNameGenerator(); //todo non bisogna generare un centro vaccinale se ne è gia stato generato uno con lo stesso nome
         String nomeCentroVaccinale =(String) nomeCentroVaccinaleGenerator.generate();
 
         IndirizzoGenerator indirizzoGenerator = new IndirizzoGenerator();

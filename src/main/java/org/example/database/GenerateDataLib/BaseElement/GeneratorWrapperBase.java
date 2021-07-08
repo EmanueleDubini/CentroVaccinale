@@ -20,7 +20,7 @@ public abstract class GeneratorWrapperBase<Object> {
     /**
      * Istanza della classe wrapper {@link Generator} utilizzato come sottoclasse di questa classe.
      */
-    protected Generator<Object> generator;
+    protected Generator generator;
 
     /**
      * Costruttore.

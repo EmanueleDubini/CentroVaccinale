@@ -19,7 +19,7 @@ import org.example.database.GenerateDataLib.BaseElement.RandomSequenceArrayBased
  * La lista dei nomi è stata presa dai 200 nomi più comuni negli Stati Uniti.
  *
  */
-public class MaleNameGenerator extends GeneratorWrapperBase<String> implements Generator<String> {
+public class MaleNameGenerator extends GeneratorWrapperBase<String> implements Generator {
     /**
      * I più comuni nomi maschili degli Stati Uniti.
      */
@@ -67,7 +67,7 @@ public class MaleNameGenerator extends GeneratorWrapperBase<String> implements G
      * Costruttore.
      */
     public MaleNameGenerator() {
-        super(new RandomSequenceArrayBasedGenerator<String>(names));
+        super(new RandomSequenceArrayBasedGenerator<>(names));
     }
 
     /*

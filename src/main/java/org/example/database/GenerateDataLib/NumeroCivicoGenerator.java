@@ -19,7 +19,7 @@ import org.example.database.GenerateDataLib.BaseElement.RandomSequenceArrayBased
  * La lista dei numeri civici è stata presa da varie vie in Italia.
  *
  */
-public class NumeroCivicoGenerator extends GeneratorWrapperBase<String> implements Generator<String> {
+public class NumeroCivicoGenerator extends GeneratorWrapperBase<String> implements Generator {
     /**
      * Alcuni numeri civici Italiani.
      */
@@ -60,7 +60,7 @@ public class NumeroCivicoGenerator extends GeneratorWrapperBase<String> implemen
      * Costruttore.
      */
     public NumeroCivicoGenerator() {
-        super(new RandomSequenceArrayBasedGenerator<String>(names));
+        super(new RandomSequenceArrayBasedGenerator<>(names));
     }
 
     /*

@@ -19,7 +19,7 @@ import org.example.database.GenerateDataLib.BaseElement.RandomSequenceArrayBased
  * La lista dei nomi è stata presa dai 200 nomi più comuni negli Stati Uniti
  *
  */
-public class LastNameGenerator extends GeneratorWrapperBase<String> implements Generator<String> {
+public class LastNameGenerator extends GeneratorWrapperBase<String> implements Generator {
     /**
      * I più comuni cognomi degli Stati Uniti.
      */
@@ -69,7 +69,7 @@ public class LastNameGenerator extends GeneratorWrapperBase<String> implements G
      * Costruttori.
      */
     public LastNameGenerator() {
-        super(new RandomSequenceArrayBasedGenerator<String>(lastNames));
+        super(new RandomSequenceArrayBasedGenerator<>(lastNames));
     }
 
     /*

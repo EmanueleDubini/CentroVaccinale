@@ -11,9 +11,9 @@
 package org.example.database.GenerateDataLib;
 
 public class UserIDGenerator {
-    private String name;
-    private String surname;
-    private UIDGenerator generator = new UIDGenerator();
+    private final String name;
+    private final String surname;
+    private final UIDGenerator generator = new UIDGenerator();
 
     public UserIDGenerator(String name, String surname) {
         this.name = name;
@@ -21,7 +21,6 @@ public class UserIDGenerator {
     }
 
     public String generate() {
-        String userID = name + "-" + surname + "." + generator.randomUUID(4,5,'-', true);
-        return userID;
+        return name + "-" + surname + "." + generator.randomUUID(4,5,'-', true);
     }
 }

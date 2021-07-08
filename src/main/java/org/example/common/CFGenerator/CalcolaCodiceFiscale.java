@@ -10,10 +10,11 @@
 
 package org.example.common.CFGenerator;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.util.Date;
 import java.util.GregorianCalendar;
-import java.util.HashMap;
 import java.util.regex.Pattern;
 
 /**
@@ -155,11 +156,11 @@ public class CalcolaCodiceFiscale {
 
     private static String ottieniConsVoc(String stringa, boolean conson) {
         StringBuilder testo = new StringBuilder();
-        int i = 0;
+
         char[] valChar = stringa.toCharArray();
-        for (i = 0; i < valChar.length; i++) {
-            if (isVowel(valChar[i]) ^ conson) {
-                testo.append(valChar[i]);
+        for (char c : valChar) {
+            if (isVowel(c) ^ conson) {
+                testo.append(c);
             }
         }
         return testo.toString();
@@ -191,16 +192,13 @@ public class CalcolaCodiceFiscale {
 
         StringBuilder codice = new StringBuilder();
 
-        codice.append(ottieniConsVoc(stringa, true)
-                + ottieniConsVoc(stringa, false));
+        codice.append(ottieniConsVoc(stringa, true)).append(ottieniConsVoc(stringa, false));
 
         if (codice.length() > 3) {
             codice = new StringBuilder(codice.substring(0, 3));
         }
 
-        for (int i = codice.length(); i < 3; i++) {
-            codice.append(CARATTERE_SOSTITUTO);
-        }
+        codice.append(CARATTERE_SOSTITUTO.repeat(Math.max(0, 3 - codice.length())));
 
         return codice;
 
@@ -233,18 +231,16 @@ public class CalcolaCodiceFiscale {
         StringBuilder codice = new StringBuilder(ottieniConsVoc(stringa, true));
 
         if (codice.length() >= 4) {
-            codice = codice.delete(1, 2);
+            codice.delete(1, 2);
         }
 
         codice.append(ottieniConsVoc(stringa, false));
 
         if (codice.length() > 3) {
-            codice = codice.replace(0, codice.length(), codice.substring(0, 3));
+            codice.replace(0, codice.length(), codice.substring(0, 3));
         }
 
-        for (int i = codice.length(); i < 3; i++) {
-            codice.append(CARATTERE_SOSTITUTO);
-        }
+        codice.append(CARATTERE_SOSTITUTO.repeat(Math.max(0, 3 - codice.length())));
 
         return codice;
 
@@ -280,18 +276,18 @@ public class CalcolaCodiceFiscale {
 
         cal.setTime(dtNasc);
 
-        Integer giorno = cal.get(GregorianCalendar.DAY_OF_MONTH);
-        Integer mese = cal.get(GregorianCalendar.MONTH);
-        Integer anno = cal.get(GregorianCalendar.YEAR);
+        int giorno = cal.get(GregorianCalendar.DAY_OF_MONTH);
+        int mese = cal.get(GregorianCalendar.MONTH);
+        int anno = cal.get(GregorianCalendar.YEAR);
 
-        cod.append(anno.toString().substring(2, 4));
+        cod.append(Integer.toString(anno), 2, 4);
         cod.append(getCodiceMese(mese));
 
         if (sesso.equals("M")) {
             cod.append(String.format("%02d", giorno));
         } else {
             giorno += 40;
-            cod.append((giorno).toString());
+            cod.append(giorno);
         }
 
         return cod;
@@ -321,7 +317,7 @@ public class CalcolaCodiceFiscale {
 
     private static Character calcolaCharControllo(StringBuilder codfisc) {
 
-        Integer somma = 0;
+        int somma = 0;
 
         for (int i = 0; i < codfisc.length(); i++) {
 
@@ -372,7 +368,7 @@ public class CalcolaCodiceFiscale {
 
     private static final String CARATTERE_SOSTITUTO = "X";
 
-    private static char[] codici_mesi = {
+    private static final char[] codici_mesi = {
             'A', 'B', 'C', 'D', 'E', 'H',
             'L', 'M', 'P', 'R', 'S', 'T' };
 
@@ -380,7 +376,7 @@ public class CalcolaCodiceFiscale {
         return codici_mesi[mese];
     }
 
-    private static int[][] EVEN_ODD_CHAR_CODES={
+    private static final int[][] EVEN_ODD_CHAR_CODES={
             {0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25},
             {1,0,5,7,9,13,15,17,19,21,1,0,5,7,9,13,15,17,19,21,2,4,18,20,11,3,6,8,12,14,16,10,22,25,24,23}};
 
