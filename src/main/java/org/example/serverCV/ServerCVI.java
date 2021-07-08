@@ -79,7 +79,7 @@ public interface ServerCVI extends Remote {
      * @return @return true se la registrazione va a buon fine
      * @throws SQLException SQLException
      */
-    Boolean registraCittadino(String cf, String cognome, String nome, String email, String username, String password, String idVaccinazione) throws RemoteException, SQLException;
+    Boolean registraCittadino(String cf, String cognome, String nome, String email, String username, String password, String idVaccinazione, String nomeCentroVaccinale) throws RemoteException, SQLException;
 
     /**
      * Metodo <code>login</code> controlla nel DB la corrispondenza username/password per permettere l'accesso ai cittadini
@@ -114,6 +114,17 @@ public interface ServerCVI extends Remote {
      * @throws SQLException SQLException
      */
     ArrayList<CentroVaccinale> cercaCentroVaccinaleComuneTipologia(String nomeComune, String tipologiaCV) throws RemoteException, SQLException;
+
+    /**
+     * Metodo <code>nomiCentriVaccinali</code> che popola una lista con tutti i nomi dei centri vaccinali
+     *
+     * @return <code>ArrayList</code> che contiene una lista dei nomi dei Centri Vaccinali
+     * @throws RemoteException
+     * @throws SQLException
+     */
+    ArrayList<String> nomiCentriVaccinali() throws RemoteException, SQLException;
+
+    void visualizzaInfoCentroVaccinale() throws RemoteException;
 
     //void visualizzaInfoCentroVaccinale() throws RemoteException;
 

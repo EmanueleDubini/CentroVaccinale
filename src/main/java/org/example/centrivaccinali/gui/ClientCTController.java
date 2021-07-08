@@ -13,15 +13,18 @@ package org.example.centrivaccinali.gui;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.*;
-
 import java.io.IOException;
+import java.net.URL;
 import java.rmi.RemoteException;
 import java.sql.SQLException;
+import java.util.List;
+import java.util.ResourceBundle;
 import java.util.regex.Pattern;
 
 
-public class ClientCTController  {
+public class ClientCTController  implements Initializable{
 
     //TextField relativi alla pagina: 03CT_LoginWindow
     @FXML
@@ -31,6 +34,9 @@ public class ClientCTController  {
     private PasswordField TextFieldPassword;
 
     //TextField relativi alla pagina: 03CT_RegistrazioneAdCV
+    @FXML
+    public ComboBox<String> nomeCentroComboBox = new ComboBox();
+
     @FXML
     private TextField TextFieldNomeVaccinato;
 
@@ -55,56 +61,64 @@ public class ClientCTController  {
     //TextField & Combobox relativi alla pagina: 04CT_EventiAvver
 
     @FXML
-    private Label labelMalDiTesta;
-    @FXML
     private TextField severitaMalDiTesta;
     @FXML
     private TextField noteMalDiTesta;
 
-    @FXML
-    private Label labelFebbre;
     @FXML
     private TextField severitaFebbre;
     @FXML
     private TextField noteFebbre;
 
     @FXML
-    private Label labelDolori;
-    @FXML
     private TextField severitaDolori;
     @FXML
     private TextField noteDolori;
 
-    @FXML
-    private Label labelTachicardia;
     @FXML
     private TextField severitaTachicardia;
     @FXML
     private TextField noteTachicardia;
 
     @FXML
-    private Label labelLinfoadenopatia;
-    @FXML
     private TextField severitaLinfoadenopatia;
     @FXML
     private TextField noteLinfoadenopatia;
 
     @FXML
-    private Label labelCrisiIpertensiva;
-    @FXML
     private TextField severitaCrisiIpertensiva;
     @FXML
     private TextField noteCrisiIpertensiva;
 
-    String evento1, severita1, note1;
-    String evento2, severita2, note2;
-    String evento3, severita3, note3;
-    String evento4, severita4, note4;
-    String evento5, severita5, note5;
-    String evento6, severita6, note6;
+    String severita1, note1;
+    String severita2, note2;
+    String severita3, note3;
+    String severita4, note4;
+    String severita5, note5;
+    String severita6, note6;
 
-    String nomeRegistrato, cognomeRegistrato, cfRegistrato, emailRegistrato ,usernameRegistrato, passwordRegistrato,  idVaccinazioneRegistrato;
+    String nomeRegistrato, cognomeRegistrato, cfRegistrato, emailRegistrato ,usernameRegistrato, passwordRegistrato,  idVaccinazioneRegistrato, nomeCentroVaccinale;
 
+    /**
+     * Questo metodo inizializza il combobox della finestra 03CT_RegistrazioneAdCV per inserire il nome del centro vaccinale
+     *
+     * @param arg0
+     * @param resourceBundle
+     */
+    @Override
+    public void initialize(URL arg0, ResourceBundle resourceBundle) {
+
+        ////////////// COMBO BOX NOME CENTRO VACCINALE //////////////
+        nomeCentroComboBox.setValue("");
+        try {
+            List<String> nomiCentriVaccinali = ClientCVController.stub.nomiCentriVaccinali();
+            for(String nome : nomiCentriVaccinali) {
+                nomeCentroComboBox.getItems().add(nome);
+            }
+        } catch (RemoteException | SQLException e) {
+            e.printStackTrace();
+        }
+    }
 
     /**
      * Questo metodo crea la schermata iniziale 01_LandingPage
@@ -143,7 +157,6 @@ public class ClientCTController  {
      * @throws IOException IOException
      */
     public void to_03CT_InfoCV() throws IOException {
-        //ClientCVMain.setRoot("03CT_CercaCV");
         ClientCVMain.setRoot("03CT_CercaCV");
     }
 
@@ -228,6 +241,8 @@ public class ClientCTController  {
         usernameRegistrato = TextFieldUsernameVaccinato.getText().strip();
         passwordRegistrato = TextFieldPasswordVaccinato.getText().strip();
         idVaccinazioneRegistrato = TextFieldIdVaccinazioneVaccinato.getText().strip();
+        nomeCentroVaccinale = nomeCentroComboBox.getValue();
+
 
         //controllo se tutti i campi sono vuoti
         if ((nomeRegistrato.equals("") ||
@@ -236,7 +251,8 @@ public class ClientCTController  {
                 emailRegistrato.equals("") ||
                 usernameRegistrato.equals("") ||
                 passwordRegistrato.equals("") ||
-                idVaccinazioneRegistrato.equals("")) {
+                idVaccinazioneRegistrato.equals("") ||
+                nomeCentroVaccinale.equals("")) {
 
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
@@ -277,7 +293,7 @@ public class ClientCTController  {
 
             alert.showAndWait();
         } else {
-            Boolean verify = ClientCVController.stub.registraCittadino(cfRegistrato, cognomeRegistrato, nomeRegistrato, emailRegistrato, usernameRegistrato, passwordRegistrato, idVaccinazioneRegistrato);
+            Boolean verify = ClientCVController.stub.registraCittadino(cfRegistrato, cognomeRegistrato, nomeRegistrato, emailRegistrato, usernameRegistrato, passwordRegistrato, idVaccinazioneRegistrato, nomeCentroVaccinale);
             if(verify) {
                 resetInserimentoRegistrazione();
             }
@@ -295,6 +311,7 @@ public class ClientCTController  {
         TextFieldUsernameVaccinato.setText("");
         TextFieldPasswordVaccinato.setText("");
         TextFieldIdVaccinazioneVaccinato.setText("");
+        nomeCentroComboBox.setValue("");
     }
 
     /**
@@ -343,27 +360,22 @@ public class ClientCTController  {
      * @throws RemoteException RemoteException
      */
     public void inserisciEventiAvversi(ActionEvent actionEvent) throws SQLException, RemoteException {
-        //evento1 = labelMalDiTesta.getText();
+
         severita1 = severitaMalDiTesta.getText();
         note1 = noteMalDiTesta.getText();
 
-       //evento2 = labelFebbre.getText();
         severita2 = severitaFebbre.getText();
         note2 = noteFebbre.getText();
 
-        //evento3 = labelDolori.getText();
         severita3 = severitaDolori.getText();
         note3 = noteDolori.getText();
 
-        //evento4 = labelTachicardia.getText();
         severita4 = severitaTachicardia.getText();
         note4 = noteTachicardia.getText();
 
-        //evento5 = labelLinfoadenopatia.getText();
         severita5 = severitaLinfoadenopatia.getText();
         note5 = noteLinfoadenopatia.getText();
 
-        //evento6 = labelCrisiIpertensiva.getText();
         severita6 = severitaCrisiIpertensiva.getText();
         note6 = noteCrisiIpertensiva.getText();
 
@@ -385,28 +397,6 @@ public class ClientCTController  {
             //todo sistemare per prendere dinamicamente id e codice fiscale
 
             Boolean verify = ClientCVController.stub.inserisciEventiAvversi("5f93b2ad-f2ee-442d-9c5b-d509c059562d", "PPPRRR98B10C933V", severita1, note1, severita2, note2, severita3, note3,severita4,note4,severita5, note5, severita6, note6);
-
-            /*
-            if(evento1.equals("Mal di testa")) {
-                Boolean verify = ClientCVController.stub.inserisciEventiAvversi("5f93b2ad-f2ee-442d-9c5b-d509c059562d", "PPPRRR98B10C933V", severita1, note1, null, null, null, null,null,null,null, null, null, null);
-            }
-            if(evento1.equals("Febbre")) {
-                Boolean verify = ClientCVController.stub.inserisciEventiAvversi("5f93b2ad-f2ee-442d-9c5b-d509c059562d", "PPPRRR98B10C933V", null, null, severita1, note1, null, null,null,null,null, null, null, null);
-            }
-            if(evento1.equals("Dolori muscolari e articolari")) {
-                Boolean verify = ClientCVController.stub.inserisciEventiAvversi("5f93b2ad-f2ee-442d-9c5b-d509c059562d", "PPPRRR98B10C933V", null, null, null, null, severita1, note1,null,null,null, null, null, null);
-            }
-            if(evento1.equals("Linfoadenopatia")) {
-                Boolean verify = ClientCVController.stub.inserisciEventiAvversi("5f93b2ad-f2ee-442d-9c5b-d509c059562d", "PPPRRR98B10C933V", null, null, null, null, null, null, severita1, note1,null, null, null, null);
-            }
-            if(evento1.equals("Tachicardia")) {
-                Boolean verify = ClientCVController.stub.inserisciEventiAvversi("5f93b2ad-f2ee-442d-9c5b-d509c059562d", "PPPRRR98B10C933V", null, null, null, null, null, null,null,null, severita1, note1, null, null);
-            }
-            if(evento1.equals("Crisi ipertensiva")) {
-                Boolean verify = ClientCVController.stub.inserisciEventiAvversi("5f93b2ad-f2ee-442d-9c5b-d509c059562d", "PPPRRR98B10C933V", null, null, null, null, null, null,null,null,null, null, severita1, note1);
-            }
-
-             */
         }
     }
 }//End_Class
