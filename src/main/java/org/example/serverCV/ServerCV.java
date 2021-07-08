@@ -407,7 +407,6 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     public static void main(String[] args) throws RemoteException {
 
         // security
-        // policy file
         // stub
 
         //settiamo l'ip hostname con l'ip della macchina che esegue questo codice, ServerCV main()

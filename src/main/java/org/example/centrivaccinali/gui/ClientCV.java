@@ -32,7 +32,5 @@ public class ClientCV {
 
         ClientCVMain.main(args); // fa partire l'intrerfaccia grafica
 
-        //legge il file policy nella cartella client con i permessi di chi puo usare l'app
-        //System.setSecurityManager(new SecurityManager());
     }
 }
