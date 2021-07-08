@@ -614,19 +614,15 @@ public class ClientCVController implements Initializable {
             try {
                 registry = LocateRegistry.getRegistry(address, PORT);
 
-            //richiesta dell'oggeto server remoto inserito precedenemente dal serverCV nel registry
+                //richiesta dell'oggeto server remoto inserito precedenemente dal serverCV nel registry
                 stub = (ServerCVI) registry.lookup("ServerCV");
                 to_01_LandingPage();
-            } catch (Exception e) {
-                e.printStackTrace();
-                connectionStatus.setText("indirizzo IP server errato");
-                //todo se il server non è in esecuzione il metodo "stub = (ServerCVI) registry.lookup("ServerCV");"
-                //da eccezione e viene stampato che è inserito un indirizzo Ip errato al posto di segnalare
-                //che il server non è in esecuzione
+            } catch (NotBoundException | IOException e) {
+                //e.printStackTrace();
+                connectionStatus.setText("indirizzo IP server errato o server non disponibile");
             }
         }
     }//END_serverConnection
-
 }//End_Class
 
 

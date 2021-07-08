@@ -62,11 +62,9 @@ public class ServerCVMain extends Application {
 
     ///////////////////////////VERSIONE INSERITA PER USARE MAVEN NEL PROGETTO//////////////////////
 
-    private static Scene scene;
-
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("ServerCV"));
+        Scene scene = new Scene(loadFXML());
         stage.setScene(scene);
         stage.show();
 
@@ -82,8 +80,8 @@ public class ServerCVMain extends Application {
         scene.setRoot(loadFXML(fxml));
     }*/
 
-    private static Parent loadFXML(String fxml) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(ServerCVMain.class.getResource(fxml + ".fxml"));
+    private static Parent loadFXML() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(ServerCVMain.class.getResource("ServerCV.fxml"));
         return fxmlLoader.load();
     }
 

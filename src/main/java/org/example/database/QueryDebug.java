@@ -10,7 +10,6 @@
 
 package org.example.database;
 
-import java.sql.SQLException;
 
 /**
  *

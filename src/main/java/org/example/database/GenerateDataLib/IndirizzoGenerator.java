@@ -21,7 +21,7 @@ import org.example.database.GenerateDataLib.BaseElement.RandomSequenceArrayBased
  * La lista di indirizzi è stata creata selezionando alcuni indirizzi civici In Italia.
  *
  */
-public class IndirizzoGenerator extends GeneratorWrapperBase<String> implements Generator<String> {
+public class IndirizzoGenerator extends GeneratorWrapperBase<String> implements Generator {
 
     static QualificatoreViaGenerator qualificatore = new QualificatoreViaGenerator(); //qualificatore via
     static NomeViaGenerator nome = new NomeViaGenerator(); //nome via

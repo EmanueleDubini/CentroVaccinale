@@ -19,7 +19,7 @@ import org.example.database.GenerateDataLib.BaseElement.RandomSequenceArrayBased
  * Generatore casuale del tipo di un centro vaccinale.
  *
  */
-public class VaccinationCentreTypeGenerator extends GeneratorWrapperBase<String> implements Generator<String> {
+public class VaccinationCentreTypeGenerator extends GeneratorWrapperBase<String> implements Generator {
     /**
      * Lista dei tipi di centro vaccinale.
      */
@@ -29,7 +29,7 @@ public class VaccinationCentreTypeGenerator extends GeneratorWrapperBase<String>
      * Costruttore.
      */
     public VaccinationCentreTypeGenerator() {
-        super(new RandomSequenceArrayBasedGenerator<String>(names));
+        super(new RandomSequenceArrayBasedGenerator<>(names));
     }
 
     /*

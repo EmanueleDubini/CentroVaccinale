@@ -15,9 +15,8 @@ package org.example.database.GenerateDataLib.BaseElement;
  * Un implementazione di questa interfaccia sarà utilizzato per generare tipi di dato
  * di tipo <code>Object</code>.
  *
- * @param <Object>> Tipo del dato che verrà generato.
  */
-public interface Generator<Object> {
+public interface Generator {
     /**
      * Metodo che genera un oggetto di tipo Object.
      * In base alla sua implementazione potrà generare dati casuali, dati estratti da un elenco prodefinito di valori,

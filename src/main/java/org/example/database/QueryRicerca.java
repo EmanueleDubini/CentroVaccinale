@@ -10,7 +10,7 @@
 
 package org.example.database;
 
-
+//todo la classe QueryRicerca potrebbe essere eliminata in quanto mai usata
 /**
  *
  * Classe che contiene le query per la ricerca

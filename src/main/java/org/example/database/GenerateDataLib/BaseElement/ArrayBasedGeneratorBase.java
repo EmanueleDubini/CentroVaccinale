@@ -27,6 +27,7 @@ public abstract class ArrayBasedGeneratorBase<Object> {
      *
      * @param values Un array di valori dai quali si estrarranno i tipi di dato.
      */
+    @SafeVarargs
     public ArrayBasedGeneratorBase(Object... values) {
         this.values = values;
     }

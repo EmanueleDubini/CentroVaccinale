@@ -19,7 +19,7 @@ import org.example.database.GenerateDataLib.BaseElement.RandomSequenceArrayBased
  * La lista di indirizzi è stata creata selezionando alcuni indirizzi civici In Italia..
  *
  */
-public class NomeViaGenerator extends GeneratorWrapperBase<String> implements Generator<String> {
+public class NomeViaGenerator extends GeneratorWrapperBase<String> implements Generator {
     /**
      * Alcuni nomi degli indirizzi civici Italiani.
      */
@@ -39,7 +39,7 @@ public class NomeViaGenerator extends GeneratorWrapperBase<String> implements Ge
      * Costruttore.
      */
     public NomeViaGenerator() {
-        super(new RandomSequenceArrayBasedGenerator<String>(names));
+        super(new RandomSequenceArrayBasedGenerator<>(names));
     }
 
     /*

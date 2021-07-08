@@ -24,6 +24,7 @@ import java.util.ArrayList;
  */
 public interface ServerCVI extends Remote {
 
+
     // Metodi remoti per CENTRI_VACCINALI
 
     /**
@@ -92,7 +93,8 @@ public interface ServerCVI extends Remote {
      * @throws SQLException SQLException
      */
     Boolean login(String username, String password) throws RemoteException, SQLException;
-    void cercaCentroVaccinale() throws RemoteException;
+
+    //void cercaCentroVaccinale() throws RemoteException;
 
     /**
      * Metodo <code>cercaCentroVaccinaleNome</code> che effettua la ricerca di un centro vaccinale tramite il nome
@@ -108,11 +110,12 @@ public interface ServerCVI extends Remote {
 
     /**
      * //todo javadoc, prendere dalla classe serverCV
-     * @throws RemoteException
-     * @throws SQLException
+     * @throws RemoteException RemoteException
+     * @throws SQLException SQLException
      */
     ArrayList<CentroVaccinale> cercaCentroVaccinaleComuneTipologia(String nomeComune, String tipologiaCV) throws RemoteException, SQLException;
-    void visualizzaInfoCentroVaccinale() throws RemoteException;
+
+    //void visualizzaInfoCentroVaccinale() throws RemoteException;
 
 
     // Metodi remoti per EVENTI_AVVERSI
@@ -136,7 +139,7 @@ public interface ServerCVI extends Remote {
      * @param crisi_ipertensiva_note note evento avverso crisi ipertensiva
      *
      * @return true se l'inserimento dell'evento avverso va a buon fine
-     * @throws SQLException
+     * @throws SQLException SQLException
      */
     Boolean inserisciEventiAvversi(String id, String codiceFiscale,
                                    String mal_di_testa, String mal_di_testa_note,

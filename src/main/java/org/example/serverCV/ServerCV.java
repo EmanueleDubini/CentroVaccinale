@@ -10,7 +10,6 @@
 
 package org.example.serverCV;
 
-import org.example.centrivaccinali.gui.ClientCTController;
 import org.example.centrivaccinali.TipologiaCV;
 import org.example.common.CentroVaccinale;
 import org.example.common.Indirizzo;
@@ -18,6 +17,7 @@ import org.example.common.Qualificatore;
 import org.example.database.DbHelper;
 import org.example.serverCV.gui.ServerCVMain;
 
+import java.io.Serial;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
@@ -28,15 +28,13 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-import static org.example.database.QueryRicerca.cercaCentroVaccinalePerComuneTipologia;
-import static org.example.database.QueryRicerca.cercaCentroVaccinalePerNome;
-
 /**
  * Classe <code>ServerCV</code> che costituisce l'entry point della sola parte server dell'applicazione (e per debug)
  * e contiene le implementazione die metodi remoti per RMI.
  * Porta di default = 1200
  */
 public class ServerCV extends UnicastRemoteObject implements ServerCVI{
+    @Serial
     private static final long serialVersionUID = 1L; //sono oggetti serializzati
     public static final int PORT = 1200; //todo sistemare e mettera la porta come campo statico nell'interfaccia del server
     public static Registry registry;
@@ -215,7 +213,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      */
     @Override
     public synchronized ArrayList<CentroVaccinale> cercaCentroVaccinaleNome(String nomeCV) throws RemoteException, SQLException {
-        ArrayList<CentroVaccinale> centriVaccinali = new ArrayList();
+        ArrayList<CentroVaccinale> centriVaccinali = new ArrayList<>();
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
         //ResultSet rs1 = statement.executeQuery(cercaCentroVaccinalePerNome);
@@ -289,7 +287,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      * @throws SQLException SQLException
      */
     public synchronized ArrayList<CentroVaccinale> cercaCentroVaccinaleComuneTipologia(String nomeComune, String tipologiaCV) throws RemoteException, SQLException { //todo questo metodo per ora non restituisce nulla e non riceve come parametro i criteri di ricerca
-        ArrayList<CentroVaccinale> centriVaccinali = new ArrayList();
+        ArrayList<CentroVaccinale> centriVaccinali = new ArrayList<>();
 
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
@@ -376,7 +374,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      * @param crisi_ipertensiva_note note evento avverso crisi ipertensiva
      *
      * @return true se l'inserimento dell'evento avverso va a buon fine
-     * @throws SQLException
+     * @throws SQLException SQLException
      */
     @Override
     public synchronized Boolean inserisciEventiAvversi(String id, String codiceFiscale,

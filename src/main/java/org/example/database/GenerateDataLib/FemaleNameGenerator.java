@@ -20,7 +20,7 @@ import org.example.database.GenerateDataLib.BaseElement.RandomSequenceArrayBased
  *
  */
 
-public class FemaleNameGenerator extends GeneratorWrapperBase<String> implements Generator<String> {
+public class FemaleNameGenerator extends GeneratorWrapperBase<String> implements Generator {
     /**
      * I pi&ugrave; comuni nomi femminili degli Stati Uniti.
      */
@@ -69,7 +69,7 @@ public class FemaleNameGenerator extends GeneratorWrapperBase<String> implements
      * Costruttore.
      */
     public FemaleNameGenerator() {
-        super(new RandomSequenceArrayBasedGenerator<String>(names));
+        super(new RandomSequenceArrayBasedGenerator<>(names));
     }
 
     /*

@@ -13,13 +13,11 @@ package org.example.centrivaccinali.gui;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+
 import java.io.IOException;
-import java.net.URL;
 import java.rmi.RemoteException;
 import java.sql.SQLException;
-import java.util.ResourceBundle;
 import java.util.regex.Pattern;
 
 
