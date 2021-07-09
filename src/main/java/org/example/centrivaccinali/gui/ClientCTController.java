@@ -97,6 +97,9 @@ public class ClientCTController  implements Initializable{
     String severita5, note5;
     String severita6, note6;
 
+    public static String copiaUsername, copiaPassword;
+
+
     String nomeRegistrato, cognomeRegistrato, cfRegistrato, emailRegistrato ,usernameRegistrato, passwordRegistrato,  idVaccinazioneRegistrato, nomeCentroVaccinale;
 
     /**
@@ -337,6 +340,9 @@ public class ClientCTController  implements Initializable{
         if(verify) {
             resetInserimentoLogin();
             to_04CT_EventiAvversiCT();
+            copiaUsername = username;
+            copiaPassword = password;
+
         } else {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
@@ -394,9 +400,29 @@ public class ClientCTController  implements Initializable{
             alert.showAndWait();
         } //END_if
         else {
-            //todo sistemare per prendere dinamicamente id e codice fiscale
+            //Ottiene idCentroVaccinale in base a username e psw inseriti nella schermata di login
+            System.out.println(copiaPassword + " " + copiaPassword);
+            String idCentroVaccinale = ClientCVController.stub.getIdCentroVaccinale(copiaUsername, copiaPassword);
+            System.err.println(idCentroVaccinale);
 
-            Boolean verify = ClientCVController.stub.inserisciEventiAvversi("5f93b2ad-f2ee-442d-9c5b-d509c059562d", "PPPRRR98B10C933V", severita1, note1, severita2, note2, severita3, note3,severita4,note4,severita5, note5, severita6, note6);
+            //Ottiene codice fiscale in base a username e psw inseriti nella schermata di login
+            String codiceF = ClientCVController.stub.getCodiceFiscale(copiaUsername, copiaPassword);
+            System.err.println(codiceF);
+
+
+            Boolean verify = ClientCVController.stub.inserisciEventiAvversi(idCentroVaccinale, codiceF, severita1, note1, severita2, note2, severita3, note3,severita4,note4,severita5, note5, severita6, note6);
+
+            //todo gestire eccezione nel caso in cui il cittadino cerca di inserire DI NUOVO gli eventi avversi
+            if(verify) {
+                System.out.println("ok, inserito");
+            }else {
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Error");
+                alert.setHeaderText("Si è verificato un Errore");
+                alert.setContentText("Hai già inserito gli eventi avversi\nEsegui di nuovo il login");
+
+                alert.showAndWait();
+            }
         }
     }
 }//End_Class

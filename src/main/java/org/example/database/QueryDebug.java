@@ -57,8 +57,8 @@ public class QueryDebug {
 
 
     public static String createEventiAvversiTable = "CREATE TABLE IF NOT EXISTS eventi_avversi (" +
-                                                    "idcentrovaccinale VARCHAR(36) REFERENCES centrivaccinali(idcentrovaccinale) NOT NULL," +
-                                                    "codicefiscale VARCHAR(16) REFERENCES cittadini_registrati(codicefiscale) NOT NULL," +
+                                                    "idcentrovaccinale VARCHAR(36) NOT NULL," +
+                                                    "codicefiscale VARCHAR(16) NOT NULL," +
                                                     "mal_di_testa VARCHAR(5) NOT NULL," +
                                                     "mal_di_testa_note VARCHAR(50) NOT NULL," +
                                                     "febbre VARCHAR(5) NOT NULL," +

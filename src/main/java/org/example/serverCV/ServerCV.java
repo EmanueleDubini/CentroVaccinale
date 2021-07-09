@@ -184,6 +184,63 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     }
 
     /**
+     * Metodo <code>getIdCentroVaccinale</code> che effettua la ricerca dell'id del centro vaccinale tramite user e password
+     * inserite nella fase di login
+     *
+     * @param username username del cittadino che effettua login
+     * @param password password del cittadino che effettua login
+     *
+     * @return <code>String</code> che contiene l'id del centro vaccinale corrispondente
+     *
+     * @throws SQLException
+     */
+    @Override
+    public synchronized String getIdCentroVaccinale (String username, String password) throws SQLException {
+        DbHelper.getConnection();
+        PreparedStatement ps;
+        ps = DbHelper.getConnection().prepareStatement("SELECT idcentrovaccinale " +
+                                            "FROM cittadini_registrati " +
+                                            "WHERE username = '" + username + "'" +
+                                            "AND password = '" + password +"'");
+
+        ResultSet result = ps.executeQuery();
+        String idCentro = "";
+        while (result.next()) {
+            idCentro = result.getString("idcentrovaccinale");
+        }
+        return idCentro;
+    }
+
+    /**
+     * Metodo <code>getCentroFiscale</code> che effettua la ricerca del codice fiscale tramite user e password
+     * inserite nella fase di login
+     *
+     * @param username username del cittadino che effettua login
+     * @param password password del cittadino che effettua login
+     *
+     * @return <code>String</code> che contiene il codice fiscale del cittadino che effettua login
+     *
+     * @throws SQLException
+     */
+    @Override
+    public synchronized  String getCodiceFiscale (String username, String password) throws SQLException {
+        DbHelper.getConnection();
+        PreparedStatement ps;
+        ps = DbHelper.getConnection().prepareStatement("SELECT codicefiscale " +
+                "FROM cittadini_registrati " +
+                "WHERE username = '" + username + "'" +
+                "AND password = '" + password +"'");
+
+        ResultSet result = ps.executeQuery();
+        String codiceF = "codicef";
+        while (result.next()) {
+            codiceF = result.getString("codicefiscale");
+        }
+        return codiceF;
+    }
+
+
+    /**
      * //todo javadoc
      */
     public synchronized void cercaCentroVaccinale() {
@@ -412,7 +469,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
                                                        String tachicardia, String tachicardia_note,
                                                        String crisi_ipertensiva, String crisi_ipertensiva_note) throws SQLException {
 
-
+        //todo gestire l'eccezione che lancia nel caso in cui l'utente abbia già inserito l'evento avverso
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
         statement.executeUpdate("INSERT INTO eventi_avversi " +

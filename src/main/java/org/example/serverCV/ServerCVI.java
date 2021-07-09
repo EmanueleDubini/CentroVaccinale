@@ -109,6 +109,34 @@ public interface ServerCVI extends Remote {
     ArrayList<CentroVaccinale> cercaCentroVaccinaleNome(String nomeCV) throws RemoteException, SQLException;
 
     /**
+     * Metodo <code>getIdCentroVaccinale</code> che effettua la ricerca dell'id del centro vaccinale tramite user e password
+     * inserite nella fase di login
+     *
+     * @param username username del cittadino che effettua login
+     * @param password password del cittadino che effettua login
+     *
+     * @return <code>String</code> che contiene l'ide del centro vaccinale corrispondente
+     *
+     * @throws RemoteException
+     * @throws SQLException
+     */
+    String getIdCentroVaccinale(String username, String password) throws  RemoteException, SQLException;
+
+    /**
+     * Metodo <code>getCentroFiscale</code> che effettua la ricerca del codice fiscale tramite user e password
+     * inserite nella fase di login
+     *
+     * @param username username del cittadino che effettua login
+     * @param password password del cittadino che effettua login
+     *
+     * @return <code>String</code> che contiene il codice fiscale del cittadino che effettua login
+     *
+     * @throws RemoteException
+     * @throws SQLException
+     */
+    String getCodiceFiscale(String username, String password) throws RemoteException, SQLException;
+
+    /**
      * //todo javadoc, prendere dalla classe serverCV
      * @throws RemoteException RemoteException
      * @throws SQLException SQLException
