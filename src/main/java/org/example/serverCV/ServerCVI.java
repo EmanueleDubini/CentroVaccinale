@@ -94,7 +94,10 @@ public interface ServerCVI extends Remote {
      */
     Boolean login(String username, String password) throws RemoteException, SQLException;
 
-    //void cercaCentroVaccinale() throws RemoteException;
+    /**
+      Recupoera l'id per poterlo inserire nella tabella Vaccinati_nomeCentro
+     */
+    String getIdCentroVaccianlePerCV(String nomeCV) throws RemoteException, SQLException;
 
     /**
      * Metodo <code>cercaCentroVaccinaleNome</code> che effettua la ricerca di un centro vaccinale tramite il nome

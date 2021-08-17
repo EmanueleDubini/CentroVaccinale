@@ -362,6 +362,7 @@ public class ClientCVController implements Initializable {
         codiceFiscaleCT = TextFieldCodicefiscaleCT.getText().toUpperCase().strip();             //Strip() rimuove spazi all'inizio e alla fine del testo inserito
         vaccinoSomministratoCT = TipologiaVaccinoCheckBox.getValue();      //non servono controlli
         idVaccinazioneCT =  TextFieldIdVaccinazioneCT.getText().strip();
+        String idCentroVaccinale = stub.getIdCentroVaccianlePerCV(nomeCvCT);
 
         //Controlliamo se i campi sono vuoti
         if ((nomeCvCT.equals("") ||
@@ -408,12 +409,20 @@ public class ClientCVController implements Initializable {
 
             alert.showAndWait();
 
+        } else if (idCentroVaccinale == null){
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Si è verificato un Errore");
+            alert.setContentText("Nome centro vaccinale non valido.\nRiprovare");
+
+            alert.showAndWait();
+
         } else {
 
             dataVaccinazioneCV = selectDateCV();
 
-            String id = UUID.randomUUID().toString();
-            Boolean verify = stub.registraVaccinato(id, nomeCvCT, cognomeCT, nomeCT, codiceFiscaleCT, dataVaccinazioneCV, vaccinoSomministratoCT, idVaccinazioneCT);
+            //String id = UUID.randomUUID().toString();
+            Boolean verify = stub.registraVaccinato(idCentroVaccinale, nomeCvCT, cognomeCT, nomeCT, codiceFiscaleCT, dataVaccinazioneCV, vaccinoSomministratoCT, idVaccinazioneCT);
             if (verify) {
                 resetInserimentoCT();
             }

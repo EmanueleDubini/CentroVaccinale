@@ -115,6 +115,19 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         return true;
     }
 
+    public synchronized String getIdCentroVaccianlePerCV(String nomeCV) throws SQLException{
+        DbHelper.getConnection();
+        Statement statement = DbHelper.getStatement();
+        ResultSet rs = statement.executeQuery("SELECT idcentrovaccinale FROM centrivaccinali WHERE nome = '" + nomeCV + "'");
+
+        String idLetto = "";
+
+        while(rs.next()){
+            idLetto = rs.getString("idcentrovaccinale");
+        }
+
+        return idLetto;
+    }
 
     /// CITTADINI
     /// IMPLEMENTAZIONE Metodi dell'interfaccia ServerCVI ///
