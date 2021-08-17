@@ -31,7 +31,9 @@ import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.sql.SQLException;
+import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.Objects;
 import java.util.Random;
 import java.util.ResourceBundle;
 import java.util.UUID;
@@ -229,7 +231,7 @@ public class ClientCVController implements Initializable {
 
     public void generaCentroVaccinale() throws RemoteException, SQLException {
         ////////////// campi registrazione CV //////////////
-        nomeCV = textFieldNomeCentrovaccinale.getText(); //non richiede controlli
+        nomeCV = textFieldNomeCentrovaccinale.getText().toLowerCase().strip(); //non richiede controlli
         tipologiaCV = tipologiaCheckBox.getValue(); //non richiede controlli
         qualificatoreVia = qualificatoreIndirizzoCheckBox.getValue(); //non richiede controlli
         nomeVia = textFieldNomeVia.getText();
@@ -356,7 +358,7 @@ public class ClientCVController implements Initializable {
     public void generaCittadinoVaccinato() throws SQLException, RemoteException {
         ////////////// CAMPI REGISTRAZIONE CT //////////////
 
-        nomeCvCT = TextFieldNomeCentrovaccinaleCT.getText();    //todo implementare controllo per verificare se esiste il centro vaccinale (nel DB) inserito dall'utente
+        nomeCvCT = TextFieldNomeCentrovaccinaleCT.getText().toLowerCase().strip();
         nomeCT = TextFieldNomeVaccinatoCT.getText();    //non servono controlli
         cognomeCT = TextFieldCognomeVaccinatoCT.getText();  //non servono controlli
         codiceFiscaleCT = TextFieldCodicefiscaleCT.getText().toUpperCase().strip();             //Strip() rimuove spazi all'inizio e alla fine del testo inserito
@@ -400,7 +402,7 @@ public class ClientCVController implements Initializable {
             alert.showAndWait();
         }
 
-        else if (DatePickerSomministrazioneCT.getValue() == null) {   //todo sistemare il controllo data
+        else if (DatePickerSomministrazioneCT.getValue() == null | Objects.requireNonNull(DatePickerSomministrazioneCT.getValue()).isAfter(LocalDate.now())) {
 
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
@@ -409,7 +411,7 @@ public class ClientCVController implements Initializable {
 
             alert.showAndWait();
 
-        } else if (idCentroVaccinale == null){
+        } else if (idCentroVaccinale.equals("")){
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
             alert.setHeaderText("Si è verificato un Errore");
