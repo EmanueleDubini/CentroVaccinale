@@ -3,97 +3,72 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.FlowPane?>
-<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../../css/GradientBackGround.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.centrivaccinali.gui.ClientCTController">
-   <children>
-      <MenuBar>
-        <menus>
-          <Menu mnemonicParsing="false" text="File">
-            <items>
-              <MenuItem mnemonicParsing="false" onAction="#onClickQuit" text="Close" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Back">
-            <items>
-              <MenuItem mnemonicParsing="false" onAction="#to_02CT_MainWindow" text="Back" />
-            </items>
-          </Menu>
-        </menus>
-      </MenuBar>
-      <BorderPane prefHeight="720.0" prefWidth="1280.0">
-         <top>
-            <HBox fx:id="anchor" prefHeight="200.0" prefWidth="1280.0" stylesheets="@../../css/GradientBackGround.css" BorderPane.alignment="CENTER">
-               <children>
-                  <Label prefHeight="50.0" prefWidth="430.0" text="Login Cittadino">
-                     <HBox.margin>
-                        <Insets left="70.0" top="75.0" />
-                     </HBox.margin>
-                     <font>
-                        <Font name="Georgia" size="34.0" />
-                     </font>
-                  </Label>
-                  <ImageView fitHeight="168.0" fitWidth="489.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../../../../../MATERIALE/LOGO/CV_Logo.png" />
-                     </image>
-                     <HBox.margin>
-                        <Insets left="250.0" top="20.0" />
-                     </HBox.margin>
-                  </ImageView>
-               </children>
-            </HBox>
-         </top>
-         <right>
-            <VBox prefHeight="452.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
-               <children>
-                  <Pane prefHeight="405.0" prefWidth="1280.0">
-                     <children>
-                        <Label layoutX="70.0" layoutY="15.0" text="Compilare i campi richiesti:">
-                           <font>
-                              <Font size="26.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="70.0" layoutY="131.0" text="User ID: ">
-                           <font>
-                              <Font name="Georgia" size="23.0" />
-                           </font>
-                        </Label>
-                        <TextField fx:id="TextFieldUsername" layoutX="162.0" layoutY="132.0" prefHeight="25.0" prefWidth="349.0" promptText="User ID" />
-                        <Label layoutX="70.0" layoutY="247.0" text="Password:">
-                           <font>
-                              <Font name="Georgia" size="23.0" />
-                           </font>
-                        </Label>
-                        <PasswordField fx:id="TextFieldPassword" layoutX="181.0" layoutY="248.0" prefHeight="25.0" prefWidth="330.0" promptText="Password" />
-                     </children>
-                  </Pane>
-               </children>
-            </VBox>
-         </right>
-         <bottom>
-            <FlowPane fx:id="anchor" prefHeight="115.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
-               <children>
-                  <Button mnemonicParsing="false" onAction="#login" prefHeight="38.0" prefWidth="260.0" text="Login">
-                     <FlowPane.margin>
-                        <Insets left="900.0" right="215.0" top="20.0" />
-                     </FlowPane.margin>
-                  </Button>
-               </children>
-            </FlowPane>
-         </bottom>
-      </BorderPane>
-   </children>
-</VBox>
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.centrivaccinali.gui.ClientCTController">
+    <children>
+        <AnchorPane fx:id="anchor" prefHeight="720.0" prefWidth="559.0" stylesheets="@../../css/GradientBackGround.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="204.0" fitWidth="485.0" layoutX="35.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/CV_Logo.png" />
+                    </image>
+                </ImageView>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="118.0" layoutY="428.0" prefHeight="26.0" text="Accedi per inserire gli eventi avversi" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="Arial" size="20.0" />
+                    </font>
+                </Label>
+            <Button alignment="CENTER" layoutX="4.0" layoutY="4.0" mnemonicParsing="false" onAction="#to_02CT_MainWindow" prefHeight="32.0" prefWidth="32.0" style="-fx-background-radius: 5em;" text="←" />
+            </children>
+        </AnchorPane>
+        <Pane layoutX="631.0" layoutY="220.0" prefHeight="263.0" prefWidth="531.0" AnchorPane.bottomAnchor="237.0" AnchorPane.topAnchor="214.0">
+            <children>
+                <TextField fx:id="TextFieldUsername" layoutX="7.0" prefHeight="37.0" prefWidth="520.0" promptText="User ID" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
+                <PasswordField fx:id="TextFieldPassword" layoutX="7.0" layoutY="61.0" prefHeight="37.0" prefWidth="520.0" promptText="Password" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
+                <Button alignment="CENTER" contentDisplay="CENTER" layoutX="200.0" layoutY="139.0" mnemonicParsing="false" onAction="#login" prefHeight="34.0" prefWidth="137.0" stylesheets="@../../css/GradientBackGround.css" text="Login">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+                <Button fx:id="anchor" alignment="CENTER" contentDisplay="CENTER" layoutX="135.0" layoutY="240.0" mnemonicParsing="false" onAction="#to_03CT_RegistraCT" prefHeight="34.0" prefWidth="275.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Effettua Registrazione" textAlignment="CENTER" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8_Facebook_F_48px.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+                </Button>
+                <Separator layoutX="133.0" layoutY="205.0" prefHeight="7.0" prefWidth="275.0" />
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="239.0" layoutY="197.0" style="-fx-background-color: #fff;" text="oppure" textFill="#5b5a5a">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+                </Label>
+                <Label fx:id="lblErrors" alignment="CENTER" layoutX="8.0" layoutY="95.0" prefHeight="23.0" prefWidth="275.0" textFill="#ff6354">
+                    <font>
+                        <Font name="Segoe UI" size="10.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+          <Label alignment="CENTER" layoutX="731.0" layoutY="95.0" text="Pagina di Login" textFill="#4e8847">
+              <font>
+                  <Font name="Arial" size="48.0" />
+              </font>
+          </Label>
+    </children>
+</AnchorPane>
