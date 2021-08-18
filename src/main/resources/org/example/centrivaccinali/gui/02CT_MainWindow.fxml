@@ -49,7 +49,7 @@
                   <Font size="24.0" />
                </font>
             </Label>
-            <Button fx:id="anchor" focusTraversable="false" layoutX="203.0" layoutY="185.0" mnemonicParsing="false" onAction="#to_03CT_InfoCV" prefHeight="38.0" prefWidth="300.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Info Centro Vaccinali" textFill="WHITE">
+            <Button fx:id="anchor" alignment="CENTER" layoutX="203.0" layoutY="185.0" mnemonicParsing="false" onAction="#to_03CT_InfoCV" prefHeight="38.0" prefWidth="300.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Info Centro Vaccinali" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
