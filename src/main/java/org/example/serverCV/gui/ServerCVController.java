@@ -26,6 +26,7 @@ import java.rmi.registry.LocateRegistry;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.UUID;
 
 import static org.example.serverCV.ServerCV.PORT;
 
@@ -329,7 +330,7 @@ public class ServerCVController {
      */
     public void inserimentoCittadini() throws SQLException {
         PreparedStatement statement = DbHelper.getConnection().prepareStatement(
-                "INSERT INTO cittadini_registrati(codiceFiscale, cognomeCittadino, nomeCittadino, email, username, password, idVaccinazione) VALUES (?,?,?,?,?,?,?)");
+                "INSERT INTO cittadini_registrati(codiceFiscale, cognomeCittadino, nomeCittadino, email, username, password, idVaccinazione, idcentrovaccinale) VALUES (?,?,?,?,?,?,?,?)");
 
         //String cf;
         for(int i = 0; i < NUMCT; i++){
@@ -343,6 +344,7 @@ public class ServerCVController {
             statement.setString(5, ct.getUserId());
             statement.setString(6, ct.getPassword());
             statement.setString(7, ct.getIdVaccinazione());
+            statement.setString(8, UUID.randomUUID().toString());
             statement.executeUpdate();
         }
         logArea.appendText("Dati in tabella 'cittadini_registrati' inseriti\n");
