@@ -60,7 +60,7 @@
                </font>
             </Label>
             <Separator layoutX="154.0" layoutY="250.0" prefHeight="7.0" prefWidth="400.0" />
-                <Button fx:id="anchor" alignment="CENTER" contentDisplay="CENTER" layoutX="203.0" layoutY="325.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="300.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Eventi Avversi" textAlignment="CENTER" textFill="WHITE">
+                <Button fx:id="anchor" alignment="CENTER" contentDisplay="CENTER" layoutX="203.0" layoutY="325.0" mnemonicParsing="false" onAction="#to_03CT_EventiAvversiCT" prefHeight="38.0" prefWidth="300.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Eventi Avversi" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
