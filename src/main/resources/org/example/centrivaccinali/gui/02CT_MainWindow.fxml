@@ -9,13 +9,14 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <!--aggiungere alla riga 9 il codice:"  fx:controller="sample.Controller" "-->
 
-<VBox xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.centrivaccinali.gui.ClientCTController">
+<VBox xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.centrivaccinali.gui.ClientCTController">
    <children>
       <MenuBar>
         <menus>
@@ -31,29 +32,18 @@
           </Menu>
         </menus>
       </MenuBar>
-      <BorderPane fx:id="anchor" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../../css/GradientBackGround.css">
+      <BorderPane prefHeight="720.0" prefWidth="1280.0" stylesheets="@../../css/GradientBackGround.css">
          <right>
             <VBox prefWidth="1280.0" BorderPane.alignment="CENTER">
                <children>
                     <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="1280.0">
                         <children>
-                            <Label layoutX="465.0" layoutY="1.0" prefHeight="70.0" prefWidth="327.0" text="Piattaforma Cittadini">
+                            <Label layoutX="320.0" layoutY="70.0" text="Non sei ancora registrato?">
                                 <font>
-                                    <Font name="Georgia" size="34.0" />
+                                    <Font name="Calibri" size="28.0" />
                                 </font>
-                           <padding>
-                              <Insets top="30.0" />
-                           </padding>
                             </Label>
-                            <Label layoutX="456.0" layoutY="101.0" text="Selezionare la funzione desiderata:">
-                                <font>
-                                    <Font name="Georgia" size="24.0" />
-                                </font>
-                           <padding>
-                              <Insets top="30.0" />
-                           </padding>
-                            </Label>
-                        <Button fx:id="bottoneRegistraCittadino" layoutX="470.0" layoutY="300.0" mnemonicParsing="false" onAction="#to_03CT_RegistraCT" prefHeight="50.0" prefWidth="340.0" text="Registrati">
+                        <Button fx:id="bottoneRegistraCittadino" layoutX="674.0" layoutY="59.0" mnemonicParsing="false" onAction="#to_03CT_RegistraCT" prefHeight="50.0" prefWidth="300.0" text="Registrati">
                            <font>
                               <Font size="24.0" />
                            </font>
@@ -74,14 +64,29 @@
             </VBox>
          </right>
          <top>
-            <ImageView fitHeight="202.0" fitWidth="497.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
-               <image>
-                  <Image url="@../../images/SezioneCT.png" />
-               </image>
+            <HBox BorderPane.alignment="CENTER_RIGHT">
                <BorderPane.margin>
-                  <Insets top="40.0" />
+                  <Insets right="40.0" top="40.0" />
                </BorderPane.margin>
-            </ImageView>
+               <children>
+                      <Label prefHeight="70.0" text="Benvenuto nella sezione Cittadino">
+                          <font>
+                              <Font name="Calibri" size="38.0" />
+                          </font>
+                     <HBox.margin>
+                        <Insets left="120.0" right="30.0" top="60.0" />
+                     </HBox.margin>
+                      </Label>
+                  <ImageView fitHeight="202.0" fitWidth="497.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/SezioneCT.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
          </top>
          <center>
             <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />

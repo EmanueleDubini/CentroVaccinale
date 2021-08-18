@@ -21,7 +21,7 @@
           </Menu>
           <Menu mnemonicParsing="false" text="Back">
             <items>
-              <MenuItem mnemonicParsing="false" onAction="#to_03CT_LoginWindow" text="back" />
+              <MenuItem mnemonicParsing="false" onAction="#to_02CT_MainWindow" text="back" />
             </items>
           </Menu>
         </menus>
@@ -31,7 +31,7 @@
             <Font name="Georgia" size="48.0" />
          </font>
       </Label>
-      <Label layoutX="90.0" layoutY="150.0" text="Nome Centro Vaccinale (Import automatico DB)">
+      <Label fx:id="textFieldBenvenutoEventiAvversi" layoutX="90.0" layoutY="150.0">
          <font>
             <Font name="Georgia" size="24.0" />
          </font>
@@ -81,7 +81,7 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <Label layoutX="720.0" layoutY="230.0" text="Note:">
+      <Label layoutX="720.0" layoutY="230.0" text="Note (massimo 256 caratteri) :">
          <font>
             <Font size="28.0" />
          </font>

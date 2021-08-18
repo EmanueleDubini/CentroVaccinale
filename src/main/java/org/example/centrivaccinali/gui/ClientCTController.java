@@ -27,6 +27,7 @@ import java.util.regex.Pattern;
 public class ClientCTController  implements Initializable{
 
 
+
     //TextField relativi alla pagina: 03CT_LoginWindow
     @FXML
     private TextField TextFieldUsername;
@@ -60,6 +61,9 @@ public class ClientCTController  implements Initializable{
     private TextField TextFieldIdVaccinazioneVaccinato;
 
     //TextField & Combobox relativi alla pagina: 04CT_EventiAvver
+
+    @FXML
+    private Label textFieldBenvenutoEventiAvversi = new Label();
 
     @FXML
     private Spinner<Integer> spinnerMalDiTesta = new Spinner<>();
@@ -153,13 +157,17 @@ public class ClientCTController  implements Initializable{
         } catch (RemoteException | SQLException e) {
             e.printStackTrace();
         }
-        ////////////// SPINNER INSERIMENTO AVENTI AVVERSI CENTRO VACCINALE //////////////
+        ////////////// SPINNER INSERIMENTO EVENTI AVVERSI CENTRO VACCINALE //////////////
         spinnerMalDiTesta.setValueFactory(spinnerValueFactory1);
         spinnerFebbre.setValueFactory(spinnerValueFactory2);
         spinnerDoloriMuscolari.setValueFactory(spinnerValueFactory3);
         spinnerTachicardia.setValueFactory(spinnerValueFactory4);
         spinnerLinfoadenopatia.setValueFactory(spinnerValueFactory5);
         spinnerCrisiIpertensiva.setValueFactory(spinnerValueFactory6);
+
+        ////////////// INIZIALIZZAZIONE FINESTRA EVENTI AVVERSI CENTRO VACCINALE //////////////
+
+        textFieldBenvenutoEventiAvversi.setText("Benvenuto: " + copiaUsername);
 
     }
 
@@ -379,9 +387,10 @@ public class ClientCTController  implements Initializable{
 
         if(verify) {
             resetInserimentoLogin();
-            to_04CT_EventiAvversiCT();
             copiaUsername = username;
             copiaPassword = password;
+            to_04CT_EventiAvversiCT();
+
 
         } else {
             Alert alert = new Alert(Alert.AlertType.ERROR);
