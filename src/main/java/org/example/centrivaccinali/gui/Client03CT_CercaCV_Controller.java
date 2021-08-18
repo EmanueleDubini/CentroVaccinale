@@ -152,25 +152,25 @@ public class Client03CT_CercaCV_Controller implements Initializable {
     //metodo collegato al bottone di ricerca per nome
     public void invioRicerca(ActionEvent actionEvent) {
 
-        List<CentroVaccinale> risulati;
+        List<CentroVaccinale> risultati;
 
         Node source = (Node) actionEvent.getSource();
 
         try {
             //if per capire se viene effettuata una ricerca per nome o una ricerca per comune e tipologia
             if(source.getId().equals("bottoneRicercaNome")){
-                risulati = ricercaNome();
+                risultati = ricercaNome();
             }
             //altrimenti eseguo una ricerca per comune e tipologia
             else{
-                risulati = ricercaComuneTipologia();
+                risultati = ricercaComuneTipologia();
             }
 
 
             //una volta effettuata la ricerca, se il risultato contiene le ricerche:
-            if(risulati != null){
+            if(risultati != null){
                 //aggiunge tutti i risultati alla lista dei CV da visualizzare
-                centriVaccinali.addAll(risulati);
+                centriVaccinali.addAll(risultati);
 
                 //imposta il centro vaccinale da visualizzare nel riquadro di lato a sinistra, il primo della lista
                 if (centriVaccinali.size() > 0) {

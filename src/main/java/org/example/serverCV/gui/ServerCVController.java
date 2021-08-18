@@ -81,14 +81,15 @@ public class ServerCVController {
      * @throws RemoteException RemoteException
      */
     private void checkLogin() throws RemoteException {
-        String usernameText = "postgres";
-        String passwordText = "postgres";
-        String hostText = "localhost";
+        // DEBUG
+        // String usernameText = "postgres";
+        // String passwordText = "postgres";
+        // String hostText = "localhost";
 
-        /* DA TENERE
-        //String usernameText = dbUsername.getText();
-        //String passwordText = dbPassword.getText();
-        //String hostText = dbHost.getText();*/
+        //VARIABILI PER LOGIN
+        String usernameText = dbUsername.getText();
+        String passwordText = dbPassword.getText();
+        String hostText = dbHost.getText();
 
 
 
