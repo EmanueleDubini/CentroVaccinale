@@ -59,17 +59,17 @@ public class QueryDebug {
     public static String createEventiAvversiTable = "CREATE TABLE IF NOT EXISTS eventi_avversi (" +
                                                     "idcentrovaccinale VARCHAR(36) NOT NULL," +
                                                     "codicefiscale VARCHAR(16) NOT NULL," +
-                                                    "mal_di_testa VARCHAR(5) NOT NULL," +
+                                                    "mal_di_testa INT NOT NULL," +
                                                     "mal_di_testa_note VARCHAR(50) NOT NULL," +
-                                                    "febbre VARCHAR(5) NOT NULL," +
+                                                    "febbre INT NOT NULL," +
                                                     "febbre_note VARCHAR(50) NOT NULL," +
-                                                    "dolori_muscolari_e_articolari VARCHAR(5) NOT NULL," +
+                                                    "dolori_muscolari_e_articolari INT NOT NULL," +
                                                     "dolori_muscolari_e_articolari_note VARCHAR(50) NOT NULL," +
-                                                    "tachicardia VARCHAR(5) NOT NULL," +
+                                                    "tachicardia INT NOT NULL," +
                                                     "tachicardia_note VARCHAR(50) NOT NULL," +
-                                                    "linfoadenopatia VARCHAR(5) NOT NULL," +
+                                                    "linfoadenopatia INT NOT NULL," +
                                                     "linfoadenopatia_note VARCHAR(50) NOT NULL," +
-                                                    "crisi_ipertensiva VARCHAR(5) NOT NULL," +
+                                                    "crisi_ipertensiva INT NOT NULL," +
                                                     "crisi_ipertensiva_note VARCHAR(50) NOT NULL," +
                                                     "PRIMARY KEY(idCentroVaccinale, codiceFiscale)" +
                                                     ")";

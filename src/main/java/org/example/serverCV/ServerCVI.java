@@ -112,6 +112,16 @@ public interface ServerCVI extends Remote {
     ArrayList<CentroVaccinale> cercaCentroVaccinaleNome(String nomeCV) throws RemoteException, SQLException;
 
     /**
+     *
+     * //todo aggiungere javadoc
+     * @param idCentroVaccinale
+     * @return
+     * @throws RemoteException
+     * @throws SQLException
+     */
+    int getAvg(String idCentroVaccinale) throws RemoteException, SQLException;
+
+    /**
      * Metodo <code>getIdCentroVaccinale</code> che effettua la ricerca dell'id del centro vaccinale tramite user e password
      * inserite nella fase di login
      *
@@ -184,10 +194,10 @@ public interface ServerCVI extends Remote {
      * @throws SQLException SQLException
      */
     Boolean inserisciEventiAvversi(String id, String codiceFiscale,
-                                   String mal_di_testa, String mal_di_testa_note,
-                                   String febbre, String febbre_note,
-                                   String dolori_muscolari_e_articolari, String dolori_muscolari_e_articolari_note,
-                                   String linfoadenopatia, String linfoadenopatia_note,
-                                   String tachicardia, String tachicardia_note,
-                                   String crisi_ipertensiva, String crisi_ipertensiva_note) throws RemoteException, SQLException;
+                                   int mal_di_testa, String mal_di_testa_note,
+                                   int febbre, String febbre_note,
+                                   int dolori_muscolari_e_articolari, String dolori_muscolari_e_articolari_note,
+                                   int linfoadenopatia, String linfoadenopatia_note,
+                                   int tachicardia, String tachicardia_note,
+                                   int crisi_ipertensiva, String crisi_ipertensiva_note) throws RemoteException, SQLException;
 }

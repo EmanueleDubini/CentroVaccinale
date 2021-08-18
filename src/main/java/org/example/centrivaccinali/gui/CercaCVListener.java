@@ -12,6 +12,9 @@ package org.example.centrivaccinali.gui;
 
 import org.example.common.CentroVaccinale;
 
+import java.rmi.RemoteException;
+import java.sql.SQLException;
+
 /**
  *
  * Un implementazione di questa interfaccia sarà utilizzato per la finestra di ricerca
@@ -19,5 +22,5 @@ import org.example.common.CentroVaccinale;
  *
  */
 public interface CercaCVListener {
-        public void onClickListener(CentroVaccinale centroVaccinale);
+        public void onClickListener(CentroVaccinale centroVaccinale) throws SQLException, RemoteException;
 }

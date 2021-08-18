@@ -17,6 +17,9 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import org.example.common.CentroVaccinale;
 
+import java.rmi.RemoteException;
+import java.sql.SQLException;
+
 public class ItemController {
     @FXML
     public Label nameLabel;
@@ -24,7 +27,7 @@ public class ItemController {
     public ImageView img;
 
     @FXML
-    private void click(MouseEvent mouseEvent) {cercaCVListener.onClickListener(centroVaccinale); }
+    private void click(MouseEvent mouseEvent) throws SQLException, RemoteException {cercaCVListener.onClickListener(centroVaccinale); }
 
     private CentroVaccinale centroVaccinale;
     private CercaCVListener cercaCVListener;

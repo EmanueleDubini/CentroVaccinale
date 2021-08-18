@@ -45,6 +45,7 @@ public class CentroVaccinale implements Serializable {
      */
     private TipologiaCV tipologia;
 
+
     /**
      * Costruisce un nuovo oggetto che rappresenta un Centro Vaccinale in cui sono presenti le informazioni specificate dall'argomento del metodo.
      *
@@ -59,6 +60,8 @@ public class CentroVaccinale implements Serializable {
         this.indirizzo = indirizzo;
         this.tipologia = tipologia;
     }
+
+
 
     /**
      * Restituisce una stringa che descrive l'identificativo dell'oggetto <strong>Centro Vaccinale</strong> che esegue il metodo.
@@ -152,4 +155,6 @@ public class CentroVaccinale implements Serializable {
      * @return boolean
      */
     public boolean equals(CentroVaccinale centroVaccinale) { return this.toString().equals(centroVaccinale.toString()); }
+
+
 }//END_Centrovaccianle_Class

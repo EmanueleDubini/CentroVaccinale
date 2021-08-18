@@ -126,12 +126,19 @@ public class ClientCTController  implements Initializable{
     @FXML
     private TextField noteCrisiIpertensiva;
 
-    String severita1, note1;
-    String severita2, note2;
-    String severita3, note3;
-    String severita4, note4;
-    String severita5, note5;
-    String severita6, note6;
+    String note1;
+    String note2;
+    String note3;
+    String note4;
+    String note5;
+    String note6;
+
+    int severita1;
+    int severita2;
+    int severita3;
+    int severita4;
+    int severita5;
+    int severita6;
 
     public static String copiaUsername, copiaPassword;
 
@@ -416,27 +423,28 @@ public class ClientCTController  implements Initializable{
      */
     public void inserisciEventiAvversi(ActionEvent actionEvent) throws SQLException, RemoteException {
 
-        severita1 = spinnerMalDiTesta.getValue().toString();
+        severita1 = spinnerMalDiTesta.getValue();
         note1 = noteMalDiTesta.getText();
 
-        severita2 = spinnerFebbre.getValue().toString();
+        severita2 = spinnerFebbre.getValue();
         note2 = noteFebbre.getText();
 
-        severita3 = spinnerDoloriMuscolari.getValue().toString();
+        severita3 = spinnerDoloriMuscolari.getValue();
         note3 = noteDolori.getText();
 
-        severita4 = spinnerTachicardia.getValue().toString();
+        severita4 = spinnerTachicardia.getValue();
         note4 = noteTachicardia.getText();
 
-        severita5 = spinnerLinfoadenopatia.getValue().toString();
+        severita5 = spinnerLinfoadenopatia.getValue();
         note5 = noteLinfoadenopatia.getText();
 
-        severita6 = spinnerCrisiIpertensiva.getValue().toString();
+        severita6 = spinnerCrisiIpertensiva.getValue();
         note6 = noteCrisiIpertensiva.getText();
 
-        if ((severita1.equals("")) || (severita2.equals("")) ||
-            (severita3.equals("")) || (severita4.equals("")) ||
-            (severita5.equals("")) || (severita6.equals(""))) {
+
+        if ((severita1 > 5) || (severita2 > 5) ||
+            (severita3 > 5) || (severita4 > 5) ||
+            (severita5 > 5) || (severita6 > 5)) {
 
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
@@ -444,7 +452,7 @@ public class ClientCTController  implements Initializable{
             alert.setContentText("Campi utili per la registrazione mancanti.\nRiprovare");
 
             alert.showAndWait();
-        } //END_if
+        } //END_if*/
         else {
             //Ottiene idCentroVaccinale in base a username e psw inseriti nella schermata di login
             System.out.println(copiaPassword + " " + copiaPassword);

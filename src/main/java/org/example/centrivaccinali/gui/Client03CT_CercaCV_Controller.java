@@ -63,6 +63,10 @@ public class Client03CT_CercaCV_Controller implements Initializable {
     public ComboBox<String> tipologiaDaRicercare = new ComboBox<>();
     @FXML
     public Button bottoneRicercaComuneTipologia;
+    @FXML
+    public Label nSegnalazioni;
+    @FXML
+    public Label labelSeveritaMedia;
 
     ToggleGroup selectionToggleGroup = new ToggleGroup();
 
@@ -131,14 +135,16 @@ public class Client03CT_CercaCV_Controller implements Initializable {
         }
     }
 
-    private void impostaCVscelto(CentroVaccinale centroVaccinale) {
+    private void impostaCVscelto(CentroVaccinale centroVaccinale) throws SQLException, RemoteException {
         CVNameLable.setText(centroVaccinale.getNome());
         TipologiaLabel.setText(centroVaccinale.getTipologia().name());
 
         Indirizzo indirizzo = centroVaccinale.getIndirizzo();
         ViaLabel.setText(indirizzo.getQualificatore() + " " + indirizzo.getNome() + " " + indirizzo.getNumeroCivico());
         IndirizzoLabel.setText(indirizzo.getComune() + " " + indirizzo.getCap() + " " + indirizzo.getProv());
-        idCentroVacinaleLabel.setText(centroVaccinale.getIdCentroVacciale());
+        String idCV = centroVaccinale.getIdCentroVacciale();
+        idCentroVacinaleLabel.setText(idCV);
+        labelSeveritaMedia.setText(String.valueOf(ClientCVController.stub.getAvg(idCV)));
         chosenCV.setStyle("-fx-background-radius: 30;");
     }
 
@@ -178,7 +184,7 @@ public class Client03CT_CercaCV_Controller implements Initializable {
                     impostaCVscelto(centriVaccinali.get(0));
                     cercaCVListener = new CercaCVListener() {
                         @Override
-                        public void onClickListener(CentroVaccinale centroVaccinale) {
+                        public void onClickListener(CentroVaccinale centroVaccinale) throws SQLException, RemoteException {
                             impostaCVscelto(centroVaccinale);
                         }
                     };

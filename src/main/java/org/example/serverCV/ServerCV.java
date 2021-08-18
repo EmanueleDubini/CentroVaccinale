@@ -351,6 +351,21 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         return centriVaccinali;
     }
 
+    public synchronized int getAvg(String idCentroVaccinale) throws RemoteException, SQLException {
+        System.out.println(idCentroVaccinale);
+        DbHelper.getConnection();
+        Statement statement = DbHelper.getStatement();
+        ResultSet rsAvg = statement.executeQuery("SELECT SUM(mal_di_testa) AS somma " +
+                                                "FROM eventi_avversi " +
+                                                "WHERE idcentrovaccinale = " + "'" + idCentroVaccinale + "'");
+        int media = 0;
+        while (rsAvg.next()) {
+            media = rsAvg.getInt("somma");
+        }
+        System.out.println(media);
+        return media;
+    }
+
     /**
      * Metodo <code>nomiCentriVaccinali</code> che popola una lista con tutti i nomi dei centri vaccinali
      *
@@ -475,12 +490,12 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      */
     @Override
     public synchronized Boolean inserisciEventiAvversi(String id, String codiceFiscale,
-                                                       String mal_di_testa, String mal_di_testa_note,
-                                                       String febbre, String febbre_note,
-                                                       String dolori_muscolari_e_articolari, String dolori_muscolari_e_articolari_note,
-                                                       String tachicardia, String tachicardia_note,
-                                                       String linfoadenopatia, String linfoadenopatia_note,
-                                                       String crisi_ipertensiva, String crisi_ipertensiva_note) throws SQLException {
+                                                       int mal_di_testa, String mal_di_testa_note,
+                                                       int febbre, String febbre_note,
+                                                       int dolori_muscolari_e_articolari, String dolori_muscolari_e_articolari_note,
+                                                       int tachicardia, String tachicardia_note,
+                                                       int linfoadenopatia, String linfoadenopatia_note,
+                                                       int crisi_ipertensiva, String crisi_ipertensiva_note) throws SQLException {
 
         //todo gestire l'eccezione che lancia nel caso in cui l'utente abbia già inserito l'evento avverso
         DbHelper.getConnection();
