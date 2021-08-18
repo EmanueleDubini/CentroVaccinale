@@ -18,7 +18,7 @@
                         <Image url="@../../images/SezioneCT.png" />
                     </image>
                 </ImageView>
-            <Button layoutX="4.0" layoutY="4.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" style="-fx-background-radius: 5em;" text="←" />
+            <Button alignment="CENTER" layoutX="4.0" layoutY="4.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" style="-fx-background-radius: 5em;" text="←" />
             <Label layoutX="27.0" layoutY="474.0" text="Tramite questa pagina potrai usufruire dei servizi riservati ai cittadini" textFill="WHITE">
                <font>
                   <Font size="18.0" />
