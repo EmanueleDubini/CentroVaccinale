@@ -33,11 +33,6 @@
                   <MenuItem mnemonicParsing="false" onAction="#onClickQuit" text="Close" />
                </items>
             </Menu>
-            <Menu mnemonicParsing="false" text="Back">
-               <items>
-                  <MenuItem mnemonicParsing="false" onAction="#to_02CT_MainWindow" text="Back" />
-               </items>
-            </Menu>
          </menus>
       </MenuBar>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0">
@@ -48,12 +43,20 @@
                      <children>
                         <HBox alignment="CENTER" prefHeight="110.0" prefWidth="435.0">
                            <children>
+                              <AnchorPane prefHeight="52.0" prefWidth="70.0">
+                                 <HBox.margin>
+                                    <Insets right="30.0" />
+                                 </HBox.margin>
+                                 <children>
+                                    <Button alignment="CENTER" layoutX="4.0" layoutY="4.0" mnemonicParsing="false" onAction="#to_02CT_MainWindow" prefHeight="32.0" prefWidth="32.0" style="-fx-background-radius: 5em;" text="←" />
+                                 </children>
+                              </AnchorPane>
                               <Text fill="#2c7c1c" strokeType="OUTSIDE" strokeWidth="0.0" text="Ricerca Centro Vaccinale" textAlignment="CENTER">
                                  <font>
                                     <Font name="Arial" size="28.0" />
                                  </font>
                                  <HBox.margin>
-                                    <Insets top="20.0" />
+                                    <Insets right="55.0" top="20.0" />
                                  </HBox.margin>
                               </Text>
                            </children></HBox>
