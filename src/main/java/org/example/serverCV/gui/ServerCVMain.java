@@ -66,6 +66,7 @@ public class ServerCVMain extends Application {
     public void start(Stage stage) throws IOException {
         Scene scene = new Scene(loadFXML());
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
 
         //per chiudere correttamente il jar

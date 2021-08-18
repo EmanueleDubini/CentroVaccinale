@@ -65,10 +65,10 @@ public class QueryDebug {
                                                     "febbre_note VARCHAR(50) NOT NULL," +
                                                     "dolori_muscolari_e_articolari VARCHAR(5) NOT NULL," +
                                                     "dolori_muscolari_e_articolari_note VARCHAR(50) NOT NULL," +
-                                                    "linfoadenopatia VARCHAR(5) NOT NULL," +
-                                                    "linfoadenopatia_note VARCHAR(50) NOT NULL," +
                                                     "tachicardia VARCHAR(5) NOT NULL," +
                                                     "tachicardia_note VARCHAR(50) NOT NULL," +
+                                                    "linfoadenopatia VARCHAR(5) NOT NULL," +
+                                                    "linfoadenopatia_note VARCHAR(50) NOT NULL," +
                                                     "crisi_ipertensiva VARCHAR(5) NOT NULL," +
                                                     "crisi_ipertensiva_note VARCHAR(50) NOT NULL," +
                                                     "PRIMARY KEY(idCentroVaccinale, codiceFiscale)" +

@@ -556,8 +556,7 @@ public class ClientCVController implements Initializable {
 
     //Questo metodo seleziona e ritorna una stringa contenete la data della somministrazione del vaccino al cittadino nella finestra 03CV_RegistraCT
 
-    //todo
-
+    //tod
 
     /**
      * Questo metodo legge la data inserita dall'utente e ne cambia il formato in dd-MM-yyyy
