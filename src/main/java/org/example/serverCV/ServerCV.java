@@ -486,8 +486,8 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
         statement.executeUpdate("INSERT INTO eventi_avversi " +
-                "(idcentrovaccinale, codicefiscale, mal_di_testa, mal_di_testa_note, febbre, febbre_note, dolori_muscolari_e_articolari, dolori_muscolari_e_articolari_note, linfoadenopatia," +
-                "linfoadenopatia_note, tachicardia, tachicardia_note, crisi_ipertensiva, crisi_ipertensiva_note)" +
+                "(idcentrovaccinale, codicefiscale, mal_di_testa, mal_di_testa_note, febbre, febbre_note, dolori_muscolari_e_articolari, dolori_muscolari_e_articolari_note, tachicardia," +
+                "tachicardia_note, linfoadenopatia, linfoadenopatia_note, crisi_ipertensiva, crisi_ipertensiva_note)" +
                 "VALUES(" + "'" + id + "'," + "'" + codiceFiscale + "'," + "'" + mal_di_testa +  "','" + mal_di_testa_note +  "'," +  "'" + febbre + "'," + "'" + febbre_note + "'," + "'" + dolori_muscolari_e_articolari + "',"
                 + "'" + dolori_muscolari_e_articolari_note + "'," + "'" + tachicardia + "'," + "'" + tachicardia_note + "'," + "'" + linfoadenopatia + "'," + "'" + linfoadenopatia_note +
                 "'," + "'" + crisi_ipertensiva +"'," + "'" + crisi_ipertensiva_note +"'" + ")");
