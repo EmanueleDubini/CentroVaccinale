@@ -5,6 +5,7 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Spinner?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
@@ -45,16 +46,11 @@
             <Font size="28.0" />
          </font>
       </Label>
-      <TextField fx:id="severitaTachicardia" layoutX="480.0" layoutY="480.0" prefHeight="25.0" prefWidth="149.0" promptText="(0 - 5)" text="0" />
       <Button fx:id="buttonInserisciEvento" layoutX="1040.0" layoutY="656.0" mnemonicParsing="false" onAction="#inserisciEventiAvversi" prefHeight="38.0" prefWidth="149.0" text="Inserisci Evento">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <TextField fx:id="severitaDolori" layoutX="480.0" layoutY="420.0" prefHeight="25.0" prefWidth="149.0" promptText="(0 - 5)" text="0" />
-      <TextField fx:id="severitaLinfoadenopatia" layoutX="480.0" layoutY="540.0" prefHeight="25.0" prefWidth="149.0" promptText="(0 - 5)" text="0" />
-      <TextField fx:id="severitaFebbre" layoutX="480.0" layoutY="360.0" prefHeight="25.0" prefWidth="149.0" promptText="(0 - 5)" text="0" />
-      <TextField fx:id="severitaMalDiTesta" layoutX="480.0" layoutY="300.0" prefHeight="25.0" prefWidth="149.0" promptText="(0 - 5)" text="0" />
       <Label fx:id="labelFebbre" layoutX="100.0" layoutY="360.0" text="Febbre:">
          <font>
             <Font size="24.0" />
@@ -90,12 +86,17 @@
             <Font size="28.0" />
          </font>
       </Label>
-      <TextField fx:id="severitaCrisiIpertensiva" layoutX="480.0" layoutY="600.0" promptText="(0 - 5)" text="0" />
       <TextField fx:id="noteMalDiTesta" layoutX="740.0" layoutY="300.0" prefHeight="40.0" prefWidth="450.0" promptText="Inserisci informazioni" />
       <TextField fx:id="noteFebbre" layoutX="740.0" layoutY="360.0" prefHeight="40.0" prefWidth="450.0" promptText="Inserisci informazioni" />
       <TextField fx:id="noteDolori" layoutX="740.0" layoutY="420.0" prefHeight="40.0" prefWidth="450.0" promptText="Inserisci informazioni" />
       <TextField fx:id="noteTachicardia" layoutX="740.0" layoutY="480.0" prefHeight="40.0" prefWidth="450.0" promptText="Inserisci informazioni" />
       <TextField fx:id="noteLinfoadenopatia" layoutX="740.0" layoutY="540.0" prefHeight="40.0" prefWidth="450.0" promptText="Inserisci informazioni" />
       <TextField fx:id="noteCrisiIpertensiva" layoutX="740.0" layoutY="600.0" prefHeight="40.0" prefWidth="450.0" promptText="Inserisci informazioni" />
+      <Spinner fx:id="spinnerMalDiTesta" cache="true" layoutX="480.0" layoutY="305.0" />
+      <Spinner fx:id="spinnerFebbre" cache="true" layoutX="480.0" layoutY="365.0" />
+      <Spinner fx:id="spinnerDoloriMuscolari" cache="true" layoutX="480.0" layoutY="428.0" />
+      <Spinner fx:id="spinnerTachicardia" cache="true" layoutX="480.0" layoutY="488.0" />
+      <Spinner fx:id="spinnerLinfoadenopatia" cache="true" layoutX="480.0" layoutY="548.0" />
+      <Spinner fx:id="spinnerCrisiIpertensiva" cache="true" layoutX="480.0" layoutY="608.0" />
    </children>
 </Pane>

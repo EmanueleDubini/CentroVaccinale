@@ -26,6 +26,7 @@ import java.util.regex.Pattern;
 
 public class ClientCTController  implements Initializable{
 
+
     //TextField relativi alla pagina: 03CT_LoginWindow
     @FXML
     private TextField TextFieldUsername;
@@ -61,32 +62,63 @@ public class ClientCTController  implements Initializable{
     //TextField & Combobox relativi alla pagina: 04CT_EventiAvver
 
     @FXML
-    private TextField severitaMalDiTesta;
+    private Spinner<Integer> spinnerMalDiTesta = new Spinner<>();
+    //inizializzazione dell'oggetto che modifica il valore dello spinner
+    SpinnerValueFactory<Integer> spinnerValueFactory1 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 5, 0);
+
+
+    @FXML
+    private Spinner<Integer> spinnerFebbre = new Spinner<>();
+    //inizializzazione dell'oggetto che modifica il valore dello spinner
+    SpinnerValueFactory<Integer> spinnerValueFactory2 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 5, 0);
+
+    @FXML
+    private Spinner<Integer> spinnerDoloriMuscolari = new Spinner<>();
+    //inizializzazione dell'oggetto che modifica il valore dello spinner
+    SpinnerValueFactory<Integer> spinnerValueFactory3 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 5, 0);
+
+    @FXML
+    private Spinner<Integer> spinnerTachicardia = new Spinner<>();
+    //inizializzazione dell'oggetto che modifica il valore dello spinner
+    SpinnerValueFactory<Integer> spinnerValueFactory4 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 5, 0);
+
+    @FXML
+    private Spinner<Integer> spinnerLinfoadenopatia = new Spinner<>();
+    //inizializzazione dell'oggetto che modifica il valore dello spinner
+    SpinnerValueFactory<Integer> spinnerValueFactory5 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 5, 0);
+
+    @FXML
+    private Spinner<Integer> spinnerCrisiIpertensiva = new Spinner<>();
+    //inizializzazione dell'oggetto che modifica il valore dello spinner
+    SpinnerValueFactory<Integer> spinnerValueFactory6 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 5, 0);
+
+
+
     @FXML
     private TextField noteMalDiTesta;
 
-    @FXML
-    private TextField severitaFebbre;
+    //@FXML
+    //private TextField severitaFebbre;
     @FXML
     private TextField noteFebbre;
 
-    @FXML
-    private TextField severitaDolori;
+    //@FXML
+    //private TextField severitaDolori;
     @FXML
     private TextField noteDolori;
 
-    @FXML
-    private TextField severitaTachicardia;
+    //@FXML
+    //private TextField severitaTachicardia;
     @FXML
     private TextField noteTachicardia;
 
-    @FXML
-    private TextField severitaLinfoadenopatia;
+    //@FXML
+    //private TextField severitaLinfoadenopatia;
     @FXML
     private TextField noteLinfoadenopatia;
 
-    @FXML
-    private TextField severitaCrisiIpertensiva;
+    //@FXML
+    //private TextField severitaCrisiIpertensiva;
     @FXML
     private TextField noteCrisiIpertensiva;
 
@@ -121,6 +153,14 @@ public class ClientCTController  implements Initializable{
         } catch (RemoteException | SQLException e) {
             e.printStackTrace();
         }
+        ////////////// SPINNER INSERIMENTO AVENTI AVVERSI CENTRO VACCINALE //////////////
+        spinnerMalDiTesta.setValueFactory(spinnerValueFactory1);
+        spinnerFebbre.setValueFactory(spinnerValueFactory2);
+        spinnerDoloriMuscolari.setValueFactory(spinnerValueFactory3);
+        spinnerTachicardia.setValueFactory(spinnerValueFactory4);
+        spinnerLinfoadenopatia.setValueFactory(spinnerValueFactory5);
+        spinnerCrisiIpertensiva.setValueFactory(spinnerValueFactory6);
+
     }
 
     /**
@@ -367,30 +407,27 @@ public class ClientCTController  implements Initializable{
      */
     public void inserisciEventiAvversi(ActionEvent actionEvent) throws SQLException, RemoteException {
 
-        severita1 = severitaMalDiTesta.getText();
+        severita1 = spinnerMalDiTesta.getValue().toString();
         note1 = noteMalDiTesta.getText();
 
-        severita2 = severitaFebbre.getText();
+        severita2 = spinnerFebbre.getValue().toString();
         note2 = noteFebbre.getText();
 
-        severita3 = severitaDolori.getText();
+        severita3 = spinnerDoloriMuscolari.getValue().toString();
         note3 = noteDolori.getText();
 
-        severita4 = severitaTachicardia.getText();
+        severita4 = spinnerTachicardia.getValue().toString();
         note4 = noteTachicardia.getText();
 
-        severita5 = severitaLinfoadenopatia.getText();
+        severita5 = spinnerLinfoadenopatia.getValue().toString();
         note5 = noteLinfoadenopatia.getText();
 
-        severita6 = severitaCrisiIpertensiva.getText();
+        severita6 = spinnerCrisiIpertensiva.getValue().toString();
         note6 = noteCrisiIpertensiva.getText();
 
-        if ((severita1.equals("")) || note1.equals("") ||
-            (severita2.equals("")) || note2.equals("") ||
-            (severita3.equals("")) || note3.equals("") ||
-            (severita4.equals("")) || note4.equals("") ||
-            (severita5.equals("")) || note5.equals("") ||
-            (severita6.equals("")) || note6.equals("")) {
+        if ((severita1.equals("")) || (severita2.equals("")) ||
+            (severita3.equals("")) || (severita4.equals("")) ||
+            (severita5.equals("")) || (severita6.equals(""))) {
 
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
@@ -410,7 +447,7 @@ public class ClientCTController  implements Initializable{
             System.err.println(codiceF);
 
 
-            Boolean verify = ClientCVController.stub.inserisciEventiAvversi(idCentroVaccinale, codiceF, severita1, note1, severita2, note2, severita3, note3,severita4,note4,severita5, note5, severita6, note6);
+            Boolean verify = ClientCVController.stub.inserisciEventiAvversi(idCentroVaccinale, codiceF, severita1, note1, severita2, note2, severita3, note3, severita4, note4, severita5, note5, severita6, note6);
 
             //todo gestire eccezione nel caso in cui il cittadino cerca di inserire DI NUOVO gli eventi avversi
             if(verify) {
