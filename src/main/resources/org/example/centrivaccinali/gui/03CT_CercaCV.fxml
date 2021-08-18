@@ -22,8 +22,9 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<VBox xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.centrivaccinali.gui.Client03CT_CercaCV_Controller">
+<VBox xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.centrivaccinali.gui.Client03CT_CercaCV_Controller">
    <children>
       <MenuBar>
          <menus>
@@ -47,31 +48,22 @@
                      <children>
                         <HBox alignment="CENTER" prefHeight="110.0" prefWidth="435.0">
                            <children>
-                              <Label prefHeight="49.0" prefWidth="152.0" text="Ricerca" textFill="#44833e">
+                              <Text fill="#2c7c1c" strokeType="OUTSIDE" strokeWidth="0.0" text="Ricerca Centro Vaccinale" textAlignment="CENTER">
                                  <font>
-                                    <Font name="Cambria Bold" size="40.0" />
+                                    <Font name="Arial" size="28.0" />
                                  </font>
                                  <HBox.margin>
                                     <Insets top="20.0" />
                                  </HBox.margin>
-                              </Label>
-                              <Label text="CV" textFill="#44833e">
-                                 <font>
-                                    <Font name="Cambria" size="40.0" />
-                                 </font>
-                                 <HBox.margin>
-                                    <Insets top="20.0" />
-                                 </HBox.margin>
-                              </Label>
-                           </children>
-                        </HBox>
+                              </Text>
+                           </children></HBox>
                         <HBox prefHeight="100.0" prefWidth="200.0" />
                         <VBox fx:id="chosenCV" alignment="TOP_CENTER" prefHeight="642.0" prefWidth="357.0" stylesheets="@../../css/GradientBackGround.css">
                            <VBox.margin>
-                              <Insets bottom="20.0" left="10.0" right="10.0" />
+                              <Insets bottom="70.0" left="10.0" right="10.0" />
                            </VBox.margin>
                            <children>
-                              <Label fx:id="CVNameLable" alignment="CENTER" prefHeight="45.0" prefWidth="275.0" text="nomecv">
+                              <Label fx:id="CVNameLable" alignment="CENTER" prefHeight="45.0" prefWidth="275.0">
                                  <font>
                                     <Font name="Cambria" size="36.0" />
                                  </font>
