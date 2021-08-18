@@ -478,8 +478,8 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
                                                        String mal_di_testa, String mal_di_testa_note,
                                                        String febbre, String febbre_note,
                                                        String dolori_muscolari_e_articolari, String dolori_muscolari_e_articolari_note,
-                                                       String linfoadenopatia, String linfoadenopatia_note,
                                                        String tachicardia, String tachicardia_note,
+                                                       String linfoadenopatia, String linfoadenopatia_note,
                                                        String crisi_ipertensiva, String crisi_ipertensiva_note) throws SQLException {
 
         //todo gestire l'eccezione che lancia nel caso in cui l'utente abbia già inserito l'evento avverso
@@ -489,7 +489,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
                 "(idcentrovaccinale, codicefiscale, mal_di_testa, mal_di_testa_note, febbre, febbre_note, dolori_muscolari_e_articolari, dolori_muscolari_e_articolari_note, linfoadenopatia," +
                 "linfoadenopatia_note, tachicardia, tachicardia_note, crisi_ipertensiva, crisi_ipertensiva_note)" +
                 "VALUES(" + "'" + id + "'," + "'" + codiceFiscale + "'," + "'" + mal_di_testa +  "','" + mal_di_testa_note +  "'," +  "'" + febbre + "'," + "'" + febbre_note + "'," + "'" + dolori_muscolari_e_articolari + "',"
-                + "'" + dolori_muscolari_e_articolari_note + "'," + "'" + linfoadenopatia + "'," + "'" + linfoadenopatia_note + "'," + "'" + tachicardia + "'," + "'" + tachicardia_note +
+                + "'" + dolori_muscolari_e_articolari_note + "'," + "'" + tachicardia + "'," + "'" + tachicardia_note + "'," + "'" + linfoadenopatia + "'," + "'" + linfoadenopatia_note +
                 "'," + "'" + crisi_ipertensiva +"'," + "'" + crisi_ipertensiva_note +"'" + ")");
 
         System.out.println("SERVER: inserisciEventiAvversi() eseguito correttamente");
