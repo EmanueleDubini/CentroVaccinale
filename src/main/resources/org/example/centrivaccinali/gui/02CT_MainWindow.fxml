@@ -19,9 +19,14 @@
                     </image>
                 </ImageView>
             <Button layoutX="4.0" layoutY="4.0" mnemonicParsing="false" onAction="#to_01_LandingPage" prefHeight="32.0" prefWidth="32.0" style="-fx-background-radius: 5em;" text="←" />
-            <Label layoutX="28.0" layoutY="475.0" text="Tramite questa pagina potrai usufruire dei servizi riservati ai cittadini" textFill="WHITE">
+            <Label layoutX="67.0" layoutY="473.0" text="Tramite questa pagina potrai usufruire dei servizi riservati" textFill="WHITE">
                <font>
                   <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="238.0" layoutY="502.0" text="ai cittadini." textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="18.0" />
                </font>
             </Label>
             </children>
