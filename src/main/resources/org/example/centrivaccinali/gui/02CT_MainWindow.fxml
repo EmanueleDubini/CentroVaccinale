@@ -1,96 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<!--aggiungere alla riga 9 il codice:"  fx:controller="sample.Controller" "-->
-
-<VBox xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.centrivaccinali.gui.ClientCTController">
-   <children>
-      <MenuBar>
-        <menus>
-            <Menu mnemonicParsing="false" text="File">
-              <items>
-                <MenuItem mnemonicParsing="false" onAction="#onClickQuit" text="Close" />
-              </items>
-            </Menu>
-          <Menu mnemonicParsing="false" text="Back">
-            <items>
-              <MenuItem mnemonicParsing="false" onAction="#to_01_LandingPage" text="Back" />
-            </items>
-          </Menu>
-        </menus>
-      </MenuBar>
-      <BorderPane prefHeight="720.0" prefWidth="1280.0" stylesheets="@../../css/GradientBackGround.css">
-         <right>
-            <VBox prefWidth="1280.0" BorderPane.alignment="CENTER">
-               <children>
-                    <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="1280.0">
-                        <children>
-                            <Label layoutX="320.0" layoutY="70.0" text="Non sei ancora registrato?">
-                                <font>
-                                    <Font name="Calibri" size="28.0" />
-                                </font>
-                            </Label>
-                        <Button fx:id="bottoneRegistraCittadino" layoutX="674.0" layoutY="59.0" mnemonicParsing="false" onAction="#to_03CT_RegistraCT" prefHeight="50.0" prefWidth="300.0" text="Registrati">
-                           <font>
-                              <Font size="24.0" />
-                           </font>
-                        </Button>
-                            <Button fx:id="bottoneEventiAvversi" alignment="CENTER" layoutX="875.0" layoutY="300.0" mnemonicParsing="false" onAction="#to_03CT_EventiAvversiCT" prefHeight="50.0" prefWidth="340.0" text="Eventi Avversi">
-                                <font>
-                                    <Font size="24.0" />
-                                </font>
-                            </Button>
-                            <Button fx:id="bottoneInfoCentriVaccinali" alignment="CENTER" layoutX="65.0" layoutY="300.0" mnemonicParsing="false" onAction="#to_03CT_InfoCV" prefHeight="50.0" prefWidth="340.0" text="Info Centri Vaccinali">
-                                <font>
-                                    <Font size="24.0" />
-                                </font>
-                            </Button>
-                        </children>
-                    </Pane>
-               </children>
-            </VBox>
-         </right>
-         <top>
-            <HBox BorderPane.alignment="CENTER_RIGHT">
-               <BorderPane.margin>
-                  <Insets right="40.0" top="40.0" />
-               </BorderPane.margin>
-               <children>
-                      <Label prefHeight="70.0" text="Benvenuto nella sezione Cittadino">
-                          <font>
-                              <Font name="Calibri" size="38.0" />
-                          </font>
-                     <HBox.margin>
-                        <Insets left="120.0" right="30.0" top="60.0" />
-                     </HBox.margin>
-                      </Label>
-                  <ImageView fitHeight="202.0" fitWidth="497.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.centrivaccinali.gui.ClientCTController">
+    <children>
+        <AnchorPane fx:id="anchor" prefHeight="720.0" prefWidth="559.0" stylesheets="@../../css/GradientBackGround.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="204.0" fitWidth="485.0" layoutX="38.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
                         <Image url="@../../images/SezioneCT.png" />
-                     </image>
-                     <HBox.margin>
-                        <Insets left="50.0" />
-                     </HBox.margin>
-                  </ImageView>
-               </children>
-            </HBox>
-         </top>
-         <center>
-            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
-         </center>
-      </BorderPane>
-   </children>
-</VBox>
+                    </image>
+                </ImageView>
+            <Button layoutX="4.0" layoutY="4.0" mnemonicParsing="false" onAction="#to_01_LandingPage" prefHeight="32.0" prefWidth="32.0" style="-fx-background-radius: 5em;" text="←" />
+            <Label layoutX="9.0" layoutY="476.0" text="Tramite questa pagina potrai usufruire dei servizi riservati ai cittadini" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+        <Pane layoutX="561.0" layoutY="220.0" prefHeight="505.0" prefWidth="768.0" AnchorPane.bottomAnchor="1.0" AnchorPane.topAnchor="214.0">
+            <children>
+                <Separator layoutX="189.0" layoutY="110.0" prefHeight="7.0" prefWidth="400.0" />
+                <Label fx:id="lblErrors" alignment="CENTER" contentDisplay="CENTER" layoutX="114.0" text="Registrati al centro vaccinale di propria competenza:">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </Label>
+            <Button fx:id="anchor" alignment="CENTER" contentDisplay="CENTER" layoutX="235.0" layoutY="45.0" mnemonicParsing="false" onAction="#to_03CT_RegistraCT" prefHeight="38.0" prefWidth="300.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Registrati" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="40.0" layoutY="139.0" text="Consulta le informazioni di ogni centro vaccinale (accesso libero):">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="anchor" focusTraversable="false" layoutX="235.0" layoutY="185.0" mnemonicParsing="false" onAction="#to_03CT_InfoCV" prefHeight="38.0" prefWidth="300.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Info Centro Vaccinali" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="129.0" layoutY="280.0" text="Inserisci eventuali effetti collaterali post vaccinazione">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Separator layoutX="193.0" layoutY="250.0" prefHeight="7.0" prefWidth="400.0" />
+                <Button fx:id="anchor" alignment="CENTER" contentDisplay="CENTER" layoutX="235.0" layoutY="325.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="300.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Eventi Avversi" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+                </Button>
+            </children>
+        </Pane>
+          <Label alignment="CENTER" layoutX="871.0" layoutY="101.0" text="Home page" textFill="#4e8847">
+              <font>
+                  <Font name="Arial" size="48.0" />
+              </font>
+          </Label>
+      <ImageView fitHeight="121.0" fitWidth="109.0" layoutX="748.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/primula.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
