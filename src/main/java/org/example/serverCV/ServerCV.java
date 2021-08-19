@@ -355,16 +355,27 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         System.out.println(idCentroVaccinale);
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
-        ResultSet rsAvg = statement.executeQuery("SELECT SUM(mal_di_testa + febbre + dolori_muscolari_e_articolari + tachicardia + linfoadenopatia + crisi_ipertensiva) AS somma " +
+        ResultSet rsSum = statement.executeQuery("SELECT SUM(mal_di_testa + febbre + dolori_muscolari_e_articolari + tachicardia + linfoadenopatia + crisi_ipertensiva) AS somma " +
                                                 "FROM eventi_avversi " +
                                                 "WHERE idcentrovaccinale = " + "'" + idCentroVaccinale + "'");
         int somma = 0;
-        while (rsAvg.next()) {
-            somma = rsAvg.getInt("somma");
+        while (rsSum.next()) {
+            somma = rsSum.getInt("somma");
         }
-        //todo aggiungere count (che viene moltiplicato per 6) da dividere alla somma. Otteniamo cosi' la media
-        System.out.println(somma);
-        return somma;
+
+
+        ResultSet rsCount = statement.executeQuery("SELECT COUNT (*) AS conta " +
+                                                    "FROM eventi_avversi " +
+                                                    "WHERE idcentrovaccinale = " + "'" + idCentroVaccinale + "'");
+        int conta = 0;
+        while (rsCount.next()) {
+            conta = rsCount.getInt("conta");
+        }
+
+        int media = 0;
+        media = somma / (conta*6);
+        //System.out.println(media);
+        return media;
     }
 
     /**
