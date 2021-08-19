@@ -351,7 +351,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         return centriVaccinali;
     }
 
-    public synchronized int getAvg(String idCentroVaccinale) throws RemoteException, SQLException {
+    public synchronized int getAvg(String idCentroVaccinale) throws RemoteException, SQLException, ArithmeticException {
         System.out.println(idCentroVaccinale);
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
