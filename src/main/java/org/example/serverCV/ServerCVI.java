@@ -29,7 +29,7 @@ public interface ServerCVI extends Remote {
     // Metodi remoti per CENTRI_VACCINALI
 
     /**
-     * Metodo <code>registraCentroVaccinale</code> registra nel DB un nuovo Centro Vaccinale
+     * Il metodo <code>registraCentroVaccinale</code> registra nel DB un nuovo Centro Vaccinale
      *
      * @param id id del centro vaccinale
      * @param nomeCV nome del centro vaccinale
@@ -40,6 +40,7 @@ public interface ServerCVI extends Remote {
      * @param provincia provincia del centro vaccinale
      * @param cap cap del centro vaccinale
      * @param tipologia tipologia del centro vaccinale
+     *
      * @return true se la registrazione va a buon fine
      *
      * @throws SQLException SQLException
@@ -47,7 +48,7 @@ public interface ServerCVI extends Remote {
     Boolean registraCentroVaccinale(String id, String nomeCV, String qualificatore, String indirizzo, String numeroCivico, String comune, String provincia, String cap, String tipologia) throws RemoteException, SQLException;
 
     /**
-     * Metodo <code>registraVaccinato</code> registra nel DB un nuovo cittadino che è appena stato vaccinato
+     * Il metodo <code>registraVaccinato</code> registra nel DB un nuovo cittadino che è appena stato vaccinato
      *
      * @param id id del cittadino vaccinato
      * @param nomeCV nome del centro vaccinale in cui si e vaccinato il cittadino
@@ -57,6 +58,7 @@ public interface ServerCVI extends Remote {
      * @param dataSomministrazione data vaccinazione del cittadino vaccinato
      * @param vaccinoSomministrato tipo di vaccino somministrato
      * @param idVaccinazione id vaccinazione del cittadino vaccinato
+     *
      * @return true se la registrazione va a buon fine
      *
      * @throws SQLException SQLException
@@ -67,7 +69,7 @@ public interface ServerCVI extends Remote {
     // Metodi remoti per CITTADINI
 
     /**
-     * Metodo <code>registraCittadino</code> registra nel DB un nuovo cittadino che e stato precendentemente vaccinato
+     * Il metodo <code>registraCittadino</code> registra nel DB un nuovo cittadino che e stato precendentemente vaccinato
      *
      * @param cf codice fiscale del cittadino
      * @param cognome cognome del cittadino
@@ -78,30 +80,40 @@ public interface ServerCVI extends Remote {
      * @param idVaccinazione id vaccinazione del cittadino
      *
      * @return @return true se la registrazione va a buon fine
+     *
      * @throws SQLException SQLException
      */
     Boolean registraCittadino(String cf, String cognome, String nome, String email, String username, String password, String idVaccinazione, String nomeCentroVaccinale) throws RemoteException, SQLException;
 
     /**
-     * Metodo <code>login</code> controlla nel DB la corrispondenza username/password per permettere l'accesso ai cittadini
+     * Il metodo <code>login</code> controlla nel DB la corrispondenza username/password per permettere l'accesso ai cittadini
      * registrati che volgiono inserire un evento avverso
      *
      * @param username username del vaccinato che vuole accedere
      * @param password password del vaccinato che vuole accedere
      *
      * @return true se il login va a buon fine
+     *
      * @throws RemoteException RemoteException
      * @throws SQLException SQLException
      */
     Boolean login(String username, String password) throws RemoteException, SQLException;
 
+
     /**
-      Recupoera l'id per poterlo inserire nella tabella Vaccinati_nomeCentro
+     * Il metodo <code>getIdCentroVaccianlePerCV</code> estrae dal DB l'id del centro vaccinale passato come parametro
+     *
+     * @param nomeCV il nome del centro vaccinale di cui si vuole estrarre l'id
+     *
+     * @return idLetto dal DB
+     *
+     * @throws RemoteException
+     * @throws SQLException
      */
     String getIdCentroVaccianlePerCV(String nomeCV) throws RemoteException, SQLException;
 
     /**
-     * Metodo <code>cercaCentroVaccinaleNome</code> che effettua la ricerca di un centro vaccinale tramite il nome
+     * Il metodo <code>cercaCentroVaccinaleNome</code> effettua la ricerca di un centro vaccinale tramite il nome
      *
      * @param nomeCV nome del centro vaccinale secondo cui effettuare la ricerca
      *
@@ -113,17 +125,19 @@ public interface ServerCVI extends Remote {
     ArrayList<CentroVaccinale> cercaCentroVaccinaleNome(String nomeCV) throws RemoteException, SQLException;
 
     /**
+     * Il metodo <code>getAvg_Nsegnalazioni</code> calcola la media e il numero di segnalazioni di un dato centro vaccinale
      *
-     * //todo aggiungere javadoc
-     * @param idCentroVaccinale
-     * @return
+     * @param idCentroVaccinale l' id del centro vaccinale di cui si vuole sapere la media e il numero di segnalazioni
+     *
+     * @return un <code>array</code> che contiene in posizione [0] la media delle segnalazioni e in posizione [1] il numero delle segnalazioni
+     *
      * @throws RemoteException
      * @throws SQLException
      */
     double[] getAvg_Nsegnalazioni(String idCentroVaccinale) throws RemoteException, SQLException;
 
     /**
-     * Metodo <code>getIdCentroVaccinale</code> che effettua la ricerca dell'id del centro vaccinale tramite user e password
+     * Il metodo <code>getIdCentroVaccinale</code> effettua la ricerca dell'id del centro vaccinale tramite user e password
      * inserite nella fase di login
      *
      * @param username username del cittadino che effettua login
@@ -137,7 +151,7 @@ public interface ServerCVI extends Remote {
     String getIdCentroVaccinale(String username, String password) throws  RemoteException, SQLException;
 
     /**
-     * Metodo <code>getCentroFiscale</code> che effettua la ricerca del codice fiscale tramite user e password
+     * Il metodo <code>getCentroFiscale</code> effettua la ricerca del codice fiscale tramite user e password
      * inserite nella fase di login
      *
      * @param username username del cittadino che effettua login
@@ -151,16 +165,23 @@ public interface ServerCVI extends Remote {
     String getCodiceFiscale(String username, String password) throws RemoteException, SQLException;
 
     /**
-     * //todo javadoc, prendere dalla classe serverCV
+     * Il metodo <code>cercaCentroVaccinaleComuneTipologia</code> effettua la ricerca di un centro vaccinale tramite il nome
+     *
+     * @param  nomeComune comune del centro vaccinale secondo cui effettuare la ricerca
+     * @param  tipologiaCV tipologia del centro vaccinale secondo cui effettuare la ricerca
+     *
+     * @return <code>ArrayList</code> che contiene tutti i centri vaccinali che rispettano i criteri di ricerca
+     *
      * @throws RemoteException RemoteException
      * @throws SQLException SQLException
      */
     ArrayList<CentroVaccinale> cercaCentroVaccinaleComuneTipologia(String nomeComune, String tipologiaCV) throws RemoteException, SQLException;
 
     /**
-     * Metodo <code>nomiCentriVaccinali</code> che popola una lista con tutti i nomi dei centri vaccinali
+     * Il metodo <code>nomiCentriVaccinali</code> popola una lista con tutti i nomi dei centri vaccinali
      *
      * @return <code>ArrayList</code> che contiene una lista dei nomi dei Centri Vaccinali
+     *
      * @throws RemoteException
      * @throws SQLException
      */
@@ -174,7 +195,7 @@ public interface ServerCVI extends Remote {
     // Metodi remoti per EVENTI_AVVERSI
 
     /**
-     * Metodo <code>inserisciEventiAvversi</code> che inserisce un evento avverso
+     * Il metodo <code>inserisciEventiAvversi</code> che inserisce un evento avverso
      *
      * @param id id del cittadino vaccinato che vuole inserire un evento avverso
      * @param codiceFiscale codice fiscale del cittadino vaccinato che vuole inserire un evento avverso
@@ -192,6 +213,7 @@ public interface ServerCVI extends Remote {
      * @param crisi_ipertensiva_note note evento avverso crisi ipertensiva
      *
      * @return true se l'inserimento dell'evento avverso va a buon fine
+     *
      * @throws SQLException SQLException
      */
     Boolean inserisciEventiAvversi(String id, String codiceFiscale,
