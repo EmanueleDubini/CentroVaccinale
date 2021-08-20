@@ -9,5 +9,11 @@ Agile Board: https://trello.com/b/TdL756CN/centrovaccinaleboard
 
 GIT Repository: https://github.com/astargisco/CentroVaccinale
 ________________
-GIT Repository VEKKIO: https://github.com/LordAcid666/CentroVaccinale/
+INSTALLAZIONE:
 
+- installare PostGres SQL
+- da un IDE scaricare il progetto usando il link sopra per Git
+- eseguire il programma ServerCV
+- creare le tabelle da ServerCV (debug)
+- riempire il Db coi dati (opzionale)
+- eseguire il programma ClientCV
