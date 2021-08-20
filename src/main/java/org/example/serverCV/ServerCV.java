@@ -563,7 +563,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      * @throws RemoteException RemoteException
      */
     @Override
-    public boolean verificaSeRegistrato(String cfRegistrato, String emailRegistrato, String usernameRegistrato, String idVaccinazioneRegistrato) throws RemoteException, SQLException {
+    public synchronized boolean verificaSeRegistrato(String cfRegistrato, String emailRegistrato, String usernameRegistrato, String idVaccinazioneRegistrato) throws RemoteException, SQLException {
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
         ResultSet rsSum = statement.executeQuery("SELECT COUNT (*) AS conta " +
@@ -589,7 +589,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     }
 
     @Override
-    public boolean verificaIdVaccinazione(String idVaccinazioneRegistrato, String nomeCentroVaccinale) throws RemoteException, SQLException {
+    public synchronized boolean verificaIdVaccinazione(String idVaccinazioneRegistrato, String nomeCentroVaccinale) throws RemoteException, SQLException {
         String vaccinati_table = "vaccinati_" + nomeCentroVaccinale;
 
         DbHelper.getConnection();
@@ -623,7 +623,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      * @throws SQLException SQLException
      */
     @Override
-    public boolean verificaEventoAvverso(String codiceF) throws RemoteException, SQLException {
+    public synchronized boolean verificaEventoAvverso(String codiceF) throws RemoteException, SQLException {
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
         ResultSet rsSum = statement.executeQuery("SELECT COUNT (*) AS conta " +
