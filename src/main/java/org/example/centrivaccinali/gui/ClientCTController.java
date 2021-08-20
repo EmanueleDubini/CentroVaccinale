@@ -279,7 +279,7 @@ public class ClientCTController  implements Initializable{
 
     /**
      * Questo metodo è collegato al bottone ' Registra Cittadino' dell'applicaizione cittadino
-     * nel file "03CT_RegistrazioneAdCV.fxml".
+     * nel file "03CT_RegistrazioneAdCVOLD.fxml".
      *
      * contiene dei controlli relativi a:
      * - Campi vuoti

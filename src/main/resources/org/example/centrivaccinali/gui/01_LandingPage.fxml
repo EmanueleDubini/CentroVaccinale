@@ -22,7 +22,7 @@
                 <children>
                   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="152.0" prefHeight="55.0" prefWidth="682.0" text="Selezionare l'area desiderata a cui si vuole accedere:">
                      <font>
-                        <Font name="Avenir Book" size="24.0" />
+                        <Font name="Avenir Book" size="25.0" />
                      </font>
                   </Label>
                   <HBox layoutX="-1.0" layoutY="273.0" prefHeight="104.0" prefWidth="685.0">
@@ -77,7 +77,7 @@
          <top>
               <Label fx:id="labelDaNascondere" alignment="CENTER" contentDisplay="CENTER" prefHeight="201.0" prefWidth="680.0" text="Benvenuto nell'applicazione" BorderPane.alignment="CENTER">
                   <font>
-                      <Font name="Avenir Book" size="36.0" />
+                      <Font name="Avenir Book" size="42.0" />
                   </font>
               </Label>
          </top>
