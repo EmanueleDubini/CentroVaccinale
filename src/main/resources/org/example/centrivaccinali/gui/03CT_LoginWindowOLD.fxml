@@ -47,7 +47,7 @@
                   </Label>
                   <ImageView fitHeight="168.0" fitWidth="489.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../MATERIALE/LOGO/CV_Logo.png" />
+                        <Image url="@../../../../../../../MATERIALE_di_LAVORAZIONE/LOGO/CV_Logo.png" />
                      </image>
                      <HBox.margin>
                         <Insets left="250.0" top="20.0" />

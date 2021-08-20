@@ -48,7 +48,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     /// IMPLEMENTAZIONE Metodi dell'interfaccia ServerCVI ///
 
     /**
-     * Metodo <code>registraCentroVaccinale</code> registra nel DB un nuovo Centro Vaccinale
+     * Il metodo <code>registraCentroVaccinale</code> registra nel DB un nuovo Centro Vaccinale
      *
      * @param id id del centro vaccinale
      * @param nomeCV nome del centro vaccinale
@@ -76,7 +76,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     }
 
     /**
-     * Metodo <code>registraVaccinato</code> registra nel DB un nuovo cittadino che è appena stato vaccinato
+     * Il metodo <code>registraVaccinato</code> registra nel DB un nuovo cittadino che è appena stato vaccinato
      *
      * @param id id del cittadino vaccinato
      * @param nomeCV nome del centro vaccinale in cui si e vaccinato il cittadino
@@ -114,6 +114,14 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         return true;
     }
 
+    /**
+     * Il metodo <code>getIdCentroVaccianlePerCV</code> estrae dal DB l'id del centro vaccinale passato come parametro
+     *
+     * @param nomeCV il nome del centro vaccinale di cui si vuole estrarre l'id
+     * @return idLetto dal DB
+     *
+     * @throws SQLException
+     */
     public synchronized String getIdCentroVaccianlePerCV(String nomeCV) throws SQLException{
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
@@ -132,7 +140,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     /// IMPLEMENTAZIONE Metodi dell'interfaccia ServerCVI ///
 
     /**
-     * Metodo <code>registraCittadino</code> registra nel DB un nuovo cittadino che e stato precendentemente vaccinato
+     * Il metodo <code>registraCittadino</code> registra nel DB un nuovo cittadino che e stato precendentemente vaccinato
      *
      * @param codicefiscale codice fiscale del cittadino
      * @param cognome cognome del cittadino
@@ -164,7 +172,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     }
 
     /**
-     * Metodo <code>login</code> controlla nel DB la corrispondenza username/password per permettere l'accesso ai cittadini
+     * Il metodo <code>login</code> controlla nel DB la corrispondenza username/password per permettere l'accesso ai cittadini
      * registrati che volgiono inserire un evento avverso
      *
      * @param username username del vaccinato che vuole accedere
@@ -196,7 +204,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     }
 
     /**
-     * Metodo <code>getIdCentroVaccinale</code> che effettua la ricerca dell'id del centro vaccinale tramite user e password
+     * Il metodo <code>getIdCentroVaccinale</code> effettua la ricerca dell'id del centro vaccinale tramite user e password
      * inserite nella fase di login
      *
      * @param username username del cittadino che effettua login
@@ -224,7 +232,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     }
 
     /**
-     * Metodo <code>getCentroFiscale</code> che effettua la ricerca del codice fiscale tramite user e password
+     * Il metodo <code>getCentroFiscale</code> effettua la ricerca del codice fiscale tramite user e password
      * inserite nella fase di login
      *
      * @param username username del cittadino che effettua login
@@ -277,7 +285,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     //}
 
     /**
-     * Metodo <code>cercaCentroVaccinaleNome</code> che effettua la ricerca di un centro vaccinale tramite il nome
+     * Il metodo <code>cercaCentroVaccinaleNome</code> effettua la ricerca di un centro vaccinale tramite il nome
      *
      * @param nomeCV nome del centro vaccinale secondo cui effettuare la ricerca
      *
@@ -350,6 +358,17 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         return centriVaccinali;
     }
 
+    /**
+     * Il metodo <code>getAvg_Nsegnalazioni</code> calcola la media e il numero di segnalazioni di un dato centro vaccinale
+     *
+     * @param idCentroVaccinale l' id del centro vaccinale di cui si vuole sapere la media e il numero di segnalazioni
+     *
+     * @return un <code>array</code> che contiene in posizione [0] la media delle segnalazioni e in posizione [1] il numero delle segnalazioni
+     *
+     * @throws RemoteException
+     * @throws SQLException
+     * @throws ArithmeticException
+     */
     public synchronized double[] getAvg_Nsegnalazioni(String idCentroVaccinale) throws RemoteException, SQLException, ArithmeticException {
         System.out.println(idCentroVaccinale);
         DbHelper.getConnection();
@@ -385,7 +404,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     }
 
     /**
-     * Metodo <code>nomiCentriVaccinali</code> che popola una lista con tutti i nomi dei centri vaccinali
+     * Il metodo <code>nomiCentriVaccinali</code> popola una lista con tutti i nomi dei centri vaccinali
      *
      * @return <code>ArrayList</code> che contiene una lista dei nomi dei Centri Vaccinali
      * @throws SQLException
@@ -406,7 +425,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
 
 
     /**
-     * Metodo <code>cercaCentroVaccinaleComuneTipologia</code> che effettua la ricerca di un centro vaccinale tramite il nome
+     * Il metodo <code>cercaCentroVaccinaleComuneTipologia</code> effettua la ricerca di un centro vaccinale tramite il nome
      *
      * @param  nomeComune comune del centro vaccinale secondo cui effettuare la ricerca
      * @param  tipologiaCV tipologia del centro vaccinale secondo cui effettuare la ricerca
@@ -486,7 +505,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     /// IMPLEMENTAZIONE Metodi dell'interfaccia ServerCVI ///
 
     /**
-     * Metodo <code>inserisciEventiAvversi</code> che inserisce un evento avverso
+     * Il metodo <code>inserisciEventiAvversi</code> inserisce un evento avverso
      *
      * @param id id del cittadino vaccinato che vuole inserire un evento avverso
      * @param codiceFiscale codice fiscale del cittadino vaccinato che vuole inserire un evento avverso
