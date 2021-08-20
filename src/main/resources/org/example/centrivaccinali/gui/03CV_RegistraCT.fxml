@@ -124,7 +124,7 @@
                         <Font name="Avenir Book" size="24.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="TextFieldNomeVaccinatoCTTextFieldNomeVaccinatoCT" layoutY="160.0" prefHeight="35.0" prefWidth="325.0" promptText="Nome" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
+                  <TextField fx:id="TextFieldNomeVaccinatoCT" layoutY="160.0" prefHeight="35.0" prefWidth="325.0" promptText="Nome" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
                   <DatePicker fx:id="DatePickerSomministrazioneCT" layoutX="400.0" layoutY="260.0" prefHeight="35.0" prefWidth="325.0" />
                   </children>
               </Pane>
