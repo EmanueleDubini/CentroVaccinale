@@ -4,6 +4,7 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -32,10 +33,10 @@
             </Label>
             </children>
         </AnchorPane>
-        <Pane layoutX="481.0" layoutY="220.0" prefHeight="457.0" prefWidth="774.0" AnchorPane.bottomAnchor="49.0" AnchorPane.topAnchor="214.0">
+        <Pane layoutX="481.0" layoutY="186.0" prefHeight="485.0" prefWidth="774.0" AnchorPane.bottomAnchor="49.0" AnchorPane.topAnchor="186.0">
             <children>
-                <TextField fx:id="TextFieldCognomeVaccinato" layoutY="135.0" prefHeight="35.0" prefWidth="325.0" promptText="Cognome" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
-                <Button fx:id="anchor" alignment="CENTER" contentDisplay="CENTER" layoutX="525.0" layoutY="400.0" mnemonicParsing="false" onAction="#GeneraCittadinoRegistrato" prefHeight="45.0" prefWidth="200.0" style="-fx-background-radius: 5em;" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Registra Cittadino" textAlignment="CENTER" textFill="WHITE">
+                <TextField fx:id="TextFieldCognomeVaccinato" layoutX="400.0" layoutY="35.0" prefHeight="35.0" prefWidth="325.0" promptText="Cognome" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
+                <Button fx:id="anchor" alignment="CENTER" contentDisplay="CENTER" layoutX="525.0" layoutY="450.0" mnemonicParsing="false" onAction="#GeneraCittadinoRegistrato" prefHeight="45.0" prefWidth="200.0" style="-fx-background-radius: 5em;" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Registra Cittadino" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="20.0" />
                </font>
@@ -50,48 +51,49 @@
                   <Font name="Avenir Book" size="24.0" />
                </font>
             </Label>
-            <Label layoutY="100.0" text="Cognome Vaccinato:">
+            <Label layoutX="400.0" text="Cognome Vaccinato:">
                <font>
                   <Font name="Avenir Book" size="24.0" />
                </font>
             </Label>
-            <Label layoutY="200.0" text="Codice Fiscale:">
+            <Label layoutY="100.0" text="Codice Fiscale:">
                <font>
                   <Font name="Avenir Book" size="24.0" />
                </font>
             </Label>
-            <TextField fx:id="TextFieldCFVaccinato" layoutY="235.0" prefHeight="35.0" prefWidth="325.0" promptText="CF" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
-            <Label layoutY="300.0" text="E-mail:">
+            <TextField fx:id="TextFieldCFVaccinato" layoutY="135.0" prefHeight="35.0" prefWidth="325.0" promptText="CF" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
+            <Label layoutX="400.0" layoutY="100.0" text="E-mail:">
                <font>
                   <Font name="Avenir Book" size="24.0" />
                </font>
             </Label>
-            <TextField fx:id="TextFieldEmailVaccinato" layoutY="335.0" prefHeight="35.0" prefWidth="325.0" promptText="e-mail" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
-            <Label layoutX="400.0" text="Username:">
+            <TextField fx:id="TextFieldEmailVaccinato" layoutX="400.0" layoutY="135.0" prefHeight="35.0" prefWidth="325.0" promptText="e-mail" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
+            <Label layoutY="325.0" text="Username:">
                <font>
                   <Font name="Avenir Book" size="24.0" />
                </font>
             </Label>
-            <Label layoutX="400.0" layoutY="100.0" text="Password:">
+            <Label layoutX="400.0" layoutY="325.0" text="Password:">
                <font>
                   <Font name="Avenir Book" size="24.0" />
                </font>
             </Label>
-            <Label layoutX="400.0" layoutY="200.0" text="id Unico di Vaccinazione:">
+            <Label layoutY="200.0" text="id Unico di Vaccinazione:">
                <font>
                   <Font name="Avenir Book" size="24.0" />
                </font>
             </Label>
-            <Label layoutX="400.0" layoutY="300.0" text="Nome Centro Vaccinale:">
+            <Label layoutX="400.0" layoutY="200.0" text="Nome Centro Vaccinale:">
                <font>
                   <Font name="Avenir Book" size="24.0" />
                </font>
             </Label>
-            <TextField fx:id="TextFieldIdVaccinazioneVaccinato" layoutX="400.0" layoutY="235.0" prefHeight="35.0" prefWidth="325.0" promptText="id 16bit" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
-            <ComboBox fx:id="nomeCentroComboBox" layoutX="400.0" layoutY="335.0" prefHeight="30.0" prefWidth="325.0" />
-            <PasswordField fx:id="TextFieldPasswordVaccinato" layoutX="400.0" layoutY="135.0" prefHeight="35.0" prefWidth="325.0" promptText="Password" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
+            <TextField fx:id="TextFieldIdVaccinazioneVaccinato" layoutY="235.0" prefHeight="35.0" prefWidth="325.0" promptText="id 16bit" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
+            <ComboBox fx:id="nomeCentroComboBox" layoutX="400.0" layoutY="235.0" prefHeight="30.0" prefWidth="325.0" />
+            <PasswordField fx:id="TextFieldPasswordVaccinato" layoutX="400.0" layoutY="360.0" prefHeight="35.0" prefWidth="325.0" promptText="Password" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
             <TextField fx:id="TextFieldNomeVaccinato" layoutY="35.0" prefHeight="35.0" prefWidth="325.0" promptText="Nome" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
-            <TextField fx:id="TextFieldUsernameVaccinato" layoutX="400.0" layoutY="35.0" prefHeight="35.0" prefWidth="325.0" promptText="Username" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
+            <TextField fx:id="TextFieldUsernameVaccinato" layoutY="360.0" prefHeight="35.0" prefWidth="325.0" promptText="Username" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
+            <Separator layoutX="87.0" layoutY="300.0" prefHeight="23.0" prefWidth="600.0" />
             </children>
         </Pane>
           <Label alignment="CENTER" layoutX="455.0" layoutY="77.0" prefHeight="55.0" prefWidth="825.0" text="Registrati ad un Centro Vaccinale" textFill="#4e8847">
