@@ -41,9 +41,7 @@ import java.util.UUID;
 import java.util.regex.Pattern;
 
 /**
- *
  * Classe controller di ClientCV
- *
  */
 public class ClientCVController implements Initializable {
 
@@ -110,6 +108,7 @@ public class ClientCVController implements Initializable {
 
     /**
      * Questo metodo inizializza tutti i combobox presenti nelle varie finestre
+     *
      * @param arg0 ereditato da superclasse
      * @param resourceBundle ereditato da superclasse
      */
@@ -143,7 +142,8 @@ public class ClientCVController implements Initializable {
     }
 
     /**
-     * Questi metodi permettono di spostarsi tra le varie finestre.
+     * Questi metodi permettono di spostarsi tra le varie finestre
+     *
      * @throws IOException IOException
      */
     public void to_01_LandingPage() throws IOException {
@@ -170,7 +170,7 @@ public class ClientCVController implements Initializable {
     /////////////////////// metodi di controllo menu bar ///////////////////////
 
     /**
-     * Questo metodo, situatosi nella menu bar, permette l'uscita dalla finestra.
+     * Questo metodo, situatosi nella menu bar, permette l'uscita dalla finestra
      */
     public void onClickQuit() {
         Platform.exit();

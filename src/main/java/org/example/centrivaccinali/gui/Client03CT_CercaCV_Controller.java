@@ -31,6 +31,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
+/**
+ * Classe controller dedicata alla ricerca delle informazioni sui Centri Vaccinali
+ */
 public class Client03CT_CercaCV_Controller implements Initializable {
 
     @FXML
@@ -79,6 +82,12 @@ public class Client03CT_CercaCV_Controller implements Initializable {
     private final List<CentroVaccinale> centriVaccinali = new ArrayList<>();
     private CercaCVListener cercaCVListener;
 
+    /**
+     * Questo metodo inizializza tutti i combobox presenti nella finestra e i bottoni per modificare il tipo di ricerca
+     *
+     * @param url ereditato dalla superclasse
+     * @param resourceBundle ereditato dalla superclasse
+     */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
@@ -102,6 +111,11 @@ public class Client03CT_CercaCV_Controller implements Initializable {
                 .addListener((observable, oldVal, newVal) -> this.cambiaRicerca(newVal));
     }
 
+    /**
+     * Questo metodo permette di modificare il tipo di ricerca da Nome a Comune&Tipologia e viceversa
+     *
+     * @param newVal indica la selezione dell'utente
+     */
     private void cambiaRicerca(Toggle newVal) {
         if(newVal.equals(radioButtonNome)){
             ricercaNome.setVisible(true);
@@ -112,6 +126,14 @@ public class Client03CT_CercaCV_Controller implements Initializable {
         }
     }
 
+    /**
+     * Questo metodo permette di ricercare i centri vaccinali per nome
+     *
+     * @return una lista che contiene i centri vaccinali cercati per nome
+     *
+     * @throws SQLException SQLException
+     * @throws RemoteException RemoteException
+     */
     public List<CentroVaccinale> ricercaNome() throws SQLException, RemoteException {
         String nomeCV = nomeDaRicercare.getText().strip();
         //effettuano il controllo che non sia presente la stringa vuota
@@ -123,6 +145,14 @@ public class Client03CT_CercaCV_Controller implements Initializable {
         }
     }
 
+    /**
+     * Questo metodo permette di ricercare i centri vaccinali per comune e tipologia
+     *
+     * @return una lista che contiene i centri vaccinali cercati per comune e tipologia
+     *
+     * @throws SQLException SQLException
+     * @throws RemoteException RemoteException
+     */
     public List<CentroVaccinale> ricercaComuneTipologia() throws SQLException, RemoteException {
         String nomeComune = comuneDaRicercare.getText().strip();
         String tipologiaCV = tipologiaDaRicercare.getValue();
@@ -135,6 +165,15 @@ public class Client03CT_CercaCV_Controller implements Initializable {
         }
     }
 
+    /**
+     * Questo metodo inserisce le informazioni relative al centro vaccinale selezionate nel riquadro situato sulla parte
+     * sinistra della finestra di ricerca dei cv
+     *
+     * @param centroVaccinale il centro vaccinale selezionato
+     *
+     * @throws SQLException SQLException
+     * @throws RemoteException RemoteException
+     */
     private void impostaCVscelto(CentroVaccinale centroVaccinale) throws SQLException, RemoteException {
         CVNameLable.setText(centroVaccinale.getNome());
         TipologiaLabel.setText(centroVaccinale.getTipologia().name());
@@ -164,6 +203,10 @@ public class Client03CT_CercaCV_Controller implements Initializable {
         chosenCV.setStyle("-fx-background-radius: 30;");
     }
 
+    /**
+     * Questo metodo permette di cancellare tutti i campi inseriti dall'utente dopo aver effettuato la ricerca
+     *
+     */
     private void resetItem() {
         centriVaccinali.clear(); //Cancella l' ArrayList che contiene tutti i risultati ricevuti dal server
         nomeDaRicercare.setText("");
@@ -171,6 +214,11 @@ public class Client03CT_CercaCV_Controller implements Initializable {
         tipologiaDaRicercare.setValue("");
     }
 
+    /**
+     * Questo metodo definisce le azioni da eseguire al click del bottone ricerca
+     *
+     * @param actionEvent
+     */
     //metodo collegato al bottone di ricerca per nome
     public void invioRicerca(ActionEvent actionEvent) {
 
@@ -265,10 +313,22 @@ public class Client03CT_CercaCV_Controller implements Initializable {
         resetItem();
     }
 
+    /**
+     * Questo metodo, situatosi nella menu bar, permette l'uscita dalla finestra
+     *
+     * @param actionEvent
+     */
     public void onClickQuit(ActionEvent actionEvent) {
         Platform.exit();
     }
 
+    /**
+     * Questo metodo permette di spostarsi nella finestra principale della sezione cittadini
+     *
+     * @param actionEvent
+     *
+     * @throws IOException IOException
+     */
     public void to_02CT_MainWindow(ActionEvent actionEvent) throws IOException {
         ClientCVMain.setRoot("02CT_MainWindow");
     }
