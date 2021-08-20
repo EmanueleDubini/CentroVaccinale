@@ -120,7 +120,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      * @param nomeCV il nome del centro vaccinale di cui si vuole estrarre l'id
      * @return idLetto dal DB
      *
-     * @throws SQLException
+     * @throws SQLException SQLException
      */
     public synchronized String getIdCentroVaccianlePerCV(String nomeCV) throws SQLException{
         DbHelper.getConnection();
@@ -212,7 +212,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      *
      * @return <code>String</code> che contiene l'id del centro vaccinale corrispondente
      *
-     * @throws SQLException
+     * @throws SQLException SQLException
      */
     @Override
     public synchronized String getIdCentroVaccinale (String username, String password) throws SQLException {
@@ -240,7 +240,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      *
      * @return <code>String</code> che contiene il codice fiscale del cittadino che effettua login
      *
-     * @throws SQLException
+     * @throws SQLException SQLException
      */
     @Override
     public synchronized  String getCodiceFiscale (String username, String password) throws SQLException {
@@ -365,9 +365,9 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      *
      * @return un <code>array</code> che contiene in posizione [0] la media delle segnalazioni e in posizione [1] il numero delle segnalazioni
      *
-     * @throws RemoteException
-     * @throws SQLException
-     * @throws ArithmeticException
+     * @throws RemoteException RemoteException
+     * @throws SQLException SQLException
+     * @throws ArithmeticException ArithmeticException
      */
     public synchronized double[] getAvg_Nsegnalazioni(String idCentroVaccinale) throws RemoteException, SQLException, ArithmeticException {
         System.out.println(idCentroVaccinale);
@@ -407,7 +407,8 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      * Il metodo <code>nomiCentriVaccinali</code> popola una lista con tutti i nomi dei centri vaccinali
      *
      * @return <code>ArrayList</code> che contiene una lista dei nomi dei Centri Vaccinali
-     * @throws SQLException
+     *
+     * @throws SQLException SQLException
      */
     public synchronized ArrayList<String> nomiCentriVaccinali() throws SQLException {
         ArrayList<String> nomiCentri = new ArrayList<>();
@@ -523,6 +524,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      * @param crisi_ipertensiva_note note evento avverso crisi ipertensiva
      *
      * @return true se l'inserimento dell'evento avverso va a buon fine
+     *
      * @throws SQLException SQLException
      */
     @Override
