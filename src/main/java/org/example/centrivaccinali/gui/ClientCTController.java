@@ -441,7 +441,7 @@ public class ClientCTController  implements Initializable{
      * @throws SQLException SQLException
      * @throws RemoteException RemoteException
      */
-    public void inserisciEventiAvversi(ActionEvent actionEvent) throws SQLException, RemoteException {
+    public void inserisciEventiAvversi(ActionEvent actionEvent) throws SQLException, IOException {
 
         severita1 = spinnerMalDiTesta.getValue();
         note1 = noteMalDiTesta.getText();
@@ -496,7 +496,7 @@ public class ClientCTController  implements Initializable{
                 alert.setContentText("Hai già inserito gli eventi avversi\n");
 
                 alert.showAndWait();
-                // todo dopo che viene premuto il tasto okay della finestra di alert rimandare alla home page della sezione cittadino
+                to_02CT_MainWindow();
             }
         }
     }
