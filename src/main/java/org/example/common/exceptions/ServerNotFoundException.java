@@ -17,6 +17,8 @@ package org.example.common.exceptions;
  *
  */
 public class ServerNotFoundException extends Exception {
+
+    //todo javadoc
     public ServerNotFoundException() {
         System.err.println("Server non rilevato in rete! \nVerificare la sua integrità");
         //System.exit(-1);    // stoppa il programma ed esce

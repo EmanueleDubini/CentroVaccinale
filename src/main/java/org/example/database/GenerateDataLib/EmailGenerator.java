@@ -10,16 +10,19 @@
 
 package org.example.database.GenerateDataLib;
 
+//todo javadoc
 public class EmailGenerator {
     String name;
     String surname;
     UIDGenerator generator = new UIDGenerator();
 
+    //todo javadoc
     public EmailGenerator(String name, String surname) {
         this.name = name;
         this.surname = surname;
     }
 
+    //todo javadoc
     public String generate() {
         String email = name + "." + surname + generator.randomUUID(4,5,'-',true) + "@gmail.com";
         return email.toLowerCase();

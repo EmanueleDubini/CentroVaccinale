@@ -10,16 +10,19 @@
 
 package org.example.database.GenerateDataLib;
 
+//todo javadoc
 public class UserIDGenerator {
     private final String name;
     private final String surname;
     private final UIDGenerator generator = new UIDGenerator();
 
+    //todo javadoc
     public UserIDGenerator(String name, String surname) {
         this.name = name;
         this.surname = surname;
     }
 
+    //todo javadoc
     public String generate() {
         return name + "-" + surname + "." + generator.randomUUID(4,5,'-', true);
     }

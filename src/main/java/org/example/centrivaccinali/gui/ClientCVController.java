@@ -101,6 +101,9 @@ public class ClientCVController implements Initializable {
 
     //istanziazione registry
     Registry registry;
+    /**
+     * Oggetto remoto per il passaggio dei comandi
+     */
     public static ServerCVI stub;
 
     public ClientCVController(){

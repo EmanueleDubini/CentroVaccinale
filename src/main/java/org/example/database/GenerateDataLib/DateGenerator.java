@@ -13,15 +13,18 @@ package org.example.database.GenerateDataLib;
 import java.util.Date;
 import java.util.Random;
 
+//todo javadoc
 public class DateGenerator {
 
     // Get a new random instance, seeded from the clock
     Random rnd;
 
+    //todo javadoc
     public DateGenerator() {
         rnd = new Random();
     }
 
+    //todo javadoc
     public Date generate(){
         // Get an Epoch value roughly between 1940 and 2010
         // -946771200000L = January 1, 1940

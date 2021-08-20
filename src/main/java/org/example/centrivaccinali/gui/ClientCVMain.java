@@ -59,6 +59,13 @@ public class ClientCVMain extends Application {
 
     private static Scene scene;
 
+    /**
+     * Questo metodo lancia la prima finestra per l'esecuzione del programma
+     *
+     * @param stage Stage
+     *
+     * @throws IOException IOException
+     */
     @Override
     public void start(Stage stage) throws IOException {
         scene = new Scene(loadFXML("00_IpServerCheck"));
@@ -74,10 +81,26 @@ public class ClientCVMain extends Application {
         });
     }
 
+    /**
+     * Questo metodo imposta la finestra principale leggendola dal file fxml
+     *
+     * @param fxml fxml
+     * @throws IOException IOException
+     */
     static void setRoot(String fxml) throws IOException {
         scene.setRoot(loadFXML(fxml));
     }
 
+
+    /**
+     * Questo metodo permette di caricare fxmlLoader
+     *
+     * @param fxml fxml
+     *
+     * @return il loader fxml
+     *
+     * @throws IOException IOException
+     */
     private static Parent loadFXML(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(ClientCVMain.class.getResource(fxml + ".fxml"));
         return fxmlLoader.load();

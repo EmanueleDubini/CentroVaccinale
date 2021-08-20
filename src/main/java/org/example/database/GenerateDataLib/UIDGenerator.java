@@ -13,11 +13,13 @@ package org.example.database.GenerateDataLib;
 import java.security.SecureRandom;
 import java.util.Random;
 
+//todo javadoc
 public class UIDGenerator {
 
     String Alphabet = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     Random rng = new SecureRandom();
 
+    //todo javadoc
     char randomChar(boolean numeric){
         if(numeric){
             String numeric1 = "0123456789";
@@ -28,6 +30,7 @@ public class UIDGenerator {
 
     }
 
+    //todo javadoc
     public String randomUUID(int lunghezza, int spaziatura, char carSpaziatore, boolean numeric){
         StringBuilder sb = new StringBuilder();
         int spacer = 0;
