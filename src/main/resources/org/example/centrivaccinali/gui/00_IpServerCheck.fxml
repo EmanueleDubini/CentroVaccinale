@@ -11,21 +11,35 @@
 
 <AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.centrivaccinali.gui.ClientCVController">
     <children>
-        <Pane layoutX="457.0" layoutY="154.0" prefHeight="288.0" prefWidth="367.0">
+        <Pane layoutY="4.0" prefHeight="712.0" prefWidth="1277.0">
             <children>
-                <TextField fx:id="hostAddress" alignment="TOP_CENTER" layoutX="109.0" layoutY="112.0" />
-                <Label contentDisplay="CENTER" layoutX="41.0" layoutY="33.0" prefHeight="21.0" prefWidth="285.0" text="Dati per la connessione a Centro Vaccinale">
+                <TextField fx:id="hostAddress" alignment="TOP_CENTER" layoutX="501.0" layoutY="451.0" prefHeight="35.0" prefWidth="274.0">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="84.0" prefHeight="68.0" prefWidth="1277.0" text="Dati per la connessione al ">
                     <font>
-                        <Font size="15.0" />
+                        <Font name="Avenir Book" size="40.0" />
                     </font></Label>
-                <Label alignment="CENTER" layoutX="126.0" layoutY="78.0" text="Indirizzo Server (IPv4)" />
-                <Button layoutX="240.0" layoutY="219.0" mnemonicParsing="false" onAction="#serverConnection" prefHeight="26.0" prefWidth="65.0" text="Connetti" />
-                <Label fx:id="connectionStatus" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="156.0" prefHeight="26.0" prefWidth="204.0" textFill="RED" />
-            <ImageView fitHeight="94.0" fitWidth="88.0" layoutX="21.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+                <Label alignment="CENTER" layoutX="-2.0" layoutY="407.0" prefHeight="35.0" prefWidth="1281.0" text="Indirizzo Server (IPv4):">
+               <font>
+                  <Font name="Avenir Book" size="24.0" />
+               </font></Label>
+                <Button fx:id="anchor" layoutX="562.0" layoutY="546.0" mnemonicParsing="false" onAction="#serverConnection" prefHeight="42.0" prefWidth="152.0" style="-fx-background-radius: 5em;" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Connettiti" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font></Button>
+                <Label fx:id="connectionStatus" alignment="CENTER" contentDisplay="CENTER" layoutX="219.0" layoutY="345.0" prefHeight="26.0" prefWidth="204.0" textFill="RED" />
+            <ImageView fitHeight="112.0" fitWidth="117.0" layoutX="583.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@primula.png" />
                </image>
             </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="145.0" prefHeight="68.0" prefWidth="1277.0" text="Centro Vaccinale">
+               <font>
+                  <Font name="Avenir Book" size="40.0" />
+               </font>
+            </Label>
             </children>
         </Pane>
     </children>
