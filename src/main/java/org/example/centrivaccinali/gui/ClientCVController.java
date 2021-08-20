@@ -259,6 +259,15 @@ public class ClientCVController implements Initializable {
 
             alert.showAndWait();
         } //END_if
+        //controllo validità nome centro vaccinale
+        else if(nomeCV.length() < 3){
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Si è verificato un Errore");
+            alert.setContentText("'Nome Centro Vaccinale' minore di 3 caratteri.\nRiprovare");
+
+            alert.showAndWait();
+        }
 
         //controllo validità nome via
         else if (!(Pattern.matches("[a-zA-Zàèìòù.\\s]{0,30}[0-9]{0}", nomeVia))) {

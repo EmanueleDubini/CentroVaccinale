@@ -115,7 +115,7 @@ public class Client03CT_CercaCV_Controller implements Initializable {
     public List<CentroVaccinale> ricercaNome() throws SQLException, RemoteException {
         String nomeCV = nomeDaRicercare.getText().strip();
         //effettuano il controllo che non sia presente la stringa vuota
-        if(nomeCV.equals("")){
+        if(nomeCV.equals("") || nomeCV.length() < 3){
             return null;
         }else{
 
@@ -150,7 +150,7 @@ public class Client03CT_CercaCV_Controller implements Initializable {
         double[] mediaSeveritaEventiAvversi = ClientCVController.stub.getAvg_Nsegnalazioni(idCV);
         //caso in cui non ci sono aventi avversi nel centro mostrato
         if(mediaSeveritaEventiAvversi[0] == -1 ){
-            labelSeveritaMedia.setText("0 Segnalazioni");
+            labelSeveritaMedia.setText("N/D");
         }
         else{
             //se ci sono eventi avversi mostra la media
@@ -220,7 +220,7 @@ public class Client03CT_CercaCV_Controller implements Initializable {
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setTitle("Error");
                 alert.setHeaderText("Si è verificato un Errore");
-                alert.setContentText("Campo Ricerca Vuoto.\nInserisci un criterio di ricerca");
+                alert.setContentText("Campo ricerca vuoto o minore di 3 caratteri.\nInserisci un criterio di ricerca");
 
                 alert.showAndWait();
             }

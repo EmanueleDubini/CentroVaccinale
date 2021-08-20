@@ -10,7 +10,7 @@
 
 package org.example.database.GenerateDataLib;
 
-import org.example.centrivaccinali.TipologiaCV;
+import org.example.common.TipologiaCV;
 import org.example.database.GenerateDataLib.BaseElement.Generator;
 import org.example.database.GenerateDataLib.BaseElement.GeneratorWrapperBase;
 import org.example.database.GenerateDataLib.BaseElement.RandomSequenceArrayBasedGenerator;

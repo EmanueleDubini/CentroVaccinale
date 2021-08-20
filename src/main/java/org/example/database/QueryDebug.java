@@ -25,7 +25,7 @@ public class QueryDebug {
     public static String dropDB = "DROP DATABASE IF EXISTS centrivaccinalidb";
 
     // TABELLE
-    public static String createCentriVaccinaliTable = "CREATE TABLE IF NOT EXISTS centrivaccinali (" + //todo
+    public static String createCentriVaccinaliTable = "CREATE TABLE IF NOT EXISTS centrivaccinali (" +
                                                     "idCentroVaccinale VARCHAR(36) PRIMARY KEY," +
                                                     "nome VARCHAR(50) NOT NULL," +
                                                     "qualificatore VARCHAR(10) NOT NULL," +

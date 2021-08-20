@@ -8,7 +8,7 @@
 
  */
 
-package org.example.centrivaccinali;
+package org.example.common;
 
 import org.example.common.CentroVaccinale;
 
