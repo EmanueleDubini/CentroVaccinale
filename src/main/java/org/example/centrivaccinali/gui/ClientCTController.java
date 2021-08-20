@@ -24,9 +24,10 @@ import java.util.ResourceBundle;
 import java.util.regex.Pattern;
 
 
+/**
+ * Classe controller di ClientCT
+ */
 public class ClientCTController  implements Initializable{
-
-
 
     //TextField relativi alla pagina: 03CT_LoginWindow
     @FXML
