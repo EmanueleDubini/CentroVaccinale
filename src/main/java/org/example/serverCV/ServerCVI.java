@@ -237,6 +237,18 @@ public interface ServerCVI extends Remote {
      * @throws RemoteException RemoteException
      */
     Boolean verificaSeRegistrato(String cfRegistrato, String emailRegistrato, String usernameRegistrato, String idVaccinazioneRegistrato) throws RemoteException, SQLException;
+
+    /**
+     * Metodo <code>verificaSeRegistrato</code> che verifica l'id vaccinazione dell'utente che si sta registrando,
+     * controllando che il suo id sia presente nel database
+     *
+     * @param idVaccinazioneRegistrato id di vaccinazione del cittadino vaccinato che vuole registrarsi nell'applicazione cittadino
+     *
+     * @return ritorna true se l'id vaccinazione inserito dal cittadino registrato è presente nel database e quindi esso puo registrasi
+     *
+     * @throws RemoteException RemoteException
+     */
+    boolean verificaIdVaccinazione(String idVaccinazioneRegistrato, String nomeCentroVaccinale) throws RemoteException, SQLException;
 }
 
 

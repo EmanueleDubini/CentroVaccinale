@@ -588,6 +588,30 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
 
     }
 
+    @Override
+    public boolean verificaIdVaccinazione(String idVaccinazioneRegistrato, String nomeCentroVaccinale) throws RemoteException, SQLException {
+        String vaccinati_table = "vaccinati_" + nomeCentroVaccinale;
+
+        DbHelper.getConnection();
+        Statement statement = DbHelper.getStatement();
+        ResultSet rsSum = statement.executeQuery("SELECT COUNT (*) AS conta " +
+                "FROM " + vaccinati_table +
+                " WHERE idvaccinazione = " + "'" + idVaccinazioneRegistrato + "'");
+
+        int conta = 0;
+        while (rsSum.next()) {
+            conta = rsSum.getInt("conta");
+        }
+
+        if(conta > 0){
+            // è stato trovato qualcosa nel result set quindi l'id utente è presente
+            return true;
+        }else{
+            // se conta è ancora zero vuol dire che l'id di vaccinazione non è presente nei sistemi
+            return false;
+        }
+    }
+
     /**
      * Metodo <code>Main</code> dell'applicazione ClientCV
      */
