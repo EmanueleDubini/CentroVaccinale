@@ -75,7 +75,7 @@
             </Pane>
          </center>
          <top>
-              <Label fx:id="labelDaNascondere" alignment="CENTER" contentDisplay="CENTER" prefHeight="201.0" prefWidth="680.0" text="Benvenuto nell'applicazione" BorderPane.alignment="CENTER">
+              <Label fx:id="labelDaNascondere" alignment="CENTER" contentDisplay="CENTER" prefHeight="201.0" prefWidth="680.0" text="Benvenuto nell'applicazione" textFill="#4e8847" BorderPane.alignment="CENTER">
                   <font>
                       <Font name="Avenir Book" size="42.0" />
                   </font>
