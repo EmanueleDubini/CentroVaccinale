@@ -6,9 +6,6 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -21,34 +18,8 @@
 
 <!--aggiungere alla riga 9 il codice:"  fx:controller="sample.Controller" "-->
 
-<VBox stylesheets="@../../css/GradientBackGround.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.centrivaccinali.gui.ClientCVController">
+<VBox stylesheets="@../../css/GradientBackGround.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.centrivaccinali.gui.ClientCVController">
    <children>
-      <MenuBar>
-        <menus>
-          <Menu mnemonicParsing="false" text="File">
-            <items>
-              <MenuItem mnemonicParsing="false" onAction="#onClickQuit" text="Close" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Back">
-            <items>
-              <MenuItem mnemonicParsing="false" onAction="#to_02CV_MainWindow" text="Back" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Help">
-            <items>
-                  <MenuItem mnemonicParsing="false" onAction="#guida" text="Guide" />
-              <MenuItem mnemonicParsing="false" onAction="#info" text="About" />
-            </items>
-          </Menu>
-            <Menu mnemonicParsing="false" text="Debug">
-              <items>
-                <MenuItem mnemonicParsing="false" onAction="#inserisciCodiceFiscaleCT_Debug" text="Inserisci CF" />
-                  <MenuItem mnemonicParsing="false" onAction="#inserisciIDVaccinazioneCT_Debug" text="Inserisci ID Vaccinazione" />
-              </items>
-            </Menu>
-        </menus>
-      </MenuBar>
       <BorderPane fx:id="RegistraCV" prefHeight="720.0" prefWidth="1280.0">
       <bottom>
           <FlowPane fx:id="anchor" prefHeight="115.0" prefWidth="1280.0" stylesheets="@../../css/GradientBackGround.css" BorderPane.alignment="CENTER">
@@ -125,6 +96,7 @@
       <top>
           <HBox fx:id="anchor" prefHeight="200.0" prefWidth="1280.0" stylesheets="@../../css/GradientBackGround.css" BorderPane.alignment="CENTER">
               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#to_02CV_MainWindow" prefHeight="32.0" prefWidth="32.0" style="-fx-background-radius: 5em;" text="←" />
                   <Label prefHeight="50.0" prefWidth="430.0" text="Registra Vaccinato">
                       <font>
                           <Font name="Georgia" size="48.0" />

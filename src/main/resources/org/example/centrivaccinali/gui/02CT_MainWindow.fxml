@@ -19,14 +19,14 @@
                     </image>
                 </ImageView>
             <Button layoutX="4.0" layoutY="4.0" mnemonicParsing="false" onAction="#to_01_LandingPage" prefHeight="32.0" prefWidth="32.0" style="-fx-background-radius: 5em;" text="←" />
-            <Label layoutX="67.0" layoutY="473.0" text="Tramite questa pagina potrai usufruire dei servizi riservati" textFill="WHITE">
+            <Label alignment="CENTER" layoutX="-1.0" layoutY="473.0" prefHeight="23.0" prefWidth="559.0" text="Tramite questa pagina potrai usufruire dei servizi riservati" textFill="WHITE">
                <font>
-                  <Font size="18.0" />
+                  <Font name="Avenir Book" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="238.0" layoutY="502.0" text="ai cittadini." textFill="WHITE">
+            <Label alignment="CENTER" layoutX="1.0" layoutY="502.0" prefHeight="21.0" prefWidth="559.0" text="ai cittadini." textFill="WHITE">
                <font>
-                  <Font name="Arial" size="18.0" />
+                  <Font name="Avenir Book" size="18.0" />
                </font>
             </Label>
             </children>
@@ -34,42 +34,42 @@
         <Pane layoutX="561.0" layoutY="220.0" prefHeight="505.0" prefWidth="707.0" AnchorPane.bottomAnchor="1.0" AnchorPane.topAnchor="214.0">
             <children>
                 <Separator layoutX="153.0" layoutY="110.0" prefHeight="7.0" prefWidth="400.0" />
-                <Label fx:id="lblErrors" alignment="CENTER" contentDisplay="CENTER" layoutX="83.0" text="Registrati al centro vaccinale di propria competenza:">
+                <Label fx:id="lblErrors" alignment="CENTER" contentDisplay="CENTER" prefHeight="36.0" prefWidth="717.0" text="Registrati al centro vaccinale di propria competenza:">
                     <font>
-                        <Font size="25.0" />
+                        <Font name="Avenir Book" size="25.0" />
                     </font>
                 </Label>
             <Button fx:id="anchor" alignment="CENTER" contentDisplay="CENTER" layoutX="203.0" layoutY="45.0" mnemonicParsing="false" onAction="#to_03CT_RegistraCT" prefHeight="38.0" prefWidth="300.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Registrati" textFill="WHITE">
                <font>
-                  <Font name="Arial" size="18.0" />
+                  <Font name="Avenir Book" size="18.0" />
                </font>
             </Button>
-            <Label alignment="CENTER" layoutX="110.0" layoutY="136.0" text="Consulta le informazioni di ogni centro vaccinale:">
+            <Label alignment="CENTER" layoutY="136.0" prefHeight="29.0" prefWidth="717.0" text="Consulta le informazioni di ogni centro vaccinale:">
                <font>
-                  <Font size="24.0" />
+                  <Font name="Avenir Book" size="24.0" />
                </font>
             </Label>
             <Button fx:id="anchor" alignment="CENTER" layoutX="203.0" layoutY="185.0" mnemonicParsing="false" onAction="#to_03CT_InfoCV" prefHeight="38.0" prefWidth="300.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Info Centro Vaccinali" textFill="WHITE">
                <font>
-                  <Font size="18.0" />
+                  <Font name="Avenir Book" size="18.0" />
                </font>
             </Button>
-            <Label alignment="CENTER" layoutX="88.0" layoutY="280.0" text="Inserisci eventuali effetti collaterali post vaccinazione:">
+            <Label alignment="CENTER" layoutX="1.0" layoutY="280.0" prefHeight="29.0" prefWidth="717.0" text="Inserisci eventuali effetti collaterali post vaccinazione:">
                <font>
-                  <Font size="24.0" />
+                  <Font name="Avenir Book" size="24.0" />
                </font>
             </Label>
             <Separator layoutX="154.0" layoutY="250.0" prefHeight="7.0" prefWidth="400.0" />
                 <Button fx:id="anchor" alignment="CENTER" contentDisplay="CENTER" layoutX="203.0" layoutY="325.0" mnemonicParsing="false" onAction="#to_03CT_EventiAvversiCT" prefHeight="38.0" prefWidth="300.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Eventi Avversi" textAlignment="CENTER" textFill="WHITE">
                <font>
-                  <Font size="18.0" />
+                  <Font name="Avenir Book" size="18.0" />
                </font>
                 </Button>
             </children>
         </Pane>
           <Label alignment="CENTER" layoutX="851.0" layoutY="101.0" text="Home page" textFill="#4e8847">
               <font>
-                  <Font name="Arial" size="48.0" />
+                  <Font name="Avenir Book" size="48.0" />
               </font>
           </Label>
       <ImageView fitHeight="121.0" fitWidth="109.0" layoutX="720.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
