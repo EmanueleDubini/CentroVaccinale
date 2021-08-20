@@ -370,16 +370,24 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
                                                     "FROM eventi_avversi " +
                                                     "WHERE idcentrovaccinale = " + "'" + idCentroVaccinale + "'");
         int conta = 0;
+        //lettura result set
         while (rsCount.next()) {
             conta = rsCount.getInt("conta");
         }
 
-        double media = (double) somma / ((double) conta * (double) 6);
-        System.out.println(somma);
-        System.out.println(media);
-        //modifichiamo le cifre decimali dopo la virgola della media della severia'. Per comodita' ne teniamo 2.
-        Double mediaTroncata = BigDecimal.valueOf(media).setScale(2, RoundingMode.HALF_UP).doubleValue();
-        return mediaTroncata;
+
+        if(conta != 0) {
+            double media = (double) somma / ((double) conta * (double) 6);
+            //modifichiamo le cifre decimali dopo la virgola della media della severia'. Per comodita' ne teniamo 2.
+            double mediaTroncata = BigDecimal.valueOf(media).setScale(2, RoundingMode.HALF_UP).doubleValue();
+
+            System.out.println(somma);
+            System.out.println(media);
+            return mediaTroncata;
+        }
+        else{
+            return 0.0;
+        }
     }
 
     /**
