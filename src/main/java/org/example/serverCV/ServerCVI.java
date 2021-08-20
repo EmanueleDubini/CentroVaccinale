@@ -14,6 +14,7 @@ import org.example.common.CentroVaccinale;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
+import java.sql.Array;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
@@ -119,7 +120,7 @@ public interface ServerCVI extends Remote {
      * @throws RemoteException
      * @throws SQLException
      */
-    double getAvg(String idCentroVaccinale) throws RemoteException, SQLException;
+    double[] getAvg_Nsegnalazioni(String idCentroVaccinale) throws RemoteException, SQLException;
 
     /**
      * Metodo <code>getIdCentroVaccinale</code> che effettua la ricerca dell'id del centro vaccinale tramite user e password

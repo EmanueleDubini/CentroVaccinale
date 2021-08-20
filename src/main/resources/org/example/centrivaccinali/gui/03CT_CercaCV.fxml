@@ -187,7 +187,7 @@
                                           <Font name="Cambria" size="25.0" />
                                        </font>
                                        <HBox.margin>
-                                          <Insets left="30.0" />
+                                          <Insets left="20.0" />
                                        </HBox.margin>
                                     </Label>
                                  </children>
@@ -207,7 +207,7 @@
                                           <Font name="Cambria" size="25.0" />
                                        </font>
                                        <HBox.margin>
-                                          <Insets left="30.0" />
+                                          <Insets left="20.0" />
                                        </HBox.margin>
                                     </Label>
                                  </children>

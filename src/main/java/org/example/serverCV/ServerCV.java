@@ -24,10 +24,7 @@ import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
@@ -354,7 +351,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         return centriVaccinali;
     }
 
-    public synchronized double getAvg(String idCentroVaccinale) throws RemoteException, SQLException, ArithmeticException {
+    public synchronized double[] getAvg_Nsegnalazioni(String idCentroVaccinale) throws RemoteException, SQLException, ArithmeticException {
         System.out.println(idCentroVaccinale);
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
@@ -363,32 +360,28 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
                                                 "WHERE idcentrovaccinale = " + "'" + idCentroVaccinale + "'");
         int somma = 0;
         int conta = 0;
+        //result[0] = mediaTroncata    result[1] = conta
+        double[] result = new double[2];
         while (rsSum.next()) {
             somma = rsSum.getInt("somma");
             conta = rsSum.getInt("conta");
         }
 
-        /*ResultSet rsCount = statement.executeQuery("SELECT COUNT (*) AS conta " +
-                                                    "FROM eventi_avversi " +
-                                                    "WHERE idcentrovaccinale = " + "'" + idCentroVaccinale + "'");
-
-        //lettura result set
-        while (rsCount.next()) {
-            conta = rsCount.getInt("conta");
-        }*/
-
-
         if(conta != 0) {
+            //è presente una o piu segnalazioni
             double media = (double) somma / ((double) conta * (double) 6);
             //modifichiamo le cifre decimali dopo la virgola della media della severia'. Per comodita' ne teniamo 2.
             double mediaTroncata = BigDecimal.valueOf(media).setScale(2, RoundingMode.HALF_UP).doubleValue();
 
-            System.out.println(somma);
-            System.out.println(media);
-            return mediaTroncata;
+            result[0] = mediaTroncata;
+            result[1] = conta;
+            return result;
         }
         else{
-            return -1;
+            //non sono presenti segnalazioni
+            result[0] = -1;
+            result[1] = conta; // conta = 0
+            return result;
         }
     }
 
