@@ -18,6 +18,8 @@ import org.example.database.DbHelper;
 import org.example.serverCV.gui.ServerCVMain;
 
 import java.io.Serial;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
@@ -26,6 +28,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 /**
@@ -351,7 +354,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         return centriVaccinali;
     }
 
-    public synchronized float getAvg(String idCentroVaccinale) throws RemoteException, SQLException, ArithmeticException {
+    public synchronized double getAvg(String idCentroVaccinale) throws RemoteException, SQLException, ArithmeticException {
         System.out.println(idCentroVaccinale);
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
@@ -363,7 +366,6 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
             somma = rsSum.getInt("somma");
         }
 
-
         ResultSet rsCount = statement.executeQuery("SELECT COUNT (*) AS conta " +
                                                     "FROM eventi_avversi " +
                                                     "WHERE idcentrovaccinale = " + "'" + idCentroVaccinale + "'");
@@ -372,10 +374,12 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
             conta = rsCount.getInt("conta");
         }
 
-        float media = (float) somma / ((float) conta * (float)6);
+        double media = (double) somma / ((double) conta * (double) 6);
         System.out.println(somma);
         System.out.println(media);
-        return media;
+        //modifichiamo le cifre decimali dopo la virgola della media della severia'. Per comodita' ne teniamo 2.
+        Double mediaTroncata = BigDecimal.valueOf(media).setScale(2, RoundingMode.HALF_UP).doubleValue();
+        return mediaTroncata;
     }
 
     /**
