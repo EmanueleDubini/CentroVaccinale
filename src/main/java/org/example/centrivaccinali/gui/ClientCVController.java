@@ -12,6 +12,7 @@ package org.example.centrivaccinali.gui;
 
 import org.example.common.CFGenerator.CalcolaCodiceFiscale;
 import org.example.common.ProgUtili;
+import org.example.common.exceptions.ServerNotFoundException;
 import org.example.database.GenerateDataLib.*;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -606,7 +607,7 @@ public class ClientCVController implements Initializable {
 
     /////////////////////grafica relativa alla pagina: 00_IpServerCheck.fxml //////////////////////////////////
 
-    public void serverConnection() {
+    public void serverConnection() throws ServerNotFoundException {
         address = hostAddress.getText().strip();
 
         if (address.equals("")) {
@@ -626,6 +627,7 @@ public class ClientCVController implements Initializable {
             } catch (NotBoundException | IOException e) {
                 //e.printStackTrace();
                 connectionStatus.setText("indirizzo IP server errato o server non disponibile");
+                throw new ServerNotFoundException();
             }
         }
     }//END_serverConnection
