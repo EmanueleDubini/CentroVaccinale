@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.centrivaccinali.gui.ClientCTController">
+    <children>
+        <AnchorPane fx:id="anchor" prefHeight="720.0" prefWidth="455.0" stylesheets="@../../css/GradientBackGround.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="173.0" fitWidth="414.0" layoutX="21.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/CV_Logo.png" />
+                    </image>
+                </ImageView>
+            <Button alignment="CENTER" layoutX="4.0" layoutY="4.0" mnemonicParsing="false" onAction="#to_02CT_MainWindow" prefHeight="32.0" prefWidth="32.0" style="-fx-background-radius: 5em;" text="←" />
+            <Label layoutX="55.0" layoutY="444.0" text="Inserisci i tuoi dati, compilando tutti i campi," textFill="WHITE">
+               <font>
+                  <Font name="Avenir Book" size="18.0" />
+               </font></Label>
+            <Label layoutX="96.0" layoutY="471.0" text="per registrarti ad un centro vaccinale." textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+        <Pane layoutX="481.0" layoutY="220.0" prefHeight="457.0" prefWidth="774.0" AnchorPane.bottomAnchor="49.0" AnchorPane.topAnchor="214.0">
+            <children>
+                <TextField fx:id="TextFieldCognomeVaccinato" layoutY="135.0" prefHeight="35.0" prefWidth="325.0" promptText="Cognome" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
+                <PasswordField fx:id="TextFieldNomeVaccinato" layoutY="35.0" prefHeight="35.0" prefWidth="325.0" promptText="Nome" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
+                <Button fx:id="anchor" alignment="CENTER" contentDisplay="CENTER" layoutX="525.0" layoutY="400.0" mnemonicParsing="false" onAction="#GeneraCittadinoRegistrato" prefHeight="45.0" prefWidth="200.0" style="-fx-background-radius: 5em;" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Registra Cittadino" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+                </Button>
+                <Label fx:id="lblErrors" alignment="CENTER" layoutX="8.0" layoutY="95.0" prefHeight="23.0" prefWidth="275.0" textFill="#ff6354">
+                    <font>
+                        <Font name="Segoe UI" size="10.0" />
+                    </font>
+                </Label>
+            <Label text="Nome Vaccinato:">
+               <font>
+                  <Font name="Avenir Book" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutY="100.0" text="Cognome Vaccinato:">
+               <font>
+                  <Font name="Avenir Book" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutY="200.0" text="Codice Fiscale:">
+               <font>
+                  <Font name="Avenir Book" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="TextFieldCFVaccinato" layoutY="235.0" prefHeight="35.0" prefWidth="325.0" promptText="CF" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
+            <Label layoutY="300.0" text="E-mail:">
+               <font>
+                  <Font name="Avenir Book" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="TextFieldEmailVaccinato" layoutY="335.0" prefHeight="35.0" prefWidth="325.0" promptText="e-mail" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
+            <Label layoutX="400.0" text="Username:">
+               <font>
+                  <Font name="Avenir Book" size="24.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="TextFieldUsernameVaccinato" layoutX="400.0" layoutY="35.0" prefHeight="35.0" prefWidth="325.0" promptText="Username" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
+            <Label layoutX="400.0" layoutY="100.0" text="Password:">
+               <font>
+                  <Font name="Avenir Book" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="TextFieldPasswordVaccinato" layoutX="400.0" layoutY="135.0" prefHeight="35.0" prefWidth="325.0" promptText="Password" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
+            <Label layoutX="400.0" layoutY="200.0" text="id Unico di Vaccinazione:">
+               <font>
+                  <Font name="Avenir Book" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="400.0" layoutY="300.0" text="Nome Centro Vaccinale:">
+               <font>
+                  <Font name="Avenir Book" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="TextFieldIdVaccinazioneVaccinato" layoutX="400.0" layoutY="235.0" prefHeight="35.0" prefWidth="325.0" promptText="id 16bit" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
+            <ComboBox fx:id="nomeCentroComboBox" layoutX="400.0" layoutY="335.0" onAction="#GeneraCittadinoRegistrato" prefHeight="30.0" prefWidth="325.0" />
+            </children>
+        </Pane>
+          <Label alignment="CENTER" layoutX="455.0" layoutY="77.0" prefHeight="55.0" prefWidth="825.0" text="Registrati ad un Centro Vaccinale" textFill="#4e8847">
+              <font>
+                  <Font name="Avenir Book" size="48.0" />
+              </font>
+          </Label>
+    </children>
+</AnchorPane>
