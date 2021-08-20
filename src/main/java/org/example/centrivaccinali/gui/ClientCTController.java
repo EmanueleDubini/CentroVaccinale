@@ -361,6 +361,14 @@ public class ClientCTController  implements Initializable{
             alert.showAndWait();
         }
         //verificare se l'idVacinazione esiste ed è associato alla persona che si sta registrando
+        else if(!ClientCVController.stub.verificaIdVaccinazione(idVaccinazioneRegistrato, nomeCentroVaccinale)){
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Si è verificato un Errore");
+            alert.setContentText("Nessun id vaccinale riscontrato nel centro vaccinale specificato.\nRiprovare");
+
+            alert.showAndWait();
+        }
         else {
             Boolean verify = ClientCVController.stub.registraCittadino(cfRegistrato, cognomeRegistrato, nomeRegistrato, emailRegistrato, usernameRegistrato, passwordRegistrato, idVaccinazioneRegistrato, nomeCentroVaccinale);
             if(verify) {
