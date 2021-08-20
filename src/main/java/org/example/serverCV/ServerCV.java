@@ -386,7 +386,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
             return mediaTroncata;
         }
         else{
-            return 0.0;
+            return -1;
         }
     }
 

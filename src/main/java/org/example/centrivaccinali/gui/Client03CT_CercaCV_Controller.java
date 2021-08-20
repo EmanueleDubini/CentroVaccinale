@@ -142,9 +142,19 @@ public class Client03CT_CercaCV_Controller implements Initializable {
         Indirizzo indirizzo = centroVaccinale.getIndirizzo();
         ViaLabel.setText(indirizzo.getQualificatore() + " " + indirizzo.getNome() + " " + indirizzo.getNumeroCivico());
         IndirizzoLabel.setText(indirizzo.getComune() + " " + indirizzo.getCap() + " " + indirizzo.getProv());
+
         String idCV = centroVaccinale.getIdCentroVacciale();
         idCentroVacinaleLabel.setText(idCV);
-        labelSeveritaMedia.setText(String.valueOf(ClientCVController.stub.getAvg(idCV)));
+
+        double mediaSeveritaEventiAvversi = ClientCVController.stub.getAvg(idCV);
+        //caso in cui non ci sono aventi avversi nel centro mostrato
+        if(mediaSeveritaEventiAvversi == -1 ){
+            labelSeveritaMedia.setText("0 Segnalazioni");
+        }
+        else{
+            //se ci sono eventi avversi mostrra la media
+        labelSeveritaMedia.setText(String.valueOf(mediaSeveritaEventiAvversi));
+        }
         chosenCV.setStyle("-fx-background-radius: 30;");
     }
 
