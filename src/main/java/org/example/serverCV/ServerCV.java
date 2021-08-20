@@ -358,7 +358,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         System.out.println(idCentroVaccinale);
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
-        ResultSet rsSum = statement.executeQuery("SELECT SUM(mal_di_testa + febbre + dolori_muscolari_e_articolari + tachicardia + linfoadenopatia + crisi_ipertensiva) AS somma, SELECT COUNT (*) AS conta" +
+        ResultSet rsSum = statement.executeQuery("SELECT SUM(mal_di_testa + febbre + dolori_muscolari_e_articolari + tachicardia + linfoadenopatia + crisi_ipertensiva) AS somma, COUNT (*) AS conta" +
                                                 "FROM eventi_avversi " +
                                                 "WHERE idcentrovaccinale = " + "'" + idCentroVaccinale + "'");
         int somma = 0;
