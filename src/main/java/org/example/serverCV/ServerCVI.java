@@ -223,4 +223,20 @@ public interface ServerCVI extends Remote {
                                    int linfoadenopatia, String linfoadenopatia_note,
                                    int tachicardia, String tachicardia_note,
                                    int crisi_ipertensiva, String crisi_ipertensiva_note) throws RemoteException, SQLException;
+
+    /**
+     * Metodo <code>verificaSeRegistrato</code> che verifica se l'utente che si sta registrando
+     * non sia gia presente nella relazione cittadini-registrati presente nel database
+     *
+     * @param cfRegistrato codice fiscale del cittadino vaccinato che vuole registrarsi nell'applicazione cittadino
+     * @param emailRegistrato email del cittadino vaccinato che vuole registrarsi nell'applicazione cittadino
+     * @param usernameRegistrato username inserito dal cittadino vaccinato che vuole registrarsi nell'applicazione cittadino
+     * @param idVaccinazioneRegistrato id di vaccinazione del cittadino vaccinato che vuole registrarsi nell'applicazione cittadino
+     *
+     * @return ritorna true se i campi inseriti dal cittadino registrato non sono gia presenti nel database e quindi esso puo registrasi
+     * @throws RemoteException RemoteException
+     */
+    Boolean verificaSeRegistrato(String cfRegistrato, String emailRegistrato, String usernameRegistrato, String idVaccinazioneRegistrato) throws RemoteException, SQLException;
 }
+
+
