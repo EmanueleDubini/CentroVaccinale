@@ -10,19 +10,33 @@
 
 package org.example.database.GenerateDataLib;
 
-//todo javadoc
+
+/**
+ * Classe per la generazione di email casuali
+ */
 public class EmailGenerator {
     String name;
     String surname;
     UIDGenerator generator = new UIDGenerator();
 
-    //todo javadoc
+
+    /**
+     * Costruttore per la creazione dell'email partendo dal nome e cognome
+     *
+     * @param name nome
+     * @param surname cognome
+     */
     public EmailGenerator(String name, String surname) {
         this.name = name;
         this.surname = surname;
     }
 
-    //todo javadoc
+
+    /**
+     * Creazione della stringa email
+     *
+     * @return email basato sul nome e cognome
+     */
     public String generate() {
         String email = name + "." + surname + generator.randomUUID(4,5,'-',true) + "@gmail.com";
         return email.toLowerCase();

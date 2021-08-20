@@ -23,7 +23,7 @@ import java.util.Random;
 import java.util.UUID;
 
 /**
- *  Le sue istanze mappano e popolano le tuple del database
+ * Le sue istanze mappano e popolano le tuple del database
  */
 public class DataModel {
     //todo la javadoc viene fatta dopo per motivi di leggibilità
@@ -33,7 +33,6 @@ public class DataModel {
 
     /**
      * Costruisce una nuova istanza della classe <code>DataModel</code> .
-     *
      */
     public DataModel(){
         cittadini = new ArrayList<>();
@@ -44,7 +43,7 @@ public class DataModel {
 
     /**
      * Eseguendolo genera una serie di dati anagrafici di Cittadini e informazioni riguardanti i Centri vaccinali,
-     * per favorire l'inserimento di dati nel database.
+     * per favorire l'inserimento di dati nel database
      *
      * Stampa sulla console le informazioni inserite nel database
      */
@@ -66,6 +65,13 @@ public class DataModel {
         }
     }
 
+    /**
+     * Metodo che genera ed inserisce nell'array i cittadini e i centri vaccinali generati casualmente per popolare le
+     * tabelle del database
+     *
+     * @param numCittadini numero dei cittadini da generare casualmente
+     * @param numCentriVaccinali numero dei centri vaccinali da generare casualmente
+     */
     private void populateModel(int numCittadini, int numCentriVaccinali){
         for(int i = 0; i < numCittadini; i++){
             cittadini.add(generateCittadino());
@@ -77,7 +83,12 @@ public class DataModel {
 
     }
 
-    //todo javadoc
+
+    /**
+     * Questo metodo genera casualmente i dati dei cittadini da inserire nel databse
+     *
+     * @return un nuovo oggetto di tipo Cittadino
+     */
     public static Cittadino generateCittadino() {
         int eta = randomGenerator.nextInt(30) + 20;
 
@@ -115,7 +126,12 @@ public class DataModel {
         return new Cittadino(codiceFiscale, cognome, nome, eta, email, userId, password, idVaccinazione);
     }
 
-    //todo javadoc
+
+    /**
+     * Questo metodo genera casualmente i dati dei centri vaccinali da inserire nel databse
+     *
+     * @return un nuovo oggetto di tipo centro vaccinale
+     */
     public static CentroVaccinale generateCentroVaccinale(){
         String idCentroVaccinale = UUID.randomUUID().toString(); //id centro vaccinale univoco
 

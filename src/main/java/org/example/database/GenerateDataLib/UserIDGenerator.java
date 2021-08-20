@@ -10,19 +10,33 @@
 
 package org.example.database.GenerateDataLib;
 
-//todo javadoc
+
+/**
+ * Classe che genera uno username casuale per l'utente che si vuole registrare
+ */
 public class UserIDGenerator {
     private final String name;
     private final String surname;
     private final UIDGenerator generator = new UIDGenerator();
 
-    //todo javadoc
+
+    /**
+     * Costruttore che genera uno username casuale
+     *
+     * @param name nome del cittadino che vuole registrarsi
+     * @param surname cognome del cittadino che vuole registrarsi
+     */
     public UserIDGenerator(String name, String surname) {
         this.name = name;
         this.surname = surname;
     }
 
-    //todo javadoc
+
+    /**
+     * Genera una stringa contenente lo username dei cittadini registrati
+     *
+     * @return una stringa con username casuale
+     */
     public String generate() {
         return name + "-" + surname + "." + generator.randomUUID(4,5,'-', true);
     }

@@ -18,7 +18,10 @@ package org.example.database;
  */
 public class QueryDebug {
 
-    //todo javadoc
+
+    /**
+     * Costruttore
+     */
     public QueryDebug() { }
 
     // DATABASE (solo debug)
@@ -26,7 +29,10 @@ public class QueryDebug {
     public static String dropDB = "DROP DATABASE IF EXISTS centrivaccinalidb";
 
     // TABELLE
-    //todo javadoc
+
+    /**
+     * Crea la tabella dei dei centri vaccinali
+     */
     public static String createCentriVaccinaliTable = "CREATE TABLE IF NOT EXISTS centrivaccinali (" +
                                                     "idCentroVaccinale VARCHAR(36) PRIMARY KEY," +
                                                     "nome VARCHAR(50) NOT NULL," +
@@ -38,11 +44,16 @@ public class QueryDebug {
                                                     "cap NUMERIC(5) NOT NULL," +
                                                     "tipologia VARCHAR(50) NOT NULL" +
                                                     ")";
-    //todo javadoc
+
+    /**
+     * Cancella la tabella dei centri vaccinali
+     */
     public static String dropCentriVaccinaliTable = "DROP TABLE IF EXISTS centrivaccinali";
 
 
-    //todo javadoc
+    /**
+     * Crea la tabella dei cittadini registrati
+     */
     public static String createCittadiniRegistratiTable = "CREATE TABLE IF NOT EXISTS cittadini_registrati (" +
                                                         "codicefiscale VARCHAR(16) PRIMARY KEY," +
                                                         "cognomecittadino VARCHAR(50) NOT NULL," +
@@ -53,11 +64,16 @@ public class QueryDebug {
                                                         "idvaccinazione VARCHAR(16) NOT NULL," +
                                                         "idcentrovaccinale VARCHAR(36) NOT NULL" +
                                                         ")";
-    //todo javadoc
+
+    /**
+     * Cancella la tabella dei cittadini registrati
+     */
     public static String dropCittadiniRegistratiTable = "DROP TABLE IF EXISTS cittadini_registrati";
 
 
-    //todo javadoc
+    /**
+     * Crea la tabella degli eventi avversi
+     */
     public static String createEventiAvversiTable = "CREATE TABLE IF NOT EXISTS eventi_avversi (" +
                                                     "idcentrovaccinale VARCHAR(36) NOT NULL," +
                                                     "codicefiscale VARCHAR(16) NOT NULL," +
@@ -76,6 +92,9 @@ public class QueryDebug {
                                                     "PRIMARY KEY(idCentroVaccinale, codiceFiscale)" +
                                                     ")";
 
-    //todo javadoc
+
+    /**
+     * Cancella la tabella degli eventi avversi
+     */
     public static String dropEventiAvversiTable = "DROP TABLE IF EXISTS eventi_avversi";
 }//END_Query

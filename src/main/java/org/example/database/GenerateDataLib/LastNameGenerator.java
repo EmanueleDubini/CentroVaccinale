@@ -15,13 +15,13 @@ import org.example.database.GenerateDataLib.BaseElement.GeneratorWrapperBase;
 import org.example.database.GenerateDataLib.BaseElement.RandomSequenceArrayBasedGenerator;
 
 /**
- * Generatore casuale di Cognomi.
+ * Generatore casuale di Cognomi
  * La lista dei nomi è stata presa dai 200 nomi più comuni negli Stati Uniti
  *
  */
 public class LastNameGenerator extends GeneratorWrapperBase<String> implements Generator {
     /**
-     * I più comuni cognomi degli Stati Uniti.
+     * I più comuni cognomi degli Stati Uniti
      */
     private static final String[] lastNames = new String[] { "Smith",
             "Johnson", "Williams", "Jones", "Brown", "Davis", "Miller",
@@ -66,7 +66,7 @@ public class LastNameGenerator extends GeneratorWrapperBase<String> implements G
             "Fowler" };
 
     /**
-     * Costruttori.
+     * Costruttori
      */
     public LastNameGenerator() {
         super(new RandomSequenceArrayBasedGenerator<>(lastNames));

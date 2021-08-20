@@ -12,20 +12,20 @@ package org.example.database.GenerateDataLib.BaseElement;
 
 /**
  * Una classe astratta che andrà estesa da classi che desidereranno processare i valori generati
- * dall'istanza della classe wrapper {@link Generator}.
+ * dall'istanza della classe wrapper {@link Generator}
  *
  * @param <Object>> Tipo di dato dell'elemento generato dalla classe wrapper {@link Generator}.
  */
 public abstract class GeneratorWrapperBase<Object> {
     /**
-     * Istanza della classe wrapper {@link Generator} utilizzato come sottoclasse di questa classe.
+     * Istanza della classe wrapper {@link Generator} utilizzato come sottoclasse di questa classe
      */
     protected Generator generator;
 
     /**
-     * Costruttore.
+     * Costruttore
      *
-     * @param generator Istanza della classe wrapper {@link Generator}.
+     * @param generator Istanza della classe wrapper {@link Generator}
      */
     public GeneratorWrapperBase(RandomSequenceArrayBasedGenerator<Object> generator) {
         super();

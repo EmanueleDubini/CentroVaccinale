@@ -16,19 +16,19 @@ import org.example.database.GenerateDataLib.BaseElement.GeneratorWrapperBase;
 import org.example.database.GenerateDataLib.BaseElement.RandomSequenceArrayBasedGenerator;
 
 /**
- * Generatore casuale di qualificatori per indirizzi civici.
- * La lista dei qualificatori è stata creata selezionando alcuni indirizzi civici In Italia..
+ * Generatore casuale di qualificatori per indirizzi civici
+ * La lista dei qualificatori è stata creata selezionando alcuni indirizzi civici In Italia
  *
  */
 public class QualificatoreViaGenerator extends GeneratorWrapperBase<String> implements Generator {
     /**
-     * Alcuni dei qualificatori di indirizzi civici Italiani.
+     * Alcuni dei qualificatori di indirizzi civici Italiani
      */
     private static final String[] names = new String[] { Qualificatore.Via.name(), Qualificatore.Viale.name(), Qualificatore.Piazza.name(),
             Qualificatore.Largo.name(), Qualificatore.Vicolo.name(), Qualificatore.Piazzale.name(), Qualificatore.Corso.name()};
 
     /**
-     * Costruttore.
+     * Costruttore
      */
     public QualificatoreViaGenerator() {
         super(new RandomSequenceArrayBasedGenerator<>(names));

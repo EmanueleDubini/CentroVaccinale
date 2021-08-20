@@ -21,7 +21,7 @@
                         <Image url="@../../images/CV_Logo.png" />
                     </image>
                 </ImageView>
-                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="118.0" layoutY="428.0" prefHeight="26.0" text="Accedi per inserire gli eventi avversi" textAlignment="CENTER" textFill="WHITE">
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="4.0" layoutY="413.0" prefHeight="26.0" prefWidth="550.0" text="Accedi per inserire gli eventi avversi." textAlignment="CENTER" textFill="WHITE">
                     <font>
                         <Font name="Arial" size="20.0" />
                     </font>
@@ -29,30 +29,23 @@
             <Button alignment="CENTER" layoutX="4.0" layoutY="4.0" mnemonicParsing="false" onAction="#to_02CT_MainWindow" prefHeight="32.0" prefWidth="32.0" style="-fx-background-radius: 5em;" text="←" />
             </children>
         </AnchorPane>
-        <Pane layoutX="631.0" layoutY="220.0" prefHeight="263.0" prefWidth="531.0" AnchorPane.bottomAnchor="237.0" AnchorPane.topAnchor="214.0">
+        <Pane layoutX="631.0" layoutY="220.0" prefHeight="269.0" prefWidth="558.0" AnchorPane.bottomAnchor="237.0" AnchorPane.topAnchor="214.0">
             <children>
-                <TextField fx:id="TextFieldUsername" layoutX="7.0" prefHeight="37.0" prefWidth="520.0" promptText="User ID" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
-                <PasswordField fx:id="TextFieldPassword" layoutX="7.0" layoutY="61.0" prefHeight="37.0" prefWidth="520.0" promptText="Password" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
-                <Button alignment="CENTER" contentDisplay="CENTER" layoutX="200.0" layoutY="139.0" mnemonicParsing="false" onAction="#login" prefHeight="34.0" prefWidth="137.0" stylesheets="@../../css/GradientBackGround.css" text="Login">
+                <TextField fx:id="TextFieldUsername" layoutX="7.0" prefHeight="37.0" prefWidth="545.0" promptText="User ID" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
+                <PasswordField fx:id="TextFieldPassword" layoutX="7.0" layoutY="61.0" prefHeight="37.0" prefWidth="545.0" promptText="Password" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
+                <Button alignment="CENTER" contentDisplay="CENTER" layoutX="211.0" layoutY="137.0" mnemonicParsing="false" onAction="#login" prefHeight="34.0" prefWidth="137.0" stylesheets="@../../css/GradientBackGround.css" text="Login">
                <font>
-                  <Font size="16.0" />
+                  <Font name="Avenir Book" size="16.0" />
                </font></Button>
-                <Button fx:id="anchor" alignment="CENTER" contentDisplay="CENTER" layoutX="135.0" layoutY="240.0" mnemonicParsing="false" onAction="#to_03CT_RegistraCT" prefHeight="34.0" prefWidth="275.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Effettua Registrazione" textAlignment="CENTER" textFill="WHITE">
-                    <graphic>
-                        <ImageView fitHeight="16.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@../images/icons8_Facebook_F_48px.png" />
-                            </image>
-                        </ImageView>
-                    </graphic>
+                <Button fx:id="anchor" alignment="CENTER" contentDisplay="CENTER" layoutX="145.0" layoutY="239.0" mnemonicParsing="false" onAction="#to_03CT_RegistraCT" prefHeight="34.0" prefWidth="275.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Effettua Registrazione" textAlignment="CENTER" textFill="WHITE">
                <font>
-                  <Font size="18.0" />
+                  <Font name="Avenir Book" size="18.0" />
                </font>
                 </Button>
-                <Separator layoutX="133.0" layoutY="205.0" prefHeight="7.0" prefWidth="275.0" />
-                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="239.0" layoutY="197.0" style="-fx-background-color: #fff;" text="oppure" textFill="#5b5a5a">
+                <Separator layoutX="143.0" layoutY="202.0" prefHeight="7.0" prefWidth="275.0" />
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="255.0" layoutY="196.0" style="-fx-background-color: #fff;" text="oppure" textFill="#5b5a5a">
                     <font>
-                        <Font size="14.0" />
+                        <Font name="Avenir Book" size="14.0" />
                     </font>
                <padding>
                   <Insets left="5.0" right="5.0" />
@@ -65,9 +58,9 @@
                 </Label>
             </children>
         </Pane>
-          <Label alignment="CENTER" layoutX="731.0" layoutY="95.0" text="Pagina di Login" textFill="#4e8847">
+          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="561.0" layoutY="95.0" prefHeight="55.0" prefWidth="715.0" text="Pagina di Login" textFill="#4e8847">
               <font>
-                  <Font name="Arial" size="48.0" />
+                  <Font name="Avenir Book" size="48.0" />
               </font>
           </Label>
     </children>

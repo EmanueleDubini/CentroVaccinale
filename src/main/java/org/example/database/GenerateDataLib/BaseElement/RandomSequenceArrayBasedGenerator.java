@@ -14,21 +14,21 @@ import java.util.Random;
 
 /**
  * Genera oggetti di tipo <code>Object</code> utilizzando i valori salvati nell'array,
- * che fa da contenitore, selezionandoli casualmente.
+ * che fa da contenitore, selezionandoli casualmente
  *
- * @param <Object>> Tipo di dato dell'elemento generato.
+ * @param <Object>> Tipo di dato dell'elemento generato
  */
 public class RandomSequenceArrayBasedGenerator<Object> extends ArrayBasedGeneratorBase<Object> implements Generator {
     /**
      * Un istanza della classe {@link Random} che genera l'indirizzo degli oggetti
-     * contenuti all'interno dell'array.
+     * contenuti all'interno dell'array
      */
     private final Random random;
 
     /**
-     * Costruttore.
+     * Costruttore
      *
-     * @param values Un array di valori dai quali si estrarranno i tipi di dato.
+     * @param values Un array di valori dai quali si estrarranno i tipi di dato
      */
     @SafeVarargs
     public RandomSequenceArrayBasedGenerator(Object... values) {
