@@ -10,7 +10,7 @@
 
 package org.example.serverCV;
 
-import org.example.centrivaccinali.TipologiaCV;
+import org.example.common.TipologiaCV;
 import org.example.common.CentroVaccinale;
 import org.example.common.Indirizzo;
 import org.example.common.Qualificatore;
@@ -25,7 +25,6 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 import java.sql.*;
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 /**

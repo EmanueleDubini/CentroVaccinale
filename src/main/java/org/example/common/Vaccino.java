@@ -8,7 +8,7 @@
 
  */
 
-package org.example.centrivaccinali;
+package org.example.common;
 
 /**
  * Classe enumerativa per la gestione della <strong>Tipologia</strong> di <strong>vaccino</strong>.

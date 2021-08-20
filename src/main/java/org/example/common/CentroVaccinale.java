@@ -10,8 +10,6 @@
 
 package org.example.common;
 
-import org.example.centrivaccinali.TipologiaCV;
-
 import java.io.Serial;
 import java.io.Serializable;
 
