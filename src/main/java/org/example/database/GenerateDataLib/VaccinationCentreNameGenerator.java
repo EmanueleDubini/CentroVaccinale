@@ -15,12 +15,12 @@ import org.example.database.GenerateDataLib.BaseElement.GeneratorWrapperBase;
 import org.example.database.GenerateDataLib.BaseElement.RandomSequenceArrayBasedGenerator;
 
 /**
- * Generatore casuale di nomi di centri vaccinali.
+ * Generatore casuale di nomi di centri vaccinali
  *
  */
 public class VaccinationCentreNameGenerator extends GeneratorWrapperBase<String> implements Generator {
     /**
-     * I più comuni centri vaccinali negli Stati Uniti.
+     * I più comuni centri vaccinali negli Stati Uniti
      */
     private static final String[] names = new String[] { "Memory Centre", //todo aggiungere altri centri, sarebbe più giusto metterli tutti in italiano e corti
             "Jeewan Nursing",
@@ -30,7 +30,7 @@ public class VaccinationCentreNameGenerator extends GeneratorWrapperBase<String>
              };
 
     /**
-     * Costruttore.
+     * Costruttore
      */
     public VaccinationCentreNameGenerator() {
         super(new RandomSequenceArrayBasedGenerator<>(names));

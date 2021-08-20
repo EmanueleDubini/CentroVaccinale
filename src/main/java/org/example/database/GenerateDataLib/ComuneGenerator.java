@@ -15,13 +15,13 @@ import org.example.database.GenerateDataLib.BaseElement.GeneratorWrapperBase;
 import org.example.database.GenerateDataLib.BaseElement.RandomSequenceArrayBasedGenerator;
 
 /**
- * Generatore casuale di nomi di comuni.
- * La lista dei nomi &egrave; stata presa da vari comuni italiani.
+ * Generatore casuale di nomi di comuni
+ * La lista dei nomi &egrave; stata presa da vari comuni italiani
  *
  */
 public class ComuneGenerator extends GeneratorWrapperBase<String> implements Generator {
     /**
-     * Alcuni nomi di comuni in Italia.
+     * Alcuni nomi di comuni in Italia
      */
     private static final String[] names= {"Cermenate", "Vertemate con minoprio", "Milano", "Arese", "Verona", "Como", "Cernobbio", "Erba", "Meda", "Saronno",
                                             "Guanzate", "Cucciago", "Arezzo", "Arenzano", "Argegno", "Arosio", "Assisi", "Alassio", "Asso", "Avellino", "Bagnasco",
@@ -30,7 +30,7 @@ public class ComuneGenerator extends GeneratorWrapperBase<String> implements Gen
 
 
     /**
-     * Costruttore.
+     * Costruttore
      */
     public ComuneGenerator() {
         super(new RandomSequenceArrayBasedGenerator<>(names));

@@ -15,13 +15,13 @@ import org.example.database.GenerateDataLib.BaseElement.GeneratorWrapperBase;
 import org.example.database.GenerateDataLib.BaseElement.RandomSequenceArrayBasedGenerator;
 
 /**
- * Generatore casuale di nomi maschili.
- * La lista dei nomi è stata presa dai 200 nomi più comuni negli Stati Uniti.
+ * Generatore casuale di nomi maschili
+ * La lista dei nomi è stata presa dai 200 nomi più comuni negli Stati Uniti
  *
  */
 public class MaleNameGenerator extends GeneratorWrapperBase<String> implements Generator {
     /**
-     * I più comuni nomi maschili degli Stati Uniti.
+     * I più comuni nomi maschili degli Stati Uniti
      */
     private static final String[] names = new String[] { "James", "John",
             "Robert", "Michael", "William", "David", "Richard", "Charles",
@@ -64,7 +64,7 @@ public class MaleNameGenerator extends GeneratorWrapperBase<String> implements G
             "Allan" };
 
     /**
-     * Costruttore.
+     * Costruttore
      */
     public MaleNameGenerator() {
         super(new RandomSequenceArrayBasedGenerator<>(names));

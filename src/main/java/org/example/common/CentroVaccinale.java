@@ -136,6 +136,7 @@ public class CentroVaccinale implements Serializable {
 
     /**
      * Restituisce una stringa che descrive il <code>CentroVaccinale</code> rappresentato dall'oggetto che esegue il metodo.
+     *
      * @return String
      */
     public String toString() {
@@ -150,6 +151,7 @@ public class CentroVaccinale implements Serializable {
      * Restituisce true se e solo se il Centro Vaccinale rappresentato dall'oggetto che esegue il metodo &egrave; uguale a quello specificato tramite l'argomento.
      *
      * @param centroVaccinale Oggetto passato come parametro al metodo
+     *
      * @return boolean
      */
     public boolean equals(CentroVaccinale centroVaccinale) { return this.toString().equals(centroVaccinale.toString()); }

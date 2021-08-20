@@ -17,8 +17,8 @@ import org.example.database.GenerateDataLib.BaseElement.GeneratorWrapperBase;
 import org.example.database.GenerateDataLib.BaseElement.RandomSequenceArrayBasedGenerator;
 
 /**
- * Generatore casuale di indirizzi civici.
- * La lista di indirizzi è stata creata selezionando alcuni indirizzi civici In Italia.
+ * Generatore casuale di indirizzi civici
+ * La lista di indirizzi è stata creata selezionando alcuni indirizzi civici In Italia
  *
  */
 public class IndirizzoGenerator extends GeneratorWrapperBase<String> implements Generator {
@@ -27,7 +27,7 @@ public class IndirizzoGenerator extends GeneratorWrapperBase<String> implements 
     static NomeViaGenerator nome = new NomeViaGenerator(); //nome via
     static NumeroCivicoGenerator numero = new NumeroCivicoGenerator(); //numero civico //todo il numero civico generato non per forza esiste nella via generata
     /**
-     * Alcuni indirizzi civici Italiani.
+     * Alcuni indirizzi civici Italiani
      */
     private static final Indirizzo[] names = {new Indirizzo(Qualificatore.valueOf((String)qualificatore.generate()), (String)nome.generate(), (String)numero.generate(), "Cermenate", 22072, "CO"), //todo aggiungere altri indirizzi
             new Indirizzo(Qualificatore.valueOf((String)qualificatore.generate()), (String)nome.generate(), (String)numero.generate(), "Vertemate con minoprio", 22070, "CO"),
@@ -38,7 +38,7 @@ public class IndirizzoGenerator extends GeneratorWrapperBase<String> implements 
 
 
     /**
-     * Costruttore.
+     * Costruttore
      */
     public IndirizzoGenerator() {
         super(new RandomSequenceArrayBasedGenerator(names));

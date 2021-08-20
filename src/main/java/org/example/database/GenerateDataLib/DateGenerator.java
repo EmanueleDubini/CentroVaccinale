@@ -13,18 +13,29 @@ package org.example.database.GenerateDataLib;
 import java.util.Date;
 import java.util.Random;
 
-//todo javadoc
+
+/**
+ * Classe dedicata alla creazione di una data casuale
+ */
 public class DateGenerator {
 
     // Get a new random instance, seeded from the clock
     Random rnd;
 
-    //todo javadoc
+
+    /**
+     * Creazione di un oggetto Random
+     */
     public DateGenerator() {
         rnd = new Random();
     }
 
-    //todo javadoc
+
+    /**
+     * Creazione di una data casuale
+     *
+     * @return una data casuale
+     */
     public Date generate(){
         // Get an Epoch value roughly between 1940 and 2010
         // -946771200000L = January 1, 1940

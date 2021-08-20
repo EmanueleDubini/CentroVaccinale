@@ -22,6 +22,7 @@ public class ProgUtili {
 
     /**
      * Restituisce il Sistema Operativo.
+     *
      * @return Sistema Operativo.
      */
     public static String getOsName(){
@@ -38,6 +39,7 @@ public class ProgUtili {
 
     /**
      * Crea un codice numerico univoco casuale da associare a ogni ristorante.
+     *
      * @return String composta dall'id a 16 cifre.
      */
     public static String createId() {
@@ -47,6 +49,7 @@ public class ProgUtili {
 
     /**
      * Stampa la data odierna.
+     *
      * @return La data in formato gg-mm-aaaa.
      */
     public static String stampaData() {
@@ -67,7 +70,14 @@ public class ProgUtili {
         return Pattern.matches(regex, cf);
     }
 
-//todo javadoc
+
+    /**
+     * Questo metodo rende maiuscola la prima lettera della stringa passata come parametro
+     *
+     * @param stringa stringa da modificare
+     *
+     * @return la stringa con la prima lettera maiuscola
+     */
     public static String capitalize(String stringa) {
         return  stringa.substring(0, 1).toUpperCase() + stringa.substring(1);
     }

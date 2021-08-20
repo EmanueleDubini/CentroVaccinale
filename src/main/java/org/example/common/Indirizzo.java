@@ -156,6 +156,7 @@ public class Indirizzo implements Serializable {
 
     /**
      * Restituisce una stringa che descrive  <code>Indirizzo</code> rappresentato dall'oggetto che esegue il metodo.
+     *
      * @return String
      */
     @Override

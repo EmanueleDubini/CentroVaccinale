@@ -15,14 +15,14 @@ import org.example.database.GenerateDataLib.BaseElement.GeneratorWrapperBase;
 import org.example.database.GenerateDataLib.BaseElement.RandomSequenceArrayBasedGenerator;
 
 /**
- * Generatore casuale di nomi femminili.
- * La lista dei nomi &egrave; stata presa dai 200 nomi pi&ugrave; comuni negli Stati Uniti.
+ * Generatore casuale di nomi femminili
+ * La lista dei nomi &egrave; stata presa dai 200 nomi pi&ugrave; comuni negli Stati Uniti
  *
  */
 
 public class FemaleNameGenerator extends GeneratorWrapperBase<String> implements Generator {
     /**
-     * I pi&ugrave; comuni nomi femminili degli Stati Uniti.
+     * I pi&ugrave; comuni nomi femminili degli Stati Uniti
      */
     private static final String[] names = new String[] { "Mary", "Patricia",
             "Linda", "Barbara", "Elizabeth", "Jennifer", "Maria", "Susan",
@@ -66,7 +66,7 @@ public class FemaleNameGenerator extends GeneratorWrapperBase<String> implements
             "Caroline", "Dora", "Jo" };
 
     /**
-     * Costruttore.
+     * Costruttore
      */
     public FemaleNameGenerator() {
         super(new RandomSequenceArrayBasedGenerator<>(names));
