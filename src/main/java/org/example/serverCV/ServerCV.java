@@ -563,7 +563,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      * @throws RemoteException RemoteException
      */
     @Override
-    public Boolean verificaSeRegistrato(String cfRegistrato, String emailRegistrato, String usernameRegistrato, String idVaccinazioneRegistrato) throws RemoteException, SQLException {
+    public boolean verificaSeRegistrato(String cfRegistrato, String emailRegistrato, String usernameRegistrato, String idVaccinazioneRegistrato) throws RemoteException, SQLException {
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
         ResultSet rsSum = statement.executeQuery("SELECT COUNT (*) AS conta " +
@@ -609,6 +609,38 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         }else{
             // se conta è ancora zero vuol dire che l'id di vaccinazione non è presente nei sistemi
             return false;
+        }
+    }
+
+    /**
+     * Metodo <code>verificaEventoAvverso</code> che verifica se un utente ha gia inserito un avento avverso all'interno del database
+     * effettuando la ricerca attraverso il codice fiscale
+     * @param codiceF
+     *
+     * @return ritorna true se si puo effettuare l'inserimento di un centro vaccinale, altrimenti false
+     *
+     * @throws RemoteException RemoteException
+     * @throws SQLException SQLException
+     */
+    @Override
+    public boolean verificaEventoAvverso(String codiceF) throws RemoteException, SQLException {
+        DbHelper.getConnection();
+        Statement statement = DbHelper.getStatement();
+        ResultSet rsSum = statement.executeQuery("SELECT COUNT (*) AS conta " +
+                "FROM eventi_avversi " +
+                "WHERE codicefiscale = " + "'" + codiceF + "'");
+
+        int conta = 0;
+        while (rsSum.next()) {
+            conta = rsSum.getInt("conta");
+        }
+        if(conta > 0){
+            // è stato trovato qualcosa nel result set quindi non si può inserire un evento avverso
+            return false;
+        }else{
+            // se conta è ancora zero vuol dire che non è presente il suo codice fiscale nella relazione eventi_avversi
+            // quindi può inserire un evanto avverso
+            return true;
         }
     }
 

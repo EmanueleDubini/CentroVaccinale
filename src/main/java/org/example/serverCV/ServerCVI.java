@@ -236,7 +236,7 @@ public interface ServerCVI extends Remote {
      * @return ritorna true se i campi inseriti dal cittadino registrato non sono gia presenti nel database e quindi esso puo registrasi
      * @throws RemoteException RemoteException
      */
-    Boolean verificaSeRegistrato(String cfRegistrato, String emailRegistrato, String usernameRegistrato, String idVaccinazioneRegistrato) throws RemoteException, SQLException;
+    boolean verificaSeRegistrato(String cfRegistrato, String emailRegistrato, String usernameRegistrato, String idVaccinazioneRegistrato) throws RemoteException, SQLException;
 
     /**
      * Metodo <code>verificaSeRegistrato</code> che verifica l'id vaccinazione dell'utente che si sta registrando,
@@ -249,6 +249,18 @@ public interface ServerCVI extends Remote {
      * @throws RemoteException RemoteException
      */
     boolean verificaIdVaccinazione(String idVaccinazioneRegistrato, String nomeCentroVaccinale) throws RemoteException, SQLException;
+
+    /**
+     * Metodo <code>verificaEventoAvverso</code> che verifica se un utente ha gia inserito un avento avverso all'interno del database
+     * effettuando la ricerca attraverso il codice fiscale
+     * @param codiceF
+     *
+     * @return ritorna true se si puo effettuare l'inserimento di un centro vaccinale, altrimenti false
+     *
+     * @throws RemoteException RemoteException
+     * @throws SQLException SQLException
+     */
+    boolean verificaEventoAvverso(String codiceF) throws RemoteException, SQLException;
 }
 
 

@@ -483,17 +483,17 @@ public class ClientCTController  implements Initializable{
             String codiceF = ClientCVController.stub.getCodiceFiscale(copiaUsername, copiaPassword);
             System.err.println(codiceF);
 
-
-            Boolean verify = ClientCVController.stub.inserisciEventiAvversi(idCentroVaccinale, codiceF, severita1, note1, severita2, note2, severita3, note3, severita4, note4, severita5, note5, severita6, note6);
-
-            //todo gestire eccezione nel caso in cui il cittadino cerca di inserire DI NUOVO gli eventi avversi
-            if(verify) {
+            if(ClientCVController.stub.verificaEventoAvverso(codiceF)) {
+                Boolean verify = ClientCVController.stub.inserisciEventiAvversi(idCentroVaccinale, codiceF, severita1, note1, severita2, note2, severita3, note3, severita4, note4, severita5, note5, severita6, note6);
                 System.out.println("ok, inserito");
+
+            //todo gestire eccezione nel caso in cui il cittadino cerca di inserire DI NUOVO gli eventi avversi, prima di mandare un inserimeto
+            // creare un metodo che verifica se è stata gia inserito un evento avverso
             }else {
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setTitle("Error");
                 alert.setHeaderText("Si è verificato un Errore");
-                alert.setContentText("Hai già inserito gli eventi avversi\nEsegui di nuovo il login");
+                alert.setContentText("Hai già inserito gli eventi avversi\n");
 
                 alert.showAndWait();
             }
