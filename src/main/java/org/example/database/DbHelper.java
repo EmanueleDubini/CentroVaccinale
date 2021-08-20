@@ -37,6 +37,9 @@ public class DbHelper {
     private static Statement statement = null;
 
 
+    /**
+     * Costruttore
+     */
     public DbHelper(){ }
 
     /**
