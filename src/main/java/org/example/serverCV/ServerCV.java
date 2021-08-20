@@ -68,7 +68,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
         statement.executeUpdate("INSERT INTO centrivaccinali " +
-                "(idCentroVaccinale, nome,qualificatore, indirizzo, numeroCivico, comune, provincia, cap, tipologia)" +
+                "(idCentroVaccinale, nome, qualificatore, indirizzo, numerocivico, comune, provincia, cap, tipologia)" +
                 "VALUES(" + "'" + id + "'," + "'" + nomeCV + "',"+ "'" + qualificatore + "',"  + "'" + indirizzo + "'," + "'" + numeroCivico + "'," + "'" + comune + "'," + "'" + provincia + "'," + "'" + cap + "'," + "'" + tipologia + "'" + ")");
 
         System.out.println("SERVER: registracentroVaccinale() eseguito correttamente");
