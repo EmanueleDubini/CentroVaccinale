@@ -21,7 +21,7 @@ import java.rmi.RemoteException;
 import java.sql.SQLException;
 
 /**
- *
+ * Classe che crea i rettangoli per la visualizzazione dei centri vaccinali cercati
  */
 public class ItemController {
     @FXML
@@ -30,12 +30,12 @@ public class ItemController {
     public ImageView img;
 
     /**
+     * Gestisce il comportamento al click del mouse
      *
+     * @param mouseEvent mouseEvent
      *
-     * @param mouseEvent
-     *
-     * @throws SQLException
-     * @throws RemoteException
+     * @throws SQLException SQLException
+     * @throws RemoteException RemoteException
      */
     @FXML
     private void click(MouseEvent mouseEvent) throws SQLException, RemoteException {
@@ -46,7 +46,7 @@ public class ItemController {
     private CercaCVListener cercaCVListener;
 
     /**
-     *
+     * Inserisce i dati per la creazione degli elementi che rappresentano i centri vaccinali
      *
      * @param centroVaccinale
      * @param cercaCVListener
