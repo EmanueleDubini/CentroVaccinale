@@ -496,6 +496,7 @@ public class ClientCTController  implements Initializable{
                 alert.setContentText("Hai già inserito gli eventi avversi\n");
 
                 alert.showAndWait();
+                // todo dopo che viene premuto il tasto okay della finestra di alert rimandare alla home page della sezione cittadino
             }
         }
     }
