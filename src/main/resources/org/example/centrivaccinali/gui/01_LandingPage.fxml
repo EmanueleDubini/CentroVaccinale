@@ -47,7 +47,7 @@
                   </HBox>
                   <HBox layoutY="389.0" prefHeight="63.0" prefWidth="681.0">
                      <children>
-                          <Button fx:id="anchor" mnemonicParsing="false" onAction="#to_02CT_MainWindow" prefHeight="51.0" prefWidth="200.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Cittadini">
+                          <Button fx:id="anchor" mnemonicParsing="false" onAction="#to_02CT_MainWindow" prefHeight="51.0" prefWidth="200.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Cittadini" textFill="WHITE">
                            <font>
                               <Font name="Avenir Book" size="24.0" />
                            </font>
@@ -55,7 +55,7 @@
                               <Insets left="70.0" />
                            </HBox.margin>
                         </Button>
-                        <Button fx:id="anchor" mnemonicParsing="false" onAction="#to_02CV_MainWindow" prefHeight="51.0" prefWidth="200.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Centri Vaccinali">
+                        <Button fx:id="anchor" mnemonicParsing="false" onAction="#to_02CV_MainWindow" prefHeight="51.0" prefWidth="200.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Centri Vaccinali" textFill="WHITE">
                            <font>
                               <Font name="Avenir Book" size="24.0" />
                            </font>
@@ -66,7 +66,7 @@
                      </children>
                   </HBox>
                   <Separator layoutX="339.0" layoutY="234.0" orientation="VERTICAL" prefHeight="255.0" prefWidth="6.0" />
-                  <ImageView fitHeight="197.0" fitWidth="492.0" layoutX="101.0" layoutY="-65.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="197.0" fitWidth="492.0" layoutX="99.0" layoutY="-42.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../images/CV_Logo.png" />
                      </image>
