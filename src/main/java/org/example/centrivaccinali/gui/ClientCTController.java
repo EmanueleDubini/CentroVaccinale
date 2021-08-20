@@ -279,7 +279,7 @@ public class ClientCTController  implements Initializable{
 
     /**
      * Questo metodo è collegato al bottone ' Registra Cittadino' dell'applicaizione cittadino
-     * nel file "03CT_RegistrazioneAdCVOLD.fxml".
+     * nel file "03CT_RegistrazioneAdCVold.fxml".
      *
      * contiene dei controlli relativi a:
      * - Campi vuoti
@@ -350,7 +350,18 @@ public class ClientCTController  implements Initializable{
             alert.setContentText("'Email' non valido.\nRiprovare");
 
             alert.showAndWait();
-        } else {
+        }
+        //verifica che l'utente che si sta registrando non sia gia presente nella relazione cittadini-registrati
+        else if(!ClientCVController.stub.verificaSeRegistrato(cfRegistrato, emailRegistrato, usernameRegistrato, idVaccinazioneRegistrato)){
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Si è verificato un Errore");
+            alert.setContentText("Utente gia presente nel sistema.\nRiprovare");
+
+            alert.showAndWait();
+        }
+//verificare se l'idVacinazione esiste ed è associato alla persona che si sta registrando
+        else {
             Boolean verify = ClientCVController.stub.registraCittadino(cfRegistrato, cognomeRegistrato, nomeRegistrato, emailRegistrato, usernameRegistrato, passwordRegistrato, idVaccinazioneRegistrato, nomeCentroVaccinale);
             if(verify) {
                 resetInserimentoRegistrazione();

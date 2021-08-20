@@ -213,7 +213,7 @@ public class ClientCVController implements Initializable {
 
     /**
      * Questo metodo è collegato al Bottone "Registra Centro Vaccinale" nel file:
-     * "03CV_RegistraCT.fxml"
+     * "03CV_RegistraCTOLD.fxml"
      *
      * contiene dei controlli relativi a:
      * - Campi vuoti
@@ -353,7 +353,7 @@ public class ClientCVController implements Initializable {
 
     /**
      * Questo metodo è collegato al Bottone "Registra Centro Vaccinale" nel file:
-     * "03CV_RegistraCT.fxml"
+     * "03CV_RegistraCTOLD.fxml"
      *
      *  contiene dei controlli relativi a:
      *- Campi vuoti
@@ -578,7 +578,7 @@ public class ClientCVController implements Initializable {
         //todo benny
     }
 
-    //Metodi di debug relativi al file "03CV_RegistraCT.fxml"
+    //Metodi di debug relativi al file "03CV_RegistraCTOLD.fxml"
 
     /**
      * Questo metodo permette di inserire il codice fiscale in fase di debug

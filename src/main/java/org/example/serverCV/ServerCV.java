@@ -48,7 +48,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     /// IMPLEMENTAZIONE Metodi dell'interfaccia ServerCVI ///
 
     /**
-     * Metodo <code>registraCentroVaccinale</code> registra nel DB un nuovo Centro Vaccinale
+     * Il metodo <code>registraCentroVaccinale</code> registra nel DB un nuovo Centro Vaccinale
      *
      * @param id id del centro vaccinale
      * @param nomeCV nome del centro vaccinale
@@ -76,7 +76,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     }
 
     /**
-     * Metodo <code>registraVaccinato</code> registra nel DB un nuovo cittadino che è appena stato vaccinato
+     * Il metodo <code>registraVaccinato</code> registra nel DB un nuovo cittadino che è appena stato vaccinato
      *
      * @param id id del cittadino vaccinato
      * @param nomeCV nome del centro vaccinale in cui si e vaccinato il cittadino
@@ -114,6 +114,14 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         return true;
     }
 
+    /**
+     * Il metodo <code>getIdCentroVaccianlePerCV</code> estrae dal DB l'id del centro vaccinale passato come parametro
+     *
+     * @param nomeCV il nome del centro vaccinale di cui si vuole estrarre l'id
+     * @return idLetto dal DB
+     *
+     * @throws SQLException SQLException
+     */
     public synchronized String getIdCentroVaccianlePerCV(String nomeCV) throws SQLException{
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
@@ -132,7 +140,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     /// IMPLEMENTAZIONE Metodi dell'interfaccia ServerCVI ///
 
     /**
-     * Metodo <code>registraCittadino</code> registra nel DB un nuovo cittadino che e stato precendentemente vaccinato
+     * Il metodo <code>registraCittadino</code> registra nel DB un nuovo cittadino che e stato precendentemente vaccinato
      *
      * @param codicefiscale codice fiscale del cittadino
      * @param cognome cognome del cittadino
@@ -164,7 +172,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     }
 
     /**
-     * Metodo <code>login</code> controlla nel DB la corrispondenza username/password per permettere l'accesso ai cittadini
+     * Il metodo <code>login</code> controlla nel DB la corrispondenza username/password per permettere l'accesso ai cittadini
      * registrati che volgiono inserire un evento avverso
      *
      * @param username username del vaccinato che vuole accedere
@@ -196,7 +204,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     }
 
     /**
-     * Metodo <code>getIdCentroVaccinale</code> che effettua la ricerca dell'id del centro vaccinale tramite user e password
+     * Il metodo <code>getIdCentroVaccinale</code> effettua la ricerca dell'id del centro vaccinale tramite user e password
      * inserite nella fase di login
      *
      * @param username username del cittadino che effettua login
@@ -204,7 +212,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      *
      * @return <code>String</code> che contiene l'id del centro vaccinale corrispondente
      *
-     * @throws SQLException
+     * @throws SQLException SQLException
      */
     @Override
     public synchronized String getIdCentroVaccinale (String username, String password) throws SQLException {
@@ -224,7 +232,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     }
 
     /**
-     * Metodo <code>getCentroFiscale</code> che effettua la ricerca del codice fiscale tramite user e password
+     * Il metodo <code>getCentroFiscale</code> effettua la ricerca del codice fiscale tramite user e password
      * inserite nella fase di login
      *
      * @param username username del cittadino che effettua login
@@ -232,7 +240,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      *
      * @return <code>String</code> che contiene il codice fiscale del cittadino che effettua login
      *
-     * @throws SQLException
+     * @throws SQLException SQLException
      */
     @Override
     public synchronized  String getCodiceFiscale (String username, String password) throws SQLException {
@@ -277,7 +285,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     //}
 
     /**
-     * Metodo <code>cercaCentroVaccinaleNome</code> che effettua la ricerca di un centro vaccinale tramite il nome
+     * Il metodo <code>cercaCentroVaccinaleNome</code> effettua la ricerca di un centro vaccinale tramite il nome
      *
      * @param nomeCV nome del centro vaccinale secondo cui effettuare la ricerca
      *
@@ -350,6 +358,17 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         return centriVaccinali;
     }
 
+    /**
+     * Il metodo <code>getAvg_Nsegnalazioni</code> calcola la media e il numero di segnalazioni di un dato centro vaccinale
+     *
+     * @param idCentroVaccinale l' id del centro vaccinale di cui si vuole sapere la media e il numero di segnalazioni
+     *
+     * @return un <code>array</code> che contiene in posizione [0] la media delle segnalazioni e in posizione [1] il numero delle segnalazioni
+     *
+     * @throws RemoteException RemoteException
+     * @throws SQLException SQLException
+     * @throws ArithmeticException ArithmeticException
+     */
     public synchronized double[] getAvg_Nsegnalazioni(String idCentroVaccinale) throws RemoteException, SQLException, ArithmeticException {
         System.out.println(idCentroVaccinale);
         DbHelper.getConnection();
@@ -385,10 +404,11 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     }
 
     /**
-     * Metodo <code>nomiCentriVaccinali</code> che popola una lista con tutti i nomi dei centri vaccinali
+     * Il metodo <code>nomiCentriVaccinali</code> popola una lista con tutti i nomi dei centri vaccinali
      *
      * @return <code>ArrayList</code> che contiene una lista dei nomi dei Centri Vaccinali
-     * @throws SQLException
+     *
+     * @throws SQLException SQLException
      */
     public synchronized ArrayList<String> nomiCentriVaccinali() throws SQLException {
         ArrayList<String> nomiCentri = new ArrayList<>();
@@ -406,7 +426,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
 
 
     /**
-     * Metodo <code>cercaCentroVaccinaleComuneTipologia</code> che effettua la ricerca di un centro vaccinale tramite il nome
+     * Il metodo <code>cercaCentroVaccinaleComuneTipologia</code> effettua la ricerca di un centro vaccinale tramite il nome
      *
      * @param  nomeComune comune del centro vaccinale secondo cui effettuare la ricerca
      * @param  tipologiaCV tipologia del centro vaccinale secondo cui effettuare la ricerca
@@ -486,7 +506,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     /// IMPLEMENTAZIONE Metodi dell'interfaccia ServerCVI ///
 
     /**
-     * Metodo <code>inserisciEventiAvversi</code> che inserisce un evento avverso
+     * Il metodo <code>inserisciEventiAvversi</code> inserisce un evento avverso
      *
      * @param id id del cittadino vaccinato che vuole inserire un evento avverso
      * @param codiceFiscale codice fiscale del cittadino vaccinato che vuole inserire un evento avverso
@@ -504,6 +524,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      * @param crisi_ipertensiva_note note evento avverso crisi ipertensiva
      *
      * @return true se l'inserimento dell'evento avverso va a buon fine
+     *
      * @throws SQLException SQLException
      */
     @Override
@@ -527,6 +548,44 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
 
         System.out.println("SERVER: inserisciEventiAvversi() eseguito correttamente");
         return true;
+    }
+
+    /**
+     * Metodo <code>verificaSeRegistrato</code> che verifica se l'utente che si sta registrando
+     * non sia gia presente nella relazione cittadini-registrati presente nel database
+     *
+     * @param cfRegistrato codice fiscale del cittadino vaccinato che vuole registrarsi nell'applicazione cittadino
+     * @param emailRegistrato email del cittadino vaccinato che vuole registrarsi nell'applicazione cittadino
+     * @param usernameRegistrato username inserito dal cittadino vaccinato che vuole registrarsi nell'applicazione cittadino
+     * @param idVaccinazioneRegistrato id di vaccinazione del cittadino vaccinato che vuole registrarsi nell'applicazione cittadino
+     *
+     * @return ritorna true se i campi inseriti dal cittadino registrato non sono gia presenti nel database e quindi esso puo registrasi
+     * @throws RemoteException RemoteException
+     */
+    @Override
+    public Boolean verificaSeRegistrato(String cfRegistrato, String emailRegistrato, String usernameRegistrato, String idVaccinazioneRegistrato) throws RemoteException, SQLException {
+        DbHelper.getConnection();
+        Statement statement = DbHelper.getStatement();
+        ResultSet rsSum = statement.executeQuery("SELECT COUNT (*) AS conta " +
+                "FROM cittadini_registrati " +
+                "WHERE codicefiscale = " + "'" + cfRegistrato + "' OR " +
+                "email = " + "'" + emailRegistrato + "' OR " +
+                "username = " + "'" + usernameRegistrato + "' OR " +
+                "idvaccinazione = " + "'" + idVaccinazioneRegistrato + "'");
+
+        int conta = 0;
+        while (rsSum.next()) {
+            conta = rsSum.getInt("conta");
+        }
+        if(conta > 0){
+            // è stato trovato qualcosa bnel result set quindi l'utente esiste gia
+            return false;
+        }else{
+            // se conta è ancora zero vuol dire che i dati che l'utente ha inserito
+            // non sono gia presenti nel db e quindi si puo registrare
+            return true;
+        }
+
     }
 
     /**
