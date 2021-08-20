@@ -150,7 +150,7 @@ public class Client03CT_CercaCV_Controller implements Initializable {
         double[] mediaSeveritaEventiAvversi = ClientCVController.stub.getAvg_Nsegnalazioni(idCV);
         //caso in cui non ci sono aventi avversi nel centro mostrato
         if(mediaSeveritaEventiAvversi[0] == -1 ){
-            labelSeveritaMedia.setText("0 Segnalazioni");
+            labelSeveritaMedia.setText("N/D");
         }
         else{
             //se ci sono eventi avversi mostra la media
