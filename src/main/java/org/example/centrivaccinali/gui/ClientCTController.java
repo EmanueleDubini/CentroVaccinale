@@ -356,11 +356,11 @@ public class ClientCTController  implements Initializable{
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
             alert.setHeaderText("Si è verificato un Errore");
-            alert.setContentText("Utente gia presente nel sistema.\nRiprovare");
+            alert.setContentText("Utente già presente nel sistema.\nRiprovare");
 
             alert.showAndWait();
         }
-//verificare se l'idVacinazione esiste ed è associato alla persona che si sta registrando
+        //verificare se l'idVacinazione esiste ed è associato alla persona che si sta registrando
         else {
             Boolean verify = ClientCVController.stub.registraCittadino(cfRegistrato, cognomeRegistrato, nomeRegistrato, emailRegistrato, usernameRegistrato, passwordRegistrato, idVaccinazioneRegistrato, nomeCentroVaccinale);
             if(verify) {
