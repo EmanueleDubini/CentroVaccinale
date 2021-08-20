@@ -158,7 +158,7 @@ public class Client03CT_CercaCV_Controller implements Initializable {
         }
 
         //calcolo numero segnalazioni
-        nSegnalazioni.setText(String.valueOf(mediaSeveritaEventiAvversi[1]));
+        nSegnalazioni.setText(String.valueOf((int)mediaSeveritaEventiAvversi[1]));
 
         //impostazione grafica
         chosenCV.setStyle("-fx-background-radius: 30;");
