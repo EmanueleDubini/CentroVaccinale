@@ -77,6 +77,7 @@ public class DataModel {
 
     }
 
+    //todo javadoc
     public static Cittadino generateCittadino() {
         int eta = randomGenerator.nextInt(30) + 20;
 
@@ -114,6 +115,7 @@ public class DataModel {
         return new Cittadino(codiceFiscale, cognome, nome, eta, email, userId, password, idVaccinazione);
     }
 
+    //todo javadoc
     public static CentroVaccinale generateCentroVaccinale(){
         String idCentroVaccinale = UUID.randomUUID().toString(); //id centro vaccinale univoco
 
