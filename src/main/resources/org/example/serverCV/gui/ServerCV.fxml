@@ -17,7 +17,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.serverCV.gui.ServerCVController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.serverCV.gui.ServerCVController">
    <right>
       <AnchorPane prefHeight="488.0" prefWidth="707.0" style="-fx-border-color: gray;" BorderPane.alignment="CENTER">
          <children>
@@ -47,12 +47,6 @@
             </Label>
             <MenuBar fx:id="menuBar" layoutX="1.0" prefHeight="28.0" prefWidth="538.0" visible="false">
               <menus>
-                <Menu mnemonicParsing="false" text="DEBUG: Db">
-                  <items>
-                    <MenuItem mnemonicParsing="false" onAction="#createDb" text="createDB" />
-                        <MenuItem mnemonicParsing="false" onAction="#dropDb" text="dropDB" />
-                  </items>
-                </Menu>
                   <Menu mnemonicParsing="false" text="DEBUG: Tabelle">
                     <items>
                       <MenuItem mnemonicParsing="false" onAction="#createCentriVaccinaliTable" text="createCentriVaccinaliTable" />

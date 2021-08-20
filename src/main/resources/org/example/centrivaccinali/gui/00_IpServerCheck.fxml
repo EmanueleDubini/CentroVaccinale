@@ -29,7 +29,7 @@
                <font>
                   <Font size="24.0" />
                </font></Button>
-                <Label fx:id="connectionStatus" alignment="CENTER" contentDisplay="CENTER" layoutX="219.0" layoutY="345.0" prefHeight="26.0" prefWidth="204.0" textFill="RED" />
+                <Label fx:id="connectionStatus" alignment="CENTER" contentDisplay="CENTER" layoutX="361.0" layoutY="496.0" prefHeight="26.0" prefWidth="558.0" textFill="RED" />
             <ImageView fitHeight="112.0" fitWidth="117.0" layoutX="583.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@primula.png" />
