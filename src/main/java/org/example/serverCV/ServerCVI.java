@@ -119,7 +119,7 @@ public interface ServerCVI extends Remote {
      * @throws RemoteException
      * @throws SQLException
      */
-    int getAvg(String idCentroVaccinale) throws RemoteException, SQLException;
+    float getAvg(String idCentroVaccinale) throws RemoteException, SQLException;
 
     /**
      * Metodo <code>getIdCentroVaccinale</code> che effettua la ricerca dell'id del centro vaccinale tramite user e password

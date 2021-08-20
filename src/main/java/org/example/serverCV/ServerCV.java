@@ -351,7 +351,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         return centriVaccinali;
     }
 
-    public synchronized int getAvg(String idCentroVaccinale) throws RemoteException, SQLException, ArithmeticException {
+    public synchronized float getAvg(String idCentroVaccinale) throws RemoteException, SQLException, ArithmeticException {
         System.out.println(idCentroVaccinale);
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
@@ -372,9 +372,9 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
             conta = rsCount.getInt("conta");
         }
 
-        int media = 0;
-        media = somma / (conta*6);
-        //System.out.println(media);
+        float media = (float) somma / ((float) conta * (float)6);
+        System.out.println(somma);
+        System.out.println(media);
         return media;
     }
 
