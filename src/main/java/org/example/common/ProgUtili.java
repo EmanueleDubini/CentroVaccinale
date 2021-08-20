@@ -67,7 +67,7 @@ public class ProgUtili {
         return Pattern.matches(regex, cf);
     }
 
-
+//todo javadoc
     public static String capitalize(String stringa) {
         return  stringa.substring(0, 1).toUpperCase() + stringa.substring(1);
     }

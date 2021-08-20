@@ -21,6 +21,8 @@ import java.sql.SQLException;
  * dei centri vaccinali <code>03CT_CercaCV.fxml</code>.
  *
  */
+
+//todo javadoc
 public interface CercaCVListener {
         public void onClickListener(CentroVaccinale centroVaccinale) throws SQLException, RemoteException;
 }
