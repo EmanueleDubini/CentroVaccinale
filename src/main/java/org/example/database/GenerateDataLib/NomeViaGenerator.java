@@ -15,13 +15,13 @@ import org.example.database.GenerateDataLib.BaseElement.GeneratorWrapperBase;
 import org.example.database.GenerateDataLib.BaseElement.RandomSequenceArrayBasedGenerator;
 
 /**
- * Generatore casuale di nomi di vie.
- * La lista di indirizzi è stata creata selezionando alcuni indirizzi civici In Italia..
+ * Generatore casuale di nomi di vie
+ * La lista di indirizzi è stata creata selezionando alcuni indirizzi civici In Italia
  *
  */
 public class NomeViaGenerator extends GeneratorWrapperBase<String> implements Generator {
     /**
-     * Alcuni nomi degli indirizzi civici Italiani.
+     * Alcuni nomi degli indirizzi civici Italiani
      */
     private static final String[] names = new String[] { "Abbadia" , "Accuse", "Agocchie", "Agresti", "Albari", "Albiroli", "Allemagna", "Altabella", "Altaseta", "S. Alò",
             "Angeli", "Apostoli", "delle Asse", "Avesa", "Azzogardino", "Bagarotti", "Banzole", "Barbaria", "Basadonne", "Battibecco", "Battisasso",
@@ -36,7 +36,7 @@ public class NomeViaGenerator extends GeneratorWrapperBase<String> implements Ge
             "delle Vigne", "Vinazzetti", "Vinazzi", "Vinazzoli", "dei Vitali", "della Zecca ",};
 
     /**
-     * Costruttore.
+     * Costruttore
      */
     public NomeViaGenerator() {
         super(new RandomSequenceArrayBasedGenerator<>(names));
