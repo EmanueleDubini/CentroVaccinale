@@ -22,8 +22,8 @@ public class QueryDebug {
     public QueryDebug() { }
 
     // DATABASE (solo debug)
-    //public static String createDB = "CREATE DATABASE IF NOT EXISTS centrivaccinalidb";
-    //public static String dropDB = "DROP DATABASE IF EXISTS centrivaccinalidb";
+    public static String createDB = "CREATE DATABASE IF NOT EXISTS centrivaccinalidb";
+    public static String dropDB = "DROP DATABASE IF EXISTS centrivaccinalidb";
 
     // TABELLE
     //todo javadoc

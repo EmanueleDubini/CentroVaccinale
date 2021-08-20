@@ -20,18 +20,37 @@ import org.example.common.CentroVaccinale;
 import java.rmi.RemoteException;
 import java.sql.SQLException;
 
+/**
+ *
+ */
 public class ItemController {
     @FXML
     public Label nameLabel;
     @FXML
     public ImageView img;
 
+    /**
+     *
+     *
+     * @param mouseEvent
+     *
+     * @throws SQLException
+     * @throws RemoteException
+     */
     @FXML
-    private void click(MouseEvent mouseEvent) throws SQLException, RemoteException {cercaCVListener.onClickListener(centroVaccinale); }
+    private void click(MouseEvent mouseEvent) throws SQLException, RemoteException {
+        cercaCVListener.onClickListener(centroVaccinale);
+    }
 
     private CentroVaccinale centroVaccinale;
     private CercaCVListener cercaCVListener;
 
+    /**
+     *
+     *
+     * @param centroVaccinale
+     * @param cercaCVListener
+     */
     public void setData(CentroVaccinale centroVaccinale, CercaCVListener cercaCVListener) {
         this.centroVaccinale = centroVaccinale;
         this.cercaCVListener = cercaCVListener;

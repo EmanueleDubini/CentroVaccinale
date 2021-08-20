@@ -27,7 +27,8 @@ public class Cittadino {
 
     /**
      * Costruisce un nuovo oggetto che rappresenta un Cittadino in cui sono presenti le informazioni specificate dall'argomento del metodo.
-     *  @param codiceFiscale Codice Fiscale
+     *
+     * @param codiceFiscale Codice Fiscale
      * @param cognome Cognome
      * @param nome Nome
      * @param eta Et&agrave;
@@ -35,7 +36,6 @@ public class Cittadino {
      * @param userId UserId
      * @param password Password
      * @param idVaccinazione idVaccinazione
-     *
      */
     public Cittadino(String codiceFiscale, String cognome, String nome, int eta, String email, String userId, String password, String idVaccinazione) {
         this.codiceFiscale = codiceFiscale;
@@ -196,6 +196,7 @@ public class Cittadino {
 
     /**
      * Restituisce una stringa che descrive il <code>Cittadino</code> rappresentato dall'oggetto che esegue il metodo.
+     *
      * @return String
      */
     public String toString() {
@@ -215,6 +216,7 @@ public class Cittadino {
      * metodo &egrave; uguale a quello specificato tramite l'argomento.
      *
      * @param cittadino Oggetto passato come parametro al metodo
+     *
      * @return boolean
      */
     public boolean equals(Cittadino cittadino) {

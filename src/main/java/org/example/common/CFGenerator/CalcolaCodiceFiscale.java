@@ -53,13 +53,14 @@ public class CalcolaCodiceFiscale {
     /**
      * Passando in input i dati anagrafici della persona, restituisce il codice
      * fiscale calcolato. Se uno dei parametri in input è null o stringa vuota
-     * restituisce una stringa vuota.
+     * restituisce una stringa vuota
      *
      * @param cognome Il cognome della persona
      * @param nome Il nome della persona
      * @param sesso Il sesso della persona M o F
      * @param data La data di nascita della persona
      * @param comune Il codice del comune di nascita della persona
+     *
      * @return String - il codice fiscale calcolato in base a parametri in
      *         input. Se uno dei parametri in input è null o stringa vuota
      *         restituisce una stringa vuota.
@@ -116,9 +117,10 @@ public class CalcolaCodiceFiscale {
     }
 
     /**
-     * Verifica se una stringa è vuota.
+     * Verifica se una stringa è vuota
      *
      * @param s la stringa da controllare.
+     *
      * @return true se s è null o se è di lunghezza zero o se contiene solo
      *         spazi.
      */
@@ -150,6 +152,7 @@ public class CalcolaCodiceFiscale {
      *            consonanti o vocali
      * @param conson può essere false o true a seconda che si vogliano
      *            ottenere le vocali o le consonanti della stringa
+     *
      * @return String - La stringa contente le solo vocali o consonanti della
      *         stringa passata in input
      */
@@ -184,6 +187,7 @@ public class CalcolaCodiceFiscale {
      * nell'ordine, e si assume come terzo carattere la lettera x (ics).
      *
      * @param stringa - Il cognome della persona
+     *
      * @return StringBuilder - Parte del codice fiscale relativo al cognome
      *         della persona
      */
@@ -222,6 +226,7 @@ public class CalcolaCodiceFiscale {
      * nell'ordine, e si assume come terzo carattere la lettera x (ics).
      *
      * @param stringa Il nome della persona
+     *
      * @return StringBuilder - Parte del codice fiscale relativo al nome della
      *         persona
      */
@@ -264,6 +269,7 @@ public class CalcolaCodiceFiscale {
      *
      * @param dtNasc La data di nascita della persona
      * @param sesso Il sesso della persona M o F
+     *
      * @return StringBuilder - Parte del codice fiscale relativo alla data di
      *         nascita e al sesso della persona
      */
@@ -311,6 +317,7 @@ public class CalcolaCodiceFiscale {
      * corrispondente nella sotto indicata tabella:
      *
      * @param codfisc Il codice fiscale calcolato della persona
+     *
      * @return Character - L'ultimo carattere di controllo relativo al codice
      *         fiscale
      */
@@ -349,6 +356,7 @@ public class CalcolaCodiceFiscale {
      * <li>"'" -> "" (stringa vuota)</li>
      *
      * @param value La stringa per la quale si desidera effettuare le sostituzioni
+     *
      * @return String - La stringa con i caratteri non ammessi sostituiti da
      * caratteri ammessi
      */
@@ -422,6 +430,7 @@ public class CalcolaCodiceFiscale {
      * "comune" -> "codice erariale"
      *
      * @param comune Il comune per il quale si desidera effettuare la sostituzione
+     *
      * @return String - La stringa con il codice erariale
      */
     public static String toCodiceErariale(String comune){
