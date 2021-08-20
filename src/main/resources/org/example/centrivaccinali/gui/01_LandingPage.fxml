@@ -3,6 +3,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
@@ -12,58 +13,26 @@
 
 <!--aggiungere alla riga 9 il codice:"  fx:controller="sample.Controller" "-->
 
-
 <HBox xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.centrivaccinali.gui.ClientCVController">
    <children>
       <Pane fx:id="anchor" prefHeight="200.0" prefWidth="300.0" stylesheets="@../../css/GradientBackGround.css" />
       <BorderPane fx:id="anchor" prefHeight="720.0" prefWidth="680.0" style="-fx-background-color: #FFFFFF;">
-         <top>
-            <ImageView fx:id="imageViewLogo" fitHeight="211.0" fitWidth="680.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
-               <image>
-                  <Image url="@../../images/CV_Logo.png" />
-               </image>
-               <BorderPane.margin>
-                  <Insets top="50.0" />
-               </BorderPane.margin>
-            </ImageView>
-         </top>
-         <bottom>
-            <HBox BorderPane.alignment="CENTER">
-               <children>
-                    <Button fx:id="bottoneTitolo" mnemonicParsing="false" onAction="#to_02CT_MainWindow" prefHeight="51.0" prefWidth="200.0" text="Cittadini">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                  </Button>
-                  <Button mnemonicParsing="false" onAction="#to_02CV_MainWindow" prefHeight="51.0" prefWidth="200.0" text="Centri Vaccinali">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                  </Button>
-               </children>
-            </HBox>
-         </bottom>
-         <right>
-            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="230.0" prefWidth="680.0" BorderPane.alignment="CENTER">
+         <center>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="543.0" prefWidth="680.0" BorderPane.alignment="CENTER">
                 <children>
-                    <Label fx:id="labelDaNascondere" alignment="CENTER" contentDisplay="CENTER" layoutX="6.0" layoutY="-11.0" prefHeight="50.0" prefWidth="671.0" text="Benvenuto nell'applicazione 'CentroVaccinale'">
-                        <font>
-                            <Font name="Arial" size="30.0" />
-                        </font>
-                    </Label>
-                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="57.0" layoutY="59.0" text="Selezionare l'area desiderata a cui si vuole accedere:">
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="152.0" prefHeight="55.0" prefWidth="682.0" text="Selezionare l'area desiderata a cui si vuole accedere:">
                      <font>
-                        <Font name="Arial" size="24.0" />
+                        <Font name="Avenir Book" size="24.0" />
                      </font>
                   </Label>
-                  <HBox layoutY="157.0" prefHeight="100.0" prefWidth="680.0">
+                  <HBox layoutX="-1.0" layoutY="273.0" prefHeight="104.0" prefWidth="685.0">
                      <children>
                         <ImageView>
                            <image>
                               <Image url="@../../images/user_100px.png" />
                            </image>
                            <HBox.margin>
-                              <Insets left="100.0" />
+                              <Insets left="120.0" />
                            </HBox.margin>
                         </ImageView>
                         <ImageView fitWidth="100.0">
@@ -71,14 +40,47 @@
                               <Image url="@../../images/hospital_3_100px.png" />
                            </image>
                            <HBox.margin>
-                              <Insets left="250.0" right="125.0" />
+                              <Insets left="240.0" right="125.0" />
                            </HBox.margin>
                         </ImageView>
                      </children>
                   </HBox>
+                  <HBox layoutY="389.0" prefHeight="63.0" prefWidth="681.0">
+                     <children>
+                          <Button fx:id="anchor" mnemonicParsing="false" onAction="#to_02CT_MainWindow" prefHeight="51.0" prefWidth="200.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Cittadini">
+                           <font>
+                              <Font name="Avenir Book" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="70.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="anchor" mnemonicParsing="false" onAction="#to_02CV_MainWindow" prefHeight="51.0" prefWidth="200.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Centri Vaccinali">
+                           <font>
+                              <Font name="Avenir Book" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="140.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Separator layoutX="339.0" layoutY="234.0" orientation="VERTICAL" prefHeight="255.0" prefWidth="6.0" />
+                  <ImageView fitHeight="197.0" fitWidth="492.0" layoutX="101.0" layoutY="-65.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/CV_Logo.png" />
+                     </image>
+                  </ImageView>
                 </children>
             </Pane>
-         </right>
+         </center>
+         <top>
+              <Label fx:id="labelDaNascondere" alignment="CENTER" contentDisplay="CENTER" prefHeight="201.0" prefWidth="680.0" text="Benvenuto nell'applicazione" BorderPane.alignment="CENTER">
+                  <font>
+                      <Font name="Avenir Book" size="36.0" />
+                  </font>
+              </Label>
+         </top>
       </BorderPane>
       <Pane fx:id="anchor" prefHeight="200.0" prefWidth="300.0" stylesheets="@../../css/GradientBackGround.css" />
    </children>
