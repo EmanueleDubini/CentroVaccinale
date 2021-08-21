@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
@@ -9,6 +10,8 @@
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.Spinner?>
 <?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
@@ -35,7 +38,13 @@
           <children>
               <AnchorPane fx:id="anchor" layoutY="31.0" prefHeight="693.0" prefWidth="348.0" stylesheets="@../../css/GradientBackGround.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
                   <children>
-                  <Button alignment="CENTER" layoutX="4.0" layoutY="4.0" mnemonicParsing="false" onAction="#to_02CT_MainWindow" prefHeight="32.0" prefWidth="32.0" style="-fx-background-radius: 5em;" text="←" />
+                  <Button alignment="CENTER" layoutX="5.0" layoutY="5.0" mnemonicParsing="false" onAction="#to_02CT_MainWindow" prefHeight="32.0" prefWidth="32.0" style="-fx-background-radius: 5em;" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="←">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Glow />
+                     </effect></Button>
                   <Label layoutX="20.0" layoutY="258.0" prefHeight="60.0" prefWidth="343.0" text="Inserisci gli" textFill="WHITE">
                      <font>
                         <Font name="Avenir Book" size="39.0" />
@@ -62,6 +71,9 @@
                      <font>
                         <Font size="20.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                       </Button>
                       <Label fx:id="lblErrors" alignment="CENTER" layoutX="8.0" layoutY="95.0" prefHeight="23.0" prefWidth="275.0" textFill="#ff6354">
                           <font>
@@ -109,18 +121,75 @@
                         <Font name="Avenir Book" size="24.0" />
                      </font>
                   </Label>
-                  <TextArea fx:id="noteMalDiTesta" layoutX="545.0" layoutY="100.0" prefHeight="45.0" prefWidth="265.0" wrapText="true" />
-                  <TextArea fx:id="noteFebbre" layoutX="545.0" layoutY="180.0" prefHeight="45.0" prefWidth="265.0" wrapText="true" />
-                  <TextArea fx:id="noteDolori" layoutX="545.0" layoutY="260.0" prefHeight="45.0" prefWidth="265.0" wrapText="true" />
-                  <TextArea fx:id="noteTachicardia" layoutX="545.0" layoutY="340.0" prefHeight="45.0" prefWidth="265.0" wrapText="true" />
-                  <TextArea fx:id="noteLinfoadenopatia" layoutX="545.0" layoutY="420.0" prefHeight="45.0" prefWidth="265.0" wrapText="true" />
-                  <TextArea fx:id="noteCrisiIpertensiva" layoutX="545.0" layoutY="500.0" prefHeight="45.0" prefWidth="265.0" wrapText="true" />
-                  <Spinner fx:id="spinnerDoloriMuscolari" layoutX="350.0" layoutY="260.0" prefHeight="35.0" prefWidth="130.0" />
-                  <Spinner fx:id="spinnerLinfoadenopatia" layoutX="350.0" layoutY="420.0" prefHeight="35.0" prefWidth="130.0" />
-                  <Spinner fx:id="spinnerTachicardia" layoutX="350.0" layoutY="340.0" prefHeight="35.0" prefWidth="130.0" />
-                  <Spinner fx:id="spinnerFebbre" layoutX="350.0" layoutY="180.0" prefHeight="35.0" prefWidth="130.0" />
-                  <Spinner fx:id="spinnerMalDiTesta" layoutX="350.0" layoutY="100.0" prefHeight="35.0" prefWidth="130.0" />
-                  <Spinner fx:id="spinnerCrisiIpertensiva" layoutX="350.0" layoutY="500.0" prefHeight="35.0" prefWidth="130.0" />
+                  <TextArea fx:id="noteMalDiTesta" layoutX="545.0" layoutY="100.0" prefHeight="45.0" prefWidth="265.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" wrapText="true">
+                     <font>
+                        <Font name="Avenir Book" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor></TextArea>
+                  <TextArea fx:id="noteFebbre" layoutX="545.0" layoutY="180.0" prefHeight="45.0" prefWidth="265.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" wrapText="true">
+                     <font>
+                        <Font name="Avenir Book" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor></TextArea>
+                  <TextArea fx:id="noteDolori" layoutX="545.0" layoutY="260.0" prefHeight="45.0" prefWidth="265.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" wrapText="true">
+                     <font>
+                        <Font name="Avenir Book" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor></TextArea>
+                  <TextArea fx:id="noteTachicardia" layoutX="545.0" layoutY="340.0" prefHeight="45.0" prefWidth="265.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" wrapText="true">
+                     <font>
+                        <Font name="Avenir Book" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor></TextArea>
+                  <TextArea fx:id="noteLinfoadenopatia" layoutX="545.0" layoutY="420.0" prefHeight="45.0" prefWidth="265.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" wrapText="true">
+                     <font>
+                        <Font name="Avenir Book" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor></TextArea>
+                  <TextArea fx:id="noteCrisiIpertensiva" layoutX="545.0" layoutY="500.0" prefHeight="45.0" prefWidth="265.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" wrapText="true">
+                     <font>
+                        <Font name="Avenir Book" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor></TextArea>
+                  <Spinner fx:id="spinnerDoloriMuscolari" layoutX="350.0" layoutY="260.0" prefHeight="35.0" prefWidth="130.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Spinner>
+                  <Spinner fx:id="spinnerLinfoadenopatia" layoutX="350.0" layoutY="420.0" prefHeight="35.0" prefWidth="130.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Spinner>
+                  <Spinner fx:id="spinnerTachicardia" layoutX="350.0" layoutY="340.0" prefHeight="35.0" prefWidth="130.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Spinner>
+                  <Spinner fx:id="spinnerFebbre" layoutX="350.0" layoutY="180.0" prefHeight="35.0" prefWidth="130.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Spinner>
+                  <Spinner fx:id="spinnerMalDiTesta" cache="true" layoutX="350.0" layoutY="100.0" prefHeight="35.0" prefWidth="130.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect></Spinner>
+                  <Spinner fx:id="spinnerCrisiIpertensiva" layoutX="350.0" layoutY="500.0" prefHeight="35.0" prefWidth="130.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Spinner>
                   <Label layoutX="350.0" layoutY="10.0" text="Severitá:">
                      <font>
                         <Font name="Avenir Book" size="30.0" />
