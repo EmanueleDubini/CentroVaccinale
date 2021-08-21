@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.centrivaccinali.gui.ClientCVController">
+<VBox prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.centrivaccinali.gui.ClientCTController">
    <children>
         <MenuBar>
             <menus>
@@ -29,19 +29,13 @@
                         <MenuItem mnemonicParsing="false" onAction="#info" text="About" />
                     </items>
                 </Menu>
-                <Menu mnemonicParsing="false" text="Debug">
-                    <items>
-                        <MenuItem mnemonicParsing="false" onAction="#inserisciCodiceFiscaleCT_Debug" text="Inserisci CF" />
-                        <MenuItem mnemonicParsing="false" onAction="#inserisciIDVaccinazioneCT_Debug" text="Inserisci ID Vaccinazione" />
-                    </items>
-                </Menu>
             </menus>
         </MenuBar>
       <AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #fff;">
           <children>
               <AnchorPane fx:id="anchor" layoutY="31.0" prefHeight="693.0" prefWidth="348.0" stylesheets="@../../css/GradientBackGround.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
                   <children>
-                  <Button alignment="CENTER" layoutX="4.0" layoutY="4.0" mnemonicParsing="false" onAction="#to_02CV_MainWindow" prefHeight="32.0" prefWidth="32.0" style="-fx-background-radius: 5em;" text="←" />
+                  <Button alignment="CENTER" layoutX="4.0" layoutY="4.0" mnemonicParsing="false" onAction="#to_02CT_MainWindow" prefHeight="32.0" prefWidth="32.0" style="-fx-background-radius: 5em;" text="←" />
                   <Label layoutX="20.0" layoutY="258.0" prefHeight="60.0" prefWidth="343.0" text="Inserisci gli" textFill="WHITE">
                      <font>
                         <Font name="Avenir Book" size="39.0" />
