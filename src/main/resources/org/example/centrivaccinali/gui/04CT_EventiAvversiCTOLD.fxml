@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.centrivaccinali.gui.ClientCVController">
+   <children>
+      <MenuBar prefWidth="1280.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#onClickQuit" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Back">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#to_02CT_MainWindow" text="back" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="80.0" layoutY="80.0" text="Inserisci Eventi Avversi">
+         <font>
+            <Font name="Georgia" size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="textFieldBenvenutoEventiAvversi" layoutX="90.0" layoutY="150.0">
+         <font>
+            <Font name="Georgia" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="230.0" text="Evento: ">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="460.0" layoutY="230.0" text="Severità: ">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonInserisciEvento" layoutX="1040.0" layoutY="656.0" mnemonicParsing="false" onAction="#inserisciEventiAvversi" prefHeight="38.0" prefWidth="149.0" text="Inserisci Evento">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelFebbre" layoutX="100.0" layoutY="360.0" text="Febbre:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelLinfoadenopatia" layoutX="100.0" layoutY="540.0" text="Linfoadenopatia:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelMalDiTesta" layoutX="100.0" layoutY="300.0" text="Mal di Testa:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelDolori" layoutX="100.0" layoutY="420.0" text="Dolori muscolari e/o articolari:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelTachicardia" layoutX="100.0" layoutY="480.0" text="Tachicardia:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelCrisiIpertensiva" layoutX="100.0" layoutY="600.0" text="Crisi ipertensiva:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="720.0" layoutY="230.0" text="Note (massimo 256 caratteri) :">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="noteMalDiTesta" layoutX="740.0" layoutY="300.0" prefHeight="40.0" prefWidth="450.0" promptText="Inserisci informazioni" />
+      <TextField fx:id="noteFebbre" layoutX="740.0" layoutY="360.0" prefHeight="40.0" prefWidth="450.0" promptText="Inserisci informazioni" />
+      <TextField fx:id="noteDolori" layoutX="740.0" layoutY="420.0" prefHeight="40.0" prefWidth="450.0" promptText="Inserisci informazioni" />
+      <TextField fx:id="noteTachicardia" layoutX="740.0" layoutY="480.0" prefHeight="40.0" prefWidth="450.0" promptText="Inserisci informazioni" />
+      <TextField fx:id="noteLinfoadenopatia" layoutX="740.0" layoutY="540.0" prefHeight="40.0" prefWidth="450.0" promptText="Inserisci informazioni" />
+      <TextField fx:id="noteCrisiIpertensiva" layoutX="740.0" layoutY="600.0" prefHeight="40.0" prefWidth="450.0" promptText="Inserisci informazioni" />
+      <Spinner fx:id="spinnerMalDiTesta" cache="true" layoutX="480.0" layoutY="305.0" />
+      <Spinner fx:id="spinnerFebbre" cache="true" layoutX="480.0" layoutY="365.0" />
+      <Spinner fx:id="spinnerDoloriMuscolari" cache="true" layoutX="480.0" layoutY="428.0" />
+      <Spinner fx:id="spinnerTachicardia" cache="true" layoutX="480.0" layoutY="488.0" />
+      <Spinner fx:id="spinnerLinfoadenopatia" cache="true" layoutX="480.0" layoutY="548.0" />
+      <Spinner fx:id="spinnerCrisiIpertensiva" cache="true" layoutX="480.0" layoutY="608.0" />
+   </children>
+</Pane>
