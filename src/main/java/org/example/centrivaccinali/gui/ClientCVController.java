@@ -32,10 +32,7 @@ import java.rmi.registry.Registry;
 import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.Objects;
-import java.util.Random;
-import java.util.ResourceBundle;
-import java.util.UUID;
+import java.util.*;
 import java.util.regex.Pattern;
 
 /**
@@ -233,7 +230,7 @@ public class ClientCVController implements Initializable {
 
     public void generaCentroVaccinale() throws RemoteException, SQLException {
         ////////////// campi registrazione CV //////////////
-        nomeCV = textFieldNomeCentrovaccinale.getText().toLowerCase().strip(); //non richiede controlli
+        nomeCV = textFieldNomeCentrovaccinale.getText().toLowerCase(); //non richiede controlli
         tipologiaCV = tipologiaCheckBox.getValue(); //non richiede controlli
         qualificatoreVia = qualificatoreIndirizzoCheckBox.getValue(); //non richiede controlli
         nomeVia = textFieldNomeVia.getText();
@@ -369,7 +366,7 @@ public class ClientCVController implements Initializable {
     public void generaCittadinoVaccinato() throws SQLException, RemoteException {
         ////////////// CAMPI REGISTRAZIONE CT //////////////
 
-        nomeCvCT = TextFieldNomeCentrovaccinaleCT.getText().toLowerCase().strip();
+        nomeCvCT = TextFieldNomeCentrovaccinaleCT.getText();
         nomeCT = TextFieldNomeVaccinatoCT.getText();    //non servono controlli
         cognomeCT = TextFieldCognomeVaccinatoCT.getText();  //non servono controlli
         codiceFiscaleCT = TextFieldCodicefiscaleCT.getText().toUpperCase().strip();             //Strip() rimuove spazi all'inizio e alla fine del testo inserito

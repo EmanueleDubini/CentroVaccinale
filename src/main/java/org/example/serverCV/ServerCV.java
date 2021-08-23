@@ -98,7 +98,8 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      */
     @Override
     public synchronized Boolean registraVaccinato(String id, String nomeCV, String cognome, String nome, String cf, String dataSomministrazione, String vaccinoSomministrato, String idVaccinazione) throws SQLException {
-
+        //todo sostituire lo spazio nomeCV in "_"
+        nomeCV = nomeCV.replaceAll(" ", "_");
         String vaccinati_table = "vaccinati_" + nomeCV;
 
         DbHelper.getConnection();
@@ -583,6 +584,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      */
     @Override
     public synchronized boolean verificaIdVaccinazione(String idVaccinazioneRegistrato, String nomeCentroVaccinale) throws RemoteException, SQLException {
+        nomeCentroVaccinale = nomeCentroVaccinale.replaceAll(" ", "_");
         String vaccinati_table = "vaccinati_" + nomeCentroVaccinale;
 
         DbHelper.getConnection();
