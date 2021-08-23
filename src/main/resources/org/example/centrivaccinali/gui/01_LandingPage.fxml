@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
@@ -47,21 +48,27 @@
                   </HBox>
                   <HBox layoutY="389.0" prefHeight="63.0" prefWidth="681.0">
                      <children>
-                          <Button fx:id="anchor" mnemonicParsing="false" onAction="#to_02CT_MainWindow" prefHeight="51.0" prefWidth="200.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Cittadini" textFill="WHITE">
+                          <Button fx:id="anchor" mnemonicParsing="false" onAction="#to_02CT_MainWindow" prefHeight="51.0" prefWidth="200.0" style="-fx-background-radius: 5em;" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Cittadini" textFill="WHITE">
                            <font>
                               <Font name="Avenir Book" size="24.0" />
                            </font>
                            <HBox.margin>
                               <Insets left="70.0" />
                            </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
                         </Button>
-                        <Button fx:id="anchor" mnemonicParsing="false" onAction="#to_02CV_MainWindow" prefHeight="51.0" prefWidth="200.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Centri Vaccinali" textFill="WHITE">
+                        <Button fx:id="anchor" mnemonicParsing="false" onAction="#to_02CV_MainWindow" prefHeight="51.0" prefWidth="200.0" style="-fx-background-radius: 5em;" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Centri Vaccinali" textFill="WHITE">
                            <font>
                               <Font name="Avenir Book" size="24.0" />
                            </font>
                            <HBox.margin>
                               <Insets left="140.0" />
                            </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
                         </Button>
                      </children>
                   </HBox>

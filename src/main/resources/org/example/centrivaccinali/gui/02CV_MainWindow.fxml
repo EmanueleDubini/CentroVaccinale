@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
@@ -18,7 +19,10 @@
                         <Image url="@../../images/SezioneCV.png" />
                     </image>
                 </ImageView>
-            <Button layoutX="4.0" layoutY="4.0" mnemonicParsing="false" onAction="#to_01_LandingPage" prefHeight="32.0" prefWidth="32.0" style="-fx-background-radius: 5em;" text="←" />
+            <Button layoutX="5.0" layoutY="5.0" mnemonicParsing="false" onAction="#to_01_LandingPage" prefHeight="32.0" prefWidth="32.0" style="-fx-background-radius: 5em;" styleClass="shadow" text="←">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
             <Label alignment="CENTER" layoutX="2.0" layoutY="476.0" prefHeight="27.0" prefWidth="553.0" text="Tramite questa pagina potrai usufruire dei servizi riservati " textFill="WHITE">
                <font>
                   <Font name="Avenir Book" size="18.0" />
@@ -38,15 +42,21 @@
                         <Font name="Avenir Book" size="26.0" />
                     </font>
                 </Label>
-            <Button fx:id="anchor" alignment="CENTER" contentDisplay="CENTER" layoutX="185.0" layoutY="154.0" mnemonicParsing="false" onAction="#to_03CV_RegistraCV" prefHeight="60.0" prefWidth="350.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Registra Centro Vaccinale" textFill="WHITE">
+            <Button fx:id="anchor" alignment="CENTER" contentDisplay="CENTER" layoutX="185.0" layoutY="154.0" mnemonicParsing="false" onAction="#to_03CV_RegistraCV" prefHeight="60.0" prefWidth="350.0" style="-fx-background-radius: 5em;" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Registra Centro Vaccinale" textFill="WHITE">
                <font>
                   <Font name="Avenir Book" size="23.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </Button>
-            <Button fx:id="anchor" alignment="CENTER" focusTraversable="false" layoutX="185.0" layoutY="272.0" mnemonicParsing="false" onAction="#to_03CV_RegistraCT" prefHeight="60.0" prefWidth="350.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Registra Cittadino Vaccinato" textFill="WHITE">
+            <Button fx:id="anchor" alignment="CENTER" focusTraversable="false" layoutX="185.0" layoutY="272.0" mnemonicParsing="false" onAction="#to_03CV_RegistraCT" prefHeight="60.0" prefWidth="350.0" style="-fx-background-radius: 5em;" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Registra Cittadino Vaccinato" textFill="WHITE">
                <font>
                   <Font name="Avenir Book" size="23.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </Button>
             <Separator layoutX="160.0" layoutY="243.0" prefHeight="7.0" prefWidth="400.0" />
             <ImageView fitHeight="121.0" fitWidth="109.0" layoutX="170.0" layoutY="-41.0" pickOnBounds="true" preserveRatio="true">
@@ -54,7 +64,7 @@
                   <Image url="@../../images/primula.png" />
                </image>
             </ImageView>
-                <Label alignment="CENTER" layoutX="289.0" layoutY="-20.0" prefHeight="70.0" prefWidth="278.0" text="Home page" textFill="#4e8847">
+                <Label alignment="CENTER" layoutX="279.0" layoutY="-20.0" prefHeight="70.0" prefWidth="288.0" text="Home Page" textFill="#4e8847">
                     <font>
                         <Font name="Avenir Book" size="48.0" />
                     </font>
