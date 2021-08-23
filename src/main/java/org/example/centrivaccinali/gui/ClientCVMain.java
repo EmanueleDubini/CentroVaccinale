@@ -19,8 +19,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.example.serverCV.ServerCV;
 
 import java.io.IOException;
+import java.rmi.NotBoundException;
+import java.rmi.RemoteException;
 
 
 /**
@@ -50,6 +53,13 @@ public class ClientCVMain extends Application {
         //per chiudere correttamente il jar
         Platform.setImplicitExit(true);
         stage.setOnCloseRequest((ae) -> {
+            try {
+                ServerCV.registry.unbind("ServerCV");
+            } catch (RemoteException e) {
+                e.printStackTrace();
+            } catch (NotBoundException e) {
+                e.printStackTrace();
+            }
             Platform.exit();
             System.exit(0);
         });
