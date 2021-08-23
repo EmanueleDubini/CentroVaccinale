@@ -23,7 +23,7 @@ import java.util.Enumeration;
 public class IpAddressServer {
 
     /**
-     * metodo che restituisce l'indirizzo ip corrente della macchina su cui viene eseguita il programma
+     * Metodo che restituisce l'indirizzo ip corrente della macchina su cui viene eseguita il programma
      *
      * @return stringa che contiene l'indirizzo ip
      */

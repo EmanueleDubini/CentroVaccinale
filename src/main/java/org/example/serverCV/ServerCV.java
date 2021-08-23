@@ -39,7 +39,11 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     public static Registry registry;
 
 
-    // Oggetto server
+    /**
+     * Oggetto che contiene tutti i metodi del Server
+     *
+     * @throws RemoteException  RemoteException
+     */
     protected ServerCV() throws RemoteException {
         super();
     }
@@ -59,6 +63,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      * @param provincia provincia del centro vaccinale
      * @param cap cap del centro vaccinale
      * @param tipologia tipologia del centro vaccinale
+     *
      * @return true se la registrazione va a buon fine
      *
      * @throws SQLException SQLException
@@ -86,6 +91,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      * @param dataSomministrazione data vaccinazione del cittadino vaccinato
      * @param vaccinoSomministrato tipo di vaccino somministrato
      * @param idVaccinazione id vaccinazione del cittadino vaccinato
+     *
      * @return true se la registrazione va a buon fine
      *
      * @throws SQLException SQLException
@@ -151,6 +157,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      * @param idVaccinazione id vaccinazione del cittadino
      *
      * @return @return true se la registrazione va a buon fine
+     *
      * @throws SQLException SQLException
      */
     @Override
@@ -179,6 +186,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      * @param password password del vaccinato che vuole accedere
      *
      * @return true se il login va a buon fine
+     *
      * @throws RemoteException RemoteException
      * @throws SQLException SQLException
      */
@@ -531,7 +539,8 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      * @param usernameRegistrato username inserito dal cittadino vaccinato che vuole registrarsi nell'applicazione cittadino
      * @param idVaccinazioneRegistrato id di vaccinazione del cittadino vaccinato che vuole registrarsi nell'applicazione cittadino
      *
-     * @return ritorna true se i campi inseriti dal cittadino registrato non sono gia presenti nel database e quindi esso puo registrasi
+     * @return true se i campi inseriti dal cittadino registrato non sono gia presenti nel database e quindi esso puo registrasi, false altrimenti
+     *
      * @throws RemoteException RemoteException
      */
     @Override
@@ -550,7 +559,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
             conta = rsSum.getInt("conta");
         }
         if(conta > 0){
-            // è stato trovato qualcosa bnel result set quindi l'utente esiste gia
+            // è stato trovato qualcosa nel result set quindi l'utente esiste gia
             return false;
         }else{
             // se conta è ancora zero vuol dire che i dati che l'utente ha inserito
@@ -560,6 +569,18 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
 
     }
 
+    /**
+     * Metodo <code>verificaIdVaccinazione</code> che verifica se l'utente che si sta registrando
+     * abbia inserito l'idVaccinazione corretto
+     *
+     * @param idVaccinazioneRegistrato id di vaccinazione del cittadino vaccinato che vuole registrarsi nell'applicazione cittadino
+     * @param nomeCentroVaccinale nome del centro vaccinale in cui è stato somministrato il vaccino
+     *
+     * @return true se i campi inseriti dal cittadino registrato sono corretti, false altrimenti
+     *
+     * @throws RemoteException RemoteException
+     * @throws SQLException SQLException
+     */
     @Override
     public synchronized boolean verificaIdVaccinazione(String idVaccinazioneRegistrato, String nomeCentroVaccinale) throws RemoteException, SQLException {
         String vaccinati_table = "vaccinati_" + nomeCentroVaccinale;
