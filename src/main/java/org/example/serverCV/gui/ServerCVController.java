@@ -82,16 +82,15 @@ public class ServerCVController {
      * @throws RemoteException RemoteException
      */
     private void checkLogin() throws RemoteException {
-        // DEBUG
-        // String usernameText = "postgres";
-        // String passwordText = "postgres";
-        // String hostText = "localhost";
+        // DEBUG: connessione automatica il DB senza digitare le credenziali
+        String usernameText = "postgres";
+        String passwordText = "postgres";
+        String hostText = "localhost";
 
         //VARIABILI PER LOGIN
-        String usernameText = dbUsername.getText();
-        String passwordText = dbPassword.getText();
-        String hostText = dbHost.getText();
-
+        //String usernameText = dbUsername.getText();
+        //String passwordText = dbPassword.getText();
+        //String hostText = dbHost.getText();
 
 
         if ((usernameText.compareTo(username) == 0) && (passwordText.compareTo(password) == 0) && (hostText.compareTo(host) == 0)) {
@@ -164,10 +163,10 @@ public class ServerCVController {
                 """
                         'Centro Vaccinale' - Server CV
 
-                        BANCORA Davide, The Pianist
-                        CASALNOVO Giacomo, Symphonic Metal Man
-                        DONATO Benedetta, The Beauty
-                        DUBINI Emanuele, Money Man
+                        BANCORA Davide
+                        CASALNOVO Giacomo
+                        DONATO Benedetta
+                        DUBINI Emanuele
 
                         UnInsubria.it
                         Copyleft - all rights reversed""", ButtonType.OK);

@@ -10,14 +10,6 @@
 
 package org.example.centrivaccinali.gui;
 
-import java.io.File;
-import java.io.IOException;
-import java.net.URISyntaxException;
-import java.net.URL;
-import java.util.Enumeration;
-import java.util.jar.JarEntry;
-import java.util.jar.JarFile;
-
 /**
  * Classe <code>ClientCV</code> che costituisce l'entry point dell'applicazione.
  *
@@ -28,7 +20,7 @@ public class ClientCV {
     /**
      * Metodo <code>Main</code> dell'applicazione ClientCV
      */
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         ClientCVMain.main(args); // fa partire l'intrerfaccia grafica
 
     }

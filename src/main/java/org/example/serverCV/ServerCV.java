@@ -68,7 +68,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
         statement.executeUpdate("INSERT INTO centrivaccinali " +
-                "(idCentroVaccinale, nome,qualificatore, indirizzo, numeroCivico, comune, provincia, cap, tipologia)" +
+                "(idCentroVaccinale, nome, qualificatore, indirizzo, numerocivico, comune, provincia, cap, tipologia)" +
                 "VALUES(" + "'" + id + "'," + "'" + nomeCV + "',"+ "'" + qualificatore + "',"  + "'" + indirizzo + "'," + "'" + numeroCivico + "'," + "'" + comune + "'," + "'" + provincia + "'," + "'" + cap + "'," + "'" + tipologia + "'" + ")");
 
         System.out.println("SERVER: registracentroVaccinale() eseguito correttamente");
@@ -259,31 +259,6 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         return codiceF;
     }
 
-
-    /**
-     * //todo javadoc
-     */
-    public synchronized void cercaCentroVaccinale() {
-        //todo
-    }
-
-    //public synchronized void cercaCentroVaccinaleNome() throws RemoteException, SQLException {
-        /*DbHelper.getConnection();
-        Statement statement = DbHelper.getStatement();
-        ResultSet rs1 = statement.executeQuery(cercaCentroVaccinalePerNome);
-
-        while (rs1.next()){
-            String id = rs1.getString("idCentroVaccinale");
-            String nome = rs1.getString("nome");
-            String indirizzo = rs1.getString("indirizzo");
-            String comune = rs1.getString("comune");
-            String provincia = rs1.getString("provincia");
-            String tipologia = rs1.getString("tipologia");
-
-            System.out.println("Id = " + id + " |Nome = " + nome + " |Indirizzo = " + indirizzo + " |Comune = " + comune + " |Provincia = " + provincia + " |Tipologia = " + tipologia);
-        }*/
-    //}
-
     /**
      * Il metodo <code>cercaCentroVaccinaleNome</code> effettua la ricerca di un centro vaccinale tramite il nome
      *
@@ -299,7 +274,6 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         ArrayList<CentroVaccinale> centriVaccinali = new ArrayList<>();
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
-        //ResultSet rs1 = statement.executeQuery(cercaCentroVaccinalePerNome);
         ResultSet rs1 = statement.executeQuery("SELECT * " +
                 "FROM centrivaccinali " +
                 "WHERE LOWER(nome) LIKE " + "LOWER('%" + nomeCV + "%')");
@@ -317,7 +291,6 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
             String provincia = rs1.getString("provincia");
             String cap = rs1.getString("cap");
             String tipologia = rs1.getString("tipologia");
-
             //System.err.println(nome);
 
             //assegnare il valore al qualificatore della via
@@ -378,8 +351,8 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
                                                 "WHERE idcentrovaccinale = " + "'" + idCentroVaccinale + "'");
         int somma = 0;
         int conta = 0;
-        //result[0] = mediaTroncata    result[1] = conta
         double[] result = new double[2];
+
         while (rsSum.next()) {
             somma = rsSum.getInt("somma");
             conta = rsSum.getInt("conta");
@@ -423,7 +396,6 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         }
         return nomiCentri;
     }
-
 
     /**
      * Il metodo <code>cercaCentroVaccinaleComuneTipologia</code> effettua la ricerca di un centro vaccinale tramite il nome
@@ -563,7 +535,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      * @throws RemoteException RemoteException
      */
     @Override
-    public boolean verificaSeRegistrato(String cfRegistrato, String emailRegistrato, String usernameRegistrato, String idVaccinazioneRegistrato) throws RemoteException, SQLException {
+    public synchronized boolean verificaSeRegistrato(String cfRegistrato, String emailRegistrato, String usernameRegistrato, String idVaccinazioneRegistrato) throws RemoteException, SQLException {
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
         ResultSet rsSum = statement.executeQuery("SELECT COUNT (*) AS conta " +
@@ -589,7 +561,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     }
 
     @Override
-    public boolean verificaIdVaccinazione(String idVaccinazioneRegistrato, String nomeCentroVaccinale) throws RemoteException, SQLException {
+    public synchronized boolean verificaIdVaccinazione(String idVaccinazioneRegistrato, String nomeCentroVaccinale) throws RemoteException, SQLException {
         String vaccinati_table = "vaccinati_" + nomeCentroVaccinale;
 
         DbHelper.getConnection();
@@ -623,7 +595,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      * @throws SQLException SQLException
      */
     @Override
-    public boolean verificaEventoAvverso(String codiceF) throws RemoteException, SQLException {
+    public synchronized boolean verificaEventoAvverso(String codiceF) throws RemoteException, SQLException {
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
         ResultSet rsSum = statement.executeQuery("SELECT COUNT (*) AS conta " +
@@ -649,21 +621,16 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      */
     public static void main(String[] args) throws RemoteException {
 
-        // security
-        // stub
-
         //settiamo l'ip hostname con l'ip della macchina che esegue questo codice, ServerCV main()
         System.setProperty("java.rmi.server.hostname", IpAddressServer.getServerAddress());
 
-
-        // Create an instance of the server object
+        // Crea una instanza dell'oggetto server
         ServerCV serverCV = new ServerCV();
 
         //registriamo l'oggetto server sul registry
         registry = LocateRegistry.createRegistry(PORT);
         //bind
         registry.rebind("ServerCV", serverCV); //se è gia bound fa un bind con il nuovo valore
-
 
         // Partenza dell'interfaccia grafica
         ServerCVMain.main(args);

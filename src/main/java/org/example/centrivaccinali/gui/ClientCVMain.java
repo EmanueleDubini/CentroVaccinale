@@ -11,6 +11,8 @@
 package org.example.centrivaccinali.gui;
 
 import javafx.application.Platform;
+import javafx.beans.binding.Bindings;
+import javafx.scene.control.TextField;
 import org.example.common.ProgUtili;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -58,6 +60,7 @@ public class ClientCVMain extends Application {
     ///////////////////////////VERSIONE INSERITA PER USARE MAVEN NEL PROGETTO//////////////////////
 
     private static Scene scene;
+    private static final String APP_NAME = ".: CENTRI VACCINALI :.  [LAB-B * Bancora / Casalnovo / Donato / Dubini @ UnInsubria 2020-2021]" + "              " + ProgUtili.stampaData() + "   |   " + ProgUtili.getOsName();
 
     /**
      * Questo metodo lancia la prima finestra per l'esecuzione del programma
@@ -69,6 +72,8 @@ public class ClientCVMain extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         scene = new Scene(loadFXML("00_IpServerCheck"));
+        TextField titleTextField = new TextField();
+        stage.titleProperty().bind(Bindings.concat(APP_NAME).concat(titleTextField.textProperty()));;
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();

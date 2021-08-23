@@ -450,7 +450,7 @@ public class ClientCTController  implements Initializable{
      * @throws SQLException SQLException
      * @throws RemoteException RemoteException
      */
-    public void inserisciEventiAvversi(ActionEvent actionEvent) throws SQLException, RemoteException {
+    public void inserisciEventiAvversi(ActionEvent actionEvent) throws SQLException, IOException {
 
         severita1 = spinnerMalDiTesta.getValue();
         note1 = noteMalDiTesta.getText();
@@ -494,6 +494,14 @@ public class ClientCTController  implements Initializable{
 
             if(ClientCVController.stub.verificaEventoAvverso(codiceF)) {
                 Boolean verify = ClientCVController.stub.inserisciEventiAvversi(idCentroVaccinale, codiceF, severita1, note1, severita2, note2, severita3, note3, severita4, note4, severita5, note5, severita6, note6);
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("OK");
+                alert.setHeaderText("OK");
+                alert.setContentText("Evento avverso inserito correttamente\n");
+                resetInserimentoEventiAvversi();
+                alert.showAndWait();
+                to_02CT_MainWindow();
+
                 System.out.println("ok, inserito");
 
             //todo gestire eccezione nel caso in cui il cittadino cerca di inserire DI NUOVO gli eventi avversi, prima di mandare un inserimeto
@@ -505,8 +513,31 @@ public class ClientCTController  implements Initializable{
                 alert.setContentText("Hai già inserito gli eventi avversi\n");
 
                 alert.showAndWait();
-                // todo dopo che viene premuto il tasto okay della finestra di alert rimandare alla home page della sezione cittadino
+                to_02CT_MainWindow();
             }
         }
+    }//end_inserisci eventi avversi
+
+    /**
+     * Resetta tutti i campi degli eventi avversi
+     */
+    private void resetInserimentoEventiAvversi() {
+        //spinnerMalDiTesta.setValueFactory(spinnerValueFactory1); //todo NON resetta gli spinner a 0 se lo spinner è non editable in SceneBuilder
+        noteMalDiTesta.setText("");
+
+        //spinnerFebbre.setValueFactory(spinnerValueFactory2);
+        noteFebbre.setText("");
+
+        //spinnerDoloriMuscolari.setValueFactory(spinnerValueFactory3);
+        noteDolori.setText("");
+
+        //spinnerTachicardia.setValueFactory(spinnerValueFactory4);
+        noteTachicardia.setText("");
+
+        //spinnerLinfoadenopatia.setValueFactory(spinnerValueFactory5);
+        noteLinfoadenopatia.setText("");
+
+        //spinnerCrisiIpertensiva.setValueFactory(spinnerValueFactory6);
+        noteCrisiIpertensiva.setText("");
     }
 }//End_Class

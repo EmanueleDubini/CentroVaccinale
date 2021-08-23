@@ -21,7 +21,7 @@ import java.util.regex.*;
 public class ProgUtili {
 
     /**
-     * Restituisce il Sistema Operativo.
+     * Restituisce il noome del Sistema Operativo su cui gira il Client
      *
      * @return Sistema Operativo.
      */
@@ -35,16 +35,6 @@ public class ProgUtili {
     public static void clearScreen() {
         System.out.print("\033[H\033[2J");
         System.out.flush();
-    }
-
-    /**
-     * Crea un codice numerico univoco casuale da associare a ogni ristorante.
-     *
-     * @return String composta dall'id a 16 cifre.
-     */
-    public static String createId() {
-        DecimalFormat df = new DecimalFormat("0000000000000000");
-        return df.format(((Math.random() * 10000) + 10000) % 10000);
     }
 
     /**

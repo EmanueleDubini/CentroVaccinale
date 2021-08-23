@@ -1,6 +1,7 @@
 # Project exclude paths
 /target/
 /.idea/
-/Maven.iml/
+/Maven.iml
+/.idea/
 /Maven.iml
 ServerCV.iml
