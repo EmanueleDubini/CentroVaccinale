@@ -113,8 +113,8 @@ public class ServerCVController {
                 ServerCV.registry = LocateRegistry.createRegistry(PORT);
             }
 
-            DataModel p = new DataModel();
-            p.generateAll();
+            //DataModel p = new DataModel();
+            //p.generateAll();
 
 
         } else if (usernameText.isEmpty() && passwordText.isEmpty() && hostText.isEmpty()) {

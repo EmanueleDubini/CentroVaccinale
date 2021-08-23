@@ -21,47 +21,6 @@ import java.io.IOException;
 
 public class ServerCVMain extends Application {
 
-
-    ///////////////////////////VERSIONE PRESENTE NEL PROGETTO ORIGINALE PRIMA DI IMPORTARE//////////////////////
-    /*private static Stage stage;
-
-    @Override
-    /*public void start(Stage primaryStage) throws Exception{
-        stage = primaryStage;
-        primaryStage.setResizable(false);
-        Parent root = FXMLLoader.load(getClass().getResource("src/main/java/serverCV/test/ServerCV.fxml"));
-        primaryStage.setTitle("Server Centro Vaccinale");
-        primaryStage.setScene(new Scene(root));
-        //primaryStage.show();
-    }*/
-
-    /*public void start(Stage primaryStage) throws Exception{
-        Parent root = getParentFromFxml("src/main/resources/org/example/ServerCV.fxml");  //aggiornare con questa riga di codice e aggiungere il metodo sottostante
-        primaryStage.setTitle("Centro Vaccinale - ServerCV" + "  /  " + ProgUtili.stampaData() + "  /  " + ProgUtili.getOsName());
-        primaryStage.setScene(new Scene(root)); //da root togliere le dimensioni della finestra presenti come defaul messe da intellij per usare quelle settate tramite scene builder
-        primaryStage.setResizable(false);
-        primaryStage.show();
-    }
-
-    private Parent getParentFromFxml(String resourcePath) throws IOException {
-        URL fxmlUrl = new File(resourcePath).toURI().toURL();
-        System.out.println(fxmlUrl.toString());
-        FXMLLoader fxmlLoader = new FXMLLoader(fxmlUrl);
-        return fxmlLoader.load();
-    }
-
-    public void changeScene(String fxml) throws IOException {
-        Parent pane = FXMLLoader.load(getClass().getResource(fxml));
-        stage.getScene().setRoot(pane);
-    }
-
-    public static void main(String[] args) {
-        launch(args);
-    }*/
-    //////////////////////////////////////////////////////////////////////////////////////////
-
-    ///////////////////////////VERSIONE INSERITA PER USARE MAVEN NEL PROGETTO//////////////////////
-
     @Override
     public void start(Stage stage) throws IOException {
         Scene scene = new Scene(loadFXML());
@@ -77,9 +36,6 @@ public class ServerCVMain extends Application {
         });
     }
 
-    /*static void setRoot(String fxml) throws IOException {
-        scene.setRoot(loadFXML(fxml));
-    }*/
 
     private static Parent loadFXML() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(ServerCVMain.class.getResource("ServerCV.fxml"));
