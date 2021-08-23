@@ -37,9 +37,7 @@ public class DataModel {
     public DataModel(){
         cittadini = new ArrayList<>();
         centriVaccinali = new ArrayList<>();
-
     }
-
 
     /**
      * Eseguendolo genera una serie di dati anagrafici di Cittadini e informazioni riguardanti i Centri vaccinali,
@@ -83,7 +81,6 @@ public class DataModel {
 
     }
 
-
     /**
      * Questo metodo genera casualmente i dati dei cittadini da inserire nel databse
      *
@@ -126,7 +123,6 @@ public class DataModel {
         return new Cittadino(codiceFiscale, cognome, nome, eta, email, userId, password, idVaccinazione);
     }
 
-
     /**
      * Questo metodo genera casualmente i dati dei centri vaccinali da inserire nel databse
      *
@@ -150,8 +146,6 @@ public class DataModel {
         if(t.equals(TipologiaCV.Aziendale.name())) tipologia = TipologiaCV.Aziendale;
         if(t.equals(TipologiaCV.Ospedaliero.name())) tipologia = TipologiaCV.Ospedaliero;
         if(t.equals(TipologiaCV.Hub.name())) tipologia = TipologiaCV.Hub;
-
-
 
         return new CentroVaccinale(idCentroVaccinale, nomeCentroVaccinale, indirizzoCentroVaccinale, tipologia);
     }
