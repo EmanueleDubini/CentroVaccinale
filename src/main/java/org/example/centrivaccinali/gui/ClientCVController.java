@@ -23,6 +23,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import org.example.serverCV.ServerCVI;
 import javafx.scene.control.*;
+import org.example.serverCV.ServerRegistry;
 
 import java.io.*;
 import java.net.URL;
@@ -185,8 +186,7 @@ public class ClientCVController implements Initializable {
                 """
                         'Centro Vaccinale' - Client CV
 
-                        Se siete arrivati fino a qui sapete bene di cosa si tratta.
-                        Se volete, leggete pure questa guida, ma l'unica risposta che troverete sarà 42.""", ButtonType.OK);
+                        """, ButtonType.OK);
 
         info.showAndWait();
     }
@@ -629,11 +629,12 @@ public class ClientCVController implements Initializable {
                 int PORT = 1200;
                 registry = LocateRegistry.getRegistry(address, PORT);
 
-                //richiesta dell'oggeto server remoto inserito precedenemente dal serverCV nel registry
+                //richiesta dell'oggetto server remoto inserito precedenemente dal serverCV nel registry
                 stub = (ServerCVI) registry.lookup("ServerCV");
                 to_01_LandingPage();
             } catch (Exception e) {
                 connectionStatus.setText("indirizzo IP server errato o server non disponibile");
+                e.printStackTrace();
             }
         }
     }//END_serverConnection

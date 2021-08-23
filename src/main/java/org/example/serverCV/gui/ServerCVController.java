@@ -20,6 +20,7 @@ import org.example.database.DbHelper;
 import org.example.database.QueryDebug;
 import org.example.serverCV.IpAddressServer;
 import org.example.serverCV.ServerCV;
+import org.example.serverCV.ServerRegistry;
 
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
@@ -27,8 +28,6 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.UUID;
-
-import static org.example.serverCV.ServerCV.PORT;
 
 
 /**
@@ -104,13 +103,14 @@ public class ServerCVController {
             connectButton.setVisible(false);
             resetButton.setVisible(false);
             menuBar.setVisible(true);
+            ServerRegistry.startRegistry();
             logArea.appendText("User " + "'" + username + "'" + " connected\n");
 
             //se registry è null vuol dire che non è ancora stato creato
             //il registry dovrebbe essere stato creato nel main
-            if(ServerCV.registry != null) {
-                logArea.appendText("Server   " + IpAddressServer.getServerAddress() + "   ready " + "on port:   " + PORT + "\n");            }else {
-                ServerCV.registry = LocateRegistry.createRegistry(PORT);
+            if(ServerRegistry.registry != null) {
+                logArea.appendText("Server   " + IpAddressServer.getServerAddress() + "   ready " + "on port:   " + ServerRegistry.PORT + "\n");            }else {
+                ServerRegistry.registry = LocateRegistry.createRegistry(ServerRegistry.PORT);
             }
 
             //DataModel p = new DataModel();

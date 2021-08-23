@@ -20,6 +20,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.example.serverCV.ServerCV;
+import org.example.serverCV.ServerRegistry;
 
 import java.io.IOException;
 import java.rmi.NotBoundException;
@@ -54,7 +55,7 @@ public class ClientCVMain extends Application {
         Platform.setImplicitExit(true);
         stage.setOnCloseRequest((ae) -> {
             try {
-                ServerCV.registry.unbind("ServerCV");
+                ServerRegistry.registry.unbind("ServerCV");
             } catch (RemoteException e) {
                 e.printStackTrace();
             } catch (NotBoundException e) {
