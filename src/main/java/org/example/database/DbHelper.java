@@ -16,7 +16,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 /**
- * Classe di servizio per la connessione UNICA al DataBase
+ * Classe di servizio per la connessione al DataBase
  */
 public class DbHelper {
 
@@ -24,7 +24,7 @@ public class DbHelper {
     // Questi sono attributi del DB
     private final static String protocol = "jdbc:postgresql" + "://";
     private final static String host = "localhost/";
-    private final static String resource = "centrivaccinalidb"; // nome del DB
+    private final static String resource = "centrivaccinalidb";   // nome del DB
     private final static String url = protocol + host + resource; // jdbc:postgresql://localhost/centrivaccinalidb
 
     // Credenziali di login
@@ -33,12 +33,11 @@ public class DbHelper {
     private final static String dbAddress = "localhost"; //porta 5432
 
     private static Connection connection = null;
-
     private static Statement statement = null;
 
 
     /**
-     * Costruttore
+     * Costruttore vuoto (è una classe di servizio)
      */
     public DbHelper(){ }
 
