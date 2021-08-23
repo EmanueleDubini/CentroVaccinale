@@ -93,7 +93,6 @@ public class ServerCVController {
         //String hostText = dbHost.getText();
 
 
-
         if ((usernameText.compareTo(username) == 0) && (passwordText.compareTo(password) == 0) && (hostText.compareTo(host) == 0)) {
 
             usernameLabel.setVisible(false);
@@ -164,10 +163,10 @@ public class ServerCVController {
                 """
                         'Centro Vaccinale' - Server CV
 
-                        BANCORA Davide, The Pianist
-                        CASALNOVO Giacomo, Symphonic Metal Man
-                        DONATO Benedetta, The Beauty
-                        DUBINI Emanuele, Money Man
+                        BANCORA Davide
+                        CASALNOVO Giacomo
+                        DONATO Benedetta
+                        DUBINI Emanuele
 
                         UnInsubria.it
                         Copyleft - all rights reversed""", ButtonType.OK);
