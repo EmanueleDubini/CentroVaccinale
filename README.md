@@ -5,7 +5,7 @@
 ![alt text](https://user-images.githubusercontent.com/63231737/130448348-5e0f8ded-021b-41ff-8f84-1c603de54aee.png)
 
 ##PROGETTO di Laboratorio B
-**Università Degli studi dell'Insubria AA.2020-21**
+**Università Degli Studi dell'Insubria AA.2020-21**
 
 Agile Board: https://trello.com/b/TdL756CN/centrovaccinaleboard
 
