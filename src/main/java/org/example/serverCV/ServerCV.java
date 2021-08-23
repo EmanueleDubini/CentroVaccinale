@@ -39,7 +39,11 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     public static Registry registry;
 
 
-    // Oggetto server
+    /**
+     * Oggetto che contiene tutti i metodi del Server
+     *
+     * @throws RemoteException  RemoteException
+     */
     protected ServerCV() throws RemoteException {
         super();
     }
@@ -59,6 +63,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      * @param provincia provincia del centro vaccinale
      * @param cap cap del centro vaccinale
      * @param tipologia tipologia del centro vaccinale
+     *
      * @return true se la registrazione va a buon fine
      *
      * @throws SQLException SQLException
@@ -86,6 +91,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      * @param dataSomministrazione data vaccinazione del cittadino vaccinato
      * @param vaccinoSomministrato tipo di vaccino somministrato
      * @param idVaccinazione id vaccinazione del cittadino vaccinato
+     *
      * @return true se la registrazione va a buon fine
      *
      * @throws SQLException SQLException
@@ -151,6 +157,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      * @param idVaccinazione id vaccinazione del cittadino
      *
      * @return @return true se la registrazione va a buon fine
+     *
      * @throws SQLException SQLException
      */
     @Override
@@ -179,6 +186,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      * @param password password del vaccinato che vuole accedere
      *
      * @return true se il login va a buon fine
+     *
      * @throws RemoteException RemoteException
      * @throws SQLException SQLException
      */
