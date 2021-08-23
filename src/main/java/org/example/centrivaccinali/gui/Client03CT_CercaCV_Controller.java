@@ -31,6 +31,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
+import static org.example.centrivaccinali.gui.IpServerCheck_Controller.stub;
+
 /**
  * Classe controller dedicata alla ricerca delle informazioni sui Centri Vaccinali
  */
@@ -141,7 +143,7 @@ public class Client03CT_CercaCV_Controller implements Initializable {
             return null;
         }else{
 
-        return ClientCVController.stub.cercaCentroVaccinaleNome(nomeCV);
+        return stub.cercaCentroVaccinaleNome(nomeCV);
         }
     }
 
@@ -161,7 +163,7 @@ public class Client03CT_CercaCV_Controller implements Initializable {
             return null;
         }else{
 
-            return ClientCVController.stub.cercaCentroVaccinaleComuneTipologia(nomeComune, tipologiaCV);
+            return stub.cercaCentroVaccinaleComuneTipologia(nomeComune, tipologiaCV);
         }
     }
 
@@ -186,7 +188,7 @@ public class Client03CT_CercaCV_Controller implements Initializable {
         idCentroVacinaleLabel.setText(idCV);
 
         //calcolo severità media
-        double[] mediaSeveritaEventiAvversi = ClientCVController.stub.getAvg_Nsegnalazioni(idCV);
+        double[] mediaSeveritaEventiAvversi = stub.getAvg_Nsegnalazioni(idCV);
         //caso in cui non ci sono aventi avversi nel centro mostrato
         if(mediaSeveritaEventiAvversi[0] == -1 ){
             labelSeveritaMedia.setText("N/D");

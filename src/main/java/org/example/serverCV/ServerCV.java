@@ -33,10 +33,7 @@ import java.util.ArrayList;
  * Porta di default = 1200
  */
 public class ServerCV extends UnicastRemoteObject implements ServerCVI{
-    @Serial
-    private static final long serialVersionUID = 1L; //sono oggetti serializzati
-    public static final int PORT = 1200; //todo sistemare e mettera la porta come campo statico nell'interfaccia del server
-    public static Registry registry;
+
 
 
     /**
@@ -643,18 +640,6 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      * Metodo <code>Main</code> dell'applicazione ClientCV
      */
     public static void main(String[] args) throws RemoteException {
-
-        //settiamo l'ip hostname con l'ip della macchina che esegue questo codice, ServerCV main()
-        System.setProperty("java.rmi.server.hostname", IpAddressServer.getServerAddress());
-
-        // Crea una instanza dell'oggetto server
-        ServerCV serverCV = new ServerCV();
-
-        //registriamo l'oggetto server sul registry
-        registry = LocateRegistry.createRegistry(PORT);
-        //bind
-        registry.rebind("ServerCV", serverCV); //se è gia bound fa un bind con il nuovo valore
-
         // Partenza dell'interfaccia grafica
         ServerCVMain.main(args);
 
