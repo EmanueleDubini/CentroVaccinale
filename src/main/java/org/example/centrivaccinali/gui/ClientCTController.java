@@ -16,6 +16,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
 import javafx.scene.control.*;
+
 import java.io.IOException;
 import java.net.URL;
 import java.rmi.RemoteException;
@@ -23,6 +24,8 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.ResourceBundle;
 import java.util.regex.Pattern;
+
+import static org.example.centrivaccinali.gui.IpServerCheck_Controller.stub;
 
 
 /**
@@ -160,7 +163,7 @@ public class ClientCTController  implements Initializable{
         ////////////// COMBO BOX NOME CENTRO VACCINALE //////////////
         nomeCentroComboBox.setValue("");
         try {
-            List<String> nomiCentriVaccinali = ClientCVController.stub.nomiCentriVaccinali();
+            List<String> nomiCentriVaccinali = stub.nomiCentriVaccinali();
             for(String nome : nomiCentriVaccinali) {
                 nomeCentroComboBox.getItems().add(nome);
             }
@@ -362,7 +365,7 @@ public class ClientCTController  implements Initializable{
             alert.showAndWait();
         }
         //verifica che l'utente che si sta registrando non sia gia presente nella relazione cittadini-registrati
-        else if(!ClientCVController.stub.verificaSeRegistrato(cfRegistrato, emailRegistrato, usernameRegistrato, idVaccinazioneRegistrato)){
+        else if(!stub.verificaSeRegistrato(cfRegistrato, emailRegistrato, usernameRegistrato, idVaccinazioneRegistrato)){
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
             alert.setHeaderText("Si è verificato un Errore");
@@ -371,7 +374,7 @@ public class ClientCTController  implements Initializable{
             alert.showAndWait();
         }
         //verificare se l'idVacinazione esiste ed è associato alla persona che si sta registrando
-        else if(!ClientCVController.stub.verificaIdVaccinazione(idVaccinazioneRegistrato, nomeCentroVaccinale)){
+        else if(!stub.verificaIdVaccinazione(idVaccinazioneRegistrato, nomeCentroVaccinale)){
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
             alert.setHeaderText("Si è verificato un Errore");
@@ -380,8 +383,7 @@ public class ClientCTController  implements Initializable{
             alert.showAndWait();
         }
         else {
-            Boolean verify = ClientCVController.stub.registraCittadino
-                    (cfRegistrato, cognomeRegistrato, nomeRegistrato, emailRegistrato, usernameRegistrato, passwordRegistrato, idVaccinazioneRegistrato, nomeCentroVaccinale);
+            Boolean verify = stub.registraCittadino(cfRegistrato, cognomeRegistrato, nomeRegistrato, emailRegistrato, usernameRegistrato, passwordRegistrato, idVaccinazioneRegistrato, nomeCentroVaccinale);
             if(verify) {
                 resetInserimentoRegistrazione();
             }
@@ -420,7 +422,7 @@ public class ClientCTController  implements Initializable{
         String username = TextFieldUsername.getText();
         String password = TextFieldPassword.getText();
 
-        Boolean verify = ClientCVController.stub.login(username, password);
+        Boolean verify = stub.login(username, password);
 
         if(verify) {
             resetInserimentoLogin();
@@ -486,15 +488,15 @@ public class ClientCTController  implements Initializable{
         else {
             //Ottiene idCentroVaccinale in base a username e psw inseriti nella schermata di login
             System.out.println(copiaPassword + " " + copiaPassword);
-            String idCentroVaccinale = ClientCVController.stub.getIdCentroVaccinale(copiaUsername, copiaPassword);
+            String idCentroVaccinale = stub.getIdCentroVaccinale(copiaUsername, copiaPassword);
             System.err.println(idCentroVaccinale);
 
             //Ottiene codice fiscale in base a username e psw inseriti nella schermata di login
-            String codiceF = ClientCVController.stub.getCodiceFiscale(copiaUsername, copiaPassword);
+            String codiceF = stub.getCodiceFiscale(copiaUsername, copiaPassword);
             System.err.println(codiceF);
 
-            if(ClientCVController.stub.verificaEventoAvverso(codiceF)) {
-                Boolean verify = ClientCVController.stub.inserisciEventiAvversi(idCentroVaccinale, codiceF, severita1, note1, severita2, note2, severita3, note3, severita4, note4, severita5, note5, severita6, note6);
+            if(stub.verificaEventoAvverso(codiceF)) {
+                Boolean verify = stub.inserisciEventiAvversi(idCentroVaccinale, codiceF, severita1, note1, severita2, note2, severita3, note3, severita4, note4, severita5, note5, severita6, note6);
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setTitle("OK");
                 alert.setHeaderText("OK");

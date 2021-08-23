@@ -10,34 +10,28 @@
 
 package org.example.centrivaccinali.gui;
 
-import org.example.common.CFGenerator.CalcolaCodiceFiscale;
-import org.example.common.ProgUtili;
-import org.example.database.GenerateDataLib.*;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Alert;
-import javafx.scene.control.ButtonType;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TextField;
-import org.example.serverCV.ServerCVI;
 import javafx.scene.control.*;
-import org.example.serverCV.ServerRegistry;
+import org.example.common.CFGenerator.CalcolaCodiceFiscale;
+import org.example.common.ProgUtili;
+import org.example.database.GenerateDataLib.*;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.URL;
 import java.rmi.RemoteException;
-import java.rmi.registry.LocateRegistry;
-import java.rmi.registry.Registry;
 import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.Objects;
-import java.util.Random;
-import java.util.ResourceBundle;
-import java.util.UUID;
+import java.util.*;
 import java.util.regex.Pattern;
+
+import static org.example.centrivaccinali.gui.IpServerCheck_Controller.stub;
 
 /**
  * Classe controller di ClientCV
@@ -69,8 +63,8 @@ public class ClientCVController implements Initializable {
 
     //Bottoni relativi alla pagina: 03CV_RegistraCT
 
-    @FXML
-    public TextField TextFieldNomeCentrovaccinaleCT;
+    //@FXML
+    //public TextField TextFieldNomeCentrovaccinaleCT;
     @FXML
     public TextField TextFieldNomeVaccinatoCT;
     @FXML
@@ -83,6 +77,9 @@ public class ClientCVController implements Initializable {
     @FXML
     public DatePicker DatePickerSomministrazioneCT;
 
+    @FXML
+    public ComboBox<String> nomeCentroComboBox = new ComboBox<>();
+
 
     String nomeCvCT, nomeCT, cognomeCT, codiceFiscaleCT, vaccinoSomministratoCT, idVaccinazioneCT, dataVaccinazioneCV;
 
@@ -90,20 +87,6 @@ public class ClientCVController implements Initializable {
     private final ClientCVMain m = new ClientCVMain();
 
     String nomeCV, tipologiaCV, qualificatoreVia, nomeVia, numeroCivico, comune, provincia, cap;
-
-    //grafica relativa alla pagina: 00_IpServerCheck.fxml
-    @FXML
-    public Label connectionStatus;
-    @FXML
-    public TextField hostAddress;
-    String address;
-
-    //istanziazione registry
-    Registry registry;
-    /**
-     * Oggetto remoto per il passaggio dei comandi
-     */
-    public static ServerCVI stub;
 
     public ClientCVController(){
     }
@@ -140,6 +123,17 @@ public class ClientCVController implements Initializable {
         TipologiaVaccinoCheckBox.getItems().add("Johnson & Johnson");
         TipologiaVaccinoCheckBox.getItems().add("Moderna");
         TipologiaVaccinoCheckBox.getItems().add("Pfizer");
+
+        ////////////// COMBO BOX NOME CENTRO VACCINALE //////////////
+        nomeCentroComboBox.setValue("");
+        try {
+            List<String> nomiCentriVaccinali = stub.nomiCentriVaccinali();
+            for(String nome : nomiCentriVaccinali) {
+                nomeCentroComboBox.getItems().add(nome);
+            }
+        } catch (RemoteException | SQLException e) {
+            e.printStackTrace();
+        }
 
     }
 
@@ -369,7 +363,8 @@ public class ClientCVController implements Initializable {
     public void generaCittadinoVaccinato() throws SQLException, RemoteException {
         ////////////// CAMPI REGISTRAZIONE CT //////////////
 
-        nomeCvCT = TextFieldNomeCentrovaccinaleCT.getText().toLowerCase().strip();
+        //nomeCvCT = TextFieldNomeCentrovaccinaleCT.getText().toLowerCase().strip();
+        nomeCvCT = nomeCentroComboBox.getValue();
         nomeCT = TextFieldNomeVaccinatoCT.getText();    //non servono controlli
         cognomeCT = TextFieldCognomeVaccinatoCT.getText();  //non servono controlli
         codiceFiscaleCT = TextFieldCodicefiscaleCT.getText().toUpperCase().strip();             //Strip() rimuove spazi all'inizio e alla fine del testo inserito
@@ -451,7 +446,7 @@ public class ClientCVController implements Initializable {
      */
 
     private void resetInserimentoCT() {
-        TextFieldNomeCentrovaccinaleCT.setText("");
+        nomeCentroComboBox.setValue("");
         TextFieldNomeVaccinatoCT.setText("");
         TextFieldCognomeVaccinatoCT.setText("");
         TextFieldCodicefiscaleCT.setText("");
@@ -556,7 +551,7 @@ public class ClientCVController implements Initializable {
 
     /**
      * Metodo che restituisce un InputStream associato al file 'listacomuni.csv' utilizzato per verificare la validità del comune, provincia , cap inseriti
-     * dall'utente nella finestra '03CV_RegistraCVOLD.fxml'
+     * dall'utente nella finestra '03CV_RegistraCV.fxml'
      *
      * @return InputStream associato al file 'listacomuni.csv'
      */
@@ -612,32 +607,6 @@ public class ClientCVController implements Initializable {
         String idVaccinazione = uidGenerator.randomUUID(16, 17, '-', true);
         TextFieldIdVaccinazioneCT.setText(idVaccinazione);
     }
-
-    /////////////////////grafica relativa alla pagina: 00_IpServerCheck.fxml //////////////////////////////////
-
-    public void serverConnection() {
-        address = hostAddress.getText().strip();
-
-        if (address.equals("")) {
-            connectionStatus.setText("indirizzo IP server non inserito");
-        }
-        else if (!(Pattern.matches("^(([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])(\\.(?!$)|$)){4}$", address))){ //verifica correttezza sintassi indirizzo ip
-            connectionStatus.setText("indirizzo IP server errato");
-        }
-        else {
-            try {
-                int PORT = 1200;
-                registry = LocateRegistry.getRegistry(address, PORT);
-
-                //richiesta dell'oggetto server remoto inserito precedenemente dal serverCV nel registry
-                stub = (ServerCVI) registry.lookup("ServerCV");
-                to_01_LandingPage();
-            } catch (Exception e) {
-                connectionStatus.setText("indirizzo IP server errato o server non disponibile");
-                e.printStackTrace();
-            }
-        }
-    }//END_serverConnection
 }//End_Class
 
 
