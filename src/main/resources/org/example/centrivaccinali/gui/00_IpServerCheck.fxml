@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
@@ -13,10 +14,13 @@
     <children>
         <Pane layoutY="4.0" prefHeight="712.0" prefWidth="1277.0">
             <children>
-                <TextField fx:id="hostAddress" alignment="TOP_CENTER" layoutX="501.0" layoutY="451.0" prefHeight="35.0" prefWidth="274.0">
+                <TextField fx:id="hostAddress" alignment="TOP_CENTER" layoutX="501.0" layoutY="451.0" prefHeight="35.0" prefWidth="274.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css">
                <font>
-                  <Font size="18.0" />
-               </font></TextField>
+                  <Font name="Avenir Book" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
                 <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="84.0" prefHeight="68.0" prefWidth="1277.0" text="Dati per la connessione al ">
                     <font>
                         <Font name="Avenir Book" size="40.0" />
@@ -28,7 +32,10 @@
                 <Button fx:id="anchor" layoutX="562.0" layoutY="546.0" mnemonicParsing="false" onAction="#serverConnection" prefHeight="42.0" prefWidth="152.0" style="-fx-background-radius: 5em;" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Connettiti" textFill="WHITE">
                <font>
                   <Font size="24.0" />
-               </font></Button>
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
                 <Label fx:id="connectionStatus" alignment="CENTER" contentDisplay="CENTER" layoutX="361.0" layoutY="496.0" prefHeight="26.0" prefWidth="558.0" textFill="RED" />
             <ImageView fitHeight="112.0" fitWidth="117.0" layoutX="583.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
                <image>

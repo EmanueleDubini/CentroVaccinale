@@ -24,10 +24,7 @@ import java.util.ArrayList;
  *
  */
 public interface ServerCVI extends Remote {
-
-
     // Metodi remoti per CENTRI_VACCINALI
-
     /**
      * Il metodo <code>registraCentroVaccinale</code> registra nel DB un nuovo Centro Vaccinale
      *
@@ -59,12 +56,11 @@ public interface ServerCVI extends Remote {
      * @param vaccinoSomministrato tipo di vaccino somministrato
      * @param idVaccinazione id vaccinazione del cittadino vaccinato
      *
-     * @return true se la registrazione va a buon fine
+     * @return true se la registrazione va a buon fine, false altrimenti
      *
      * @throws SQLException SQLException
      */
     Boolean registraVaccinato(String id, String nomeCV, String cognome, String nome, String cf, String dataSomministrazione, String vaccinoSomministrato, String idVaccinazione) throws RemoteException, SQLException;
-
 
     // Metodi remoti per CITTADINI
 
@@ -79,7 +75,7 @@ public interface ServerCVI extends Remote {
      * @param password password del cittadino
      * @param idVaccinazione id vaccinazione del cittadino
      *
-     * @return @return true se la registrazione va a buon fine
+     * @return true se la registrazione va a buon fine, false altrimenti
      *
      * @throws SQLException SQLException
      */
@@ -92,7 +88,7 @@ public interface ServerCVI extends Remote {
      * @param username username del vaccinato che vuole accedere
      * @param password password del vaccinato che vuole accedere
      *
-     * @return true se il login va a buon fine
+     * @return true se il login va a buon fine, false altrimenti
      *
      * @throws RemoteException RemoteException
      * @throws SQLException SQLException
@@ -107,8 +103,8 @@ public interface ServerCVI extends Remote {
      *
      * @return idLetto dal DB
      *
-     * @throws RemoteException
-     * @throws SQLException
+     * @throws RemoteException RemoteException
+     * @throws SQLException SQLException
      */
     String getIdCentroVaccianlePerCV(String nomeCV) throws RemoteException, SQLException;
 
@@ -131,8 +127,8 @@ public interface ServerCVI extends Remote {
      *
      * @return un <code>array</code> che contiene in posizione [0] la media delle segnalazioni e in posizione [1] il numero delle segnalazioni
      *
-     * @throws RemoteException
-     * @throws SQLException
+     * @throws RemoteException RemoteException
+     * @throws SQLException SQLException
      */
     double[] getAvg_Nsegnalazioni(String idCentroVaccinale) throws RemoteException, SQLException;
 
@@ -145,8 +141,8 @@ public interface ServerCVI extends Remote {
      *
      * @return <code>String</code> che contiene l'ide del centro vaccinale corrispondente
      *
-     * @throws RemoteException
-     * @throws SQLException
+     * @throws RemoteException RemoteException
+     * @throws SQLException SQLException
      */
     String getIdCentroVaccinale(String username, String password) throws  RemoteException, SQLException;
 
@@ -159,8 +155,8 @@ public interface ServerCVI extends Remote {
      *
      * @return <code>String</code> che contiene il codice fiscale del cittadino che effettua login
      *
-     * @throws RemoteException
-     * @throws SQLException
+     * @throws RemoteException RemoteException
+     * @throws SQLException SQLException
      */
     String getCodiceFiscale(String username, String password) throws RemoteException, SQLException;
 
@@ -182,15 +178,12 @@ public interface ServerCVI extends Remote {
      *
      * @return <code>ArrayList</code> che contiene una lista dei nomi dei Centri Vaccinali
      *
-     * @throws RemoteException
-     * @throws SQLException
+     * @throws RemoteException RemoteException
+     * @throws SQLException SQLException
      */
     ArrayList<String> nomiCentriVaccinali() throws RemoteException, SQLException;
 
     void visualizzaInfoCentroVaccinale() throws RemoteException;
-
-    //void visualizzaInfoCentroVaccinale() throws RemoteException;
-
 
     // Metodi remoti per EVENTI_AVVERSI
 
@@ -212,7 +205,7 @@ public interface ServerCVI extends Remote {
      * @param crisi_ipertensiva evento avverso crisi ipertensiva
      * @param crisi_ipertensiva_note note evento avverso crisi ipertensiva
      *
-     * @return true se l'inserimento dell'evento avverso va a buon fine
+     * @return true se l'inserimento dell'evento avverso va a buon fine, false altrimenti
      *
      * @throws SQLException SQLException
      */
@@ -233,7 +226,8 @@ public interface ServerCVI extends Remote {
      * @param usernameRegistrato username inserito dal cittadino vaccinato che vuole registrarsi nell'applicazione cittadino
      * @param idVaccinazioneRegistrato id di vaccinazione del cittadino vaccinato che vuole registrarsi nell'applicazione cittadino
      *
-     * @return ritorna true se i campi inseriti dal cittadino registrato non sono gia presenti nel database e quindi esso puo registrasi
+     * @return true se i campi inseriti dal cittadino registrato non sono gia presenti nel database e quindi esso puo registrasi, false altrimenti
+     *
      * @throws RemoteException RemoteException
      */
     boolean verificaSeRegistrato(String cfRegistrato, String emailRegistrato, String usernameRegistrato, String idVaccinazioneRegistrato) throws RemoteException, SQLException;
@@ -244,7 +238,7 @@ public interface ServerCVI extends Remote {
      *
      * @param idVaccinazioneRegistrato id di vaccinazione del cittadino vaccinato che vuole registrarsi nell'applicazione cittadino
      *
-     * @return ritorna true se l'id vaccinazione inserito dal cittadino registrato è presente nel database e quindi esso puo registrasi
+     * @return true se l'id vaccinazione inserito dal cittadino registrato è presente nel database e quindi esso puo registrasi, false altrimenti
      *
      * @throws RemoteException RemoteException
      */
@@ -255,7 +249,7 @@ public interface ServerCVI extends Remote {
      * effettuando la ricerca attraverso il codice fiscale
      * @param codiceF
      *
-     * @return ritorna true se si puo effettuare l'inserimento di un centro vaccinale, altrimenti false
+     * @return true se si puo effettuare l'inserimento di un centro vaccinale, altrimenti false, false altrimenti
      *
      * @throws RemoteException RemoteException
      * @throws SQLException SQLException

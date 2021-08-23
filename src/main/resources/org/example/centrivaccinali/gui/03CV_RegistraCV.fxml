@@ -1,136 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.FlowPane?>
-<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<!--aggiungere alla riga 9 il codice:"  fx:controller="sample.Controller" "-->
-
-<VBox stylesheets="@../../css/GradientBackGround.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.centrivaccinali.gui.ClientCVController">
+<VBox prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.centrivaccinali.gui.ClientCVController">
    <children>
-      <MenuBar>
-        <menus>
-          <Menu mnemonicParsing="false" text="File">
-            <items>
-              <MenuItem mnemonicParsing="false" onAction="#onClickQuit" text="Close" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Back">
-            <items>
-              <MenuItem mnemonicParsing="false" onAction="#to_02CV_MainWindow" text="Back" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Help">
-            <items>
-                  <MenuItem mnemonicParsing="false" onAction="#guida" text="Guide" />
-              <MenuItem mnemonicParsing="false" onAction="#info" text="About" />
-            </items>
-          </Menu>
-        </menus>
-      </MenuBar>
-      <BorderPane fx:id="RegistraCV" prefHeight="720.0" prefWidth="1280.0">
-          <bottom>
-              <FlowPane fx:id="anchor" prefHeight="115.0" prefWidth="1280.0" stylesheets="@../../css/GradientBackGround.css" BorderPane.alignment="CENTER">
+        <MenuBar>
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#onClickQuit" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#guida" text="Guide" />
+                        <MenuItem mnemonicParsing="false" onAction="#info" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+      <AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #fff;">
+          <children>
+              <AnchorPane fx:id="anchor" layoutY="31.0" prefHeight="689.0" prefWidth="455.0" stylesheets="@../../css/GradientBackGround.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
                   <children>
-                      <Button fx:id="bottoneRegistraCittadinoVaccinato" mnemonicParsing="false" onAction="#generaCentroVaccinale" prefHeight="38.0" prefWidth="260.0" text="Registra Centro Vaccinale">
-                          <FlowPane.margin>
-                              <Insets left="900.0" right="215.0" top="20.0" />
-                          </FlowPane.margin>
-                          <font>
-                              <Font name="Georgia" size="20.0" />
-                          </font>
+                      <ImageView fitHeight="173.0" fitWidth="414.0" layoutX="21.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@../../images/CV_Logo.png" />
+                          </image>
+                      </ImageView>
+                  <Button alignment="CENTER" layoutX="4.0" layoutY="4.0" mnemonicParsing="false" onAction="#to_02CV_MainWindow" prefHeight="32.0" prefWidth="32.0" style="-fx-background-radius: 5em;" text="←" />
+                  <Label layoutX="55.0" layoutY="444.0" text="Inserisci i tuoi dati, compilando tutti i campi," textFill="WHITE">
+                     <font>
+                        <Font name="Avenir Book" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="96.0" layoutY="471.0" text="per registrare un centro vaccinale." textFill="WHITE">
+                     <font>
+                        <Font name="Avenir Book" size="18.0" />
+                     </font>
+                  </Label>
+                  </children>
+              </AnchorPane>
+              <Pane layoutX="489.0" layoutY="209.0" prefHeight="338.0" prefWidth="766.0" AnchorPane.bottomAnchor="146.0" AnchorPane.topAnchor="209.0">
+                  <children>
+                      <Button fx:id="anchor" alignment="CENTER" contentDisplay="CENTER" layoutX="480.0" layoutY="375.0" mnemonicParsing="false" onAction="#generaCentroVaccinale" prefHeight="45.0" style="-fx-background-radius: 5em;" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Registra Centro Vaccinale " textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
                       </Button>
+                      <Label fx:id="lblErrors" alignment="CENTER" layoutX="8.0" layoutY="95.0" prefHeight="23.0" prefWidth="275.0" textFill="#ff6354">
+                          <font>
+                              <Font name="Segoe UI" size="10.0" />
+                          </font>
+                      </Label>
+                  <Label prefHeight="35.0" prefWidth="343.0" text="Nome Centro Vaccinale:">
+                     <font>
+                        <Font name="Avenir Book" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutY="150.0" text="Indirizzo:">
+                     <font>
+                        <Font name="Avenir Book" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutY="250.0" text="Comune:">
+                     <font>
+                        <Font name="Avenir Book" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textFieldNomeVia" layoutX="180.0" layoutY="185.0" prefHeight="35.0" prefWidth="325.0" promptText="Nome via" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
+                  <Label layoutX="400.0" text="Tipologia:">
+                     <font>
+                        <Font name="Avenir Book" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="400.0" layoutY="325.0">
+                     <font>
+                        <Font name="Avenir Book" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="375.0" layoutY="250.0" text="Provincia:">
+                     <font>
+                        <Font name="Avenir Book" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textFieldComune" layoutY="285.0" prefHeight="35.0" prefWidth="325.0" promptText="Comune" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
+                  <ComboBox fx:id="tipologiaCheckBox" layoutX="400.0" layoutY="35.0" prefHeight="35.0" prefWidth="325.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
+                  <TextField fx:id="textFieldNomeCentrovaccinale" layoutY="35.0" prefHeight="35.0" prefWidth="354.0" promptText="Nome CV" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
+                  <Separator layoutX="93.0" layoutY="118.0" prefHeight="23.0" prefWidth="607.0" />
+                  <Label layoutY="125.0">
+                     <font>
+                        <Font name="Avenir Book" size="24.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="qualificatoreIndirizzoCheckBox" layoutY="185.0" prefHeight="35.0" prefWidth="150.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
+                  <TextField fx:id="textFieldNumeroCivico" layoutX="535.0" layoutY="185.0" prefHeight="35.0" prefWidth="100.0" promptText="Numero Civico" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
+                  <TextField fx:id="textFieldProvincia" layoutX="375.0" layoutY="285.0" prefHeight="35.0" prefWidth="105.0" promptText="Provincia" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
+                  <Label layoutX="530.0" layoutY="250.0" text="Cap:">
+                     <font>
+                        <Font name="Avenir Book" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textFieldCap" layoutX="530.0" layoutY="285.0" prefHeight="35.0" prefWidth="100.0" promptText="Numero Civico" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
                   </children>
-              </FlowPane>
-          </bottom>
-          <right>
-              <VBox prefHeight="452.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
-                  <children>
-                      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="405.0" prefWidth="1280.0">
-                          <children>
-                              <Label layoutX="70.0" layoutY="15.0" text="Compilare i campi richiesti:">
-                                  <font>
-                                      <Font name="Georgia" size="26.0" />
-                                  </font>
-                              </Label>
-                        <Label layoutX="70.0" layoutY="131.0" text="Nome Centro Vaccinale:">
-                           <font>
-                              <Font name="Georgia" size="23.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="70.0" layoutY="211.0" text="Indirizzo:">
-                           <font>
-                              <Font name="Georgia" size="23.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="70.0" layoutY="291.0" text="Comune:">
-                           <font>
-                              <Font name="Georgia" size="23.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="420.0" layoutY="291.0" text="Provincia:">
-                           <font>
-                              <Font name="Georgia" size="23.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="790.0" layoutY="291.0" prefHeight="26.0" prefWidth="57.0" text="Cap:">
-                           <font>
-                              <Font name="Georgia" size="23.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="740.0" layoutY="131.0" text="Tipologia:">
-                           <font>
-                              <Font name="Georgia" size="23.0" />
-                           </font>
-                        </Label>
-                        <TextField fx:id="textFieldNomeCentrovaccinale" layoutX="323.0" layoutY="132.0" prefHeight="25.0" prefWidth="349.0" promptText="Nome Centro Vaccinale" />
-                        <ComboBox fx:id="tipologiaCheckBox" layoutX="847.0" layoutY="132.0" prefWidth="150.0" />
-                        <ComboBox fx:id="qualificatoreIndirizzoCheckBox" layoutX="173.0" layoutY="212.0" prefWidth="150.0" />
-                        <TextField fx:id="textFieldNomeVia" layoutX="333.0" layoutY="212.0" prefHeight="25.0" prefWidth="260.0" promptText="Nome Via" />
-                        <TextField fx:id="textFieldNumeroCivico" layoutX="598.0" layoutY="212.0" prefHeight="25.0" prefWidth="100.0" promptText="Numero Civico" />
-                        <TextField fx:id="textFieldComune" layoutX="169.0" layoutY="292.0" promptText="Comune" />
-                        <TextField fx:id="textFieldProvincia" layoutX="530.0" layoutY="292.0" promptText="Provincia" />
-                        <TextField fx:id="textFieldCap" layoutX="843.0" layoutY="292.0" prefHeight="25.0" prefWidth="95.0" promptText="Cap" />
-                          </children>
-                      </Pane>
-                  </children>
-              </VBox>
-          </right>
-         <top>
-            <HBox fx:id="anchor" prefHeight="200.0" prefWidth="1280.0" stylesheets="@../../css/GradientBackGround.css" BorderPane.alignment="CENTER">
-               <children>
-                        <Label prefHeight="50.0" prefWidth="430.0" text="Registra Centro Vaccinale">
-                            <font>
-                                <Font name="Georgia" size="34.0" />
-                            </font>
-                     <HBox.margin>
-                        <Insets left="70.0" top="75.0" />
-                     </HBox.margin>
-                        </Label>
-                  <ImageView fitHeight="168.0" fitWidth="489.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../../../../../MATERIALE_di_LAVORAZIONE/LOGO/CV_Logo.png" />
-                     </image>
-                     <HBox.margin>
-                        <Insets left="250.0" top="20.0" />
-                     </HBox.margin>
-                  </ImageView>
-               </children>
-            </HBox>
-         </top>
-      </BorderPane>
+              </Pane>
+                <Label alignment="CENTER" layoutX="455.0" layoutY="77.0" prefHeight="55.0" prefWidth="825.0" text="Registra un Centro Vaccinale" textFill="#4e8847">
+                    <font>
+                        <Font name="Avenir Book" size="48.0" />
+                    </font>
+                </Label>
+          </children>
+      </AnchorPane>
    </children>
 </VBox>

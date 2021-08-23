@@ -23,6 +23,9 @@ import java.io.IOException;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 
+/**
+ * Classe <code>ServerCVMain</code> contente i metodi utili alla parte grafica
+ */
 public class ServerCVMain extends Application {
 
     @Override
@@ -48,11 +51,23 @@ public class ServerCVMain extends Application {
     }
 
 
+    /**
+     * Questo metodo imposta la finestra principale leggendola dal file fxml
+     *
+     * @return il loader fxml
+     *
+     * @throws IOException IOException
+     */
     private static Parent loadFXML() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(ServerCVMain.class.getResource("ServerCV.fxml"));
         return fxmlLoader.load();
     }
 
+    /**
+     * Metodo main
+     *
+     * @param args args
+     */
     public static void main(String[] args) {
         launch(); //todo quando si chiude la finestra del jar tramite la 'X' rimane in esecuzione il processo e se si riclicca sul jar non lo apre
     }

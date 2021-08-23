@@ -36,6 +36,10 @@ import java.util.UUID;
  *
  */
 public class ServerCVController {
+
+    /**
+     * Costruttore
+     */
     public ServerCVController() {
     }
 
@@ -69,6 +73,7 @@ public class ServerCVController {
 
     /**
      * Bottone che fa eseguire il login al DB
+     *
      * @throws RemoteException RemoteException
      */
     @FXML
@@ -78,6 +83,7 @@ public class ServerCVController {
 
     /**
      * Metodo che controlla user/pwd del DB per accedere al server
+     *
      * @throws RemoteException RemoteException
      */
     private void checkLogin() throws RemoteException {
@@ -133,7 +139,7 @@ public class ServerCVController {
     }
 
     /**
-     * Cancella i campi di testo per il login al DB in caso di errore di battitura
+     * Metodo che cancella i campi di testo per il login al DB in caso di errore di battitura
      */
     public void reset(){
         dbUsername.setText("");
@@ -178,6 +184,7 @@ public class ServerCVController {
     // DATABASE (DEBUG)
     /**
      * DEBUG: crea DB centrivaccinalidb
+     *
      * @throws SQLException SQLException
      */
     public void createDb() throws SQLException {
@@ -191,6 +198,7 @@ public class ServerCVController {
 
     /**
      * DEBUG: cancella DB centrivaccinalidb
+     *
      * @throws SQLException SQLException
      */
     public void dropDb() throws SQLException {
@@ -206,6 +214,7 @@ public class ServerCVController {
     // METODI DELLE TABELLE (DEBUG)
     /**
      * DEBUG: crea tabella centrivaccinali
+     *
      * @throws SQLException SQLException
      */
     public void createCentriVaccinaliTable() throws SQLException {
@@ -219,6 +228,7 @@ public class ServerCVController {
 
     /**
      * DEBUG: cancella tabella centrivaccinali
+     *
      * @throws SQLException SQLException
      */
     public void dropCentriVaccinaliTable() throws SQLException {
@@ -232,6 +242,7 @@ public class ServerCVController {
 
     /**
      * DEBUG: crea tabella cittadini_registrati
+     *
      * @throws SQLException SQLException
      */
     public void createCittadiniRegistratiTable() throws SQLException {
@@ -245,6 +256,7 @@ public class ServerCVController {
 
     /**
      * DEBUG: cancella tabella cittadini_registrati
+     *
      * @throws SQLException SQLException
      */
     public void dropCittadiniRegistratiTable() throws SQLException {
@@ -258,6 +270,7 @@ public class ServerCVController {
 
     /**
      * DEBUG: crea tabella eventi_avversi
+     *
      * @throws SQLException SQLException
      */
     public void createEventiAvversiTable() throws SQLException {
@@ -271,6 +284,7 @@ public class ServerCVController {
 
     /**
      * DEBUG: cancella tabella eventi_avversi
+     *
      * @throws SQLException SQLException
      */
     public void dropEventiAvversiTable() throws SQLException {
@@ -285,6 +299,7 @@ public class ServerCVController {
     // METODI DEGLI INSERIMENTI TABELLE (DEBUG)
     /**
      * DEBUG: inserisci centri vaccinali (random) in tabella centrivaccinali
+     *
      * @throws SQLException SQLException
      */
    public void inserimentoCentriVaccinali() throws SQLException {
@@ -325,6 +340,7 @@ public class ServerCVController {
 
     /**
      * DEBUG: inserisci cittadini (random) in tabella cittadini_registrati
+     *
      * @throws SQLException SQLException
      */
     public void inserimentoCittadini() throws SQLException {

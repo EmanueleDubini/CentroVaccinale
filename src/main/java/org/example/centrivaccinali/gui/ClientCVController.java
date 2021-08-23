@@ -556,7 +556,7 @@ public class ClientCVController implements Initializable {
 
     /**
      * Metodo che restituisce un InputStream associato al file 'listacomuni.csv' utilizzato per verificare la validità del comune, provincia , cap inseriti
-     * dall'utente nella finestra '03CV_RegistraCV.fxml'
+     * dall'utente nella finestra '03CV_RegistraCVOLD.fxml'
      *
      * @return InputStream associato al file 'listacomuni.csv'
      */
