@@ -54,13 +54,6 @@ public class ClientCVMain extends Application {
         //per chiudere correttamente il jar
         Platform.setImplicitExit(true);
         stage.setOnCloseRequest((ae) -> {
-            try {
-                ServerRegistry.registry.unbind("ServerCV");
-            } catch (RemoteException e) {
-                e.printStackTrace();
-            } catch (NotBoundException e) {
-                e.printStackTrace();
-            }
             Platform.exit();
             System.exit(0);
         });
