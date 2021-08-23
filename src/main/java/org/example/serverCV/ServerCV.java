@@ -514,7 +514,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
                                                        int linfoadenopatia, String linfoadenopatia_note,
                                                        int crisi_ipertensiva, String crisi_ipertensiva_note) throws SQLException {
 
-        //todo gestire l'eccezione che lancia nel caso in cui l'utente abbia già inserito l'evento avverso
+
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
         statement.executeUpdate("INSERT INTO eventi_avversi " +

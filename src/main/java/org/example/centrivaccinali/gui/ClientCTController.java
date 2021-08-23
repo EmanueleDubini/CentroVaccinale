@@ -487,25 +487,25 @@ public class ClientCTController  implements Initializable{
         } //END_if*/
         else {
             //Ottiene idCentroVaccinale in base a username e psw inseriti nella schermata di login
-            System.out.println(copiaPassword + " " + copiaPassword);
+            //DEBUG System.out.println(copiaPassword + " " + copiaPassword);
             String idCentroVaccinale = stub.getIdCentroVaccinale(copiaUsername, copiaPassword);
-            System.err.println(idCentroVaccinale);
+            //DEBUG System.err.println(idCentroVaccinale);
 
             //Ottiene codice fiscale in base a username e psw inseriti nella schermata di login
             String codiceF = stub.getCodiceFiscale(copiaUsername, copiaPassword);
-            System.err.println(codiceF);
+            //DEBUG System.err.println(codiceF);
 
             if(stub.verificaEventoAvverso(codiceF)) {
                 Boolean verify = stub.inserisciEventiAvversi(idCentroVaccinale, codiceF, severita1, note1, severita2, note2, severita3, note3, severita4, note4, severita5, note5, severita6, note6);
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                alert.setTitle("OK");
-                alert.setHeaderText("OK");
+                alert.setTitle("Info");
+                alert.setHeaderText("Operazione effettuata correttamente");
                 alert.setContentText("Evento avverso inserito correttamente\n");
                 resetInserimentoEventiAvversi();
                 alert.showAndWait();
                 to_02CT_MainWindow();
 
-                System.out.println("Ok, l'evento è stato inserito");
+                //DEBUG System.out.println("Ok, l'evento è stato inserito");
 
             //todo gestire eccezione nel caso in cui il cittadino cerca di inserire DI NUOVO gli eventi avversi, prima di mandare un inserimeto
             // creare un metodo che verifica se è stata gia inserito un evento avverso
