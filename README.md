@@ -1,6 +1,6 @@
-# "CentroVaccinale"!
+# CentroVaccinale
 
-[CV_Logo](https://user-images.githubusercontent.com/63231737/130448348-5e0f8ded-021b-41ff-8f84-1c603de54aee.png)
+![alt text](https://user-images.githubusercontent.com/63231737/130448348-5e0f8ded-021b-41ff-8f84-1c603de54aee.png)
 
 **Il miglior programma per la gestione di:** Cittadini e Centri Vaccinali
 
