@@ -380,7 +380,8 @@ public class ClientCTController  implements Initializable{
             alert.showAndWait();
         }
         else {
-            Boolean verify = ClientCVController.stub.registraCittadino(cfRegistrato, cognomeRegistrato, nomeRegistrato, emailRegistrato, usernameRegistrato, passwordRegistrato, idVaccinazioneRegistrato, nomeCentroVaccinale);
+            Boolean verify = ClientCVController.stub.registraCittadino
+                    (cfRegistrato, cognomeRegistrato, nomeRegistrato, emailRegistrato, usernameRegistrato, passwordRegistrato, idVaccinazioneRegistrato, nomeCentroVaccinale);
             if(verify) {
                 resetInserimentoRegistrazione();
             }
@@ -494,7 +495,7 @@ public class ClientCTController  implements Initializable{
 
             if(ClientCVController.stub.verificaEventoAvverso(codiceF)) {
                 Boolean verify = ClientCVController.stub.inserisciEventiAvversi(idCentroVaccinale, codiceF, severita1, note1, severita2, note2, severita3, note3, severita4, note4, severita5, note5, severita6, note6);
-                Alert alert = new Alert(Alert.AlertType.ERROR);
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setTitle("OK");
                 alert.setHeaderText("OK");
                 alert.setContentText("Evento avverso inserito correttamente\n");
@@ -502,7 +503,7 @@ public class ClientCTController  implements Initializable{
                 alert.showAndWait();
                 to_02CT_MainWindow();
 
-                System.out.println("ok, inserito");
+                System.out.println("Ok, l'evento è stato inserito");
 
             //todo gestire eccezione nel caso in cui il cittadino cerca di inserire DI NUOVO gli eventi avversi, prima di mandare un inserimeto
             // creare un metodo che verifica se è stata gia inserito un evento avverso
