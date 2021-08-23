@@ -1,102 +1,218 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.Spinner?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.centrivaccinali.gui.ClientCTController">
+<VBox prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.centrivaccinali.gui.ClientCTController">
    <children>
-      <MenuBar prefWidth="1280.0">
-        <menus>
-          <Menu mnemonicParsing="false" text="File">
-            <items>
-              <MenuItem mnemonicParsing="false" onAction="#onClickQuit" text="Close" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Back">
-            <items>
-              <MenuItem mnemonicParsing="false" onAction="#to_02CT_MainWindow" text="back" />
-            </items>
-          </Menu>
-        </menus>
-      </MenuBar>
-      <Label layoutX="80.0" layoutY="80.0" text="Inserisci Eventi Avversi">
-         <font>
-            <Font name="Georgia" size="48.0" />
-         </font>
-      </Label>
-      <Label fx:id="textFieldBenvenutoEventiAvversi" layoutX="90.0" layoutY="150.0">
-         <font>
-            <Font name="Georgia" size="24.0" />
-         </font>
-      </Label>
-      <Label layoutX="80.0" layoutY="230.0" text="Evento: ">
-         <font>
-            <Font size="28.0" />
-         </font>
-      </Label>
-      <Label layoutX="460.0" layoutY="230.0" text="Severità: ">
-         <font>
-            <Font size="28.0" />
-         </font>
-      </Label>
-      <Button fx:id="buttonInserisciEvento" layoutX="1040.0" layoutY="656.0" mnemonicParsing="false" onAction="#inserisciEventiAvversi" prefHeight="38.0" prefWidth="149.0" text="Inserisci Evento">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Button>
-      <Label fx:id="labelFebbre" layoutX="100.0" layoutY="360.0" text="Febbre:">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Label>
-      <Label fx:id="labelLinfoadenopatia" layoutX="100.0" layoutY="540.0" text="Linfoadenopatia:">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Label>
-      <Label fx:id="labelMalDiTesta" layoutX="100.0" layoutY="300.0" text="Mal di Testa:">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Label>
-      <Label fx:id="labelDolori" layoutX="100.0" layoutY="420.0" text="Dolori muscolari e/o articolari:">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Label>
-      <Label fx:id="labelTachicardia" layoutX="100.0" layoutY="480.0" text="Tachicardia:">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Label>
-      <Label fx:id="labelCrisiIpertensiva" layoutX="100.0" layoutY="600.0" text="Crisi ipertensiva:">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Label>
-      <Label layoutX="720.0" layoutY="230.0" text="Note (massimo 256 caratteri) :">
-         <font>
-            <Font size="28.0" />
-         </font>
-      </Label>
-      <TextField fx:id="noteMalDiTesta" layoutX="740.0" layoutY="300.0" prefHeight="40.0" prefWidth="450.0" promptText="Inserisci informazioni" />
-      <TextField fx:id="noteFebbre" layoutX="740.0" layoutY="360.0" prefHeight="40.0" prefWidth="450.0" promptText="Inserisci informazioni" />
-      <TextField fx:id="noteDolori" layoutX="740.0" layoutY="420.0" prefHeight="40.0" prefWidth="450.0" promptText="Inserisci informazioni" />
-      <TextField fx:id="noteTachicardia" layoutX="740.0" layoutY="480.0" prefHeight="40.0" prefWidth="450.0" promptText="Inserisci informazioni" />
-      <TextField fx:id="noteLinfoadenopatia" layoutX="740.0" layoutY="540.0" prefHeight="40.0" prefWidth="450.0" promptText="Inserisci informazioni" />
-      <TextField fx:id="noteCrisiIpertensiva" layoutX="740.0" layoutY="600.0" prefHeight="40.0" prefWidth="450.0" promptText="Inserisci informazioni" />
-      <Spinner fx:id="spinnerMalDiTesta" cache="true" layoutX="480.0" layoutY="305.0" />
-      <Spinner fx:id="spinnerFebbre" cache="true" layoutX="480.0" layoutY="365.0" />
-      <Spinner fx:id="spinnerDoloriMuscolari" cache="true" layoutX="480.0" layoutY="428.0" />
-      <Spinner fx:id="spinnerTachicardia" cache="true" layoutX="480.0" layoutY="488.0" />
-      <Spinner fx:id="spinnerLinfoadenopatia" cache="true" layoutX="480.0" layoutY="548.0" />
-      <Spinner fx:id="spinnerCrisiIpertensiva" cache="true" layoutX="480.0" layoutY="608.0" />
+        <MenuBar>
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#onClickQuit" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#guida" text="Guide" />
+                        <MenuItem mnemonicParsing="false" onAction="#info" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+      <AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #fff;">
+          <children>
+              <AnchorPane fx:id="anchor" layoutY="31.0" prefHeight="693.0" prefWidth="348.0" stylesheets="@../../css/GradientBackGround.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <children>
+                  <Button alignment="CENTER" layoutX="5.0" layoutY="5.0" mnemonicParsing="false" onAction="#to_02CT_MainWindow" prefHeight="32.0" prefWidth="32.0" style="-fx-background-radius: 5em;" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="←">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Glow />
+                     </effect></Button>
+                  <Label layoutX="20.0" layoutY="258.0" prefHeight="60.0" prefWidth="343.0" text="Inserisci gli" textFill="WHITE">
+                     <font>
+                        <Font name="Avenir Book" size="39.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="360.0" prefHeight="60.0" prefWidth="343.0" text="post-vaccinazione" textFill="WHITE" AnchorPane.leftAnchor="20.0">
+                     <font>
+                        <Font name="Avenir Book" size="39.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <Label layoutX="17.0" layoutY="311.0" prefHeight="60.0" prefWidth="343.0" text="Eventi Avversi" textFill="WHITE">
+                     <font>
+                        <Font name="Avenir Book" size="39.0" />
+                     </font>
+                  </Label>
+                  </children>
+              </AnchorPane>
+              <Pane layoutX="405.0" layoutY="28.0" prefHeight="638.0" prefWidth="857.0" AnchorPane.bottomAnchor="27.0" AnchorPane.topAnchor="28.0">
+                  <children>
+                      <Button fx:id="anchor" alignment="CENTER" contentDisplay="CENTER" layoutX="610.0" layoutY="577.0" mnemonicParsing="false" onAction="#inserisciEventiAvversi" prefHeight="45.0" prefWidth="200.0" style="-fx-background-radius: 5em;" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Inserisci Evento" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                      </Button>
+                      <Label fx:id="lblErrors" alignment="CENTER" layoutX="8.0" layoutY="95.0" prefHeight="23.0" prefWidth="275.0" textFill="#ff6354">
+                          <font>
+                              <Font name="Segoe UI" size="10.0" />
+                          </font>
+                      </Label>
+                  <Label fx:id="labelFebbre" layoutX="10.0" layoutY="180.0" text="Febbre:">
+                     <font>
+                        <Font name="Avenir Book" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelDolori" layoutX="10.0" layoutY="260.0" text="Dolori muscolari e articolari:">
+                     <font>
+                        <Font name="Avenir Book" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="10.0" text="Evento:">
+                     <font>
+                        <Font name="Avenir Book" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="400.0" layoutY="325.0">
+                     <font>
+                        <Font name="Avenir Book" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelLinfoadenopatia" layoutX="10.0" layoutY="420.0" text="Linfoadenopatia">
+                     <font>
+                        <Font name="Avenir Book" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelTachicardia" layoutX="10.0" layoutY="340.0" text="Tachicardia:">
+                     <font>
+                        <Font name="Avenir Book" size="24.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="11.0" layoutY="66.0" prefHeight="23.0" prefWidth="839.0" />
+                  <Label fx:id="labelMalDiTesta" layoutX="10.0" layoutY="100.0" text="Mal di testa:">
+                     <font>
+                        <Font name="Avenir Book" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelCrisiIpertensiva" layoutX="10.0" layoutY="500.0" text="Crisi ipertensiva:">
+                     <font>
+                        <Font name="Avenir Book" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="noteMalDiTesta" layoutX="545.0" layoutY="100.0" prefHeight="45.0" prefWidth="265.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" wrapText="true">
+                     <font>
+                        <Font name="Avenir Book" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor></TextArea>
+                  <TextArea fx:id="noteFebbre" layoutX="545.0" layoutY="180.0" prefHeight="45.0" prefWidth="265.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" wrapText="true">
+                     <font>
+                        <Font name="Avenir Book" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor></TextArea>
+                  <TextArea fx:id="noteDolori" layoutX="545.0" layoutY="260.0" prefHeight="45.0" prefWidth="265.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" wrapText="true">
+                     <font>
+                        <Font name="Avenir Book" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor></TextArea>
+                  <TextArea fx:id="noteTachicardia" layoutX="545.0" layoutY="340.0" prefHeight="45.0" prefWidth="265.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" wrapText="true">
+                     <font>
+                        <Font name="Avenir Book" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor></TextArea>
+                  <TextArea fx:id="noteLinfoadenopatia" layoutX="545.0" layoutY="420.0" prefHeight="45.0" prefWidth="265.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" wrapText="true">
+                     <font>
+                        <Font name="Avenir Book" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor></TextArea>
+                  <TextArea fx:id="noteCrisiIpertensiva" layoutX="545.0" layoutY="500.0" prefHeight="45.0" prefWidth="265.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" wrapText="true">
+                     <font>
+                        <Font name="Avenir Book" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor></TextArea>
+                  <Spinner fx:id="spinnerDoloriMuscolari" layoutX="350.0" layoutY="260.0" prefHeight="35.0" prefWidth="130.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Spinner>
+                  <Spinner fx:id="spinnerLinfoadenopatia" layoutX="350.0" layoutY="420.0" prefHeight="35.0" prefWidth="130.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Spinner>
+                  <Spinner fx:id="spinnerTachicardia" layoutX="350.0" layoutY="340.0" prefHeight="35.0" prefWidth="130.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Spinner>
+                  <Spinner fx:id="spinnerFebbre" layoutX="350.0" layoutY="180.0" prefHeight="35.0" prefWidth="130.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Spinner>
+                  <Spinner fx:id="spinnerMalDiTesta" cache="true" layoutX="350.0" layoutY="100.0" prefHeight="35.0" prefWidth="130.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect></Spinner>
+                  <Spinner fx:id="spinnerCrisiIpertensiva" layoutX="350.0" layoutY="500.0" prefHeight="35.0" prefWidth="130.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Spinner>
+                  <Label layoutX="350.0" layoutY="10.0" text="Severitá:">
+                     <font>
+                        <Font name="Avenir Book" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="350.0" layoutY="45.0" text="( 1-Lieve | 5-Grave )">
+                     <font>
+                        <Font name="Avenir Book" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="545.0" layoutY="10.0" text="Note:">
+                     <font>
+                        <Font name="Avenir Book" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="545.0" layoutY="45.0" text="( Opzionali | Max 256 caratteri )">
+                     <font>
+                        <Font name="Avenir Book" size="18.0" />
+                     </font>
+                  </Label>
+                  </children>
+              </Pane>
+          </children>
+      </AnchorPane>
    </children>
-</Pane>
+</VBox>

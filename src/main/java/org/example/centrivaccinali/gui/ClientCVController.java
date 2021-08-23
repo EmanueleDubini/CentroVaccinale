@@ -201,10 +201,10 @@ public class ClientCVController implements Initializable {
                 """
                         'Centro Vaccinale' - Client CV
 
-                        BANCORA Davide, The Pianist
-                        CASALNOVO Giacomo, Symphonic Metal Man
-                        DONATO Benedetta, The Beauty
-                        DUBINI Emanuele, Money Man
+                        BANCORA Davide
+                        CASALNOVO Giacomo
+                        DONATO Benedetta
+                        DUBINI Emanuele
 
                         UnInsubria.it
                         Copyleft - all rights reversed""", ButtonType.OK);
@@ -337,7 +337,7 @@ public class ClientCVController implements Initializable {
     }
 
     /**
-     * //Questo metodo resetta gli inserimenti.
+     * Questo metodo resetta gli inserimenti.
      */
 
     private void resetInserimentoCV() {
@@ -566,8 +566,6 @@ public class ClientCVController implements Initializable {
     }
 
     //Questo metodo seleziona e ritorna una stringa contenete la data della somministrazione del vaccino al cittadino nella finestra 03CV_RegistraCT
-
-    //tod
 
     /**
      * Questo metodo legge la data inserita dall'utente e ne cambia il formato in dd-MM-yyyy

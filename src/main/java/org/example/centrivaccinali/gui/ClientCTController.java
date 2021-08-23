@@ -14,6 +14,7 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.geometry.Pos;
 import javafx.scene.control.*;
 import java.io.IOException;
 import java.net.URL;
@@ -77,6 +78,7 @@ public class ClientCTController  implements Initializable{
     //inizializzazione dell'oggetto che modifica il valore dello spinner
     SpinnerValueFactory<Integer> spinnerValueFactory2 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 5, 0);
 
+
     @FXML
     private Spinner<Integer> spinnerDoloriMuscolari = new Spinner<>();
     //inizializzazione dell'oggetto che modifica il valore dello spinner
@@ -100,32 +102,32 @@ public class ClientCTController  implements Initializable{
 
 
     @FXML
-    private TextField noteMalDiTesta;
+    private TextArea noteMalDiTesta;
 
     //@FXML
     //private TextField severitaFebbre;
     @FXML
-    private TextField noteFebbre;
+    private TextArea noteFebbre;
 
     //@FXML
     //private TextField severitaDolori;
     @FXML
-    private TextField noteDolori;
+    private TextArea noteDolori;
 
     //@FXML
     //private TextField severitaTachicardia;
     @FXML
-    private TextField noteTachicardia;
+    private TextArea noteTachicardia;
 
     //@FXML
     //private TextField severitaLinfoadenopatia;
     @FXML
-    private TextField noteLinfoadenopatia;
+    private TextArea noteLinfoadenopatia;
 
     //@FXML
     //private TextField severitaCrisiIpertensiva;
     @FXML
-    private TextField noteCrisiIpertensiva;
+    private TextArea noteCrisiIpertensiva;
 
     String note1;
     String note2;
@@ -172,6 +174,13 @@ public class ClientCTController  implements Initializable{
         spinnerTachicardia.setValueFactory(spinnerValueFactory4);
         spinnerLinfoadenopatia.setValueFactory(spinnerValueFactory5);
         spinnerCrisiIpertensiva.setValueFactory(spinnerValueFactory6);
+
+        spinnerMalDiTesta.editorProperty().get().setAlignment(Pos.CENTER);
+        spinnerFebbre.editorProperty().get().setAlignment(Pos.CENTER);
+        spinnerDoloriMuscolari.editorProperty().get().setAlignment(Pos.CENTER);
+        spinnerTachicardia.editorProperty().get().setAlignment(Pos.CENTER);
+        spinnerLinfoadenopatia.editorProperty().get().setAlignment(Pos.CENTER);
+        spinnerCrisiIpertensiva.editorProperty().get().setAlignment(Pos.CENTER);
 
         ////////////// INIZIALIZZAZIONE FINESTRA EVENTI AVVERSI CENTRO VACCINALE //////////////
 

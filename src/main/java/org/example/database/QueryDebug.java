@@ -20,7 +20,7 @@ public class QueryDebug {
 
 
     /**
-     * Costruttore
+     * Costruttore vuoto (classe di servizio)
      */
     public QueryDebug() { }
 
@@ -28,7 +28,7 @@ public class QueryDebug {
     public static String createDB = "CREATE DATABASE IF NOT EXISTS centrivaccinalidb";
     public static String dropDB = "DROP DATABASE IF EXISTS centrivaccinalidb";
 
-    // TABELLE
+    // STRINGHE PER CREARE LE TABELLE nel DB
 
     /**
      * Crea la tabella dei dei centri vaccinali
