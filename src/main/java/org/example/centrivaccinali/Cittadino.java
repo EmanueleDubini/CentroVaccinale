@@ -132,7 +132,7 @@ public class Cittadino {
     /**
      * Definisce l'et&agrave; dell'oggetto <strong>Cittadino</strong> che esegue il metodo.
      *
-     * @param email
+     * @param email email
      */
     public void setEmail(String email) {
         this.email = email;
@@ -151,7 +151,7 @@ public class Cittadino {
     /**
      * Definisce lo userID; dell'oggetto <strong>Cittadino</strong> che esegue il metodo.
      *
-     * @param userId
+     * @param userId userId
      */
     public void setUserId(String userId) {
         this.userId = userId;
@@ -169,7 +169,7 @@ public class Cittadino {
     /**
      * Definisce la password; dell'oggetto <strong>Cittadino</strong> che esegue il metodo.
      *
-     * @param password
+     * @param password password
      */
     public void setPassword(String password) {
         this.password = password;
@@ -187,7 +187,7 @@ public class Cittadino {
     /**
      * Definisce lo idVaccinazione; dell'oggetto <strong>Cittadino</strong> che esegue il metodo.
      *
-     * @param idVaccinazione
+     * @param idVaccinazione idVaccinazione
      */
     public void setIdVaccinazione(String idVaccinazione) {
         this.idVaccinazione = idVaccinazione;

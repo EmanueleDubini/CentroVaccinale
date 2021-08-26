@@ -607,7 +607,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     /**
      * Metodo <code>verificaEventoAvverso</code> che verifica se un utente ha gia inserito un avento avverso all'interno del database
      * effettuando la ricerca attraverso il codice fiscale
-     * @param codiceF
+     * @param codiceF codiceF
      *
      * @return ritorna true se si puo effettuare l'inserimento di un centro vaccinale, altrimenti false
      *

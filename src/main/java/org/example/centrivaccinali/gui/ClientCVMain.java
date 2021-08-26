@@ -39,7 +39,6 @@ public class ClientCVMain extends Application {
      * Questo metodo lancia la prima finestra per l'esecuzione del programma
      *
      * @param stage Stage
-     *
      * @throws IOException IOException
      */
     @Override

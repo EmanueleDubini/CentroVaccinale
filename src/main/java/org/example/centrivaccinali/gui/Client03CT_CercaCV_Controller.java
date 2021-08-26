@@ -115,7 +115,6 @@ public class Client03CT_CercaCV_Controller implements Initializable {
 
     /**
      * Questo metodo permette di modificare il tipo di ricerca da Nome a Comune&Tipologia e viceversa
-     *
      * @param newVal indica la selezione dell'utente
      */
     private void cambiaRicerca(Toggle newVal) {

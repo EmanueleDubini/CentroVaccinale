@@ -48,8 +48,8 @@ public class ItemController {
     /**
      * Inserisce i dati per la creazione degli elementi che rappresentano i centri vaccinali
      *
-     * @param centroVaccinale
-     * @param cercaCVListener
+     * @param centroVaccinale centroVaccinale
+     * @param cercaCVListener cercaCVListener
      */
     public void setData(CentroVaccinale centroVaccinale, CercaCVListener cercaCVListener) {
         this.centroVaccinale = centroVaccinale;

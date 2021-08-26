@@ -16,14 +16,14 @@
     <children>
         <AnchorPane fx:id="anchor" prefHeight="720.0" prefWidth="559.0" stylesheets="@../../css/GradientBackGround.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
-                <ImageView fitHeight="204.0" fitWidth="485.0" layoutX="35.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fitHeight="204.0" fitWidth="485.0" layoutX="34.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@../../images/CV_Logo.png" />
                     </image>
                 </ImageView>
-                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="4.0" layoutY="413.0" prefHeight="26.0" prefWidth="550.0" text="Accedi per inserire gli eventi avversi." textAlignment="CENTER" textFill="WHITE">
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutY="445.0" prefHeight="26.0" prefWidth="550.0" text="Accedi per inserire gli eventi avversi." textAlignment="CENTER" textFill="WHITE">
                     <font>
-                        <Font name="Arial" size="20.0" />
+                        <Font name="Avenir Book" size="20.0" />
                     </font>
                 </Label>
             <Button alignment="CENTER" layoutX="4.0" layoutY="4.0" mnemonicParsing="false" onAction="#to_02CT_MainWindow" prefHeight="32.0" prefWidth="32.0" style="-fx-background-radius: 5em;" text="←" />

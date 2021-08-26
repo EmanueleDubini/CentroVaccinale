@@ -263,9 +263,7 @@ public class ClientCTController  implements Initializable{
         Alert info = new Alert(Alert.AlertType.NONE,
                 """
                         'Centro Vaccinale' - Client CV
-
-                        Se siete arrivati fino a qui sapete bene di cosa si tratta.
-                        Se volete, leggete pure questa guida, ma l'unica risposta che troverete sarà 42.""", ButtonType.OK);
+                        """, ButtonType.OK);
 
         info.showAndWait();
     }
@@ -279,10 +277,10 @@ public class ClientCTController  implements Initializable{
                 """
                         'Centro Vaccinale' - Client CV
 
-                        BANCORA Davide, The Pianist
-                        CASALNOVO Giacomo, Symphonic Metal Man
-                        DONATO Benedetta, The Beauty
-                        DUBINI Emanuele, Money Man
+                        BANCORA Davide
+                        CASALNOVO Giacomo
+                        DONATO Benedetta
+                        DUBINI Emanuele
 
                         UnInsubria.it
                         Copyleft - all rights reversed""", ButtonType.OK);
