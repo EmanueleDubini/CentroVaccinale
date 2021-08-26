@@ -6,6 +6,10 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 
+
+/**
+ * Classe <code>ServerRegistry</code> che costituisce il servizio registry per la connessione RMI
+ */
 public class ServerRegistry {
 
     @Serial
