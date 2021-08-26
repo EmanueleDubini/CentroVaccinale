@@ -115,7 +115,6 @@ public class Client03CT_CercaCV_Controller implements Initializable {
 
     /**
      * Questo metodo permette di modificare il tipo di ricerca da Nome a Comune&Tipologia e viceversa
-     *
      * @param newVal indica la selezione dell'utente
      */
     private void cambiaRicerca(Toggle newVal) {
@@ -218,8 +217,7 @@ public class Client03CT_CercaCV_Controller implements Initializable {
 
     /**
      * Questo metodo definisce le azioni da eseguire al click del bottone ricerca
-     *
-     * @param actionEvent
+     * @param actionEvent actionEvent
      */
     //metodo collegato al bottone di ricerca per nome
     public void invioRicerca(ActionEvent actionEvent) {
@@ -317,8 +315,7 @@ public class Client03CT_CercaCV_Controller implements Initializable {
 
     /**
      * Questo metodo, situatosi nella menu bar, permette l'uscita dalla finestra
-     *
-     * @param actionEvent
+     * @param actionEvent actionEvent
      */
     public void onClickQuit(ActionEvent actionEvent) {
         Platform.exit();
@@ -326,13 +323,45 @@ public class Client03CT_CercaCV_Controller implements Initializable {
 
     /**
      * Questo metodo permette di spostarsi nella finestra principale della sezione cittadini
-     *
-     * @param actionEvent
-     *
+     * @param actionEvent actionEvent
      * @throws IOException IOException
      */
     public void to_02CT_MainWindow(ActionEvent actionEvent) throws IOException {
         ClientCVMain.setRoot("02CT_MainWindow");
+    }
+
+    /**
+     * Questo metodo crea un messaggio di Alert che restituisce informazioni riguardanti il progetto
+     */
+    public void guida(){
+        Alert info = new Alert(Alert.AlertType.NONE,
+                """
+                        'Centro Vaccinale' - Client CV
+
+                        """, ButtonType.OK);
+
+        info.showAndWait();
+    }
+
+    /**
+     * Questo metodo crea un messaggio di Alert che restituisce informazioni riguardanti i componenti
+     * del gruppo che hanno partecipato alla realizzazione del Progetto
+     */
+
+    public void info() {
+        Alert info = new Alert(Alert.AlertType.NONE,
+                """
+                        'Centro Vaccinale' - Client CV
+
+                        BANCORA Davide
+                        CASALNOVO Giacomo
+                        DONATO Benedetta
+                        DUBINI Emanuele
+
+                        UnInsubria.it
+                        Copyleft - all rights reversed""", ButtonType.OK);
+
+        info.showAndWait();
     }
 
 }
