@@ -12,9 +12,14 @@ import java.rmi.server.UnicastRemoteObject;
  */
 public class ServerRegistry {
 
-    @Serial
-    private static final long serialVersionUID = 1L; //sono oggetti serializzati
+    /**
+     * Porta su cui si inizializza il registry, dove poi il server caricherà la sua istanza remota
+     */
     public static final int PORT = 1200; //todo sistemare e mettera la porta come campo statico nell'interfaccia del server
+
+    /**
+     * Registry con cui il server si rende disponibile remotamente
+     */
     public static Registry registry;
 
     protected ServerRegistry() throws RemoteException {

@@ -372,11 +372,11 @@ public class ClientCTController  implements Initializable{
             alert.showAndWait();
         }
         //verificare se l'idVacinazione esiste ed è associato alla persona che si sta registrando
-        else if(!stub.verificaIdVaccinazione(idVaccinazioneRegistrato, nomeCentroVaccinale)){
+        else if(!stub.verificaIdVaccinazione(nomeRegistrato, cognomeRegistrato, cfRegistrato, idVaccinazioneRegistrato, nomeCentroVaccinale)){
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
             alert.setHeaderText("Si è verificato un Errore");
-            alert.setContentText("Nessun id vaccinale riscontrato nel centro vaccinale specificato.\nRiprovare");
+            alert.setContentText("Nessun id vaccinale o codice fiscale riscontrato nel centro vaccinale specificato.\nRiprovare");
 
             alert.showAndWait();
         }

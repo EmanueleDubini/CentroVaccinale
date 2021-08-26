@@ -242,7 +242,7 @@ public interface ServerCVI extends Remote {
      *
      * @throws RemoteException RemoteException
      */
-    boolean verificaIdVaccinazione(String idVaccinazioneRegistrato, String nomeCentroVaccinale) throws RemoteException, SQLException;
+    boolean verificaIdVaccinazione(String nomeRegistrato, String CognomeRegistrato, String cfRegistrato, String idVaccinazioneRegistrato, String nomeCentroVaccinale) throws RemoteException, SQLException;
 
     /**
      * Metodo <code>verificaEventoAvverso</code> che verifica se un utente ha gia inserito un avento avverso all'interno del database

@@ -580,7 +580,6 @@ public class ClientCVController implements Initializable {
 
     public void inserisciCodiceFiscaleCT_Debug(ActionEvent actionEvent) {
         Random randomGenerator = new Random();
-        int eta = randomGenerator.nextInt(30) + 20;
 
         LastNameGenerator lastNameGenerator = new LastNameGenerator();
         String cognome = (String)lastNameGenerator.generate();

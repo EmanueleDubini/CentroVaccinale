@@ -580,7 +580,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      * @throws SQLException SQLException
      */
     @Override
-    public synchronized boolean verificaIdVaccinazione(String idVaccinazioneRegistrato, String nomeCentroVaccinale) throws RemoteException, SQLException {
+    public synchronized boolean verificaIdVaccinazione(String nomeRegistrato, String cognomeRegistrato, String cfRegistrato, String idVaccinazioneRegistrato, String nomeCentroVaccinale) throws RemoteException, SQLException {
         nomeCentroVaccinale = nomeCentroVaccinale.replaceAll(" ", "_");
         String vaccinati_table = "vaccinati_" + nomeCentroVaccinale;
 
@@ -588,15 +588,18 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         Statement statement = DbHelper.getStatement();
         ResultSet rsSum = statement.executeQuery("SELECT COUNT (*) AS conta " +
                 "FROM " + vaccinati_table +
-                " WHERE idvaccinazione = " + "'" + idVaccinazioneRegistrato + "'");
+                " WHERE idvaccinazione = " + "'" + idVaccinazioneRegistrato + "' AND " +
+                "nomeCittadino = " + "'" + nomeRegistrato + "' AND " +
+                "cognomeCittadino = " + "'" + cognomeRegistrato + "' AND " +
+                "codicefiscale = " + "'" + cfRegistrato + "'");
 
         int conta = 0;
         while (rsSum.next()) {
             conta = rsSum.getInt("conta");
         }
 
-        if(conta > 0){
-            // è stato trovato qualcosa nel result set quindi l'id utente è presente
+        if(conta == 0){
+            // è stato trovato nel result set il cittadino quindi l'id utente è presente
             return true;
         }else{
             // se conta è ancora zero vuol dire che l'id di vaccinazione non è presente nei sistemi

@@ -66,6 +66,7 @@ public class DbHelper {
     /**
      * Restituisce lo statement della connessione
      * @throws SQLException SQLException
+     * @return statement
      */
     public static Statement getStatement() throws SQLException {
 
@@ -80,6 +81,7 @@ public class DbHelper {
 
     /**
      * Restituisce url della connessione
+     * @return stringa che contiene il campo url
      */
     public static String getUrl() {
         return url;
@@ -87,6 +89,7 @@ public class DbHelper {
 
     /**
      * Restituisce username della connessione
+     * @return stringa che contiene il campo username
      */
     public static String getUsername() {
         return username;
@@ -94,6 +97,7 @@ public class DbHelper {
 
     /**
      * Restituisce la password della connessione
+     * @return stringa che contiene il campo password
      */
     public static String getPassword() {
         return password;
@@ -101,6 +105,7 @@ public class DbHelper {
 
     /**
      * Restituisce l'indirizzo del DB
+     * @return stringa che contiene il campo dbAddress
      */
     public static String getDbAddress() {
         return dbAddress;

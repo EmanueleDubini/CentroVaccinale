@@ -25,7 +25,14 @@ public class QueryDebug {
     public QueryDebug() { }
 
     // DATABASE (solo debug)
+    /**
+     * Crea il databsase se non esiste
+     */
     public static String createDB = "CREATE DATABASE IF NOT EXISTS centrivaccinalidb";
+
+    /**
+     * elimina il databsase se non esiste
+     */
     public static String dropDB = "DROP DATABASE IF EXISTS centrivaccinalidb";
 
     // STRINGHE PER CREARE LE TABELLE nel DB

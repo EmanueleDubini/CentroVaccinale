@@ -17,14 +17,40 @@ import java.io.Serializable;
  * Le sue istanze rappresentano un <strong>Indirizzo</strong>
  */
 public class Indirizzo implements Serializable {
-
+    /**
+     * serialVersionUID per la serializzazione
+     */
     @Serial
     private static final long serialVersionUID = 1;
+
+    /**
+     * qualificatore dell'indirizzo
+     */
     private Qualificatore qualificatore;
+
+    /**
+     * nome dell'indirizzo
+     */
     private String nome;
+
+    /**
+     * numero civico dell'inidirzzo
+     */
     private String numeroCivico;
+
+    /**
+     * comune di residenza
+     */
     private String comune;
+
+    /**
+     * cap dell'indirizzo
+     */
     private int cap;
+
+    /**
+     * provincia dell'indirizzo
+     */
     private String prov;
 
     /**
