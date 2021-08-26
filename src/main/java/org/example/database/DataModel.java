@@ -105,8 +105,9 @@ public class DataModel {
 
         ComuneGenerator comuneGen = new ComuneGenerator();
         DateGenerator dateGenerator = new DateGenerator();  //Generatore di date
+        CalcolaCodiceFiscale calcolaCodiceFiscale = new CalcolaCodiceFiscale();
 
-        String codiceFiscale = CalcolaCodiceFiscale.calcolaCf(cognome, nome, sesso, dateGenerator.generate(), CalcolaCodiceFiscale.toCodiceErariale((String)comuneGen.generate()));//todo creare generatore della data
+        String codiceFiscale = CalcolaCodiceFiscale.calcolaCf(cognome, nome, sesso, dateGenerator.generate(), calcolaCodiceFiscale.toCodiceErariale((String)comuneGen.generate()));//todo creare generatore della data
 
         EmailGenerator emailGenerator = new EmailGenerator(nome,cognome); // Crea un email univoco collegato al nome e cognome del cittadino generato
         String email = emailGenerator.generate();

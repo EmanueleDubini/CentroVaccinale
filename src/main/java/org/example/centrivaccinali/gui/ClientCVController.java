@@ -598,7 +598,8 @@ public class ClientCVController implements Initializable {
 
         ComuneGenerator comuneGen = new ComuneGenerator();
         DateGenerator dateGenerator = new DateGenerator();
-        String codiceFiscale = CalcolaCodiceFiscale.calcolaCf(cognome, nome, sesso, dateGenerator.generate(), CalcolaCodiceFiscale.toCodiceErariale((String)comuneGen.generate()));
+        CalcolaCodiceFiscale calcolaCodiceFiscale = new CalcolaCodiceFiscale();
+        String codiceFiscale = CalcolaCodiceFiscale.calcolaCf(cognome, nome, sesso, dateGenerator.generate(), calcolaCodiceFiscale.toCodiceErariale((String)comuneGen.generate()));
         TextFieldCodicefiscaleCT.setText(codiceFiscale);
     }
 

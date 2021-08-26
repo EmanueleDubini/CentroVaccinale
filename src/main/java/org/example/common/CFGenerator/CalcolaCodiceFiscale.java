@@ -10,9 +10,11 @@
 
 package org.example.common.CFGenerator;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
+import org.example.centrivaccinali.gui.ClientCVMain;
+
+import java.io.*;
+import java.net.URI;
+import java.net.URL;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.regex.Pattern;
@@ -433,14 +435,15 @@ public class CalcolaCodiceFiscale {
      *
      * @return String - La stringa con il codice erariale
      */
-    public static String toCodiceErariale(String comune){
+    public String toCodiceErariale(String comune){
 
         String s=comune.toUpperCase();
         String letturaFile;
 
-        File file = new File("src/main/java/org/example/common/CFGenerator/codiciErariali");
+        InputStream codiciErarialiInputStream = ClientCVMain.class.getResourceAsStream("codicierariali.csv");
+
         try(
-                BufferedReader bufferedReader = new BufferedReader(new FileReader(file))){
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(codiciErarialiInputStream))){
             while((letturaFile = bufferedReader.readLine()) != null){ //leggo una riga alla volta scorrendo il file
                 String[] chiaveValore = letturaFile.split(";"); // spezzo la stringa letta in due
                 if(chiaveValore[0].equals(s)){
@@ -448,7 +451,7 @@ public class CalcolaCodiceFiscale {
                 }
             }
         } catch (Exception e) {
-            System.err.println("File: codiciErariali non trovato");
+            System.err.println("File: codicierariali.csv non trovato");
             e.printStackTrace();
         }
         throw new IllegalArgumentException("il comune inserito per la generazione del codice fiscale è errato");
