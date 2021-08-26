@@ -13,8 +13,6 @@ package org.example.common.CFGenerator;
 import org.example.centrivaccinali.gui.ClientCVMain;
 
 import java.io.*;
-import java.net.URI;
-import java.net.URL;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.regex.Pattern;
