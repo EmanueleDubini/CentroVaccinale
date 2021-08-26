@@ -11,7 +11,6 @@
 package org.example.common.CFGenerator;
 
 import org.example.centrivaccinali.gui.ClientCVMain;
-
 import java.io.*;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -454,5 +453,5 @@ public class CalcolaCodiceFiscale {
         }
         throw new IllegalArgumentException("il comune inserito per la generazione del codice fiscale è errato");
     }
-}
+}//End_Class
 
