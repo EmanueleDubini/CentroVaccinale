@@ -598,7 +598,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
             conta = rsSum.getInt("conta");
         }
 
-        if(conta == 0){
+        if(conta == 1){
             // è stato trovato nel result set il cittadino quindi l'id utente è presente
             return true;
         }else{
