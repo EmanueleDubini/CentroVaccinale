@@ -434,10 +434,15 @@ public class ClientCVController implements Initializable {
 
             dataVaccinazioneCV = selectDateCV();
 
-            //String id = UUID.randomUUID().toString();
             Boolean verify = stub.registraVaccinato(idCentroVaccinale, nomeCvCT, cognomeCT, nomeCT, codiceFiscaleCT, dataVaccinazioneCV, vaccinoSomministratoCT, idVaccinazioneCT);
             if (verify) {
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Info");
+                alert.setHeaderText("Operazione effettuata correttamente");
+                alert.setContentText("Cittadino registrato correttamente\n");
                 resetInserimentoCT();
+
+                alert.showAndWait();
             }
         }
 
