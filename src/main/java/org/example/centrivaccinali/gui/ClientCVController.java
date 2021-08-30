@@ -319,11 +319,16 @@ public class ClientCVController implements Initializable {
             alert.showAndWait();
         } else {
 
-
             String id = UUID.randomUUID().toString();
             Boolean verify = stub.registraCentroVaccinale(id, nomeCV, qualificatoreVia , nomeVia, numeroCivico, ProgUtili.capitalize(comune), provincia, cap, tipologiaCV);
+
             if (verify) {
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Info");
+                alert.setHeaderText("Operazione effettuata correttamente");
+                alert.setContentText("Centro Vaccinale registrato correttamente\n");
                 resetInserimentoCV();
+                alert.showAndWait();
             }
         }
         //todo, prima di inserire nel database il centro vaccinale, fare una lettura da db con query per evitare che il cv sia già stato registrato

@@ -67,6 +67,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      */
     @Override
     public synchronized Boolean registraCentroVaccinale(String id, String nomeCV, String qualificatore, String indirizzo, String numeroCivico, String comune, String provincia, String cap, String tipologia) throws SQLException {
+        nomeCV = nomeCV.replaceAll("'", "");
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
         statement.executeUpdate("INSERT INTO centrivaccinali " +
