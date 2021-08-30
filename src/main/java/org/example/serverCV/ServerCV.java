@@ -585,7 +585,15 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     @Override
     public synchronized boolean verificaIdVaccinazione(String nomeRegistrato, String cognomeRegistrato, String cfRegistrato, String idVaccinazioneRegistrato, String nomeCentroVaccinale) throws RemoteException, SQLException {
         nomeCentroVaccinale = nomeCentroVaccinale.replaceAll(" ", "_");
+        System.out.println(nomeCentroVaccinale);
+        System.out.println(idVaccinazioneRegistrato);
+        System.out.println(nomeRegistrato);
+        System.out.println(cognomeRegistrato);
+        System.out.println(cfRegistrato);
+
         String vaccinati_table = "vaccinati_" + nomeCentroVaccinale;
+
+        System.out.println(vaccinati_table);
 
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
@@ -600,7 +608,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         while (rsSum.next()) {
             conta = rsSum.getInt("conta");
         }
-
+        System.out.println(conta);
         if(conta == 1){
             // è stato trovato nel result set il cittadino quindi l'id utente è presente
             return true;

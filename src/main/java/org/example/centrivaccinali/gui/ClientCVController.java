@@ -227,12 +227,12 @@ public class ClientCVController implements Initializable {
 
     public void generaCentroVaccinale() throws RemoteException, SQLException {
         ////////////// campi registrazione CV //////////////
-        nomeCV = textFieldNomeCentrovaccinale.getText().toLowerCase(); //non richiede controlli
+        nomeCV = textFieldNomeCentrovaccinale.getText().toLowerCase().strip(); //non richiede controlli
         tipologiaCV = tipologiaCheckBox.getValue(); //non richiede controlli
         qualificatoreVia = qualificatoreIndirizzoCheckBox.getValue(); //non richiede controlli
-        nomeVia = textFieldNomeVia.getText();
+        nomeVia = textFieldNomeVia.getText().strip();
         numeroCivico = textFieldNumeroCivico.getText();
-        comune = textFieldComune.getText().toLowerCase();  //corregge il fatto che magari venga inserito 'cErMeNate' e diventa 'cermenate'
+        comune = textFieldComune.getText().toLowerCase().strip();  //corregge il fatto che magari venga inserito 'cErMeNate' e diventa 'cermenate'
         provincia = textFieldProvincia.getText().toUpperCase(); //se viene scritto il cap minusciolo viene letto come maiuscolo
         cap = textFieldCap.getText();
 
@@ -370,8 +370,8 @@ public class ClientCVController implements Initializable {
 
         //nomeCvCT = TextFieldNomeCentrovaccinaleCT.getText().toLowerCase().strip();
         nomeCvCT = nomeCentroComboBox.getValue();
-        nomeCT = TextFieldNomeVaccinatoCT.getText();    //non servono controlli
-        cognomeCT = TextFieldCognomeVaccinatoCT.getText();  //non servono controlli
+        nomeCT = TextFieldNomeVaccinatoCT.getText().strip();    //non servono controlli
+        cognomeCT = TextFieldCognomeVaccinatoCT.getText().strip();  //non servono controlli
         codiceFiscaleCT = TextFieldCodicefiscaleCT.getText().toUpperCase().strip();             //Strip() rimuove spazi all'inizio e alla fine del testo inserito
         vaccinoSomministratoCT = TipologiaVaccinoCheckBox.getValue();      //non servono controlli
         idVaccinazioneCT =  TextFieldIdVaccinazioneCT.getText().strip();
