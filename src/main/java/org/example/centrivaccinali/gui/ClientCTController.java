@@ -301,7 +301,7 @@ public class ClientCTController  implements Initializable{
      * Resituisce un messaggio di errore nel caso in cui i campi inseriti dall'utente
      * non siano corretti
      */
-    public void GeneraCittadinoRegistrato(ActionEvent actionEvent) throws SQLException, RemoteException {
+    public void GeneraCittadinoRegistrato(ActionEvent actionEvent) throws SQLException, IOException {
         ////////////// campi registrazione Cittadino //////////////
         nomeRegistrato = TextFieldNomeVaccinato.getText().strip();
         cognomeRegistrato = TextFieldCognomeVaccinato.getText().strip();
@@ -383,7 +383,13 @@ public class ClientCTController  implements Initializable{
         else {
             Boolean verify = stub.registraCittadino(cfRegistrato, cognomeRegistrato, nomeRegistrato, emailRegistrato, usernameRegistrato, passwordRegistrato, idVaccinazioneRegistrato, nomeCentroVaccinale);
             if(verify) {
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Info");
+                alert.setHeaderText("Operazione effettuata correttamente");
+                alert.setContentText("Ti sei registrato correttamente\n");
                 resetInserimentoRegistrazione();
+                alert.showAndWait();
+                to_02CT_MainWindow();
             }
         }
     }
