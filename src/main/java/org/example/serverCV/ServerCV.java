@@ -519,12 +519,12 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
                                                        int crisi_ipertensiva, String crisi_ipertensiva_note) throws SQLException {
 
         //Sostituiamo tutti gli apostrofi "'" con un carattere nullo, per evitare problemi nell'interimento
-        mal_di_testa_note = mal_di_testa_note.replaceAll("'", "");
-        febbre_note = febbre_note.replaceAll("'", "");
-        dolori_muscolari_e_articolari_note = dolori_muscolari_e_articolari_note.replaceAll("'", "");
-        tachicardia_note = tachicardia_note.replaceAll("'", "");
-        linfoadenopatia_note = linfoadenopatia_note.replaceAll("'", "");
-        crisi_ipertensiva_note = crisi_ipertensiva_note.replaceAll("'", "");
+        mal_di_testa_note = mal_di_testa_note.replaceAll("'", " ");
+        febbre_note = febbre_note.replaceAll("'", " ");
+        dolori_muscolari_e_articolari_note = dolori_muscolari_e_articolari_note.replaceAll("'", " ");
+        tachicardia_note = tachicardia_note.replaceAll("'", " ");
+        linfoadenopatia_note = linfoadenopatia_note.replaceAll("'", " ");
+        crisi_ipertensiva_note = crisi_ipertensiva_note.replaceAll("'", " ");
 
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
