@@ -352,7 +352,8 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      * @throws ArithmeticException ArithmeticException
      */
     public synchronized double[] getAvg_Nsegnalazioni(String idCentroVaccinale) throws RemoteException, SQLException, ArithmeticException {
-        System.out.println(idCentroVaccinale);
+        //DEBUG System.out.println(idCentroVaccinale);
+
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
         ResultSet rsSum = statement.executeQuery("SELECT SUM(mal_di_testa + febbre + dolori_muscolari_e_articolari + tachicardia + linfoadenopatia + crisi_ipertensiva) AS somma, COUNT (*) AS conta " +
@@ -517,6 +518,13 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
                                                        int linfoadenopatia, String linfoadenopatia_note,
                                                        int crisi_ipertensiva, String crisi_ipertensiva_note) throws SQLException {
 
+        //Sostituiamo tutti gli apostrofi "'" con un carattere nullo, per evitare problemi nell'interimento
+        mal_di_testa_note = mal_di_testa_note.replaceAll("'", "");
+        febbre_note = febbre_note.replaceAll("'", "");
+        dolori_muscolari_e_articolari_note = dolori_muscolari_e_articolari_note.replaceAll("'", "");
+        tachicardia_note = tachicardia_note.replaceAll("'", "");
+        linfoadenopatia_note = linfoadenopatia_note.replaceAll("'", "");
+        crisi_ipertensiva_note = crisi_ipertensiva_note.replaceAll("'", "");
 
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
@@ -527,7 +535,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
                 + "'" + dolori_muscolari_e_articolari_note + "'," + "'" + tachicardia + "'," + "'" + tachicardia_note + "'," + "'" + linfoadenopatia + "'," + "'" + linfoadenopatia_note +
                 "'," + "'" + crisi_ipertensiva +"'," + "'" + crisi_ipertensiva_note +"'" + ")");
 
-        System.out.println("SERVER: inserisciEventiAvversi() eseguito correttamente");
+        //DEBUG System.out.println("SERVER: inserisciEventiAvversi() eseguito correttamente");
         return true;
     }
 
@@ -585,15 +593,16 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     @Override
     public synchronized boolean verificaIdVaccinazione(String nomeRegistrato, String cognomeRegistrato, String cfRegistrato, String idVaccinazioneRegistrato, String nomeCentroVaccinale) throws RemoteException, SQLException {
         nomeCentroVaccinale = nomeCentroVaccinale.replaceAll(" ", "_");
-        System.out.println(nomeCentroVaccinale);
-        System.out.println(idVaccinazioneRegistrato);
-        System.out.println(nomeRegistrato);
-        System.out.println(cognomeRegistrato);
-        System.out.println(cfRegistrato);
+
+        //DEBUG System.out.println(nomeCentroVaccinale);
+        //DEBUG System.out.println(idVaccinazioneRegistrato);
+        //DEBUG System.out.println(nomeRegistrato);
+        //DEBUG System.out.println(cognomeRegistrato);
+        //DEBUG System.out.println(cfRegistrato);
 
         String vaccinati_table = "vaccinati_" + nomeCentroVaccinale;
 
-        System.out.println(vaccinati_table);
+        //DEBUG System.out.println(vaccinati_table);
 
         DbHelper.getConnection();
         Statement statement = DbHelper.getStatement();
@@ -608,7 +617,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         while (rsSum.next()) {
             conta = rsSum.getInt("conta");
         }
-        System.out.println(conta);
+        //DEBUG System.out.println(conta);
         if(conta == 1){
             // è stato trovato nel result set il cittadino quindi l'id utente è presente
             return true;
