@@ -100,6 +100,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         nome = nome.replaceAll("'", "");
 
         nomeCV = nomeCV.replaceAll(" ", "_");
+        nomeCV = nomeCV.replaceAll("\\.","_");
         String vaccinati_table = "vaccinati_" + nomeCV;
 
         DbHelper.getConnection();
@@ -175,7 +176,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
                 "(codicefiscale, cognomecittadino, nomecittadino, email, username, password, idvaccinazione, idCentroVaccinale)" +
                 "VALUES(" + "'" + codicefiscale + "'," + "'" + cognome + "'," + "'" + nome + "'," + "'" + email + "'," + "'" + username + "'," + "'" + password + "'," + "'" + idVaccinazione + "'," + "'" + idCentroVaccinale + "'" + ")");
 
-        System.out.println("SERVER: registraCittadino() eseguito correttamente");
+        //DEBUG System.out.println("SERVER: registraCittadino() eseguito correttamente");
         return true;
     }
 
@@ -593,6 +594,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     @Override
     public synchronized boolean verificaIdVaccinazione(String nomeRegistrato, String cognomeRegistrato, String cfRegistrato, String idVaccinazioneRegistrato, String nomeCentroVaccinale) throws RemoteException, SQLException {
         nomeCentroVaccinale = nomeCentroVaccinale.replaceAll(" ", "_");
+        nomeCentroVaccinale = nomeCentroVaccinale.replaceAll("\\.", "_");
 
         //DEBUG System.out.println(nomeCentroVaccinale);
         //DEBUG System.out.println(idVaccinazioneRegistrato);
