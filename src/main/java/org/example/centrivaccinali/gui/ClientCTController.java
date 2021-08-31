@@ -489,9 +489,9 @@ public class ClientCTController  implements Initializable{
 
             alert.showAndWait();
         } //END_if*/
-        if (note1.length() > 255 || note2.length() > 255 ||
-                note3.length() > 255 || note4.length() > 255 ||
-                note5.length() > 255 || note6.length() > 255) {
+        if (note1.length() > 256 || note2.length() > 256 ||
+                note3.length() > 256 || note4.length() > 256 ||
+                note5.length() > 256 || note6.length() > 256) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
             alert.setHeaderText("Si è verificato un Errore");
