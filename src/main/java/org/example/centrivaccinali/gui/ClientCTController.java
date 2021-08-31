@@ -485,11 +485,20 @@ public class ClientCTController  implements Initializable{
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
             alert.setHeaderText("Si è verificato un Errore");
-            alert.setContentText("Campi utili per la registrazione mancanti.\nRiprovare");
+            alert.setContentText("Dati non validi.\nRiprovare");
 
             alert.showAndWait();
         } //END_if*/
-        else {
+        if (note1.length() > 255 || note2.length() > 255 ||
+                note3.length() > 255 || note4.length() > 255 ||
+                note5.length() > 255 || note6.length() > 255) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Si è verificato un Errore");
+            alert.setContentText("Hai inserito troppi caratteri nelle note.\nMassimo 256 caratteri per nota");
+
+            alert.showAndWait();
+        }  else {
             //Ottiene idCentroVaccinale in base a username e psw inseriti nella schermata di login
             //DEBUG System.out.println(copiaPassword + " " + copiaPassword);
             String idCentroVaccinale = stub.getIdCentroVaccinale(copiaUsername, copiaPassword);
