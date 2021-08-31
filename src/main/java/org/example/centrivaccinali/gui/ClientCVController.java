@@ -233,7 +233,7 @@ public class ClientCVController implements Initializable {
         nomeVia = textFieldNomeVia.getText().strip();
         numeroCivico = textFieldNumeroCivico.getText();
         comune = textFieldComune.getText().toLowerCase().strip();  //corregge il fatto che magari venga inserito 'cErMeNate' e diventa 'cermenate'
-        provincia = textFieldProvincia.getText().toUpperCase(); //se viene scritto il cap minusciolo viene letto come maiuscolo
+        provincia = textFieldProvincia.getText().toUpperCase().strip(); //se viene scritto il cap minusciolo viene letto come maiuscolo
         cap = textFieldCap.getText();
 
 
