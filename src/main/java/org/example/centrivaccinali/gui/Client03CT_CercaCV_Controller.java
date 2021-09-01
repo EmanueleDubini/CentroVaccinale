@@ -37,7 +37,9 @@ import static org.example.centrivaccinali.gui.IpServerCheck_Controller.stub;
  * Classe controller dedicata alla ricerca delle informazioni sui Centri Vaccinali
  */
 public class Client03CT_CercaCV_Controller implements Initializable {
-
+    /**
+     * TextField nome da ricercare
+     */
     @FXML
     public TextField nomeDaRicercare;
     /**
@@ -45,6 +47,9 @@ public class Client03CT_CercaCV_Controller implements Initializable {
      */
     @FXML
     public Label CVNameLable;
+    /**
+     * Label tipologia
+     */
     @FXML
     public Label TipologiaLabel;
     /**
@@ -57,8 +62,14 @@ public class Client03CT_CercaCV_Controller implements Initializable {
      */
     @FXML
     public VBox chosenCV;
+    /**
+     * Label indirizzo
+     */
     @FXML
     public Label IndirizzoLabel;
+    /**
+     * Label id centro Vaccinale
+     */
     @FXML
     public Label idCentroVacinaleLabel;
     /**
@@ -66,8 +77,14 @@ public class Client03CT_CercaCV_Controller implements Initializable {
      */
     @FXML
     public GridPane grid = new GridPane();
+    /**
+     * Label via
+     */
     @FXML
     public Label ViaLabel;
+    /**
+     * HBox ricerca nome
+     */
     @FXML
     public HBox ricercaNome;
     /**
@@ -75,6 +92,9 @@ public class Client03CT_CercaCV_Controller implements Initializable {
      */
     @FXML
     public Button bottoneRicercaNome;
+    /**
+     * HBox ricerca per comune e tipologia
+     */
     @FXML
     public HBox ricercaComuneTipolgia;
     /**
@@ -94,6 +114,9 @@ public class Client03CT_CercaCV_Controller implements Initializable {
      */
     @FXML
     public Label nSegnalazioni;
+    /**
+     * Label severitá media
+     */
     @FXML
     public Label labelSeveritaMedia;
 

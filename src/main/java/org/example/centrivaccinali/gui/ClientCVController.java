@@ -41,6 +41,9 @@ public class ClientCVController implements Initializable {
 
     @FXML
     public ComboBox<String> tipologiaCheckBox = new ComboBox<>();
+    /**
+     * ComboBox qualificatore indirizzo
+     */
     @FXML
     public ComboBox<String> qualificatoreIndirizzoCheckBox = new ComboBox<>();
     @FXML
@@ -49,6 +52,9 @@ public class ClientCVController implements Initializable {
     public TextField textFieldNomeVia;
     @FXML
     public TextField textFieldNumeroCivico;
+    /**
+     * TextField comune
+     */
     @FXML
     public TextField textFieldComune;
     @FXML
