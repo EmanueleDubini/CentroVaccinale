@@ -613,7 +613,6 @@ public class ClientCVController implements Initializable {
 
                 //chiaveValore[0] = Provincia, chiaveValore[1] = comune, chiavevalore[2] = CAP
 
-                System.out.println(chiaveValore[2]);
                 if(chiaveValore[2].contains("xx") || chiaveValore[2].contains("x")){
                     if(chiaveValore[2].substring(0,2).equalsIgnoreCase(cap.substring(0,2))){
                         return true;
