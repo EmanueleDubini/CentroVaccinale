@@ -7115,39 +7115,39 @@ TP,Santa Ninfa,91029
 TP,Trapani,91100
 TP,Valderice,91019
 TP,Vita,91010
-TR,Acquasparta,5021
-TR,Allerona,5011
-TR,Alviano,5020
-TR,Amelia,5022
-TR,Arrone,5031
-TR,Attigliano,5012
-TR,Avigliano Umbro,5020
-TR,Baschi,5023
-TR,Calvi dell'Umbria,5032
-TR,Castel Giorgio,5013
-TR,Castel Viscardo,5014
-TR,Fabro,5015
-TR,Ferentillo,5034
-TR,Ficulle,5016
-TR,Giove,5024
-TR,Guardea,5025
-TR,Lugnano in Teverina,5020
-TR,Montecastrilli,5026
-TR,Montecchio,5020
-TR,Montefranco,5030
-TR,Montegabbione,5010
-TR,Monteleone d'Orvieto,5017
-TR,Narni,5035
-TR,Orvieto,5018
-TR,Otricoli,5030
-TR,Parrano,5010
-TR,Penna in Teverina,5028
-TR,Polino,5030
-TR,Porano,5010
-TR,San Gemini,5029
-TR,San Venanzo,5010
-TR,Stroncone,5039
-TR,Terni,5100
+TR,Acquasparta,05021
+TR,Allerona,05011
+TR,Alviano,05020
+TR,Amelia,05022
+TR,Arrone,05031
+TR,Attigliano,05012
+TR,Avigliano Umbro,05020
+TR,Baschi,05023
+TR,Calvi dell'Umbria,05032
+TR,Castel Giorgio,05013
+TR,Castel Viscardo,05014
+TR,Fabro,05015
+TR,Ferentillo,05034
+TR,Ficulle,05016
+TR,Giove,05024
+TR,Guardea,05025
+TR,Lugnano in Teverina,05020
+TR,Montecastrilli,05026
+TR,Montecchio,05020
+TR,Montefranco,05030
+TR,Montegabbione,05010
+TR,Monteleone d'Orvieto,05017
+TR,Narni,05035
+TR,Orvieto,05018
+TR,Otricoli,05030
+TR,Parrano,05010
+TR,Penna in Teverina,05028
+TR,Polino,05030
+TR,Porano,05010
+TR,San Gemini,05029
+TR,San Venanzo,05010
+TR,Stroncone,05039
+TR,Terni,05100
 TS,Duino-Aurisina,34011
 TS,Monrupino,34016
 TS,Muggia,34015
@@ -7952,94 +7952,94 @@ VR,Villa Bartolomea,37049
 VR,Villafranca di Verona,37069
 VR,Zevio,37059
 VR,Zimella,37040
-VS,Arbus,9031
-VS,Barumini,9021
-VS,Collinas,9020
-VS,Furtei,9040
-VS,Genuri,9020
-VS,Gesturi,9020
-VS,Gonnosfanadiga,9035
-VS,Guspini,9036
-VS,Las Plassas,9020
-VS,Lunamatrona,9022
-VS,Pabillonis,9030
-VS,Pauli Arbarei,9020
-VS,Samassi,9030
-VS,San Gavino Monreale,9037
-VS,Sanluri,9025
-VS,Sardara,9030
-VS,Segariu,9040
-VS,Serramanna,9038
-VS,Serrenti,9027
-VS,Setzu,9029
-VS,Siddi,9020
-VS,Tuili,9029
-VS,Turri,9020
-VS,Ussaramanna,9020
-VS,Villacidro,9039
-VS,Villamar,9020
-VS,Villanovaforru,9020
-VS,Villanovafranca,9020
-VT,Acquapendente,1021
-VT,Arlena di Castro,1010
-VT,Bagnoregio,1022
-VT,Barbarano Romano,1010
-VT,Bassano in Teverina,1030
-VT,Bassano Romano,1030
-VT,Blera,1010
-VT,Bolsena,1023
-VT,Bomarzo,1020
-VT,Calcata,1030
-VT,Canepina,1030
-VT,Canino,1011
-VT,Capodimonte,1010
-VT,Capranica,1012
-VT,Caprarola,1032
-VT,Carbognano,1030
-VT,Castel Sant'Elia,1030
-VT,Castiglione in Teverina,1024
-VT,Celleno,1020
-VT,Cellere,1010
-VT,Civita Castellana,1033
-VT,Civitella d'Agliano,1020
-VT,Corchiano,1030
-VT,Fabrica di Roma,1034
-VT,Faleria,1030
-VT,Farnese,1010
-VT,Gallese,1035
-VT,Gradoli,1010
-VT,Graffignano,1020
-VT,Grotte di Castro,1025
-VT,Ischia di Castro,1010
-VT,Latera,1010
-VT,Lubriano,1020
-VT,Marta,1010
-VT,Montalto di Castro,1014
-VT,Monte Romano,1010
-VT,Montefiascone,1027
-VT,Monterosi,1030
-VT,Nepi,1036
-VT,Onano,1010
-VT,Oriolo Romano,1010
-VT,Orte,1028
-VT,Piansano,1010
-VT,Proceno,1020
-VT,Ronciglione,1037
-VT,San Lorenzo Nuovo,1020
-VT,Soriano nel Cimino,1038
-VT,Sutri,1015
-VT,Tarquinia,1016
-VT,Tessennano,1010
-VT,Tuscania,1017
-VT,Valentano,1018
-VT,Vallerano,1030
-VT,Vasanello,1030
-VT,Vejano,1010
-VT,Vetralla,1019
-VT,Vignanello,1039
-VT,Villa San Giovanni in Tuscia,1010
-VT,Viterbo,1100
-VT,Vitorchiano,1030
+VS,Arbus,09031
+VS,Barumini,09021
+VS,Collinas,09020
+VS,Furtei,09040
+VS,Genuri,09020
+VS,Gesturi,09020
+VS,Gonnosfanadiga,09035
+VS,Guspini,09036
+VS,Las Plassas,09020
+VS,Lunamatrona,09022
+VS,Pabillonis,09030
+VS,Pauli Arbarei,09020
+VS,Samassi,09030
+VS,San Gavino Monreale,09037
+VS,Sanluri,09025
+VS,Sardara,09030
+VS,Segariu,09040
+VS,Serramanna,09038
+VS,Serrenti,09027
+VS,Setzu,09029
+VS,Siddi,09020
+VS,Tuili,09029
+VS,Turri,09020
+VS,Ussaramanna,09020
+VS,Villacidro,09039
+VS,Villamar,09020
+VS,Villanovaforru,09020
+VS,Villanovafranca,09020
+VT,Acquapendente,01021
+VT,Arlena di Castro,01010
+VT,Bagnoregio,01022
+VT,Barbarano Romano,01010
+VT,Bassano in Teverina,01030
+VT,Bassano Romano,01030
+VT,Blera,01010
+VT,Bolsena,01023
+VT,Bomarzo,01020
+VT,Calcata,01030
+VT,Canepina,01030
+VT,Canino,01011
+VT,Capodimonte,01010
+VT,Capranica,01012
+VT,Caprarola,01032
+VT,Carbognano,01030
+VT,Castel Sant'Elia,01030
+VT,Castiglione in Teverina,01024
+VT,Celleno,01020
+VT,Cellere,01010
+VT,Civita Castellana,01033
+VT,Civitella d'Agliano,01020
+VT,Corchiano,01030
+VT,Fabrica di Roma,01034
+VT,Faleria,01030
+VT,Farnese,01010
+VT,Gallese,01035
+VT,Gradoli,01010
+VT,Graffignano,01020
+VT,Grotte di Castro,01025
+VT,Ischia di Castro,01010
+VT,Latera,01010
+VT,Lubriano,01020
+VT,Marta,01010
+VT,Montalto di Castro,01014
+VT,Monte Romano,01010
+VT,Montefiascone,01027
+VT,Monterosi,01030
+VT,Nepi,01036
+VT,Onano,01010
+VT,Oriolo Romano,01010
+VT,Orte,01028
+VT,Piansano,01010
+VT,Proceno,01020
+VT,Ronciglione,01037
+VT,San Lorenzo Nuovo,01020
+VT,Soriano nel Cimino,01038
+VT,Sutri,01015
+VT,Tarquinia,01016
+VT,Tessennano,01010
+VT,Tuscania,01017
+VT,Valentano,01018
+VT,Vallerano,01030
+VT,Vasanello,01030
+VT,Vejano,01010
+VT,Vetralla,01019
+VT,Vignanello,01039
+VT,Villa San Giovanni in Tuscia,01010
+VT,Viterbo,01100
+VT,Vitorchiano,01030
 VV,Acquaro,89832
 VV,Arena,89832
 VV,Briatico,89817
