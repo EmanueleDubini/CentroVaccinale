@@ -242,11 +242,10 @@ public class ClientCTController  implements Initializable{
         Platform.exit();
     }
 
-
     /**
      * Questo metodo crea un messaggio di Alert che restituisce informazioni riguardanti il progetto
      */
-    public void guida(){
+    public void guida() {
         Alert info = new Alert(Alert.AlertType.NONE,
                 """
                         'Centro Vaccinale' - Client CV
