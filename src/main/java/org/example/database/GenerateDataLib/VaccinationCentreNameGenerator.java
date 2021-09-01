@@ -22,11 +22,37 @@ public class VaccinationCentreNameGenerator extends GeneratorWrapperBase<String>
     /**
      * I più comuni centri vaccinali negli Stati Uniti
      */
-    private static final String[] names = new String[] { "Memory Centre", //todo aggiungere altri centri, sarebbe più giusto metterli tutti in italiano e corti
-            "Jeewan Nursing",
-             "Medlife Hospital", "NKS Hospital",
-            "Sanjeevan Hospital", "Sant Hospital", "Kolmet Hospital",
-            "Apex Hospital", "Bedok Centre",
+    private static final String[] names = new String[] { "San Raffaele", //todo aggiungere altri centri, sarebbe più giusto metterli tutti in italiano e corti
+            "Sant Anna", "Synlab", "Centro San Paolo",
+            "Fatebenefratelli", "Valduce", "Humanitas",
+            "Niguarda", "San Matteo", "Luigi Sacco",
+            "San Gerardo", "San Donato", "Sacro Cuore",
+            "San Bassiano", "Ospedale di Cittadella", "ASST Lariana",
+            "Ospedale Maggiore", "Santa Maria Nuova", "Arpa Lazio",
+            "ASL", "Guido Salvini", "Villa Aprica",
+            "Villa Maria Pia", "Civico Chivasso", "Policlinico di Monza",
+            "Policlinico Ambrosiano", "Santa Croce SRL", "Villa Grazia",
+            "Beata Vergine Consolata", "Ospedale degli infermi", "Istituto Stomatologico",
+            "San Carlo", "Istituiti Clinici Zucchi", "Policlinico San Marco",
+            "Villa delle Terme", "Spedali Riuniti", "Ospedale Fiorentino",
+            "Civile Ferrari", "Clinica Lami", "Polo Ospedaliero",
+            "Villa Immacolata", "San Pietro", "San Paolo",
+            "San Gennaro", "Santa Rita da Cascia", "Sant Eugenio",
+            "Santo Volto", "Padre Pio", "Villa delle Querce",
+            "Bambino Gesù", "San Camillo", "Bernardini",
+            "Martina Franca", "Monopoli", "Villa dei Gerani",
+            "Serra San Bruno", "Villa Caminiti", "Giovanni Paolo II",
+            "casa di cura Torina", "Guzzardi Vittoria", "Rizza",
+            "Villa Rizzo", "Arnas Garibaldi", "Paolo Merlo la Maddalena",
+            "Tommasini", "Trinità", "Kinetika",
+            "Santa Barbara", "San Giovanni", "San Vito",
+            "Santa Sofia", "Vittorio Emanuele II", "Del Garda",
+            "Santo Spirito", "della Francia corta", "Rivoli",
+            "Cellini", "Promea", "Amedeo di Savoia",
+            "Gradenigo", "Pinerolo", "Madonna dei boschi",
+            "Santa Maria degli Incurabili", "Salvatore Maugeri", "ISAV SPA",
+            "HABILITA", "Gemma Gardone", "Dominato Leonense",
+            "San Benedetto", "Mangioni", "San Pellegrino"
              };
 
     /**

@@ -613,6 +613,13 @@ public class ClientCVController implements Initializable {
 
                 //chiaveValore[0] = Provincia, chiaveValore[1] = comune, chiavevalore[2] = CAP
 
+                System.out.println(chiaveValore[2]);
+                if(chiaveValore[2].substring(3,4).equals("xx")){
+                    if(chiaveValore[2].substring(0,2).equalsIgnoreCase(cap.substring(0,2))){
+                        return true;
+                    }
+                }
+
                 if(chiaveValore[2].equalsIgnoreCase(cap)){ //metodo che ignora il fatto che una stringa abbia maiuscole o minuscole diverse da un altra, guarda i caratteri unicode e la lunghezza della stringa per dire se sia uguale ad un altra
                     return true; //cap trovato
                 }

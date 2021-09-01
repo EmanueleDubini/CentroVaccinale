@@ -25,7 +25,8 @@ public class ComuneGenerator extends GeneratorWrapperBase<String> implements Gen
      */
     private static final String[] names= {"Cermenate", "Vertemate con minoprio", "Milano", "Arese", "Verona", "Como", "Cernobbio", "Erba", "Meda", "Saronno",
                                             "Guanzate", "Cucciago", "Arezzo", "Arenzano", "Argegno", "Arosio", "Assisi", "Alassio", "Asso", "Avellino", "Bagnasco",
-                                            "Balocco", "Barzago", "Belluno", "Brindisi", "Canegrate", "carbonate", "Carugo", "Cervino"//todo inserire nuovi comuni
+                                            "Balocco", "Barzago", "Belluno", "Brindisi", "Canegrate", "Carbonate", "Carugo", "Cervino", "Cremona", "Crema", "Lecco",
+                                            "Monza", "Seriate", "Pavia", "Verona", "Bolzano", "Sarentino", "Ortisei", "Trento"
     };
 
 
