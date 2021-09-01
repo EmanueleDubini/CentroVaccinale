@@ -40,7 +40,9 @@ public class ClientCTController  implements Initializable{
     @FXML
     private PasswordField TextFieldPassword;
 
-    //TextField relativi alla pagina: 03CT_RegistrazioneAdCV
+    /**
+     * ComboBox per il nome del centro vaccinale
+     */
     @FXML
     public ComboBox<String> nomeCentroComboBox = new ComboBox<>();
 
@@ -146,6 +148,9 @@ public class ClientCTController  implements Initializable{
     int severita5;
     int severita6;
 
+    /**
+     * Variabili locali per il salvataggio del cittadino che si é loggato
+     */
     public static String copiaUsername, copiaPassword;
 
 

@@ -101,7 +101,6 @@ public class ClientCVController implements Initializable {
      */
     @FXML
     public DatePicker DatePickerSomministrazioneCT;
-
     @FXML
     public ComboBox<String> nomeCentroComboBox = new ComboBox<>();
 
