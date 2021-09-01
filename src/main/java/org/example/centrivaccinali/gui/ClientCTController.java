@@ -301,7 +301,7 @@ public class ClientCTController  implements Initializable{
      * Resituisce un messaggio di errore nel caso in cui i campi inseriti dall'utente
      * non siano corretti
      */
-    public void GeneraCittadinoRegistrato(ActionEvent actionEvent) throws SQLException, RemoteException {
+    public void GeneraCittadinoRegistrato(ActionEvent actionEvent) throws SQLException, IOException {
         ////////////// campi registrazione Cittadino //////////////
         nomeRegistrato = TextFieldNomeVaccinato.getText().strip();
         cognomeRegistrato = TextFieldCognomeVaccinato.getText().strip();
@@ -372,18 +372,24 @@ public class ClientCTController  implements Initializable{
             alert.showAndWait();
         }
         //verificare se l'idVacinazione esiste ed è associato alla persona che si sta registrando
-        else if(!stub.verificaIdVaccinazione(idVaccinazioneRegistrato, nomeCentroVaccinale)){
+        else if(!stub.verificaIdVaccinazione(nomeRegistrato, cognomeRegistrato, cfRegistrato, idVaccinazioneRegistrato, nomeCentroVaccinale)){
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
             alert.setHeaderText("Si è verificato un Errore");
-            alert.setContentText("Nessun id vaccinale riscontrato nel centro vaccinale specificato.\nRiprovare");
+            alert.setContentText("Nessun id vaccinale o codice fiscale riscontrato nel centro vaccinale specificato.\nRiprovare");
 
             alert.showAndWait();
         }
         else {
             Boolean verify = stub.registraCittadino(cfRegistrato, cognomeRegistrato, nomeRegistrato, emailRegistrato, usernameRegistrato, passwordRegistrato, idVaccinazioneRegistrato, nomeCentroVaccinale);
             if(verify) {
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Info");
+                alert.setHeaderText("Operazione effettuata correttamente");
+                alert.setContentText("Ti sei registrato correttamente\n");
                 resetInserimentoRegistrazione();
+                alert.showAndWait();
+                to_02CT_MainWindow();
             }
         }
     }
@@ -479,11 +485,20 @@ public class ClientCTController  implements Initializable{
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
             alert.setHeaderText("Si è verificato un Errore");
-            alert.setContentText("Campi utili per la registrazione mancanti.\nRiprovare");
+            alert.setContentText("Dati non validi.\nRiprovare");
 
             alert.showAndWait();
         } //END_if*/
-        else {
+        if (note1.length() > 256 || note2.length() > 256 ||
+                note3.length() > 256 || note4.length() > 256 ||
+                note5.length() > 256 || note6.length() > 256) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Si è verificato un Errore");
+            alert.setContentText("Hai inserito troppi caratteri nelle note.\nMassimo 256 caratteri per nota");
+
+            alert.showAndWait();
+        }  else {
             //Ottiene idCentroVaccinale in base a username e psw inseriti nella schermata di login
             //DEBUG System.out.println(copiaPassword + " " + copiaPassword);
             String idCentroVaccinale = stub.getIdCentroVaccinale(copiaUsername, copiaPassword);

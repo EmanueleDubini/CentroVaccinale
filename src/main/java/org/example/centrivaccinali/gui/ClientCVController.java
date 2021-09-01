@@ -227,13 +227,13 @@ public class ClientCVController implements Initializable {
 
     public void generaCentroVaccinale() throws RemoteException, SQLException {
         ////////////// campi registrazione CV //////////////
-        nomeCV = textFieldNomeCentrovaccinale.getText().toLowerCase(); //non richiede controlli
+        nomeCV = textFieldNomeCentrovaccinale.getText().toLowerCase().strip(); //non richiede controlli
         tipologiaCV = tipologiaCheckBox.getValue(); //non richiede controlli
         qualificatoreVia = qualificatoreIndirizzoCheckBox.getValue(); //non richiede controlli
-        nomeVia = textFieldNomeVia.getText();
+        nomeVia = textFieldNomeVia.getText().strip();
         numeroCivico = textFieldNumeroCivico.getText();
-        comune = textFieldComune.getText().toLowerCase();  //corregge il fatto che magari venga inserito 'cErMeNate' e diventa 'cermenate'
-        provincia = textFieldProvincia.getText().toUpperCase(); //se viene scritto il cap minusciolo viene letto come maiuscolo
+        comune = textFieldComune.getText().toLowerCase().strip();  //corregge il fatto che magari venga inserito 'cErMeNate' e diventa 'cermenate'
+        provincia = textFieldProvincia.getText().toUpperCase().strip(); //se viene scritto il cap minusciolo viene letto come maiuscolo
         cap = textFieldCap.getText();
 
 
@@ -319,11 +319,16 @@ public class ClientCVController implements Initializable {
             alert.showAndWait();
         } else {
 
-
             String id = UUID.randomUUID().toString();
             Boolean verify = stub.registraCentroVaccinale(id, nomeCV, qualificatoreVia , nomeVia, numeroCivico, ProgUtili.capitalize(comune), provincia, cap, tipologiaCV);
+
             if (verify) {
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Info");
+                alert.setHeaderText("Operazione effettuata correttamente");
+                alert.setContentText("Centro Vaccinale registrato correttamente\n");
                 resetInserimentoCV();
+                alert.showAndWait();
             }
         }
         //todo, prima di inserire nel database il centro vaccinale, fare una lettura da db con query per evitare che il cv sia già stato registrato
@@ -365,8 +370,8 @@ public class ClientCVController implements Initializable {
 
         //nomeCvCT = TextFieldNomeCentrovaccinaleCT.getText().toLowerCase().strip();
         nomeCvCT = nomeCentroComboBox.getValue();
-        nomeCT = TextFieldNomeVaccinatoCT.getText();    //non servono controlli
-        cognomeCT = TextFieldCognomeVaccinatoCT.getText();  //non servono controlli
+        nomeCT = TextFieldNomeVaccinatoCT.getText().strip();    //non servono controlli
+        cognomeCT = TextFieldCognomeVaccinatoCT.getText().strip();  //non servono controlli
         codiceFiscaleCT = TextFieldCodicefiscaleCT.getText().toUpperCase().strip();             //Strip() rimuove spazi all'inizio e alla fine del testo inserito
         vaccinoSomministratoCT = TipologiaVaccinoCheckBox.getValue();      //non servono controlli
         idVaccinazioneCT =  TextFieldIdVaccinazioneCT.getText().strip();
@@ -429,10 +434,15 @@ public class ClientCVController implements Initializable {
 
             dataVaccinazioneCV = selectDateCV();
 
-            //String id = UUID.randomUUID().toString();
             Boolean verify = stub.registraVaccinato(idCentroVaccinale, nomeCvCT, cognomeCT, nomeCT, codiceFiscaleCT, dataVaccinazioneCV, vaccinoSomministratoCT, idVaccinazioneCT);
             if (verify) {
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Info");
+                alert.setHeaderText("Operazione effettuata correttamente");
+                alert.setContentText("Cittadino registrato correttamente\n");
                 resetInserimentoCT();
+
+                alert.showAndWait();
             }
         }
 
@@ -580,7 +590,6 @@ public class ClientCVController implements Initializable {
 
     public void inserisciCodiceFiscaleCT_Debug(ActionEvent actionEvent) {
         Random randomGenerator = new Random();
-        int eta = randomGenerator.nextInt(30) + 20;
 
         LastNameGenerator lastNameGenerator = new LastNameGenerator();
         String cognome = (String)lastNameGenerator.generate();
@@ -598,11 +607,17 @@ public class ClientCVController implements Initializable {
 
         ComuneGenerator comuneGen = new ComuneGenerator();
         DateGenerator dateGenerator = new DateGenerator();
-        String codiceFiscale = CalcolaCodiceFiscale.calcolaCf(cognome, nome, sesso, dateGenerator.generate(), CalcolaCodiceFiscale.toCodiceErariale((String)comuneGen.generate()));
+        CalcolaCodiceFiscale calcolaCodiceFiscale = new CalcolaCodiceFiscale();
+        String codiceFiscale = CalcolaCodiceFiscale.calcolaCf(cognome, nome, sesso, dateGenerator.generate(), calcolaCodiceFiscale.toCodiceErariale((String)comuneGen.generate()));
         TextFieldCodicefiscaleCT.setText(codiceFiscale);
     }
 
-    public void inserisciIDVaccinazioneCT_Debug(ActionEvent actionEvent) {
+    /**
+     * Questo metodo permette di generare in modo casuale gli ID Univoc
+     *
+     * @param actionEvent actionEvent
+     */
+    public void generaIdCasuale(ActionEvent actionEvent) {
         UIDGenerator uidGenerator = new UIDGenerator();
         String idVaccinazione = uidGenerator.randomUUID(16, 17, '-', true);
         TextFieldIdVaccinazioneCT.setText(idVaccinazione);
