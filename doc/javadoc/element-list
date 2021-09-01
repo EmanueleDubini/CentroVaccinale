@@ -1,0 +1,10 @@
+module:org.example
+org.example.centrivaccinali
+org.example.centrivaccinali.gui
+org.example.common
+org.example.common.CFGenerator
+org.example.database
+org.example.database.GenerateDataLib
+org.example.database.GenerateDataLib.BaseElement
+org.example.serverCV
+org.example.serverCV.gui
