@@ -15,7 +15,6 @@ package org.example.centrivaccinali;
  * Le sue istanze rappresentano <strong>Cittadini</strong>
  */
 public class Cittadino {
-    //todo javadoc dei campi, lo facciamo alla fine per motivi di leggibilità
     private String codiceFiscale;  // PRIMARY KEY
     private String cognome;
     private String nome;

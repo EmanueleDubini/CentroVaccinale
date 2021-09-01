@@ -106,7 +106,7 @@ public class ClientCVController implements Initializable {
      * TextField id Vaccinazione del cittadino vaccinato 
      */
     @FXML
-    public TextField TextFieldIdVaccinazioneCT;
+    public TextField TextFieldIdVaccinazioneCT = new TextField();
     /**
      * DatePicker data somministrazione vaccino
      */
@@ -357,7 +357,7 @@ public class ClientCVController implements Initializable {
         }
 
         //controllo validità provincia
-        else if (!validitaProvincia(provincia)) {//todo nella verifica controlare che la provincia corrisponda al comune scritto dall'utente
+        else if (!validitaProvincia(provincia)) {
 
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
@@ -368,7 +368,7 @@ public class ClientCVController implements Initializable {
         }
 
         //controllo validità cap
-        else if (!validitaCap(cap)) { //todo nella verifica controlare che il cap corrisponda al comune e provincia scritto dall'utente
+        else if (!validitaCap(cap)) {
 
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
@@ -392,8 +392,6 @@ public class ClientCVController implements Initializable {
             //una volta inserito il centro vaccinale compare un messaggio di conferma e si viene rimandati alla pagina 02_CV_MainWindow
             to_02CV_MainWindow();
         }
-        //todo, prima di inserire nel database il centro vaccinale, fare una lettura da db con query per evitare che il cv sia già stato registrato
-
     }
 
     /**
@@ -510,14 +508,11 @@ public class ClientCVController implements Initializable {
             }
             to_02CV_MainWindow();
         }
-
-        //todo nel caso verificare se aggiungere controllo per la data
-
     }
 
     /**
      * Questo metodo resetta tutti i campi inseriti dall'utente dopo che si registra il cittadino vaccinato
-     * tranne la data //todo la data lancia eccezione
+     * tranne la data
      */
 
     private void resetInserimentoCT() {
@@ -627,6 +622,7 @@ public class ClientCVController implements Initializable {
             System.err.println("File: listacomuni.csv letto in modo errato da verificaProvincia(String provincia)");
             e.printStackTrace();
         }
+
         return false; //cap non trovato
     }
 
@@ -650,7 +646,6 @@ public class ClientCVController implements Initializable {
      */
     public String selectDateCV() {
         return DatePickerSomministrazioneCT.getValue().format(DateTimeFormatter.ofPattern("dd-MM-yyyy")).toString();
-        //todo benny
     }
 
     //Metodi di debug relativi al file "03CV_RegistraCTOLD.fxml"

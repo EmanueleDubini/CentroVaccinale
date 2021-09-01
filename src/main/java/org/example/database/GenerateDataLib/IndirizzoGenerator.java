@@ -25,11 +25,11 @@ public class IndirizzoGenerator extends GeneratorWrapperBase<String> implements 
 
     static QualificatoreViaGenerator qualificatore = new QualificatoreViaGenerator(); //qualificatore via
     static NomeViaGenerator nome = new NomeViaGenerator(); //nome via
-    static NumeroCivicoGenerator numero = new NumeroCivicoGenerator(); //numero civico //todo il numero civico generato non per forza esiste nella via generata
+    static NumeroCivicoGenerator numero = new NumeroCivicoGenerator(); //numero civico
     /**
      * Alcuni indirizzi civici Italiani
      */
-    private static final Indirizzo[] names = {new Indirizzo(Qualificatore.valueOf((String)qualificatore.generate()), (String)nome.generate(), (String)numero.generate(), "Cermenate", 22072, "CO"), //todo aggiungere altri indirizzi
+    private static final Indirizzo[] names = {new Indirizzo(Qualificatore.valueOf((String)qualificatore.generate()), (String)nome.generate(), (String)numero.generate(), "Cermenate", 22072, "CO"),
             new Indirizzo(Qualificatore.valueOf((String)qualificatore.generate()), (String)nome.generate(), (String)numero.generate(), "Vertemate con minoprio", 22070, "CO"),
             new Indirizzo(Qualificatore.valueOf((String)qualificatore.generate()), (String)nome.generate(), (String)numero.generate(), "Assago", 20057, "MI"),
             new Indirizzo(Qualificatore.valueOf((String)qualificatore.generate()), (String)nome.generate(), (String)numero.generate(), "Besate", 20080, "MI"),

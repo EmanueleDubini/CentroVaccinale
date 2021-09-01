@@ -533,8 +533,6 @@ public class ClientCTController  implements Initializable{
 
                 //DEBUG System.out.println("Ok, l'evento è stato inserito");
 
-            //todo gestire eccezione nel caso in cui il cittadino cerca di inserire DI NUOVO gli eventi avversi, prima di mandare un inserimeto
-            // creare un metodo che verifica se è stata gia inserito un evento avverso
             }else {
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setTitle("Error");
@@ -551,7 +549,7 @@ public class ClientCTController  implements Initializable{
      * Resetta tutti i campi degli eventi avversi
      */
     private void resetInserimentoEventiAvversi() {
-        //spinnerMalDiTesta.setValueFactory(spinnerValueFactory1); //todo NON resetta gli spinner a 0 se lo spinner è non editable in SceneBuilder
+        //spinnerMalDiTesta.setValueFactory(spinnerValueFactory1);
         noteMalDiTesta.setText("");
 
         //spinnerFebbre.setValueFactory(spinnerValueFactory2);

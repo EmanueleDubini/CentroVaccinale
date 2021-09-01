@@ -22,7 +22,7 @@ public class VaccinationCentreNameGenerator extends GeneratorWrapperBase<String>
     /**
      * I più comuni centri vaccinali negli Stati Uniti
      */
-    private static final String[] names = new String[] { "San Raffaele", //todo aggiungere altri centri, sarebbe più giusto metterli tutti in italiano e corti
+    private static final String[] names = new String[] { "San Raffaele",
             "Sant Anna", "Synlab", "Centro San Paolo",
             "Fatebenefratelli", "Valduce", "Humanitas",
             "Niguarda", "San Matteo", "Luigi Sacco",

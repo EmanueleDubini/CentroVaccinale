@@ -416,7 +416,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      * @throws RemoteException RemoteException
      * @throws SQLException SQLException
      */
-    public synchronized ArrayList<CentroVaccinale> cercaCentroVaccinaleComuneTipologia(String nomeComune, String tipologiaCV) throws RemoteException, SQLException { //todo questo metodo per ora non restituisce nulla e non riceve come parametro i criteri di ricerca
+    public synchronized ArrayList<CentroVaccinale> cercaCentroVaccinaleComuneTipologia(String nomeComune, String tipologiaCV) throws RemoteException, SQLException {
         ArrayList<CentroVaccinale> centriVaccinali = new ArrayList<>();
 
         DbHelper.getConnection();

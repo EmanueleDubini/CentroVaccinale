@@ -71,9 +71,8 @@ public class ServerCVMain extends Application {
      * @param args args
      */
     public static void main(String[] args) {
-        launch(); //todo quando si chiude la finestra del jar tramite la 'X' rimane in esecuzione il processo e se si riclicca sul jar non lo apre
+        launch();
     }
-
 }
 
 

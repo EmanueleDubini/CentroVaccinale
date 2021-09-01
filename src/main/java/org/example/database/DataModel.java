@@ -26,7 +26,7 @@ import java.util.UUID;
  * Le sue istanze mappano e popolano le tuple del database
  */
 public class DataModel {
-    //todo la javadoc viene fatta dopo per motivi di leggibilità
+
     private final ArrayList<Cittadino> cittadini;
     private final ArrayList<CentroVaccinale> centriVaccinali;
     private static final Random randomGenerator = new Random();
@@ -107,7 +107,7 @@ public class DataModel {
         DateGenerator dateGenerator = new DateGenerator();  //Generatore di date
         CalcolaCodiceFiscale calcolaCodiceFiscale = new CalcolaCodiceFiscale();
 
-        String codiceFiscale = CalcolaCodiceFiscale.calcolaCf(cognome, nome, sesso, dateGenerator.generate(), calcolaCodiceFiscale.toCodiceErariale((String)comuneGen.generate()));//todo creare generatore della data
+        String codiceFiscale = CalcolaCodiceFiscale.calcolaCf(cognome, nome, sesso, dateGenerator.generate(), calcolaCodiceFiscale.toCodiceErariale((String)comuneGen.generate()));
 
         EmailGenerator emailGenerator = new EmailGenerator(nome,cognome); // Crea un email univoco collegato al nome e cognome del cittadino generato
         String email = emailGenerator.generate();
@@ -133,7 +133,7 @@ public class DataModel {
         String idCentroVaccinale = UUID.randomUUID().toString(); //id centro vaccinale univoco
 
         //nome centro vaccinale
-        VaccinationCentreNameGenerator nomeCentroVaccinaleGenerator = new VaccinationCentreNameGenerator(); //todo non bisogna generare un centro vaccinale se ne è gia stato generato uno con lo stesso nome
+        VaccinationCentreNameGenerator nomeCentroVaccinaleGenerator = new VaccinationCentreNameGenerator();
         String nomeCentroVaccinale =(String) nomeCentroVaccinaleGenerator.generate();
 
         IndirizzoGenerator indirizzoGenerator = new IndirizzoGenerator();

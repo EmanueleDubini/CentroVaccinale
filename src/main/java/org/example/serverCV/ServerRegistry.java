@@ -15,7 +15,7 @@ public class ServerRegistry {
     /**
      * Porta su cui si inizializza il registry, dove poi il server caricherà la sua istanza remota
      */
-    public static final int PORT = 1200; //todo sistemare e mettera la porta come campo statico nell'interfaccia del server
+    public static final int PORT = 1200;
 
     /**
      * Registry con cui il server si rende disponibile remotamente
