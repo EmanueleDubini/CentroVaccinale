@@ -40,34 +40,58 @@ public class Client03CT_CercaCV_Controller implements Initializable {
 
     @FXML
     public TextField nomeDaRicercare;
+    /**
+     * Label che contiene il nome del centro vaccinale ricercato
+     */
     @FXML
     public Label CVNameLable;
     @FXML
     public Label TipologiaLabel;
+    /**
+     * Immagine logo cv
+     */
     @FXML
     public ImageView CVImg;
+    /**
+     * VBox per la visualizzazione e la selezione dei cv cercati
+     */
     @FXML
     public VBox chosenCV;
     @FXML
     public Label IndirizzoLabel;
     @FXML
     public Label idCentroVacinaleLabel;
+    /**
+     * GridPane
+     */
     @FXML
     public GridPane grid = new GridPane();
     @FXML
     public Label ViaLabel;
     @FXML
     public HBox ricercaNome;
+    /**
+     * Bottone per la ricerca tramite nome
+     */
     @FXML
     public Button bottoneRicercaNome;
     @FXML
     public HBox ricercaComuneTipolgia;
+    /**
+     * TextField per la ricerca tramite comune
+     */
     @FXML
     public TextField comuneDaRicercare;
     @FXML
     public ComboBox<String> tipologiaDaRicercare = new ComboBox<>();
+    /**
+     * Bottone per la ricerca tramite il comune e tipologia
+     */
     @FXML
     public Button bottoneRicercaComuneTipologia;
+    /**
+     * Label numero segnalazioni eventi avversi
+     */
     @FXML
     public Label nSegnalazioni;
     @FXML
