@@ -91,14 +91,14 @@ public class ServerCVController {
      */
     private void checkLogin() throws RemoteException {
         // DEBUG: connessione automatica il DB senza digitare le credenziali
-        String usernameText = "postgres";
-        String passwordText = "postgres";
-        String hostText = "localhost";
+        //String usernameText = "postgres";
+        //String passwordText = "postgres";
+        //String hostText = "localhost";
 
         //VARIABILI PER LOGIN
-        //String usernameText = dbUsername.getText();
-        //String passwordText = dbPassword.getText();
-        //String hostText = dbHost.getText();
+        String usernameText = dbUsername.getText();
+        String passwordText = dbPassword.getText();
+        String hostText = dbHost.getText();
 
 
         if ((usernameText.compareTo(username) == 0) && (passwordText.compareTo(password) == 0) && (hostText.compareTo(host) == 0)) {
