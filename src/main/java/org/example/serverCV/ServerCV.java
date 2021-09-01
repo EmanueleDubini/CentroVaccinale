@@ -207,7 +207,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
             return true;
         }
         else{
-            System.err.println("Login Failed");
+            //DEBUG System.err.println("Login Failed");
             return false;
         }
 
