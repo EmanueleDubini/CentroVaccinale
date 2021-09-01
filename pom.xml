@@ -3,13 +3,17 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.example</groupId>
     <artifactId>ClientCV</artifactId>
+    <packaging>jar</packaging>
+
     <!-- commentare una riga e decommentare l'altra -->
     <!-- <artifactId>ServerCV</artifactId>-->
     <version>1.0-JARVersion</version>
+    <url>http://maven.apache.org</url>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>16</maven.compiler.source>
-        <maven.compiler.target>16</maven.compiler.target>
+        <!-- <maven.compiler.source>16</maven.compiler.source>
+        <maven.compiler.target>16</maven.compiler.target> -->
     </properties>
 
     <dependencies>
@@ -32,6 +36,12 @@
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
             <version>16</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.5</version>
         </dependency>
 
 
