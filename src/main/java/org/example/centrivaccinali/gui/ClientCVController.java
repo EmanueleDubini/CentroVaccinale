@@ -120,8 +120,6 @@ public class ClientCVController implements Initializable {
 
     String nomeCvCT, nomeCT, cognomeCT, codiceFiscaleCT, vaccinoSomministratoCT, idVaccinazioneCT, dataVaccinazioneCV;
 
-    private final ClientCVMain m = new ClientCVMain();
-
     String nomeCV, tipologiaCV, qualificatoreVia, nomeVia, numeroCivico, comune, provincia, cap;
 
     /**
