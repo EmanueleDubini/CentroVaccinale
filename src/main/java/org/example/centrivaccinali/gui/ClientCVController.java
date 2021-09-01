@@ -38,7 +38,9 @@ import static org.example.centrivaccinali.gui.IpServerCheck_Controller.stub;
  */
 public class ClientCVController implements Initializable {
 
-
+    /**
+     * Combobox relativa al tipo di centro vaccinale
+     */
     @FXML
     public ComboBox<String> tipologiaCheckBox = new ComboBox<>();
     /**
@@ -72,6 +74,9 @@ public class ClientCVController implements Initializable {
     public TextField textFieldCap;
     public ComboBox<String> QualificatoreIndirizzoCheckBox = new ComboBox<>();
 
+    /**
+     * Combobox relativa al tipo di vaccino somministrato al cittadino
+     */
     @FXML
     public ComboBox<String> TipologiaVaccinoCheckBox = new ComboBox<>();
 
@@ -108,6 +113,9 @@ public class ClientCVController implements Initializable {
 
     String nomeCV, tipologiaCV, qualificatoreVia, nomeVia, numeroCivico, comune, provincia, cap;
 
+    /**
+     * Controller relativo ai centri vaccinali
+     */
     public ClientCVController(){
     }
 
@@ -158,7 +166,7 @@ public class ClientCVController implements Initializable {
     }
 
     /**
-     * Questi metodi permettono di spostarsi tra le varie finestre
+     * Questo metodo permette di spostarsi tra le varie finestre
      *
      * @throws IOException IOException
      */
@@ -166,18 +174,38 @@ public class ClientCVController implements Initializable {
         ClientCVMain.setRoot("01_LandingPage");
     }
 
+    /**
+     * Questo metodo permette di spostarsi tra le varie finestre
+     *
+     * @throws IOException IOException
+     */
     public void to_02CT_MainWindow() throws IOException {
         ClientCVMain.setRoot("02CT_MainWindow");
     }
 
+    /**
+     * Questo metodo permette di spostarsi tra le varie finestre
+     *
+     * @throws IOException IOException
+     */
     public void to_02CV_MainWindow() throws IOException {
         ClientCVMain.setRoot("02CV_MainWindow");
     }
 
+    /**
+     * Questo metodo permette di spostarsi tra le varie finestre
+     *
+     * @throws IOException IOException
+     */
     public void to_03CV_RegistraCV() throws IOException {
         ClientCVMain.setRoot("03CV_RegistraCV");
     }
 
+    /**
+     * Metodo per la navigazione all'interno dell'applicazione
+     *
+     * @throws IOException IOException
+     */
     public void to_03CV_RegistraCT() throws IOException {
         ClientCVMain.setRoot("03CV_RegistraCT");
     }
