@@ -242,7 +242,6 @@ public class ClientCTController  implements Initializable{
         Platform.exit();
     }
 
-
     /**
      * Questo metodo crea un messaggio di Alert che restituisce informazioni riguardanti il progetto
      */
