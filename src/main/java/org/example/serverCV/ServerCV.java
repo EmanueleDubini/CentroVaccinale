@@ -158,7 +158,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
      * @param password password del cittadino
      * @param idVaccinazione id vaccinazione del cittadino
      *
-     * @return @return true se la registrazione va a buon fine
+     * @return true se la registrazione va a buon fine
      *
      * @throws SQLException SQLException
      */
@@ -663,6 +663,10 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
 
     /**
      * Metodo <code>Main</code> dell'applicazione ClientCV
+     *
+     * @param args args
+     *
+     * @throws RemoteException RemoteException
      */
     public static void main(String[] args) throws RemoteException {
         // Partenza dell'interfaccia grafica

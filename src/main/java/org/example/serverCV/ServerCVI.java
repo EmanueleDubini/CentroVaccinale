@@ -41,6 +41,7 @@ public interface ServerCVI extends Remote {
      * @return true se la registrazione va a buon fine
      *
      * @throws SQLException SQLException
+     * @throws RemoteException RemoteException
      */
     Boolean registraCentroVaccinale(String id, String nomeCV, String qualificatore, String indirizzo, String numeroCivico, String comune, String provincia, String cap, String tipologia) throws RemoteException, SQLException;
 
@@ -59,6 +60,7 @@ public interface ServerCVI extends Remote {
      * @return true se la registrazione va a buon fine, false altrimenti
      *
      * @throws SQLException SQLException
+     * @throws RemoteException RemoteException
      */
     Boolean registraVaccinato(String id, String nomeCV, String cognome, String nome, String cf, String dataSomministrazione, String vaccinoSomministrato, String idVaccinazione) throws RemoteException, SQLException;
 
@@ -74,10 +76,12 @@ public interface ServerCVI extends Remote {
      * @param username username del cittadino
      * @param password password del cittadino
      * @param idVaccinazione id vaccinazione del cittadino
+     * @param nomeCentroVaccinale il nome del CentroVaccinale
      *
      * @return true se la registrazione va a buon fine, false altrimenti
      *
      * @throws SQLException SQLException
+     * @throws RemoteException RemoteException
      */
     Boolean registraCittadino(String cf, String cognome, String nome, String email, String username, String password, String idVaccinazione, String nomeCentroVaccinale) throws RemoteException, SQLException;
 
@@ -208,6 +212,7 @@ public interface ServerCVI extends Remote {
      * @return true se l'inserimento dell'evento avverso va a buon fine, false altrimenti
      *
      * @throws SQLException SQLException
+     * @throws RemoteException RemoteException
      */
     Boolean inserisciEventiAvversi(String id, String codiceFiscale,
                                    int mal_di_testa, String mal_di_testa_note,
@@ -229,25 +234,33 @@ public interface ServerCVI extends Remote {
      * @return true se i campi inseriti dal cittadino registrato non sono gia presenti nel database e quindi esso puo registrasi, false altrimenti
      *
      * @throws RemoteException RemoteException
+     * @throws SQLException SQLException
      */
     boolean verificaSeRegistrato(String cfRegistrato, String emailRegistrato, String usernameRegistrato, String idVaccinazioneRegistrato) throws RemoteException, SQLException;
 
     /**
-     * Metodo <code>verificaSeRegistrato</code> che verifica l'id vaccinazione dell'utente che si sta registrando,
+     * Metodo <code>verificaIdVaccinazione</code> che verifica l'id vaccinazione dell'utente che si sta registrando,
      * controllando che il suo id sia presente nel database
      *
+     * @param nomeRegistrato il nome del cittadino che si vuole registrare
+     * @param cognomeRegistrato il cognome del cittadino che si vuole registrare
+     * @param cfRegistrato il cf del cittadino che si vuole registrare
      * @param idVaccinazioneRegistrato id di vaccinazione del cittadino vaccinato che vuole registrarsi nell'applicazione cittadino
+     * @param nomeCentroVaccinale il nome del centro vaccianle dove il cittadino é stato vaccinato
+     *
      *
      * @return true se l'id vaccinazione inserito dal cittadino registrato è presente nel database e quindi esso puo registrasi, false altrimenti
      *
      * @throws RemoteException RemoteException
+     * @throws SQLException SQLException
      */
-    boolean verificaIdVaccinazione(String nomeRegistrato, String CognomeRegistrato, String cfRegistrato, String idVaccinazioneRegistrato, String nomeCentroVaccinale) throws RemoteException, SQLException;
+    boolean verificaIdVaccinazione(String nomeRegistrato, String cognomeRegistrato, String cfRegistrato, String idVaccinazioneRegistrato, String nomeCentroVaccinale) throws RemoteException, SQLException;
 
     /**
      * Metodo <code>verificaEventoAvverso</code> che verifica se un utente ha gia inserito un avento avverso all'interno del database
      * effettuando la ricerca attraverso il codice fiscale
-     * @param codiceF
+     *
+     * @param codiceF codiceCF
      *
      * @return true se si puo effettuare l'inserimento di un centro vaccinale, altrimenti false, false altrimenti
      *

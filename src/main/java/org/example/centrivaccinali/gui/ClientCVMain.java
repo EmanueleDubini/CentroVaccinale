@@ -85,6 +85,8 @@ public class ClientCVMain extends Application {
 
     /**
      * Metodo main che fa partire l'interfaccia grafica
+     *
+     * @param args args
      */
     public static void main(String[] args) {
         launch(args);

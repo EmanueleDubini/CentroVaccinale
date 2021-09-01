@@ -288,11 +288,12 @@ public class ClientCTController  implements Initializable{
         info.showAndWait();
     }
 
+
     /**
      * Questo metodo è collegato al bottone ' Registra Cittadino' dell'applicaizione cittadino
      * nel file "03CT_RegistrazioneAdCVold.fxml".
      *
-     * contiene dei controlli relativi a:
+     * Contiene dei controlli relativi a:
      * - Campi vuoti
      * - Codice Fiscale
      * - ID vaccinazione
@@ -300,6 +301,11 @@ public class ClientCTController  implements Initializable{
      *
      * Resituisce un messaggio di errore nel caso in cui i campi inseriti dall'utente
      * non siano corretti
+     *
+     * @param actionEvent actionEvent
+     *
+     * @throws SQLException SQLException
+     * @throws IOException IOException
      */
     public void GeneraCittadinoRegistrato(ActionEvent actionEvent) throws SQLException, IOException {
         ////////////// campi registrazione Cittadino //////////////
@@ -410,6 +416,7 @@ public class ClientCTController  implements Initializable{
 
     /**
      * Questo metodo permette la ricerca di un Centro Vaccinale
+     *
      * @param actionEvent actionEvent
      */
     public void cercaCentroVaccinale(ActionEvent actionEvent) {
@@ -454,6 +461,7 @@ public class ClientCTController  implements Initializable{
 
     /**
      * Inserisce eventuali eventi avversi dopo la somministrazine del vaccino.
+     * @param actionEvent actionEvent
      * @throws SQLException SQLException
      * @throws RemoteException RemoteException
      */

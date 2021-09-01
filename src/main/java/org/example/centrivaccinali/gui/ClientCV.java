@@ -19,6 +19,8 @@ public class ClientCV {
 
     /**
      * Metodo <code>Main</code> dell'applicazione ClientCV
+     *
+     * @param args args
      */
     public static void main(String[] args) {
         ClientCVMain.main(args); // fa partire l'intrerfaccia grafica

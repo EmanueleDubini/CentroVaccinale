@@ -363,6 +363,9 @@ public class ClientCVController implements Initializable {
      *
      * Resituisce un messaggio di errore nel caso in cui i campi inseriti dall'operatore
      * non siano corretti
+     *
+     * @throws SQLException SQLException
+     * @throws RemoteException RemoteException
      */
 
     public void generaCittadinoVaccinato() throws SQLException, RemoteException {
@@ -586,6 +589,8 @@ public class ClientCVController implements Initializable {
 
     /**
      * Questo metodo permette di inserire il codice fiscale in fase di debug
+     *
+     * @param actionEvent actionEvent
      */
 
     public void inserisciCodiceFiscaleCT_Debug(ActionEvent actionEvent) {

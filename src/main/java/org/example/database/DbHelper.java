@@ -43,7 +43,10 @@ public class DbHelper {
 
     /**
      * Crea la connessione con il DB
+     *
      * @throws SQLException SQLException
+     *
+     * @return Connection
      */
     // uso il DRIVER MANAGER per creare la connessione, NON c'è indicazione del driver da utilizzare.
     public static Connection getConnection() throws SQLException {
