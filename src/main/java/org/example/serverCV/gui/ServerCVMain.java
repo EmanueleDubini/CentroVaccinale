@@ -39,7 +39,9 @@ public class ServerCVMain extends Application {
         Platform.setImplicitExit(true);
         stage.setOnCloseRequest((ae) -> {
             try {
-                ServerRegistry.registry.unbind("ServerCV");
+                if(ServerRegistry.registry != null){
+                    ServerRegistry.registry.unbind("ServerCV");
+                }
             } catch (RemoteException e) {
                 e.printStackTrace();
             } catch (NotBoundException e) {
