@@ -57,9 +57,9 @@
                                     <Button alignment="CENTER" layoutX="4.0" layoutY="4.0" mnemonicParsing="false" onAction="#to_02CT_MainWindow" prefHeight="32.0" prefWidth="32.0" style="-fx-background-radius: 5em;" text="←" />
                                  </children>
                               </AnchorPane>
-                              <Text fill="#2c7c1c" strokeType="OUTSIDE" strokeWidth="0.0" text="Ricerca Centro Vaccinale" textAlignment="CENTER">
+                              <Text fill="#2c7c1c" strokeType="OUTSIDE" strokeWidth="0.0" text="Ricerca Centro Vaccinale" textAlignment="CENTER" wrappingWidth="309.0639953613281">
                                  <font>
-                                    <Font name="Avenir Book" size="28.0" />
+                                    <Font name="Avenir Book" size="29.0" />
                                  </font>
                                  <HBox.margin>
                                     <Insets right="55.0" top="20.0" />
@@ -90,9 +90,9 @@
                               </ImageView>
                               <HBox alignment="CENTER" prefWidth="335.0">
                                  <children>
-                                    <Label layoutX="65.0" layoutY="10.0" prefHeight="34.0" prefWidth="117.0" text="Tipologia:">
+                                    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="65.0" layoutY="10.0" prefHeight="40.0" prefWidth="133.0" text="Tipologia:" textAlignment="CENTER">
                                        <font>
-                                          <Font name="Cambria" size="28.0" />
+                                          <Font name="Avenir Book" size="28.0" />
                                        </font>
                                        <HBox.margin>
                                           <Insets top="10.0" />
@@ -100,10 +100,10 @@
                                     </Label>
                                     <Label fx:id="TipologiaLabel">
                                        <font>
-                                          <Font name="Cambria" size="28.0" />
+                                          <Font name="Avenir Book" size="28.0" />
                                        </font>
                                        <HBox.margin>
-                                          <Insets left="30.0" top="10.0" />
+                                          <Insets left="10.0" top="10.0" />
                                        </HBox.margin>
                                     </Label>
                                  </children>
@@ -130,7 +130,7 @@
                                  <children>
                                     <Label fx:id="IndirizzoLabel" alignment="CENTER">
                                        <font>
-                                          <Font name="Cambria" size="25.0" />
+                                          <Font name="Avenir Book" size="25.0" />
                                        </font>
                                     </Label>
                                  </children>
@@ -142,7 +142,7 @@
                                  <children>
                                     <Label fx:id="IndirizzoLabel1" alignment="CENTER" text="ID:">
                                        <font>
-                                          <Font name="Cambria" size="25.0" />
+                                          <Font size="18.0" />
                                        </font>
                                     </Label>
                                     <Label fx:id="idCentroVacinaleLabel" alignment="CENTER">
@@ -167,9 +167,9 @@
                                        <HBox.margin>
                                           <Insets right="10.0" />
                                        </HBox.margin></Separator>
-                                    <Label alignment="CENTER" prefHeight="45.0" prefWidth="159.0" text="Eventi Avversi">
+                                    <Label alignment="CENTER" prefHeight="39.0" prefWidth="171.0" text="Eventi Avversi">
                                        <font>
-                                          <Font name="Cambria" size="24.0" />
+                                          <Font name="Avenir Book" size="26.0" />
                                        </font>
                                     </Label>
                                     <Separator prefHeight="3.0" prefWidth="100.0">
@@ -185,12 +185,12 @@
                                  <children>
                                     <Label fx:id="IndirizzoLabel11" alignment="CENTER" text="N° Segnalazioni:">
                                        <font>
-                                          <Font name="Cambria" size="25.0" />
+                                          <Font name="Avenir Book" size="25.0" />
                                        </font>
                                     </Label>
                                     <Label fx:id="nSegnalazioni" alignment="CENTER">
                                        <font>
-                                          <Font name="Cambria" size="25.0" />
+                                          <Font name="Avenir Book" size="25.0" />
                                        </font>
                                        <HBox.margin>
                                           <Insets left="20.0" />
@@ -202,7 +202,7 @@
                                  <children>
                                     <Label fx:id="IndirizzoLabel1111" alignment="CENTER" layoutX="202.0" layoutY="10.0" text="Severità Media: ">
                                        <font>
-                                          <Font name="Cambria" size="25.0" />
+                                          <Font name="Avenir Book" size="25.0" />
                                        </font>
                                        <HBox.margin>
                                           <Insets left="15.0" />
@@ -210,7 +210,7 @@
                                     </Label>
                                     <Label fx:id="labelSeveritaMedia" alignment="CENTER">
                                        <font>
-                                          <Font name="Cambria" size="25.0" />
+                                          <Font name="Avenir Book" size="25.0" />
                                        </font>
                                        <HBox.margin>
                                           <Insets left="20.0" />
@@ -237,9 +237,9 @@
                            <children>
                               <HBox alignment="CENTER" prefHeight="61.0" prefWidth="1249.0">
                                  <children>
-                                    <Label alignment="CENTER" prefHeight="22.0" prefWidth="380.0" text="Selezionare il tipo di ricerca del Centro Vaccinale:">
+                                    <Label alignment="CENTER" prefHeight="27.0" prefWidth="402.0" text="Selezionare il tipo di ricerca del Centro Vaccinale:">
                                        <font>
-                                          <Font name="Cambria" size="18.0" />
+                                          <Font name="Avenir Book" size="18.0" />
                                        </font>
                                        <HBox.margin>
                                           <Insets />
@@ -247,17 +247,17 @@
                                     </Label>
                                     <HBox alignment="CENTER" prefHeight="61.0" prefWidth="294.0">
                                        <children>
-                                          <RadioButton fx:id="radioButtonNome" mnemonicParsing="false" prefHeight="24.0" prefWidth="80.0" text="Nome">
+                                          <RadioButton fx:id="radioButtonNome" mnemonicParsing="false" prefHeight="27.0" prefWidth="110.0" text="Nome">
                                              <font>
-                                                <Font name="Cambria" size="17.0" />
+                                                <Font name="Avenir Book" size="18.0" />
                                              </font>
                                           </RadioButton>
-                                          <RadioButton fx:id="radioButtonComuneTipologia" mnemonicParsing="false" prefHeight="24.0" prefWidth="190.0" text="Comune &amp; Tipologia">
+                                          <RadioButton fx:id="radioButtonComuneTipologia" mnemonicParsing="false" prefHeight="27.0" prefWidth="229.0" text="Comune &amp; Tipologia">
                                              <HBox.margin>
                                                 <Insets left="10.0" />
                                              </HBox.margin>
                                              <font>
-                                                <Font name="Cambria" size="17.0" />
+                                                <Font name="Avenir Book" size="18.0" />
                                              </font>
                                           </RadioButton>
                                        </children>
@@ -271,9 +271,9 @@
                                  <children>
                                     <HBox fx:id="ricercaNome" alignment="CENTER" prefHeight="59.0" prefWidth="1219.0" stylesheets="@../../css/GradientBackGround.css">
                                        <children>
-                                          <TextField fx:id="nomeDaRicercare" prefHeight="40.0" prefWidth="235.0" promptText="Nome Centro Vaccinale" stylesheets="@../../css/GradientBackGround.css">
+                                          <TextField fx:id="nomeDaRicercare" prefHeight="35.0" prefWidth="235.0" promptText="Nome Centro Vaccinale" stylesheets="@../../css/GradientBackGround.css">
                                              <HBox.margin>
-                                                <Insets top="25.0" />
+                                                <Insets top="15.0" />
                                              </HBox.margin>
                                              <font>
                                                 <Font name="Cambria" size="18.0" />
@@ -292,23 +292,26 @@
                                     </HBox>
                                     <HBox fx:id="ricercaComuneTipolgia" alignment="CENTER" prefHeight="59.0" prefWidth="1219.0" stylesheets="@../../css/GradientBackGround.css">
                                        <children>
-                                          <TextField fx:id="comuneDaRicercare" prefHeight="40.0" prefWidth="235.0" promptText="Comune" stylesheets="@../../css/GradientBackGround.css">
+                                          <TextField fx:id="comuneDaRicercare" prefHeight="30.0" prefWidth="235.0" promptText="Comune" stylesheets="@../../css/GradientBackGround.css">
                                              <HBox.margin>
-                                                <Insets top="25.0" />
+                                                <Insets top="10.0" />
                                              </HBox.margin>
                                              <font>
-                                                <Font name="Cambria" size="18.0" />
+                                                <Font name="Avenir Book" size="18.0" />
                                              </font>
                                           </TextField>
-                                          <ComboBox fx:id="tipologiaDaRicercare" prefWidth="150.0">
+                                          <ComboBox fx:id="tipologiaDaRicercare" prefHeight="30.0" prefWidth="150.0">
                                              <HBox.margin>
-                                                <Insets left="70.0" top="25.0" />
+                                                <Insets left="70.0" top="10.0" />
                                              </HBox.margin>
                                           </ComboBox>
                                           <Button fx:id="bottoneRicercaComuneTipologia" mnemonicParsing="false" onAction="#invioRicerca" prefHeight="40.0" prefWidth="100.0" styleClass="search-button" stylesheets="@../../css/GradientBackGround.css" text="Search" textFill="WHITE">
                                              <HBox.margin>
                                                 <Insets left="70.0" top="25.0" />
                                              </HBox.margin>
+                                             <font>
+                                                <Font name="Avenir Book" size="16.0" />
+                                             </font>
                                           </Button>
                                        </children>
                                        <styleClass>
@@ -322,7 +325,7 @@
                         </VBox>
                         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="833.0" VBox.vgrow="ALWAYS">
                            <children>
-                              <ScrollPane fx:id="scroll" prefHeight="547.0" prefWidth="785.0" styleClass="transparent" stylesheets="@../../css/GradientBackGround.css">
+                              <ScrollPane fx:id="scroll" prefHeight="557.0" prefWidth="785.0" styleClass="transparent" stylesheets="@../../css/GradientBackGround.css">
                                  <content>
                                     <GridPane fx:id="grid" prefHeight="0.0" prefWidth="0.0">
                                        <rowConstraints>
