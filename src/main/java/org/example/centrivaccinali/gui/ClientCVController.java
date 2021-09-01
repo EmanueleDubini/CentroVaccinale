@@ -48,6 +48,9 @@ public class ClientCVController implements Initializable {
      */
     @FXML
     public ComboBox<String> qualificatoreIndirizzoCheckBox = new ComboBox<>();
+    /**
+     * TextField nome del centro vaccinale
+     */
     @FXML
     public TextField textFieldNomeCentrovaccinale;
     /**
@@ -55,6 +58,9 @@ public class ClientCVController implements Initializable {
      */
     @FXML
     public TextField textFieldNomeVia;
+    /**
+     * TextField Numero civico
+     */
     @FXML
     public TextField textFieldNumeroCivico;
     /**
@@ -72,8 +78,6 @@ public class ClientCVController implements Initializable {
      */
     @FXML
     public TextField textFieldCap;
-    public ComboBox<String> QualificatoreIndirizzoCheckBox = new ComboBox<>();
-
     /**
      * Combobox relativa al tipo di vaccino somministrato al cittadino
      */
@@ -83,10 +87,14 @@ public class ClientCVController implements Initializable {
 
     //Bottoni relativi alla pagina: 03CV_RegistraCT
 
-    //@FXML
-    //public TextField TextFieldNomeCentrovaccinaleCT;
+    /**
+     * TextField nome del cittadino vaccinato
+     */
     @FXML
     public TextField TextFieldNomeVaccinatoCT;
+    /**
+     * TextField cognome del cittadino vaccinato
+     */
     @FXML
     public TextField TextFieldCognomeVaccinatoCT;
     /**
@@ -94,6 +102,9 @@ public class ClientCVController implements Initializable {
      */
     @FXML
     public TextField TextFieldCodicefiscaleCT;
+    /**
+     * TextField id Vaccinazione del cittadino vaccinato 
+     */
     @FXML
     public TextField TextFieldIdVaccinazioneCT;
     /**
@@ -104,9 +115,7 @@ public class ClientCVController implements Initializable {
     @FXML
     public ComboBox<String> nomeCentroComboBox = new ComboBox<>();
 
-
     String nomeCvCT, nomeCT, cognomeCT, codiceFiscaleCT, vaccinoSomministratoCT, idVaccinazioneCT, dataVaccinazioneCV;
-
 
     private final ClientCVMain m = new ClientCVMain();
 
