@@ -53,7 +53,6 @@ public class DbHelper {
         if(connection == null){
             connection = DriverManager.getConnection(url, username, password);
         }
-
         return connection;
     }
 
