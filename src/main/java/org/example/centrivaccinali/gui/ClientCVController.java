@@ -284,7 +284,7 @@ public class ClientCVController implements Initializable {
      * @throws SQLException SQLException
      */
 
-    public void generaCentroVaccinale() throws RemoteException, SQLException {
+    public void generaCentroVaccinale() throws IOException, SQLException {
         ////////////// campi registrazione CV //////////////
         nomeCV = textFieldNomeCentrovaccinale.getText().toLowerCase().strip(); //non richiede controlli
         tipologiaCV = tipologiaCheckBox.getValue(); //non richiede controlli
@@ -389,6 +389,8 @@ public class ClientCVController implements Initializable {
                 resetInserimentoCV();
                 alert.showAndWait();
             }
+            //una volta inserito il centro vaccinale compare un messaggio di conferma e si viene rimandati alla pagina 02_CV_MainWindow
+            to_02CV_MainWindow();
         }
         //todo, prima di inserire nel database il centro vaccinale, fare una lettura da db con query per evitare che il cv sia già stato registrato
 
@@ -427,7 +429,7 @@ public class ClientCVController implements Initializable {
      * @throws RemoteException RemoteException
      */
 
-    public void generaCittadinoVaccinato() throws SQLException, RemoteException {
+    public void generaCittadinoVaccinato() throws SQLException, IOException {
         ////////////// CAMPI REGISTRAZIONE CT //////////////
 
         //nomeCvCT = TextFieldNomeCentrovaccinaleCT.getText().toLowerCase().strip();
@@ -506,6 +508,7 @@ public class ClientCVController implements Initializable {
 
                 alert.showAndWait();
             }
+            to_02CV_MainWindow();
         }
 
         //todo nel caso verificare se aggiungere controllo per la data
