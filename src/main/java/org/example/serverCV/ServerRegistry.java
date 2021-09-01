@@ -22,6 +22,11 @@ public class ServerRegistry {
      */
     public static Registry registry;
 
+
+    /**
+     * costruttore derivato dalla super classe
+     * @throws RemoteException RemoteException
+     */
     protected ServerRegistry() throws RemoteException {
         super();
     }
