@@ -71,7 +71,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
                 "(idCentroVaccinale, nome, qualificatore, indirizzo, numerocivico, comune, provincia, cap, tipologia)" +
                 "VALUES(" + "'" + id + "'," + "'" + nomeCV + "',"+ "'" + qualificatore + "',"  + "'" + indirizzo + "'," + "'" + numeroCivico + "'," + "'" + comune + "'," + "'" + provincia + "'," + "'" + cap + "'," + "'" + tipologia + "'" + ")");
 
-        System.out.println("SERVER: registracentroVaccinale() eseguito correttamente");
+        //DEBUG System.out.println("SERVER: registracentroVaccinale() eseguito correttamente");
         return true;
     }
 
