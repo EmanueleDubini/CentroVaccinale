@@ -48,6 +48,9 @@ public class ClientCVController implements Initializable {
     public ComboBox<String> qualificatoreIndirizzoCheckBox = new ComboBox<>();
     @FXML
     public TextField textFieldNomeCentrovaccinale;
+    /**
+     * TextField nome via
+     */
     @FXML
     public TextField textFieldNomeVia;
     @FXML
@@ -57,8 +60,14 @@ public class ClientCVController implements Initializable {
      */
     @FXML
     public TextField textFieldComune;
+    /**
+     * TextField Provincia
+     */
     @FXML
     public TextField textFieldProvincia;
+    /**
+     * TextField cap
+     */
     @FXML
     public TextField textFieldCap;
     public ComboBox<String> QualificatoreIndirizzoCheckBox = new ComboBox<>();
@@ -75,11 +84,16 @@ public class ClientCVController implements Initializable {
     public TextField TextFieldNomeVaccinatoCT;
     @FXML
     public TextField TextFieldCognomeVaccinatoCT;
+    /**
+     * TextField per il codice fiscale
+     */
     @FXML
     public TextField TextFieldCodicefiscaleCT;
     @FXML
     public TextField TextFieldIdVaccinazioneCT;
-
+    /**
+     * DatePicker data somministrazione vaccino
+     */
     @FXML
     public DatePicker DatePickerSomministrazioneCT;
 

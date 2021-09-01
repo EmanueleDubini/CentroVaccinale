@@ -121,9 +121,14 @@ public class Client03CT_CercaCV_Controller implements Initializable {
     public Label labelSeveritaMedia;
 
     ToggleGroup selectionToggleGroup = new ToggleGroup();
-
+    /**
+     * RadioButton nome cv
+     */
     @FXML
     public RadioButton radioButtonNome;
+    /**
+     * RadioButton per il comune e tipologia
+     */
     @FXML
     public RadioButton radioButtonComuneTipologia;
 
