@@ -10,8 +10,6 @@
 
 package org.example.common;
 
-import org.example.common.CentroVaccinale;
-
 /**
  * Classe enumerativa per la gestione della <strong>Tipologia</strong> di {@link CentroVaccinale}.
  */

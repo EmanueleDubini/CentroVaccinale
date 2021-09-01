@@ -10,21 +10,17 @@
 
 package org.example.centrivaccinali.gui;
 
+import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.beans.binding.Bindings;
-import javafx.scene.control.TextField;
-import org.example.common.ProgUtili;
-import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import org.example.serverCV.ServerCV;
-import org.example.serverCV.ServerRegistry;
+import org.example.common.ProgUtili;
 
 import java.io.IOException;
-import java.rmi.NotBoundException;
-import java.rmi.RemoteException;
 
 
 /**
@@ -45,7 +41,7 @@ public class ClientCVMain extends Application {
     public void start(Stage stage) throws IOException {
         scene = new Scene(loadFXML("00_IpServerCheck"));
         TextField titleTextField = new TextField();
-        stage.titleProperty().bind(Bindings.concat(APP_NAME).concat(titleTextField.textProperty()));;
+        stage.titleProperty().bind(Bindings.concat(APP_NAME).concat(titleTextField.textProperty()));
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
@@ -90,16 +86,5 @@ public class ClientCVMain extends Application {
      */
     public static void main(String[] args) {
         launch(args);
-
-        /*
-        ProgUtili.clearScreen();
-        System.out.println("********************");
-        System.out.println("* CENTRI VACCINALI * ");
-        System.out.println("********************\n");
-        System.out.println(ProgUtili.stampaData() + ": STARTED");
-        System.out.println("\n");
-        //new DataModel().generateAll();
-        */
-
     }
 }

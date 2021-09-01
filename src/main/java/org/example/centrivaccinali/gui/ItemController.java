@@ -12,7 +12,6 @@ package org.example.centrivaccinali.gui;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import org.example.common.CentroVaccinale;
@@ -61,7 +60,5 @@ public class ItemController {
         this.centroVaccinale = centroVaccinale;
         this.cercaCVListener = cercaCVListener;
         nameLabel.setText(centroVaccinale.getNome());
-        //Image image = new Image("org/example/images/primula.png");
-        //img.setImage(image);
     }
 }
