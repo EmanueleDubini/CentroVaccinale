@@ -38,7 +38,9 @@ import static org.example.centrivaccinali.gui.IpServerCheck_Controller.stub;
  */
 public class ClientCVController implements Initializable {
 
-
+    /**
+     * Combobox relativa al tipo di centro vaccinale
+     */
     @FXML
     public ComboBox<String> tipologiaCheckBox = new ComboBox<>();
     /**
@@ -46,10 +48,19 @@ public class ClientCVController implements Initializable {
      */
     @FXML
     public ComboBox<String> qualificatoreIndirizzoCheckBox = new ComboBox<>();
+    /**
+     * TextField nome del centro vaccinale
+     */
     @FXML
     public TextField textFieldNomeCentrovaccinale;
+    /**
+     * TextField nome via
+     */
     @FXML
     public TextField textFieldNomeVia;
+    /**
+     * TextField Numero civico
+     */
     @FXML
     public TextField textFieldNumeroCivico;
     /**
@@ -57,43 +68,65 @@ public class ClientCVController implements Initializable {
      */
     @FXML
     public TextField textFieldComune;
+    /**
+     * TextField Provincia
+     */
     @FXML
     public TextField textFieldProvincia;
+    /**
+     * TextField cap
+     */
     @FXML
     public TextField textFieldCap;
-    public ComboBox<String> QualificatoreIndirizzoCheckBox = new ComboBox<>();
-
+    /**
+     * Combobox relativa al tipo di vaccino somministrato al cittadino
+     */
     @FXML
     public ComboBox<String> TipologiaVaccinoCheckBox = new ComboBox<>();
 
 
     //Bottoni relativi alla pagina: 03CV_RegistraCT
 
-    //@FXML
-    //public TextField TextFieldNomeCentrovaccinaleCT;
+    /**
+     * TextField nome del cittadino vaccinato
+     */
     @FXML
     public TextField TextFieldNomeVaccinatoCT;
+    /**
+     * TextField cognome del cittadino vaccinato
+     */
     @FXML
     public TextField TextFieldCognomeVaccinatoCT;
+    /**
+     * TextField per il codice fiscale
+     */
     @FXML
     public TextField TextFieldCodicefiscaleCT;
+    /**
+     * TextField id Vaccinazione del cittadino vaccinato 
+     */
     @FXML
     public TextField TextFieldIdVaccinazioneCT;
-
+    /**
+     * DatePicker data somministrazione vaccino
+     */
     @FXML
     public DatePicker DatePickerSomministrazioneCT;
-
+    /**
+     * ComboBox per il nome del centro vaccinale
+     */
     @FXML
     public ComboBox<String> nomeCentroComboBox = new ComboBox<>();
 
-
     String nomeCvCT, nomeCT, cognomeCT, codiceFiscaleCT, vaccinoSomministratoCT, idVaccinazioneCT, dataVaccinazioneCV;
-
 
     private final ClientCVMain m = new ClientCVMain();
 
     String nomeCV, tipologiaCV, qualificatoreVia, nomeVia, numeroCivico, comune, provincia, cap;
 
+    /**
+     * Controller relativo ai centri vaccinali
+     */
     public ClientCVController(){
     }
 
@@ -144,7 +177,7 @@ public class ClientCVController implements Initializable {
     }
 
     /**
-     * Questi metodi permettono di spostarsi tra le varie finestre
+     * Questo metodo permette di spostarsi tra le varie finestre
      *
      * @throws IOException IOException
      */
@@ -152,18 +185,38 @@ public class ClientCVController implements Initializable {
         ClientCVMain.setRoot("01_LandingPage");
     }
 
+    /**
+     * Questo metodo permette di spostarsi tra le varie finestre
+     *
+     * @throws IOException IOException
+     */
     public void to_02CT_MainWindow() throws IOException {
         ClientCVMain.setRoot("02CT_MainWindow");
     }
 
+    /**
+     * Questo metodo permette di spostarsi tra le varie finestre
+     *
+     * @throws IOException IOException
+     */
     public void to_02CV_MainWindow() throws IOException {
         ClientCVMain.setRoot("02CV_MainWindow");
     }
 
+    /**
+     * Questo metodo permette di spostarsi tra le varie finestre
+     *
+     * @throws IOException IOException
+     */
     public void to_03CV_RegistraCV() throws IOException {
         ClientCVMain.setRoot("03CV_RegistraCV");
     }
 
+    /**
+     * Metodo per la navigazione all'interno dell'applicazione
+     *
+     * @throws IOException IOException
+     */
     public void to_03CV_RegistraCT() throws IOException {
         ClientCVMain.setRoot("03CV_RegistraCT");
     }

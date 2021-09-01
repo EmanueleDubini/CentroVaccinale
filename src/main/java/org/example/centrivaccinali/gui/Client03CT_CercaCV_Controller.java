@@ -102,6 +102,9 @@ public class Client03CT_CercaCV_Controller implements Initializable {
      */
     @FXML
     public TextField comuneDaRicercare;
+    /**
+     * ComboBox per ricercare la tipologia cv
+     */
     @FXML
     public ComboBox<String> tipologiaDaRicercare = new ComboBox<>();
     /**
@@ -121,9 +124,14 @@ public class Client03CT_CercaCV_Controller implements Initializable {
     public Label labelSeveritaMedia;
 
     ToggleGroup selectionToggleGroup = new ToggleGroup();
-
+    /**
+     * RadioButton nome cv
+     */
     @FXML
     public RadioButton radioButtonNome;
+    /**
+     * RadioButton per il comune e tipologia
+     */
     @FXML
     public RadioButton radioButtonComuneTipologia;
 
