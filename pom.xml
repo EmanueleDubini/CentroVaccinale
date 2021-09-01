@@ -2,11 +2,11 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.example</groupId>
-    <artifactId>ClientCV</artifactId>
+    <artifactId>ServerCV</artifactId>
     <packaging>jar</packaging>
 
     <!-- commentare una riga e decommentare l'altra -->
-    <!-- <artifactId>ServerCV</artifactId>-->
+    <!-- <artifactId>ClientCV</artifactId>-->
     <version>1.0-JARVersion</version>
     <url>http://maven.apache.org</url>
 
@@ -69,12 +69,6 @@
             <classifier>mac</classifier>
         </dependency>
 
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>3.5</version>
-        </dependency>
-
 
     </dependencies>
 
@@ -107,30 +101,30 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.4</version>
                 <configuration>
-                    <!--<mainClass>org.example.serverCV.gui.ServerCVMain</mainClass> -->
+                    <mainClass>org.example.serverCV.gui.ServerCVMain</mainClass>
                     <!--commentare na riga e decommentare l'altra-->
-                     <mainClass>org.example.centrivaccinali.gui.ClientCVMain</mainClass>
-                </configuration>
-            </plugin>
+                    <!--<mainClass>org.example.centrivaccinali.gui.ClientCVMain</mainClass> -->
+               </configuration>
+           </plugin>
 
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-shade-plugin</artifactId>
-                <version>3.2.4</version>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>shade</goal>
-                        </goals>
-                        <configuration>
-                            <!-- <outputDirectory>jar</outputDirectory> -->
-                            <shadedArtifactAttached>true</shadedArtifactAttached>
-                            <transformers>
-                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <!-- <mainClass>org.example.serverCV.ServerCV</mainClass>-->
-                                    <!--commentare una riga e decommentare l'altra-->
-                                    <mainClass>org.example.centrivaccinali.gui.ClientCV</mainClass>
+           <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-shade-plugin</artifactId>
+               <version>3.2.4</version>
+               <executions>
+                   <execution>
+                       <phase>package</phase>
+                       <goals>
+                           <goal>shade</goal>
+                       </goals>
+                       <configuration>
+                           <outputDirectory>jar</outputDirectory>
+                           <shadedArtifactAttached>true</shadedArtifactAttached>
+                           <transformers>
+                               <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                   <mainClass>org.example.serverCV.ServerCV</mainClass>
+                                   <!--commentare una riga e decommentare l'altra-->
+                                    <!-- <mainClass>org.example.centrivaccinali.gui.ClientCV</mainClass>-->
 
                                 </transformer>
                             </transformers>
