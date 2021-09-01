@@ -109,28 +109,18 @@ public class ClientCTController  implements Initializable{
     @FXML
     private TextArea noteMalDiTesta;
 
-    //@FXML
-    //private TextField severitaFebbre;
     @FXML
     private TextArea noteFebbre;
 
-    //@FXML
-    //private TextField severitaDolori;
     @FXML
     private TextArea noteDolori;
 
-    //@FXML
-    //private TextField severitaTachicardia;
     @FXML
     private TextArea noteTachicardia;
 
-    //@FXML
-    //private TextField severitaLinfoadenopatia;
     @FXML
     private TextArea noteLinfoadenopatia;
 
-    //@FXML
-    //private TextField severitaCrisiIpertensiva;
     @FXML
     private TextArea noteCrisiIpertensiva;
 
@@ -234,14 +224,6 @@ public class ClientCTController  implements Initializable{
      */
     public void to_03CT_InfoCV() throws IOException {
         ClientCVMain.setRoot("03CT_CercaCV");
-    }
-
-    /**
-     * Questo metodo crea la schermata 03CT_LoginWindow, per fare il login
-     * @throws IOException IOException
-     */
-    public void to_03CT_LoginWindow() throws IOException {
-        ClientCVMain.setRoot("03CT_LoginWindow");
     }
 
     /**
@@ -420,14 +402,6 @@ public class ClientCTController  implements Initializable{
     }
 
     /**
-     * Questo metodo permette la ricerca di un Centro Vaccinale
-     *
-     * @param actionEvent actionEvent
-     */
-    public void cercaCentroVaccinale(ActionEvent actionEvent) {
-    }
-
-    /**
      * Controlla e verifica il login: se l'utente si é registrato correttamente inserendo
      * username e password. In caso contrario, lo fará notare all'utente con una stringa di errore
      * @param actionEvent actionEvent
@@ -522,7 +496,7 @@ public class ClientCTController  implements Initializable{
             //DEBUG System.err.println(codiceF);
 
             if(stub.verificaEventoAvverso(codiceF)) {
-                Boolean verify = stub.inserisciEventiAvversi(idCentroVaccinale, codiceF, severita1, note1, severita2, note2, severita3, note3, severita4, note4, severita5, note5, severita6, note6);
+                stub.inserisciEventiAvversi(idCentroVaccinale, codiceF, severita1, note1, severita2, note2, severita3, note3, severita4, note4, severita5, note5, severita6, note6);
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setTitle("Info");
                 alert.setHeaderText("Operazione effettuata correttamente");
