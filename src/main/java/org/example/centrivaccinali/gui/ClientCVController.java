@@ -612,7 +612,12 @@ public class ClientCVController implements Initializable {
         TextFieldCodicefiscaleCT.setText(codiceFiscale);
     }
 
-    public void inserisciIDVaccinazioneCT_Debug(ActionEvent actionEvent) {
+    /**
+     * Questo metodo permette di generare in modo casuale gli ID Univoc
+     *
+     * @param actionEvent actionEvent
+     */
+    public void generaIdCasuale(ActionEvent actionEvent) {
         UIDGenerator uidGenerator = new UIDGenerator();
         String idVaccinazione = uidGenerator.randomUUID(16, 17, '-', true);
         TextFieldIdVaccinazioneCT.setText(idVaccinazione);

@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
 <VBox prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.centrivaccinali.gui.ClientCVController">
    <children>
         <MenuBar>
@@ -23,7 +34,6 @@
                 <Menu mnemonicParsing="false" text="Debug">
                     <items>
                         <MenuItem mnemonicParsing="false" onAction="#inserisciCodiceFiscaleCT_Debug" text="Inserisci CF" />
-                        <MenuItem mnemonicParsing="false" onAction="#inserisciIDVaccinazioneCT_Debug" text="Inserisci ID Vaccinazione" />
                     </items>
                 </Menu>
             </menus>
@@ -58,11 +68,6 @@
               <Pane layoutX="481.0" layoutY="186.0" prefHeight="485.0" prefWidth="774.0" AnchorPane.bottomAnchor="49.0" AnchorPane.topAnchor="186.0">
                   <children>
                       <TextField fx:id="TextFieldCognomeVaccinatoCT" layoutY="260.0" prefHeight="35.0" prefWidth="325.0" promptText="Cognome" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
-                      <Button fx:id="anchor" alignment="CENTER" contentDisplay="CENTER" layoutX="525.0" layoutY="425.0" mnemonicParsing="false" onAction="#generaCittadinoVaccinato" prefHeight="45.0" prefWidth="200.0" style="-fx-background-radius: 5em;" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Registra Vaccinato" textAlignment="CENTER" textFill="WHITE">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                      </Button>
                       <Label fx:id="lblErrors" alignment="CENTER" layoutX="8.0" layoutY="95.0" prefHeight="23.0" prefWidth="275.0" textFill="#ff6354">
                           <font>
                               <Font name="Segoe UI" size="10.0" />
@@ -104,7 +109,7 @@
                         <Font name="Avenir Book" size="24.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="TextFieldIdVaccinazioneCT" layoutX="400.0" layoutY="360.0" prefHeight="35.0" prefWidth="325.0" promptText="id 16bit" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
+                  <TextField fx:id="TextFieldIdVaccinazioneCT" editable="false" layoutX="400.0" layoutY="360.0" prefHeight="35.0" prefWidth="163.0" promptText="id 16bit" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
                   <ComboBox fx:id="TipologiaVaccinoCheckBox" layoutX="400.0" layoutY="160.0" prefHeight="30.0" prefWidth="325.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
                   <Separator layoutX="90.0" layoutY="83.0" prefHeight="23.0" prefWidth="607.0" />
                   <Label layoutY="125.0" text="Nome Vaccinato:">
@@ -115,6 +120,16 @@
                   <TextField fx:id="TextFieldNomeVaccinatoCT" layoutY="160.0" prefHeight="35.0" prefWidth="325.0" promptText="Nome" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
                   <DatePicker fx:id="DatePickerSomministrazioneCT" layoutX="400.0" layoutY="260.0" prefHeight="35.0" prefWidth="325.0" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" />
                   <ComboBox fx:id="nomeCentroComboBox" layoutX="217.0" layoutY="34.0" prefHeight="35.0" prefWidth="354.0" />
+                  <Button fx:id="anchor" alignment="CENTER" contentDisplay="CENTER" layoutX="581.0" layoutY="357.0" mnemonicParsing="false" onAction="#generaIdCasuale" prefHeight="45.0" prefWidth="121.0" style="-fx-background-radius: 5em;" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Genera ID" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                      <Button fx:id="anchor" alignment="CENTER" contentDisplay="CENTER" layoutX="263.0" layoutY="427.0" mnemonicParsing="false" onAction="#generaCittadinoVaccinato" prefHeight="45.0" prefWidth="200.0" style="-fx-background-radius: 5em;" styleClass="shadow" stylesheets="@../../css/GradientBackGround.css" text="Registra Vaccinato" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                      </Button>
                   </children>
               </Pane>
                 <Label alignment="CENTER" layoutX="455.0" layoutY="77.0" prefHeight="55.0" prefWidth="825.0" text="Registra un Cittadino Vaccinato" textFill="#4e8847">
