@@ -17,12 +17,9 @@ import org.example.common.Qualificatore;
 import org.example.database.DbHelper;
 import org.example.serverCV.gui.ServerCVMain;
 
-import java.io.Serial;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.rmi.RemoteException;
-import java.rmi.registry.LocateRegistry;
-import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 import java.sql.*;
 import java.util.ArrayList;
@@ -477,14 +474,6 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
         return centriVaccinali;
     }
 
-    /**
-     * //todo javadoc
-     */
-    public synchronized void visualizzaInfoCentroVaccinale() {
-        //todo
-    }
-
-
     /// EVENTI AVVERSI
     /// IMPLEMENTAZIONE Metodi dell'interfaccia ServerCVI ///
 
@@ -632,6 +621,7 @@ public class ServerCV extends UnicastRemoteObject implements ServerCVI{
     /**
      * Metodo <code>verificaEventoAvverso</code> che verifica se un utente ha gia inserito un avento avverso all'interno del database
      * effettuando la ricerca attraverso il codice fiscale
+     *
      * @param codiceF codiceF
      *
      * @return ritorna true se si puo effettuare l'inserimento di un centro vaccinale, altrimenti false

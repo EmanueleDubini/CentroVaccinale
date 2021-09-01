@@ -9,10 +9,19 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.util.regex.Pattern;
 
+/**
+ * Questa classe controlla se l'ip inserito nel client e' corretto
+ */
 public class IpServerCheck_Controller {
     //grafica relativa alla pagina: 00_IpServerCheck.fxml
+    /**
+     * Label che contiene lo stato delle connessioni
+     */
     @FXML
     public Label connectionStatus;
+    /**
+     * TextField per inserire l'ip del server
+     */
     @FXML
     public TextField hostAddress;
     String address;
@@ -26,6 +35,9 @@ public class IpServerCheck_Controller {
 
     /////////////////////grafica relativa alla pagina: 00_IpServerCheck.fxml //////////////////////////////////
 
+    /**
+     * Questo metodo gestisce la connessione del client al server
+     */
     public void serverConnection() {
         address = hostAddress.getText().strip();
 

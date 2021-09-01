@@ -47,6 +47,9 @@ public class ServerCVController {
     private Button connectButton;
     @FXML
     private Button resetButton;
+    /**
+     * LogArea
+     */
     @FXML
     public TextArea logArea;
     @FXML

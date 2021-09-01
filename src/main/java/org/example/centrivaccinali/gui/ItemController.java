@@ -24,8 +24,14 @@ import java.sql.SQLException;
  * Classe che crea i rettangoli per la visualizzazione dei centri vaccinali cercati
  */
 public class ItemController {
+    /**
+     * Nome del centro vaccinale ricercato
+     */
     @FXML
     public Label nameLabel;
+    /**
+     * Immagine logo cv
+     */
     @FXML
     public ImageView img;
 

@@ -26,6 +26,11 @@ public class ServerRegistry {
         super();
     }
 
+    /**
+     * Questo metodo permette di inizializzare il Registry
+     *
+     * @throws RemoteException RemoteException
+     */
     public static void startRegistry() throws RemoteException {
         //settiamo l'ip hostname con l'ip della macchina che esegue questo codice, ServerCV main()
         System.setProperty("java.rmi.server.hostname", IpAddressServer.getServerAddress());

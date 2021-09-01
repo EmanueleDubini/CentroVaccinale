@@ -187,8 +187,6 @@ public interface ServerCVI extends Remote {
      */
     ArrayList<String> nomiCentriVaccinali() throws RemoteException, SQLException;
 
-    void visualizzaInfoCentroVaccinale() throws RemoteException;
-
     // Metodi remoti per EVENTI_AVVERSI
 
     /**
