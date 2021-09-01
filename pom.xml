@@ -38,30 +38,20 @@
             <version>16</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.openjfx/javafx-base -->
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-base</artifactId>
             <version>15.0.1</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.openjfx/javafx-graphics FOR WINDOWS-->
+
         <dependency>
             <groupId>org.openjfx</groupId>
-            <artifactId>javafx-graphics </artifactId>
+            <artifactId>javafx-graphics</artifactId>
             <version>15.0.1</version>
             <classifier>win</classifier>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.openjfx/javafx-graphics FOR LINUX-->
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-graphics </artifactId>
-            <version>15.0.1</version>
-            <classifier>linux</classifier>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.openjfx/javafx-graphics FOR MAC OS-->
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-graphics </artifactId>
