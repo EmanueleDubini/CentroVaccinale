@@ -19,3 +19,7 @@ ________________
 - creare le tabelle da ServerCV (debug)
 - riempire il Db coi dati (opzionale)
 - eseguire il programma ClientCV
+
+> GENERAZIONE JAR:
+- Per generare i jar da Maven, decommentare dalla riga 47 alla riga 62 del file pom.xml .
+  I file jar sono comunque contenuti nella cartella "Jar" del progetto
